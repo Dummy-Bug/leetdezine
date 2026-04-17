@@ -1,0 +1,330 @@
+site_name: LeetDezine
+site_url: https://dummy-bug.github.io/leetdezine/
+site_description: System design case studies — built for interview depth, not interview breadth.
+repo_url: https://github.com/Dummy-Bug/leetdezine
+repo_name: Dummy-Bug/leetdezine
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.path
+    - navigation.top
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.tabbed:
+      alternate_style: true
+  - tables
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+
+nav:
+  - Home: index.md
+
+  - "01 · Foundation":
+    - URL Shortener:
+      - Overview: 01-Foundation/01-URL-Shortener/index.md
+      - Functional Requirements: 01-Foundation/01-URL-Shortener/01-FR.md
+      - Estimation: 01-Foundation/01-URL-Shortener/02-Estimation.md
+      - Non-Functional Requirements: 01-Foundation/01-URL-Shortener/03-NFR.md
+      - API Design: 01-Foundation/01-URL-Shortener/04-API.md
+      - Base Architecture: 01-Foundation/01-URL-Shortener/05-Base-Architecture.md
+      - "Deep Dive — Short Code Generation":
+        - Raw IDs: 01-Foundation/01-URL-Shortener/06-Deep-Dives/01-Short-Code-Generation/01-Raw-IDs.md
+        - Hashing: 01-Foundation/01-URL-Shortener/06-Deep-Dives/01-Short-Code-Generation/02-Hashing.md
+        - Random + Collision Check: 01-Foundation/01-URL-Shortener/06-Deep-Dives/01-Short-Code-Generation/03-Random-Collision-Check.md
+        - UUID Base64 Trim: 01-Foundation/01-URL-Shortener/06-Deep-Dives/01-Short-Code-Generation/04-UUID-Base64-Trim.md
+        - Snowflake Base64: 01-Foundation/01-URL-Shortener/06-Deep-Dives/01-Short-Code-Generation/05-Snowflake-Base64.md
+        - UUID Snowflake Base62: 01-Foundation/01-URL-Shortener/06-Deep-Dives/01-Short-Code-Generation/06-UUID-Snowflake-Base62.md
+        - Truncation Problem: 01-Foundation/01-URL-Shortener/06-Deep-Dives/01-Short-Code-Generation/07-Truncation-Problem.md
+      - "Deep Dive — Database":
+        - DB Choice: 01-Foundation/01-URL-Shortener/06-Deep-Dives/02-DB/01-DB-Choice.md
+        - Schema: 01-Foundation/01-URL-Shortener/06-Deep-Dives/02-DB/02-Schema.md
+        - Why Sharding: 01-Foundation/01-URL-Shortener/06-Deep-Dives/02-DB/03-Why-Sharding.md
+        - Sharding Key: 01-Foundation/01-URL-Shortener/06-Deep-Dives/02-DB/04-Sharding-Key.md
+        - Consistent Hashing: 01-Foundation/01-URL-Shortener/06-Deep-Dives/02-DB/05-Consistent-Hashing.md
+        - How Many Shards: 01-Foundation/01-URL-Shortener/06-Deep-Dives/02-DB/06-How-Many-Shards.md
+        - Replication: 01-Foundation/01-URL-Shortener/06-Deep-Dives/02-DB/07-Replication.md
+        - Read Your Own Writes: 01-Foundation/01-URL-Shortener/06-Deep-Dives/02-DB/08-Read-Your-Own-Writes.md
+      - "Deep Dive — Caching":
+        - Why Caching: 01-Foundation/01-URL-Shortener/06-Deep-Dives/03-Caching/01-Why-Caching.md
+        - Cache Size: 01-Foundation/01-URL-Shortener/06-Deep-Dives/03-Caching/02-Cache-Size.md
+        - Cache Strategy: 01-Foundation/01-URL-Shortener/06-Deep-Dives/03-Caching/03-Cache-Strategy.md
+        - Eviction Policy: 01-Foundation/01-URL-Shortener/06-Deep-Dives/03-Caching/04-Eviction-Policy.md
+        - Updated Flow: 01-Foundation/01-URL-Shortener/06-Deep-Dives/03-Caching/05-Updated-Flow.md
+      - "Deep Dive — Peak Traffic":
+        - The Spike Problem: 01-Foundation/01-URL-Shortener/06-Deep-Dives/04-Peak-Traffic/01-The-Spike-Problem.md
+        - Hot Key — Detection: 01-Foundation/01-URL-Shortener/06-Deep-Dives/04-Peak-Traffic/02-Hot-Key-Problem/01-Detection.md
+        - Hot Key — Local App Cache: 01-Foundation/01-URL-Shortener/06-Deep-Dives/04-Peak-Traffic/02-Hot-Key-Problem/02-Local-App-Cache.md
+        - Hot Key — Redis Key Replication: 01-Foundation/01-URL-Shortener/06-Deep-Dives/04-Peak-Traffic/02-Hot-Key-Problem/03-Redis-Key-Replication.md
+        - Hot Key — Broadcast Promotion: 01-Foundation/01-URL-Shortener/06-Deep-Dives/04-Peak-Traffic/02-Hot-Key-Problem/04-Broadcast-Promotion.md
+        - Load Balancing: 01-Foundation/01-URL-Shortener/06-Deep-Dives/04-Peak-Traffic/03-Load-Balancing.md
+        - API GW SPOF: 01-Foundation/01-URL-Shortener/06-Deep-Dives/04-Peak-Traffic/04-API-GW-SPOF.md
+        - Updated Architecture: 01-Foundation/01-URL-Shortener/06-Deep-Dives/04-Peak-Traffic/05-Updated-Architecture.md
+      - "Deep Dive — Pre-Generated Keys":
+        - Collision At Scale: 01-Foundation/01-URL-Shortener/06-Deep-Dives/06-Pre-Generated-Keys/01-Collision-At-Scale.md
+        - Bloom Filter: 01-Foundation/01-URL-Shortener/06-Deep-Dives/06-Pre-Generated-Keys/02-Bloom-Filter.md
+        - Key Pool: 01-Foundation/01-URL-Shortener/06-Deep-Dives/06-Pre-Generated-Keys/03-Key-Pool.md
+        - KGS Sequential Generation: 01-Foundation/01-URL-Shortener/06-Deep-Dives/06-Pre-Generated-Keys/04-KGS-Sequential-Generation.md
+        - Redis INCR vs KGS: 01-Foundation/01-URL-Shortener/06-Deep-Dives/06-Pre-Generated-Keys/05-Redis-INCR-vs-KGS.md
+      - "Deep Dive — Cold Storage":
+        - The Problem: 01-Foundation/01-URL-Shortener/06-Deep-Dives/07-Cold-Storage/01-The-Problem.md
+        - Tiered Storage: 01-Foundation/01-URL-Shortener/06-Deep-Dives/07-Cold-Storage/02-Tiered-Storage.md
+        - Detecting Cold URLs: 01-Foundation/01-URL-Shortener/06-Deep-Dives/07-Cold-Storage/03-Detecting-Cold-URLs.md
+      - "Deep Dive — Fault Isolation":
+        - Fault Isolation: 01-Foundation/01-URL-Shortener/06-Deep-Dives/08-Fault-Isolation/01-Fault-Isolation.md
+        - Redis Down: 01-Foundation/01-URL-Shortener/06-Deep-Dives/08-Fault-Isolation/02-Redis-Down.md
+        - DB Shard Primary Down: 01-Foundation/01-URL-Shortener/06-Deep-Dives/08-Fault-Isolation/03-DB-Shard-Primary-Down.md
+        - KGS Down: 01-Foundation/01-URL-Shortener/06-Deep-Dives/08-Fault-Isolation/04-KGS-Down.md
+        - Other Failures: 01-Foundation/01-URL-Shortener/06-Deep-Dives/08-Fault-Isolation/05-Other-Failures.md
+      - Final Design: 01-Foundation/01-URL-Shortener/08-Final-Design/01-Final-Design.md
+      - "Observability":
+        - SLI / SLO Connection: 01-Foundation/01-URL-Shortener/09-Observability/01-SLI-SLO-Connection.md
+        - Measuring Latency: 01-Foundation/01-URL-Shortener/09-Observability/02-Measuring-Latency.md
+        - Measuring Availability: 01-Foundation/01-URL-Shortener/09-Observability/03-Measuring-Availability.md
+        - Alerting: 01-Foundation/01-URL-Shortener/09-Observability/04-Alerting.md
+        - Error Budget: 01-Foundation/01-URL-Shortener/09-Observability/05-Error-Budget.md
+
+  - "02 · Ascent":
+    - Pastebin:
+      - Overview: 02-Ascent/02-Pastebin/index.md
+      - Functional Requirements: 02-Ascent/02-Pastebin/01-FR.md
+      - Estimation: 02-Ascent/02-Pastebin/02-Estimation.md
+      - Non-Functional Requirements: 02-Ascent/02-Pastebin/03-NFR.md
+      - API Design: 02-Ascent/02-Pastebin/04-API.md
+      - Base Architecture: 02-Ascent/02-Pastebin/05-Base-Architecture.md
+      - "Deep Dive — Short Code Generation":
+        - Requirements: 02-Ascent/02-Pastebin/06-Deep-Dives/01-Short-Code-Generation/01-Requirements.md
+        - Approaches: 02-Ascent/02-Pastebin/06-Deep-Dives/01-Short-Code-Generation/02-Approaches.md
+        - Redis Counter: 02-Ascent/02-Pastebin/06-Deep-Dives/01-Short-Code-Generation/03-Redis-Counter.md
+        - Custom Alias: 02-Ascent/02-Pastebin/06-Deep-Dives/01-Short-Code-Generation/04-Custom-Alias.md
+      - "Deep Dive — Database":
+        - DB Choice: 02-Ascent/02-Pastebin/06-Deep-Dives/02-DB/01-DB-Choice.md
+        - Content-Addressable Storage: 02-Ascent/02-Pastebin/06-Deep-Dives/02-DB/02-Content-Addressable-Storage.md
+        - Ref Counting: 02-Ascent/02-Pastebin/06-Deep-Dives/02-DB/03-Ref-Counting.md
+        - Schema And Indexes: 02-Ascent/02-Pastebin/06-Deep-Dives/02-DB/04-Schema-And-Indexes.md
+        - Write Read Delete Flows: 02-Ascent/02-Pastebin/06-Deep-Dives/02-DB/05-Write-Read-Delete-Flows.md
+        - Sharding: 02-Ascent/02-Pastebin/06-Deep-Dives/02-DB/06-Sharding.md
+      - "Deep Dive — Caching":
+        - Why Cache: 02-Ascent/02-Pastebin/06-Deep-Dives/03-Caching/01-Why-Cache.md
+        - What To Cache And How: 02-Ascent/02-Pastebin/06-Deep-Dives/03-Caching/02-What-To-Cache-And-How.md
+        - Cache Sizing: 02-Ascent/02-Pastebin/06-Deep-Dives/03-Caching/03-Cache-Sizing.md
+        - Cache Invalidation: 02-Ascent/02-Pastebin/06-Deep-Dives/03-Caching/04-Cache-Invalidation.md
+      - "Deep Dive — Peak Traffic":
+        - Hot Key Problem: 02-Ascent/02-Pastebin/06-Deep-Dives/04-Peak-Traffic/01-Hot-Key-Problem.md
+      - "Deep Dive — Fault Isolation":
+        - Why Fault Isolation: 02-Ascent/02-Pastebin/06-Deep-Dives/05-Fault-Isolation/01-Why-Fault-Isolation.md
+        - Service Split: 02-Ascent/02-Pastebin/06-Deep-Dives/05-Fault-Isolation/02-Service-Split.md
+        - DB Standby: 02-Ascent/02-Pastebin/06-Deep-Dives/05-Fault-Isolation/03-DB-Standby.md
+        - Circuit Breaker: 02-Ascent/02-Pastebin/06-Deep-Dives/05-Fault-Isolation/04-Circuit-Breaker.md
+      - "Deep Dive — Async S3 Upload":
+        - Why Async Upload: 02-Ascent/02-Pastebin/06-Deep-Dives/06-Async-S3-Upload/01-Why-Async-Upload.md
+        - Failure Problem: 02-Ascent/02-Pastebin/06-Deep-Dives/06-Async-S3-Upload/02-Failure-Problem.md
+        - State Machine: 02-Ascent/02-Pastebin/06-Deep-Dives/06-Async-S3-Upload/03-State-Machine.md
+        - Retry Strategy: 02-Ascent/02-Pastebin/06-Deep-Dives/06-Async-S3-Upload/04-Retry-Strategy.md
+        - Read Path Behaviour: 02-Ascent/02-Pastebin/06-Deep-Dives/06-Async-S3-Upload/05-Read-Path-Behaviour.md
+      - "Deep Dive — Expiry Cleanup Job":
+        - Why Cleanup Job: 02-Ascent/02-Pastebin/06-Deep-Dives/07-Expiry-Cleanup-Job/01-Why-Cleanup-Job.md
+        - Cleanup Flow: 02-Ascent/02-Pastebin/06-Deep-Dives/07-Expiry-Cleanup-Job/02-Cleanup-Flow.md
+        - Distributed Workers: 02-Ascent/02-Pastebin/06-Deep-Dives/07-Expiry-Cleanup-Job/03-Distributed-Workers.md
+        - Watchdog: 02-Ascent/02-Pastebin/06-Deep-Dives/07-Expiry-Cleanup-Job/04-Watchdog.md
+        - Indexing Strategy: 02-Ascent/02-Pastebin/06-Deep-Dives/07-Expiry-Cleanup-Job/05-Indexing-Strategy.md
+      - Updated Architecture: 02-Ascent/02-Pastebin/06-Deep-Dives/08-Updated-Architecture/01-Updated-Architecture.md
+      - "Observability":
+        - SLI / SLO Connection: 02-Ascent/02-Pastebin/07-Observability/01-SLI-SLO-Connection.md
+        - Measuring Latency: 02-Ascent/02-Pastebin/07-Observability/02-Measuring-Latency.md
+        - Measuring Availability: 02-Ascent/02-Pastebin/07-Observability/03-Measuring-Availability.md
+        - Alerting: 02-Ascent/02-Pastebin/07-Observability/04-Alerting.md
+        - Error Budget: 02-Ascent/02-Pastebin/07-Observability/05-Error-Budget.md
+
+  - "03 · Expedition":
+    - Rate Limiter:
+      - Functional Requirements: 03-Expedition/01-Rate-Limiter/01-FR.md
+      - Estimation: 03-Expedition/01-Rate-Limiter/02-Estimation.md
+      - Non-Functional Requirements: 03-Expedition/01-Rate-Limiter/03-NFR.md
+      - API Design: 03-Expedition/01-Rate-Limiter/04-API.md
+      - Base Architecture: 03-Expedition/01-Rate-Limiter/05-Base-Architecture.md
+      - "Deep Dive — Algorithms":
+        - Fixed Window Counter: 03-Expedition/01-Rate-Limiter/06-Deep-Dives/01-Algorithms/01-Fixed-Window-Counter.md
+        - Sliding Window Log: 03-Expedition/01-Rate-Limiter/06-Deep-Dives/01-Algorithms/02-Sliding-Window-Log.md
+        - Sliding Window Counter: 03-Expedition/01-Rate-Limiter/06-Deep-Dives/01-Algorithms/03-Sliding-Window-Counter.md
+        - Token Bucket: 03-Expedition/01-Rate-Limiter/06-Deep-Dives/01-Algorithms/04-Token-Bucket.md
+        - Leaky Bucket: 03-Expedition/01-Rate-Limiter/06-Deep-Dives/01-Algorithms/05-Leaky-Bucket.md
+        - Algorithm Comparison: 03-Expedition/01-Rate-Limiter/06-Deep-Dives/01-Algorithms/06-Algorithm-Comparison.md
+      - "Deep Dive — Distributed Rate Limiting":
+        - Atomicity Problem: 03-Expedition/01-Rate-Limiter/06-Deep-Dives/02-Distributed-Rate-Limiting/01-Atomicity-Problem.md
+        - Redis Cluster: 03-Expedition/01-Rate-Limiter/06-Deep-Dives/02-Distributed-Rate-Limiting/02-Redis-Cluster.md
+      - "Deep Dive — Rule Storage":
+        - Rule Storage: 03-Expedition/01-Rate-Limiter/06-Deep-Dives/03-Rule-Storage/01-Rule-Storage.md
+      - "Deep Dive — Fault Isolation":
+        - Rate Limiter Node Down: 03-Expedition/01-Rate-Limiter/06-Deep-Dives/04-Fault-Isolation/01-Rate-Limiter-Node-Down.md
+        - Redis Node Down: 03-Expedition/01-Rate-Limiter/06-Deep-Dives/04-Fault-Isolation/02-Redis-Node-Down.md
+        - Rule DB Down: 03-Expedition/01-Rate-Limiter/06-Deep-Dives/04-Fault-Isolation/03-Rule-DB-Down.md
+        - API Gateway Down: 03-Expedition/01-Rate-Limiter/06-Deep-Dives/04-Fault-Isolation/04-API-Gateway-Down.md
+        - DDoS And Defense Layers: 03-Expedition/01-Rate-Limiter/06-Deep-Dives/04-Fault-Isolation/05-DDoS-And-Defense-Layers.md
+      - Final Design: 03-Expedition/01-Rate-Limiter/07-Final-Design/01-Final-Design.md
+      - "Observability":
+        - SLI / SLO Connection: 03-Expedition/01-Rate-Limiter/08-Observability/01-SLI-SLO-Connection.md
+        - Measuring Latency: 03-Expedition/01-Rate-Limiter/08-Observability/02-Measuring-Latency.md
+        - Measuring Availability: 03-Expedition/01-Rate-Limiter/08-Observability/03-Measuring-Availability.md
+        - Alerting: 03-Expedition/01-Rate-Limiter/08-Observability/04-Alerting.md
+        - Error Budget: 03-Expedition/01-Rate-Limiter/08-Observability/05-Error-Budget.md
+
+  - "04 · Summit":
+    - WhatsApp:
+      - Overview: 04-Summit/01-WhatsApp/index.md
+      - Functional Requirements: 04-Summit/01-WhatsApp/01-FR.md
+      - Estimation: 04-Summit/01-WhatsApp/02-Estimation.md
+      - Non-Functional Requirements: 04-Summit/01-WhatsApp/03-NFR.md
+      - API Design: 04-Summit/01-WhatsApp/04-API.md
+      - "Real-Time Comms":
+        - The Problem: 04-Summit/01-WhatsApp/04-Real-Time-Comms/01-The-Problem.md
+        - Short Polling: 04-Summit/01-WhatsApp/04-Real-Time-Comms/02-Short-Polling.md
+        - Long Polling: 04-Summit/01-WhatsApp/04-Real-Time-Comms/03-Long-Polling.md
+        - SSE: 04-Summit/01-WhatsApp/04-Real-Time-Comms/04-SSE.md
+        - WebSockets: 04-Summit/01-WhatsApp/04-Real-Time-Comms/05-WebSockets.md
+        - Comparison: 04-Summit/01-WhatsApp/04-Real-Time-Comms/06-Comparison.md
+      - "Base Architecture":
+        - Overview: 04-Summit/01-WhatsApp/05-Base-Architecture/01-Overview.md
+        - WebSocket Connection Flow: 04-Summit/01-WhatsApp/05-Base-Architecture/02-WebSocket-Connection-Flow.md
+        - Message Send Flow: 04-Summit/01-WhatsApp/05-Base-Architecture/03-Message-Send-Flow.md
+        - Chat History Flow: 04-Summit/01-WhatsApp/05-Base-Architecture/04-Chat-History-Flow.md
+        - API GW And LB: 04-Summit/01-WhatsApp/05-Base-Architecture/05-API-GW-And-LB.md
+      - "Deep Dive — Database":
+        - DB Choice: 04-Summit/01-WhatsApp/06-Deep-Dives/01-DB/01-DB-Choice.md
+        - Schema: 04-Summit/01-WhatsApp/06-Deep-Dives/01-DB/02-Schema.md
+        - Tiered Storage: 04-Summit/01-WhatsApp/06-Deep-Dives/01-DB/03-Tiered-Storage.md
+        - Sharding: 04-Summit/01-WhatsApp/06-Deep-Dives/01-DB/04-Sharding.md
+        - Hot Partition — Overview: 04-Summit/01-WhatsApp/06-Deep-Dives/01-DB/05-Hot-Partition/00-Overview.md
+        - Hot Partition — Detection: 04-Summit/01-WhatsApp/06-Deep-Dives/01-DB/05-Hot-Partition/01-Detection.md
+        - Hot Partition — Salting: 04-Summit/01-WhatsApp/06-Deep-Dives/01-DB/05-Hot-Partition/02-Salting.md
+        - Hot Partition — Dynamic N: 04-Summit/01-WhatsApp/06-Deep-Dives/01-DB/05-Hot-Partition/03-Dynamic-N.md
+        - Hot Partition — Read Query: 04-Summit/01-WhatsApp/06-Deep-Dives/01-DB/05-Hot-Partition/04-Read-Query.md
+        - Hot Partition — Registry: 04-Summit/01-WhatsApp/06-Deep-Dives/01-DB/05-Hot-Partition/05-Registry.md
+        - Hot Partition — Edge Cases: 04-Summit/01-WhatsApp/06-Deep-Dives/01-DB/05-Hot-Partition/06-Edge-Cases.md
+        - Updated Architecture: 04-Summit/01-WhatsApp/06-Deep-Dives/01-DB/06-Updated-Architecture.md
+      - "Deep Dive — Message Ordering":
+        - The Problem: 04-Summit/01-WhatsApp/06-Deep-Dives/02-Message-Ordering/01-The-Problem.md
+        - Client Timestamps: 04-Summit/01-WhatsApp/06-Deep-Dives/02-Message-Ordering/02-Client-Timestamps.md
+        - Time Machine Problem: 04-Summit/01-WhatsApp/06-Deep-Dives/02-Message-Ordering/03-Time-Machine-Problem.md
+        - Server Timestamps: 04-Summit/01-WhatsApp/06-Deep-Dives/02-Message-Ordering/04-Server-Timestamps.md
+        - Dedicated Timestamp Service: 04-Summit/01-WhatsApp/06-Deep-Dives/02-Message-Ordering/05-Dedicated-Timestamp-Service.md
+        - Per-User Sequence: 04-Summit/01-WhatsApp/06-Deep-Dives/02-Message-Ordering/06-Per-User-Sequence.md
+        - Per-Conversation Sequence: 04-Summit/01-WhatsApp/06-Deep-Dives/02-Message-Ordering/07-Per-Conversation-Sequence.md
+        - Redis INCR: 04-Summit/01-WhatsApp/06-Deep-Dives/02-Message-Ordering/08-Redis-INCR.md
+        - Full Ordering Flow: 04-Summit/01-WhatsApp/06-Deep-Dives/02-Message-Ordering/09-Full-Ordering-Flow.md
+        - Schema Update: 04-Summit/01-WhatsApp/06-Deep-Dives/02-Message-Ordering/10-Schema-Update.md
+        - Display Time: 04-Summit/01-WhatsApp/06-Deep-Dives/02-Message-Ordering/11-Display-Time.md
+        - Updated Architecture: 04-Summit/01-WhatsApp/06-Deep-Dives/02-Message-Ordering/12-Updated-Architecture.md
+      - "Deep Dive — Offline Delivery":
+        - The Problem: 04-Summit/01-WhatsApp/06-Deep-Dives/03-Offline-Delivery/01-The-Problem.md
+        - Detecting Offline: 04-Summit/01-WhatsApp/06-Deep-Dives/03-Offline-Delivery/02-Detecting-Offline.md
+        - Naive Mailbox: 04-Summit/01-WhatsApp/06-Deep-Dives/03-Offline-Delivery/03-Naive-Mailbox.md
+        - Message ID Only: 04-Summit/01-WhatsApp/06-Deep-Dives/03-Offline-Delivery/04-Message-Id-Only.md
+        - Why Not Kafka: 04-Summit/01-WhatsApp/06-Deep-Dives/03-Offline-Delivery/05-Why-Not-Kafka.md
+        - Last Delivered Seq: 04-Summit/01-WhatsApp/06-Deep-Dives/03-Offline-Delivery/06-Last-Delivered-Seq.md
+        - Pending Deliveries Table: 04-Summit/01-WhatsApp/06-Deep-Dives/03-Offline-Delivery/07-Pending-Deliveries-Table.md
+        - Write Flow: 04-Summit/01-WhatsApp/06-Deep-Dives/03-Offline-Delivery/08-Write-Flow.md
+        - Push Notifications: 04-Summit/01-WhatsApp/06-Deep-Dives/03-Offline-Delivery/09-Push-Notifications.md
+        - Notification Payload: 04-Summit/01-WhatsApp/06-Deep-Dives/03-Offline-Delivery/10-Notification-Payload.md
+        - Internet Turns On: 04-Summit/01-WhatsApp/06-Deep-Dives/03-Offline-Delivery/11-Internet-Turns-On.md
+        - Notification Reply: 04-Summit/01-WhatsApp/06-Deep-Dives/03-Offline-Delivery/12-Notification-Reply.md
+        - Updated Architecture: 04-Summit/01-WhatsApp/06-Deep-Dives/03-Offline-Delivery/13-Updated-Architecture.md
+      - "Deep Dive — Message Status":
+        - The Three Ticks: 04-Summit/01-WhatsApp/06-Deep-Dives/04-Message-Status/01-The-Three-Ticks.md
+        - Naive Status Column: 04-Summit/01-WhatsApp/06-Deep-Dives/04-Message-Status/02-Naive-Status-Column.md
+        - Status Table: 04-Summit/01-WhatsApp/06-Deep-Dives/04-Message-Status/03-Status-Table.md
+        - Delivered Ack: 04-Summit/01-WhatsApp/06-Deep-Dives/04-Message-Status/04-Delivered-Ack.md
+        - Read Receipt Flow: 04-Summit/01-WhatsApp/06-Deep-Dives/04-Message-Status/05-Read-Receipt-Flow.md
+        - APNs Not Reliable: 04-Summit/01-WhatsApp/06-Deep-Dives/04-Message-Status/06-APNs-Not-Reliable.md
+        - Notification Banner: 04-Summit/01-WhatsApp/06-Deep-Dives/04-Message-Status/07-Notification-Banner.md
+        - Phone Off Three Days: 04-Summit/01-WhatsApp/06-Deep-Dives/04-Message-Status/08-Phone-Off-Three-Days.md
+        - Offline Status Sync: 04-Summit/01-WhatsApp/06-Deep-Dives/04-Message-Status/09-Offline-Status-Sync.md
+        - Read Receipts — Mutual Rule: 04-Summit/01-WhatsApp/06-Deep-Dives/04-Message-Status/10-Privacy-Settings/01-Read-Receipts/01-Mutual-Rule.md
+        - Read Receipts — Where To Store Flag: 04-Summit/01-WhatsApp/06-Deep-Dives/04-Message-Status/10-Privacy-Settings/01-Read-Receipts/02-Where-To-Store-Flag.md
+        - Read Receipts — Client vs Server Check: 04-Summit/01-WhatsApp/06-Deep-Dives/04-Message-Status/10-Privacy-Settings/01-Read-Receipts/03-Client-vs-Server-Check.md
+        - Read Receipts — How Mutual Rule Enforces: 04-Summit/01-WhatsApp/06-Deep-Dives/04-Message-Status/10-Privacy-Settings/01-Read-Receipts/04-How-Mutual-Rule-Enforces.md
+        - Last Seen — What Is It: 04-Summit/01-WhatsApp/06-Deep-Dives/04-Message-Status/10-Privacy-Settings/02-Last-Seen/01-What-Is-Last-Seen.md
+        - Last Seen — How It Gets Recorded: 04-Summit/01-WhatsApp/06-Deep-Dives/04-Message-Status/10-Privacy-Settings/02-Last-Seen/02-How-It-Gets-Recorded.md
+        - Last Seen — How Alice Sees It: 04-Summit/01-WhatsApp/06-Deep-Dives/04-Message-Status/10-Privacy-Settings/02-Last-Seen/03-How-Alice-Sees-It.md
+        - Last Seen — Privacy And Mutual Rule: 04-Summit/01-WhatsApp/06-Deep-Dives/04-Message-Status/10-Privacy-Settings/02-Last-Seen/04-Privacy-And-Mutual-Rule.md
+        - Last Seen — vs Read Receipts: 04-Summit/01-WhatsApp/06-Deep-Dives/04-Message-Status/10-Privacy-Settings/02-Last-Seen/05-vs-Read-Receipts.md
+        - Updated Architecture: 04-Summit/01-WhatsApp/06-Deep-Dives/04-Message-Status/11-Updated-Architecture.md
+      - "Deep Dive — Inbox":
+        - Inbox Load Flow: 04-Summit/01-WhatsApp/06-Deep-Dives/05-Inbox/01-Inbox-Load-Flow.md
+        - N+1 And Denormalization: 04-Summit/01-WhatsApp/06-Deep-Dives/05-Inbox/02-N+1-And-Denormalization.md
+        - Conversations Table Schema: 04-Summit/01-WhatsApp/06-Deep-Dives/05-Inbox/03-Conversations-Table-Schema.md
+        - LSM Tree And Immutable Keys: 04-Summit/01-WhatsApp/06-Deep-Dives/05-Inbox/04-LSM-Tree-And-Immutable-Keys.md
+        - Option A vs Option B: 04-Summit/01-WhatsApp/06-Deep-Dives/05-Inbox/05-Option-A-vs-Option-B.md
+        - Redis Sorted Set: 04-Summit/01-WhatsApp/06-Deep-Dives/05-Inbox/06-Redis-Sorted-Set.md
+        - Unread Count: 04-Summit/01-WhatsApp/06-Deep-Dives/05-Inbox/07-Unread-Count.md
+        - Updated Architecture: 04-Summit/01-WhatsApp/06-Deep-Dives/05-Inbox/08-Updated-Architecture.md
+      - "Deep Dive — Caching":
+        - Message History Cache: 04-Summit/01-WhatsApp/06-Deep-Dives/06-Caching/01-Message-History-Cache.md
+        - Profile Cache: 04-Summit/01-WhatsApp/06-Deep-Dives/06-Caching/02-Profile-Cache.md
+        - Cache Invalidation: 04-Summit/01-WhatsApp/06-Deep-Dives/06-Caching/03-Cache-Invalidation.md
+        - Cold Start And Coalescing: 04-Summit/01-WhatsApp/06-Deep-Dives/06-Caching/04-Cold-Start-And-Coalescing.md
+        - Updated Architecture: 04-Summit/01-WhatsApp/06-Deep-Dives/06-Caching/05-Updated-Architecture.md
+      - "Deep Dive — Peak Traffic":
+        - Thundering Herd — Redis Sharding: 04-Summit/01-WhatsApp/06-Deep-Dives/07-Peak-Traffic/01-Thundering-Herd/01-Redis-Sharding.md
+        - Connection Storm — The Problem: 04-Summit/01-WhatsApp/06-Deep-Dives/07-Peak-Traffic/02-Connection-Storm/01-The-Problem.md
+        - Connection Storm — Kafka Queue Delay: 04-Summit/01-WhatsApp/06-Deep-Dives/07-Peak-Traffic/02-Connection-Storm/02-Kafka-Queue-Delay.md
+        - Connection Storm — Offline Delivery Fallback: 04-Summit/01-WhatsApp/06-Deep-Dives/07-Peak-Traffic/02-Connection-Storm/03-Offline-Delivery-Fallback.md
+        - Rate Limiting — Why Not API Gateway: 04-Summit/01-WhatsApp/06-Deep-Dives/07-Peak-Traffic/03-Rate-Limiting/01-Why-Not-API-Gateway.md
+        - Rate Limiting — Connection Server Limit: 04-Summit/01-WhatsApp/06-Deep-Dives/07-Peak-Traffic/03-Rate-Limiting/02-Connection-Server-Limit.md
+        - Rate Limiting — Centralised Redis Counter: 04-Summit/01-WhatsApp/06-Deep-Dives/07-Peak-Traffic/03-Rate-Limiting/03-Centralised-Redis-Counter.md
+        - Rate Limiting — Client Notification: 04-Summit/01-WhatsApp/06-Deep-Dives/07-Peak-Traffic/03-Rate-Limiting/04-Client-Notification.md
+        - Backpressure — The Problem: 04-Summit/01-WhatsApp/06-Deep-Dives/07-Peak-Traffic/04-Backpressure/01-The-Problem.md
+        - Backpressure — In-Memory Queue: 04-Summit/01-WhatsApp/06-Deep-Dives/07-Peak-Traffic/04-Backpressure/02-In-Memory-Queue.md
+        - Backpressure — Thread Pool vs MQ: 04-Summit/01-WhatsApp/06-Deep-Dives/07-Peak-Traffic/04-Backpressure/03-Thread-Pool-vs-MQ.md
+        - Backpressure — Load Shedding: 04-Summit/01-WhatsApp/06-Deep-Dives/07-Peak-Traffic/04-Backpressure/04-Load-Shedding.md
+        - Updated Architecture: 04-Summit/01-WhatsApp/06-Deep-Dives/07-Peak-Traffic/05-Updated-Architecture.md
+      - "Deep Dive — Fault Isolation":
+        - Connection Server Failure — Client Reconnect: 04-Summit/01-WhatsApp/06-Deep-Dives/XX-Fault-Isolation/01-Connection-Server-Failure/01-Client-Reconnect.md
+        - Connection Server Failure — Registry Cleanup: 04-Summit/01-WhatsApp/06-Deep-Dives/XX-Fault-Isolation/01-Connection-Server-Failure/02-Registry-Cleanup.md
+        - Connection Server Failure — Stale Registry Fallback: 04-Summit/01-WhatsApp/06-Deep-Dives/XX-Fault-Isolation/01-Connection-Server-Failure/03-Stale-Registry-Fallback.md
+        - Connection Server Failure — Reconnect Storm: 04-Summit/01-WhatsApp/06-Deep-Dives/XX-Fault-Isolation/01-Connection-Server-Failure/04-Reconnect-Storm.md
+        - DynamoDB Failure — Circuit Breaker: 04-Summit/01-WhatsApp/06-Deep-Dives/XX-Fault-Isolation/02-DynamoDB-Failure/01-Circuit-Breaker.md
+        - DynamoDB Failure — Fallback And Message Loss: 04-Summit/01-WhatsApp/06-Deep-Dives/XX-Fault-Isolation/02-DynamoDB-Failure/02-Fallback-And-Message-Loss.md
+        - Redis Failure — Inbox: 04-Summit/01-WhatsApp/06-Deep-Dives/XX-Fault-Isolation/03-Redis-Failure/01-Inbox-Redis-Failure.md
+        - Redis Failure — Profile Cache: 04-Summit/01-WhatsApp/06-Deep-Dives/XX-Fault-Isolation/03-Redis-Failure/02-Profile-Cache-Failure.md
+        - Redis Failure — Other: 04-Summit/01-WhatsApp/06-Deep-Dives/XX-Fault-Isolation/03-Redis-Failure/03-Other-Redis-Failures.md
+      - Final Architecture: 04-Summit/01-WhatsApp/07-Final-Design/01-Final-Architecture.md
+      - "Observability":
+        - SLI / SLO Connection: 04-Summit/01-WhatsApp/08-Observability/01-SLI-SLO-Connection.md
+        - Measuring Latency: 04-Summit/01-WhatsApp/08-Observability/02-Measuring-Latency.md
+        - Measuring Availability: 04-Summit/01-WhatsApp/08-Observability/03-Measuring-Availability.md
+        - Alerting: 04-Summit/01-WhatsApp/08-Observability/04-Alerting.md
+        - Error Budget: 04-Summit/01-WhatsApp/08-Observability/05-Error-Budget.md

@@ -243,9 +243,40 @@
   color: var(--green-dark);
 }
 
+/* Home page cards */
+.md-typeset .grid.cards > ul > li,
+.md-typeset .grid.cards > :not(ul) {
+  border-radius: 14px;
+  padding: 2rem;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+  transition: box-shadow 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
+  background: #ffffff;
+}
+
+.md-typeset .grid.cards > ul > li:hover,
+.md-typeset .grid.cards > :not(ul):hover {
+  box-shadow: 0 8px 28px rgba(0,179,126,0.12);
+  transform: translateY(-3px);
+  border-color: var(--green);
+}
+
 /* Wider content */
 .md-grid {
   max-width: 1260px;
+}
+
+/* Home page grid — constrains width, kills stray p margins */
+.cs-home-grid {
+  max-width: 640px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.cs-home-grid p {
+  display: none;
 }
 
 /* TOC (right sidebar) */
@@ -323,394 +354,191 @@
   border-color: #f0f0f0;
 }
 
-/* ══════════════════════════════════════════
-   InterviewBit-style Home Page
-   ══════════════════════════════════════════ */
+/* ── Case Study Home Page ── */
 
-/* Hide auto-generated h1 and header title on home page */
-.md-content__inner:has(.ib-course) > h1:first-child {
+.cs-hero {
+  text-align: center;
+  padding: 3rem 1rem 1.5rem;
+  margin-bottom: 1.8rem;
+}
+
+/* Hide auto-generated h1 on pages that have a cs-hero */
+.md-content__inner:has(.cs-hero) > h1:first-child {
   display: none;
 }
 
-.md-content__inner:has(.ib-course) hr {
+/* Kill all stray horizontal lines on home/bucket pages */
+.md-content__inner:has(.cs-hero) hr {
   display: none;
 }
 
-.md-content__inner:has(.ib-course) .md-typeset h2 {
+.md-content__inner:has(.cs-hero) .md-typeset h2 {
   border-bottom: none !important;
 }
 
-body:has(.ib-course) .md-header__title {
-  visibility: hidden;
-}
-
-/* ── Tagline ── */
-.ib-hero-tagline {
-  font-size: 1.7rem !important;
-  font-weight: 800 !important;
-  line-height: 1.25 !important;
-  letter-spacing: -0.5px !important;
-  margin: 0 0 2rem !important;
-  display: block !important;
-  text-align: center;
-  background: linear-gradient(135deg, #111827 0%, #15803d 55%, #1d4ed8 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-/* ── Jump to Level nav ── */
-.ib-levels-nav {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  padding: 1rem 1rem;
-  background: #ffffff;
-  border-bottom: 1px solid #f0f0f0;
-  margin: 0 -1rem;
-  position: sticky;
-  top: 0;
-  z-index: 10;
-}
-
-.ib-levels-label {
+.cs-hero-label {
   font-size: 0.7rem;
   font-weight: 700;
-  color: #9ca3af;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  margin-right: 0.5rem;
+  letter-spacing: 0.12em;
+  color: var(--green);
+  margin-bottom: 0.8rem;
 }
 
-.ib-lnav {
-  width: 34px;
-  height: 34px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.78rem;
-  font-weight: 800;
-  color: #fff !important;
-  text-decoration: none !important;
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
-}
-
-.ib-lnav:hover {
-  transform: scale(1.15);
-  box-shadow: 0 3px 12px rgba(0,0,0,0.15);
-}
-
-.ib-lnav.lv1 { background: linear-gradient(135deg, #22c55e, #15803d); }
-.ib-lnav.lv2 { background: linear-gradient(135deg, #60a5fa, #1d4ed8); }
-.ib-lnav.lv3 { background: linear-gradient(135deg, #facc15, #a16207); }
-.ib-lnav.lv4 { background: linear-gradient(135deg, #fb923c, #c2410c); }
-.ib-lnav.lv5 { background: linear-gradient(135deg, #d1d5db, #9ca3af); }
-
-/* ── Course container ── */
-.ib-course {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 2rem 0.5rem 3rem;
-}
-
-.ib-course p { display: none; }
-
-/* ── Level section ── */
-.ib-level {
-  margin-bottom: 2.5rem;
-  padding: 1.8rem;
-  background: #ffffff;
-  border: 1px solid #e5e7eb;
-  border-radius: 16px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
-  transition: box-shadow 0.2s ease;
-}
-
-.ib-level:hover {
-  box-shadow: 0 4px 16px rgba(0,0,0,0.06);
-}
-
-.ib-level-header {
-  display: flex;
-  align-items: flex-start;
-  gap: 1rem;
-  margin-bottom: 1.2rem;
-}
-
-.ib-level-marker {
-  width: 42px;
-  height: 42px;
-  border-radius: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1rem;
-  font-weight: 800;
-  color: #fff;
-  flex-shrink: 0;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-
-.lv1-bg { background: linear-gradient(135deg, #22c55e, #15803d); }
-.lv2-bg { background: linear-gradient(135deg, #60a5fa, #1d4ed8); }
-.lv3-bg { background: linear-gradient(135deg, #facc15, #a16207); }
-.lv4-bg { background: linear-gradient(135deg, #fb923c, #c2410c); }
-.lv5-bg { background: linear-gradient(135deg, #d1d5db, #9ca3af); }
-
-.ib-level-info {
-  flex: 1;
-  min-width: 0;
-}
-
-.ib-level-badge {
-  font-size: 0.6rem;
-  font-weight: 800;
-  letter-spacing: 0.1em;
-  padding: 0.15rem 0.5rem;
-  border-radius: 5px;
-  display: inline-block;
-  margin-bottom: 0.25rem;
-}
-
-.ib-level-badge.lv1 { background: #dcfce7; color: #15803d; }
-.ib-level-badge.lv2 { background: #dbeafe; color: #1d4ed8; }
-.ib-level-badge.lv3 { background: #fef9c3; color: #a16207; }
-.ib-level-badge.lv4 { background: #ffedd5; color: #c2410c; }
-.ib-level-badge.lv5 { background: #f3f4f6; color: #9ca3af; }
-
-.ib-level-title {
-  font-size: 1.3rem !important;
-  font-weight: 700 !important;
+.cs-hero-title {
+  font-size: 2.6rem !important;
+  font-weight: 800 !important;
+  line-height: 1.2 !important;
+  letter-spacing: -0.5px !important;
   color: #111827 !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  border: none !important;
-  line-height: 1.3 !important;
+  margin-bottom: 1rem !important;
+}
+
+.cs-hero-sub {
+  font-size: 1.15rem;
+  color: #374151;
+  max-width: 480px;
+  margin: 0 auto;
+  line-height: 1.75;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+
+.cs-path-label {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: #9ca3af;
+  margin-bottom: 1.2rem;
+  padding-left: 2px;
+}
+
+/* Level block */
+.cs-level {
+  margin-bottom: 0.9rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #ffffff;
+  border-left: 3px solid #e5e7eb;
+}
+
+.cs-level.lv1-border { border-left-color: #15803d; }
+.cs-level.lv2-border { border-left-color: #1d4ed8; }
+.cs-level.lv3-border { border-left-color: #a16207; }
+.cs-level.lv4-border { border-left-color: #c2410c; }
+.cs-level.lv5-border { border-left-color: #d1d5db; }
+
+.cs-level.locked {
+  background: #fafafa;
+  opacity: 0.55;
+  border-left-color: #d1d5db;
+}
+
+.cs-level-header {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  padding: 1.1rem 1.4rem;
+  border-bottom: none;
+}
+
+.cs-level.locked .cs-level-header {
+  border-bottom: none;
+}
+
+.cs-level-badge {
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  padding: 0.35rem 0.65rem;
+  border-radius: 8px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.cs-level-badge.lv1 { background: #dcfce7; color: #15803d; }
+.cs-level-badge.lv2 { background: #dbeafe; color: #1d4ed8; }
+.cs-level-badge.lv3 { background: #fef9c3; color: #a16207; }
+.cs-level-badge.lv4 { background: #ffedd5; color: #c2410c; }
+.cs-level-badge.lv5 { background: #fee2e2; color: #b91c1c; }
+
+.cs-level-meta {
+  flex: 1;
+}
+
+.cs-level-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #111827;
   display: flex;
   align-items: center;
   gap: 0.6rem;
 }
 
-.ib-level-sub {
+.cs-level-desc {
   font-size: 0.82rem;
   color: #6b7280;
   margin-top: 0.15rem;
-  line-height: 1.5;
 }
 
-/* ── Cards grid ── */
-.ib-cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 1rem;
-}
-
-.ib-card {
-  display: block;
-  text-decoration: none !important;
-  border: 1px solid #e5e7eb;
-  border-left: 3px solid #d1d5db;
-  border-radius: 12px;
-  padding: 1.5rem 1.6rem;
-  background: #ffffff;
-  transition: all 0.2s ease;
-  color: inherit !important;
-  position: relative;
-}
-
-#level-1 .ib-card { border-left-color: #22c55e; }
-#level-2 .ib-card { border-left-color: #60a5fa; }
-#level-3 .ib-card { border-left-color: #facc15; }
-#level-4 .ib-card { border-left-color: #fb923c; }
-
-.ib-card:hover {
-  box-shadow: 0 6px 24px rgba(0,0,0,0.07);
-  transform: translateY(-2px);
-  background: #ffffff;
-}
-
-#level-1 .ib-card:hover { border-left-color: #15803d; box-shadow: 0 6px 24px rgba(34,197,94,0.12); }
-#level-2 .ib-card:hover { border-left-color: #1d4ed8; box-shadow: 0 6px 24px rgba(96,165,250,0.12); }
-#level-3 .ib-card:hover { border-left-color: #a16207; box-shadow: 0 6px 24px rgba(250,204,21,0.12); }
-#level-4 .ib-card:hover { border-left-color: #c2410c; box-shadow: 0 6px 24px rgba(251,146,60,0.12); }
-
-.ib-card-head {
-  display: none;
-}
-
-.ib-card-title {
-  font-size: 1.12rem !important;
-  font-weight: 700 !important;
-  color: #111827 !important;
-  margin: 0 0 0.5rem !important;
-  padding: 0 !important;
-  border: none !important;
-}
-
-.ib-card-desc {
-  font-size: 0.84rem;
-  color: #6b7280;
-  line-height: 1.6;
-  margin-bottom: 1rem;
-}
-
-.ib-card-stats {
-  display: flex;
-  gap: 0.5rem;
-  margin-bottom: 0.9rem;
-}
-
-.ib-card-stat {
-  font-size: 0.7rem;
+.cs-level-count {
+  font-size: 0.78rem;
   font-weight: 600;
-  color: #374151;
-  background: #f9fafb;
-  padding: 0.25rem 0.7rem;
-  border-radius: 6px;
-  border: 1px solid #e5e7eb;
-}
-
-.ib-card-stat strong {
-  font-weight: 800;
-  color: #111827;
-}
-
-.ib-card-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.35rem;
-}
-
-.ib-card-tags span {
-  font-size: 0.66rem;
-  font-weight: 500;
   color: #6b7280;
-  background: transparent;
-  border: 1px solid #e5e7eb;
-  padding: 0.18rem 0.55rem;
-  border-radius: 20px;
-  transition: all 0.15s ease;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
-.ib-card:hover .ib-card-tags span {
-  color: #374151;
-  border-color: #d1d5db;
+.cs-locked-count {
+  color: #d1d5db;
 }
 
-/* ── Locked level ── */
-.ib-locked {
-  opacity: 0.5;
-  pointer-events: none;
-}
-
-.ib-locked .ib-level-marker {
-  box-shadow: none;
-}
-
-.ib-soon {
-  font-size: 0.58rem;
+.cs-soon {
+  font-size: 0.65rem;
   font-weight: 700;
   letter-spacing: 0.08em;
   color: #9ca3af;
   background: #f3f4f6;
-  padding: 0.18rem 0.5rem;
+  padding: 0.2rem 0.5rem;
   border-radius: 20px;
   vertical-align: middle;
 }
 
-/* ══════════════════════════════════════════
-   Legacy classes (section index pages)
-   ══════════════════════════════════════════ */
-
-/* Cards row — used on section index pages */
+/* Cards row */
 .cs-cards {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 1rem;
-  padding: 1.2rem 0;
+  padding: 1.2rem 1.5rem;
 }
 
+/* Individual card */
 .cs-card {
   display: block;
   text-decoration: none !important;
   border: 1px solid #e5e7eb;
-  border-radius: 14px;
-  padding: 1.3rem 1.5rem;
+  border-radius: 12px;
+  padding: 1.3rem 1.4rem;
   background: #ffffff;
-  transition: box-shadow 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
+  transition: box-shadow 0.18s ease, transform 0.18s ease, border-color 0.18s ease;
   color: inherit !important;
 }
 
 .cs-card:hover {
-  box-shadow: 0 8px 28px rgba(0,179,126,0.12);
+  box-shadow: 0 6px 24px rgba(0,179,126,0.13);
   transform: translateY(-2px);
   border-color: var(--green);
   text-decoration: none !important;
 }
 
-.cs-card-top {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 0.5rem;
+.cs-card-elite {
+  border-color: #fecaca;
+  background: linear-gradient(135deg, #ffffff 0%, #fff5f5 100%);
 }
 
-.cs-card-title {
-  font-size: 1.1rem;
-  font-weight: 700;
-  color: #111827;
-}
-
-.cs-card-arrow {
-  font-size: 1.2rem;
-  color: #d1d5db;
-  transition: color 0.15s ease, transform 0.15s ease;
-}
-
-.cs-card:hover .cs-card-arrow {
-  color: var(--green);
-  transform: translateX(3px);
-}
-
-.cs-card-desc {
-  font-size: 0.84rem;
-  color: #6b7280;
-  line-height: 1.55;
-  margin-bottom: 0.8rem;
-}
-
-.cs-card-meta {
-  display: flex;
-  gap: 1rem;
-  margin-bottom: 0.8rem;
-}
-
-.cs-card-stat {
-  font-size: 0.75rem;
-  font-weight: 600;
-  color: var(--green-dark);
-  background: var(--green-light);
-  padding: 0.2rem 0.6rem;
-  border-radius: 20px;
-}
-
-.cs-topics {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.35rem;
-}
-
-.cs-topics span {
-  font-size: 0.68rem;
-  font-weight: 500;
-  color: #374151;
-  background: #f3f4f6;
-  border: 1px solid #e5e7eb;
-  padding: 0.18rem 0.55rem;
-  border-radius: 20px;
+.cs-card-elite:hover {
+  box-shadow: 0 6px 24px rgba(185,28,28,0.12);
+  border-color: #f87171;
 }
 
 .cs-card-header {
@@ -731,47 +559,57 @@ body:has(.ib-course) .md-header__title {
 .cs-badge.summit       { background: #ffedd5; color: #c2410c; }
 .cs-badge.battleground { background: #fee2e2; color: #b91c1c; }
 
-/* ── Mobile responsive ── */
-@media (max-width: 600px) {
-  .ib-hero-tagline {
-    font-size: 1.3rem !important;
-  }
+.cs-card-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 0.35rem;
+}
 
-  .ib-levels-nav {
-    gap: 0.35rem;
-    padding: 0.8rem 0.5rem;
-  }
+.cs-card-desc {
+  font-size: 0.84rem;
+  color: #6b7280;
+  line-height: 1.55;
+  margin-bottom: 1rem;
+}
 
-  .ib-lnav {
-    width: 30px;
-    height: 30px;
-    font-size: 0.7rem;
-  }
+.cs-topics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
 
-  .ib-course {
-    padding: 1.5rem 0.2rem 2rem;
-  }
+.cs-topics span {
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: #374151;
+  background: #f3f4f6;
+  border: 1px solid #e5e7eb;
+  padding: 0.18rem 0.55rem;
+  border-radius: 20px;
+}
 
-  .ib-level {
-    padding: 1.2rem;
-    margin-bottom: 1.5rem;
-  }
+/* ── Clickable level blocks ── */
+a.cs-level-link {
+  display: block;
+  text-decoration: none !important;
+  color: inherit !important;
+  transition: box-shadow 0.18s ease, transform 0.18s ease, border-color 0.18s ease;
+  cursor: pointer;
+}
 
-  .ib-level-marker {
-    width: 36px;
-    height: 36px;
-    font-size: 0.88rem;
-  }
+a.cs-level-link:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+  transform: translateY(-1px);
+  text-decoration: none !important;
+}
 
-  .ib-level-title {
-    font-size: 1.1rem !important;
-  }
+a.cs-level-link .cs-level-count::after {
+  content: " \2192";
+  opacity: 0;
+  transition: opacity 0.15s ease;
+}
 
-  .ib-cards {
-    grid-template-columns: 1fr;
-  }
-
-  .ib-card {
-    padding: 1.1rem 1.2rem;
-  }
+a.cs-level-link:hover .cs-level-count::after {
+  opacity: 1;
 }

@@ -1,4 +1,4 @@
-site_name: System Design
+site_name: ""
 site_url: https://dummy-bug.github.io/leetdezine/
 site_description: System design case studies — built for interview depth, not interview breadth.
 
@@ -16,8 +16,8 @@ theme:
     primary: custom
     accent: custom
   features:
-    - navigation.tabs
-    - navigation.tabs.sticky
+    # - navigation.tabs
+    # - navigation.tabs.sticky
     - navigation.sections
     - navigation.expand
     - navigation.path
@@ -39,9 +39,7 @@ plugins:
       minify_html: true
 
 extra:
-  social:
-    - icon: fontawesome/brands/github
-      link: https://github.com/Dummy-Bug/leetdezine
+  generator: false
 
 extra_css:
   - stylesheets/extra.css
@@ -78,11 +76,9 @@ markdown_extensions:
       toc_depth: 3
 
 nav:
-  - Home: index.md
+  - "": index.md
 
-  - "01 · Foundation":
-    - 01-Foundation/index.md
-    - URL Shortener:
+  - URL Shortener:
       - Overview: 01-Foundation/01-URL-Shortener/index.md
       - Functional Requirements: 01-Foundation/01-URL-Shortener/01-FR.md
       - Estimation: 01-Foundation/01-URL-Shortener/02-Estimation.md
@@ -145,9 +141,7 @@ nav:
         - Alerting: 01-Foundation/01-URL-Shortener/09-Observability/04-Alerting.md
         - Error Budget: 01-Foundation/01-URL-Shortener/09-Observability/05-Error-Budget.md
 
-  - "02 · Ascent":
-    - 02-Ascent/index.md
-    - Pastebin:
+  - Pastebin:
       - Overview: 02-Ascent/02-Pastebin/index.md
       - Functional Requirements: 02-Ascent/02-Pastebin/01-FR.md
       - Estimation: 02-Ascent/02-Pastebin/02-Estimation.md
@@ -198,9 +192,7 @@ nav:
         - Alerting: 02-Ascent/02-Pastebin/07-Observability/04-Alerting.md
         - Error Budget: 02-Ascent/02-Pastebin/07-Observability/05-Error-Budget.md
 
-  - "03 · Expedition":
-    - 03-Expedition/index.md
-    - Rate Limiter:
+  - Rate Limiter:
       - Functional Requirements: 03-Expedition/01-Rate-Limiter/01-FR.md
       - Estimation: 03-Expedition/01-Rate-Limiter/02-Estimation.md
       - Non-Functional Requirements: 03-Expedition/01-Rate-Limiter/03-NFR.md
@@ -232,9 +224,7 @@ nav:
         - Alerting: 03-Expedition/01-Rate-Limiter/08-Observability/04-Alerting.md
         - Error Budget: 03-Expedition/01-Rate-Limiter/08-Observability/05-Error-Budget.md
 
-  - "04 · Summit":
-    - 04-Summit/index.md
-    - WhatsApp:
+  - WhatsApp:
       - Overview: 04-Summit/01-WhatsApp/index.md
       - Functional Requirements: 04-Summit/01-WhatsApp/01-FR.md
       - Estimation: 04-Summit/01-WhatsApp/02-Estimation.md

@@ -6,7 +6,7 @@ hide:
 ---
 
 <div class="cs-hero">
-  <p class="cs-hero-sub">Deep dives into real systems — the reasoning behind every design decision.</p>
+  <p class="cs-hero-sub">Design systems beyond whiteboard</p>
 </div>
 
 <div class="cs-home-grid">

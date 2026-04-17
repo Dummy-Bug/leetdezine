@@ -1,24 +1,20 @@
-site_name: LeetDezine
+site_name: System Design
 site_url: https://dummy-bug.github.io/leetdezine/
 site_description: System design case studies — built for interview depth, not interview breadth.
-repo_url: https://github.com/Dummy-Bug/leetdezine
-repo_name: Dummy-Bug/leetdezine
 
 theme:
   name: material
+  custom_dir: docs/overrides
+  font:
+    text: Inter
+    code: JetBrains Mono
+  icon:
+    repo: fontawesome/brands/github
+    logo: material/book-open-page-variant
   palette:
-    - scheme: default
-      primary: indigo
-      accent: indigo
-      toggle:
-        icon: material/brightness-7
-        name: Switch to dark mode
-    - scheme: slate
-      primary: indigo
-      accent: indigo
-      toggle:
-        icon: material/brightness-4
-        name: Switch to light mode
+    scheme: default
+    primary: custom
+    accent: custom
   features:
     - navigation.tabs
     - navigation.tabs.sticky
@@ -26,10 +22,29 @@ theme:
     - navigation.expand
     - navigation.path
     - navigation.top
+    - navigation.indexes
     - toc.follow
     - search.suggest
     - search.highlight
+    - search.share
     - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+
+plugins:
+  - search:
+      separator: '[\s\-\.]+'
+  - callouts
+  - minify:
+      minify_html: true
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Dummy-Bug/leetdezine
+
+extra_css:
+  - stylesheets/extra.css
 
 markdown_extensions:
   - admonition
@@ -41,19 +56,32 @@ markdown_extensions:
           format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.highlight:
       anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
   - pymdownx.inlinehilite
   - pymdownx.tabbed:
       alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.mark
+  - pymdownx.critic
+  - pymdownx.keys
+  - pymdownx.smartsymbols
   - tables
   - attr_list
   - md_in_html
+  - def_list
+  - footnotes
   - toc:
-      permalink: true
+      permalink: "#"
+      toc_depth: 3
 
 nav:
   - Home: index.md
 
   - "01 · Foundation":
+    - 01-Foundation/index.md
     - URL Shortener:
       - Overview: 01-Foundation/01-URL-Shortener/index.md
       - Functional Requirements: 01-Foundation/01-URL-Shortener/01-FR.md
@@ -118,6 +146,7 @@ nav:
         - Error Budget: 01-Foundation/01-URL-Shortener/09-Observability/05-Error-Budget.md
 
   - "02 · Ascent":
+    - 02-Ascent/index.md
     - Pastebin:
       - Overview: 02-Ascent/02-Pastebin/index.md
       - Functional Requirements: 02-Ascent/02-Pastebin/01-FR.md
@@ -170,6 +199,7 @@ nav:
         - Error Budget: 02-Ascent/02-Pastebin/07-Observability/05-Error-Budget.md
 
   - "03 · Expedition":
+    - 03-Expedition/index.md
     - Rate Limiter:
       - Functional Requirements: 03-Expedition/01-Rate-Limiter/01-FR.md
       - Estimation: 03-Expedition/01-Rate-Limiter/02-Estimation.md
@@ -203,6 +233,7 @@ nav:
         - Error Budget: 03-Expedition/01-Rate-Limiter/08-Observability/05-Error-Budget.md
 
   - "04 · Summit":
+    - 04-Summit/index.md
     - WhatsApp:
       - Overview: 04-Summit/01-WhatsApp/index.md
       - Functional Requirements: 04-Summit/01-WhatsApp/01-FR.md

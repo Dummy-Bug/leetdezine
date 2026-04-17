@@ -1,0 +1,1 @@
+- [Use existing venv](feedback_use_venv.md) — Always install Python packages in .venv, never system-wide

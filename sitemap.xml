@@ -9,215 +9,299 @@
          <lastmod>2026-04-18</lastmod>
     </url>
     <url>
-         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/01-URL-Shortener/</loc>
+         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/01-Unique-ID-Generator/00-System-Overview/</loc>
          <lastmod>2026-04-18</lastmod>
     </url>
     <url>
-         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/01-URL-Shortener/01-FR/</loc>
+         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/01-Unique-ID-Generator/01-FR/</loc>
          <lastmod>2026-04-18</lastmod>
     </url>
     <url>
-         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/01-URL-Shortener/02-Estimation/</loc>
+         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/01-Unique-ID-Generator/02-Estimation/</loc>
          <lastmod>2026-04-18</lastmod>
     </url>
     <url>
-         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/01-URL-Shortener/03-NFR/</loc>
+         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/01-Unique-ID-Generator/03-NFR/</loc>
          <lastmod>2026-04-18</lastmod>
     </url>
     <url>
-         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/01-URL-Shortener/04-API/</loc>
+         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/01-Unique-ID-Generator/04-API/</loc>
          <lastmod>2026-04-18</lastmod>
     </url>
     <url>
-         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/01-URL-Shortener/05-Base-Architecture/</loc>
+         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/01-Unique-ID-Generator/05-Base-Architecture/</loc>
          <lastmod>2026-04-18</lastmod>
     </url>
     <url>
-         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/01-URL-Shortener/06-Deep-Dives/01-Short-Code-Generation/01-Raw-IDs/</loc>
+         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/01-Unique-ID-Generator/06-Deep-Dives/01-Single-Server-Counter/</loc>
          <lastmod>2026-04-18</lastmod>
     </url>
     <url>
-         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/01-URL-Shortener/06-Deep-Dives/01-Short-Code-Generation/02-Hashing/</loc>
+         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/01-Unique-ID-Generator/06-Deep-Dives/02-Multi-Server-Problem/</loc>
          <lastmod>2026-04-18</lastmod>
     </url>
     <url>
-         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/01-URL-Shortener/06-Deep-Dives/01-Short-Code-Generation/03-Random-Collision-Check/</loc>
+         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/01-Unique-ID-Generator/06-Deep-Dives/03-UUID/</loc>
          <lastmod>2026-04-18</lastmod>
     </url>
     <url>
-         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/01-URL-Shortener/06-Deep-Dives/01-Short-Code-Generation/04-UUID-Base64-Trim/</loc>
+         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/01-Unique-ID-Generator/06-Deep-Dives/04-Ticket-Server/</loc>
          <lastmod>2026-04-18</lastmod>
     </url>
     <url>
-         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/01-URL-Shortener/06-Deep-Dives/01-Short-Code-Generation/05-Snowflake-Base64/</loc>
+         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/01-Unique-ID-Generator/06-Deep-Dives/05-Pre-Generated-Key-Pool/</loc>
          <lastmod>2026-04-18</lastmod>
     </url>
     <url>
-         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/01-URL-Shortener/06-Deep-Dives/01-Short-Code-Generation/06-UUID-Snowflake-Base62/</loc>
+         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/01-Unique-ID-Generator/06-Deep-Dives/06-Snowflake/</loc>
          <lastmod>2026-04-18</lastmod>
     </url>
     <url>
-         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/01-URL-Shortener/06-Deep-Dives/01-Short-Code-Generation/07-Truncation-Problem/</loc>
+         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/01-Unique-ID-Generator/06-Deep-Dives/07-Comparison/</loc>
          <lastmod>2026-04-18</lastmod>
     </url>
     <url>
-         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/01-URL-Shortener/06-Deep-Dives/02-DB/01-DB-Choice/</loc>
+         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/01-Unique-ID-Generator/06-Deep-Dives/08-Clock-Skew/</loc>
          <lastmod>2026-04-18</lastmod>
     </url>
     <url>
-         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/01-URL-Shortener/06-Deep-Dives/02-DB/02-Schema/</loc>
+         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/01-Unique-ID-Generator/06-Deep-Dives/09-Fault-Isolation/</loc>
          <lastmod>2026-04-18</lastmod>
     </url>
     <url>
-         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/01-URL-Shortener/06-Deep-Dives/02-DB/03-Why-Sharding/</loc>
+         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/01-Unique-ID-Generator/07-Observability/01-SLI-SLO-Connection/</loc>
          <lastmod>2026-04-18</lastmod>
     </url>
     <url>
-         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/01-URL-Shortener/06-Deep-Dives/02-DB/04-Sharding-Key/</loc>
+         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/01-Unique-ID-Generator/07-Observability/02-Measuring-Latency/</loc>
          <lastmod>2026-04-18</lastmod>
     </url>
     <url>
-         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/01-URL-Shortener/06-Deep-Dives/02-DB/05-Consistent-Hashing/</loc>
+         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/01-Unique-ID-Generator/07-Observability/03-Measuring-Availability/</loc>
          <lastmod>2026-04-18</lastmod>
     </url>
     <url>
-         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/01-URL-Shortener/06-Deep-Dives/02-DB/06-How-Many-Shards/</loc>
+         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/01-Unique-ID-Generator/07-Observability/04-Alerting/</loc>
          <lastmod>2026-04-18</lastmod>
     </url>
     <url>
-         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/01-URL-Shortener/06-Deep-Dives/02-DB/07-Replication/</loc>
+         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/01-Unique-ID-Generator/07-Observability/05-Error-Budget/</loc>
          <lastmod>2026-04-18</lastmod>
     </url>
     <url>
-         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/01-URL-Shortener/06-Deep-Dives/02-DB/08-Read-Your-Own-Writes/</loc>
+         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/01-Unique-ID-Generator/08-Final-Design/01-Final-Architecture/</loc>
          <lastmod>2026-04-18</lastmod>
     </url>
     <url>
-         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/01-URL-Shortener/06-Deep-Dives/03-Caching/01-Why-Caching/</loc>
+         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/02-URL-Shortener/</loc>
          <lastmod>2026-04-18</lastmod>
     </url>
     <url>
-         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/01-URL-Shortener/06-Deep-Dives/03-Caching/02-Cache-Size/</loc>
+         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/02-URL-Shortener/01-FR/</loc>
          <lastmod>2026-04-18</lastmod>
     </url>
     <url>
-         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/01-URL-Shortener/06-Deep-Dives/03-Caching/03-Cache-Strategy/</loc>
+         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/02-URL-Shortener/02-Estimation/</loc>
          <lastmod>2026-04-18</lastmod>
     </url>
     <url>
-         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/01-URL-Shortener/06-Deep-Dives/03-Caching/04-Eviction-Policy/</loc>
+         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/02-URL-Shortener/03-NFR/</loc>
          <lastmod>2026-04-18</lastmod>
     </url>
     <url>
-         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/01-URL-Shortener/06-Deep-Dives/03-Caching/05-Updated-Flow/</loc>
+         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/02-URL-Shortener/04-API/</loc>
          <lastmod>2026-04-18</lastmod>
     </url>
     <url>
-         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/01-URL-Shortener/06-Deep-Dives/04-Peak-Traffic/01-The-Spike-Problem/</loc>
+         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/02-URL-Shortener/05-Base-Architecture/</loc>
          <lastmod>2026-04-18</lastmod>
     </url>
     <url>
-         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/01-URL-Shortener/06-Deep-Dives/04-Peak-Traffic/03-Load-Balancing/</loc>
+         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/02-URL-Shortener/06-Deep-Dives/01-Short-Code-Generation/01-Raw-IDs/</loc>
          <lastmod>2026-04-18</lastmod>
     </url>
     <url>
-         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/01-URL-Shortener/06-Deep-Dives/04-Peak-Traffic/04-API-GW-SPOF/</loc>
+         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/02-URL-Shortener/06-Deep-Dives/01-Short-Code-Generation/02-Hashing/</loc>
          <lastmod>2026-04-18</lastmod>
     </url>
     <url>
-         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/01-URL-Shortener/06-Deep-Dives/04-Peak-Traffic/05-Updated-Architecture/</loc>
+         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/02-URL-Shortener/06-Deep-Dives/01-Short-Code-Generation/03-Random-Collision-Check/</loc>
          <lastmod>2026-04-18</lastmod>
     </url>
     <url>
-         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/01-URL-Shortener/06-Deep-Dives/04-Peak-Traffic/02-Hot-Key-Problem/01-Detection/</loc>
+         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/02-URL-Shortener/06-Deep-Dives/01-Short-Code-Generation/04-UUID-Base64-Trim/</loc>
          <lastmod>2026-04-18</lastmod>
     </url>
     <url>
-         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/01-URL-Shortener/06-Deep-Dives/04-Peak-Traffic/02-Hot-Key-Problem/02-Local-App-Cache/</loc>
+         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/02-URL-Shortener/06-Deep-Dives/01-Short-Code-Generation/05-Snowflake-Base64/</loc>
          <lastmod>2026-04-18</lastmod>
     </url>
     <url>
-         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/01-URL-Shortener/06-Deep-Dives/04-Peak-Traffic/02-Hot-Key-Problem/03-Redis-Key-Replication/</loc>
+         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/02-URL-Shortener/06-Deep-Dives/01-Short-Code-Generation/06-UUID-Snowflake-Base62/</loc>
          <lastmod>2026-04-18</lastmod>
     </url>
     <url>
-         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/01-URL-Shortener/06-Deep-Dives/04-Peak-Traffic/02-Hot-Key-Problem/04-Broadcast-Promotion/</loc>
+         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/02-URL-Shortener/06-Deep-Dives/01-Short-Code-Generation/07-Truncation-Problem/</loc>
          <lastmod>2026-04-18</lastmod>
     </url>
     <url>
-         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/01-URL-Shortener/06-Deep-Dives/06-Pre-Generated-Keys/01-Collision-At-Scale/</loc>
+         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/02-URL-Shortener/06-Deep-Dives/02-DB/01-DB-Choice/</loc>
          <lastmod>2026-04-18</lastmod>
     </url>
     <url>
-         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/01-URL-Shortener/06-Deep-Dives/06-Pre-Generated-Keys/02-Bloom-Filter/</loc>
+         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/02-URL-Shortener/06-Deep-Dives/02-DB/02-Schema/</loc>
          <lastmod>2026-04-18</lastmod>
     </url>
     <url>
-         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/01-URL-Shortener/06-Deep-Dives/06-Pre-Generated-Keys/03-Key-Pool/</loc>
+         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/02-URL-Shortener/06-Deep-Dives/02-DB/03-Why-Sharding/</loc>
          <lastmod>2026-04-18</lastmod>
     </url>
     <url>
-         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/01-URL-Shortener/06-Deep-Dives/06-Pre-Generated-Keys/04-KGS-Sequential-Generation/</loc>
+         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/02-URL-Shortener/06-Deep-Dives/02-DB/04-Sharding-Key/</loc>
          <lastmod>2026-04-18</lastmod>
     </url>
     <url>
-         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/01-URL-Shortener/06-Deep-Dives/06-Pre-Generated-Keys/05-Redis-INCR-vs-KGS/</loc>
+         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/02-URL-Shortener/06-Deep-Dives/02-DB/05-Consistent-Hashing/</loc>
          <lastmod>2026-04-18</lastmod>
     </url>
     <url>
-         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/01-URL-Shortener/06-Deep-Dives/07-Cold-Storage/01-The-Problem/</loc>
+         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/02-URL-Shortener/06-Deep-Dives/02-DB/06-How-Many-Shards/</loc>
          <lastmod>2026-04-18</lastmod>
     </url>
     <url>
-         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/01-URL-Shortener/06-Deep-Dives/07-Cold-Storage/02-Tiered-Storage/</loc>
+         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/02-URL-Shortener/06-Deep-Dives/02-DB/07-Replication/</loc>
          <lastmod>2026-04-18</lastmod>
     </url>
     <url>
-         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/01-URL-Shortener/06-Deep-Dives/07-Cold-Storage/03-Detecting-Cold-URLs/</loc>
+         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/02-URL-Shortener/06-Deep-Dives/02-DB/08-Read-Your-Own-Writes/</loc>
          <lastmod>2026-04-18</lastmod>
     </url>
     <url>
-         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/01-URL-Shortener/06-Deep-Dives/08-Fault-Isolation/01-Fault-Isolation/</loc>
+         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/02-URL-Shortener/06-Deep-Dives/03-Caching/01-Why-Caching/</loc>
          <lastmod>2026-04-18</lastmod>
     </url>
     <url>
-         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/01-URL-Shortener/06-Deep-Dives/08-Fault-Isolation/02-Redis-Down/</loc>
+         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/02-URL-Shortener/06-Deep-Dives/03-Caching/02-Cache-Size/</loc>
          <lastmod>2026-04-18</lastmod>
     </url>
     <url>
-         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/01-URL-Shortener/06-Deep-Dives/08-Fault-Isolation/03-DB-Shard-Primary-Down/</loc>
+         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/02-URL-Shortener/06-Deep-Dives/03-Caching/03-Cache-Strategy/</loc>
          <lastmod>2026-04-18</lastmod>
     </url>
     <url>
-         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/01-URL-Shortener/06-Deep-Dives/08-Fault-Isolation/04-KGS-Down/</loc>
+         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/02-URL-Shortener/06-Deep-Dives/03-Caching/04-Eviction-Policy/</loc>
          <lastmod>2026-04-18</lastmod>
     </url>
     <url>
-         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/01-URL-Shortener/06-Deep-Dives/08-Fault-Isolation/05-Other-Failures/</loc>
+         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/02-URL-Shortener/06-Deep-Dives/03-Caching/05-Updated-Flow/</loc>
          <lastmod>2026-04-18</lastmod>
     </url>
     <url>
-         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/01-URL-Shortener/08-Final-Design/01-Final-Design/</loc>
+         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/02-URL-Shortener/06-Deep-Dives/04-Peak-Traffic/01-The-Spike-Problem/</loc>
          <lastmod>2026-04-18</lastmod>
     </url>
     <url>
-         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/01-URL-Shortener/09-Observability/01-SLI-SLO-Connection/</loc>
+         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/02-URL-Shortener/06-Deep-Dives/04-Peak-Traffic/03-Load-Balancing/</loc>
          <lastmod>2026-04-18</lastmod>
     </url>
     <url>
-         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/01-URL-Shortener/09-Observability/02-Measuring-Latency/</loc>
+         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/02-URL-Shortener/06-Deep-Dives/04-Peak-Traffic/04-API-GW-SPOF/</loc>
          <lastmod>2026-04-18</lastmod>
     </url>
     <url>
-         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/01-URL-Shortener/09-Observability/03-Measuring-Availability/</loc>
+         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/02-URL-Shortener/06-Deep-Dives/04-Peak-Traffic/05-Updated-Architecture/</loc>
          <lastmod>2026-04-18</lastmod>
     </url>
     <url>
-         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/01-URL-Shortener/09-Observability/04-Alerting/</loc>
+         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/02-URL-Shortener/06-Deep-Dives/04-Peak-Traffic/02-Hot-Key-Problem/01-Detection/</loc>
          <lastmod>2026-04-18</lastmod>
     </url>
     <url>
-         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/01-URL-Shortener/09-Observability/05-Error-Budget/</loc>
+         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/02-URL-Shortener/06-Deep-Dives/04-Peak-Traffic/02-Hot-Key-Problem/02-Local-App-Cache/</loc>
+         <lastmod>2026-04-18</lastmod>
+    </url>
+    <url>
+         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/02-URL-Shortener/06-Deep-Dives/04-Peak-Traffic/02-Hot-Key-Problem/03-Redis-Key-Replication/</loc>
+         <lastmod>2026-04-18</lastmod>
+    </url>
+    <url>
+         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/02-URL-Shortener/06-Deep-Dives/04-Peak-Traffic/02-Hot-Key-Problem/04-Broadcast-Promotion/</loc>
+         <lastmod>2026-04-18</lastmod>
+    </url>
+    <url>
+         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/02-URL-Shortener/06-Deep-Dives/06-Pre-Generated-Keys/01-Collision-At-Scale/</loc>
+         <lastmod>2026-04-18</lastmod>
+    </url>
+    <url>
+         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/02-URL-Shortener/06-Deep-Dives/06-Pre-Generated-Keys/02-Bloom-Filter/</loc>
+         <lastmod>2026-04-18</lastmod>
+    </url>
+    <url>
+         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/02-URL-Shortener/06-Deep-Dives/06-Pre-Generated-Keys/03-Key-Pool/</loc>
+         <lastmod>2026-04-18</lastmod>
+    </url>
+    <url>
+         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/02-URL-Shortener/06-Deep-Dives/06-Pre-Generated-Keys/04-KGS-Sequential-Generation/</loc>
+         <lastmod>2026-04-18</lastmod>
+    </url>
+    <url>
+         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/02-URL-Shortener/06-Deep-Dives/06-Pre-Generated-Keys/05-Redis-INCR-vs-KGS/</loc>
+         <lastmod>2026-04-18</lastmod>
+    </url>
+    <url>
+         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/02-URL-Shortener/06-Deep-Dives/07-Cold-Storage/01-The-Problem/</loc>
+         <lastmod>2026-04-18</lastmod>
+    </url>
+    <url>
+         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/02-URL-Shortener/06-Deep-Dives/07-Cold-Storage/02-Tiered-Storage/</loc>
+         <lastmod>2026-04-18</lastmod>
+    </url>
+    <url>
+         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/02-URL-Shortener/06-Deep-Dives/07-Cold-Storage/03-Detecting-Cold-URLs/</loc>
+         <lastmod>2026-04-18</lastmod>
+    </url>
+    <url>
+         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/02-URL-Shortener/06-Deep-Dives/08-Fault-Isolation/01-Fault-Isolation/</loc>
+         <lastmod>2026-04-18</lastmod>
+    </url>
+    <url>
+         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/02-URL-Shortener/06-Deep-Dives/08-Fault-Isolation/02-Redis-Down/</loc>
+         <lastmod>2026-04-18</lastmod>
+    </url>
+    <url>
+         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/02-URL-Shortener/06-Deep-Dives/08-Fault-Isolation/03-DB-Shard-Primary-Down/</loc>
+         <lastmod>2026-04-18</lastmod>
+    </url>
+    <url>
+         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/02-URL-Shortener/06-Deep-Dives/08-Fault-Isolation/04-KGS-Down/</loc>
+         <lastmod>2026-04-18</lastmod>
+    </url>
+    <url>
+         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/02-URL-Shortener/06-Deep-Dives/08-Fault-Isolation/05-Other-Failures/</loc>
+         <lastmod>2026-04-18</lastmod>
+    </url>
+    <url>
+         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/02-URL-Shortener/08-Final-Design/01-Final-Design/</loc>
+         <lastmod>2026-04-18</lastmod>
+    </url>
+    <url>
+         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/02-URL-Shortener/09-Observability/01-SLI-SLO-Connection/</loc>
+         <lastmod>2026-04-18</lastmod>
+    </url>
+    <url>
+         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/02-URL-Shortener/09-Observability/02-Measuring-Latency/</loc>
+         <lastmod>2026-04-18</lastmod>
+    </url>
+    <url>
+         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/02-URL-Shortener/09-Observability/03-Measuring-Availability/</loc>
+         <lastmod>2026-04-18</lastmod>
+    </url>
+    <url>
+         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/02-URL-Shortener/09-Observability/04-Alerting/</loc>
+         <lastmod>2026-04-18</lastmod>
+    </url>
+    <url>
+         <loc>https://dummy-bug.github.io/leetdezine/01-Foundation/02-URL-Shortener/09-Observability/05-Error-Budget/</loc>
          <lastmod>2026-04-18</lastmod>
     </url>
     <url>

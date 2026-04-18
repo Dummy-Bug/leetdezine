@@ -1534,3 +1534,293 @@ body:has(.cs-hero) .md-header__title .md-ellipsis {
 .md-tabs__link--active {
   color: var(--brand);
 }
+
+/* =============================================================
+   LANDING PAGE — JOURNEY LAYOUT (replaces .cs-home-grid / .cs-level)
+   ============================================================= */
+
+.cs-landing {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 0 1rem 4rem;
+}
+
+/* Journey — vertical rail with level steps */
+.cs-journey {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  margin: 3rem auto 0;
+  padding-left: 0;
+}
+
+.cs-journey-rail {
+  position: absolute;
+  top: 30px;
+  bottom: 30px;
+  left: 27px;
+  width: 2px;
+  background: linear-gradient(
+    to bottom,
+    #16a34a 0%,
+    #16a34a 15%,
+    #2563eb 30%,
+    #d97706 50%,
+    #ea580c 70%,
+    #dc2626 100%
+  );
+  border-radius: 2px;
+  opacity: 0.18;
+  z-index: 0;
+}
+
+/* Step card */
+.cs-journey-step {
+  position: relative;
+  display: grid;
+  grid-template-columns: 56px 1fr auto;
+  align-items: stretch;
+  gap: 1.2rem;
+  padding: 1.4rem 1.5rem 1.4rem 0;
+  background: var(--surface-raised);
+  border: 1px solid var(--border-default);
+  border-radius: 16px;
+  text-decoration: none !important;
+  color: inherit !important;
+  background-image: none !important;
+  overflow: hidden;
+  transition:
+    transform 0.28s cubic-bezier(0.2, 0.9, 0.3, 1.2),
+    border-color 0.22s ease,
+    box-shadow 0.22s ease;
+  z-index: 1;
+}
+
+.cs-journey-step::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 4px;
+  background: var(--step-color);
+  transition: width 0.22s ease;
+}
+
+.cs-journey-step:hover {
+  border-color: var(--step-color);
+  box-shadow:
+    0 1px 2px rgba(0,0,0,0.04),
+    0 12px 32px -12px rgba(0,0,0,0.15),
+    0 0 0 1px color-mix(in srgb, var(--step-color) 15%, transparent);
+  transform: translateY(-2px);
+  text-decoration: none !important;
+}
+
+.cs-journey-step:hover::before {
+  width: 6px;
+}
+
+/* Level color assignments */
+.cs-step-lv1 { --step-color: #16a34a; --step-tint: #dcfce7; --step-ink: #15803d; }
+.cs-step-lv2 { --step-color: #2563eb; --step-tint: #dbeafe; --step-ink: #1d4ed8; }
+.cs-step-lv3 { --step-color: #d97706; --step-tint: #fef3c7; --step-ink: #a16207; }
+.cs-step-lv4 { --step-color: #ea580c; --step-tint: #ffedd5; --step-ink: #c2410c; }
+.cs-step-lv5 { --step-color: #dc2626; --step-tint: #fee2e2; --step-ink: #b91c1c; }
+
+/* Numbered marker */
+.cs-step-marker {
+  position: relative;
+  z-index: 2;
+  align-self: center;
+  justify-self: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--surface-raised);
+  border: 2px solid var(--step-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 12px;
+  box-shadow:
+    0 0 0 4px var(--surface-raised),
+    0 2px 8px -2px color-mix(in srgb, var(--step-color) 35%, transparent);
+  transition: transform 0.28s cubic-bezier(0.2, 0.9, 0.3, 1.2);
+}
+
+.cs-journey-step:hover .cs-step-marker {
+  transform: scale(1.06);
+}
+
+.cs-step-num {
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--step-color);
+  letter-spacing: 0.02em;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Body content */
+.cs-step-body {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-left: 0.2rem;
+}
+
+.cs-step-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.8rem;
+}
+
+.cs-step-tag {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--step-ink);
+  background: var(--step-tint);
+  padding: 0.3rem 0.65rem;
+  border-radius: 100px;
+}
+
+.cs-step-difficulty {
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: var(--step-color);
+  letter-spacing: 0.1em;
+  font-variant-numeric: tabular-nums;
+  opacity: 0.8;
+}
+
+.cs-step-title {
+  font-size: 1.35rem !important;
+  font-weight: 750 !important;
+  letter-spacing: -0.02em !important;
+  color: var(--fg-primary) !important;
+  margin: 0 !important;
+  line-height: 1.2 !important;
+}
+
+.cs-step-desc {
+  font-size: 0.88rem;
+  color: var(--fg-secondary);
+  line-height: 1.55;
+  margin: 0;
+}
+
+.cs-step-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.3rem;
+}
+
+.cs-chip {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: var(--fg-tertiary);
+  background: var(--surface-1);
+  border: 1px solid var(--border-subtle);
+  padding: 0.22rem 0.55rem;
+  border-radius: 6px;
+  letter-spacing: -0.005em;
+  transition: color 0.18s ease, border-color 0.18s ease, background 0.18s ease;
+}
+
+.cs-journey-step:hover .cs-chip {
+  color: var(--step-ink);
+  border-color: color-mix(in srgb, var(--step-color) 25%, var(--border-default));
+  background: color-mix(in srgb, var(--step-tint) 35%, var(--surface-raised));
+}
+
+/* CTA */
+.cs-step-cta {
+  align-self: center;
+  font-size: 0.82rem;
+  font-weight: 650;
+  color: var(--step-color);
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  opacity: 0.85;
+  transition: opacity 0.18s ease, transform 0.22s cubic-bezier(0.2, 0.9, 0.3, 1.2);
+}
+
+.cs-step-cta span {
+  display: inline-block;
+  transition: transform 0.22s cubic-bezier(0.2, 0.9, 0.3, 1.2);
+}
+
+.cs-journey-step:hover .cs-step-cta {
+  opacity: 1;
+}
+
+.cs-journey-step:hover .cs-step-cta span {
+  transform: translateX(4px);
+}
+
+/* Footer note */
+.cs-footer-note {
+  max-width: 680px;
+  margin: 3.5rem auto 0;
+  padding: 1.5rem 1.75rem;
+  text-align: center;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.cs-footer-note p {
+  font-size: 0.86rem;
+  color: var(--fg-tertiary);
+  line-height: 1.7;
+  margin: 0;
+}
+
+.cs-footer-note b {
+  color: var(--fg-secondary);
+  font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 720px) {
+  .cs-journey-rail { left: 23px; }
+
+  .cs-journey-step {
+    grid-template-columns: 48px 1fr;
+    gap: 0.9rem;
+    padding: 1.15rem 1.1rem 1.15rem 0;
+  }
+
+  .cs-step-marker {
+    width: 48px;
+    height: 48px;
+    margin-left: 8px;
+  }
+
+  .cs-step-num { font-size: 0.85rem; }
+
+  .cs-step-cta {
+    grid-column: 2 / 3;
+    justify-self: start;
+    margin-top: 0.25rem;
+  }
+
+  .cs-step-title { font-size: 1.15rem !important; }
+  .cs-step-desc { font-size: 0.82rem; }
+
+  .cs-step-head {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+}

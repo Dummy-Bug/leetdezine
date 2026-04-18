@@ -78,70 +78,98 @@ markdown_extensions:
 nav:
   - "": index.md
 
-  - URL Shortener:
-      - Overview: 01-Foundation/01-URL-Shortener/index.md
-      - Functional Requirements: 01-Foundation/01-URL-Shortener/01-FR.md
-      - Estimation: 01-Foundation/01-URL-Shortener/02-Estimation.md
-      - Non-Functional Requirements: 01-Foundation/01-URL-Shortener/03-NFR.md
-      - API Design: 01-Foundation/01-URL-Shortener/04-API.md
-      - Base Architecture: 01-Foundation/01-URL-Shortener/05-Base-Architecture.md
-      - "Deep Dive — Short Code Generation":
-        - Raw IDs: 01-Foundation/01-URL-Shortener/06-Deep-Dives/01-Short-Code-Generation/01-Raw-IDs.md
-        - Hashing: 01-Foundation/01-URL-Shortener/06-Deep-Dives/01-Short-Code-Generation/02-Hashing.md
-        - Random + Collision Check: 01-Foundation/01-URL-Shortener/06-Deep-Dives/01-Short-Code-Generation/03-Random-Collision-Check.md
-        - UUID Base64 Trim: 01-Foundation/01-URL-Shortener/06-Deep-Dives/01-Short-Code-Generation/04-UUID-Base64-Trim.md
-        - Snowflake Base64: 01-Foundation/01-URL-Shortener/06-Deep-Dives/01-Short-Code-Generation/05-Snowflake-Base64.md
-        - UUID Snowflake Base62: 01-Foundation/01-URL-Shortener/06-Deep-Dives/01-Short-Code-Generation/06-UUID-Snowflake-Base62.md
-        - Truncation Problem: 01-Foundation/01-URL-Shortener/06-Deep-Dives/01-Short-Code-Generation/07-Truncation-Problem.md
-      - "Deep Dive — Database":
-        - DB Choice: 01-Foundation/01-URL-Shortener/06-Deep-Dives/02-DB/01-DB-Choice.md
-        - Schema: 01-Foundation/01-URL-Shortener/06-Deep-Dives/02-DB/02-Schema.md
-        - Why Sharding: 01-Foundation/01-URL-Shortener/06-Deep-Dives/02-DB/03-Why-Sharding.md
-        - Sharding Key: 01-Foundation/01-URL-Shortener/06-Deep-Dives/02-DB/04-Sharding-Key.md
-        - Consistent Hashing: 01-Foundation/01-URL-Shortener/06-Deep-Dives/02-DB/05-Consistent-Hashing.md
-        - How Many Shards: 01-Foundation/01-URL-Shortener/06-Deep-Dives/02-DB/06-How-Many-Shards.md
-        - Replication: 01-Foundation/01-URL-Shortener/06-Deep-Dives/02-DB/07-Replication.md
-        - Read Your Own Writes: 01-Foundation/01-URL-Shortener/06-Deep-Dives/02-DB/08-Read-Your-Own-Writes.md
-      - "Deep Dive — Caching":
-        - Why Caching: 01-Foundation/01-URL-Shortener/06-Deep-Dives/03-Caching/01-Why-Caching.md
-        - Cache Size: 01-Foundation/01-URL-Shortener/06-Deep-Dives/03-Caching/02-Cache-Size.md
-        - Cache Strategy: 01-Foundation/01-URL-Shortener/06-Deep-Dives/03-Caching/03-Cache-Strategy.md
-        - Eviction Policy: 01-Foundation/01-URL-Shortener/06-Deep-Dives/03-Caching/04-Eviction-Policy.md
-        - Updated Flow: 01-Foundation/01-URL-Shortener/06-Deep-Dives/03-Caching/05-Updated-Flow.md
-      - "Deep Dive — Peak Traffic":
-        - The Spike Problem: 01-Foundation/01-URL-Shortener/06-Deep-Dives/04-Peak-Traffic/01-The-Spike-Problem.md
-        - Hot Key — Detection: 01-Foundation/01-URL-Shortener/06-Deep-Dives/04-Peak-Traffic/02-Hot-Key-Problem/01-Detection.md
-        - Hot Key — Local App Cache: 01-Foundation/01-URL-Shortener/06-Deep-Dives/04-Peak-Traffic/02-Hot-Key-Problem/02-Local-App-Cache.md
-        - Hot Key — Redis Key Replication: 01-Foundation/01-URL-Shortener/06-Deep-Dives/04-Peak-Traffic/02-Hot-Key-Problem/03-Redis-Key-Replication.md
-        - Hot Key — Broadcast Promotion: 01-Foundation/01-URL-Shortener/06-Deep-Dives/04-Peak-Traffic/02-Hot-Key-Problem/04-Broadcast-Promotion.md
-        - Load Balancing: 01-Foundation/01-URL-Shortener/06-Deep-Dives/04-Peak-Traffic/03-Load-Balancing.md
-        - API GW SPOF: 01-Foundation/01-URL-Shortener/06-Deep-Dives/04-Peak-Traffic/04-API-GW-SPOF.md
-        - Updated Architecture: 01-Foundation/01-URL-Shortener/06-Deep-Dives/04-Peak-Traffic/05-Updated-Architecture.md
-      - "Deep Dive — Pre-Generated Keys":
-        - Collision At Scale: 01-Foundation/01-URL-Shortener/06-Deep-Dives/06-Pre-Generated-Keys/01-Collision-At-Scale.md
-        - Bloom Filter: 01-Foundation/01-URL-Shortener/06-Deep-Dives/06-Pre-Generated-Keys/02-Bloom-Filter.md
-        - Key Pool: 01-Foundation/01-URL-Shortener/06-Deep-Dives/06-Pre-Generated-Keys/03-Key-Pool.md
-        - KGS Sequential Generation: 01-Foundation/01-URL-Shortener/06-Deep-Dives/06-Pre-Generated-Keys/04-KGS-Sequential-Generation.md
-        - Redis INCR vs KGS: 01-Foundation/01-URL-Shortener/06-Deep-Dives/06-Pre-Generated-Keys/05-Redis-INCR-vs-KGS.md
-      - "Deep Dive — Cold Storage":
-        - The Problem: 01-Foundation/01-URL-Shortener/06-Deep-Dives/07-Cold-Storage/01-The-Problem.md
-        - Tiered Storage: 01-Foundation/01-URL-Shortener/06-Deep-Dives/07-Cold-Storage/02-Tiered-Storage.md
-        - Detecting Cold URLs: 01-Foundation/01-URL-Shortener/06-Deep-Dives/07-Cold-Storage/03-Detecting-Cold-URLs.md
-      - "Deep Dive — Fault Isolation":
-        - Fault Isolation: 01-Foundation/01-URL-Shortener/06-Deep-Dives/08-Fault-Isolation/01-Fault-Isolation.md
-        - Redis Down: 01-Foundation/01-URL-Shortener/06-Deep-Dives/08-Fault-Isolation/02-Redis-Down.md
-        - DB Shard Primary Down: 01-Foundation/01-URL-Shortener/06-Deep-Dives/08-Fault-Isolation/03-DB-Shard-Primary-Down.md
-        - KGS Down: 01-Foundation/01-URL-Shortener/06-Deep-Dives/08-Fault-Isolation/04-KGS-Down.md
-        - Other Failures: 01-Foundation/01-URL-Shortener/06-Deep-Dives/08-Fault-Isolation/05-Other-Failures.md
-      - Final Design: 01-Foundation/01-URL-Shortener/08-Final-Design/01-Final-Design.md
+  - Foundation:
+    - Overview: 01-Foundation/index.md
+    - Unique ID Generator:
+      - Overview: 01-Foundation/01-Unique-ID-Generator/00-System-Overview.md
+      - Functional Requirements: 01-Foundation/01-Unique-ID-Generator/01-FR.md
+      - Estimation: 01-Foundation/01-Unique-ID-Generator/02-Estimation.md
+      - Non-Functional Requirements: 01-Foundation/01-Unique-ID-Generator/03-NFR.md
+      - API Design: 01-Foundation/01-Unique-ID-Generator/04-API.md
+      - Base Architecture: 01-Foundation/01-Unique-ID-Generator/05-Base-Architecture.md
+      - "Deep Dive — Algorithms":
+        - Single Server Counter: 01-Foundation/01-Unique-ID-Generator/06-Deep-Dives/01-Single-Server-Counter.md
+        - Multi-Server Problem: 01-Foundation/01-Unique-ID-Generator/06-Deep-Dives/02-Multi-Server-Problem.md
+        - UUID: 01-Foundation/01-Unique-ID-Generator/06-Deep-Dives/03-UUID.md
+        - Ticket Server: 01-Foundation/01-Unique-ID-Generator/06-Deep-Dives/04-Ticket-Server.md
+        - Pre-Generated Key Pool: 01-Foundation/01-Unique-ID-Generator/06-Deep-Dives/05-Pre-Generated-Key-Pool.md
+        - Snowflake: 01-Foundation/01-Unique-ID-Generator/06-Deep-Dives/06-Snowflake.md
+        - Comparison: 01-Foundation/01-Unique-ID-Generator/06-Deep-Dives/07-Comparison.md
+        - Clock Skew: 01-Foundation/01-Unique-ID-Generator/06-Deep-Dives/08-Clock-Skew.md
+        - Fault Isolation: 01-Foundation/01-Unique-ID-Generator/06-Deep-Dives/09-Fault-Isolation.md
       - "Observability":
-        - SLI / SLO Connection: 01-Foundation/01-URL-Shortener/09-Observability/01-SLI-SLO-Connection.md
-        - Measuring Latency: 01-Foundation/01-URL-Shortener/09-Observability/02-Measuring-Latency.md
-        - Measuring Availability: 01-Foundation/01-URL-Shortener/09-Observability/03-Measuring-Availability.md
-        - Alerting: 01-Foundation/01-URL-Shortener/09-Observability/04-Alerting.md
-        - Error Budget: 01-Foundation/01-URL-Shortener/09-Observability/05-Error-Budget.md
+        - SLI / SLO Connection: 01-Foundation/01-Unique-ID-Generator/07-Observability/01-SLI-SLO-Connection.md
+        - Measuring Latency: 01-Foundation/01-Unique-ID-Generator/07-Observability/02-Measuring-Latency.md
+        - Measuring Availability: 01-Foundation/01-Unique-ID-Generator/07-Observability/03-Measuring-Availability.md
+        - Alerting: 01-Foundation/01-Unique-ID-Generator/07-Observability/04-Alerting.md
+        - Error Budget: 01-Foundation/01-Unique-ID-Generator/07-Observability/05-Error-Budget.md
+      - Final Design: 01-Foundation/01-Unique-ID-Generator/08-Final-Design/01-Final-Architecture.md
+    - URL Shortener:
+      - Overview: 01-Foundation/02-URL-Shortener/index.md
+      - Functional Requirements: 01-Foundation/02-URL-Shortener/01-FR.md
+      - Estimation: 01-Foundation/02-URL-Shortener/02-Estimation.md
+      - Non-Functional Requirements: 01-Foundation/02-URL-Shortener/03-NFR.md
+      - API Design: 01-Foundation/02-URL-Shortener/04-API.md
+      - Base Architecture: 01-Foundation/02-URL-Shortener/05-Base-Architecture.md
+      - "Deep Dive — Short Code Generation":
+        - Raw IDs: 01-Foundation/02-URL-Shortener/06-Deep-Dives/01-Short-Code-Generation/01-Raw-IDs.md
+        - Hashing: 01-Foundation/02-URL-Shortener/06-Deep-Dives/01-Short-Code-Generation/02-Hashing.md
+        - Random + Collision Check: 01-Foundation/02-URL-Shortener/06-Deep-Dives/01-Short-Code-Generation/03-Random-Collision-Check.md
+        - UUID Base64 Trim: 01-Foundation/02-URL-Shortener/06-Deep-Dives/01-Short-Code-Generation/04-UUID-Base64-Trim.md
+        - Snowflake Base64: 01-Foundation/02-URL-Shortener/06-Deep-Dives/01-Short-Code-Generation/05-Snowflake-Base64.md
+        - UUID Snowflake Base62: 01-Foundation/02-URL-Shortener/06-Deep-Dives/01-Short-Code-Generation/06-UUID-Snowflake-Base62.md
+        - Truncation Problem: 01-Foundation/02-URL-Shortener/06-Deep-Dives/01-Short-Code-Generation/07-Truncation-Problem.md
+      - "Deep Dive — Database":
+        - DB Choice: 01-Foundation/02-URL-Shortener/06-Deep-Dives/02-DB/01-DB-Choice.md
+        - Schema: 01-Foundation/02-URL-Shortener/06-Deep-Dives/02-DB/02-Schema.md
+        - Why Sharding: 01-Foundation/02-URL-Shortener/06-Deep-Dives/02-DB/03-Why-Sharding.md
+        - Sharding Key: 01-Foundation/02-URL-Shortener/06-Deep-Dives/02-DB/04-Sharding-Key.md
+        - Consistent Hashing: 01-Foundation/02-URL-Shortener/06-Deep-Dives/02-DB/05-Consistent-Hashing.md
+        - How Many Shards: 01-Foundation/02-URL-Shortener/06-Deep-Dives/02-DB/06-How-Many-Shards.md
+        - Replication: 01-Foundation/02-URL-Shortener/06-Deep-Dives/02-DB/07-Replication.md
+        - Read Your Own Writes: 01-Foundation/02-URL-Shortener/06-Deep-Dives/02-DB/08-Read-Your-Own-Writes.md
+      - "Deep Dive — Caching":
+        - Why Caching: 01-Foundation/02-URL-Shortener/06-Deep-Dives/03-Caching/01-Why-Caching.md
+        - Cache Size: 01-Foundation/02-URL-Shortener/06-Deep-Dives/03-Caching/02-Cache-Size.md
+        - Cache Strategy: 01-Foundation/02-URL-Shortener/06-Deep-Dives/03-Caching/03-Cache-Strategy.md
+        - Eviction Policy: 01-Foundation/02-URL-Shortener/06-Deep-Dives/03-Caching/04-Eviction-Policy.md
+        - Updated Flow: 01-Foundation/02-URL-Shortener/06-Deep-Dives/03-Caching/05-Updated-Flow.md
+      - "Deep Dive — Peak Traffic":
+        - The Spike Problem: 01-Foundation/02-URL-Shortener/06-Deep-Dives/04-Peak-Traffic/01-The-Spike-Problem.md
+        - Hot Key — Detection: 01-Foundation/02-URL-Shortener/06-Deep-Dives/04-Peak-Traffic/02-Hot-Key-Problem/01-Detection.md
+        - Hot Key — Local App Cache: 01-Foundation/02-URL-Shortener/06-Deep-Dives/04-Peak-Traffic/02-Hot-Key-Problem/02-Local-App-Cache.md
+        - Hot Key — Redis Key Replication: 01-Foundation/02-URL-Shortener/06-Deep-Dives/04-Peak-Traffic/02-Hot-Key-Problem/03-Redis-Key-Replication.md
+        - Hot Key — Broadcast Promotion: 01-Foundation/02-URL-Shortener/06-Deep-Dives/04-Peak-Traffic/02-Hot-Key-Problem/04-Broadcast-Promotion.md
+        - Load Balancing: 01-Foundation/02-URL-Shortener/06-Deep-Dives/04-Peak-Traffic/03-Load-Balancing.md
+        - API GW SPOF: 01-Foundation/02-URL-Shortener/06-Deep-Dives/04-Peak-Traffic/04-API-GW-SPOF.md
+        - Updated Architecture: 01-Foundation/02-URL-Shortener/06-Deep-Dives/04-Peak-Traffic/05-Updated-Architecture.md
+      - "Deep Dive — Pre-Generated Keys":
+        - Collision At Scale: 01-Foundation/02-URL-Shortener/06-Deep-Dives/06-Pre-Generated-Keys/01-Collision-At-Scale.md
+        - Bloom Filter: 01-Foundation/02-URL-Shortener/06-Deep-Dives/06-Pre-Generated-Keys/02-Bloom-Filter.md
+        - Key Pool: 01-Foundation/02-URL-Shortener/06-Deep-Dives/06-Pre-Generated-Keys/03-Key-Pool.md
+        - KGS Sequential Generation: 01-Foundation/02-URL-Shortener/06-Deep-Dives/06-Pre-Generated-Keys/04-KGS-Sequential-Generation.md
+        - Redis INCR vs KGS: 01-Foundation/02-URL-Shortener/06-Deep-Dives/06-Pre-Generated-Keys/05-Redis-INCR-vs-KGS.md
+      - "Deep Dive — Cold Storage":
+        - The Problem: 01-Foundation/02-URL-Shortener/06-Deep-Dives/07-Cold-Storage/01-The-Problem.md
+        - Tiered Storage: 01-Foundation/02-URL-Shortener/06-Deep-Dives/07-Cold-Storage/02-Tiered-Storage.md
+        - Detecting Cold URLs: 01-Foundation/02-URL-Shortener/06-Deep-Dives/07-Cold-Storage/03-Detecting-Cold-URLs.md
+      - "Deep Dive — Fault Isolation":
+        - Fault Isolation: 01-Foundation/02-URL-Shortener/06-Deep-Dives/08-Fault-Isolation/01-Fault-Isolation.md
+        - Redis Down: 01-Foundation/02-URL-Shortener/06-Deep-Dives/08-Fault-Isolation/02-Redis-Down.md
+        - DB Shard Primary Down: 01-Foundation/02-URL-Shortener/06-Deep-Dives/08-Fault-Isolation/03-DB-Shard-Primary-Down.md
+        - KGS Down: 01-Foundation/02-URL-Shortener/06-Deep-Dives/08-Fault-Isolation/04-KGS-Down.md
+        - Other Failures: 01-Foundation/02-URL-Shortener/06-Deep-Dives/08-Fault-Isolation/05-Other-Failures.md
+      - Final Design: 01-Foundation/02-URL-Shortener/08-Final-Design/01-Final-Design.md
+      - "Observability":
+        - SLI / SLO Connection: 01-Foundation/02-URL-Shortener/09-Observability/01-SLI-SLO-Connection.md
+        - Measuring Latency: 01-Foundation/02-URL-Shortener/09-Observability/02-Measuring-Latency.md
+        - Measuring Availability: 01-Foundation/02-URL-Shortener/09-Observability/03-Measuring-Availability.md
+        - Alerting: 01-Foundation/02-URL-Shortener/09-Observability/04-Alerting.md
+        - Error Budget: 01-Foundation/02-URL-Shortener/09-Observability/05-Error-Budget.md
 
-  - Pastebin:
+  - Ascent:
+    - Overview: 02-Ascent/index.md
+    - Pastebin:
       - Overview: 02-Ascent/02-Pastebin/index.md
       - Functional Requirements: 02-Ascent/02-Pastebin/01-FR.md
       - Estimation: 02-Ascent/02-Pastebin/02-Estimation.md
@@ -192,7 +220,9 @@ nav:
         - Alerting: 02-Ascent/02-Pastebin/07-Observability/04-Alerting.md
         - Error Budget: 02-Ascent/02-Pastebin/07-Observability/05-Error-Budget.md
 
-  - Rate Limiter:
+  - Expedition:
+    - Overview: 03-Expedition/index.md
+    - Rate Limiter:
       - Functional Requirements: 03-Expedition/01-Rate-Limiter/01-FR.md
       - Estimation: 03-Expedition/01-Rate-Limiter/02-Estimation.md
       - Non-Functional Requirements: 03-Expedition/01-Rate-Limiter/03-NFR.md
@@ -224,7 +254,9 @@ nav:
         - Alerting: 03-Expedition/01-Rate-Limiter/08-Observability/04-Alerting.md
         - Error Budget: 03-Expedition/01-Rate-Limiter/08-Observability/05-Error-Budget.md
 
-  - KV Store:
+  - Summit:
+    - Overview: 04-Summit/index.md
+    - KV Store:
       - Functional Requirements: 04-Summit/02-KV-Store/01-FR.md
       - Estimation: 04-Summit/02-KV-Store/02-Estimation.md
       - Non-Functional Requirements: 04-Summit/02-KV-Store/03-NFR.md
@@ -279,7 +311,9 @@ nav:
         - Error Budget: 04-Summit/02-KV-Store/07-Observability/05-Error-Budget.md
       - Final Architecture: 04-Summit/02-KV-Store/08-Final-Design/01-Final-Architecture.md
 
-  - WhatsApp:
+  - Battleground:
+    - Overview: 05-Battleground/index.md
+    - WhatsApp:
       - Overview: 05-Battleground/01-WhatsApp/index.md
       - Functional Requirements: 05-Battleground/01-WhatsApp/01-FR.md
       - Estimation: 05-Battleground/01-WhatsApp/02-Estimation.md
@@ -404,4 +438,3 @@ nav:
         - Measuring Availability: 05-Battleground/01-WhatsApp/08-Observability/03-Measuring-Availability.md
         - Alerting: 05-Battleground/01-WhatsApp/08-Observability/04-Alerting.md
         - Error Budget: 05-Battleground/01-WhatsApp/08-Observability/05-Error-Budget.md
-

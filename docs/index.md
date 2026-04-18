@@ -5,65 +5,122 @@ hide:
   - toc
 ---
 
-<div class="cs-hero">
-  <p class="cs-hero-sub">Design systems beyond whiteboard</p>
-</div>
+<div class="cs-landing">
 
-<div class="cs-home-grid">
-
-<a class="cs-level cs-level-link lv1-border" href="01-Foundation/">
-  <div class="cs-level-header">
-    <span class="cs-level-badge lv1">LV 1</span>
-    <div class="cs-level-meta">
-      <div class="cs-level-title">Foundation</div>
-      <div class="cs-level-desc">Read-heavy systems, short code generation, sharding fundamentals</div>
-    </div>
-    <span class="cs-level-count">1 case study</span>
+<section class="cs-hero">
+  <div class="cs-hero-eyebrow">System Design · Deep Dives</div>
+  <h1 class="cs-hero-title">Design systems <span class="cs-hero-accent">beyond the whiteboard.</span></h1>
+  <p class="cs-hero-sub">Interview-depth case studies where every decision is justified. Built as a progression — start from first principles, climb to distributed systems.</p>
+  <div class="cs-hero-meta">
+    <div class="cs-hero-stat"><span class="cs-hero-stat-value">5</span><span class="cs-hero-stat-label">Levels</span></div>
+    <div class="cs-hero-stat"><span class="cs-hero-stat-value">5</span><span class="cs-hero-stat-label">Case studies</span></div>
+    <div class="cs-hero-stat"><span class="cs-hero-stat-value">200+</span><span class="cs-hero-stat-label">Deep dives</span></div>
   </div>
-</a>
+</section>
 
-<a class="cs-level cs-level-link lv2-border" href="02-Ascent/">
-  <div class="cs-level-header">
-    <span class="cs-level-badge lv2">LV 2</span>
-    <div class="cs-level-meta">
-      <div class="cs-level-title">Ascent</div>
-      <div class="cs-level-desc">Blob storage, content deduplication, async pipelines</div>
-    </div>
-    <span class="cs-level-count">1 case study</span>
-  </div>
-</a>
+<section class="cs-journey">
 
-<a class="cs-level cs-level-link lv3-border" href="03-Expedition/">
-  <div class="cs-level-header">
-    <span class="cs-level-badge lv3">LV 3</span>
-    <div class="cs-level-meta">
-      <div class="cs-level-title">Expedition</div>
-      <div class="cs-level-desc">Infrastructure design, atomic counters, accuracy tradeoffs</div>
-    </div>
-    <span class="cs-level-count">1 case study</span>
-  </div>
-</a>
+  <div class="cs-journey-rail" aria-hidden="true"></div>
 
-<a class="cs-level cs-level-link lv4-border" href="04-Summit/">
-  <div class="cs-level-header">
-    <span class="cs-level-badge lv4">LV 4</span>
-    <div class="cs-level-meta">
-      <div class="cs-level-title">Summit</div>
-      <div class="cs-level-desc">Real-time comms, message ordering, offline delivery at scale</div>
+  <a href="01-Foundation/" class="cs-journey-step cs-step-lv1">
+    <div class="cs-step-marker"><span class="cs-step-num">01</span></div>
+    <div class="cs-step-body">
+      <div class="cs-step-head">
+        <span class="cs-step-tag">Foundation</span>
+        <span class="cs-step-difficulty">● ○ ○ ○ ○</span>
+      </div>
+      <h3 class="cs-step-title">URL Shortener</h3>
+      <p class="cs-step-desc">Short-code generation, sharding fundamentals, read-heavy cache strategy.</p>
+      <div class="cs-step-chips">
+        <span class="cs-chip">Bloom filters</span>
+        <span class="cs-chip">KGS</span>
+        <span class="cs-chip">Consistent hashing</span>
+        <span class="cs-chip">Tiered storage</span>
+      </div>
     </div>
-    <span class="cs-level-count">1 case study</span>
-  </div>
-</a>
+    <div class="cs-step-cta">Start <span>→</span></div>
+  </a>
 
-<a class="cs-level cs-level-link lv5-border" href="KV-Store/">
-  <div class="cs-level-header">
-    <span class="cs-level-badge lv5">LV 5</span>
-    <div class="cs-level-meta">
-      <div class="cs-level-title">Battleground</div>
-      <div class="cs-level-desc">Advanced distributed systems — consensus, geo-replication, conflict resolution</div>
+  <a href="02-Ascent/" class="cs-journey-step cs-step-lv2">
+    <div class="cs-step-marker"><span class="cs-step-num">02</span></div>
+    <div class="cs-step-body">
+      <div class="cs-step-head">
+        <span class="cs-step-tag">Ascent</span>
+        <span class="cs-step-difficulty">● ● ○ ○ ○</span>
+      </div>
+      <h3 class="cs-step-title">Pastebin</h3>
+      <p class="cs-step-desc">Blob storage, content-addressable dedup, async S3 pipelines, expiry sweepers.</p>
+      <div class="cs-step-chips">
+        <span class="cs-chip">CAS</span>
+        <span class="cs-chip">Ref counting</span>
+        <span class="cs-chip">State machines</span>
+        <span class="cs-chip">Circuit breaker</span>
+      </div>
     </div>
-    <span class="cs-level-count">1 case study</span>
-  </div>
-</a>
+    <div class="cs-step-cta">Open <span>→</span></div>
+  </a>
+
+  <a href="03-Expedition/" class="cs-journey-step cs-step-lv3">
+    <div class="cs-step-marker"><span class="cs-step-num">03</span></div>
+    <div class="cs-step-body">
+      <div class="cs-step-head">
+        <span class="cs-step-tag">Expedition</span>
+        <span class="cs-step-difficulty">● ● ● ○ ○</span>
+      </div>
+      <h3 class="cs-step-title">Rate Limiter</h3>
+      <p class="cs-step-desc">Token / leaky / sliding windows, atomic counters, Lua scripts, DDoS defense.</p>
+      <div class="cs-step-chips">
+        <span class="cs-chip">Token bucket</span>
+        <span class="cs-chip">Lua scripts</span>
+        <span class="cs-chip">Redis cluster</span>
+        <span class="cs-chip">Rule storage</span>
+      </div>
+    </div>
+    <div class="cs-step-cta">Open <span>→</span></div>
+  </a>
+
+  <a href="04-Summit/02-KV-Store/01-FR/" class="cs-journey-step cs-step-lv4">
+    <div class="cs-step-marker"><span class="cs-step-num">04</span></div>
+    <div class="cs-step-body">
+      <div class="cs-step-head">
+        <span class="cs-step-tag">Summit</span>
+        <span class="cs-step-difficulty">● ● ● ● ○</span>
+      </div>
+      <h3 class="cs-step-title">Key-Value Store</h3>
+      <p class="cs-step-desc">Leaderless replication, LSM trees, gossip protocol, conflict resolution, anti-entropy.</p>
+      <div class="cs-step-chips">
+        <span class="cs-chip">LSM trees</span>
+        <span class="cs-chip">Gossip</span>
+        <span class="cs-chip">Quorum</span>
+        <span class="cs-chip">Hinted handoff</span>
+      </div>
+    </div>
+    <div class="cs-step-cta">Open <span>→</span></div>
+  </a>
+
+  <a href="05-Battleground/01-WhatsApp/" class="cs-journey-step cs-step-lv5">
+    <div class="cs-step-marker"><span class="cs-step-num">05</span></div>
+    <div class="cs-step-body">
+      <div class="cs-step-head">
+        <span class="cs-step-tag">Battleground</span>
+        <span class="cs-step-difficulty">● ● ● ● ●</span>
+      </div>
+      <h3 class="cs-step-title">WhatsApp</h3>
+      <p class="cs-step-desc">Real-time WebSockets, per-conversation ordering, offline delivery, connection storms, message status.</p>
+      <div class="cs-step-chips">
+        <span class="cs-chip">WebSockets</span>
+        <span class="cs-chip">Kafka</span>
+        <span class="cs-chip">Backpressure</span>
+        <span class="cs-chip">Hot partitions</span>
+      </div>
+    </div>
+    <div class="cs-step-cta">Open <span>→</span></div>
+  </a>
+
+</section>
+
+<section class="cs-footer-note">
+  <p>Each case study is a progression: <b>requirements → estimation → base architecture → deep dives → final design → observability</b>. Read top-to-bottom, or jump straight to the deep dive you want.</p>
+</section>
 
 </div>

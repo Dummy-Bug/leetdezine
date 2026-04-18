@@ -349,3 +349,58 @@ nav:
         - Measuring Availability: 04-Summit/01-WhatsApp/08-Observability/03-Measuring-Availability.md
         - Alerting: 04-Summit/01-WhatsApp/08-Observability/04-Alerting.md
         - Error Budget: 04-Summit/01-WhatsApp/08-Observability/05-Error-Budget.md
+
+  - KV Store:
+      - Functional Requirements: KV-Store/01-FR.md
+      - Estimation: KV-Store/02-Estimation.md
+      - Non-Functional Requirements: KV-Store/03-NFR.md
+      - "API Design":
+        - API Design: KV-Store/04-API/01-API-Design.md
+        - Why Base64: KV-Store/04-API/02-Why-Base64.md
+      - "Base Architecture":
+        - Why Not Single Leader: KV-Store/05-Base-Architecture/01-Why-Not-Single-Leader.md
+        - Why Not Multi Leader: KV-Store/05-Base-Architecture/02-Why-Not-Multi-Leader.md
+        - Why Leaderless: KV-Store/05-Base-Architecture/03-Why-Leaderless.md
+        - Base Design: KV-Store/05-Base-Architecture/04-Base-Design.md
+      - "Deep Dive — Consistent Hashing":
+        - Terminology: KV-Store/06-Deep-Dives/01-Consistent-Hashing/01-Terminology.md
+        - How The Ring Works: KV-Store/06-Deep-Dives/01-Consistent-Hashing/02-How-The-Ring-Works.md
+      - "Deep Dive — Replication":
+        - Quorum Writes: KV-Store/06-Deep-Dives/02-Replication/01-Quorum-Writes.md
+        - Hinted Handoff: KV-Store/06-Deep-Dives/02-Replication/02-Hinted-Handoff.md
+        - Read Repair: KV-Store/06-Deep-Dives/02-Replication/02-Read-Repair.md
+        - Anti-Entropy: KV-Store/06-Deep-Dives/02-Replication/03-Anti-Entropy.md
+      - "Deep Dive — Storage Engine":
+        - B+Tree vs LSM Tree: KV-Store/06-Deep-Dives/03-Storage-Engine/01-B+Tree-vs-LSM-Tree.md
+        - LSM Tree Internals: KV-Store/06-Deep-Dives/03-Storage-Engine/02-LSM-Tree-Internals.md
+        - "Compaction":
+          - What Is Compaction: KV-Store/06-Deep-Dives/03-Storage-Engine/03-Compaction/01-What-Is-Compaction.md
+          - Size-Tiered Compaction: KV-Store/06-Deep-Dives/03-Storage-Engine/03-Compaction/04-Size-Tiered-Compaction.md
+          - Leveled Compaction: KV-Store/06-Deep-Dives/03-Storage-Engine/03-Compaction/05-Leveled-Compaction.md
+        - Bloom Filters: KV-Store/06-Deep-Dives/03-Storage-Engine/04-Bloom-Filters.md
+        - Putting It All Together: KV-Store/06-Deep-Dives/03-Storage-Engine/05-Putting-It-All-Together.md
+      - "Deep Dive — Cluster Membership":
+        - The Problem: KV-Store/06-Deep-Dives/04-Cluster-Membership/01-The-Problem.md
+        - Gossip Protocol: KV-Store/06-Deep-Dives/04-Cluster-Membership/02-Gossip-Protocol.md
+        - Failure Detection: KV-Store/06-Deep-Dives/04-Cluster-Membership/03-Failure-Detection.md
+      - "Deep Dive — Conflict Resolution":
+        - The Problem: KV-Store/06-Deep-Dives/05-Conflict-Resolution/01-The-Problem.md
+        - Solution: KV-Store/06-Deep-Dives/05-Conflict-Resolution/02-Solution.md
+      - "Deep Dive — TTL And Data Expiry":
+        - How TTL Works: KV-Store/06-Deep-Dives/06-TTL-And-Data-Expiry/01-How-TTL-Works.md
+      - "Deep Dive — Fault Isolation":
+        - Node Failure: KV-Store/06-Deep-Dives/07-Fault-Isolation/01-Node-Failure.md
+        - "Disk Failure":
+          - The Problem: KV-Store/06-Deep-Dives/07-Fault-Isolation/02-Disk-Failure/02-The-Problem.md
+          - Silent Corruption: KV-Store/06-Deep-Dives/07-Fault-Isolation/02-Disk-Failure/03-Silent-Corruption.md
+          - Disk Full: KV-Store/06-Deep-Dives/07-Fault-Isolation/02-Disk-Failure/04-Disk-Full.md
+        - Network Partition: KV-Store/06-Deep-Dives/07-Fault-Isolation/03-Network-Partition.md
+        - Cascading Failures: KV-Store/06-Deep-Dives/07-Fault-Isolation/04-Cascading-Failures.md
+        - Coordinator Failure: KV-Store/06-Deep-Dives/07-Fault-Isolation/05-Coordinator-Failure.md
+      - "Observability":
+        - SLI / SLO Connection: KV-Store/07-Observability/01-SLI-SLO-Connection.md
+        - Measuring Latency: KV-Store/07-Observability/02-Measuring-Latency.md
+        - Measuring Availability: KV-Store/07-Observability/03-Measuring-Availability.md
+        - Alerting: KV-Store/07-Observability/04-Alerting.md
+        - Error Budget: KV-Store/07-Observability/05-Error-Budget.md
+      - Final Architecture: KV-Store/08-Final-Design/01-Final-Architecture.md

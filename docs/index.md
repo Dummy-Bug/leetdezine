@@ -55,15 +55,15 @@ hide:
   </div>
 </a>
 
-<div class="cs-level locked lv5-border">
+<a class="cs-level cs-level-link lv5-border" href="KV-Store/">
   <div class="cs-level-header">
     <span class="cs-level-badge lv5">LV 5</span>
     <div class="cs-level-meta">
-      <div class="cs-level-title">Battleground <span class="cs-soon">COMING SOON</span></div>
+      <div class="cs-level-title">Battleground</div>
       <div class="cs-level-desc">Advanced distributed systems — consensus, geo-replication, conflict resolution</div>
     </div>
-    <span class="cs-level-count cs-locked-count">0 case studies</span>
+    <span class="cs-level-count">1 case study</span>
   </div>
-</div>
+</a>
 
 </div>

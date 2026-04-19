@@ -11,11 +11,6 @@ hide:
   <div class="cs-hero-eyebrow">System Design · Deep Dives</div>
   <h1 class="cs-hero-title">Design systems <span class="cs-hero-accent">beyond the whiteboard.</span></h1>
   <p class="cs-hero-sub">Interview-depth case studies where every decision is justified. Built as a progression — start from first principles, climb to distributed systems.</p>
-  <div class="cs-hero-meta">
-    <div class="cs-hero-stat"><span class="cs-hero-stat-value">5</span><span class="cs-hero-stat-label">Levels</span></div>
-    <div class="cs-hero-stat"><span class="cs-hero-stat-value">7</span><span class="cs-hero-stat-label">Case studies</span></div>
-    <div class="cs-hero-stat"><span class="cs-hero-stat-value">200+</span><span class="cs-hero-stat-label">Deep dives</span></div>
-  </div>
 </section>
 
 <section class="cs-journey">

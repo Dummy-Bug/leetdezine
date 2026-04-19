@@ -172,6 +172,47 @@ nav:
 
   - Ascent:
     - Overview: 02-Ascent/index.md
+    - Notification System:
+      - Overview: 02-Ascent/01-Notification-System/00-System-Overview.md
+      - Functional Requirements: 02-Ascent/01-Notification-System/01-FR.md
+      - Estimation: 02-Ascent/01-Notification-System/02-Estimation.md
+      - Non-Functional Requirements: 02-Ascent/01-Notification-System/03-NFR.md
+      - API Design: 02-Ascent/01-Notification-System/04-API.md
+      - Base Architecture: 02-Ascent/01-Notification-System/05-Base-Architecture.md
+      - "Deep Dive — Database":
+        - DB Selection: 02-Ascent/01-Notification-System/06-Deep-Dives/01-DB/01-DB-Selection.md
+        - Schema: 02-Ascent/01-Notification-System/06-Deep-Dives/01-DB/02-Schema.md
+      - "Deep Dive — Kafka":
+        - Queue Selection: 02-Ascent/01-Notification-System/06-Deep-Dives/02-Kafka/01-Queue-Selection.md
+        - Kafka Design: 02-Ascent/01-Notification-System/06-Deep-Dives/02-Kafka/02-Kafka-Design.md
+      - "Deep Dive — Per-Channel Workers":
+        - Push Worker: 02-Ascent/01-Notification-System/06-Deep-Dives/03-Per-Channel-Workers/01-Push-Worker.md
+        - SMS Worker: 02-Ascent/01-Notification-System/06-Deep-Dives/03-Per-Channel-Workers/02-SMS-Worker.md
+        - Email Worker: 02-Ascent/01-Notification-System/06-Deep-Dives/03-Per-Channel-Workers/03-Email-Worker.md
+      - "Deep Dive — Scheduling":
+        - Problem And Naive Approach: 02-Ascent/01-Notification-System/06-Deep-Dives/04-Scheduling/01-Problem-And-Naive-Approach.md
+        - Scheduler DB: 02-Ascent/01-Notification-System/06-Deep-Dives/04-Scheduling/02-Scheduler-DB.md
+        - Jitter: 02-Ascent/01-Notification-System/06-Deep-Dives/04-Scheduling/03-Jitter.md
+        - Dispatch Flow: 02-Ascent/01-Notification-System/06-Deep-Dives/04-Scheduling/04-Dispatch-Flow.md
+      - "Deep Dive — Retry And DLQ":
+        - Retry Strategy: 02-Ascent/01-Notification-System/06-Deep-Dives/05-Retry-And-DLQ/01-Retry-Strategy.md
+        - DLQ: 02-Ascent/01-Notification-System/06-Deep-Dives/05-Retry-And-DLQ/02-DLQ.md
+        - Failure Handling: 02-Ascent/01-Notification-System/06-Deep-Dives/05-Retry-And-DLQ/03-Failure-Handling.md
+      - "Deep Dive — Rate Limiting":
+        - Rate Limiting: 02-Ascent/01-Notification-System/06-Deep-Dives/06-Rate-Limiting/01-Rate-Limiting.md
+      - "Deep Dive — Fault Isolation":
+        - APNs Down: 02-Ascent/01-Notification-System/06-Deep-Dives/07-Fault-Isolation/01-APNs-Down.md
+        - Cassandra Down: 02-Ascent/01-Notification-System/06-Deep-Dives/07-Fault-Isolation/02-Cassandra-Down.md
+        - Kafka Down: 02-Ascent/01-Notification-System/06-Deep-Dives/07-Fault-Isolation/03-Kafka-Down.md
+        - Redis Down: 02-Ascent/01-Notification-System/06-Deep-Dives/07-Fault-Isolation/04-Redis-Down.md
+        - Scheduler Down: 02-Ascent/01-Notification-System/06-Deep-Dives/07-Fault-Isolation/05-Scheduler-Down.md
+      - Final Design: 02-Ascent/01-Notification-System/07-Final-Design/01-Final-Design.md
+      - "Observability":
+        - SLI / SLO Connection: 02-Ascent/01-Notification-System/08-Observability/01-SLI-SLO-Connection.md
+        - Measuring Latency: 02-Ascent/01-Notification-System/08-Observability/02-Measuring-Latency.md
+        - Measuring Availability: 02-Ascent/01-Notification-System/08-Observability/03-Measuring-Availability.md
+        - Alerting: 02-Ascent/01-Notification-System/08-Observability/04-Alerting.md
+        - Error Budget: 02-Ascent/01-Notification-System/08-Observability/05-Error-Budget.md
     - Pastebin:
       - Overview: 02-Ascent/02-Pastebin/index.md
       - Functional Requirements: 02-Ascent/02-Pastebin/01-FR.md

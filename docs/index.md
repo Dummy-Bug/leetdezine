@@ -13,7 +13,7 @@ hide:
   <p class="cs-hero-sub">Interview-depth case studies where every decision is justified. Built as a progression — start from first principles, climb to distributed systems.</p>
   <div class="cs-hero-meta">
     <div class="cs-hero-stat"><span class="cs-hero-stat-value">5</span><span class="cs-hero-stat-label">Levels</span></div>
-    <div class="cs-hero-stat"><span class="cs-hero-stat-value">6</span><span class="cs-hero-stat-label">Case studies</span></div>
+    <div class="cs-hero-stat"><span class="cs-hero-stat-value">7</span><span class="cs-hero-stat-label">Case studies</span></div>
     <div class="cs-hero-stat"><span class="cs-hero-stat-value">200+</span><span class="cs-hero-stat-label">Deep dives</span></div>
   </div>
 </section>
@@ -52,14 +52,15 @@ hide:
         <span class="cs-step-tag">Ascent</span>
         <span class="cs-step-difficulty">● ● ○ ○ ○</span>
       </div>
-      <h3 class="cs-step-title">Blob storage & async pipelines</h3>
-      <p class="cs-step-desc">Content deduplication, async upload flows, expiry at scale, distributed cleanup workers, fault tolerance patterns.</p>
+      <h3 class="cs-step-title">Async pipelines & multi-channel delivery</h3>
+      <p class="cs-step-desc">Kafka fan-out, per-channel workers, retry/DLQ, scheduled dispatch, content deduplication, async uploads, expiry at scale.</p>
       <div class="cs-step-chips">
-        <span class="cs-chip">Content-addressable storage</span>
-        <span class="cs-chip">Ref counting</span>
-        <span class="cs-chip">Async S3 upload</span>
-        <span class="cs-chip">State machines</span>
+        <span class="cs-chip">Kafka fan-out</span>
+        <span class="cs-chip">Retry / DLQ</span>
+        <span class="cs-chip">Bloom filter</span>
         <span class="cs-chip">Circuit breaker</span>
+        <span class="cs-chip">Content-addressable storage</span>
+        <span class="cs-chip">Async S3 upload</span>
         <span class="cs-chip">TTL sweeper</span>
         <span class="cs-chip">Watchdog</span>
       </div>

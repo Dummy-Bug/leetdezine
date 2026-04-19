@@ -1,63 +1,75 @@
 # LeetDezine — Claude Code Workflow
 
 ## What This Project Is
-System design case studies published at https://dummy-bug.github.io/leetdezine/
+System design case studies published at https://leetdezine.com
 
 Case studies live in `docs/` as markdown files, organized by tier (Foundation, Ascent, Battleground, etc.).
 
+## Infrastructure
+- **Domain:** leetdezine.com (registered on Namecheap, DNS on Cloudflare)
+- **Hosting:** Cloudflare Pages (auto-deploys on every push to `master`)
+- **Analytics:** Google Analytics (G-KZPQKH7FSK)
+- **Repository:** github.com/Dummy-Bug/leetdezine
+- **Deploy:** just `git push` — Cloudflare handles the rest
+
+## Social Presence
+- **Twitter/X:** @leetdezine (personal name, LeetDezine banner)
+- **Dev.to:** leetdezine
+- **Peerlist:** peerlist.io/laxit (personal profile, LeetDezine as project)
+
 ## Content Generation Workflow
 
-When the user says **"generate content for [case study name]"**:
+When the user says **"generate content on [topic]"**:
 
-1. Read all relevant markdown files for that case study from `docs/`
-2. Generate and output directly in chat:
-   - **Twitter/X thread** — 3-4 tweets, punchy, insight-driven, no fluff
-   - **Dev.to blog post** — full deep dive, markdown formatted, with tags
-   - **Medium post** — same content, Medium-friendly formatting
-   - **Peerlist post** — short, 2-3 paragraphs, community-focused tone
-3. User manually copies and pastes to each platform
+1. Read all relevant markdown files for that topic from `docs/`
+2. Pick the sharpest angle — one insight, one problem, one counterintuitive thing
+3. Generate and output directly in chat:
+   - **Twitter thread** — 2 tweets max
+   - **Peerlist post** — 150-200 words
+   - **ASCII diagram** — if the topic has a visual component
+4. Save files to `posts/` folder under the relevant case study subfolder
+5. User manually copies and pastes to each platform
 
 No API keys. No scripts. No cost beyond Claude Code Pro subscription.
 
 ## Content Funnel Strategy
 
 ```
-Twitter/Peerlist (daily or every 2 days) → Dev.to/Medium blog (weekly/bi-weekly) → Website
+Twitter/Peerlist (daily or every 2 days) → Dev.to blog (weekly/bi-weekly) → Website
 ```
 
 Content is built around **specific topics**, not entire case studies:
-- User picks a topic (e.g. "Hot Key Problem", "Consistent Hashing", "KGS")
+- User picks a topic (e.g. "Hot Key Problem", "Consistent Hashing", "Clock Skew")
 - Claude finds the relevant docs, picks the sharpest angle
-- Every piece of content ends with a link back to the full case study on the website
+- Every piece of content ends with a link back to `https://leetdezine.com`
 - Website is the destination, everything else is a teaser
 
 **Batching strategy for blogs:**
 - Post 3-4 short topics on Twitter/Peerlist first
-- Then combine related ones into one blog post on Dev.to/Medium
+- Then combine related ones into one Dev.to blog post
 - Blog title wraps the theme (e.g. "How distributed systems generate IDs at scale")
-- Blog links back to individual tweets + full website case study
+- Blog links back to full website case study
 
 When user says "generate blog combining [topic1], [topic2], [topic3]" — weave them into one cohesive narrative, don't just concatenate.
 
-Website URL: https://dummy-bug.github.io/leetdezine/
+## Posts Folder Structure
+
+```
+posts/
+  01-Unique-Id-Generator/
+    01-snowflake-twitter.md
+    02-snowflake-peerlist.md
+    03-snowflake-diagram.md
+```
+
+Naming convention: `[number]-[topic]-[platform].md`
 
 ## Distribution Notes
 
-- Twitter/X threads — proven, prioritize these
-- Dev.to — good SEO value, always publish here
-- Peerlist — unverified, test and see
-- Medium — unverified, test and see
-
-## Case Study Structure (for reference)
-
-Each case study typically covers:
-- Functional & Non-Functional Requirements
-- Estimation
-- API Design
-- Base Architecture
-- Deep Dives (DB, Caching, Peak Traffic, Fault Isolation, etc.)
-- Observability (SLI/SLO, Alerting, Error Budget)
-- Final Design
+- **Twitter/X** — 2-tweet thread, attach diagram as image, 3 hashtags max
+- **Dev.to** — full blog with Mermaid diagrams, free API available for future automation
+- **Peerlist** — manual only, no public API
+- **Medium** — skip for now, revisit when traction is there
 
 ## Quality Gates (enforced before every output)
 
@@ -81,27 +93,28 @@ Write like an opinionated engineer who just solved a hard problem and wants to t
 
 ## Diagrams & Visuals
 
-- **Twitter** — include a clean ASCII diagram as a separate block (user screenshots and attaches as image)
-- **Peerlist** — same ASCII diagram attached as image
+- **Twitter** — clean ASCII diagram as separate block (user screenshots and attaches as image)
+- **Peerlist** — same ASCII diagram
 - **Dev.to** — Mermaid diagram (rendered natively)
-- **Medium** — describe where a diagram goes, user screenshots from the website or Excalidraw
 
 Always generate a diagram where the topic has a visual component (bit layouts, flows, architecture, comparisons).
 
 ## Content Length Hierarchy
 
-From shortest to longest — each platform is a stepping stone to the next:
-
 | Platform | Length | Purpose |
 |----------|--------|---------|
-| Twitter/X | 1-3 tweets (280 chars each) | Hook, one key insight |
+| Twitter/X | 2 tweets (280 chars each) | Hook + one key insight |
 | Peerlist | 150-200 words | Short story behind the insight |
-| Dev.to / Medium | 500-800 words | Full deep dive blog post |
+| Dev.to | 500-800 words | Full deep dive blog post |
 | Website | Complete case study | Everything, already published |
 
-## Tone Guidelines for Generated Content
+## Tone Guidelines
 
-- **Tweets** — One sharp insight or counterintuitive problem. No threads. No "🧵" cringe. Just the hook.
+- **Tweets** — Sharp, story-driven. Tweet 1 is the hook, Tweet 2 is the insight + link.
 - **Peerlist** — Conversational, peer-to-peer. Expand on the tweet, tell the story briefly.
-- **Dev.to / Medium** — Technical but readable. Explain the why behind every decision. Headers + bullet points.
+- **Dev.to** — Technical but readable. Explain the why behind every decision. Headers + bullet points.
 - **Website** — Already written in docs/, this is the source of truth.
+
+## Hashtags
+
+Twitter: `#SystemDesign #SoftwareEngineering #DistributedSystems` (max 3, at end of Tweet 1)

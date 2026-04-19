@@ -4,13 +4,23 @@ hide:
   - toc
 ---
 
-<div class="cs-hero" markdown>
-<p class="cs-hero-label">LEVEL 5</p>
-<h1 class="cs-hero-title">Battleground</h1>
-<p class="cs-hero-sub">Advanced distributed systems — real-time at scale, ordering guarantees, offline delivery, connection storms.</p>
+<div class="cs-level-hero cs-lv5">
+  <div class="cs-level-bg-num">05</div>
+  <div class="cs-level-inner">
+    <p class="cs-level-eyebrow">Level 5 of 5</p>
+    <h1 class="cs-level-title">Battleground</h1>
+    <p class="cs-level-sub">Advanced distributed systems — real-time at scale, ordering guarantees, offline delivery, connection storms.</p>
+    <div class="cs-level-dots">
+      <span class="cs-dot cs-dot-on"></span>
+      <span class="cs-dot cs-dot-on"></span>
+      <span class="cs-dot cs-dot-on"></span>
+      <span class="cs-dot cs-dot-on"></span>
+      <span class="cs-dot cs-dot-on"></span>
+    </div>
+  </div>
 </div>
 
-<p class="cs-path-label">CASE STUDIES</p>
+<p class="cs-path-label">Case Studies</p>
 
 <div class="cs-cards">
   <a class="cs-card" href="01-WhatsApp/">
@@ -25,5 +35,6 @@ hide:
       <span>Backpressure</span>
       <span>Hot Partitions</span>
     </div>
+    <div class="cs-card-cta">Open case study <span>→</span></div>
   </a>
 </div>

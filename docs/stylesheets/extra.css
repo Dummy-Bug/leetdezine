@@ -269,7 +269,7 @@ body,
 }
 
 /* Reading line length on content pages */
-.md-content__inner > :not(.cs-hero):not(.cs-home-grid):not(.cs-cards):not(.grid) {
+.md-content__inner > :not(.cs-hero):not(.cs-home-grid):not(.cs-cards):not(.grid):not(.cs-level-hero) {
   max-width: 780px;
 }
 
@@ -277,7 +277,8 @@ body,
 .md-content__inner > .cs-hero,
 .md-content__inner > .cs-home-grid,
 .md-content__inner > .cs-cards,
-.md-content__inner > .cs-path-label {
+.md-content__inner > .cs-path-label,
+.md-content__inner > .cs-level-hero {
   max-width: none;
 }
 
@@ -1265,6 +1266,131 @@ a.cs-level-link:hover .cs-level-count::after {
 .cs-card:hover .cs-topics span {
   background: var(--surface-0);
   border-color: var(--border-strong);
+}
+
+/* =============================================================
+   LEVEL HERO — Redesigned level index page header
+   ============================================================= */
+
+.md-content__inner:has(.cs-level-hero) > h1:first-child,
+.md-content__inner:has(.cs-level-hero) > h1:first-of-type {
+  display: none;
+}
+.md-content__inner:has(.cs-level-hero) hr {
+  display: none;
+}
+
+.cs-level-hero {
+  position: relative;
+  padding: 3.5rem 0 2.8rem;
+  margin-bottom: 0.5rem;
+  overflow: hidden;
+  max-width: 880px;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 1px solid var(--border-default);
+}
+
+.cs-level-hero::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 3px;
+  height: 100%;
+  background: var(--lv-color);
+  border-radius: 0 2px 2px 0;
+}
+
+.cs-level-bg-num {
+  position: absolute;
+  right: -0.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 10rem;
+  font-weight: 900;
+  line-height: 1;
+  color: var(--lv-color);
+  opacity: 0.055;
+  letter-spacing: -0.05em;
+  user-select: none;
+  pointer-events: none;
+  font-variant-numeric: tabular-nums;
+}
+
+.cs-level-inner {
+  padding-left: 1.8rem;
+  position: relative;
+  z-index: 1;
+}
+
+.cs-level-eyebrow {
+  font-size: 0.68rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--lv-color) !important;
+  margin: 0 0 0.65rem !important;
+}
+
+.cs-level-title {
+  font-size: clamp(2.2rem, 4vw, 3rem) !important;
+  font-weight: 800 !important;
+  color: var(--fg-primary) !important;
+  margin: 0 0 0.6rem !important;
+  letter-spacing: -0.03em !important;
+  line-height: 1.1 !important;
+}
+
+.cs-level-sub {
+  font-size: 1rem !important;
+  color: var(--fg-secondary) !important;
+  max-width: 520px;
+  line-height: 1.65 !important;
+  margin: 0 0 1.5rem !important;
+}
+
+.cs-level-dots {
+  display: flex;
+  gap: 0.45rem;
+  align-items: center;
+}
+
+.cs-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--border-strong);
+  display: inline-block;
+}
+
+.cs-dot-on {
+  background: var(--lv-color);
+  box-shadow: 0 0 0 2.5px color-mix(in srgb, var(--lv-color) 22%, transparent);
+}
+
+.cs-lv1 { --lv-color: #16a34a; }
+.cs-lv2 { --lv-color: #2563eb; }
+.cs-lv3 { --lv-color: #d97706; }
+.cs-lv4 { --lv-color: #ea580c; }
+.cs-lv5 { --lv-color: #dc2626; }
+
+.cs-card-cta {
+  margin-top: 1.1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-subtle);
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--fg-muted);
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  transition: color 0.15s ease, gap 0.2s ease;
+}
+
+.cs-card:hover .cs-card-cta {
+  color: var(--brand);
+  gap: 0.5rem;
 }
 
 /* =============================================================

@@ -4,13 +4,23 @@ hide:
   - toc
 ---
 
-<div class="cs-hero" markdown>
-<p class="cs-hero-label">LEVEL 1</p>
-<h1 class="cs-hero-title">Foundation</h1>
-<p class="cs-hero-sub">Read-heavy systems, short code generation, sharding fundamentals. Start here.</p>
+<div class="cs-level-hero cs-lv1">
+  <div class="cs-level-bg-num">01</div>
+  <div class="cs-level-inner">
+    <p class="cs-level-eyebrow">Level 1 of 5</p>
+    <h1 class="cs-level-title">Foundation</h1>
+    <p class="cs-level-sub">Read-heavy systems, short code generation, sharding fundamentals. Start here.</p>
+    <div class="cs-level-dots">
+      <span class="cs-dot cs-dot-on"></span>
+      <span class="cs-dot"></span>
+      <span class="cs-dot"></span>
+      <span class="cs-dot"></span>
+      <span class="cs-dot"></span>
+    </div>
+  </div>
 </div>
 
-<p class="cs-path-label">CASE STUDIES</p>
+<p class="cs-path-label">Case Studies</p>
 
 <div class="cs-cards">
   <a class="cs-card" href="01-Unique-ID-Generator/00-System-Overview/">
@@ -24,6 +34,7 @@ hide:
       <span>Clock Skew</span>
       <span>Fault Isolation</span>
     </div>
+    <div class="cs-card-cta">Open case study <span>→</span></div>
   </a>
   <a class="cs-card" href="02-URL-Shortener/">
     <div class="cs-card-header"><span class="cs-badge foundation">FOUNDATION</span></div>
@@ -37,5 +48,6 @@ hide:
       <span>Cold Storage</span>
       <span>Fault Isolation</span>
     </div>
+    <div class="cs-card-cta">Open case study <span>→</span></div>
   </a>
 </div>

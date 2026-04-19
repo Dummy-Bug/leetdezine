@@ -4,13 +4,23 @@ hide:
   - toc
 ---
 
-<div class="cs-hero" markdown>
-<p class="cs-hero-label">LEVEL 2</p>
-<h1 class="cs-hero-title">Ascent</h1>
-<p class="cs-hero-sub">Blob storage, content deduplication, async pipelines, expiry management.</p>
+<div class="cs-level-hero cs-lv2">
+  <div class="cs-level-bg-num">02</div>
+  <div class="cs-level-inner">
+    <p class="cs-level-eyebrow">Level 2 of 5</p>
+    <h1 class="cs-level-title">Ascent</h1>
+    <p class="cs-level-sub">Async pipelines, multi-channel delivery, Kafka fan-out, blob storage, expiry at scale.</p>
+    <div class="cs-level-dots">
+      <span class="cs-dot cs-dot-on"></span>
+      <span class="cs-dot cs-dot-on"></span>
+      <span class="cs-dot"></span>
+      <span class="cs-dot"></span>
+      <span class="cs-dot"></span>
+    </div>
+  </div>
 </div>
 
-<p class="cs-path-label">CASE STUDIES</p>
+<p class="cs-path-label">Case Studies</p>
 
 <div class="cs-cards">
   <a class="cs-card" href="01-Notification-System/00-System-Overview/">
@@ -25,6 +35,7 @@ hide:
       <span>Scheduling</span>
       <span>Circuit Breaker</span>
     </div>
+    <div class="cs-card-cta">Open case study <span>→</span></div>
   </a>
   <a class="cs-card" href="02-Pastebin/">
     <div class="cs-card-header"><span class="cs-badge ascent">ASCENT</span></div>
@@ -37,5 +48,6 @@ hide:
       <span>Expiry Jobs</span>
       <span>State Machine</span>
     </div>
+    <div class="cs-card-cta">Open case study <span>→</span></div>
   </a>
 </div>

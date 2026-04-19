@@ -40,6 +40,9 @@ plugins:
 
 extra:
   generator: false
+  analytics:
+    provider: google
+    property: G-KZPQKH7FSK
 
 extra_css:
   - stylesheets/extra.css

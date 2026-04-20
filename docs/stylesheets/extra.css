@@ -1293,24 +1293,18 @@ a.cs-level-link:hover .cs-level-count::after {
 
 .cs-level-hero {
   position: relative;
-  padding: 3.5rem 0 2.8rem;
+  padding: 2rem 0 1.8rem;
   margin-bottom: 0.5rem;
   overflow: hidden;
   max-width: 880px;
   margin-left: auto;
   margin-right: auto;
   border-bottom: 1px solid var(--border-default);
+  text-align: center;
 }
 
 .cs-level-hero::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 3px;
-  height: 100%;
-  background: var(--lv-color);
-  border-radius: 0 2px 2px 0;
+  display: none;
 }
 
 .cs-level-bg-num {
@@ -1330,9 +1324,10 @@ a.cs-level-link:hover .cs-level-count::after {
 }
 
 .cs-level-inner {
-  padding-left: 1.8rem;
+  padding-left: 0;
   position: relative;
   z-index: 1;
+  text-align: center;
 }
 
 .cs-level-eyebrow {
@@ -1344,21 +1339,29 @@ a.cs-level-link:hover .cs-level-count::after {
   margin: 0 0 0.65rem !important;
 }
 
-.cs-level-title {
-  font-size: clamp(2.2rem, 4vw, 3rem) !important;
+.cs-level-hero .cs-level-title,
+.md-typeset .cs-level-hero .cs-level-title {
+  font-size: clamp(1.6rem, 3vw, 2.2rem) !important;
   font-weight: 800 !important;
   color: var(--fg-primary) !important;
   margin: 0 0 0.6rem !important;
   letter-spacing: -0.03em !important;
   line-height: 1.1 !important;
+  text-align: center !important;
+  display: block !important;
 }
 
 .cs-level-sub {
-  font-size: 1rem !important;
+  font-size: 0.95rem !important;
   color: var(--fg-secondary) !important;
   max-width: 520px;
   line-height: 1.65 !important;
-  margin: 0 0 1.5rem !important;
+  margin: 0 auto 1.2rem !important;
+  text-align: center !important;
+}
+
+.cs-level-dots {
+  justify-content: center;
 }
 
 .cs-level-dots {
@@ -1692,13 +1695,25 @@ body:has(.cs-hero) .md-header__title .md-ellipsis {
 .md-tabs__link[href*="04-Summit"]           { --tab-color: #ea580c; }
 .md-tabs__link[href*="05-Battleground"]     { --tab-color: #dc2626; }
 
-/* Nav group separators — before Concepts, Back of Envelope, and Foundation */
-.md-tabs__link[href*="01-Concepts"],
-.md-tabs__link[href*="02-Back-of-Envelope"],
-.md-tabs__link[href*="01-Foundation"] {
-  border-left: 1px solid var(--border-strong);
-  margin-left: 0.5rem;
-  padding-left: 1rem;
+/* Nav group separators */
+.md-tabs__item:has(> .md-tabs__link[href*="01-Concepts"]),
+.md-tabs__item:has(> .md-tabs__link[href*="02-Back-of-Envelope"]),
+.md-tabs__item:has(> .md-tabs__link[href*="01-Foundation"]) {
+  position: relative;
+  margin-left: 1rem;
+}
+
+.md-tabs__item:has(> .md-tabs__link[href*="01-Concepts"])::before,
+.md-tabs__item:has(> .md-tabs__link[href*="02-Back-of-Envelope"])::before,
+.md-tabs__item:has(> .md-tabs__link[href*="01-Foundation"])::before {
+  content: "";
+  position: absolute;
+  left: -0.6rem;
+  top: 25%;
+  height: 50%;
+  width: 1px;
+  background: var(--fg-muted);
+  opacity: 0.6;
 }
 
 /* =============================================================
@@ -2062,6 +2077,85 @@ body:has(.cs-hero) .md-header__title .md-ellipsis {
 .cs-concept-c3 { --concept-color: #d97706; --concept-tint: #fef3c7; }
 .cs-concept-c4 { --concept-color: #059669; --concept-tint: #ecfdf5; }
 .cs-concept-c5 { --concept-color: #9d174d; --concept-tint: #fce7f3; }
+
+/* ─── Concepts Index Grid ───────────────────────────────── */
+.cs-concepts-index-grid {
+  grid-template-columns: repeat(2, 1fr) !important;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* 1. Hero accent underline */
+.cs-level-hero::after {
+  content: "";
+  display: block;
+  width: 48px;
+  height: 3px;
+  background: var(--lv-color);
+  border-radius: 2px;
+  margin: 0.8rem auto 0;
+}
+
+/* 2. Card top accent border + 3. Subtle resting shadow */
+.cs-concepts-index-grid .cs-concept-card {
+  border-top: 3px solid var(--concept-color);
+  box-shadow: var(--shadow-sm);
+  padding: 1.2rem 1.3rem;
+}
+
+/* 4. Chips tinted by card color at rest */
+.cs-concept-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-top: 0.6rem;
+}
+
+.cs-concept-chips span {
+  font-size: 0.7rem;
+  color: var(--concept-color);
+  background: color-mix(in srgb, var(--concept-tint) 50%, var(--surface-raised));
+  border: 1px solid color-mix(in srgb, var(--concept-color) 20%, transparent);
+  border-radius: 4px;
+  padding: 0.15rem 0.45rem;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.cs-concept-card:hover .cs-concept-chips span {
+  background: var(--concept-tint);
+  border-color: color-mix(in srgb, var(--concept-color) 35%, transparent);
+}
+
+/* 5. CTA arrow slide */
+.cs-concept-cta {
+  margin-top: 0.9rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--concept-color);
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  transition: gap 0.2s ease;
+}
+
+.cs-concept-cta span {
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.cs-concept-card:hover .cs-concept-cta {
+  gap: 0.5rem;
+}
+
+.cs-concept-card:hover .cs-concept-cta span {
+  transform: translateX(4px);
+}
+
+@media (max-width: 720px) {
+  .cs-concepts-index-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
 
 /* ─── Section Divider ────────────────────────────────────── */
 .cs-section-divider {

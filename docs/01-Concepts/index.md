@@ -14,59 +14,43 @@ hide:
   </div>
 </div>
 
-<p class="cs-path-label">Topics</p>
 
-<div class="cs-cards">
-  <a class="cs-card" href="Core-Concepts/01-Performance-Metrics/00-Overview/">
-    <div class="cs-card-header"><span class="cs-badge concepts">CORE CONCEPTS</span></div>
-    <div class="cs-card-title">Core Concepts</div>
-    <div class="cs-card-desc">Availability, reliability, scalability, CAP theorem, consistency models, fault tolerance, PACELC, concurrency, and NFRs.</div>
-    <div class="cs-topics">
-      <span>CAP Theorem</span>
-      <span>PACELC</span>
-      <span>Consistency Models</span>
-      <span>Fault Tolerance</span>
-      <span>Scalability</span>
+<div class="cs-concepts-grid cs-concepts-index-grid">
+
+  <a href="Core-Concepts/01-Performance-Metrics/00-Overview/" class="cs-concept-card cs-concept-c1">
+    <div class="cs-concept-card-title">Core Concepts</div>
+    <div class="cs-concept-card-desc">Availability, reliability, scalability, CAP theorem, consistency models, fault tolerance, PACELC, concurrency, and NFRs.</div>
+    <div class="cs-concept-chips">
+      <span>CAP Theorem</span><span>PACELC</span><span>Consistency Models</span><span>Fault Tolerance</span>
     </div>
-    <div class="cs-card-cta">Open topic <span>→</span></div>
+    <div class="cs-concept-cta">Open topic <span>→</span></div>
   </a>
-  <a class="cs-card" href="Storage-and-Databases/01-Fundamentals/01-Why-Not-Files/">
-    <div class="cs-card-header"><span class="cs-badge concepts">STORAGE & DATABASES</span></div>
-    <div class="cs-card-title">Storage & Databases</div>
-    <div class="cs-card-desc">ACID, transaction isolation, indexing, sharding, replication, database types — Redis, Cassandra, DynamoDB, MongoDB, Elasticsearch, and more.</div>
-    <div class="cs-topics">
-      <span>ACID</span>
-      <span>Sharding</span>
-      <span>Replication</span>
-      <span>Indexing</span>
-      <span>Database Types</span>
+
+  <a href="Storage-and-Databases/01-Fundamentals/01-Why-Not-Files/" class="cs-concept-card cs-concept-c2">
+    <div class="cs-concept-card-title">Storage & Databases</div>
+    <div class="cs-concept-card-desc">ACID, transaction isolation, indexing, sharding, replication, database types — Redis, Cassandra, DynamoDB, MongoDB, Elasticsearch.</div>
+    <div class="cs-concept-chips">
+      <span>ACID</span><span>Sharding</span><span>Replication</span><span>Indexing</span>
     </div>
-    <div class="cs-card-cta">Open topic <span>→</span></div>
+    <div class="cs-concept-cta">Open topic <span>→</span></div>
   </a>
-  <a class="cs-card" href="Caching/01-Fundamentals/">
-    <div class="cs-card-header"><span class="cs-badge concepts">CACHING</span></div>
-    <div class="cs-card-title">Caching</div>
-    <div class="cs-card-desc">Write strategies, eviction policies, cache invalidation, distributed caching, Redis internals, and common cache failure patterns.</div>
-    <div class="cs-topics">
-      <span>Eviction Policies</span>
-      <span>Cache Invalidation</span>
-      <span>Distributed Caching</span>
-      <span>Redis</span>
-      <span>Cache Stampede</span>
+
+  <a href="Caching/01-Fundamentals/" class="cs-concept-card cs-concept-c3">
+    <div class="cs-concept-card-title">Caching</div>
+    <div class="cs-concept-card-desc">Write strategies, eviction policies, cache invalidation, distributed caching, Redis internals, and common cache failure patterns.</div>
+    <div class="cs-concept-chips">
+      <span>Eviction Policies</span><span>Cache Invalidation</span><span>Distributed Caching</span><span>Redis</span>
     </div>
-    <div class="cs-card-cta">Open topic <span>→</span></div>
+    <div class="cs-concept-cta">Open topic <span>→</span></div>
   </a>
-  <a class="cs-card" href="Messaging-and-Event-Driven/01-Message-Queues/">
-    <div class="cs-card-header"><span class="cs-badge concepts">MESSAGING</span></div>
-    <div class="cs-card-title">Messaging & Event Driven</div>
-    <div class="cs-card-desc">Kafka internals, SQS, RabbitMQ, event sourcing, CQRS, outbox pattern, stream processing, batch processing, and schema evolution.</div>
-    <div class="cs-topics">
-      <span>Kafka</span>
-      <span>SQS</span>
-      <span>Event Sourcing</span>
-      <span>CQRS</span>
-      <span>Stream Processing</span>
+
+  <a href="Messaging-and-Event-Driven/01-Message-Queues/" class="cs-concept-card cs-concept-c5">
+    <div class="cs-concept-card-title">Messaging & Event Driven</div>
+    <div class="cs-concept-card-desc">Kafka internals, SQS, RabbitMQ, event sourcing, CQRS, outbox pattern, stream processing, batch processing, and schema evolution.</div>
+    <div class="cs-concept-chips">
+      <span>Kafka</span><span>SQS</span><span>Event Sourcing</span><span>CQRS</span>
     </div>
-    <div class="cs-card-cta">Open topic <span>→</span></div>
+    <div class="cs-concept-cta">Open topic <span>→</span></div>
   </a>
+
 </div>

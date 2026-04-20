@@ -79,7 +79,7 @@ markdown_extensions:
 
 nav:
   - Home: index.md
-  - "👉  Start Here": start-here.md
+  - "Start Here": start-here.md
 
   - Concepts:
     - Overview: 01-Concepts/index.md

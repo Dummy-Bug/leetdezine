@@ -79,788 +79,902 @@ markdown_extensions:
 
 nav:
   - "": index.md
-  - "Start Here": start-here.md
+  - "👉  Start Here": start-here.md
 
   - Concepts:
-    - Overview: Concepts/index.md
+    - Overview: 01-Concepts/index.md
     - Core Concepts:
       - Performance Metrics:
-        - Overview: Core-Concepts/01-Performance-Metrics/00-Overview.md
-        - Introduction: Core-Concepts/01-Performance-Metrics/01-Introduction.md
-        - Latency: Core-Concepts/01-Performance-Metrics/02-Latency.md
-        - Throughput: Core-Concepts/01-Performance-Metrics/03-Throughput.md
-        - Latency vs Throughput: Core-Concepts/01-Performance-Metrics/04-Latency-vs-Throughput.md
-        - Bandwidth: Core-Concepts/01-Performance-Metrics/05-Bandwidth.md
-        - Bandwidth vs Latency vs Throughput: Core-Concepts/01-Performance-Metrics/06-Bandwidth-vs-Latency-vs-Throughput.md
-        - Percentiles: Core-Concepts/01-Performance-Metrics/07-Percentiles.md
-        - Interview Cheatsheet: Core-Concepts/01-Performance-Metrics/08-Interview-Cheatsheet.md
+        - Overview: 01-Concepts/Core-Concepts/01-Performance-Metrics/00-Overview.md
+        - Introduction: 01-Concepts/Core-Concepts/01-Performance-Metrics/01-Introduction.md
+        - Latency: 01-Concepts/Core-Concepts/01-Performance-Metrics/02-Latency.md
+        - Throughput: 01-Concepts/Core-Concepts/01-Performance-Metrics/03-Throughput.md
+        - Latency vs Throughput: 01-Concepts/Core-Concepts/01-Performance-Metrics/04-Latency-vs-Throughput.md
+        - Bandwidth: 01-Concepts/Core-Concepts/01-Performance-Metrics/05-Bandwidth.md
+        - Bandwidth vs Latency vs Throughput: 01-Concepts/Core-Concepts/01-Performance-Metrics/06-Bandwidth-vs-Latency-vs-Throughput.md
+        - Percentiles: 01-Concepts/Core-Concepts/01-Performance-Metrics/07-Percentiles.md
+        - Interview Cheatsheet: 01-Concepts/Core-Concepts/01-Performance-Metrics/08-Interview-Cheatsheet.md
         - "Interview Questions":
-          - SDE-1: Core-Concepts/01-Performance-Metrics/09-Interview-Questions/SDE-1.md
-          - SDE-2: Core-Concepts/01-Performance-Metrics/09-Interview-Questions/SDE-2.md
-          - SDE-3: Core-Concepts/01-Performance-Metrics/09-Interview-Questions/SDE-3.md
+          - SDE-1: 01-Concepts/Core-Concepts/01-Performance-Metrics/09-Interview-Questions/SDE-1.md
+          - SDE-2: 01-Concepts/Core-Concepts/01-Performance-Metrics/09-Interview-Questions/SDE-2.md
+          - SDE-3: 01-Concepts/Core-Concepts/01-Performance-Metrics/09-Interview-Questions/SDE-3.md
       - Service Levels:
-        - Overview: Core-Concepts/02-Service-Levels/00-Overview.md
-        - Introduction: Core-Concepts/02-Service-Levels/01-Introduction.md
-        - SLI: Core-Concepts/02-Service-Levels/02-SLI.md
-        - SLO: Core-Concepts/02-Service-Levels/03-SLO.md
-        - SLA: Core-Concepts/02-Service-Levels/04-SLA.md
-        - Error Budget: Core-Concepts/02-Service-Levels/05-Error-Budget.md
-        - Interview Cheatsheet: Core-Concepts/02-Service-Levels/06-Interview-Cheatsheet.md
+        - Overview: 01-Concepts/Core-Concepts/02-Service-Levels/00-Overview.md
+        - Introduction: 01-Concepts/Core-Concepts/02-Service-Levels/01-Introduction.md
+        - SLI: 01-Concepts/Core-Concepts/02-Service-Levels/02-SLI.md
+        - SLO: 01-Concepts/Core-Concepts/02-Service-Levels/03-SLO.md
+        - SLA: 01-Concepts/Core-Concepts/02-Service-Levels/04-SLA.md
+        - Error Budget: 01-Concepts/Core-Concepts/02-Service-Levels/05-Error-Budget.md
+        - Interview Cheatsheet: 01-Concepts/Core-Concepts/02-Service-Levels/06-Interview-Cheatsheet.md
         - "Interview Questions":
-          - SDE-1: Core-Concepts/02-Service-Levels/Interview-Questions/SDE-1.md
-          - SDE-2: Core-Concepts/02-Service-Levels/Interview-Questions/SDE-2.md
-          - SDE-3: Core-Concepts/02-Service-Levels/Interview-Questions/SDE-3.md
+          - SDE-1: 01-Concepts/Core-Concepts/02-Service-Levels/Interview-Questions/SDE-1.md
+          - SDE-2: 01-Concepts/Core-Concepts/02-Service-Levels/Interview-Questions/SDE-2.md
+          - SDE-3: 01-Concepts/Core-Concepts/02-Service-Levels/Interview-Questions/SDE-3.md
       - Availability:
-        - Overview: Core-Concepts/03-Availability/00-Overview.md
-        - Availability: Core-Concepts/03-Availability/01-Availability.md
-        - SPOF: Core-Concepts/03-Availability/02-SPOF.md
-        - N+1 Redundancy: Core-Concepts/03-Availability/03-N+1-Redundancy.md
-        - Availability Patterns: Core-Concepts/03-Availability/04-Availability-Patterns.md
-        - Nines of Availability: Core-Concepts/03-Availability/05-Nines-of-Availability.md
-        - Series vs Parallel: Core-Concepts/03-Availability/06-Series-vs-Parallel.md
-        - Interview Cheatsheet: Core-Concepts/03-Availability/07-Interview-Cheatsheet.md
+        - Overview: 01-Concepts/Core-Concepts/03-Availability/00-Overview.md
+        - Availability: 01-Concepts/Core-Concepts/03-Availability/01-Availability.md
+        - SPOF: 01-Concepts/Core-Concepts/03-Availability/02-SPOF.md
+        - N+1 Redundancy: 01-Concepts/Core-Concepts/03-Availability/03-N+1-Redundancy.md
+        - Availability Patterns: 01-Concepts/Core-Concepts/03-Availability/04-Availability-Patterns.md
+        - Nines of Availability: 01-Concepts/Core-Concepts/03-Availability/05-Nines-of-Availability.md
+        - Series vs Parallel: 01-Concepts/Core-Concepts/03-Availability/06-Series-vs-Parallel.md
+        - Interview Cheatsheet: 01-Concepts/Core-Concepts/03-Availability/07-Interview-Cheatsheet.md
         - "Interview Questions":
-          - SDE-1: Core-Concepts/03-Availability/Interview-Questions/SDE-1.md
-          - SDE-2: Core-Concepts/03-Availability/Interview-Questions/SDE-2.md
-          - SDE-3: Core-Concepts/03-Availability/Interview-Questions/SDE-3.md
+          - SDE-1: 01-Concepts/Core-Concepts/03-Availability/Interview-Questions/SDE-1.md
+          - SDE-2: 01-Concepts/Core-Concepts/03-Availability/Interview-Questions/SDE-2.md
+          - SDE-3: 01-Concepts/Core-Concepts/03-Availability/Interview-Questions/SDE-3.md
       - Reliability:
-        - Overview: Core-Concepts/04-Reliability/00-Overview.md
-        - Reliability: Core-Concepts/04-Reliability/01-Reliability.md
-        - MTBF & MTTR: Core-Concepts/04-Reliability/02-MTBF-and-MTTR.md
-        - RTO & RPO: Core-Concepts/04-Reliability/03-RTO-and-RPO.md
-        - MTTR vs RTO: Core-Concepts/04-Reliability/04-MTTR-RTO.md
-        - Reliability vs Availability: Core-Concepts/04-Reliability/05-Reliability-vs-Availability.md
-        - Interview Cheatsheet: Core-Concepts/04-Reliability/06-Interview-Cheatsheet.md
+        - Overview: 01-Concepts/Core-Concepts/04-Reliability/00-Overview.md
+        - Reliability: 01-Concepts/Core-Concepts/04-Reliability/01-Reliability.md
+        - MTBF & MTTR: 01-Concepts/Core-Concepts/04-Reliability/02-MTBF-and-MTTR.md
+        - RTO & RPO: 01-Concepts/Core-Concepts/04-Reliability/03-RTO-and-RPO.md
+        - MTTR vs RTO: 01-Concepts/Core-Concepts/04-Reliability/04-MTTR-RTO.md
+        - Reliability vs Availability: 01-Concepts/Core-Concepts/04-Reliability/05-Reliability-vs-Availability.md
+        - Interview Cheatsheet: 01-Concepts/Core-Concepts/04-Reliability/06-Interview-Cheatsheet.md
         - "Interview Questions":
-          - SDE-1: Core-Concepts/04-Reliability/Interview-Questions/SDE-1.md
-          - SDE-2: Core-Concepts/04-Reliability/Interview-Questions/SDE-2.md
-          - SDE-3: Core-Concepts/04-Reliability/Interview-Questions/SDE-3.md
+          - SDE-1: 01-Concepts/Core-Concepts/04-Reliability/Interview-Questions/SDE-1.md
+          - SDE-2: 01-Concepts/Core-Concepts/04-Reliability/Interview-Questions/SDE-2.md
+          - SDE-3: 01-Concepts/Core-Concepts/04-Reliability/Interview-Questions/SDE-3.md
       - Scalability:
-        - Overview: Core-Concepts/05-Scalability/00-Overview.md
-        - Scalability: Core-Concepts/05-Scalability/01-Scalability.md
-        - Interview Cheatsheet: Core-Concepts/05-Scalability/04-Interview-Cheatsheet.md
+        - Overview: 01-Concepts/Core-Concepts/05-Scalability/00-Overview.md
+        - Scalability: 01-Concepts/Core-Concepts/05-Scalability/01-Scalability.md
+        - Interview Cheatsheet: 01-Concepts/Core-Concepts/05-Scalability/04-Interview-Cheatsheet.md
         - Load Balancing:
-          - Overview: Core-Concepts/05-Scalability/02-Load-Balancing/00-Overview.md
-          - Load Balancing: Core-Concepts/05-Scalability/02-Load-Balancing/01-Load-Balancing.md
-          - Algorithms: Core-Concepts/05-Scalability/02-Load-Balancing/02-Algorithms.md
-          - Hybrid In Production: Core-Concepts/05-Scalability/02-Load-Balancing/05-Hybrid-In-Production.md
-          - Interview Cheatsheet: Core-Concepts/05-Scalability/02-Load-Balancing/06-Interview-Cheatsheet.md
+          - Overview: 01-Concepts/Core-Concepts/05-Scalability/02-Load-Balancing/00-Overview.md
+          - Load Balancing: 01-Concepts/Core-Concepts/05-Scalability/02-Load-Balancing/01-Load-Balancing.md
+          - Algorithms: 01-Concepts/Core-Concepts/05-Scalability/02-Load-Balancing/02-Algorithms.md
+          - Hybrid In Production: 01-Concepts/Core-Concepts/05-Scalability/02-Load-Balancing/05-Hybrid-In-Production.md
+          - Interview Cheatsheet: 01-Concepts/Core-Concepts/05-Scalability/02-Load-Balancing/06-Interview-Cheatsheet.md
           - L4:
-            - Overview: Core-Concepts/05-Scalability/02-Load-Balancing/03-L4/00-Overview.md
-            - Fundamentals: Core-Concepts/05-Scalability/02-Load-Balancing/03-L4/01-Fundamentals.md
-            - How It Works: Core-Concepts/05-Scalability/02-Load-Balancing/03-L4/02-How-It-Works.md
-            - Connection Tables: Core-Concepts/05-Scalability/02-Load-Balancing/03-L4/03-Connection-Tables.md
-            - Real World: Core-Concepts/05-Scalability/02-Load-Balancing/03-L4/04-Real-World.md
+            - Overview: 01-Concepts/Core-Concepts/05-Scalability/02-Load-Balancing/03-L4/00-Overview.md
+            - Fundamentals: 01-Concepts/Core-Concepts/05-Scalability/02-Load-Balancing/03-L4/01-Fundamentals.md
+            - How It Works: 01-Concepts/Core-Concepts/05-Scalability/02-Load-Balancing/03-L4/02-How-It-Works.md
+            - Connection Tables: 01-Concepts/Core-Concepts/05-Scalability/02-Load-Balancing/03-L4/03-Connection-Tables.md
+            - Real World: 01-Concepts/Core-Concepts/05-Scalability/02-Load-Balancing/03-L4/04-Real-World.md
           - L7:
-            - Overview: Core-Concepts/05-Scalability/02-Load-Balancing/04-L7/00-Overview.md
-            - Fundamentals: Core-Concepts/05-Scalability/02-Load-Balancing/04-L7/01-Fundamentals.md
-            - Request Flow: Core-Concepts/05-Scalability/02-Load-Balancing/04-L7/02-Request-Flow.md
-            - API Gateway: Core-Concepts/05-Scalability/02-Load-Balancing/04-L7/03-API-Gateway.md
+            - Overview: 01-Concepts/Core-Concepts/05-Scalability/02-Load-Balancing/04-L7/00-Overview.md
+            - Fundamentals: 01-Concepts/Core-Concepts/05-Scalability/02-Load-Balancing/04-L7/01-Fundamentals.md
+            - Request Flow: 01-Concepts/Core-Concepts/05-Scalability/02-Load-Balancing/04-L7/02-Request-Flow.md
+            - API Gateway: 01-Concepts/Core-Concepts/05-Scalability/02-Load-Balancing/04-L7/03-API-Gateway.md
         - Auto Scaling:
-          - Overview: Core-Concepts/05-Scalability/03-Auto-Scaling/00-Overview.md
-          - Auto Scaling: Core-Concepts/05-Scalability/03-Auto-Scaling/01-Auto-Scaling.md
-          - Connection Draining: Core-Concepts/05-Scalability/03-Auto-Scaling/02-Connection-Draining.md
-          - Cold Start: Core-Concepts/05-Scalability/03-Auto-Scaling/03-Cold-Start.md
-          - Interview Cheatsheet: Core-Concepts/05-Scalability/03-Auto-Scaling/04-Interview-Cheatsheet.md
+          - Overview: 01-Concepts/Core-Concepts/05-Scalability/03-Auto-Scaling/00-Overview.md
+          - Auto Scaling: 01-Concepts/Core-Concepts/05-Scalability/03-Auto-Scaling/01-Auto-Scaling.md
+          - Connection Draining: 01-Concepts/Core-Concepts/05-Scalability/03-Auto-Scaling/02-Connection-Draining.md
+          - Cold Start: 01-Concepts/Core-Concepts/05-Scalability/03-Auto-Scaling/03-Cold-Start.md
+          - Interview Cheatsheet: 01-Concepts/Core-Concepts/05-Scalability/03-Auto-Scaling/04-Interview-Cheatsheet.md
       - Fault Tolerance:
-        - Overview: Core-Concepts/06-Fault-Tolerance/00-Overview.md
-        - Fault Tolerance: Core-Concepts/06-Fault-Tolerance/01-Fault-Tolerance.md
-        - Graceful Degradation: Core-Concepts/06-Fault-Tolerance/02-Graceful-Degradation.md
-        - Bulkhead: Core-Concepts/06-Fault-Tolerance/03-Bulkhead.md
-        - Timeout, Retry & Backoff: Core-Concepts/06-Fault-Tolerance/04-Timeout-Retry-Backoff.md
-        - Circuit Breaker: Core-Concepts/06-Fault-Tolerance/05-Circuit-Breaker.md
-        - Interview Cheatsheet: Core-Concepts/06-Fault-Tolerance/06-Interview-Cheatsheet.md
+        - Overview: 01-Concepts/Core-Concepts/06-Fault-Tolerance/00-Overview.md
+        - Fault Tolerance: 01-Concepts/Core-Concepts/06-Fault-Tolerance/01-Fault-Tolerance.md
+        - Graceful Degradation: 01-Concepts/Core-Concepts/06-Fault-Tolerance/02-Graceful-Degradation.md
+        - Bulkhead: 01-Concepts/Core-Concepts/06-Fault-Tolerance/03-Bulkhead.md
+        - Timeout, Retry & Backoff: 01-Concepts/Core-Concepts/06-Fault-Tolerance/04-Timeout-Retry-Backoff.md
+        - Circuit Breaker: 01-Concepts/Core-Concepts/06-Fault-Tolerance/05-Circuit-Breaker.md
+        - Interview Cheatsheet: 01-Concepts/Core-Concepts/06-Fault-Tolerance/06-Interview-Cheatsheet.md
       - Durability:
-        - Overview: Core-Concepts/07-Durability/00-Overview.md
-        - Durability: Core-Concepts/07-Durability/01-Durability.md
-        - WAL: Core-Concepts/07-Durability/02-WAL.md
-        - Replication: Core-Concepts/07-Durability/03-Replication.md
-        - Backups: Core-Concepts/07-Durability/04-Backups.md
-        - Interview Cheatsheet: Core-Concepts/07-Durability/05-Interview-Cheatsheet.md
+        - Overview: 01-Concepts/Core-Concepts/07-Durability/00-Overview.md
+        - Durability: 01-Concepts/Core-Concepts/07-Durability/01-Durability.md
+        - WAL: 01-Concepts/Core-Concepts/07-Durability/02-WAL.md
+        - Replication: 01-Concepts/Core-Concepts/07-Durability/03-Replication.md
+        - Backups: 01-Concepts/Core-Concepts/07-Durability/04-Backups.md
+        - Interview Cheatsheet: 01-Concepts/Core-Concepts/07-Durability/05-Interview-Cheatsheet.md
       - Concurrency & Locking:
-        - Overview: Core-Concepts/08-Concurrency-Locking/00-Overview.md
-        - Race Conditions: Core-Concepts/08-Concurrency-Locking/01-Race-Conditions.md
-        - Pessimistic Locking: Core-Concepts/08-Concurrency-Locking/02-Pessimistic-Locking.md
-        - Optimistic Locking: Core-Concepts/08-Concurrency-Locking/03-Optimistic-Locking.md
-        - Read/Write Locks: Core-Concepts/08-Concurrency-Locking/04-Read-Write-Locks.md
-        - MVCC: Core-Concepts/08-Concurrency-Locking/05-MVCC.md
-        - Distributed Locking: Core-Concepts/08-Concurrency-Locking/06-Distributed-Locking.md
-        - Idempotency: Core-Concepts/08-Concurrency-Locking/07-Idempotency.md
-        - Interview Cheatsheet: Core-Concepts/08-Concurrency-Locking/08-Interview-Cheatsheet.md
+        - Overview: 01-Concepts/Core-Concepts/08-Concurrency-Locking/00-Overview.md
+        - Race Conditions: 01-Concepts/Core-Concepts/08-Concurrency-Locking/01-Race-Conditions.md
+        - Pessimistic Locking: 01-Concepts/Core-Concepts/08-Concurrency-Locking/02-Pessimistic-Locking.md
+        - Optimistic Locking: 01-Concepts/Core-Concepts/08-Concurrency-Locking/03-Optimistic-Locking.md
+        - Read/Write Locks: 01-Concepts/Core-Concepts/08-Concurrency-Locking/04-Read-Write-Locks.md
+        - MVCC: 01-Concepts/Core-Concepts/08-Concurrency-Locking/05-MVCC.md
+        - Distributed Locking: 01-Concepts/Core-Concepts/08-Concurrency-Locking/06-Distributed-Locking.md
+        - Idempotency: 01-Concepts/Core-Concepts/08-Concurrency-Locking/07-Idempotency.md
+        - Interview Cheatsheet: 01-Concepts/Core-Concepts/08-Concurrency-Locking/08-Interview-Cheatsheet.md
       - Consistency Models:
-        - Overview: Core-Concepts/09-Consistency-Models/00-Overview.md
-        - Consistency Models: Core-Concepts/09-Consistency-Models/01-Consistency-Models.md
-        - When To Use: Core-Concepts/09-Consistency-Models/02-When-To-Use.md
-        - Interview Cheatsheet: Core-Concepts/09-Consistency-Models/03-Interview-Cheatsheet.md
+        - Overview: 01-Concepts/Core-Concepts/09-Consistency-Models/00-Overview.md
+        - Consistency Models: 01-Concepts/Core-Concepts/09-Consistency-Models/01-Consistency-Models.md
+        - When To Use: 01-Concepts/Core-Concepts/09-Consistency-Models/02-When-To-Use.md
+        - Interview Cheatsheet: 01-Concepts/Core-Concepts/09-Consistency-Models/03-Interview-Cheatsheet.md
       - Network Partitions:
-        - Overview: Core-Concepts/10-Network-Partitions/00-Overview.md
-        - Network Partitions: Core-Concepts/10-Network-Partitions/01-Network-Partitions.md
-        - During Partition: Core-Concepts/10-Network-Partitions/02-During-Partition.md
-        - Split Brain: Core-Concepts/10-Network-Partitions/03-Split-Brain.md
-        - Quorum vs Consensus: Core-Concepts/10-Network-Partitions/04-Quorum-vs-Consensus.md
-        - Interview Cheatsheet: Core-Concepts/10-Network-Partitions/05-Interview-Cheatsheet.md
+        - Overview: 01-Concepts/Core-Concepts/10-Network-Partitions/00-Overview.md
+        - Network Partitions: 01-Concepts/Core-Concepts/10-Network-Partitions/01-Network-Partitions.md
+        - During Partition: 01-Concepts/Core-Concepts/10-Network-Partitions/02-During-Partition.md
+        - Split Brain: 01-Concepts/Core-Concepts/10-Network-Partitions/03-Split-Brain.md
+        - Quorum vs Consensus: 01-Concepts/Core-Concepts/10-Network-Partitions/04-Quorum-vs-Consensus.md
+        - Interview Cheatsheet: 01-Concepts/Core-Concepts/10-Network-Partitions/05-Interview-Cheatsheet.md
       - CAP Theorem:
-        - Overview: Core-Concepts/11-CAP-Theorem/00-Overview.md
-        - CAP Theorem: Core-Concepts/11-CAP-Theorem/01-CAP-Theorem.md
-        - CP vs AP: Core-Concepts/11-CAP-Theorem/02-CP-vs-AP.md
-        - Interview Cheatsheet: Core-Concepts/11-CAP-Theorem/03-Interview-Cheatsheet.md
+        - Overview: 01-Concepts/Core-Concepts/11-CAP-Theorem/00-Overview.md
+        - CAP Theorem: 01-Concepts/Core-Concepts/11-CAP-Theorem/01-CAP-Theorem.md
+        - CP vs AP: 01-Concepts/Core-Concepts/11-CAP-Theorem/02-CP-vs-AP.md
+        - Interview Cheatsheet: 01-Concepts/Core-Concepts/11-CAP-Theorem/03-Interview-Cheatsheet.md
       - PACELC:
-        - Overview: Core-Concepts/12-PACELC/00-Overview.md
-        - PACELC Theorem: Core-Concepts/12-PACELC/01-PACELC-Theorem.md
-        - PA/EC — The Middle Ground: Core-Concepts/12-PACELC/02-PA-EC-The-Middle-Ground.md
-        - System Examples: Core-Concepts/12-PACELC/03-System-Examples.md
-        - Interview Cheatsheet: Core-Concepts/12-PACELC/04-Interview-Cheatsheet.md
+        - Overview: 01-Concepts/Core-Concepts/12-PACELC/00-Overview.md
+        - PACELC Theorem: 01-Concepts/Core-Concepts/12-PACELC/01-PACELC-Theorem.md
+        - PA/EC — The Middle Ground: 01-Concepts/Core-Concepts/12-PACELC/02-PA-EC-The-Middle-Ground.md
+        - System Examples: 01-Concepts/Core-Concepts/12-PACELC/03-System-Examples.md
+        - Interview Cheatsheet: 01-Concepts/Core-Concepts/12-PACELC/04-Interview-Cheatsheet.md
       - Security:
-        - Overview: Core-Concepts/13-Security/00-Overview.md
-        - Authentication & JWT: Core-Concepts/13-Security/01-Authentication-and-JWT.md
-        - Encryption: Core-Concepts/13-Security/02-Encryption.md
-        - Interview Cheatsheet: Core-Concepts/13-Security/03-Interview-Cheatsheet.md
+        - Overview: 01-Concepts/Core-Concepts/13-Security/00-Overview.md
+        - Authentication & JWT: 01-Concepts/Core-Concepts/13-Security/01-Authentication-and-JWT.md
+        - Encryption: 01-Concepts/Core-Concepts/13-Security/02-Encryption.md
+        - Interview Cheatsheet: 01-Concepts/Core-Concepts/13-Security/03-Interview-Cheatsheet.md
       - State Machines:
-        - Overview: Core-Concepts/14-State-Machines/00-Overview.md
-        - What Is A State Machine: Core-Concepts/14-State-Machines/01-What-Is-A-State-Machine.md
-        - Implementing In Database: Core-Concepts/14-State-Machines/02-Implementing-In-Database.md
-        - Timeout-Driven Transitions: Core-Concepts/14-State-Machines/03-Timeout-Driven-Transitions.md
-        - Audit Trail vs Overwrite: Core-Concepts/14-State-Machines/04-Audit-Trail-vs-Overwrite.md
-        - Interview Cheatsheet: Core-Concepts/14-State-Machines/05-Interview-Cheatsheet.md
+        - Overview: 01-Concepts/Core-Concepts/14-State-Machines/00-Overview.md
+        - What Is A State Machine: 01-Concepts/Core-Concepts/14-State-Machines/01-What-Is-A-State-Machine.md
+        - Implementing In Database: 01-Concepts/Core-Concepts/14-State-Machines/02-Implementing-In-Database.md
+        - Timeout-Driven Transitions: 01-Concepts/Core-Concepts/14-State-Machines/03-Timeout-Driven-Transitions.md
+        - Audit Trail vs Overwrite: 01-Concepts/Core-Concepts/14-State-Machines/04-Audit-Trail-vs-Overwrite.md
+        - Interview Cheatsheet: 01-Concepts/Core-Concepts/14-State-Machines/05-Interview-Cheatsheet.md
       - NFRs:
-        - Overview: Core-Concepts/15-NFRs/00-Overview.md
-        - NFRs & Design Decisions: Core-Concepts/15-NFRs/01-NFRs-And-Design-Decisions.md
-        - Conflicting NFRs: Core-Concepts/15-NFRs/02-Conflicting-NFRs.md
+        - Overview: 01-Concepts/Core-Concepts/15-NFRs/00-Overview.md
+        - NFRs & Design Decisions: 01-Concepts/Core-Concepts/15-NFRs/01-NFRs-And-Design-Decisions.md
+        - Conflicting NFRs: 01-Concepts/Core-Concepts/15-NFRs/02-Conflicting-NFRs.md
     - Caching:
-      - Fundamentals: Caching/01-Fundamentals.md
+      - Fundamentals: 01-Concepts/Caching/01-Fundamentals.md
       - Writing Strategies:
-        - Overview: Caching/02-Writing-Strategies/00-Overview.md
-        - Read Strategies: Caching/02-Writing-Strategies/01-Read-Strategies.md
-        - Write Strategies: Caching/02-Writing-Strategies/02-Write-Strategies.md
-        - Interview Cheatsheet: Caching/02-Writing-Strategies/03-Interview-Cheatsheet.md
+        - Overview: 01-Concepts/Caching/02-Writing-Strategies/00-Overview.md
+        - Read Strategies: 01-Concepts/Caching/02-Writing-Strategies/01-Read-Strategies.md
+        - Write Strategies: 01-Concepts/Caching/02-Writing-Strategies/02-Write-Strategies.md
+        - Interview Cheatsheet: 01-Concepts/Caching/02-Writing-Strategies/03-Interview-Cheatsheet.md
       - Eviction Policies:
-        - Overview: Caching/03-Eviction-Policies/00-Overview.md
-        - LRU: Caching/03-Eviction-Policies/01-LRU.md
-        - LFU: Caching/03-Eviction-Policies/02-LFU.md
-        - FIFO & TTL: Caching/03-Eviction-Policies/03-FIFO-and-TTL.md
-        - Interview Cheatsheet: Caching/03-Eviction-Policies/04-Interview-Cheatsheet.md
+        - Overview: 01-Concepts/Caching/03-Eviction-Policies/00-Overview.md
+        - LRU: 01-Concepts/Caching/03-Eviction-Policies/01-LRU.md
+        - LFU: 01-Concepts/Caching/03-Eviction-Policies/02-LFU.md
+        - FIFO & TTL: 01-Concepts/Caching/03-Eviction-Policies/03-FIFO-and-TTL.md
+        - Interview Cheatsheet: 01-Concepts/Caching/03-Eviction-Policies/04-Interview-Cheatsheet.md
       - Population Strategies:
-        - Overview: Caching/04-Population-Strategies/00-Overview.md
-        - Refresh Ahead: Caching/04-Population-Strategies/01-Refresh-Ahead.md
-        - Cache Warming: Caching/04-Population-Strategies/02-Cache-Warming.md
-        - Interview Cheatsheet: Caching/04-Population-Strategies/03-Interview-Cheatsheet.md
+        - Overview: 01-Concepts/Caching/04-Population-Strategies/00-Overview.md
+        - Refresh Ahead: 01-Concepts/Caching/04-Population-Strategies/01-Refresh-Ahead.md
+        - Cache Warming: 01-Concepts/Caching/04-Population-Strategies/02-Cache-Warming.md
+        - Interview Cheatsheet: 01-Concepts/Caching/04-Population-Strategies/03-Interview-Cheatsheet.md
       - Cache Invalidation:
-        - Overview: Caching/05-Cache-Invalidation/00-Overview.md
-        - TTL-Based: Caching/05-Cache-Invalidation/01-TTL-Based.md
-        - Event-Driven: Caching/05-Cache-Invalidation/02-Event-Driven.md
-        - Write-Through: Caching/05-Cache-Invalidation/03-Write-Through.md
-        - Cache Versioning: Caching/05-Cache-Invalidation/04-Cache-Versioning.md
-        - Stale-While-Revalidate: Caching/05-Cache-Invalidation/05-Stale-While-Revalidate.md
-        - Interview Cheatsheet: Caching/05-Cache-Invalidation/06-Interview-Cheatsheet.md
+        - Overview: 01-Concepts/Caching/05-Cache-Invalidation/00-Overview.md
+        - TTL-Based: 01-Concepts/Caching/05-Cache-Invalidation/01-TTL-Based.md
+        - Event-Driven: 01-Concepts/Caching/05-Cache-Invalidation/02-Event-Driven.md
+        - Write-Through: 01-Concepts/Caching/05-Cache-Invalidation/03-Write-Through.md
+        - Cache Versioning: 01-Concepts/Caching/05-Cache-Invalidation/04-Cache-Versioning.md
+        - Stale-While-Revalidate: 01-Concepts/Caching/05-Cache-Invalidation/05-Stale-While-Revalidate.md
+        - Interview Cheatsheet: 01-Concepts/Caching/05-Cache-Invalidation/06-Interview-Cheatsheet.md
       - Distributed Caching:
-        - Overview: Caching/06-Distributed-Caching/00-Overview.md
-        - Why Single Node Fails: Caching/06-Distributed-Caching/01-Why-Single-Node-Fails.md
-        - Consistent Hashing: Caching/06-Distributed-Caching/02-Consistent-Hashing.md
-        - Cache Coherence: Caching/06-Distributed-Caching/03-Cache-Coherence.md
-        - Replication: Caching/06-Distributed-Caching/04-Replication.md
-        - Two-Level Caching: Caching/06-Distributed-Caching/05-Two-Level-Caching.md
-        - Node Failure: Caching/06-Distributed-Caching/06-Node-Failure.md
-        - Interview Cheatsheet: Caching/06-Distributed-Caching/07-Interview-Cheatsheet.md
+        - Overview: 01-Concepts/Caching/06-Distributed-Caching/00-Overview.md
+        - Why Single Node Fails: 01-Concepts/Caching/06-Distributed-Caching/01-Why-Single-Node-Fails.md
+        - Consistent Hashing: 01-Concepts/Caching/06-Distributed-Caching/02-Consistent-Hashing.md
+        - Cache Coherence: 01-Concepts/Caching/06-Distributed-Caching/03-Cache-Coherence.md
+        - Replication: 01-Concepts/Caching/06-Distributed-Caching/04-Replication.md
+        - Two-Level Caching: 01-Concepts/Caching/06-Distributed-Caching/05-Two-Level-Caching.md
+        - Node Failure: 01-Concepts/Caching/06-Distributed-Caching/06-Node-Failure.md
+        - Interview Cheatsheet: 01-Concepts/Caching/06-Distributed-Caching/07-Interview-Cheatsheet.md
       - Cache Problems:
-        - Overview: Caching/07-Cache-Problems/00-Overview.md
-        - Cache Stampede: Caching/07-Cache-Problems/01-Cache-Stampede.md
-        - Cold Start: Caching/07-Cache-Problems/02-Cold-Start.md
-        - Cache Penetration: Caching/07-Cache-Problems/03-Cache-Penetration.md
-        - Cache Avalanche: Caching/07-Cache-Problems/04-Cache-Avalanche.md
-        - Interview Cheatsheet: Caching/07-Cache-Problems/05-Interview-Cheatsheet.md
+        - Overview: 01-Concepts/Caching/07-Cache-Problems/00-Overview.md
+        - Cache Stampede: 01-Concepts/Caching/07-Cache-Problems/01-Cache-Stampede.md
+        - Cold Start: 01-Concepts/Caching/07-Cache-Problems/02-Cold-Start.md
+        - Cache Penetration: 01-Concepts/Caching/07-Cache-Problems/03-Cache-Penetration.md
+        - Cache Avalanche: 01-Concepts/Caching/07-Cache-Problems/04-Cache-Avalanche.md
+        - Interview Cheatsheet: 01-Concepts/Caching/07-Cache-Problems/05-Interview-Cheatsheet.md
       - Redis:
-        - Data Structures: Caching/08-Redis/01-Data-Structures.md
-        - Patterns: Caching/08-Redis/02-Patterns.md
-        - Persistence: Caching/08-Redis/03-Persistence.md
-        - Streams: Caching/08-Redis/04-Streams.md
-        - Single-Threaded Event Loop: Caching/08-Redis/05-Single-Threaded-Event-Loop.md
+        - Data Structures: 01-Concepts/Caching/08-Redis/01-Data-Structures.md
+        - Patterns: 01-Concepts/Caching/08-Redis/02-Patterns.md
+        - Persistence: 01-Concepts/Caching/08-Redis/03-Persistence.md
+        - Streams: 01-Concepts/Caching/08-Redis/04-Streams.md
+        - Single-Threaded Event Loop: 01-Concepts/Caching/08-Redis/05-Single-Threaded-Event-Loop.md
       - "Interview Questions":
-        - SDE-1: Caching/09-Interview-Questions/SDE-1.md
-        - SDE-2: Caching/09-Interview-Questions/SDE-2.md
-        - SDE-3: Caching/09-Interview-Questions/SDE-3.md
+        - SDE-1: 01-Concepts/Caching/09-Interview-Questions/SDE-1.md
+        - SDE-2: 01-Concepts/Caching/09-Interview-Questions/SDE-2.md
+        - SDE-3: 01-Concepts/Caching/09-Interview-Questions/SDE-3.md
     - Storage & Databases:
       - Fundamentals:
-        - Why Not Files: Storage-and-Databases/01-Fundamentals/01-Why-Not-Files.md
-        - How Files Store Data: Storage-and-Databases/01-Fundamentals/02-How-File-Store-Data.md
-        - How DBs Store Data: Storage-and-Databases/01-Fundamentals/03-How-DB-Store-Data.md
-        - Row-Oriented Storage: Storage-and-Databases/01-Fundamentals/04-Row-Oriented-Storage.md
-        - Column-Oriented Storage: Storage-and-Databases/01-Fundamentals/05-Column-Oriented-Storage.md
+        - Why Not Files: 01-Concepts/Storage-and-Databases/01-Fundamentals/01-Why-Not-Files.md
+        - How Files Store Data: 01-Concepts/Storage-and-Databases/01-Fundamentals/02-How-File-Store-Data.md
+        - How DBs Store Data: 01-Concepts/Storage-and-Databases/01-Fundamentals/03-How-DB-Store-Data.md
+        - Row-Oriented Storage: 01-Concepts/Storage-and-Databases/01-Fundamentals/04-Row-Oriented-Storage.md
+        - Column-Oriented Storage: 01-Concepts/Storage-and-Databases/01-Fundamentals/05-Column-Oriented-Storage.md
       - ACID:
-        - The Problem: Storage-and-Databases/02-ACID/01-The-Problem.md
-        - Atomicity: Storage-and-Databases/02-ACID/02-Atomicity.md
-        - Consistency: Storage-and-Databases/02-ACID/03-Consistency.md
-        - Durability: Storage-and-Databases/02-ACID/05-Durability.md
-        - ACID vs BASE: Storage-and-Databases/02-ACID/06-ACID-vs-BASE.md
-        - Interview Cheatsheet: Storage-and-Databases/02-ACID/08-Interview-Cheatsheet.md
+        - The Problem: 01-Concepts/Storage-and-Databases/02-ACID/01-The-Problem.md
+        - Atomicity: 01-Concepts/Storage-and-Databases/02-ACID/02-Atomicity.md
+        - Consistency: 01-Concepts/Storage-and-Databases/02-ACID/03-Consistency.md
+        - Durability: 01-Concepts/Storage-and-Databases/02-ACID/05-Durability.md
+        - ACID vs BASE: 01-Concepts/Storage-and-Databases/02-ACID/06-ACID-vs-BASE.md
+        - Interview Cheatsheet: 01-Concepts/Storage-and-Databases/02-ACID/08-Interview-Cheatsheet.md
         - Transaction Isolation:
-          - Isolation Problems: Storage-and-Databases/02-ACID/04-Transaction-Isolation/01-Isolation-Problems.md
-          - Isolation Levels: Storage-and-Databases/02-ACID/04-Transaction-Isolation/02-Isolation-Levels.md
-          - Choosing Isolation: Storage-and-Databases/02-ACID/04-Transaction-Isolation/03-Choosing-Isolation.md
-          - Pessimistic vs Optimistic Locking: Storage-and-Databases/02-ACID/04-Transaction-Isolation/04-Pessimistic-vs-Optimistic-Locking.md
-          - Interview Cheatsheet: Storage-and-Databases/02-ACID/04-Transaction-Isolation/05-Interview-Cheatsheet.md
-          - External Locking Strategies: Storage-and-Databases/02-ACID/04-Transaction-Isolation/06-External-Locking-Strategies.md
+          - Isolation Problems: 01-Concepts/Storage-and-Databases/02-ACID/04-Transaction-Isolation/01-Isolation-Problems.md
+          - Isolation Levels: 01-Concepts/Storage-and-Databases/02-ACID/04-Transaction-Isolation/02-Isolation-Levels.md
+          - Choosing Isolation: 01-Concepts/Storage-and-Databases/02-ACID/04-Transaction-Isolation/03-Choosing-Isolation.md
+          - Pessimistic vs Optimistic Locking: 01-Concepts/Storage-and-Databases/02-ACID/04-Transaction-Isolation/04-Pessimistic-vs-Optimistic-Locking.md
+          - Interview Cheatsheet: 01-Concepts/Storage-and-Databases/02-ACID/04-Transaction-Isolation/05-Interview-Cheatsheet.md
+          - External Locking Strategies: 01-Concepts/Storage-and-Databases/02-ACID/04-Transaction-Isolation/06-External-Locking-Strategies.md
         - Distributed Transactions:
-          - The Problem: Storage-and-Databases/02-ACID/07-Distributed-Transactions/01-The-Problem.md
-          - 2PC vs Saga: Storage-and-Databases/02-ACID/07-Distributed-Transactions/04-2PC-vs-Saga.md
-          - Interview Cheatsheet: Storage-and-Databases/02-ACID/07-Distributed-Transactions/05-Interview-Cheatsheet.md
+          - The Problem: 01-Concepts/Storage-and-Databases/02-ACID/07-Distributed-Transactions/01-The-Problem.md
+          - 2PC vs Saga: 01-Concepts/Storage-and-Databases/02-ACID/07-Distributed-Transactions/04-2PC-vs-Saga.md
+          - Interview Cheatsheet: 01-Concepts/Storage-and-Databases/02-ACID/07-Distributed-Transactions/05-Interview-Cheatsheet.md
           - 2PC:
-            - Working: Storage-and-Databases/02-ACID/07-Distributed-Transactions/02-2PC/01-Working.md
-            - Failures: Storage-and-Databases/02-ACID/07-Distributed-Transactions/02-2PC/02-Failures.md
-            - Solutions: Storage-and-Databases/02-ACID/07-Distributed-Transactions/02-2PC/03-Solutions.md
-            - 2PC In Practice: Storage-and-Databases/02-ACID/07-Distributed-Transactions/02-2PC/04-2PC-In-Practice.md
+            - Working: 01-Concepts/Storage-and-Databases/02-ACID/07-Distributed-Transactions/02-2PC/01-Working.md
+            - Failures: 01-Concepts/Storage-and-Databases/02-ACID/07-Distributed-Transactions/02-2PC/02-Failures.md
+            - Solutions: 01-Concepts/Storage-and-Databases/02-ACID/07-Distributed-Transactions/02-2PC/03-Solutions.md
+            - 2PC In Practice: 01-Concepts/Storage-and-Databases/02-ACID/07-Distributed-Transactions/02-2PC/04-2PC-In-Practice.md
           - Saga:
-            - What Is Saga: Storage-and-Databases/02-ACID/07-Distributed-Transactions/03-Saga/01-What-Is-Saga.md
-            - Choreography: Storage-and-Databases/02-ACID/07-Distributed-Transactions/03-Saga/02-Choreography.md
-            - Orchestration: Storage-and-Databases/02-ACID/07-Distributed-Transactions/03-Saga/03-Orchestration.md
+            - What Is Saga: 01-Concepts/Storage-and-Databases/02-ACID/07-Distributed-Transactions/03-Saga/01-What-Is-Saga.md
+            - Choreography: 01-Concepts/Storage-and-Databases/02-ACID/07-Distributed-Transactions/03-Saga/02-Choreography.md
+            - Orchestration: 01-Concepts/Storage-and-Databases/02-ACID/07-Distributed-Transactions/03-Saga/03-Orchestration.md
         - "Interview Questions":
-          - SDE-1: Storage-and-Databases/02-ACID/Interview-Questions/SDE-1.md
-          - SDE-2: Storage-and-Databases/02-ACID/Interview-Questions/SDE-2.md
-          - SDE-3: Storage-and-Databases/02-ACID/Interview-Questions/SDE-3.md
+          - SDE-1: 01-Concepts/Storage-and-Databases/02-ACID/Interview-Questions/SDE-1.md
+          - SDE-2: 01-Concepts/Storage-and-Databases/02-ACID/Interview-Questions/SDE-2.md
+          - SDE-3: 01-Concepts/Storage-and-Databases/02-ACID/Interview-Questions/SDE-3.md
       - SQL:
-        - Relational Model: Storage-and-Databases/03-SQL/01-Relational-Model.md
-        - Normalisation: Storage-and-Databases/03-SQL/02-Normalisation.md
-        - Denormalisation: Storage-and-Databases/03-SQL/04-Denormalisation.md
-        - Joins: Storage-and-Databases/03-SQL/04-Joins.md
-        - Views: Storage-and-Databases/03-SQL/05-Views.md
+        - Relational Model: 01-Concepts/Storage-and-Databases/03-SQL/01-Relational-Model.md
+        - Normalisation: 01-Concepts/Storage-and-Databases/03-SQL/02-Normalisation.md
+        - Denormalisation: 01-Concepts/Storage-and-Databases/03-SQL/04-Denormalisation.md
+        - Joins: 01-Concepts/Storage-and-Databases/03-SQL/04-Joins.md
+        - Views: 01-Concepts/Storage-and-Databases/03-SQL/05-Views.md
       - Indexing:
-        - Indexes: Storage-and-Databases/04-Indexing/01-Indexes.md
-        - Hash Index: Storage-and-Databases/04-Indexing/02-Hash-Index.md
-        - B+ Tree: Storage-and-Databases/04-Indexing/03-B+Tree.md
-        - LSM Tree Writes: Storage-and-Databases/04-Indexing/04-LSM-Tree-Writes.md
-        - LSM Tree Reads: Storage-and-Databases/04-Indexing/05-LSM-Tree-Reads.md
+        - Indexes: 01-Concepts/Storage-and-Databases/04-Indexing/01-Indexes.md
+        - Hash Index: 01-Concepts/Storage-and-Databases/04-Indexing/02-Hash-Index.md
+        - B+ Tree: 01-Concepts/Storage-and-Databases/04-Indexing/03-B+Tree.md
+        - LSM Tree Writes: 01-Concepts/Storage-and-Databases/04-Indexing/04-LSM-Tree-Writes.md
+        - LSM Tree Reads: 01-Concepts/Storage-and-Databases/04-Indexing/05-LSM-Tree-Reads.md
         - Geospatial Indexing:
-          - The Problem: Storage-and-Databases/04-Indexing/06-Geospatial-Indexing/01-The-Problem.md
-          - Why Composite Index Fails: Storage-and-Databases/04-Indexing/06-Geospatial-Indexing/02-Why-Composite-Index-Fails.md
-          - Geohash: Storage-and-Databases/04-Indexing/06-Geospatial-Indexing/03-Geohash.md
-          - S2 Cells: Storage-and-Databases/04-Indexing/06-Geospatial-Indexing/04-S2-Cells.md
-          - Interview Cheatsheet: Storage-and-Databases/04-Indexing/06-Geospatial-Indexing/05-Interview-Cheatsheet.md
+          - The Problem: 01-Concepts/Storage-and-Databases/04-Indexing/06-Geospatial-Indexing/01-The-Problem.md
+          - Why Composite Index Fails: 01-Concepts/Storage-and-Databases/04-Indexing/06-Geospatial-Indexing/02-Why-Composite-Index-Fails.md
+          - Geohash: 01-Concepts/Storage-and-Databases/04-Indexing/06-Geospatial-Indexing/03-Geohash.md
+          - S2 Cells: 01-Concepts/Storage-and-Databases/04-Indexing/06-Geospatial-Indexing/04-S2-Cells.md
+          - Interview Cheatsheet: 01-Concepts/Storage-and-Databases/04-Indexing/06-Geospatial-Indexing/05-Interview-Cheatsheet.md
       - Replication:
-        - What Is Replication: Storage-and-Databases/05-Replication/01-What-is-Replication.md
-        - Sync vs Async: Storage-and-Databases/05-Replication/02-Sync-vs-Async.md
-        - Replication Lag: Storage-and-Databases/05-Replication/03-Replication-Lag.md
-        - Failover: Storage-and-Databases/05-Replication/04-Failover.md
-        - Multi-Primary: Storage-and-Databases/05-Replication/05-Multi-Primary.md
-        - Interview Cheatsheet: Storage-and-Databases/05-Replication/06-Interview-Cheatsheet.md
+        - What Is Replication: 01-Concepts/Storage-and-Databases/05-Replication/01-What-is-Replication.md
+        - Sync vs Async: 01-Concepts/Storage-and-Databases/05-Replication/02-Sync-vs-Async.md
+        - Replication Lag: 01-Concepts/Storage-and-Databases/05-Replication/03-Replication-Lag.md
+        - Failover: 01-Concepts/Storage-and-Databases/05-Replication/04-Failover.md
+        - Multi-Primary: 01-Concepts/Storage-and-Databases/05-Replication/05-Multi-Primary.md
+        - Interview Cheatsheet: 01-Concepts/Storage-and-Databases/05-Replication/06-Interview-Cheatsheet.md
       - Sharding:
-        - What Is Sharding: Storage-and-Databases/06-Sharding/01-What-is-Sharding.md
-        - Shard Key: Storage-and-Databases/06-Sharding/02-Shard-Key.md
-        - Sharding Strategies: Storage-and-Databases/06-Sharding/03-Sharding-Strategies.md
-        - Consistent Hashing: Storage-and-Databases/06-Sharding/04-Consistent-Hashing.md
-        - Cross-Shard Joins: Storage-and-Databases/06-Sharding/05-Cross-Shard-Joins.md
-        - Resharding: Storage-and-Databases/06-Sharding/06-Resharding.md
-        - Over-Sharding: Storage-and-Databases/06-Sharding/07-Over-Sharding.md
-        - Relational DBs: Storage-and-Databases/06-Sharding/08-Relational-DBs.md
-        - Interview Cheatsheet: Storage-and-Databases/06-Sharding/09-Interview-Cheatsheet.md
+        - What Is Sharding: 01-Concepts/Storage-and-Databases/06-Sharding/01-What-is-Sharding.md
+        - Shard Key: 01-Concepts/Storage-and-Databases/06-Sharding/02-Shard-Key.md
+        - Sharding Strategies: 01-Concepts/Storage-and-Databases/06-Sharding/03-Sharding-Strategies.md
+        - Consistent Hashing: 01-Concepts/Storage-and-Databases/06-Sharding/04-Consistent-Hashing.md
+        - Cross-Shard Joins: 01-Concepts/Storage-and-Databases/06-Sharding/05-Cross-Shard-Joins.md
+        - Resharding: 01-Concepts/Storage-and-Databases/06-Sharding/06-Resharding.md
+        - Over-Sharding: 01-Concepts/Storage-and-Databases/06-Sharding/07-Over-Sharding.md
+        - Relational DBs: 01-Concepts/Storage-and-Databases/06-Sharding/08-Relational-DBs.md
+        - Interview Cheatsheet: 01-Concepts/Storage-and-Databases/06-Sharding/09-Interview-Cheatsheet.md
       - MVCC:
-        - Concurrency Control: Storage-and-Databases/07-MVCC/01-Concurrency-Control.md
+        - Concurrency Control: 01-Concepts/Storage-and-Databases/07-MVCC/01-Concurrency-Control.md
       - CDC:
-        - What Is CDC: Storage-and-Databases/08-CDC/01-What-is-CDC.md
-        - Outbox Pattern: Storage-and-Databases/08-CDC/02-Outbox-Pattern.md
-        - Interview Cheatsheet: Storage-and-Databases/08-CDC/03-Interview-Cheatsheet.md
+        - What Is CDC: 01-Concepts/Storage-and-Databases/08-CDC/01-What-is-CDC.md
+        - Outbox Pattern: 01-Concepts/Storage-and-Databases/08-CDC/02-Outbox-Pattern.md
+        - Interview Cheatsheet: 01-Concepts/Storage-and-Databases/08-CDC/03-Interview-Cheatsheet.md
       - Pagination:
-        - Offset Pagination: Storage-and-Databases/09-Pagination/01-Offset-Pagination.md
-        - Cursor Pagination: Storage-and-Databases/09-Pagination/02-Cursor-Pagination.md
-        - Interview Cheatsheet: Storage-and-Databases/09-Pagination/03-Interview-Cheatsheet.md
+        - Offset Pagination: 01-Concepts/Storage-and-Databases/09-Pagination/01-Offset-Pagination.md
+        - Cursor Pagination: 01-Concepts/Storage-and-Databases/09-Pagination/02-Cursor-Pagination.md
+        - Interview Cheatsheet: 01-Concepts/Storage-and-Databases/09-Pagination/03-Interview-Cheatsheet.md
       - Connection Pooling:
-        - Cost Of A Connection: Storage-and-Databases/10-Connection-Pooling/01-Cost-Of-A-Connection.md
-        - Connection Pool: Storage-and-Databases/10-Connection-Pooling/02-Connection-Pool.md
-        - Interview Cheatsheet: Storage-and-Databases/10-Connection-Pooling/03-Interview-Cheatsheet.md
+        - Cost Of A Connection: 01-Concepts/Storage-and-Databases/10-Connection-Pooling/01-Cost-Of-A-Connection.md
+        - Connection Pool: 01-Concepts/Storage-and-Databases/10-Connection-Pooling/02-Connection-Pool.md
+        - Interview Cheatsheet: 01-Concepts/Storage-and-Databases/10-Connection-Pooling/03-Interview-Cheatsheet.md
       - Read/Write Splitting:
-        - The Problem: Storage-and-Databases/11-Read-Write-Splitting/01-The-Problem.md
-        - How It Works: Storage-and-Databases/11-Read-Write-Splitting/02-How-It-Works.md
-        - Replication Lag: Storage-and-Databases/11-Read-Write-Splitting/03-Replication-Lag.md
-        - Interview Cheatsheet: Storage-and-Databases/11-Read-Write-Splitting/04-Interview-Cheatsheet.md
+        - The Problem: 01-Concepts/Storage-and-Databases/11-Read-Write-Splitting/01-The-Problem.md
+        - How It Works: 01-Concepts/Storage-and-Databases/11-Read-Write-Splitting/02-How-It-Works.md
+        - Replication Lag: 01-Concepts/Storage-and-Databases/11-Read-Write-Splitting/03-Replication-Lag.md
+        - Interview Cheatsheet: 01-Concepts/Storage-and-Databases/11-Read-Write-Splitting/04-Interview-Cheatsheet.md
       - Database Types:
         - Key-Value Stores:
-          - Overview: Storage-and-Databases/12-Database-Types/01-Key-Value-Stores/00-Overview.md
-          - Redis: Storage-and-Databases/12-Database-Types/01-Key-Value-Stores/01-Redis.md
-          - Memcached: Storage-and-Databases/12-Database-Types/01-Key-Value-Stores/02-Memcached.md
-          - KV Positioning: Storage-and-Databases/12-Database-Types/01-Key-Value-Stores/03-KV-Positioning.md
-          - Interview Cheatsheet: Storage-and-Databases/12-Database-Types/01-Key-Value-Stores/04-Interview-Cheatsheet.md
+          - Overview: 01-Concepts/Storage-and-Databases/12-Database-Types/01-Key-Value-Stores/00-Overview.md
+          - Redis: 01-Concepts/Storage-and-Databases/12-Database-Types/01-Key-Value-Stores/01-Redis.md
+          - Memcached: 01-Concepts/Storage-and-Databases/12-Database-Types/01-Key-Value-Stores/02-Memcached.md
+          - KV Positioning: 01-Concepts/Storage-and-Databases/12-Database-Types/01-Key-Value-Stores/03-KV-Positioning.md
+          - Interview Cheatsheet: 01-Concepts/Storage-and-Databases/12-Database-Types/01-Key-Value-Stores/04-Interview-Cheatsheet.md
         - Document Stores:
-          - Overview: Storage-and-Databases/12-Database-Types/02-Document-Stores/00-Overview.md
-          - Positioning: Storage-and-Databases/12-Database-Types/02-Document-Stores/03-Positioning.md
+          - Overview: 01-Concepts/Storage-and-Databases/12-Database-Types/02-Document-Stores/00-Overview.md
+          - Positioning: 01-Concepts/Storage-and-Databases/12-Database-Types/02-Document-Stores/03-Positioning.md
           - MongoDB:
-            - Document Model: Storage-and-Databases/12-Database-Types/02-Document-Stores/02-MongoDB/01-Document-Model.md
-            - Indexes: Storage-and-Databases/12-Database-Types/02-Document-Stores/02-MongoDB/02-Indexes.md
-            - Embedding vs Referencing: Storage-and-Databases/12-Database-Types/02-Document-Stores/02-MongoDB/03-Embedding-vs-Referencing.md
-            - Replication & Sharding: Storage-and-Databases/12-Database-Types/02-Document-Stores/02-MongoDB/04-Replication-and-Sharding.md
-            - Limitations: Storage-and-Databases/12-Database-Types/02-Document-Stores/02-MongoDB/05-Limitations.md
-            - Interview Cheatsheet: Storage-and-Databases/12-Database-Types/02-Document-Stores/02-MongoDB/06-Interview-Cheatsheet.md
+            - Document Model: 01-Concepts/Storage-and-Databases/12-Database-Types/02-Document-Stores/02-MongoDB/01-Document-Model.md
+            - Indexes: 01-Concepts/Storage-and-Databases/12-Database-Types/02-Document-Stores/02-MongoDB/02-Indexes.md
+            - Embedding vs Referencing: 01-Concepts/Storage-and-Databases/12-Database-Types/02-Document-Stores/02-MongoDB/03-Embedding-vs-Referencing.md
+            - Replication & Sharding: 01-Concepts/Storage-and-Databases/12-Database-Types/02-Document-Stores/02-MongoDB/04-Replication-and-Sharding.md
+            - Limitations: 01-Concepts/Storage-and-Databases/12-Database-Types/02-Document-Stores/02-MongoDB/05-Limitations.md
+            - Interview Cheatsheet: 01-Concepts/Storage-and-Databases/12-Database-Types/02-Document-Stores/02-MongoDB/06-Interview-Cheatsheet.md
         - Column Family:
-          - Why Column Family: Storage-and-Databases/12-Database-Types/03-Column-Family/01-Why-Column-Family.md
-          - Column-Oriented Storage: Storage-and-Databases/12-Database-Types/03-Column-Family/02-Column-Oriented-Storage.md
-          - Row Keys: Storage-and-Databases/12-Database-Types/03-Column-Family/03-Row-Keys.md
-          - When To Use: Storage-and-Databases/12-Database-Types/03-Column-Family/05-When-To-Use.md
+          - Why Column Family: 01-Concepts/Storage-and-Databases/12-Database-Types/03-Column-Family/01-Why-Column-Family.md
+          - Column-Oriented Storage: 01-Concepts/Storage-and-Databases/12-Database-Types/03-Column-Family/02-Column-Oriented-Storage.md
+          - Row Keys: 01-Concepts/Storage-and-Databases/12-Database-Types/03-Column-Family/03-Row-Keys.md
+          - When To Use: 01-Concepts/Storage-and-Databases/12-Database-Types/03-Column-Family/05-When-To-Use.md
           - Cassandra:
-            - Overview: Storage-and-Databases/12-Database-Types/03-Column-Family/04-Cassandra/00-Overview.md
-            - Ring Architecture: Storage-and-Databases/12-Database-Types/03-Column-Family/04-Cassandra/01-Ring-Architecture.md
-            - Write Path: Storage-and-Databases/12-Database-Types/03-Column-Family/04-Cassandra/02-Write-Path.md
-            - Read Path: Storage-and-Databases/12-Database-Types/03-Column-Family/04-Cassandra/03-Read-Path.md
-            - Replication & Consistency: Storage-and-Databases/12-Database-Types/03-Column-Family/04-Cassandra/04-Replication-Consistency.md
-            - Tombstones: Storage-and-Databases/12-Database-Types/03-Column-Family/04-Cassandra/05-Tombstones.md
-            - Interview Cheatsheet: Storage-and-Databases/12-Database-Types/03-Column-Family/04-Cassandra/06-Interview-Cheatsheet.md
-            - Query-First Modeling: Storage-and-Databases/12-Database-Types/03-Column-Family/04-Cassandra/07-Query-First-Modeling.md
+            - Overview: 01-Concepts/Storage-and-Databases/12-Database-Types/03-Column-Family/04-Cassandra/00-Overview.md
+            - Ring Architecture: 01-Concepts/Storage-and-Databases/12-Database-Types/03-Column-Family/04-Cassandra/01-Ring-Architecture.md
+            - Write Path: 01-Concepts/Storage-and-Databases/12-Database-Types/03-Column-Family/04-Cassandra/02-Write-Path.md
+            - Read Path: 01-Concepts/Storage-and-Databases/12-Database-Types/03-Column-Family/04-Cassandra/03-Read-Path.md
+            - Replication & Consistency: 01-Concepts/Storage-and-Databases/12-Database-Types/03-Column-Family/04-Cassandra/04-Replication-Consistency.md
+            - Tombstones: 01-Concepts/Storage-and-Databases/12-Database-Types/03-Column-Family/04-Cassandra/05-Tombstones.md
+            - Interview Cheatsheet: 01-Concepts/Storage-and-Databases/12-Database-Types/03-Column-Family/04-Cassandra/06-Interview-Cheatsheet.md
+            - Query-First Modeling: 01-Concepts/Storage-and-Databases/12-Database-Types/03-Column-Family/04-Cassandra/07-Query-First-Modeling.md
           - Bigtable:
-            - Architecture: Storage-and-Databases/12-Database-Types/03-Column-Family/06-Bigtable/01-Architecture.md
-            - Cassandra vs Bigtable: Storage-and-Databases/12-Database-Types/03-Column-Family/06-Bigtable/02-Cassandra-vs-Bigtable.md
+            - Architecture: 01-Concepts/Storage-and-Databases/12-Database-Types/03-Column-Family/06-Bigtable/01-Architecture.md
+            - Cassandra vs Bigtable: 01-Concepts/Storage-and-Databases/12-Database-Types/03-Column-Family/06-Bigtable/02-Cassandra-vs-Bigtable.md
           - DynamoDB:
-            - Data Model: Storage-and-Databases/12-Database-Types/03-Column-Family/07-DynamoDB/01-Data-Model.md
-            - Consistency: Storage-and-Databases/12-Database-Types/03-Column-Family/07-DynamoDB/02-Consistency.md
-            - Query API & Indexes: Storage-and-Databases/12-Database-Types/03-Column-Family/07-DynamoDB/03-Query-API-and-Indexes.md
-            - Redis vs DynamoDB: Storage-and-Databases/12-Database-Types/03-Column-Family/07-DynamoDB/04-Redis-vs-DynamoDB.md
-            - TTL & Sessions: Storage-and-Databases/12-Database-Types/03-Column-Family/07-DynamoDB/05-TTL-and-Sessions.md
-            - Interview Cheatsheet: Storage-and-Databases/12-Database-Types/03-Column-Family/07-DynamoDB/06-Interview-Cheatsheet.md
+            - Data Model: 01-Concepts/Storage-and-Databases/12-Database-Types/03-Column-Family/07-DynamoDB/01-Data-Model.md
+            - Consistency: 01-Concepts/Storage-and-Databases/12-Database-Types/03-Column-Family/07-DynamoDB/02-Consistency.md
+            - Query API & Indexes: 01-Concepts/Storage-and-Databases/12-Database-Types/03-Column-Family/07-DynamoDB/03-Query-API-and-Indexes.md
+            - Redis vs DynamoDB: 01-Concepts/Storage-and-Databases/12-Database-Types/03-Column-Family/07-DynamoDB/04-Redis-vs-DynamoDB.md
+            - TTL & Sessions: 01-Concepts/Storage-and-Databases/12-Database-Types/03-Column-Family/07-DynamoDB/05-TTL-and-Sessions.md
+            - Interview Cheatsheet: 01-Concepts/Storage-and-Databases/12-Database-Types/03-Column-Family/07-DynamoDB/06-Interview-Cheatsheet.md
         - Search Engines:
-          - Problem With SQL Search: Storage-and-Databases/12-Database-Types/04-Search-Engines/01-Problem-With-SQL-Search.md
-          - Inverted Index: Storage-and-Databases/12-Database-Types/04-Search-Engines/02-Inverted-Index.md
-          - Indexing Pipeline: Storage-and-Databases/12-Database-Types/04-Search-Engines/03-Indexing-Pipeline.md
-          - Ranking TF-IDF BM25: Storage-and-Databases/12-Database-Types/04-Search-Engines/04-Ranking-TF-IDF-BM25.md
-          - Elasticsearch Architecture: Storage-and-Databases/12-Database-Types/04-Search-Engines/05-Elasticsearch-Architecture.md
-          - Where It Fits: Storage-and-Databases/12-Database-Types/04-Search-Engines/06-Where-It-Fits.md
-          - Interview Cheatsheet: Storage-and-Databases/12-Database-Types/04-Search-Engines/07-Interview-Cheatsheet.md
+          - Problem With SQL Search: 01-Concepts/Storage-and-Databases/12-Database-Types/04-Search-Engines/01-Problem-With-SQL-Search.md
+          - Inverted Index: 01-Concepts/Storage-and-Databases/12-Database-Types/04-Search-Engines/02-Inverted-Index.md
+          - Indexing Pipeline: 01-Concepts/Storage-and-Databases/12-Database-Types/04-Search-Engines/03-Indexing-Pipeline.md
+          - Ranking TF-IDF BM25: 01-Concepts/Storage-and-Databases/12-Database-Types/04-Search-Engines/04-Ranking-TF-IDF-BM25.md
+          - Elasticsearch Architecture: 01-Concepts/Storage-and-Databases/12-Database-Types/04-Search-Engines/05-Elasticsearch-Architecture.md
+          - Where It Fits: 01-Concepts/Storage-and-Databases/12-Database-Types/04-Search-Engines/06-Where-It-Fits.md
+          - Interview Cheatsheet: 01-Concepts/Storage-and-Databases/12-Database-Types/04-Search-Engines/07-Interview-Cheatsheet.md
         - Graph Databases:
-          - Why Not SQL: Storage-and-Databases/12-Database-Types/05-Graph-Databases/01-Why-Not-SQL.md
-          - Graph Data Model: Storage-and-Databases/12-Database-Types/05-Graph-Databases/02-Graph-Data-Model.md
-          - Cypher Query Language: Storage-and-Databases/12-Database-Types/05-Graph-Databases/03-Cypher-Query-Language.md
-          - Use Cases: Storage-and-Databases/12-Database-Types/05-Graph-Databases/04-Use-Cases.md
-          - Interview Cheatsheet: Storage-and-Databases/12-Database-Types/05-Graph-Databases/05-Interview-Cheatsheet.md
+          - Why Not SQL: 01-Concepts/Storage-and-Databases/12-Database-Types/05-Graph-Databases/01-Why-Not-SQL.md
+          - Graph Data Model: 01-Concepts/Storage-and-Databases/12-Database-Types/05-Graph-Databases/02-Graph-Data-Model.md
+          - Cypher Query Language: 01-Concepts/Storage-and-Databases/12-Database-Types/05-Graph-Databases/03-Cypher-Query-Language.md
+          - Use Cases: 01-Concepts/Storage-and-Databases/12-Database-Types/05-Graph-Databases/04-Use-Cases.md
+          - Interview Cheatsheet: 01-Concepts/Storage-and-Databases/12-Database-Types/05-Graph-Databases/05-Interview-Cheatsheet.md
         - Blob Storage:
-          - Object Storage Model: Storage-and-Databases/12-Database-Types/06-Blob-Storage/01-Object-Storage-Model.md
-          - Presigned URLs: Storage-and-Databases/12-Database-Types/06-Blob-Storage/02-Presigned-URLs.md
-          - Multipart Upload: Storage-and-Databases/12-Database-Types/06-Blob-Storage/03-Multipart-Upload.md
-          - Content-Addressable Storage: Storage-and-Databases/12-Database-Types/06-Blob-Storage/04-Content-Addressable-Storage.md
-          - Chunk-Level Deduplication: Storage-and-Databases/12-Database-Types/06-Blob-Storage/05-Chunk-Level-Deduplication.md
-          - Storage Classes: Storage-and-Databases/12-Database-Types/06-Blob-Storage/06-Storage-Classes.md
-          - Interview Cheatsheet: Storage-and-Databases/12-Database-Types/06-Blob-Storage/07-Interview-Cheatsheet.md
+          - Object Storage Model: 01-Concepts/Storage-and-Databases/12-Database-Types/06-Blob-Storage/01-Object-Storage-Model.md
+          - Presigned URLs: 01-Concepts/Storage-and-Databases/12-Database-Types/06-Blob-Storage/02-Presigned-URLs.md
+          - Multipart Upload: 01-Concepts/Storage-and-Databases/12-Database-Types/06-Blob-Storage/03-Multipart-Upload.md
+          - Content-Addressable Storage: 01-Concepts/Storage-and-Databases/12-Database-Types/06-Blob-Storage/04-Content-Addressable-Storage.md
+          - Chunk-Level Deduplication: 01-Concepts/Storage-and-Databases/12-Database-Types/06-Blob-Storage/05-Chunk-Level-Deduplication.md
+          - Storage Classes: 01-Concepts/Storage-and-Databases/12-Database-Types/06-Blob-Storage/06-Storage-Classes.md
+          - Interview Cheatsheet: 01-Concepts/Storage-and-Databases/12-Database-Types/06-Blob-Storage/07-Interview-Cheatsheet.md
         - NewSQL:
-          - The Problem: Storage-and-Databases/12-Database-Types/07-NewSQL/01-The-Problem.md
-          - Spanner TrueTime: Storage-and-Databases/12-Database-Types/07-NewSQL/02-Spanner-TrueTime.md
-          - Spanner Transactions: Storage-and-Databases/12-Database-Types/07-NewSQL/03-Spanner-Transactions.md
-          - When To Use: Storage-and-Databases/12-Database-Types/07-NewSQL/04-When-To-Use.md
-          - Interview Cheatsheet: Storage-and-Databases/12-Database-Types/07-NewSQL/05-Interview-Cheatsheet.md
+          - The Problem: 01-Concepts/Storage-and-Databases/12-Database-Types/07-NewSQL/01-The-Problem.md
+          - Spanner TrueTime: 01-Concepts/Storage-and-Databases/12-Database-Types/07-NewSQL/02-Spanner-TrueTime.md
+          - Spanner Transactions: 01-Concepts/Storage-and-Databases/12-Database-Types/07-NewSQL/03-Spanner-Transactions.md
+          - When To Use: 01-Concepts/Storage-and-Databases/12-Database-Types/07-NewSQL/04-When-To-Use.md
+          - Interview Cheatsheet: 01-Concepts/Storage-and-Databases/12-Database-Types/07-NewSQL/05-Interview-Cheatsheet.md
         - OLTP vs OLAP:
-          - The Problem: Storage-and-Databases/12-Database-Types/08-OLTP-vs-OLAP/01-The-Problem.md
-          - OLTP: Storage-and-Databases/12-Database-Types/08-OLTP-vs-OLAP/02-OLTP.md
-          - OLAP: Storage-and-Databases/12-Database-Types/08-OLTP-vs-OLAP/03-OLAP.md
-          - ETL vs CDC: Storage-and-Databases/12-Database-Types/08-OLTP-vs-OLAP/04-ETL-vs-CDC.md
-          - Interview Cheatsheet: Storage-and-Databases/12-Database-Types/08-OLTP-vs-OLAP/05-Interview-Cheatsheet.md
+          - The Problem: 01-Concepts/Storage-and-Databases/12-Database-Types/08-OLTP-vs-OLAP/01-The-Problem.md
+          - OLTP: 01-Concepts/Storage-and-Databases/12-Database-Types/08-OLTP-vs-OLAP/02-OLTP.md
+          - OLAP: 01-Concepts/Storage-and-Databases/12-Database-Types/08-OLTP-vs-OLAP/03-OLAP.md
+          - ETL vs CDC: 01-Concepts/Storage-and-Databases/12-Database-Types/08-OLTP-vs-OLAP/04-ETL-vs-CDC.md
+          - Interview Cheatsheet: 01-Concepts/Storage-and-Databases/12-Database-Types/08-OLTP-vs-OLAP/05-Interview-Cheatsheet.md
       - Choosing The Right DB:
-        - Decision Framework: Storage-and-Databases/13-Choosing-The-Right-DB/01-Decision-Framework.md
-        - DB Cheatsheet: Storage-and-Databases/13-Choosing-The-Right-DB/02-DB-Cheatsheet.md
+        - Decision Framework: 01-Concepts/Storage-and-Databases/13-Choosing-The-Right-DB/01-Decision-Framework.md
+        - DB Cheatsheet: 01-Concepts/Storage-and-Databases/13-Choosing-The-Right-DB/02-DB-Cheatsheet.md
       - Data Modeling:
-        - The Process: Storage-and-Databases/14-Data-Modeling/01-The-Process.md
-        - Entities & Relationships: Storage-and-Databases/14-Data-Modeling/02-Entities-And-Relationships.md
-        - Access Patterns: Storage-and-Databases/14-Data-Modeling/03-Access-Patterns.md
-        - Instagram Schema: Storage-and-Databases/14-Data-Modeling/04-Instagram-Schema.md
-        - Red Flags: Storage-and-Databases/14-Data-Modeling/05-Red-Flags.md
+        - The Process: 01-Concepts/Storage-and-Databases/14-Data-Modeling/01-The-Process.md
+        - Entities & Relationships: 01-Concepts/Storage-and-Databases/14-Data-Modeling/02-Entities-And-Relationships.md
+        - Access Patterns: 01-Concepts/Storage-and-Databases/14-Data-Modeling/03-Access-Patterns.md
+        - Instagram Schema: 01-Concepts/Storage-and-Databases/14-Data-Modeling/04-Instagram-Schema.md
+        - Red Flags: 01-Concepts/Storage-and-Databases/14-Data-Modeling/05-Red-Flags.md
+    - Messaging & Event Driven:
+      - Message Queues: 01-Concepts/Messaging-and-Event-Driven/01-Message-Queues.md
+      - Task Queue: 01-Concepts/Messaging-and-Event-Driven/02-Task-Queue.md
+      - Pub/Sub: 01-Concepts/Messaging-and-Event-Driven/03-Pub-Sub.md
+      - Delivery Guarantees: 01-Concepts/Messaging-and-Event-Driven/04-Delivery-Guarantees.md
+      - Dead Letter Queue: 01-Concepts/Messaging-and-Event-Driven/05-Dead-Letter-Queue.md
+      - Message Ordering: 01-Concepts/Messaging-and-Event-Driven/06-Message-Ordering.md
+      - Delay Queues: 01-Concepts/Messaging-and-Event-Driven/07-Delay-Queues.md
+      - Priority Queues: 01-Concepts/Messaging-and-Event-Driven/08-Priority-Queues.md
+      - Fan-Out on Write: 01-Concepts/Messaging-and-Event-Driven/09-Fan-Out-on-Write.md
+      - Fan-Out on Read: 01-Concepts/Messaging-and-Event-Driven/10-Fan-Out-on-Read.md
+      - Message Brokers:
+        - What Is a Broker: 01-Concepts/Messaging-and-Event-Driven/11-Message-Brokers/01-What-is-a-Broker.md
+        - SQS:
+          - What Is SQS: 01-Concepts/Messaging-and-Event-Driven/11-Message-Brokers/02-SQS/01-What-Is-SQS.md
+          - Standard vs FIFO: 01-Concepts/Messaging-and-Event-Driven/11-Message-Brokers/02-SQS/02-Standard-vs-FIFO.md
+          - Timeout & Retries: 01-Concepts/Messaging-and-Event-Driven/11-Message-Brokers/02-SQS/03-Timeout-and-Retries.md
+          - Idempotency & DLQ: 01-Concepts/Messaging-and-Event-Driven/11-Message-Brokers/02-SQS/04-Idempotency-and-DLQ.md
+          - Scaling: 01-Concepts/Messaging-and-Event-Driven/11-Message-Brokers/02-SQS/05-Scaling.md
+          - Retention & Replay Limits: 01-Concepts/Messaging-and-Event-Driven/11-Message-Brokers/02-SQS/06-Retention-and-Replay-Limits.md
+          - Delay Queues: 01-Concepts/Messaging-and-Event-Driven/11-Message-Brokers/02-SQS/07-Delay-Queues.md
+          - Producer/Consumer Model: 01-Concepts/Messaging-and-Event-Driven/11-Message-Brokers/02-SQS/08-Producer-Consumer-Model.md
+          - SNS Fan-Out: 01-Concepts/Messaging-and-Event-Driven/11-Message-Brokers/02-SQS/09-SNS-Fan-Out.md
+        - RabbitMQ:
+          - What Is RabbitMQ: 01-Concepts/Messaging-and-Event-Driven/11-Message-Brokers/03-RabbitMQ/01-What-Is-RabbitMQ.md
+          - Direct vs Fanout Exchange: 01-Concepts/Messaging-and-Event-Driven/11-Message-Brokers/03-RabbitMQ/02-Direct-vs-Fanout-Exchange.md
+          - Topic Exchange: 01-Concepts/Messaging-and-Event-Driven/11-Message-Brokers/03-RabbitMQ/03-Topic-Exchange.md
+          - Headers Exchange: 01-Concepts/Messaging-and-Event-Driven/11-Message-Brokers/03-RabbitMQ/04-Headers-Exchange.md
+          - ACK/NACK/Requeue: 01-Concepts/Messaging-and-Event-Driven/11-Message-Brokers/03-RabbitMQ/05-ACK-NACK-Requeue.md
+          - Crash & Redelivery: 01-Concepts/Messaging-and-Event-Driven/11-Message-Brokers/03-RabbitMQ/06-Crash-and-Redelivery.md
+          - Prefetch & Fairness: 01-Concepts/Messaging-and-Event-Driven/11-Message-Brokers/03-RabbitMQ/07-Prefetch-and-Fairness.md
+          - Durable Queues: 01-Concepts/Messaging-and-Event-Driven/11-Message-Brokers/03-RabbitMQ/08-Durable-Queues.md
+          - Delivery Guarantees: 01-Concepts/Messaging-and-Event-Driven/11-Message-Brokers/03-RabbitMQ/09-Delivery-Guarantees.md
+          - Retries & DLQ: 01-Concepts/Messaging-and-Event-Driven/11-Message-Brokers/03-RabbitMQ/10-Retries-And-DLQ.md
+          - Message Ordering: 01-Concepts/Messaging-and-Event-Driven/11-Message-Brokers/03-RabbitMQ/11-Message-Ordering.md
+          - Bottlenecks: 01-Concepts/Messaging-and-Event-Driven/11-Message-Brokers/03-RabbitMQ/12-Bottlenecks.md
+          - Scaling: 01-Concepts/Messaging-and-Event-Driven/11-Message-Brokers/03-RabbitMQ/13-Scaling.md
+      - Kafka:
+        - Architecture:
+          - Why Kafka Exists: 01-Concepts/Messaging-and-Event-Driven/12-Kafka/01-Architecture/01-Why-Kafka-Exists.md
+          - Writes & Page Cache: 01-Concepts/Messaging-and-Event-Driven/12-Kafka/01-Architecture/02-Writes-and-Page-Cache.md
+          - Topics: 01-Concepts/Messaging-and-Event-Driven/12-Kafka/01-Architecture/03-Topics.md
+          - Partitions: 01-Concepts/Messaging-and-Event-Driven/12-Kafka/01-Architecture/04-Partitions.md
+          - Brokers: 01-Concepts/Messaging-and-Event-Driven/12-Kafka/01-Architecture/05-Brokers.md
+          - Replication: 01-Concepts/Messaging-and-Event-Driven/12-Kafka/01-Architecture/06-Replication.md
+          - ISR: 01-Concepts/Messaging-and-Event-Driven/12-Kafka/01-Architecture/07-ISR.md
+          - Hot Partitions: 01-Concepts/Messaging-and-Event-Driven/12-Kafka/01-Architecture/08-Hot-Partitions.md
+        - Producer:
+          - Partitioners: 01-Concepts/Messaging-and-Event-Driven/12-Kafka/02-Producer/01-Partitioners.md
+          - Batching: 01-Concepts/Messaging-and-Event-Driven/12-Kafka/02-Producer/02-Batching.md
+          - Compression: 01-Concepts/Messaging-and-Event-Driven/12-Kafka/02-Producer/03-Compression.md
+        - Consumer:
+          - Pull Model: 01-Concepts/Messaging-and-Event-Driven/12-Kafka/03-Consumer/01-Pull-Model.md
+          - Offsets: 01-Concepts/Messaging-and-Event-Driven/12-Kafka/03-Consumer/02-Offsets.md
+          - Offset Storage: 01-Concepts/Messaging-and-Event-Driven/12-Kafka/03-Consumer/03-Offset-Storage.md
+          - Before vs After: 01-Concepts/Messaging-and-Event-Driven/12-Kafka/03-Consumer/04-Before-vs-After.md
+          - Consumer Groups: 01-Concepts/Messaging-and-Event-Driven/12-Kafka/03-Consumer/05-Consumer-Groups.md
+          - Rebalancing: 01-Concepts/Messaging-and-Event-Driven/12-Kafka/03-Consumer/06-Rebalancing.md
+        - Advanced:
+          - Retention: 01-Concepts/Messaging-and-Event-Driven/12-Kafka/04-Advanced/01-Retention.md
+          - Exactly-Once Processing: 01-Concepts/Messaging-and-Event-Driven/12-Kafka/04-Advanced/02-Exactly-Once-Processing.md
+      - Comparison:
+        - Fundamental Difference: 01-Concepts/Messaging-and-Event-Driven/13-Comparison/01-Fundamental-Difference.md
+        - After Read: 01-Concepts/Messaging-and-Event-Driven/13-Comparison/02-After-Read.md
+        - Retention: 01-Concepts/Messaging-and-Event-Driven/13-Comparison/03-Retention.md
+        - Routing & Fanout: 01-Concepts/Messaging-and-Event-Driven/13-Comparison/04-Routing-and-Fanout.md
+        - Ordering & Throughput: 01-Concepts/Messaging-and-Event-Driven/13-Comparison/05-Ordering-and-Throughput.md
+        - When To Choose What: 01-Concepts/Messaging-and-Event-Driven/13-Comparison/06-When-To-Choose-What.md
+      - Backpressure:
+        - Consumer Lag: 01-Concepts/Messaging-and-Event-Driven/14-Backpressure/01-Consumer-Lag.md
+        - Scaling Consumers: 01-Concepts/Messaging-and-Event-Driven/14-Backpressure/02-Scaling-Consumers.md
+        - Load Shedding: 01-Concepts/Messaging-and-Event-Driven/14-Backpressure/03-Load-Shedding.md
+        - Backpressure Signals: 01-Concepts/Messaging-and-Event-Driven/14-Backpressure/04-Backpressure-Signals.md
+      - Event Driven Architecture:
+        - Event Sourcing: 01-Concepts/Messaging-and-Event-Driven/15-Event-Driven-Architecture/01-Event-Sourcing.md
+        - CQRS Basics: 01-Concepts/Messaging-and-Event-Driven/15-Event-Driven-Architecture/02-CQRS-Basics.md
+        - CQRS Read Models: 01-Concepts/Messaging-and-Event-Driven/15-Event-Driven-Architecture/03-CQRS-Read-Models.md
+        - CQRS Consistency: 01-Concepts/Messaging-and-Event-Driven/15-Event-Driven-Architecture/04-CQRS-Consistency.md
+        - Dual Write: 01-Concepts/Messaging-and-Event-Driven/15-Event-Driven-Architecture/05-Dual-Write.md
+        - Outbox Pattern: 01-Concepts/Messaging-and-Event-Driven/15-Event-Driven-Architecture/06-Outbox-Pattern.md
+        - CDC Basics: 01-Concepts/Messaging-and-Event-Driven/15-Event-Driven-Architecture/07-CDC-Basics.md
+        - CDC Debezium: 01-Concepts/Messaging-and-Event-Driven/15-Event-Driven-Architecture/08-CDC-Debezium.md
+        - Inbox Pattern: 01-Concepts/Messaging-and-Event-Driven/15-Event-Driven-Architecture/09-Inbox-Pattern.md
+        - Inbox + Outbox Combined: 01-Concepts/Messaging-and-Event-Driven/15-Event-Driven-Architecture/10-Inbox-Outbox-Combined.md
+        - Full Flow: 01-Concepts/Messaging-and-Event-Driven/15-Event-Driven-Architecture/11-Inbox-Outbox-Full-Flow.md
+      - Stream Processing:
+        - Why Stream Processing: 01-Concepts/Messaging-and-Event-Driven/16-Stream-Processing/01-Why-Stream-Processing.md
+        - Window Types: 01-Concepts/Messaging-and-Event-Driven/16-Stream-Processing/02-Window-Types.md
+        - Watermarks: 01-Concepts/Messaging-and-Event-Driven/16-Stream-Processing/03-Watermarks.md
+        - Statefulness: 01-Concepts/Messaging-and-Event-Driven/16-Stream-Processing/04-Statefullnes.md
+        - Crash Recovery: 01-Concepts/Messaging-and-Event-Driven/16-Stream-Processing/05-Crash-Recovery.md
+      - Batch Processing:
+        - MapReduce:
+          - Why Batch Processing: 01-Concepts/Messaging-and-Event-Driven/17-Batch-Processing/MapReduce/01-Why-Batch-Processing.md
+          - MapReduce: 01-Concepts/Messaging-and-Event-Driven/17-Batch-Processing/MapReduce/02-MapReduce.md
+          - Map Phase: 01-Concepts/Messaging-and-Event-Driven/17-Batch-Processing/MapReduce/03-Map-Phase.md
+          - Shuffle Phase: 01-Concepts/Messaging-and-Event-Driven/17-Batch-Processing/MapReduce/04-Shuffle-Phase.md
+          - Reduce Phase: 01-Concepts/Messaging-and-Event-Driven/17-Batch-Processing/MapReduce/05-Reduce-Phase.md
+          - Combiner: 01-Concepts/Messaging-and-Event-Driven/17-Batch-Processing/MapReduce/06-Combiner.md
+          - Hot Keys: 01-Concepts/Messaging-and-Event-Driven/17-Batch-Processing/MapReduce/07-Hot-Keys.md
+        - Spark:
+          - Why Spark: 01-Concepts/Messaging-and-Event-Driven/17-Batch-Processing/Spark/01-Why-Spark.md
+          - Spark Architecture: 01-Concepts/Messaging-and-Event-Driven/17-Batch-Processing/Spark/02-Spark-Architecture.md
+          - DAG Optimization: 01-Concepts/Messaging-and-Event-Driven/17-Batch-Processing/Spark/03-DAG-Optimization.md
+      - Lambda & Kappa:
+        - Lambda Architecture: 01-Concepts/Messaging-and-Event-Driven/18-Lambda-Kappa/01-Lambda-Architecture.md
+        - Kappa Architecture: 01-Concepts/Messaging-and-Event-Driven/18-Lambda-Kappa/02-Kappa-Architecture.md
+        - Lambda vs Kappa: 01-Concepts/Messaging-and-Event-Driven/18-Lambda-Kappa/03-Lambda-vs-Kappa.md
+      - Schema Evolution:
+        - Why Schema Evolution: 01-Concepts/Messaging-and-Event-Driven/19-Schema-Evolution/01-Why-Schema-Evolution.md
+        - Schema Registry: 01-Concepts/Messaging-and-Event-Driven/19-Schema-Evolution/02-Schema-Registry.md
+        - Protobuf: 01-Concepts/Messaging-and-Event-Driven/19-Schema-Evolution/03-Protobuf.md
+        - Avro Basics: 01-Concepts/Messaging-and-Event-Driven/19-Schema-Evolution/04-Avro-Basics.md
+        - Avro Flow: 01-Concepts/Messaging-and-Event-Driven/19-Schema-Evolution/05-Avro-Flow.md
 
   - Back of Envelope:
-    - Latency Numbers: Back-of-Envelope-Estimation/01-Latency-Numbers.md
-    - Database Numbers: Back-of-Envelope-Estimation/02-Database-Numbers.md
-    - Message Streams: Back-of-Envelope-Estimation/03-Message-Streams.md
-    - Data Sizes: Back-of-Envelope-Estimation/04-Data-Sizes.md
-    - Bandwidth & Servers: Back-of-Envelope-Estimation/05-Bandwidth-And-Servers.md
-    - Estimation Framework: Back-of-Envelope-Estimation/06-Estimation-Framework.md
+    - Latency Numbers: 02-Back-of-Envelope-Estimation/01-Latency-Numbers.md
+    - Database Numbers: 02-Back-of-Envelope-Estimation/02-Database-Numbers.md
+    - Message Streams: 02-Back-of-Envelope-Estimation/03-Message-Streams.md
+    - Data Sizes: 02-Back-of-Envelope-Estimation/04-Data-Sizes.md
+    - Bandwidth & Servers: 02-Back-of-Envelope-Estimation/05-Bandwidth-And-Servers.md
+    - Estimation Framework: 02-Back-of-Envelope-Estimation/06-Estimation-Framework.md
 
   - Foundation:
-    - Overview: 01-Foundation/index.md
+    - Overview: 03-Case-Studies/01-Foundation/index.md
     - Unique ID Generator:
-      - Overview: 01-Foundation/01-Unique-ID-Generator/00-System-Overview.md
-      - Functional Requirements: 01-Foundation/01-Unique-ID-Generator/01-FR.md
-      - Estimation: 01-Foundation/01-Unique-ID-Generator/02-Estimation.md
-      - Non-Functional Requirements: 01-Foundation/01-Unique-ID-Generator/03-NFR.md
-      - API Design: 01-Foundation/01-Unique-ID-Generator/04-API.md
-      - Base Architecture: 01-Foundation/01-Unique-ID-Generator/05-Base-Architecture.md
+      - Overview: 03-Case-Studies/01-Foundation/01-Unique-ID-Generator/00-System-Overview.md
+      - Functional Requirements: 03-Case-Studies/01-Foundation/01-Unique-ID-Generator/01-FR.md
+      - Estimation: 03-Case-Studies/01-Foundation/01-Unique-ID-Generator/02-Estimation.md
+      - Non-Functional Requirements: 03-Case-Studies/01-Foundation/01-Unique-ID-Generator/03-NFR.md
+      - API Design: 03-Case-Studies/01-Foundation/01-Unique-ID-Generator/04-API.md
+      - Base Architecture: 03-Case-Studies/01-Foundation/01-Unique-ID-Generator/05-Base-Architecture.md
       - "Deep Dive — Algorithms":
-        - Single Server Counter: 01-Foundation/01-Unique-ID-Generator/06-Deep-Dives/01-Single-Server-Counter.md
-        - Multi-Server Problem: 01-Foundation/01-Unique-ID-Generator/06-Deep-Dives/02-Multi-Server-Problem.md
-        - UUID: 01-Foundation/01-Unique-ID-Generator/06-Deep-Dives/03-UUID.md
-        - Ticket Server: 01-Foundation/01-Unique-ID-Generator/06-Deep-Dives/04-Ticket-Server.md
-        - Pre-Generated Key Pool: 01-Foundation/01-Unique-ID-Generator/06-Deep-Dives/05-Pre-Generated-Key-Pool.md
-        - Snowflake: 01-Foundation/01-Unique-ID-Generator/06-Deep-Dives/06-Snowflake.md
-        - Comparison: 01-Foundation/01-Unique-ID-Generator/06-Deep-Dives/07-Comparison.md
-        - Clock Skew: 01-Foundation/01-Unique-ID-Generator/06-Deep-Dives/08-Clock-Skew.md
-        - Fault Isolation: 01-Foundation/01-Unique-ID-Generator/06-Deep-Dives/09-Fault-Isolation.md
+        - Single Server Counter: 03-Case-Studies/01-Foundation/01-Unique-ID-Generator/06-Deep-Dives/01-Single-Server-Counter.md
+        - Multi-Server Problem: 03-Case-Studies/01-Foundation/01-Unique-ID-Generator/06-Deep-Dives/02-Multi-Server-Problem.md
+        - UUID: 03-Case-Studies/01-Foundation/01-Unique-ID-Generator/06-Deep-Dives/03-UUID.md
+        - Ticket Server: 03-Case-Studies/01-Foundation/01-Unique-ID-Generator/06-Deep-Dives/04-Ticket-Server.md
+        - Pre-Generated Key Pool: 03-Case-Studies/01-Foundation/01-Unique-ID-Generator/06-Deep-Dives/05-Pre-Generated-Key-Pool.md
+        - Snowflake: 03-Case-Studies/01-Foundation/01-Unique-ID-Generator/06-Deep-Dives/06-Snowflake.md
+        - Comparison: 03-Case-Studies/01-Foundation/01-Unique-ID-Generator/06-Deep-Dives/07-Comparison.md
+        - Clock Skew: 03-Case-Studies/01-Foundation/01-Unique-ID-Generator/06-Deep-Dives/08-Clock-Skew.md
+        - Fault Isolation: 03-Case-Studies/01-Foundation/01-Unique-ID-Generator/06-Deep-Dives/09-Fault-Isolation.md
       - "Observability":
-        - SLI / SLO Connection: 01-Foundation/01-Unique-ID-Generator/07-Observability/01-SLI-SLO-Connection.md
-        - Measuring Latency: 01-Foundation/01-Unique-ID-Generator/07-Observability/02-Measuring-Latency.md
-        - Measuring Availability: 01-Foundation/01-Unique-ID-Generator/07-Observability/03-Measuring-Availability.md
-        - Alerting: 01-Foundation/01-Unique-ID-Generator/07-Observability/04-Alerting.md
-        - Error Budget: 01-Foundation/01-Unique-ID-Generator/07-Observability/05-Error-Budget.md
-      - Final Design: 01-Foundation/01-Unique-ID-Generator/08-Final-Design/01-Final-Architecture.md
+        - SLI / SLO Connection: 03-Case-Studies/01-Foundation/01-Unique-ID-Generator/07-Observability/01-SLI-SLO-Connection.md
+        - Measuring Latency: 03-Case-Studies/01-Foundation/01-Unique-ID-Generator/07-Observability/02-Measuring-Latency.md
+        - Measuring Availability: 03-Case-Studies/01-Foundation/01-Unique-ID-Generator/07-Observability/03-Measuring-Availability.md
+        - Alerting: 03-Case-Studies/01-Foundation/01-Unique-ID-Generator/07-Observability/04-Alerting.md
+        - Error Budget: 03-Case-Studies/01-Foundation/01-Unique-ID-Generator/07-Observability/05-Error-Budget.md
+      - Final Design: 03-Case-Studies/01-Foundation/01-Unique-ID-Generator/08-Final-Design/01-Final-Architecture.md
     - URL Shortener:
-      - Overview: 01-Foundation/02-URL-Shortener/index.md
-      - Functional Requirements: 01-Foundation/02-URL-Shortener/01-FR.md
-      - Estimation: 01-Foundation/02-URL-Shortener/02-Estimation.md
-      - Non-Functional Requirements: 01-Foundation/02-URL-Shortener/03-NFR.md
-      - API Design: 01-Foundation/02-URL-Shortener/04-API.md
-      - Base Architecture: 01-Foundation/02-URL-Shortener/05-Base-Architecture.md
+      - Overview: 03-Case-Studies/01-Foundation/02-URL-Shortener/index.md
+      - Functional Requirements: 03-Case-Studies/01-Foundation/02-URL-Shortener/01-FR.md
+      - Estimation: 03-Case-Studies/01-Foundation/02-URL-Shortener/02-Estimation.md
+      - Non-Functional Requirements: 03-Case-Studies/01-Foundation/02-URL-Shortener/03-NFR.md
+      - API Design: 03-Case-Studies/01-Foundation/02-URL-Shortener/04-API.md
+      - Base Architecture: 03-Case-Studies/01-Foundation/02-URL-Shortener/05-Base-Architecture.md
       - "Deep Dive — Short Code Generation":
-        - Raw IDs: 01-Foundation/02-URL-Shortener/06-Deep-Dives/01-Short-Code-Generation/01-Raw-IDs.md
-        - Hashing: 01-Foundation/02-URL-Shortener/06-Deep-Dives/01-Short-Code-Generation/02-Hashing.md
-        - Random + Collision Check: 01-Foundation/02-URL-Shortener/06-Deep-Dives/01-Short-Code-Generation/03-Random-Collision-Check.md
-        - UUID Base64 Trim: 01-Foundation/02-URL-Shortener/06-Deep-Dives/01-Short-Code-Generation/04-UUID-Base64-Trim.md
-        - Snowflake Base64: 01-Foundation/02-URL-Shortener/06-Deep-Dives/01-Short-Code-Generation/05-Snowflake-Base64.md
-        - UUID Snowflake Base62: 01-Foundation/02-URL-Shortener/06-Deep-Dives/01-Short-Code-Generation/06-UUID-Snowflake-Base62.md
-        - Truncation Problem: 01-Foundation/02-URL-Shortener/06-Deep-Dives/01-Short-Code-Generation/07-Truncation-Problem.md
+        - Raw IDs: 03-Case-Studies/01-Foundation/02-URL-Shortener/06-Deep-Dives/01-Short-Code-Generation/01-Raw-IDs.md
+        - Hashing: 03-Case-Studies/01-Foundation/02-URL-Shortener/06-Deep-Dives/01-Short-Code-Generation/02-Hashing.md
+        - Random + Collision Check: 03-Case-Studies/01-Foundation/02-URL-Shortener/06-Deep-Dives/01-Short-Code-Generation/03-Random-Collision-Check.md
+        - UUID Base64 Trim: 03-Case-Studies/01-Foundation/02-URL-Shortener/06-Deep-Dives/01-Short-Code-Generation/04-UUID-Base64-Trim.md
+        - Snowflake Base64: 03-Case-Studies/01-Foundation/02-URL-Shortener/06-Deep-Dives/01-Short-Code-Generation/05-Snowflake-Base64.md
+        - UUID Snowflake Base62: 03-Case-Studies/01-Foundation/02-URL-Shortener/06-Deep-Dives/01-Short-Code-Generation/06-UUID-Snowflake-Base62.md
+        - Truncation Problem: 03-Case-Studies/01-Foundation/02-URL-Shortener/06-Deep-Dives/01-Short-Code-Generation/07-Truncation-Problem.md
       - "Deep Dive — Database":
-        - DB Choice: 01-Foundation/02-URL-Shortener/06-Deep-Dives/02-DB/01-DB-Choice.md
-        - Schema: 01-Foundation/02-URL-Shortener/06-Deep-Dives/02-DB/02-Schema.md
-        - Why Sharding: 01-Foundation/02-URL-Shortener/06-Deep-Dives/02-DB/03-Why-Sharding.md
-        - Sharding Key: 01-Foundation/02-URL-Shortener/06-Deep-Dives/02-DB/04-Sharding-Key.md
-        - Consistent Hashing: 01-Foundation/02-URL-Shortener/06-Deep-Dives/02-DB/05-Consistent-Hashing.md
-        - How Many Shards: 01-Foundation/02-URL-Shortener/06-Deep-Dives/02-DB/06-How-Many-Shards.md
-        - Replication: 01-Foundation/02-URL-Shortener/06-Deep-Dives/02-DB/07-Replication.md
-        - Read Your Own Writes: 01-Foundation/02-URL-Shortener/06-Deep-Dives/02-DB/08-Read-Your-Own-Writes.md
+        - DB Choice: 03-Case-Studies/01-Foundation/02-URL-Shortener/06-Deep-Dives/02-DB/01-DB-Choice.md
+        - Schema: 03-Case-Studies/01-Foundation/02-URL-Shortener/06-Deep-Dives/02-DB/02-Schema.md
+        - Why Sharding: 03-Case-Studies/01-Foundation/02-URL-Shortener/06-Deep-Dives/02-DB/03-Why-Sharding.md
+        - Sharding Key: 03-Case-Studies/01-Foundation/02-URL-Shortener/06-Deep-Dives/02-DB/04-Sharding-Key.md
+        - Consistent Hashing: 03-Case-Studies/01-Foundation/02-URL-Shortener/06-Deep-Dives/02-DB/05-Consistent-Hashing.md
+        - How Many Shards: 03-Case-Studies/01-Foundation/02-URL-Shortener/06-Deep-Dives/02-DB/06-How-Many-Shards.md
+        - Replication: 03-Case-Studies/01-Foundation/02-URL-Shortener/06-Deep-Dives/02-DB/07-Replication.md
+        - Read Your Own Writes: 03-Case-Studies/01-Foundation/02-URL-Shortener/06-Deep-Dives/02-DB/08-Read-Your-Own-Writes.md
       - "Deep Dive — Caching":
-        - Why Caching: 01-Foundation/02-URL-Shortener/06-Deep-Dives/03-Caching/01-Why-Caching.md
-        - Cache Size: 01-Foundation/02-URL-Shortener/06-Deep-Dives/03-Caching/02-Cache-Size.md
-        - Cache Strategy: 01-Foundation/02-URL-Shortener/06-Deep-Dives/03-Caching/03-Cache-Strategy.md
-        - Eviction Policy: 01-Foundation/02-URL-Shortener/06-Deep-Dives/03-Caching/04-Eviction-Policy.md
-        - Updated Flow: 01-Foundation/02-URL-Shortener/06-Deep-Dives/03-Caching/05-Updated-Flow.md
+        - Why Caching: 03-Case-Studies/01-Foundation/02-URL-Shortener/06-Deep-Dives/03-Caching/01-Why-Caching.md
+        - Cache Size: 03-Case-Studies/01-Foundation/02-URL-Shortener/06-Deep-Dives/03-Caching/02-Cache-Size.md
+        - Cache Strategy: 03-Case-Studies/01-Foundation/02-URL-Shortener/06-Deep-Dives/03-Caching/03-Cache-Strategy.md
+        - Eviction Policy: 03-Case-Studies/01-Foundation/02-URL-Shortener/06-Deep-Dives/03-Caching/04-Eviction-Policy.md
+        - Updated Flow: 03-Case-Studies/01-Foundation/02-URL-Shortener/06-Deep-Dives/03-Caching/05-Updated-Flow.md
       - "Deep Dive — Peak Traffic":
-        - The Spike Problem: 01-Foundation/02-URL-Shortener/06-Deep-Dives/04-Peak-Traffic/01-The-Spike-Problem.md
-        - Hot Key — Detection: 01-Foundation/02-URL-Shortener/06-Deep-Dives/04-Peak-Traffic/02-Hot-Key-Problem/01-Detection.md
-        - Hot Key — Local App Cache: 01-Foundation/02-URL-Shortener/06-Deep-Dives/04-Peak-Traffic/02-Hot-Key-Problem/02-Local-App-Cache.md
-        - Hot Key — Redis Key Replication: 01-Foundation/02-URL-Shortener/06-Deep-Dives/04-Peak-Traffic/02-Hot-Key-Problem/03-Redis-Key-Replication.md
-        - Hot Key — Broadcast Promotion: 01-Foundation/02-URL-Shortener/06-Deep-Dives/04-Peak-Traffic/02-Hot-Key-Problem/04-Broadcast-Promotion.md
-        - Load Balancing: 01-Foundation/02-URL-Shortener/06-Deep-Dives/04-Peak-Traffic/03-Load-Balancing.md
-        - API GW SPOF: 01-Foundation/02-URL-Shortener/06-Deep-Dives/04-Peak-Traffic/04-API-GW-SPOF.md
-        - Updated Architecture: 01-Foundation/02-URL-Shortener/06-Deep-Dives/04-Peak-Traffic/05-Updated-Architecture.md
+        - The Spike Problem: 03-Case-Studies/01-Foundation/02-URL-Shortener/06-Deep-Dives/04-Peak-Traffic/01-The-Spike-Problem.md
+        - Hot Key — Detection: 03-Case-Studies/01-Foundation/02-URL-Shortener/06-Deep-Dives/04-Peak-Traffic/02-Hot-Key-Problem/01-Detection.md
+        - Hot Key — Local App Cache: 03-Case-Studies/01-Foundation/02-URL-Shortener/06-Deep-Dives/04-Peak-Traffic/02-Hot-Key-Problem/02-Local-App-Cache.md
+        - Hot Key — Redis Key Replication: 03-Case-Studies/01-Foundation/02-URL-Shortener/06-Deep-Dives/04-Peak-Traffic/02-Hot-Key-Problem/03-Redis-Key-Replication.md
+        - Hot Key — Broadcast Promotion: 03-Case-Studies/01-Foundation/02-URL-Shortener/06-Deep-Dives/04-Peak-Traffic/02-Hot-Key-Problem/04-Broadcast-Promotion.md
+        - Load Balancing: 03-Case-Studies/01-Foundation/02-URL-Shortener/06-Deep-Dives/04-Peak-Traffic/03-Load-Balancing.md
+        - API GW SPOF: 03-Case-Studies/01-Foundation/02-URL-Shortener/06-Deep-Dives/04-Peak-Traffic/04-API-GW-SPOF.md
+        - Updated Architecture: 03-Case-Studies/01-Foundation/02-URL-Shortener/06-Deep-Dives/04-Peak-Traffic/05-Updated-Architecture.md
       - "Deep Dive — Pre-Generated Keys":
-        - Collision At Scale: 01-Foundation/02-URL-Shortener/06-Deep-Dives/06-Pre-Generated-Keys/01-Collision-At-Scale.md
-        - Bloom Filter: 01-Foundation/02-URL-Shortener/06-Deep-Dives/06-Pre-Generated-Keys/02-Bloom-Filter.md
-        - Key Pool: 01-Foundation/02-URL-Shortener/06-Deep-Dives/06-Pre-Generated-Keys/03-Key-Pool.md
-        - KGS Sequential Generation: 01-Foundation/02-URL-Shortener/06-Deep-Dives/06-Pre-Generated-Keys/04-KGS-Sequential-Generation.md
-        - Redis INCR vs KGS: 01-Foundation/02-URL-Shortener/06-Deep-Dives/06-Pre-Generated-Keys/05-Redis-INCR-vs-KGS.md
+        - Collision At Scale: 03-Case-Studies/01-Foundation/02-URL-Shortener/06-Deep-Dives/06-Pre-Generated-Keys/01-Collision-At-Scale.md
+        - Bloom Filter: 03-Case-Studies/01-Foundation/02-URL-Shortener/06-Deep-Dives/06-Pre-Generated-Keys/02-Bloom-Filter.md
+        - Key Pool: 03-Case-Studies/01-Foundation/02-URL-Shortener/06-Deep-Dives/06-Pre-Generated-Keys/03-Key-Pool.md
+        - KGS Sequential Generation: 03-Case-Studies/01-Foundation/02-URL-Shortener/06-Deep-Dives/06-Pre-Generated-Keys/04-KGS-Sequential-Generation.md
+        - Redis INCR vs KGS: 03-Case-Studies/01-Foundation/02-URL-Shortener/06-Deep-Dives/06-Pre-Generated-Keys/05-Redis-INCR-vs-KGS.md
       - "Deep Dive — Cold Storage":
-        - The Problem: 01-Foundation/02-URL-Shortener/06-Deep-Dives/07-Cold-Storage/01-The-Problem.md
-        - Tiered Storage: 01-Foundation/02-URL-Shortener/06-Deep-Dives/07-Cold-Storage/02-Tiered-Storage.md
-        - Detecting Cold URLs: 01-Foundation/02-URL-Shortener/06-Deep-Dives/07-Cold-Storage/03-Detecting-Cold-URLs.md
+        - The Problem: 03-Case-Studies/01-Foundation/02-URL-Shortener/06-Deep-Dives/07-Cold-Storage/01-The-Problem.md
+        - Tiered Storage: 03-Case-Studies/01-Foundation/02-URL-Shortener/06-Deep-Dives/07-Cold-Storage/02-Tiered-Storage.md
+        - Detecting Cold URLs: 03-Case-Studies/01-Foundation/02-URL-Shortener/06-Deep-Dives/07-Cold-Storage/03-Detecting-Cold-URLs.md
       - "Deep Dive — Fault Isolation":
-        - Fault Isolation: 01-Foundation/02-URL-Shortener/06-Deep-Dives/08-Fault-Isolation/01-Fault-Isolation.md
-        - Redis Down: 01-Foundation/02-URL-Shortener/06-Deep-Dives/08-Fault-Isolation/02-Redis-Down.md
-        - DB Shard Primary Down: 01-Foundation/02-URL-Shortener/06-Deep-Dives/08-Fault-Isolation/03-DB-Shard-Primary-Down.md
-        - KGS Down: 01-Foundation/02-URL-Shortener/06-Deep-Dives/08-Fault-Isolation/04-KGS-Down.md
-        - Other Failures: 01-Foundation/02-URL-Shortener/06-Deep-Dives/08-Fault-Isolation/05-Other-Failures.md
-      - Final Design: 01-Foundation/02-URL-Shortener/08-Final-Design/01-Final-Design.md
+        - Fault Isolation: 03-Case-Studies/01-Foundation/02-URL-Shortener/06-Deep-Dives/08-Fault-Isolation/01-Fault-Isolation.md
+        - Redis Down: 03-Case-Studies/01-Foundation/02-URL-Shortener/06-Deep-Dives/08-Fault-Isolation/02-Redis-Down.md
+        - DB Shard Primary Down: 03-Case-Studies/01-Foundation/02-URL-Shortener/06-Deep-Dives/08-Fault-Isolation/03-DB-Shard-Primary-Down.md
+        - KGS Down: 03-Case-Studies/01-Foundation/02-URL-Shortener/06-Deep-Dives/08-Fault-Isolation/04-KGS-Down.md
+        - Other Failures: 03-Case-Studies/01-Foundation/02-URL-Shortener/06-Deep-Dives/08-Fault-Isolation/05-Other-Failures.md
+      - Final Design: 03-Case-Studies/01-Foundation/02-URL-Shortener/08-Final-Design/01-Final-Design.md
       - "Observability":
-        - SLI / SLO Connection: 01-Foundation/02-URL-Shortener/09-Observability/01-SLI-SLO-Connection.md
-        - Measuring Latency: 01-Foundation/02-URL-Shortener/09-Observability/02-Measuring-Latency.md
-        - Measuring Availability: 01-Foundation/02-URL-Shortener/09-Observability/03-Measuring-Availability.md
-        - Alerting: 01-Foundation/02-URL-Shortener/09-Observability/04-Alerting.md
-        - Error Budget: 01-Foundation/02-URL-Shortener/09-Observability/05-Error-Budget.md
+        - SLI / SLO Connection: 03-Case-Studies/01-Foundation/02-URL-Shortener/09-Observability/01-SLI-SLO-Connection.md
+        - Measuring Latency: 03-Case-Studies/01-Foundation/02-URL-Shortener/09-Observability/02-Measuring-Latency.md
+        - Measuring Availability: 03-Case-Studies/01-Foundation/02-URL-Shortener/09-Observability/03-Measuring-Availability.md
+        - Alerting: 03-Case-Studies/01-Foundation/02-URL-Shortener/09-Observability/04-Alerting.md
+        - Error Budget: 03-Case-Studies/01-Foundation/02-URL-Shortener/09-Observability/05-Error-Budget.md
 
   - Ascent:
-    - Overview: 02-Ascent/index.md
+    - Overview: 03-Case-Studies/02-Ascent/index.md
     - Notification System:
-      - Overview: 02-Ascent/01-Notification-System/00-System-Overview.md
-      - Functional Requirements: 02-Ascent/01-Notification-System/01-FR.md
-      - Estimation: 02-Ascent/01-Notification-System/02-Estimation.md
-      - Non-Functional Requirements: 02-Ascent/01-Notification-System/03-NFR.md
-      - API Design: 02-Ascent/01-Notification-System/04-API.md
-      - Base Architecture: 02-Ascent/01-Notification-System/05-Base-Architecture.md
+      - Overview: 03-Case-Studies/02-Ascent/01-Notification-System/00-System-Overview.md
+      - Functional Requirements: 03-Case-Studies/02-Ascent/01-Notification-System/01-FR.md
+      - Estimation: 03-Case-Studies/02-Ascent/01-Notification-System/02-Estimation.md
+      - Non-Functional Requirements: 03-Case-Studies/02-Ascent/01-Notification-System/03-NFR.md
+      - API Design: 03-Case-Studies/02-Ascent/01-Notification-System/04-API.md
+      - Base Architecture: 03-Case-Studies/02-Ascent/01-Notification-System/05-Base-Architecture.md
       - "Deep Dive — Database":
-        - DB Selection: 02-Ascent/01-Notification-System/06-Deep-Dives/01-DB/01-DB-Selection.md
-        - Schema: 02-Ascent/01-Notification-System/06-Deep-Dives/01-DB/02-Schema.md
+        - DB Selection: 03-Case-Studies/02-Ascent/01-Notification-System/06-Deep-Dives/01-DB/01-DB-Selection.md
+        - Schema: 03-Case-Studies/02-Ascent/01-Notification-System/06-Deep-Dives/01-DB/02-Schema.md
       - "Deep Dive — Kafka":
-        - Queue Selection: 02-Ascent/01-Notification-System/06-Deep-Dives/02-Kafka/01-Queue-Selection.md
-        - Kafka Design: 02-Ascent/01-Notification-System/06-Deep-Dives/02-Kafka/02-Kafka-Design.md
+        - Queue Selection: 03-Case-Studies/02-Ascent/01-Notification-System/06-Deep-Dives/02-Kafka/01-Queue-Selection.md
+        - Kafka Design: 03-Case-Studies/02-Ascent/01-Notification-System/06-Deep-Dives/02-Kafka/02-Kafka-Design.md
       - "Deep Dive — Per-Channel Workers":
-        - Push Worker: 02-Ascent/01-Notification-System/06-Deep-Dives/03-Per-Channel-Workers/01-Push-Worker.md
-        - SMS Worker: 02-Ascent/01-Notification-System/06-Deep-Dives/03-Per-Channel-Workers/02-SMS-Worker.md
-        - Email Worker: 02-Ascent/01-Notification-System/06-Deep-Dives/03-Per-Channel-Workers/03-Email-Worker.md
+        - Push Worker: 03-Case-Studies/02-Ascent/01-Notification-System/06-Deep-Dives/03-Per-Channel-Workers/01-Push-Worker.md
+        - SMS Worker: 03-Case-Studies/02-Ascent/01-Notification-System/06-Deep-Dives/03-Per-Channel-Workers/02-SMS-Worker.md
+        - Email Worker: 03-Case-Studies/02-Ascent/01-Notification-System/06-Deep-Dives/03-Per-Channel-Workers/03-Email-Worker.md
       - "Deep Dive — Scheduling":
-        - Problem And Naive Approach: 02-Ascent/01-Notification-System/06-Deep-Dives/04-Scheduling/01-Problem-And-Naive-Approach.md
-        - Scheduler DB: 02-Ascent/01-Notification-System/06-Deep-Dives/04-Scheduling/02-Scheduler-DB.md
-        - Jitter: 02-Ascent/01-Notification-System/06-Deep-Dives/04-Scheduling/03-Jitter.md
-        - Dispatch Flow: 02-Ascent/01-Notification-System/06-Deep-Dives/04-Scheduling/04-Dispatch-Flow.md
+        - Problem And Naive Approach: 03-Case-Studies/02-Ascent/01-Notification-System/06-Deep-Dives/04-Scheduling/01-Problem-And-Naive-Approach.md
+        - Scheduler DB: 03-Case-Studies/02-Ascent/01-Notification-System/06-Deep-Dives/04-Scheduling/02-Scheduler-DB.md
+        - Jitter: 03-Case-Studies/02-Ascent/01-Notification-System/06-Deep-Dives/04-Scheduling/03-Jitter.md
+        - Dispatch Flow: 03-Case-Studies/02-Ascent/01-Notification-System/06-Deep-Dives/04-Scheduling/04-Dispatch-Flow.md
       - "Deep Dive — Retry And DLQ":
-        - Retry Strategy: 02-Ascent/01-Notification-System/06-Deep-Dives/05-Retry-And-DLQ/01-Retry-Strategy.md
-        - DLQ: 02-Ascent/01-Notification-System/06-Deep-Dives/05-Retry-And-DLQ/02-DLQ.md
-        - Failure Handling: 02-Ascent/01-Notification-System/06-Deep-Dives/05-Retry-And-DLQ/03-Failure-Handling.md
+        - Retry Strategy: 03-Case-Studies/02-Ascent/01-Notification-System/06-Deep-Dives/05-Retry-And-DLQ/01-Retry-Strategy.md
+        - DLQ: 03-Case-Studies/02-Ascent/01-Notification-System/06-Deep-Dives/05-Retry-And-DLQ/02-DLQ.md
+        - Failure Handling: 03-Case-Studies/02-Ascent/01-Notification-System/06-Deep-Dives/05-Retry-And-DLQ/03-Failure-Handling.md
       - "Deep Dive — Rate Limiting":
-        - Rate Limiting: 02-Ascent/01-Notification-System/06-Deep-Dives/06-Rate-Limiting/01-Rate-Limiting.md
+        - Rate Limiting: 03-Case-Studies/02-Ascent/01-Notification-System/06-Deep-Dives/06-Rate-Limiting/01-Rate-Limiting.md
       - "Deep Dive — Fault Isolation":
-        - APNs Down: 02-Ascent/01-Notification-System/06-Deep-Dives/07-Fault-Isolation/01-APNs-Down.md
-        - Cassandra Down: 02-Ascent/01-Notification-System/06-Deep-Dives/07-Fault-Isolation/02-Cassandra-Down.md
-        - Kafka Down: 02-Ascent/01-Notification-System/06-Deep-Dives/07-Fault-Isolation/03-Kafka-Down.md
-        - Redis Down: 02-Ascent/01-Notification-System/06-Deep-Dives/07-Fault-Isolation/04-Redis-Down.md
-        - Scheduler Down: 02-Ascent/01-Notification-System/06-Deep-Dives/07-Fault-Isolation/05-Scheduler-Down.md
-      - Final Design: 02-Ascent/01-Notification-System/07-Final-Design/01-Final-Design.md
+        - APNs Down: 03-Case-Studies/02-Ascent/01-Notification-System/06-Deep-Dives/07-Fault-Isolation/01-APNs-Down.md
+        - Cassandra Down: 03-Case-Studies/02-Ascent/01-Notification-System/06-Deep-Dives/07-Fault-Isolation/02-Cassandra-Down.md
+        - Kafka Down: 03-Case-Studies/02-Ascent/01-Notification-System/06-Deep-Dives/07-Fault-Isolation/03-Kafka-Down.md
+        - Redis Down: 03-Case-Studies/02-Ascent/01-Notification-System/06-Deep-Dives/07-Fault-Isolation/04-Redis-Down.md
+        - Scheduler Down: 03-Case-Studies/02-Ascent/01-Notification-System/06-Deep-Dives/07-Fault-Isolation/05-Scheduler-Down.md
+      - Final Design: 03-Case-Studies/02-Ascent/01-Notification-System/07-Final-Design/01-Final-Design.md
       - "Observability":
-        - SLI / SLO Connection: 02-Ascent/01-Notification-System/08-Observability/01-SLI-SLO-Connection.md
-        - Measuring Latency: 02-Ascent/01-Notification-System/08-Observability/02-Measuring-Latency.md
-        - Measuring Availability: 02-Ascent/01-Notification-System/08-Observability/03-Measuring-Availability.md
-        - Alerting: 02-Ascent/01-Notification-System/08-Observability/04-Alerting.md
-        - Error Budget: 02-Ascent/01-Notification-System/08-Observability/05-Error-Budget.md
+        - SLI / SLO Connection: 03-Case-Studies/02-Ascent/01-Notification-System/08-Observability/01-SLI-SLO-Connection.md
+        - Measuring Latency: 03-Case-Studies/02-Ascent/01-Notification-System/08-Observability/02-Measuring-Latency.md
+        - Measuring Availability: 03-Case-Studies/02-Ascent/01-Notification-System/08-Observability/03-Measuring-Availability.md
+        - Alerting: 03-Case-Studies/02-Ascent/01-Notification-System/08-Observability/04-Alerting.md
+        - Error Budget: 03-Case-Studies/02-Ascent/01-Notification-System/08-Observability/05-Error-Budget.md
     - Pastebin:
-      - Overview: 02-Ascent/02-Pastebin/index.md
-      - Functional Requirements: 02-Ascent/02-Pastebin/01-FR.md
-      - Estimation: 02-Ascent/02-Pastebin/02-Estimation.md
-      - Non-Functional Requirements: 02-Ascent/02-Pastebin/03-NFR.md
-      - API Design: 02-Ascent/02-Pastebin/04-API.md
-      - Base Architecture: 02-Ascent/02-Pastebin/05-Base-Architecture.md
+      - Overview: 03-Case-Studies/02-Ascent/02-Pastebin/index.md
+      - Functional Requirements: 03-Case-Studies/02-Ascent/02-Pastebin/01-FR.md
+      - Estimation: 03-Case-Studies/02-Ascent/02-Pastebin/02-Estimation.md
+      - Non-Functional Requirements: 03-Case-Studies/02-Ascent/02-Pastebin/03-NFR.md
+      - API Design: 03-Case-Studies/02-Ascent/02-Pastebin/04-API.md
+      - Base Architecture: 03-Case-Studies/02-Ascent/02-Pastebin/05-Base-Architecture.md
       - "Deep Dive — Short Code Generation":
-        - Requirements: 02-Ascent/02-Pastebin/06-Deep-Dives/01-Short-Code-Generation/01-Requirements.md
-        - Approaches: 02-Ascent/02-Pastebin/06-Deep-Dives/01-Short-Code-Generation/02-Approaches.md
-        - Redis Counter: 02-Ascent/02-Pastebin/06-Deep-Dives/01-Short-Code-Generation/03-Redis-Counter.md
-        - Custom Alias: 02-Ascent/02-Pastebin/06-Deep-Dives/01-Short-Code-Generation/04-Custom-Alias.md
+        - Requirements: 03-Case-Studies/02-Ascent/02-Pastebin/06-Deep-Dives/01-Short-Code-Generation/01-Requirements.md
+        - Approaches: 03-Case-Studies/02-Ascent/02-Pastebin/06-Deep-Dives/01-Short-Code-Generation/02-Approaches.md
+        - Redis Counter: 03-Case-Studies/02-Ascent/02-Pastebin/06-Deep-Dives/01-Short-Code-Generation/03-Redis-Counter.md
+        - Custom Alias: 03-Case-Studies/02-Ascent/02-Pastebin/06-Deep-Dives/01-Short-Code-Generation/04-Custom-Alias.md
       - "Deep Dive — Database":
-        - DB Choice: 02-Ascent/02-Pastebin/06-Deep-Dives/02-DB/01-DB-Choice.md
-        - Content-Addressable Storage: 02-Ascent/02-Pastebin/06-Deep-Dives/02-DB/02-Content-Addressable-Storage.md
-        - Ref Counting: 02-Ascent/02-Pastebin/06-Deep-Dives/02-DB/03-Ref-Counting.md
-        - Schema And Indexes: 02-Ascent/02-Pastebin/06-Deep-Dives/02-DB/04-Schema-And-Indexes.md
-        - Write Read Delete Flows: 02-Ascent/02-Pastebin/06-Deep-Dives/02-DB/05-Write-Read-Delete-Flows.md
-        - Sharding: 02-Ascent/02-Pastebin/06-Deep-Dives/02-DB/06-Sharding.md
+        - DB Choice: 03-Case-Studies/02-Ascent/02-Pastebin/06-Deep-Dives/02-DB/01-DB-Choice.md
+        - Content-Addressable Storage: 03-Case-Studies/02-Ascent/02-Pastebin/06-Deep-Dives/02-DB/02-Content-Addressable-Storage.md
+        - Ref Counting: 03-Case-Studies/02-Ascent/02-Pastebin/06-Deep-Dives/02-DB/03-Ref-Counting.md
+        - Schema And Indexes: 03-Case-Studies/02-Ascent/02-Pastebin/06-Deep-Dives/02-DB/04-Schema-And-Indexes.md
+        - Write Read Delete Flows: 03-Case-Studies/02-Ascent/02-Pastebin/06-Deep-Dives/02-DB/05-Write-Read-Delete-Flows.md
+        - Sharding: 03-Case-Studies/02-Ascent/02-Pastebin/06-Deep-Dives/02-DB/06-Sharding.md
       - "Deep Dive — Caching":
-        - Why Cache: 02-Ascent/02-Pastebin/06-Deep-Dives/03-Caching/01-Why-Cache.md
-        - What To Cache And How: 02-Ascent/02-Pastebin/06-Deep-Dives/03-Caching/02-What-To-Cache-And-How.md
-        - Cache Sizing: 02-Ascent/02-Pastebin/06-Deep-Dives/03-Caching/03-Cache-Sizing.md
-        - Cache Invalidation: 02-Ascent/02-Pastebin/06-Deep-Dives/03-Caching/04-Cache-Invalidation.md
+        - Why Cache: 03-Case-Studies/02-Ascent/02-Pastebin/06-Deep-Dives/03-Caching/01-Why-Cache.md
+        - What To Cache And How: 03-Case-Studies/02-Ascent/02-Pastebin/06-Deep-Dives/03-Caching/02-What-To-Cache-And-How.md
+        - Cache Sizing: 03-Case-Studies/02-Ascent/02-Pastebin/06-Deep-Dives/03-Caching/03-Cache-Sizing.md
+        - Cache Invalidation: 03-Case-Studies/02-Ascent/02-Pastebin/06-Deep-Dives/03-Caching/04-Cache-Invalidation.md
       - "Deep Dive — Peak Traffic":
-        - Hot Key Problem: 02-Ascent/02-Pastebin/06-Deep-Dives/04-Peak-Traffic/01-Hot-Key-Problem.md
+        - Hot Key Problem: 03-Case-Studies/02-Ascent/02-Pastebin/06-Deep-Dives/04-Peak-Traffic/01-Hot-Key-Problem.md
       - "Deep Dive — Fault Isolation":
-        - Why Fault Isolation: 02-Ascent/02-Pastebin/06-Deep-Dives/05-Fault-Isolation/01-Why-Fault-Isolation.md
-        - Service Split: 02-Ascent/02-Pastebin/06-Deep-Dives/05-Fault-Isolation/02-Service-Split.md
-        - DB Standby: 02-Ascent/02-Pastebin/06-Deep-Dives/05-Fault-Isolation/03-DB-Standby.md
-        - Circuit Breaker: 02-Ascent/02-Pastebin/06-Deep-Dives/05-Fault-Isolation/04-Circuit-Breaker.md
+        - Why Fault Isolation: 03-Case-Studies/02-Ascent/02-Pastebin/06-Deep-Dives/05-Fault-Isolation/01-Why-Fault-Isolation.md
+        - Service Split: 03-Case-Studies/02-Ascent/02-Pastebin/06-Deep-Dives/05-Fault-Isolation/02-Service-Split.md
+        - DB Standby: 03-Case-Studies/02-Ascent/02-Pastebin/06-Deep-Dives/05-Fault-Isolation/03-DB-Standby.md
+        - Circuit Breaker: 03-Case-Studies/02-Ascent/02-Pastebin/06-Deep-Dives/05-Fault-Isolation/04-Circuit-Breaker.md
       - "Deep Dive — Async S3 Upload":
-        - Why Async Upload: 02-Ascent/02-Pastebin/06-Deep-Dives/06-Async-S3-Upload/01-Why-Async-Upload.md
-        - Failure Problem: 02-Ascent/02-Pastebin/06-Deep-Dives/06-Async-S3-Upload/02-Failure-Problem.md
-        - State Machine: 02-Ascent/02-Pastebin/06-Deep-Dives/06-Async-S3-Upload/03-State-Machine.md
-        - Retry Strategy: 02-Ascent/02-Pastebin/06-Deep-Dives/06-Async-S3-Upload/04-Retry-Strategy.md
-        - Read Path Behaviour: 02-Ascent/02-Pastebin/06-Deep-Dives/06-Async-S3-Upload/05-Read-Path-Behaviour.md
+        - Why Async Upload: 03-Case-Studies/02-Ascent/02-Pastebin/06-Deep-Dives/06-Async-S3-Upload/01-Why-Async-Upload.md
+        - Failure Problem: 03-Case-Studies/02-Ascent/02-Pastebin/06-Deep-Dives/06-Async-S3-Upload/02-Failure-Problem.md
+        - State Machine: 03-Case-Studies/02-Ascent/02-Pastebin/06-Deep-Dives/06-Async-S3-Upload/03-State-Machine.md
+        - Retry Strategy: 03-Case-Studies/02-Ascent/02-Pastebin/06-Deep-Dives/06-Async-S3-Upload/04-Retry-Strategy.md
+        - Read Path Behaviour: 03-Case-Studies/02-Ascent/02-Pastebin/06-Deep-Dives/06-Async-S3-Upload/05-Read-Path-Behaviour.md
       - "Deep Dive — Expiry Cleanup Job":
-        - Why Cleanup Job: 02-Ascent/02-Pastebin/06-Deep-Dives/07-Expiry-Cleanup-Job/01-Why-Cleanup-Job.md
-        - Cleanup Flow: 02-Ascent/02-Pastebin/06-Deep-Dives/07-Expiry-Cleanup-Job/02-Cleanup-Flow.md
-        - Distributed Workers: 02-Ascent/02-Pastebin/06-Deep-Dives/07-Expiry-Cleanup-Job/03-Distributed-Workers.md
-        - Watchdog: 02-Ascent/02-Pastebin/06-Deep-Dives/07-Expiry-Cleanup-Job/04-Watchdog.md
-        - Indexing Strategy: 02-Ascent/02-Pastebin/06-Deep-Dives/07-Expiry-Cleanup-Job/05-Indexing-Strategy.md
-      - Updated Architecture: 02-Ascent/02-Pastebin/06-Deep-Dives/08-Updated-Architecture/01-Updated-Architecture.md
+        - Why Cleanup Job: 03-Case-Studies/02-Ascent/02-Pastebin/06-Deep-Dives/07-Expiry-Cleanup-Job/01-Why-Cleanup-Job.md
+        - Cleanup Flow: 03-Case-Studies/02-Ascent/02-Pastebin/06-Deep-Dives/07-Expiry-Cleanup-Job/02-Cleanup-Flow.md
+        - Distributed Workers: 03-Case-Studies/02-Ascent/02-Pastebin/06-Deep-Dives/07-Expiry-Cleanup-Job/03-Distributed-Workers.md
+        - Watchdog: 03-Case-Studies/02-Ascent/02-Pastebin/06-Deep-Dives/07-Expiry-Cleanup-Job/04-Watchdog.md
+        - Indexing Strategy: 03-Case-Studies/02-Ascent/02-Pastebin/06-Deep-Dives/07-Expiry-Cleanup-Job/05-Indexing-Strategy.md
+      - Updated Architecture: 03-Case-Studies/02-Ascent/02-Pastebin/06-Deep-Dives/08-Updated-Architecture/01-Updated-Architecture.md
       - "Observability":
-        - SLI / SLO Connection: 02-Ascent/02-Pastebin/07-Observability/01-SLI-SLO-Connection.md
-        - Measuring Latency: 02-Ascent/02-Pastebin/07-Observability/02-Measuring-Latency.md
-        - Measuring Availability: 02-Ascent/02-Pastebin/07-Observability/03-Measuring-Availability.md
-        - Alerting: 02-Ascent/02-Pastebin/07-Observability/04-Alerting.md
-        - Error Budget: 02-Ascent/02-Pastebin/07-Observability/05-Error-Budget.md
+        - SLI / SLO Connection: 03-Case-Studies/02-Ascent/02-Pastebin/07-Observability/01-SLI-SLO-Connection.md
+        - Measuring Latency: 03-Case-Studies/02-Ascent/02-Pastebin/07-Observability/02-Measuring-Latency.md
+        - Measuring Availability: 03-Case-Studies/02-Ascent/02-Pastebin/07-Observability/03-Measuring-Availability.md
+        - Alerting: 03-Case-Studies/02-Ascent/02-Pastebin/07-Observability/04-Alerting.md
+        - Error Budget: 03-Case-Studies/02-Ascent/02-Pastebin/07-Observability/05-Error-Budget.md
 
   - Expedition:
-    - Overview: 03-Expedition/index.md
+    - Overview: 03-Case-Studies/03-Expedition/index.md
     - Rate Limiter:
-      - Functional Requirements: 03-Expedition/01-Rate-Limiter/01-FR.md
-      - Estimation: 03-Expedition/01-Rate-Limiter/02-Estimation.md
-      - Non-Functional Requirements: 03-Expedition/01-Rate-Limiter/03-NFR.md
-      - API Design: 03-Expedition/01-Rate-Limiter/04-API.md
-      - Base Architecture: 03-Expedition/01-Rate-Limiter/05-Base-Architecture.md
+      - Functional Requirements: 03-Case-Studies/03-Expedition/01-Rate-Limiter/01-FR.md
+      - Estimation: 03-Case-Studies/03-Expedition/01-Rate-Limiter/02-Estimation.md
+      - Non-Functional Requirements: 03-Case-Studies/03-Expedition/01-Rate-Limiter/03-NFR.md
+      - API Design: 03-Case-Studies/03-Expedition/01-Rate-Limiter/04-API.md
+      - Base Architecture: 03-Case-Studies/03-Expedition/01-Rate-Limiter/05-Base-Architecture.md
       - "Deep Dive — Algorithms":
-        - Fixed Window Counter: 03-Expedition/01-Rate-Limiter/06-Deep-Dives/01-Algorithms/01-Fixed-Window-Counter.md
-        - Sliding Window Log: 03-Expedition/01-Rate-Limiter/06-Deep-Dives/01-Algorithms/02-Sliding-Window-Log.md
-        - Sliding Window Counter: 03-Expedition/01-Rate-Limiter/06-Deep-Dives/01-Algorithms/03-Sliding-Window-Counter.md
-        - Token Bucket: 03-Expedition/01-Rate-Limiter/06-Deep-Dives/01-Algorithms/04-Token-Bucket.md
-        - Leaky Bucket: 03-Expedition/01-Rate-Limiter/06-Deep-Dives/01-Algorithms/05-Leaky-Bucket.md
-        - Algorithm Comparison: 03-Expedition/01-Rate-Limiter/06-Deep-Dives/01-Algorithms/06-Algorithm-Comparison.md
+        - Fixed Window Counter: 03-Case-Studies/03-Expedition/01-Rate-Limiter/06-Deep-Dives/01-Algorithms/01-Fixed-Window-Counter.md
+        - Sliding Window Log: 03-Case-Studies/03-Expedition/01-Rate-Limiter/06-Deep-Dives/01-Algorithms/02-Sliding-Window-Log.md
+        - Sliding Window Counter: 03-Case-Studies/03-Expedition/01-Rate-Limiter/06-Deep-Dives/01-Algorithms/03-Sliding-Window-Counter.md
+        - Token Bucket: 03-Case-Studies/03-Expedition/01-Rate-Limiter/06-Deep-Dives/01-Algorithms/04-Token-Bucket.md
+        - Leaky Bucket: 03-Case-Studies/03-Expedition/01-Rate-Limiter/06-Deep-Dives/01-Algorithms/05-Leaky-Bucket.md
+        - Algorithm Comparison: 03-Case-Studies/03-Expedition/01-Rate-Limiter/06-Deep-Dives/01-Algorithms/06-Algorithm-Comparison.md
       - "Deep Dive — Distributed Rate Limiting":
-        - Atomicity Problem: 03-Expedition/01-Rate-Limiter/06-Deep-Dives/02-Distributed-Rate-Limiting/01-Atomicity-Problem.md
-        - Redis Cluster: 03-Expedition/01-Rate-Limiter/06-Deep-Dives/02-Distributed-Rate-Limiting/02-Redis-Cluster.md
+        - Atomicity Problem: 03-Case-Studies/03-Expedition/01-Rate-Limiter/06-Deep-Dives/02-Distributed-Rate-Limiting/01-Atomicity-Problem.md
+        - Redis Cluster: 03-Case-Studies/03-Expedition/01-Rate-Limiter/06-Deep-Dives/02-Distributed-Rate-Limiting/02-Redis-Cluster.md
       - "Deep Dive — Rule Storage":
-        - Rule Storage: 03-Expedition/01-Rate-Limiter/06-Deep-Dives/03-Rule-Storage/01-Rule-Storage.md
+        - Rule Storage: 03-Case-Studies/03-Expedition/01-Rate-Limiter/06-Deep-Dives/03-Rule-Storage/01-Rule-Storage.md
       - "Deep Dive — Fault Isolation":
-        - Rate Limiter Node Down: 03-Expedition/01-Rate-Limiter/06-Deep-Dives/04-Fault-Isolation/01-Rate-Limiter-Node-Down.md
-        - Redis Node Down: 03-Expedition/01-Rate-Limiter/06-Deep-Dives/04-Fault-Isolation/02-Redis-Node-Down.md
-        - Rule DB Down: 03-Expedition/01-Rate-Limiter/06-Deep-Dives/04-Fault-Isolation/03-Rule-DB-Down.md
-        - API Gateway Down: 03-Expedition/01-Rate-Limiter/06-Deep-Dives/04-Fault-Isolation/04-API-Gateway-Down.md
-        - DDoS And Defense Layers: 03-Expedition/01-Rate-Limiter/06-Deep-Dives/04-Fault-Isolation/05-DDoS-And-Defense-Layers.md
-      - Final Design: 03-Expedition/01-Rate-Limiter/07-Final-Design/01-Final-Design.md
+        - Rate Limiter Node Down: 03-Case-Studies/03-Expedition/01-Rate-Limiter/06-Deep-Dives/04-Fault-Isolation/01-Rate-Limiter-Node-Down.md
+        - Redis Node Down: 03-Case-Studies/03-Expedition/01-Rate-Limiter/06-Deep-Dives/04-Fault-Isolation/02-Redis-Node-Down.md
+        - Rule DB Down: 03-Case-Studies/03-Expedition/01-Rate-Limiter/06-Deep-Dives/04-Fault-Isolation/03-Rule-DB-Down.md
+        - API Gateway Down: 03-Case-Studies/03-Expedition/01-Rate-Limiter/06-Deep-Dives/04-Fault-Isolation/04-API-Gateway-Down.md
+        - DDoS And Defense Layers: 03-Case-Studies/03-Expedition/01-Rate-Limiter/06-Deep-Dives/04-Fault-Isolation/05-DDoS-And-Defense-Layers.md
+      - Final Design: 03-Case-Studies/03-Expedition/01-Rate-Limiter/07-Final-Design/01-Final-Design.md
       - "Observability":
-        - SLI / SLO Connection: 03-Expedition/01-Rate-Limiter/08-Observability/01-SLI-SLO-Connection.md
-        - Measuring Latency: 03-Expedition/01-Rate-Limiter/08-Observability/02-Measuring-Latency.md
-        - Measuring Availability: 03-Expedition/01-Rate-Limiter/08-Observability/03-Measuring-Availability.md
-        - Alerting: 03-Expedition/01-Rate-Limiter/08-Observability/04-Alerting.md
-        - Error Budget: 03-Expedition/01-Rate-Limiter/08-Observability/05-Error-Budget.md
+        - SLI / SLO Connection: 03-Case-Studies/03-Expedition/01-Rate-Limiter/08-Observability/01-SLI-SLO-Connection.md
+        - Measuring Latency: 03-Case-Studies/03-Expedition/01-Rate-Limiter/08-Observability/02-Measuring-Latency.md
+        - Measuring Availability: 03-Case-Studies/03-Expedition/01-Rate-Limiter/08-Observability/03-Measuring-Availability.md
+        - Alerting: 03-Case-Studies/03-Expedition/01-Rate-Limiter/08-Observability/04-Alerting.md
+        - Error Budget: 03-Case-Studies/03-Expedition/01-Rate-Limiter/08-Observability/05-Error-Budget.md
 
   - Summit:
-    - Overview: 04-Summit/index.md
+    - Overview: 03-Case-Studies/04-Summit/index.md
     - KV Store:
-      - Functional Requirements: 04-Summit/02-KV-Store/01-FR.md
-      - Estimation: 04-Summit/02-KV-Store/02-Estimation.md
-      - Non-Functional Requirements: 04-Summit/02-KV-Store/03-NFR.md
+      - Functional Requirements: 03-Case-Studies/04-Summit/02-KV-Store/01-FR.md
+      - Estimation: 03-Case-Studies/04-Summit/02-KV-Store/02-Estimation.md
+      - Non-Functional Requirements: 03-Case-Studies/04-Summit/02-KV-Store/03-NFR.md
       - "API Design":
-        - API Design: 04-Summit/02-KV-Store/04-API/01-API-Design.md
-        - Why Base64: 04-Summit/02-KV-Store/04-API/02-Why-Base64.md
+        - API Design: 03-Case-Studies/04-Summit/02-KV-Store/04-API/01-API-Design.md
+        - Why Base64: 03-Case-Studies/04-Summit/02-KV-Store/04-API/02-Why-Base64.md
       - "Base Architecture":
-        - Why Not Single Leader: 04-Summit/02-KV-Store/05-Base-Architecture/01-Why-Not-Single-Leader.md
-        - Why Not Multi Leader: 04-Summit/02-KV-Store/05-Base-Architecture/02-Why-Not-Multi-Leader.md
-        - Why Leaderless: 04-Summit/02-KV-Store/05-Base-Architecture/03-Why-Leaderless.md
-        - Base Design: 04-Summit/02-KV-Store/05-Base-Architecture/04-Base-Design.md
+        - Why Not Single Leader: 03-Case-Studies/04-Summit/02-KV-Store/05-Base-Architecture/01-Why-Not-Single-Leader.md
+        - Why Not Multi Leader: 03-Case-Studies/04-Summit/02-KV-Store/05-Base-Architecture/02-Why-Not-Multi-Leader.md
+        - Why Leaderless: 03-Case-Studies/04-Summit/02-KV-Store/05-Base-Architecture/03-Why-Leaderless.md
+        - Base Design: 03-Case-Studies/04-Summit/02-KV-Store/05-Base-Architecture/04-Base-Design.md
       - "Deep Dive — Consistent Hashing":
-        - Terminology: 04-Summit/02-KV-Store/06-Deep-Dives/01-Consistent-Hashing/01-Terminology.md
-        - How The Ring Works: 04-Summit/02-KV-Store/06-Deep-Dives/01-Consistent-Hashing/02-How-The-Ring-Works.md
+        - Terminology: 03-Case-Studies/04-Summit/02-KV-Store/06-Deep-Dives/01-Consistent-Hashing/01-Terminology.md
+        - How The Ring Works: 03-Case-Studies/04-Summit/02-KV-Store/06-Deep-Dives/01-Consistent-Hashing/02-How-The-Ring-Works.md
       - "Deep Dive — Replication":
-        - Quorum Writes: 04-Summit/02-KV-Store/06-Deep-Dives/02-Replication/01-Quorum-Writes.md
-        - Hinted Handoff: 04-Summit/02-KV-Store/06-Deep-Dives/02-Replication/02-Hinted-Handoff.md
-        - Read Repair: 04-Summit/02-KV-Store/06-Deep-Dives/02-Replication/02-Read-Repair.md
-        - Anti-Entropy: 04-Summit/02-KV-Store/06-Deep-Dives/02-Replication/03-Anti-Entropy.md
+        - Quorum Writes: 03-Case-Studies/04-Summit/02-KV-Store/06-Deep-Dives/02-Replication/01-Quorum-Writes.md
+        - Hinted Handoff: 03-Case-Studies/04-Summit/02-KV-Store/06-Deep-Dives/02-Replication/02-Hinted-Handoff.md
+        - Read Repair: 03-Case-Studies/04-Summit/02-KV-Store/06-Deep-Dives/02-Replication/02-Read-Repair.md
+        - Anti-Entropy: 03-Case-Studies/04-Summit/02-KV-Store/06-Deep-Dives/02-Replication/03-Anti-Entropy.md
       - "Deep Dive — Storage Engine":
-        - B+Tree vs LSM Tree: 04-Summit/02-KV-Store/06-Deep-Dives/03-Storage-Engine/01-B+Tree-vs-LSM-Tree.md
-        - LSM Tree Internals: 04-Summit/02-KV-Store/06-Deep-Dives/03-Storage-Engine/02-LSM-Tree-Internals.md
+        - B+Tree vs LSM Tree: 03-Case-Studies/04-Summit/02-KV-Store/06-Deep-Dives/03-Storage-Engine/01-B+Tree-vs-LSM-Tree.md
+        - LSM Tree Internals: 03-Case-Studies/04-Summit/02-KV-Store/06-Deep-Dives/03-Storage-Engine/02-LSM-Tree-Internals.md
         - "Compaction":
-          - What Is Compaction: 04-Summit/02-KV-Store/06-Deep-Dives/03-Storage-Engine/03-Compaction/01-What-Is-Compaction.md
-          - Size-Tiered Compaction: 04-Summit/02-KV-Store/06-Deep-Dives/03-Storage-Engine/03-Compaction/04-Size-Tiered-Compaction.md
-          - Leveled Compaction: 04-Summit/02-KV-Store/06-Deep-Dives/03-Storage-Engine/03-Compaction/05-Leveled-Compaction.md
-        - Bloom Filters: 04-Summit/02-KV-Store/06-Deep-Dives/03-Storage-Engine/04-Bloom-Filters.md
-        - Putting It All Together: 04-Summit/02-KV-Store/06-Deep-Dives/03-Storage-Engine/05-Putting-It-All-Together.md
+          - What Is Compaction: 03-Case-Studies/04-Summit/02-KV-Store/06-Deep-Dives/03-Storage-Engine/03-Compaction/01-What-Is-Compaction.md
+          - Size-Tiered Compaction: 03-Case-Studies/04-Summit/02-KV-Store/06-Deep-Dives/03-Storage-Engine/03-Compaction/04-Size-Tiered-Compaction.md
+          - Leveled Compaction: 03-Case-Studies/04-Summit/02-KV-Store/06-Deep-Dives/03-Storage-Engine/03-Compaction/05-Leveled-Compaction.md
+        - Bloom Filters: 03-Case-Studies/04-Summit/02-KV-Store/06-Deep-Dives/03-Storage-Engine/04-Bloom-Filters.md
+        - Putting It All Together: 03-Case-Studies/04-Summit/02-KV-Store/06-Deep-Dives/03-Storage-Engine/05-Putting-It-All-Together.md
       - "Deep Dive — Cluster Membership":
-        - The Problem: 04-Summit/02-KV-Store/06-Deep-Dives/04-Cluster-Membership/01-The-Problem.md
-        - Gossip Protocol: 04-Summit/02-KV-Store/06-Deep-Dives/04-Cluster-Membership/02-Gossip-Protocol.md
-        - Failure Detection: 04-Summit/02-KV-Store/06-Deep-Dives/04-Cluster-Membership/03-Failure-Detection.md
+        - The Problem: 03-Case-Studies/04-Summit/02-KV-Store/06-Deep-Dives/04-Cluster-Membership/01-The-Problem.md
+        - Gossip Protocol: 03-Case-Studies/04-Summit/02-KV-Store/06-Deep-Dives/04-Cluster-Membership/02-Gossip-Protocol.md
+        - Failure Detection: 03-Case-Studies/04-Summit/02-KV-Store/06-Deep-Dives/04-Cluster-Membership/03-Failure-Detection.md
       - "Deep Dive — Conflict Resolution":
-        - The Problem: 04-Summit/02-KV-Store/06-Deep-Dives/05-Conflict-Resolution/01-The-Problem.md
-        - Solution: 04-Summit/02-KV-Store/06-Deep-Dives/05-Conflict-Resolution/02-Solution.md
+        - The Problem: 03-Case-Studies/04-Summit/02-KV-Store/06-Deep-Dives/05-Conflict-Resolution/01-The-Problem.md
+        - Solution: 03-Case-Studies/04-Summit/02-KV-Store/06-Deep-Dives/05-Conflict-Resolution/02-Solution.md
       - "Deep Dive — TTL And Data Expiry":
-        - How TTL Works: 04-Summit/02-KV-Store/06-Deep-Dives/06-TTL-And-Data-Expiry/01-How-TTL-Works.md
+        - How TTL Works: 03-Case-Studies/04-Summit/02-KV-Store/06-Deep-Dives/06-TTL-And-Data-Expiry/01-How-TTL-Works.md
       - "Deep Dive — Fault Isolation":
-        - Node Failure: 04-Summit/02-KV-Store/06-Deep-Dives/07-Fault-Isolation/01-Node-Failure.md
+        - Node Failure: 03-Case-Studies/04-Summit/02-KV-Store/06-Deep-Dives/07-Fault-Isolation/01-Node-Failure.md
         - "Disk Failure":
-          - The Problem: 04-Summit/02-KV-Store/06-Deep-Dives/07-Fault-Isolation/02-Disk-Failure/02-The-Problem.md
-          - Silent Corruption: 04-Summit/02-KV-Store/06-Deep-Dives/07-Fault-Isolation/02-Disk-Failure/03-Silent-Corruption.md
-          - Disk Full: 04-Summit/02-KV-Store/06-Deep-Dives/07-Fault-Isolation/02-Disk-Failure/04-Disk-Full.md
-        - Network Partition: 04-Summit/02-KV-Store/06-Deep-Dives/07-Fault-Isolation/03-Network-Partition.md
-        - Cascading Failures: 04-Summit/02-KV-Store/06-Deep-Dives/07-Fault-Isolation/04-Cascading-Failures.md
-        - Coordinator Failure: 04-Summit/02-KV-Store/06-Deep-Dives/07-Fault-Isolation/05-Coordinator-Failure.md
+          - The Problem: 03-Case-Studies/04-Summit/02-KV-Store/06-Deep-Dives/07-Fault-Isolation/02-Disk-Failure/02-The-Problem.md
+          - Silent Corruption: 03-Case-Studies/04-Summit/02-KV-Store/06-Deep-Dives/07-Fault-Isolation/02-Disk-Failure/03-Silent-Corruption.md
+          - Disk Full: 03-Case-Studies/04-Summit/02-KV-Store/06-Deep-Dives/07-Fault-Isolation/02-Disk-Failure/04-Disk-Full.md
+        - Network Partition: 03-Case-Studies/04-Summit/02-KV-Store/06-Deep-Dives/07-Fault-Isolation/03-Network-Partition.md
+        - Cascading Failures: 03-Case-Studies/04-Summit/02-KV-Store/06-Deep-Dives/07-Fault-Isolation/04-Cascading-Failures.md
+        - Coordinator Failure: 03-Case-Studies/04-Summit/02-KV-Store/06-Deep-Dives/07-Fault-Isolation/05-Coordinator-Failure.md
       - "Observability":
-        - SLI / SLO Connection: 04-Summit/02-KV-Store/07-Observability/01-SLI-SLO-Connection.md
-        - Measuring Latency: 04-Summit/02-KV-Store/07-Observability/02-Measuring-Latency.md
-        - Measuring Availability: 04-Summit/02-KV-Store/07-Observability/03-Measuring-Availability.md
-        - Alerting: 04-Summit/02-KV-Store/07-Observability/04-Alerting.md
-        - Error Budget: 04-Summit/02-KV-Store/07-Observability/05-Error-Budget.md
-      - Final Architecture: 04-Summit/02-KV-Store/08-Final-Design/01-Final-Architecture.md
+        - SLI / SLO Connection: 03-Case-Studies/04-Summit/02-KV-Store/07-Observability/01-SLI-SLO-Connection.md
+        - Measuring Latency: 03-Case-Studies/04-Summit/02-KV-Store/07-Observability/02-Measuring-Latency.md
+        - Measuring Availability: 03-Case-Studies/04-Summit/02-KV-Store/07-Observability/03-Measuring-Availability.md
+        - Alerting: 03-Case-Studies/04-Summit/02-KV-Store/07-Observability/04-Alerting.md
+        - Error Budget: 03-Case-Studies/04-Summit/02-KV-Store/07-Observability/05-Error-Budget.md
+      - Final Architecture: 03-Case-Studies/04-Summit/02-KV-Store/08-Final-Design/01-Final-Architecture.md
 
   - Battleground:
-    - Overview: 05-Battleground/index.md
+    - Overview: 03-Case-Studies/05-Battleground/index.md
     - WhatsApp:
-      - Overview: 05-Battleground/01-WhatsApp/index.md
-      - Functional Requirements: 05-Battleground/01-WhatsApp/01-FR.md
-      - Estimation: 05-Battleground/01-WhatsApp/02-Estimation.md
-      - Non-Functional Requirements: 05-Battleground/01-WhatsApp/03-NFR.md
-      - API Design: 05-Battleground/01-WhatsApp/04-API.md
+      - Overview: 03-Case-Studies/05-Battleground/01-WhatsApp/index.md
+      - Functional Requirements: 03-Case-Studies/05-Battleground/01-WhatsApp/01-FR.md
+      - Estimation: 03-Case-Studies/05-Battleground/01-WhatsApp/02-Estimation.md
+      - Non-Functional Requirements: 03-Case-Studies/05-Battleground/01-WhatsApp/03-NFR.md
+      - API Design: 03-Case-Studies/05-Battleground/01-WhatsApp/04-API.md
       - "Real-Time Comms":
-        - The Problem: 05-Battleground/01-WhatsApp/04-Real-Time-Comms/01-The-Problem.md
-        - Short Polling: 05-Battleground/01-WhatsApp/04-Real-Time-Comms/02-Short-Polling.md
-        - Long Polling: 05-Battleground/01-WhatsApp/04-Real-Time-Comms/03-Long-Polling.md
-        - SSE: 05-Battleground/01-WhatsApp/04-Real-Time-Comms/04-SSE.md
-        - WebSockets: 05-Battleground/01-WhatsApp/04-Real-Time-Comms/05-WebSockets.md
-        - Comparison: 05-Battleground/01-WhatsApp/04-Real-Time-Comms/06-Comparison.md
+        - The Problem: 03-Case-Studies/05-Battleground/01-WhatsApp/04-Real-Time-Comms/01-The-Problem.md
+        - Short Polling: 03-Case-Studies/05-Battleground/01-WhatsApp/04-Real-Time-Comms/02-Short-Polling.md
+        - Long Polling: 03-Case-Studies/05-Battleground/01-WhatsApp/04-Real-Time-Comms/03-Long-Polling.md
+        - SSE: 03-Case-Studies/05-Battleground/01-WhatsApp/04-Real-Time-Comms/04-SSE.md
+        - WebSockets: 03-Case-Studies/05-Battleground/01-WhatsApp/04-Real-Time-Comms/05-WebSockets.md
+        - Comparison: 03-Case-Studies/05-Battleground/01-WhatsApp/04-Real-Time-Comms/06-Comparison.md
       - "Base Architecture":
-        - Overview: 05-Battleground/01-WhatsApp/05-Base-Architecture/01-Overview.md
-        - WebSocket Connection Flow: 05-Battleground/01-WhatsApp/05-Base-Architecture/02-WebSocket-Connection-Flow.md
-        - Message Send Flow: 05-Battleground/01-WhatsApp/05-Base-Architecture/03-Message-Send-Flow.md
-        - Chat History Flow: 05-Battleground/01-WhatsApp/05-Base-Architecture/04-Chat-History-Flow.md
-        - API GW And LB: 05-Battleground/01-WhatsApp/05-Base-Architecture/05-API-GW-And-LB.md
+        - Overview: 03-Case-Studies/05-Battleground/01-WhatsApp/05-Base-Architecture/01-Overview.md
+        - WebSocket Connection Flow: 03-Case-Studies/05-Battleground/01-WhatsApp/05-Base-Architecture/02-WebSocket-Connection-Flow.md
+        - Message Send Flow: 03-Case-Studies/05-Battleground/01-WhatsApp/05-Base-Architecture/03-Message-Send-Flow.md
+        - Chat History Flow: 03-Case-Studies/05-Battleground/01-WhatsApp/05-Base-Architecture/04-Chat-History-Flow.md
+        - API GW And LB: 03-Case-Studies/05-Battleground/01-WhatsApp/05-Base-Architecture/05-API-GW-And-LB.md
       - "Deep Dive — Database":
-        - DB Choice: 05-Battleground/01-WhatsApp/06-Deep-Dives/01-DB/01-DB-Choice.md
-        - Schema: 05-Battleground/01-WhatsApp/06-Deep-Dives/01-DB/02-Schema.md
-        - Tiered Storage: 05-Battleground/01-WhatsApp/06-Deep-Dives/01-DB/03-Tiered-Storage.md
-        - Sharding: 05-Battleground/01-WhatsApp/06-Deep-Dives/01-DB/04-Sharding.md
-        - Hot Partition — Overview: 05-Battleground/01-WhatsApp/06-Deep-Dives/01-DB/05-Hot-Partition/00-Overview.md
-        - Hot Partition — Detection: 05-Battleground/01-WhatsApp/06-Deep-Dives/01-DB/05-Hot-Partition/01-Detection.md
-        - Hot Partition — Salting: 05-Battleground/01-WhatsApp/06-Deep-Dives/01-DB/05-Hot-Partition/02-Salting.md
-        - Hot Partition — Dynamic N: 05-Battleground/01-WhatsApp/06-Deep-Dives/01-DB/05-Hot-Partition/03-Dynamic-N.md
-        - Hot Partition — Read Query: 05-Battleground/01-WhatsApp/06-Deep-Dives/01-DB/05-Hot-Partition/04-Read-Query.md
-        - Hot Partition — Registry: 05-Battleground/01-WhatsApp/06-Deep-Dives/01-DB/05-Hot-Partition/05-Registry.md
-        - Hot Partition — Edge Cases: 05-Battleground/01-WhatsApp/06-Deep-Dives/01-DB/05-Hot-Partition/06-Edge-Cases.md
-        - Updated Architecture: 05-Battleground/01-WhatsApp/06-Deep-Dives/01-DB/06-Updated-Architecture.md
+        - DB Choice: 03-Case-Studies/05-Battleground/01-WhatsApp/06-Deep-Dives/01-DB/01-DB-Choice.md
+        - Schema: 03-Case-Studies/05-Battleground/01-WhatsApp/06-Deep-Dives/01-DB/02-Schema.md
+        - Tiered Storage: 03-Case-Studies/05-Battleground/01-WhatsApp/06-Deep-Dives/01-DB/03-Tiered-Storage.md
+        - Sharding: 03-Case-Studies/05-Battleground/01-WhatsApp/06-Deep-Dives/01-DB/04-Sharding.md
+        - Hot Partition — Overview: 03-Case-Studies/05-Battleground/01-WhatsApp/06-Deep-Dives/01-DB/05-Hot-Partition/00-Overview.md
+        - Hot Partition — Detection: 03-Case-Studies/05-Battleground/01-WhatsApp/06-Deep-Dives/01-DB/05-Hot-Partition/01-Detection.md
+        - Hot Partition — Salting: 03-Case-Studies/05-Battleground/01-WhatsApp/06-Deep-Dives/01-DB/05-Hot-Partition/02-Salting.md
+        - Hot Partition — Dynamic N: 03-Case-Studies/05-Battleground/01-WhatsApp/06-Deep-Dives/01-DB/05-Hot-Partition/03-Dynamic-N.md
+        - Hot Partition — Read Query: 03-Case-Studies/05-Battleground/01-WhatsApp/06-Deep-Dives/01-DB/05-Hot-Partition/04-Read-Query.md
+        - Hot Partition — Registry: 03-Case-Studies/05-Battleground/01-WhatsApp/06-Deep-Dives/01-DB/05-Hot-Partition/05-Registry.md
+        - Hot Partition — Edge Cases: 03-Case-Studies/05-Battleground/01-WhatsApp/06-Deep-Dives/01-DB/05-Hot-Partition/06-Edge-Cases.md
+        - Updated Architecture: 03-Case-Studies/05-Battleground/01-WhatsApp/06-Deep-Dives/01-DB/06-Updated-Architecture.md
       - "Deep Dive — Message Ordering":
-        - The Problem: 05-Battleground/01-WhatsApp/06-Deep-Dives/02-Message-Ordering/01-The-Problem.md
-        - Client Timestamps: 05-Battleground/01-WhatsApp/06-Deep-Dives/02-Message-Ordering/02-Client-Timestamps.md
-        - Time Machine Problem: 05-Battleground/01-WhatsApp/06-Deep-Dives/02-Message-Ordering/03-Time-Machine-Problem.md
-        - Server Timestamps: 05-Battleground/01-WhatsApp/06-Deep-Dives/02-Message-Ordering/04-Server-Timestamps.md
-        - Dedicated Timestamp Service: 05-Battleground/01-WhatsApp/06-Deep-Dives/02-Message-Ordering/05-Dedicated-Timestamp-Service.md
-        - Per-User Sequence: 05-Battleground/01-WhatsApp/06-Deep-Dives/02-Message-Ordering/06-Per-User-Sequence.md
-        - Per-Conversation Sequence: 05-Battleground/01-WhatsApp/06-Deep-Dives/02-Message-Ordering/07-Per-Conversation-Sequence.md
-        - Redis INCR: 05-Battleground/01-WhatsApp/06-Deep-Dives/02-Message-Ordering/08-Redis-INCR.md
-        - Full Ordering Flow: 05-Battleground/01-WhatsApp/06-Deep-Dives/02-Message-Ordering/09-Full-Ordering-Flow.md
-        - Schema Update: 05-Battleground/01-WhatsApp/06-Deep-Dives/02-Message-Ordering/10-Schema-Update.md
-        - Display Time: 05-Battleground/01-WhatsApp/06-Deep-Dives/02-Message-Ordering/11-Display-Time.md
-        - Updated Architecture: 05-Battleground/01-WhatsApp/06-Deep-Dives/02-Message-Ordering/12-Updated-Architecture.md
+        - The Problem: 03-Case-Studies/05-Battleground/01-WhatsApp/06-Deep-Dives/02-Message-Ordering/01-The-Problem.md
+        - Client Timestamps: 03-Case-Studies/05-Battleground/01-WhatsApp/06-Deep-Dives/02-Message-Ordering/02-Client-Timestamps.md
+        - Time Machine Problem: 03-Case-Studies/05-Battleground/01-WhatsApp/06-Deep-Dives/02-Message-Ordering/03-Time-Machine-Problem.md
+        - Server Timestamps: 03-Case-Studies/05-Battleground/01-WhatsApp/06-Deep-Dives/02-Message-Ordering/04-Server-Timestamps.md
+        - Dedicated Timestamp Service: 03-Case-Studies/05-Battleground/01-WhatsApp/06-Deep-Dives/02-Message-Ordering/05-Dedicated-Timestamp-Service.md
+        - Per-User Sequence: 03-Case-Studies/05-Battleground/01-WhatsApp/06-Deep-Dives/02-Message-Ordering/06-Per-User-Sequence.md
+        - Per-Conversation Sequence: 03-Case-Studies/05-Battleground/01-WhatsApp/06-Deep-Dives/02-Message-Ordering/07-Per-Conversation-Sequence.md
+        - Redis INCR: 03-Case-Studies/05-Battleground/01-WhatsApp/06-Deep-Dives/02-Message-Ordering/08-Redis-INCR.md
+        - Full Ordering Flow: 03-Case-Studies/05-Battleground/01-WhatsApp/06-Deep-Dives/02-Message-Ordering/09-Full-Ordering-Flow.md
+        - Schema Update: 03-Case-Studies/05-Battleground/01-WhatsApp/06-Deep-Dives/02-Message-Ordering/10-Schema-Update.md
+        - Display Time: 03-Case-Studies/05-Battleground/01-WhatsApp/06-Deep-Dives/02-Message-Ordering/11-Display-Time.md
+        - Updated Architecture: 03-Case-Studies/05-Battleground/01-WhatsApp/06-Deep-Dives/02-Message-Ordering/12-Updated-Architecture.md
       - "Deep Dive — Offline Delivery":
-        - The Problem: 05-Battleground/01-WhatsApp/06-Deep-Dives/03-Offline-Delivery/01-The-Problem.md
-        - Detecting Offline: 05-Battleground/01-WhatsApp/06-Deep-Dives/03-Offline-Delivery/02-Detecting-Offline.md
-        - Naive Mailbox: 05-Battleground/01-WhatsApp/06-Deep-Dives/03-Offline-Delivery/03-Naive-Mailbox.md
-        - Message ID Only: 05-Battleground/01-WhatsApp/06-Deep-Dives/03-Offline-Delivery/04-Message-Id-Only.md
-        - Why Not Kafka: 05-Battleground/01-WhatsApp/06-Deep-Dives/03-Offline-Delivery/05-Why-Not-Kafka.md
-        - Last Delivered Seq: 05-Battleground/01-WhatsApp/06-Deep-Dives/03-Offline-Delivery/06-Last-Delivered-Seq.md
-        - Pending Deliveries Table: 05-Battleground/01-WhatsApp/06-Deep-Dives/03-Offline-Delivery/07-Pending-Deliveries-Table.md
-        - Write Flow: 05-Battleground/01-WhatsApp/06-Deep-Dives/03-Offline-Delivery/08-Write-Flow.md
-        - Push Notifications: 05-Battleground/01-WhatsApp/06-Deep-Dives/03-Offline-Delivery/09-Push-Notifications.md
-        - Notification Payload: 05-Battleground/01-WhatsApp/06-Deep-Dives/03-Offline-Delivery/10-Notification-Payload.md
-        - Internet Turns On: 05-Battleground/01-WhatsApp/06-Deep-Dives/03-Offline-Delivery/11-Internet-Turns-On.md
-        - Notification Reply: 05-Battleground/01-WhatsApp/06-Deep-Dives/03-Offline-Delivery/12-Notification-Reply.md
-        - Updated Architecture: 05-Battleground/01-WhatsApp/06-Deep-Dives/03-Offline-Delivery/13-Updated-Architecture.md
+        - The Problem: 03-Case-Studies/05-Battleground/01-WhatsApp/06-Deep-Dives/03-Offline-Delivery/01-The-Problem.md
+        - Detecting Offline: 03-Case-Studies/05-Battleground/01-WhatsApp/06-Deep-Dives/03-Offline-Delivery/02-Detecting-Offline.md
+        - Naive Mailbox: 03-Case-Studies/05-Battleground/01-WhatsApp/06-Deep-Dives/03-Offline-Delivery/03-Naive-Mailbox.md
+        - Message ID Only: 03-Case-Studies/05-Battleground/01-WhatsApp/06-Deep-Dives/03-Offline-Delivery/04-Message-Id-Only.md
+        - Why Not Kafka: 03-Case-Studies/05-Battleground/01-WhatsApp/06-Deep-Dives/03-Offline-Delivery/05-Why-Not-Kafka.md
+        - Last Delivered Seq: 03-Case-Studies/05-Battleground/01-WhatsApp/06-Deep-Dives/03-Offline-Delivery/06-Last-Delivered-Seq.md
+        - Pending Deliveries Table: 03-Case-Studies/05-Battleground/01-WhatsApp/06-Deep-Dives/03-Offline-Delivery/07-Pending-Deliveries-Table.md
+        - Write Flow: 03-Case-Studies/05-Battleground/01-WhatsApp/06-Deep-Dives/03-Offline-Delivery/08-Write-Flow.md
+        - Push Notifications: 03-Case-Studies/05-Battleground/01-WhatsApp/06-Deep-Dives/03-Offline-Delivery/09-Push-Notifications.md
+        - Notification Payload: 03-Case-Studies/05-Battleground/01-WhatsApp/06-Deep-Dives/03-Offline-Delivery/10-Notification-Payload.md
+        - Internet Turns On: 03-Case-Studies/05-Battleground/01-WhatsApp/06-Deep-Dives/03-Offline-Delivery/11-Internet-Turns-On.md
+        - Notification Reply: 03-Case-Studies/05-Battleground/01-WhatsApp/06-Deep-Dives/03-Offline-Delivery/12-Notification-Reply.md
+        - Updated Architecture: 03-Case-Studies/05-Battleground/01-WhatsApp/06-Deep-Dives/03-Offline-Delivery/13-Updated-Architecture.md
       - "Deep Dive — Message Status":
-        - The Three Ticks: 05-Battleground/01-WhatsApp/06-Deep-Dives/04-Message-Status/01-The-Three-Ticks.md
-        - Naive Status Column: 05-Battleground/01-WhatsApp/06-Deep-Dives/04-Message-Status/02-Naive-Status-Column.md
-        - Status Table: 05-Battleground/01-WhatsApp/06-Deep-Dives/04-Message-Status/03-Status-Table.md
-        - Delivered Ack: 05-Battleground/01-WhatsApp/06-Deep-Dives/04-Message-Status/04-Delivered-Ack.md
-        - Read Receipt Flow: 05-Battleground/01-WhatsApp/06-Deep-Dives/04-Message-Status/05-Read-Receipt-Flow.md
-        - APNs Not Reliable: 05-Battleground/01-WhatsApp/06-Deep-Dives/04-Message-Status/06-APNs-Not-Reliable.md
-        - Notification Banner: 05-Battleground/01-WhatsApp/06-Deep-Dives/04-Message-Status/07-Notification-Banner.md
-        - Phone Off Three Days: 05-Battleground/01-WhatsApp/06-Deep-Dives/04-Message-Status/08-Phone-Off-Three-Days.md
-        - Offline Status Sync: 05-Battleground/01-WhatsApp/06-Deep-Dives/04-Message-Status/09-Offline-Status-Sync.md
-        - Read Receipts — Mutual Rule: 05-Battleground/01-WhatsApp/06-Deep-Dives/04-Message-Status/10-Privacy-Settings/01-Read-Receipts/01-Mutual-Rule.md
-        - Read Receipts — Where To Store Flag: 05-Battleground/01-WhatsApp/06-Deep-Dives/04-Message-Status/10-Privacy-Settings/01-Read-Receipts/02-Where-To-Store-Flag.md
-        - Read Receipts — Client vs Server Check: 05-Battleground/01-WhatsApp/06-Deep-Dives/04-Message-Status/10-Privacy-Settings/01-Read-Receipts/03-Client-vs-Server-Check.md
-        - Read Receipts — How Mutual Rule Enforces: 05-Battleground/01-WhatsApp/06-Deep-Dives/04-Message-Status/10-Privacy-Settings/01-Read-Receipts/04-How-Mutual-Rule-Enforces.md
-        - Last Seen — What Is It: 05-Battleground/01-WhatsApp/06-Deep-Dives/04-Message-Status/10-Privacy-Settings/02-Last-Seen/01-What-Is-Last-Seen.md
-        - Last Seen — How It Gets Recorded: 05-Battleground/01-WhatsApp/06-Deep-Dives/04-Message-Status/10-Privacy-Settings/02-Last-Seen/02-How-It-Gets-Recorded.md
-        - Last Seen — How Alice Sees It: 05-Battleground/01-WhatsApp/06-Deep-Dives/04-Message-Status/10-Privacy-Settings/02-Last-Seen/03-How-Alice-Sees-It.md
-        - Last Seen — Privacy And Mutual Rule: 05-Battleground/01-WhatsApp/06-Deep-Dives/04-Message-Status/10-Privacy-Settings/02-Last-Seen/04-Privacy-And-Mutual-Rule.md
-        - Last Seen — vs Read Receipts: 05-Battleground/01-WhatsApp/06-Deep-Dives/04-Message-Status/10-Privacy-Settings/02-Last-Seen/05-vs-Read-Receipts.md
-        - Updated Architecture: 05-Battleground/01-WhatsApp/06-Deep-Dives/04-Message-Status/11-Updated-Architecture.md
+        - The Three Ticks: 03-Case-Studies/05-Battleground/01-WhatsApp/06-Deep-Dives/04-Message-Status/01-The-Three-Ticks.md
+        - Naive Status Column: 03-Case-Studies/05-Battleground/01-WhatsApp/06-Deep-Dives/04-Message-Status/02-Naive-Status-Column.md
+        - Status Table: 03-Case-Studies/05-Battleground/01-WhatsApp/06-Deep-Dives/04-Message-Status/03-Status-Table.md
+        - Delivered Ack: 03-Case-Studies/05-Battleground/01-WhatsApp/06-Deep-Dives/04-Message-Status/04-Delivered-Ack.md
+        - Read Receipt Flow: 03-Case-Studies/05-Battleground/01-WhatsApp/06-Deep-Dives/04-Message-Status/05-Read-Receipt-Flow.md
+        - APNs Not Reliable: 03-Case-Studies/05-Battleground/01-WhatsApp/06-Deep-Dives/04-Message-Status/06-APNs-Not-Reliable.md
+        - Notification Banner: 03-Case-Studies/05-Battleground/01-WhatsApp/06-Deep-Dives/04-Message-Status/07-Notification-Banner.md
+        - Phone Off Three Days: 03-Case-Studies/05-Battleground/01-WhatsApp/06-Deep-Dives/04-Message-Status/08-Phone-Off-Three-Days.md
+        - Offline Status Sync: 03-Case-Studies/05-Battleground/01-WhatsApp/06-Deep-Dives/04-Message-Status/09-Offline-Status-Sync.md
+        - Read Receipts — Mutual Rule: 03-Case-Studies/05-Battleground/01-WhatsApp/06-Deep-Dives/04-Message-Status/10-Privacy-Settings/01-Read-Receipts/01-Mutual-Rule.md
+        - Read Receipts — Where To Store Flag: 03-Case-Studies/05-Battleground/01-WhatsApp/06-Deep-Dives/04-Message-Status/10-Privacy-Settings/01-Read-Receipts/02-Where-To-Store-Flag.md
+        - Read Receipts — Client vs Server Check: 03-Case-Studies/05-Battleground/01-WhatsApp/06-Deep-Dives/04-Message-Status/10-Privacy-Settings/01-Read-Receipts/03-Client-vs-Server-Check.md
+        - Read Receipts — How Mutual Rule Enforces: 03-Case-Studies/05-Battleground/01-WhatsApp/06-Deep-Dives/04-Message-Status/10-Privacy-Settings/01-Read-Receipts/04-How-Mutual-Rule-Enforces.md
+        - Last Seen — What Is It: 03-Case-Studies/05-Battleground/01-WhatsApp/06-Deep-Dives/04-Message-Status/10-Privacy-Settings/02-Last-Seen/01-What-Is-Last-Seen.md
+        - Last Seen — How It Gets Recorded: 03-Case-Studies/05-Battleground/01-WhatsApp/06-Deep-Dives/04-Message-Status/10-Privacy-Settings/02-Last-Seen/02-How-It-Gets-Recorded.md
+        - Last Seen — How Alice Sees It: 03-Case-Studies/05-Battleground/01-WhatsApp/06-Deep-Dives/04-Message-Status/10-Privacy-Settings/02-Last-Seen/03-How-Alice-Sees-It.md
+        - Last Seen — Privacy And Mutual Rule: 03-Case-Studies/05-Battleground/01-WhatsApp/06-Deep-Dives/04-Message-Status/10-Privacy-Settings/02-Last-Seen/04-Privacy-And-Mutual-Rule.md
+        - Last Seen — vs Read Receipts: 03-Case-Studies/05-Battleground/01-WhatsApp/06-Deep-Dives/04-Message-Status/10-Privacy-Settings/02-Last-Seen/05-vs-Read-Receipts.md
+        - Updated Architecture: 03-Case-Studies/05-Battleground/01-WhatsApp/06-Deep-Dives/04-Message-Status/11-Updated-Architecture.md
       - "Deep Dive — Inbox":
-        - Inbox Load Flow: 05-Battleground/01-WhatsApp/06-Deep-Dives/05-Inbox/01-Inbox-Load-Flow.md
-        - N+1 And Denormalization: 05-Battleground/01-WhatsApp/06-Deep-Dives/05-Inbox/02-N+1-And-Denormalization.md
-        - Conversations Table Schema: 05-Battleground/01-WhatsApp/06-Deep-Dives/05-Inbox/03-Conversations-Table-Schema.md
-        - LSM Tree And Immutable Keys: 05-Battleground/01-WhatsApp/06-Deep-Dives/05-Inbox/04-LSM-Tree-And-Immutable-Keys.md
-        - Option A vs Option B: 05-Battleground/01-WhatsApp/06-Deep-Dives/05-Inbox/05-Option-A-vs-Option-B.md
-        - Redis Sorted Set: 05-Battleground/01-WhatsApp/06-Deep-Dives/05-Inbox/06-Redis-Sorted-Set.md
-        - Unread Count: 05-Battleground/01-WhatsApp/06-Deep-Dives/05-Inbox/07-Unread-Count.md
-        - Updated Architecture: 05-Battleground/01-WhatsApp/06-Deep-Dives/05-Inbox/08-Updated-Architecture.md
+        - Inbox Load Flow: 03-Case-Studies/05-Battleground/01-WhatsApp/06-Deep-Dives/05-Inbox/01-Inbox-Load-Flow.md
+        - N+1 And Denormalization: 03-Case-Studies/05-Battleground/01-WhatsApp/06-Deep-Dives/05-Inbox/02-N+1-And-Denormalization.md
+        - Conversations Table Schema: 03-Case-Studies/05-Battleground/01-WhatsApp/06-Deep-Dives/05-Inbox/03-Conversations-Table-Schema.md
+        - LSM Tree And Immutable Keys: 03-Case-Studies/05-Battleground/01-WhatsApp/06-Deep-Dives/05-Inbox/04-LSM-Tree-And-Immutable-Keys.md
+        - Option A vs Option B: 03-Case-Studies/05-Battleground/01-WhatsApp/06-Deep-Dives/05-Inbox/05-Option-A-vs-Option-B.md
+        - Redis Sorted Set: 03-Case-Studies/05-Battleground/01-WhatsApp/06-Deep-Dives/05-Inbox/06-Redis-Sorted-Set.md
+        - Unread Count: 03-Case-Studies/05-Battleground/01-WhatsApp/06-Deep-Dives/05-Inbox/07-Unread-Count.md
+        - Updated Architecture: 03-Case-Studies/05-Battleground/01-WhatsApp/06-Deep-Dives/05-Inbox/08-Updated-Architecture.md
       - "Deep Dive — Caching":
-        - Message History Cache: 05-Battleground/01-WhatsApp/06-Deep-Dives/06-Caching/01-Message-History-Cache.md
-        - Profile Cache: 05-Battleground/01-WhatsApp/06-Deep-Dives/06-Caching/02-Profile-Cache.md
-        - Cache Invalidation: 05-Battleground/01-WhatsApp/06-Deep-Dives/06-Caching/03-Cache-Invalidation.md
-        - Cold Start And Coalescing: 05-Battleground/01-WhatsApp/06-Deep-Dives/06-Caching/04-Cold-Start-And-Coalescing.md
-        - Updated Architecture: 05-Battleground/01-WhatsApp/06-Deep-Dives/06-Caching/05-Updated-Architecture.md
+        - Message History Cache: 03-Case-Studies/05-Battleground/01-WhatsApp/06-Deep-Dives/06-Caching/01-Message-History-Cache.md
+        - Profile Cache: 03-Case-Studies/05-Battleground/01-WhatsApp/06-Deep-Dives/06-Caching/02-Profile-Cache.md
+        - Cache Invalidation: 03-Case-Studies/05-Battleground/01-WhatsApp/06-Deep-Dives/06-Caching/03-Cache-Invalidation.md
+        - Cold Start And Coalescing: 03-Case-Studies/05-Battleground/01-WhatsApp/06-Deep-Dives/06-Caching/04-Cold-Start-And-Coalescing.md
+        - Updated Architecture: 03-Case-Studies/05-Battleground/01-WhatsApp/06-Deep-Dives/06-Caching/05-Updated-Architecture.md
       - "Deep Dive — Peak Traffic":
-        - Thundering Herd — Redis Sharding: 05-Battleground/01-WhatsApp/06-Deep-Dives/07-Peak-Traffic/01-Thundering-Herd/01-Redis-Sharding.md
-        - Connection Storm — The Problem: 05-Battleground/01-WhatsApp/06-Deep-Dives/07-Peak-Traffic/02-Connection-Storm/01-The-Problem.md
-        - Connection Storm — Kafka Queue Delay: 05-Battleground/01-WhatsApp/06-Deep-Dives/07-Peak-Traffic/02-Connection-Storm/02-Kafka-Queue-Delay.md
-        - Connection Storm — Offline Delivery Fallback: 05-Battleground/01-WhatsApp/06-Deep-Dives/07-Peak-Traffic/02-Connection-Storm/03-Offline-Delivery-Fallback.md
-        - Rate Limiting — Why Not API Gateway: 05-Battleground/01-WhatsApp/06-Deep-Dives/07-Peak-Traffic/03-Rate-Limiting/01-Why-Not-API-Gateway.md
-        - Rate Limiting — Connection Server Limit: 05-Battleground/01-WhatsApp/06-Deep-Dives/07-Peak-Traffic/03-Rate-Limiting/02-Connection-Server-Limit.md
-        - Rate Limiting — Centralised Redis Counter: 05-Battleground/01-WhatsApp/06-Deep-Dives/07-Peak-Traffic/03-Rate-Limiting/03-Centralised-Redis-Counter.md
-        - Rate Limiting — Client Notification: 05-Battleground/01-WhatsApp/06-Deep-Dives/07-Peak-Traffic/03-Rate-Limiting/04-Client-Notification.md
-        - Backpressure — The Problem: 05-Battleground/01-WhatsApp/06-Deep-Dives/07-Peak-Traffic/04-Backpressure/01-The-Problem.md
-        - Backpressure — In-Memory Queue: 05-Battleground/01-WhatsApp/06-Deep-Dives/07-Peak-Traffic/04-Backpressure/02-In-Memory-Queue.md
-        - Backpressure — Thread Pool vs MQ: 05-Battleground/01-WhatsApp/06-Deep-Dives/07-Peak-Traffic/04-Backpressure/03-Thread-Pool-vs-MQ.md
-        - Backpressure — Load Shedding: 05-Battleground/01-WhatsApp/06-Deep-Dives/07-Peak-Traffic/04-Backpressure/04-Load-Shedding.md
-        - Updated Architecture: 05-Battleground/01-WhatsApp/06-Deep-Dives/07-Peak-Traffic/05-Updated-Architecture.md
+        - Thundering Herd — Redis Sharding: 03-Case-Studies/05-Battleground/01-WhatsApp/06-Deep-Dives/07-Peak-Traffic/01-Thundering-Herd/01-Redis-Sharding.md
+        - Connection Storm — The Problem: 03-Case-Studies/05-Battleground/01-WhatsApp/06-Deep-Dives/07-Peak-Traffic/02-Connection-Storm/01-The-Problem.md
+        - Connection Storm — Kafka Queue Delay: 03-Case-Studies/05-Battleground/01-WhatsApp/06-Deep-Dives/07-Peak-Traffic/02-Connection-Storm/02-Kafka-Queue-Delay.md
+        - Connection Storm — Offline Delivery Fallback: 03-Case-Studies/05-Battleground/01-WhatsApp/06-Deep-Dives/07-Peak-Traffic/02-Connection-Storm/03-Offline-Delivery-Fallback.md
+        - Rate Limiting — Why Not API Gateway: 03-Case-Studies/05-Battleground/01-WhatsApp/06-Deep-Dives/07-Peak-Traffic/03-Rate-Limiting/01-Why-Not-API-Gateway.md
+        - Rate Limiting — Connection Server Limit: 03-Case-Studies/05-Battleground/01-WhatsApp/06-Deep-Dives/07-Peak-Traffic/03-Rate-Limiting/02-Connection-Server-Limit.md
+        - Rate Limiting — Centralised Redis Counter: 03-Case-Studies/05-Battleground/01-WhatsApp/06-Deep-Dives/07-Peak-Traffic/03-Rate-Limiting/03-Centralised-Redis-Counter.md
+        - Rate Limiting — Client Notification: 03-Case-Studies/05-Battleground/01-WhatsApp/06-Deep-Dives/07-Peak-Traffic/03-Rate-Limiting/04-Client-Notification.md
+        - Backpressure — The Problem: 03-Case-Studies/05-Battleground/01-WhatsApp/06-Deep-Dives/07-Peak-Traffic/04-Backpressure/01-The-Problem.md
+        - Backpressure — In-Memory Queue: 03-Case-Studies/05-Battleground/01-WhatsApp/06-Deep-Dives/07-Peak-Traffic/04-Backpressure/02-In-Memory-Queue.md
+        - Backpressure — Thread Pool vs MQ: 03-Case-Studies/05-Battleground/01-WhatsApp/06-Deep-Dives/07-Peak-Traffic/04-Backpressure/03-Thread-Pool-vs-MQ.md
+        - Backpressure — Load Shedding: 03-Case-Studies/05-Battleground/01-WhatsApp/06-Deep-Dives/07-Peak-Traffic/04-Backpressure/04-Load-Shedding.md
+        - Updated Architecture: 03-Case-Studies/05-Battleground/01-WhatsApp/06-Deep-Dives/07-Peak-Traffic/05-Updated-Architecture.md
       - "Deep Dive — Fault Isolation":
-        - Connection Server Failure — Client Reconnect: 05-Battleground/01-WhatsApp/06-Deep-Dives/XX-Fault-Isolation/01-Connection-Server-Failure/01-Client-Reconnect.md
-        - Connection Server Failure — Registry Cleanup: 05-Battleground/01-WhatsApp/06-Deep-Dives/XX-Fault-Isolation/01-Connection-Server-Failure/02-Registry-Cleanup.md
-        - Connection Server Failure — Stale Registry Fallback: 05-Battleground/01-WhatsApp/06-Deep-Dives/XX-Fault-Isolation/01-Connection-Server-Failure/03-Stale-Registry-Fallback.md
-        - Connection Server Failure — Reconnect Storm: 05-Battleground/01-WhatsApp/06-Deep-Dives/XX-Fault-Isolation/01-Connection-Server-Failure/04-Reconnect-Storm.md
-        - DynamoDB Failure — Circuit Breaker: 05-Battleground/01-WhatsApp/06-Deep-Dives/XX-Fault-Isolation/02-DynamoDB-Failure/01-Circuit-Breaker.md
-        - DynamoDB Failure — Fallback And Message Loss: 05-Battleground/01-WhatsApp/06-Deep-Dives/XX-Fault-Isolation/02-DynamoDB-Failure/02-Fallback-And-Message-Loss.md
-        - Redis Failure — Inbox: 05-Battleground/01-WhatsApp/06-Deep-Dives/XX-Fault-Isolation/03-Redis-Failure/01-Inbox-Redis-Failure.md
-        - Redis Failure — Profile Cache: 05-Battleground/01-WhatsApp/06-Deep-Dives/XX-Fault-Isolation/03-Redis-Failure/02-Profile-Cache-Failure.md
-        - Redis Failure — Other: 05-Battleground/01-WhatsApp/06-Deep-Dives/XX-Fault-Isolation/03-Redis-Failure/03-Other-Redis-Failures.md
-      - Final Architecture: 05-Battleground/01-WhatsApp/07-Final-Design/01-Final-Architecture.md
+        - Connection Server Failure — Client Reconnect: 03-Case-Studies/05-Battleground/01-WhatsApp/06-Deep-Dives/XX-Fault-Isolation/01-Connection-Server-Failure/01-Client-Reconnect.md
+        - Connection Server Failure — Registry Cleanup: 03-Case-Studies/05-Battleground/01-WhatsApp/06-Deep-Dives/XX-Fault-Isolation/01-Connection-Server-Failure/02-Registry-Cleanup.md
+        - Connection Server Failure — Stale Registry Fallback: 03-Case-Studies/05-Battleground/01-WhatsApp/06-Deep-Dives/XX-Fault-Isolation/01-Connection-Server-Failure/03-Stale-Registry-Fallback.md
+        - Connection Server Failure — Reconnect Storm: 03-Case-Studies/05-Battleground/01-WhatsApp/06-Deep-Dives/XX-Fault-Isolation/01-Connection-Server-Failure/04-Reconnect-Storm.md
+        - DynamoDB Failure — Circuit Breaker: 03-Case-Studies/05-Battleground/01-WhatsApp/06-Deep-Dives/XX-Fault-Isolation/02-DynamoDB-Failure/01-Circuit-Breaker.md
+        - DynamoDB Failure — Fallback And Message Loss: 03-Case-Studies/05-Battleground/01-WhatsApp/06-Deep-Dives/XX-Fault-Isolation/02-DynamoDB-Failure/02-Fallback-And-Message-Loss.md
+        - Redis Failure — Inbox: 03-Case-Studies/05-Battleground/01-WhatsApp/06-Deep-Dives/XX-Fault-Isolation/03-Redis-Failure/01-Inbox-Redis-Failure.md
+        - Redis Failure — Profile Cache: 03-Case-Studies/05-Battleground/01-WhatsApp/06-Deep-Dives/XX-Fault-Isolation/03-Redis-Failure/02-Profile-Cache-Failure.md
+        - Redis Failure — Other: 03-Case-Studies/05-Battleground/01-WhatsApp/06-Deep-Dives/XX-Fault-Isolation/03-Redis-Failure/03-Other-Redis-Failures.md
+      - Final Architecture: 03-Case-Studies/05-Battleground/01-WhatsApp/07-Final-Design/01-Final-Architecture.md
       - "Observability":
-        - SLI / SLO Connection: 05-Battleground/01-WhatsApp/08-Observability/01-SLI-SLO-Connection.md
-        - Measuring Latency: 05-Battleground/01-WhatsApp/08-Observability/02-Measuring-Latency.md
-        - Measuring Availability: 05-Battleground/01-WhatsApp/08-Observability/03-Measuring-Availability.md
-        - Alerting: 05-Battleground/01-WhatsApp/08-Observability/04-Alerting.md
-        - Error Budget: 05-Battleground/01-WhatsApp/08-Observability/05-Error-Budget.md
+        - SLI / SLO Connection: 03-Case-Studies/05-Battleground/01-WhatsApp/08-Observability/01-SLI-SLO-Connection.md
+        - Measuring Latency: 03-Case-Studies/05-Battleground/01-WhatsApp/08-Observability/02-Measuring-Latency.md
+        - Measuring Availability: 03-Case-Studies/05-Battleground/01-WhatsApp/08-Observability/03-Measuring-Availability.md
+        - Alerting: 03-Case-Studies/05-Battleground/01-WhatsApp/08-Observability/04-Alerting.md
+        - Error Budget: 03-Case-Studies/05-Battleground/01-WhatsApp/08-Observability/05-Error-Budget.md

@@ -1219,6 +1219,7 @@ a.cs-level-link:hover .cs-level-count::after {
 .cs-badge.summit       { background: #ffedd5; color: #c2410c; }
 .cs-badge.battleground { background: #fee2e2; color: #b91c1c; }
 .cs-badge.concepts     { background: #ede9fe; color: #6d28d9; }
+.cs-badge.messaging    { background: #fce7f3; color: #9d174d; }
 
 [data-md-color-scheme="slate"] .cs-badge.foundation   { background: rgba(22,163,74,0.15); color: #4ade80; }
 [data-md-color-scheme="slate"] .cs-badge.ascent       { background: rgba(37,99,235,0.15); color: #60a5fa; }
@@ -1649,6 +1650,7 @@ body:has(.cs-hero) .md-header__title .md-ellipsis {
   background-color: var(--surface-0);
   border-bottom: 1px solid var(--border-subtle);
   box-shadow: none;
+  --md-primary-bg-color: var(--fg-primary);
 }
 
 .md-tabs__link {
@@ -1662,21 +1664,38 @@ body:has(.cs-hero) .md-header__title .md-ellipsis {
   color: var(--fg-primary);
 }
 
-.md-tabs__link--active {
-  color: var(--tab-color, var(--fg-primary));
+.md-tabs__link--active,
+.md-tabs__link--active:focus,
+.md-tabs__link--active:hover {
+  color: var(--tab-color, var(--fg-primary)) !important;
   font-weight: 650;
   border-bottom: 2px solid var(--tab-color, var(--brand));
-  padding-bottom: 0;
+  opacity: 1 !important;
 }
 
 /* Per-tab colors */
-.md-tabs__link[href*="Concepts"]      { --tab-color: #7c3aed; }
-.md-tabs__link[href*="start-here"]    { --tab-color: #0a0a0a; }
-.md-tabs__link[href*="01-Foundation"] { --tab-color: #16a34a; }
-.md-tabs__link[href*="02-Ascent"]     { --tab-color: #2563eb; }
-.md-tabs__link[href*="03-Expedition"] { --tab-color: #d97706; }
-.md-tabs__link[href*="04-Summit"]     { --tab-color: #ea580c; }
-.md-tabs__link[href*="05-Battleground"]{ --tab-color: #dc2626; }
+.md-tabs__link[href*="start-here"]          { --tab-color: #0a0a0a; }
+.md-tabs__link[href*="01-Concepts"]         { --tab-color: #7c3aed; }
+.md-tabs__link[href*="02-Back-of-Envelope"] { --tab-color: #059669; }
+.md-tabs__link[href*="01-Foundation"]       { --tab-color: #16a34a; }
+.md-tabs__link[href*="02-Ascent"]           { --tab-color: #2563eb; }
+.md-tabs__link[href*="03-Expedition"]       { --tab-color: #d97706; }
+.md-tabs__link[href*="04-Summit"]           { --tab-color: #ea580c; }
+.md-tabs__link[href*="05-Battleground"]     { --tab-color: #dc2626; }
+
+/* Nav group separators — before Concepts, Back of Envelope, and Foundation */
+.md-tabs__link[href*="01-Concepts"]::before,
+.md-tabs__link[href*="02-Back-of-Envelope"]::before,
+.md-tabs__link[href*="01-Foundation"]::before {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 14px;
+  background: var(--fg-muted);
+  margin-right: 1rem;
+  vertical-align: middle;
+  opacity: 0.8;
+}
 
 /* =============================================================
    LANDING PAGE — JOURNEY LAYOUT (replaces .cs-home-grid / .cs-level)
@@ -2030,6 +2049,7 @@ body:has(.cs-hero) .md-header__title .md-ellipsis {
 .cs-concept-c2 { --concept-color: #2563eb; --concept-tint: #dbeafe; }
 .cs-concept-c3 { --concept-color: #d97706; --concept-tint: #fef3c7; }
 .cs-concept-c4 { --concept-color: #059669; --concept-tint: #ecfdf5; }
+.cs-concept-c5 { --concept-color: #9d174d; --concept-tint: #fce7f3; }
 
 /* ─── Section Divider ────────────────────────────────────── */
 .cs-section-divider {

@@ -1443,6 +1443,7 @@ a.cs-level-link:hover .cs-level-count::after {
 }
 
 .cs-lv-concepts { --lv-color: #7c3aed; }
+.cs-lv-boe      { --lv-color: #0891b2; }
 .cs-lv1 { --lv-color: #16a34a; }
 .cs-lv2 { --lv-color: #2563eb; }
 .cs-lv3 { --lv-color: #d97706; }
@@ -1752,7 +1753,7 @@ body:has(.cs-hero) .md-header__title .md-ellipsis {
 /* Per-tab colors — inactive shows tinted, active goes full via --tab-color */
 .md-tabs__link[href*="start-here"]          { --tab-color: #0a0a0a; }
 .md-tabs__link[href*="01-Concepts"]         { color: rgba(124,58,237,0.65);  --tab-color: #7c3aed; }
-.md-tabs__link[href*="02-Back-of-Envelope"] { color: rgba(5,150,105,0.65);   --tab-color: #059669; }
+.md-tabs__link[href*="02-Back-of-Envelope"] { color: rgba(8,145,178,0.65);   --tab-color: #0891b2; }
 .md-tabs__link[href*="01-Foundation"]       { color: rgba(22,163,74,0.65);   --tab-color: #16a34a; }
 .md-tabs__link[href*="02-Ascent"]           { color: rgba(37,99,235,0.65);   --tab-color: #2563eb; }
 .md-tabs__link[href*="03-Expedition"]       { color: rgba(217,119,6,0.65);   --tab-color: #d97706; }

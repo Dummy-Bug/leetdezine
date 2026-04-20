@@ -17,7 +17,7 @@ hide:
 
 <div class="cs-concepts-grid cs-concepts-index-grid">
 
-  <a href="Core-Concepts/01-Performance-Metrics/00-Overview/" class="cs-concept-card cs-concept-c1">
+  <a href="02-Core-Concepts/" class="cs-concept-card cs-concept-c1">
     <div class="cs-concept-card-title">Core Concepts</div>
     <div class="cs-concept-card-desc">Availability, reliability, scalability, CAP theorem, consistency models, fault tolerance, PACELC, concurrency, and NFRs.</div>
     <div class="cs-concept-chips">
@@ -26,7 +26,7 @@ hide:
     <div class="cs-concept-cta">Open topic <span>→</span></div>
   </a>
 
-  <a href="Storage-and-Databases/01-Fundamentals/01-Why-Not-Files/" class="cs-concept-card cs-concept-c2">
+  <a href="04-Storage-and-Databases/" class="cs-concept-card cs-concept-c2">
     <div class="cs-concept-card-title">Storage & Databases</div>
     <div class="cs-concept-card-desc">ACID, transaction isolation, indexing, sharding, replication, database types — Redis, Cassandra, DynamoDB, MongoDB, Elasticsearch.</div>
     <div class="cs-concept-chips">
@@ -35,7 +35,16 @@ hide:
     <div class="cs-concept-cta">Open topic <span>→</span></div>
   </a>
 
-  <a href="Caching/01-Fundamentals/" class="cs-concept-card cs-concept-c3">
+  <a href="06-Distributed-Systems/" class="cs-concept-card cs-concept-c4">
+    <div class="cs-concept-card-title">Distributed Systems</div>
+    <div class="cs-concept-card-desc">Network uncertainty, consensus, clocks, CRDTs, failure detection, Merkle trees, and coordination services.</div>
+    <div class="cs-concept-chips">
+      <span>Consensus</span><span>Raft</span><span>CRDTs</span><span>Failure Detection</span>
+    </div>
+    <div class="cs-concept-cta">Open topic <span>→</span></div>
+  </a>
+
+  <a href="03-Caching/" class="cs-concept-card cs-concept-c3">
     <div class="cs-concept-card-title">Caching</div>
     <div class="cs-concept-card-desc">Write strategies, eviction policies, cache invalidation, distributed caching, Redis internals, and common cache failure patterns.</div>
     <div class="cs-concept-chips">
@@ -44,7 +53,7 @@ hide:
     <div class="cs-concept-cta">Open topic <span>→</span></div>
   </a>
 
-  <a href="Messaging-and-Event-Driven/01-Message-Queues/" class="cs-concept-card cs-concept-c5">
+  <a href="05-Messaging-and-Event-Driven/" class="cs-concept-card cs-concept-c5">
     <div class="cs-concept-card-title">Messaging & Event Driven</div>
     <div class="cs-concept-card-desc">Kafka internals, SQS, RabbitMQ, event sourcing, CQRS, outbox pattern, stream processing, batch processing, and schema evolution.</div>
     <div class="cs-concept-chips">

@@ -10,8 +10,8 @@ But if you’re building a URL shortener, a UUID is actually your worst enemy. �
 
 ## Tweet 2 (Reply to Tweet 1)
 
-The math is brutal. Even with Base64 encoding, a UUID is 22 characters long—hardly a "short" link. 
+Even Base64-encoded, a UUID is 22 chars. Not a short link.
 
-The trap? Trimming it to 6 characters. You think you're being clever, but you just threw away 92 bits of entropy. You've traded a global guarantee for a collision nightmare.
+Trim it to 6 chars and you throw away 92 bits of entropy. Two UUIDs can share the same first 36 bits—now you need the DB check you were trying to skip.
 
 Full breakdown → https://leetdezine.com

@@ -1,6 +1,6 @@
 ---
 title: Why Random UUIDs are Killing Your Database Performance (and what to use instead)
-published: true
+published: false
 description: Why standard UUIDs cause page splits and how Snowflake IDs solve for scale.
 tags: architecture, database, backend, systemdesign
 ---

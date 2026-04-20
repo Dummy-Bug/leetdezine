@@ -459,13 +459,26 @@ body,
   border-radius: 6px;
   margin: 2px 0;
   position: relative;
-  transition: color 0.12s ease, background-color 0.12s ease, box-shadow 0.12s ease;
+  transition: color 0.12s ease, background-color 0.12s ease, box-shadow 0.12s ease, border-color 0.12s ease;
   gap: 0.4rem;
+}
+
+/* badge on leaf nav items — left/top/bottom border only, no right border */
+.md-sidebar--primary .md-nav__item:not(.md-nav__item--nested) .md-nav__link:not(.md-nav__link--active) {
+  background-color: var(--surface-1);
+  border-top: 1px solid var(--border-subtle);
+  border-left: 1px solid var(--border-subtle);
+  border-bottom: 1px solid var(--border-subtle);
+  border-right: none;
+  border-radius: 6px 0 0 6px;
+  margin: 4px 0;
+  padding: 0.4rem 0.8rem;
 }
 
 .md-nav__link:hover {
   color: var(--fg-primary);
   background-color: var(--surface-sidebar-hover);
+  border-color: var(--border-default);
 }
 
 .md-nav__link--active,

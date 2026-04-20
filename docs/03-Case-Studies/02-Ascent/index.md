@@ -23,7 +23,7 @@ hide:
 
 
 <div class="cs-cards">
-  <a class="cs-card" href="01-Notification-System/01-System-Requirements/00-System-Overview/">
+  <a class="cs-card" href="01-Notification-System/">
     <div class="cs-card-header"><span class="cs-badge ascent">ASCENT</span></div>
     <div class="cs-card-title">Notification System</div>
     <div class="cs-card-desc">Design a notification system — push, SMS, and email delivery at 5M sends/sec. Multi-channel fan-out, retry/DLQ, scheduled delivery, fault isolation per provider.</div>

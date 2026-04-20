@@ -687,7 +687,7 @@ nav:
   - Ascent:
     - Overview: 03-Case-Studies/02-Ascent/index.md
     - Notification System:
-      - Overview: 03-Case-Studies/02-Ascent/01-Notification-System/01-System-Requirements/00-System-Overview.md
+      - Overview: 03-Case-Studies/02-Ascent/01-Notification-System/index.md
       - "System Requirements":
         - System Overview: 03-Case-Studies/02-Ascent/01-Notification-System/01-System-Requirements/00-System-Overview.md
         - Functional Requirements: 03-Case-Studies/02-Ascent/01-Notification-System/01-System-Requirements/01-FR.md
@@ -789,6 +789,7 @@ nav:
   - Expedition:
     - Overview: 03-Case-Studies/03-Expedition/index.md
     - Rate Limiter:
+      - Overview: 03-Case-Studies/03-Expedition/01-Rate-Limiter/index.md
       - "System Requirements":
         - Functional Requirements: 03-Case-Studies/03-Expedition/01-Rate-Limiter/01-System-Requirements/01-FR.md
         - Estimation: 03-Case-Studies/03-Expedition/01-Rate-Limiter/01-System-Requirements/02-Estimation.md
@@ -826,6 +827,7 @@ nav:
   - Summit:
     - Overview: 03-Case-Studies/04-Summit/index.md
     - KV Store:
+      - Overview: 03-Case-Studies/04-Summit/01-KV-Store/index.md
       - "System Requirements":
         - Functional Requirements: 03-Case-Studies/04-Summit/01-KV-Store/01-System-Requirements/01-FR.md
         - Estimation: 03-Case-Studies/04-Summit/01-KV-Store/01-System-Requirements/02-Estimation.md

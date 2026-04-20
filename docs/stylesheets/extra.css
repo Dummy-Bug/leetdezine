@@ -392,16 +392,16 @@ body,
 
 /* ─── Sidebar (Navigation) ──────────────────────────────── */
 .md-sidebar {
-  background-color: transparent;
+  background-color: var(--surface-1);
   padding-top: 1rem;
 }
 
 .md-sidebar--primary {
-  border-right: 1px solid var(--border-subtle);
+  border-right: 1px solid var(--border-default);
 }
 
 .md-sidebar--secondary {
-  border-left: 1px solid var(--border-subtle);
+  border-left: 1px solid var(--border-default);
 }
 
 .md-sidebar__scrollwrap {
@@ -2415,6 +2415,18 @@ body:has(.cs-hero) .md-header__title .md-ellipsis {
    ────────────────────────────────────────────────────────── */
 .md-nav__list:has(> .md-nav__item--nested.md-nav__item--active)
   > .md-nav__item--nested:not(.md-nav__item--active) {
+  display: none !important;
+}
+
+/* ─── Hide intermediate ancestor labels ─────────────────────
+   When deep inside a section, hide ancestor headers (URL
+   Shortener, Deep Dives…) — only the current section and its
+   children should show. Keep only the .md-nav child (the
+   actual nav tree); hide everything else (label, input…).
+   ────────────────────────────────────────────────────────── */
+.md-sidebar--primary
+  .md-nav__item--nested.md-nav__item--active:has(.md-nav__item--nested.md-nav__item--active)
+  > :not(.md-nav) {
   display: none !important;
 }
 

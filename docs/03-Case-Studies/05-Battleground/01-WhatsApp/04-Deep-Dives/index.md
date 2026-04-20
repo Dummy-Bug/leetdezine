@@ -1,6 +1,7 @@
 ---
 title: Deep Dives
 hide:
+  - navigation
   - toc
 ---
 

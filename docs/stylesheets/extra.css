@@ -1218,6 +1218,7 @@ a.cs-level-link:hover .cs-level-count::after {
 .cs-badge.expedition   { background: #fef3c7; color: #a16207; }
 .cs-badge.summit       { background: #ffedd5; color: #c2410c; }
 .cs-badge.battleground { background: #fee2e2; color: #b91c1c; }
+.cs-badge.concepts     { background: #ede9fe; color: #6d28d9; }
 
 [data-md-color-scheme="slate"] .cs-badge.foundation   { background: rgba(22,163,74,0.15); color: #4ade80; }
 [data-md-color-scheme="slate"] .cs-badge.ascent       { background: rgba(37,99,235,0.15); color: #60a5fa; }
@@ -1369,6 +1370,7 @@ a.cs-level-link:hover .cs-level-count::after {
   box-shadow: 0 0 0 2.5px color-mix(in srgb, var(--lv-color) 22%, transparent);
 }
 
+.cs-lv-concepts { --lv-color: #7c3aed; }
 .cs-lv1 { --lv-color: #16a34a; }
 .cs-lv2 { --lv-color: #2563eb; }
 .cs-lv3 { --lv-color: #d97706; }
@@ -1656,10 +1658,25 @@ body:has(.cs-hero) .md-header__title .md-ellipsis {
   opacity: 1;
 }
 
-.md-tabs__link:hover,
-.md-tabs__link--active {
-  color: var(--brand);
+.md-tabs__link:hover {
+  color: var(--fg-primary);
 }
+
+.md-tabs__link--active {
+  color: var(--tab-color, var(--fg-primary));
+  font-weight: 650;
+  border-bottom: 2px solid var(--tab-color, var(--brand));
+  padding-bottom: 0;
+}
+
+/* Per-tab colors */
+.md-tabs__link[href*="Concepts"]      { --tab-color: #7c3aed; }
+.md-tabs__link[href*="start-here"]    { --tab-color: #0a0a0a; }
+.md-tabs__link[href*="01-Foundation"] { --tab-color: #16a34a; }
+.md-tabs__link[href*="02-Ascent"]     { --tab-color: #2563eb; }
+.md-tabs__link[href*="03-Expedition"] { --tab-color: #d97706; }
+.md-tabs__link[href*="04-Summit"]     { --tab-color: #ea580c; }
+.md-tabs__link[href*="05-Battleground"]{ --tab-color: #dc2626; }
 
 /* =============================================================
    LANDING PAGE — JOURNEY LAYOUT (replaces .cs-home-grid / .cs-level)
@@ -1949,4 +1966,221 @@ body:has(.cs-hero) .md-header__title .md-ellipsis {
     flex-wrap: wrap;
     gap: 0.5rem;
   }
+}
+
+/* ─── Concepts Section ───────────────────────────────────── */
+.cs-concepts {
+  max-width: 780px;
+  margin: 0 auto 0;
+}
+
+.cs-concepts-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--fg-muted);
+  margin-bottom: 1rem;
+}
+
+.cs-concepts-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
+}
+
+.cs-concepts-grid-wide {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.cs-concept-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  padding: 1.1rem 1.25rem;
+  border: 1px solid var(--border-default);
+  border-radius: 10px;
+  background: var(--surface-raised);
+  text-decoration: none !important;
+  color: inherit !important;
+  transition: border-color 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+}
+
+.cs-concept-card:hover {
+  border-color: var(--concept-color);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+  background: color-mix(in srgb, var(--concept-tint) 20%, var(--surface-raised));
+}
+
+.cs-concept-card-title {
+  font-size: 0.95rem;
+  font-weight: 650;
+  color: var(--concept-color);
+  margin: 0;
+}
+
+.cs-concept-card-desc {
+  font-size: 0.78rem;
+  color: var(--fg-tertiary);
+  line-height: 1.5;
+  margin: 0;
+}
+
+.cs-concept-c1 { --concept-color: #7c3aed; --concept-tint: #ede9fe; }
+.cs-concept-c2 { --concept-color: #2563eb; --concept-tint: #dbeafe; }
+.cs-concept-c3 { --concept-color: #d97706; --concept-tint: #fef3c7; }
+.cs-concept-c4 { --concept-color: #059669; --concept-tint: #ecfdf5; }
+
+/* ─── Section Divider ────────────────────────────────────── */
+.cs-section-divider {
+  max-width: 780px;
+  margin: 2.5rem auto;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.cs-section-divider::before,
+.cs-section-divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--border-default);
+}
+
+.cs-section-divider-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--fg-muted);
+  white-space: nowrap;
+}
+
+@media (max-width: 720px) {
+  .cs-concepts-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ─── Start Here Page ────────────────────────────────────── */
+.sh-hero {
+  max-width: 1000px;
+  margin: 0 auto 3rem;
+  text-align: center;
+}
+
+.sh-hero-eyebrow {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--fg-muted);
+  margin-bottom: 0.75rem;
+}
+
+.sh-hero-title {
+  font-size: 2.4rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: var(--fg-primary);
+  margin: 0 0 0.75rem;
+}
+
+.sh-hero-sub {
+  font-size: 1rem;
+  color: var(--fg-secondary);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.sh-grid {
+  max-width: 1000px;
+  margin: 0 auto 1rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.sh-grid-3 { grid-template-columns: repeat(3, 1fr); }
+.sh-grid-2 { grid-template-columns: repeat(2, 1fr); }
+
+.sh-card {
+  border: 1px solid var(--border-default);
+  border-radius: 12px;
+  padding: 1.5rem;
+  background: var(--surface-raised);
+  border-top: 3px solid var(--sh-color);
+  text-align: left !important;
+}
+
+.sh-card *,
+.sh-card .sh-steps,
+.sh-card .sh-steps li,
+.sh-card .sh-card-title,
+.sh-card .sh-card-desc,
+.sh-card .sh-card-tag {
+  text-align: left !important;
+}
+
+.sh-card-tag {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--sh-color);
+  margin-bottom: 0.5rem;
+  white-space: nowrap;
+}
+
+.sh-card-title {
+  font-size: 1.1rem;
+  font-weight: 720;
+  color: var(--fg-primary);
+  margin-bottom: 0.4rem;
+  letter-spacing: -0.02em;
+}
+
+.sh-card-desc {
+  font-size: 0.8rem;
+  color: var(--fg-tertiary);
+  line-height: 1.5;
+  margin-bottom: 1.1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.sh-steps {
+  margin: 0;
+  padding-left: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-align: left;
+}
+
+.sh-steps li {
+  font-size: 0.83rem;
+  color: var(--fg-secondary);
+  line-height: 1.5;
+}
+
+.sh-steps a {
+  color: var(--sh-color);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.sh-steps a:hover {
+  text-decoration: underline;
+}
+
+.sh-card-green  { --sh-color: #16a34a; }
+.sh-card-blue   { --sh-color: #2563eb; }
+.sh-card-rose   { --sh-color: #e11d48; }
+.sh-card-amber  { --sh-color: #d97706; }
+.sh-card-violet { --sh-color: #7c3aed; }
+
+@media (max-width: 720px) {
+  .sh-grid-3, .sh-grid-2 { grid-template-columns: 1fr; }
+  .sh-hero-title { font-size: 1.8rem; }
 }

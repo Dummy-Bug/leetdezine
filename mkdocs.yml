@@ -16,10 +16,9 @@ theme:
     primary: custom
     accent: custom
   features:
-    # - navigation.tabs
-    # - navigation.tabs.sticky
+    - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.sections
-    - navigation.expand
     - navigation.path
     - navigation.top
     - navigation.indexes
@@ -80,6 +79,389 @@ markdown_extensions:
 
 nav:
   - "": index.md
+  - "Start Here": start-here.md
+
+  - Concepts:
+    - Overview: Concepts/index.md
+    - Core Concepts:
+      - Performance Metrics:
+        - Overview: Core-Concepts/01-Performance-Metrics/00-Overview.md
+        - Introduction: Core-Concepts/01-Performance-Metrics/01-Introduction.md
+        - Latency: Core-Concepts/01-Performance-Metrics/02-Latency.md
+        - Throughput: Core-Concepts/01-Performance-Metrics/03-Throughput.md
+        - Latency vs Throughput: Core-Concepts/01-Performance-Metrics/04-Latency-vs-Throughput.md
+        - Bandwidth: Core-Concepts/01-Performance-Metrics/05-Bandwidth.md
+        - Bandwidth vs Latency vs Throughput: Core-Concepts/01-Performance-Metrics/06-Bandwidth-vs-Latency-vs-Throughput.md
+        - Percentiles: Core-Concepts/01-Performance-Metrics/07-Percentiles.md
+        - Interview Cheatsheet: Core-Concepts/01-Performance-Metrics/08-Interview-Cheatsheet.md
+        - "Interview Questions":
+          - SDE-1: Core-Concepts/01-Performance-Metrics/09-Interview-Questions/SDE-1.md
+          - SDE-2: Core-Concepts/01-Performance-Metrics/09-Interview-Questions/SDE-2.md
+          - SDE-3: Core-Concepts/01-Performance-Metrics/09-Interview-Questions/SDE-3.md
+      - Service Levels:
+        - Overview: Core-Concepts/02-Service-Levels/00-Overview.md
+        - Introduction: Core-Concepts/02-Service-Levels/01-Introduction.md
+        - SLI: Core-Concepts/02-Service-Levels/02-SLI.md
+        - SLO: Core-Concepts/02-Service-Levels/03-SLO.md
+        - SLA: Core-Concepts/02-Service-Levels/04-SLA.md
+        - Error Budget: Core-Concepts/02-Service-Levels/05-Error-Budget.md
+        - Interview Cheatsheet: Core-Concepts/02-Service-Levels/06-Interview-Cheatsheet.md
+        - "Interview Questions":
+          - SDE-1: Core-Concepts/02-Service-Levels/Interview-Questions/SDE-1.md
+          - SDE-2: Core-Concepts/02-Service-Levels/Interview-Questions/SDE-2.md
+          - SDE-3: Core-Concepts/02-Service-Levels/Interview-Questions/SDE-3.md
+      - Availability:
+        - Overview: Core-Concepts/03-Availability/00-Overview.md
+        - Availability: Core-Concepts/03-Availability/01-Availability.md
+        - SPOF: Core-Concepts/03-Availability/02-SPOF.md
+        - N+1 Redundancy: Core-Concepts/03-Availability/03-N+1-Redundancy.md
+        - Availability Patterns: Core-Concepts/03-Availability/04-Availability-Patterns.md
+        - Nines of Availability: Core-Concepts/03-Availability/05-Nines-of-Availability.md
+        - Series vs Parallel: Core-Concepts/03-Availability/06-Series-vs-Parallel.md
+        - Interview Cheatsheet: Core-Concepts/03-Availability/07-Interview-Cheatsheet.md
+        - "Interview Questions":
+          - SDE-1: Core-Concepts/03-Availability/Interview-Questions/SDE-1.md
+          - SDE-2: Core-Concepts/03-Availability/Interview-Questions/SDE-2.md
+          - SDE-3: Core-Concepts/03-Availability/Interview-Questions/SDE-3.md
+      - Reliability:
+        - Overview: Core-Concepts/04-Reliability/00-Overview.md
+        - Reliability: Core-Concepts/04-Reliability/01-Reliability.md
+        - MTBF & MTTR: Core-Concepts/04-Reliability/02-MTBF-and-MTTR.md
+        - RTO & RPO: Core-Concepts/04-Reliability/03-RTO-and-RPO.md
+        - MTTR vs RTO: Core-Concepts/04-Reliability/04-MTTR-RTO.md
+        - Reliability vs Availability: Core-Concepts/04-Reliability/05-Reliability-vs-Availability.md
+        - Interview Cheatsheet: Core-Concepts/04-Reliability/06-Interview-Cheatsheet.md
+        - "Interview Questions":
+          - SDE-1: Core-Concepts/04-Reliability/Interview-Questions/SDE-1.md
+          - SDE-2: Core-Concepts/04-Reliability/Interview-Questions/SDE-2.md
+          - SDE-3: Core-Concepts/04-Reliability/Interview-Questions/SDE-3.md
+      - Scalability:
+        - Overview: Core-Concepts/05-Scalability/00-Overview.md
+        - Scalability: Core-Concepts/05-Scalability/01-Scalability.md
+        - Interview Cheatsheet: Core-Concepts/05-Scalability/04-Interview-Cheatsheet.md
+        - Load Balancing:
+          - Overview: Core-Concepts/05-Scalability/02-Load-Balancing/00-Overview.md
+          - Load Balancing: Core-Concepts/05-Scalability/02-Load-Balancing/01-Load-Balancing.md
+          - Algorithms: Core-Concepts/05-Scalability/02-Load-Balancing/02-Algorithms.md
+          - Hybrid In Production: Core-Concepts/05-Scalability/02-Load-Balancing/05-Hybrid-In-Production.md
+          - Interview Cheatsheet: Core-Concepts/05-Scalability/02-Load-Balancing/06-Interview-Cheatsheet.md
+          - L4:
+            - Overview: Core-Concepts/05-Scalability/02-Load-Balancing/03-L4/00-Overview.md
+            - Fundamentals: Core-Concepts/05-Scalability/02-Load-Balancing/03-L4/01-Fundamentals.md
+            - How It Works: Core-Concepts/05-Scalability/02-Load-Balancing/03-L4/02-How-It-Works.md
+            - Connection Tables: Core-Concepts/05-Scalability/02-Load-Balancing/03-L4/03-Connection-Tables.md
+            - Real World: Core-Concepts/05-Scalability/02-Load-Balancing/03-L4/04-Real-World.md
+          - L7:
+            - Overview: Core-Concepts/05-Scalability/02-Load-Balancing/04-L7/00-Overview.md
+            - Fundamentals: Core-Concepts/05-Scalability/02-Load-Balancing/04-L7/01-Fundamentals.md
+            - Request Flow: Core-Concepts/05-Scalability/02-Load-Balancing/04-L7/02-Request-Flow.md
+            - API Gateway: Core-Concepts/05-Scalability/02-Load-Balancing/04-L7/03-API-Gateway.md
+        - Auto Scaling:
+          - Overview: Core-Concepts/05-Scalability/03-Auto-Scaling/00-Overview.md
+          - Auto Scaling: Core-Concepts/05-Scalability/03-Auto-Scaling/01-Auto-Scaling.md
+          - Connection Draining: Core-Concepts/05-Scalability/03-Auto-Scaling/02-Connection-Draining.md
+          - Cold Start: Core-Concepts/05-Scalability/03-Auto-Scaling/03-Cold-Start.md
+          - Interview Cheatsheet: Core-Concepts/05-Scalability/03-Auto-Scaling/04-Interview-Cheatsheet.md
+      - Fault Tolerance:
+        - Overview: Core-Concepts/06-Fault-Tolerance/00-Overview.md
+        - Fault Tolerance: Core-Concepts/06-Fault-Tolerance/01-Fault-Tolerance.md
+        - Graceful Degradation: Core-Concepts/06-Fault-Tolerance/02-Graceful-Degradation.md
+        - Bulkhead: Core-Concepts/06-Fault-Tolerance/03-Bulkhead.md
+        - Timeout, Retry & Backoff: Core-Concepts/06-Fault-Tolerance/04-Timeout-Retry-Backoff.md
+        - Circuit Breaker: Core-Concepts/06-Fault-Tolerance/05-Circuit-Breaker.md
+        - Interview Cheatsheet: Core-Concepts/06-Fault-Tolerance/06-Interview-Cheatsheet.md
+      - Durability:
+        - Overview: Core-Concepts/07-Durability/00-Overview.md
+        - Durability: Core-Concepts/07-Durability/01-Durability.md
+        - WAL: Core-Concepts/07-Durability/02-WAL.md
+        - Replication: Core-Concepts/07-Durability/03-Replication.md
+        - Backups: Core-Concepts/07-Durability/04-Backups.md
+        - Interview Cheatsheet: Core-Concepts/07-Durability/05-Interview-Cheatsheet.md
+      - Concurrency & Locking:
+        - Overview: Core-Concepts/08-Concurrency-Locking/00-Overview.md
+        - Race Conditions: Core-Concepts/08-Concurrency-Locking/01-Race-Conditions.md
+        - Pessimistic Locking: Core-Concepts/08-Concurrency-Locking/02-Pessimistic-Locking.md
+        - Optimistic Locking: Core-Concepts/08-Concurrency-Locking/03-Optimistic-Locking.md
+        - Read/Write Locks: Core-Concepts/08-Concurrency-Locking/04-Read-Write-Locks.md
+        - MVCC: Core-Concepts/08-Concurrency-Locking/05-MVCC.md
+        - Distributed Locking: Core-Concepts/08-Concurrency-Locking/06-Distributed-Locking.md
+        - Idempotency: Core-Concepts/08-Concurrency-Locking/07-Idempotency.md
+        - Interview Cheatsheet: Core-Concepts/08-Concurrency-Locking/08-Interview-Cheatsheet.md
+      - Consistency Models:
+        - Overview: Core-Concepts/09-Consistency-Models/00-Overview.md
+        - Consistency Models: Core-Concepts/09-Consistency-Models/01-Consistency-Models.md
+        - When To Use: Core-Concepts/09-Consistency-Models/02-When-To-Use.md
+        - Interview Cheatsheet: Core-Concepts/09-Consistency-Models/03-Interview-Cheatsheet.md
+      - Network Partitions:
+        - Overview: Core-Concepts/10-Network-Partitions/00-Overview.md
+        - Network Partitions: Core-Concepts/10-Network-Partitions/01-Network-Partitions.md
+        - During Partition: Core-Concepts/10-Network-Partitions/02-During-Partition.md
+        - Split Brain: Core-Concepts/10-Network-Partitions/03-Split-Brain.md
+        - Quorum vs Consensus: Core-Concepts/10-Network-Partitions/04-Quorum-vs-Consensus.md
+        - Interview Cheatsheet: Core-Concepts/10-Network-Partitions/05-Interview-Cheatsheet.md
+      - CAP Theorem:
+        - Overview: Core-Concepts/11-CAP-Theorem/00-Overview.md
+        - CAP Theorem: Core-Concepts/11-CAP-Theorem/01-CAP-Theorem.md
+        - CP vs AP: Core-Concepts/11-CAP-Theorem/02-CP-vs-AP.md
+        - Interview Cheatsheet: Core-Concepts/11-CAP-Theorem/03-Interview-Cheatsheet.md
+      - PACELC:
+        - Overview: Core-Concepts/12-PACELC/00-Overview.md
+        - PACELC Theorem: Core-Concepts/12-PACELC/01-PACELC-Theorem.md
+        - PA/EC — The Middle Ground: Core-Concepts/12-PACELC/02-PA-EC-The-Middle-Ground.md
+        - System Examples: Core-Concepts/12-PACELC/03-System-Examples.md
+        - Interview Cheatsheet: Core-Concepts/12-PACELC/04-Interview-Cheatsheet.md
+      - Security:
+        - Overview: Core-Concepts/13-Security/00-Overview.md
+        - Authentication & JWT: Core-Concepts/13-Security/01-Authentication-and-JWT.md
+        - Encryption: Core-Concepts/13-Security/02-Encryption.md
+        - Interview Cheatsheet: Core-Concepts/13-Security/03-Interview-Cheatsheet.md
+      - State Machines:
+        - Overview: Core-Concepts/14-State-Machines/00-Overview.md
+        - What Is A State Machine: Core-Concepts/14-State-Machines/01-What-Is-A-State-Machine.md
+        - Implementing In Database: Core-Concepts/14-State-Machines/02-Implementing-In-Database.md
+        - Timeout-Driven Transitions: Core-Concepts/14-State-Machines/03-Timeout-Driven-Transitions.md
+        - Audit Trail vs Overwrite: Core-Concepts/14-State-Machines/04-Audit-Trail-vs-Overwrite.md
+        - Interview Cheatsheet: Core-Concepts/14-State-Machines/05-Interview-Cheatsheet.md
+      - NFRs:
+        - Overview: Core-Concepts/15-NFRs/00-Overview.md
+        - NFRs & Design Decisions: Core-Concepts/15-NFRs/01-NFRs-And-Design-Decisions.md
+        - Conflicting NFRs: Core-Concepts/15-NFRs/02-Conflicting-NFRs.md
+    - Caching:
+      - Fundamentals: Caching/01-Fundamentals.md
+      - Writing Strategies:
+        - Overview: Caching/02-Writing-Strategies/00-Overview.md
+        - Read Strategies: Caching/02-Writing-Strategies/01-Read-Strategies.md
+        - Write Strategies: Caching/02-Writing-Strategies/02-Write-Strategies.md
+        - Interview Cheatsheet: Caching/02-Writing-Strategies/03-Interview-Cheatsheet.md
+      - Eviction Policies:
+        - Overview: Caching/03-Eviction-Policies/00-Overview.md
+        - LRU: Caching/03-Eviction-Policies/01-LRU.md
+        - LFU: Caching/03-Eviction-Policies/02-LFU.md
+        - FIFO & TTL: Caching/03-Eviction-Policies/03-FIFO-and-TTL.md
+        - Interview Cheatsheet: Caching/03-Eviction-Policies/04-Interview-Cheatsheet.md
+      - Population Strategies:
+        - Overview: Caching/04-Population-Strategies/00-Overview.md
+        - Refresh Ahead: Caching/04-Population-Strategies/01-Refresh-Ahead.md
+        - Cache Warming: Caching/04-Population-Strategies/02-Cache-Warming.md
+        - Interview Cheatsheet: Caching/04-Population-Strategies/03-Interview-Cheatsheet.md
+      - Cache Invalidation:
+        - Overview: Caching/05-Cache-Invalidation/00-Overview.md
+        - TTL-Based: Caching/05-Cache-Invalidation/01-TTL-Based.md
+        - Event-Driven: Caching/05-Cache-Invalidation/02-Event-Driven.md
+        - Write-Through: Caching/05-Cache-Invalidation/03-Write-Through.md
+        - Cache Versioning: Caching/05-Cache-Invalidation/04-Cache-Versioning.md
+        - Stale-While-Revalidate: Caching/05-Cache-Invalidation/05-Stale-While-Revalidate.md
+        - Interview Cheatsheet: Caching/05-Cache-Invalidation/06-Interview-Cheatsheet.md
+      - Distributed Caching:
+        - Overview: Caching/06-Distributed-Caching/00-Overview.md
+        - Why Single Node Fails: Caching/06-Distributed-Caching/01-Why-Single-Node-Fails.md
+        - Consistent Hashing: Caching/06-Distributed-Caching/02-Consistent-Hashing.md
+        - Cache Coherence: Caching/06-Distributed-Caching/03-Cache-Coherence.md
+        - Replication: Caching/06-Distributed-Caching/04-Replication.md
+        - Two-Level Caching: Caching/06-Distributed-Caching/05-Two-Level-Caching.md
+        - Node Failure: Caching/06-Distributed-Caching/06-Node-Failure.md
+        - Interview Cheatsheet: Caching/06-Distributed-Caching/07-Interview-Cheatsheet.md
+      - Cache Problems:
+        - Overview: Caching/07-Cache-Problems/00-Overview.md
+        - Cache Stampede: Caching/07-Cache-Problems/01-Cache-Stampede.md
+        - Cold Start: Caching/07-Cache-Problems/02-Cold-Start.md
+        - Cache Penetration: Caching/07-Cache-Problems/03-Cache-Penetration.md
+        - Cache Avalanche: Caching/07-Cache-Problems/04-Cache-Avalanche.md
+        - Interview Cheatsheet: Caching/07-Cache-Problems/05-Interview-Cheatsheet.md
+      - Redis:
+        - Data Structures: Caching/08-Redis/01-Data-Structures.md
+        - Patterns: Caching/08-Redis/02-Patterns.md
+        - Persistence: Caching/08-Redis/03-Persistence.md
+        - Streams: Caching/08-Redis/04-Streams.md
+        - Single-Threaded Event Loop: Caching/08-Redis/05-Single-Threaded-Event-Loop.md
+      - "Interview Questions":
+        - SDE-1: Caching/09-Interview-Questions/SDE-1.md
+        - SDE-2: Caching/09-Interview-Questions/SDE-2.md
+        - SDE-3: Caching/09-Interview-Questions/SDE-3.md
+    - Storage & Databases:
+      - Fundamentals:
+        - Why Not Files: Storage-and-Databases/01-Fundamentals/01-Why-Not-Files.md
+        - How Files Store Data: Storage-and-Databases/01-Fundamentals/02-How-File-Store-Data.md
+        - How DBs Store Data: Storage-and-Databases/01-Fundamentals/03-How-DB-Store-Data.md
+        - Row-Oriented Storage: Storage-and-Databases/01-Fundamentals/04-Row-Oriented-Storage.md
+        - Column-Oriented Storage: Storage-and-Databases/01-Fundamentals/05-Column-Oriented-Storage.md
+      - ACID:
+        - The Problem: Storage-and-Databases/02-ACID/01-The-Problem.md
+        - Atomicity: Storage-and-Databases/02-ACID/02-Atomicity.md
+        - Consistency: Storage-and-Databases/02-ACID/03-Consistency.md
+        - Durability: Storage-and-Databases/02-ACID/05-Durability.md
+        - ACID vs BASE: Storage-and-Databases/02-ACID/06-ACID-vs-BASE.md
+        - Interview Cheatsheet: Storage-and-Databases/02-ACID/08-Interview-Cheatsheet.md
+        - Transaction Isolation:
+          - Isolation Problems: Storage-and-Databases/02-ACID/04-Transaction-Isolation/01-Isolation-Problems.md
+          - Isolation Levels: Storage-and-Databases/02-ACID/04-Transaction-Isolation/02-Isolation-Levels.md
+          - Choosing Isolation: Storage-and-Databases/02-ACID/04-Transaction-Isolation/03-Choosing-Isolation.md
+          - Pessimistic vs Optimistic Locking: Storage-and-Databases/02-ACID/04-Transaction-Isolation/04-Pessimistic-vs-Optimistic-Locking.md
+          - Interview Cheatsheet: Storage-and-Databases/02-ACID/04-Transaction-Isolation/05-Interview-Cheatsheet.md
+          - External Locking Strategies: Storage-and-Databases/02-ACID/04-Transaction-Isolation/06-External-Locking-Strategies.md
+        - Distributed Transactions:
+          - The Problem: Storage-and-Databases/02-ACID/07-Distributed-Transactions/01-The-Problem.md
+          - 2PC vs Saga: Storage-and-Databases/02-ACID/07-Distributed-Transactions/04-2PC-vs-Saga.md
+          - Interview Cheatsheet: Storage-and-Databases/02-ACID/07-Distributed-Transactions/05-Interview-Cheatsheet.md
+          - 2PC:
+            - Working: Storage-and-Databases/02-ACID/07-Distributed-Transactions/02-2PC/01-Working.md
+            - Failures: Storage-and-Databases/02-ACID/07-Distributed-Transactions/02-2PC/02-Failures.md
+            - Solutions: Storage-and-Databases/02-ACID/07-Distributed-Transactions/02-2PC/03-Solutions.md
+            - 2PC In Practice: Storage-and-Databases/02-ACID/07-Distributed-Transactions/02-2PC/04-2PC-In-Practice.md
+          - Saga:
+            - What Is Saga: Storage-and-Databases/02-ACID/07-Distributed-Transactions/03-Saga/01-What-Is-Saga.md
+            - Choreography: Storage-and-Databases/02-ACID/07-Distributed-Transactions/03-Saga/02-Choreography.md
+            - Orchestration: Storage-and-Databases/02-ACID/07-Distributed-Transactions/03-Saga/03-Orchestration.md
+        - "Interview Questions":
+          - SDE-1: Storage-and-Databases/02-ACID/Interview-Questions/SDE-1.md
+          - SDE-2: Storage-and-Databases/02-ACID/Interview-Questions/SDE-2.md
+          - SDE-3: Storage-and-Databases/02-ACID/Interview-Questions/SDE-3.md
+      - SQL:
+        - Relational Model: Storage-and-Databases/03-SQL/01-Relational-Model.md
+        - Normalisation: Storage-and-Databases/03-SQL/02-Normalisation.md
+        - Denormalisation: Storage-and-Databases/03-SQL/04-Denormalisation.md
+        - Joins: Storage-and-Databases/03-SQL/04-Joins.md
+        - Views: Storage-and-Databases/03-SQL/05-Views.md
+      - Indexing:
+        - Indexes: Storage-and-Databases/04-Indexing/01-Indexes.md
+        - Hash Index: Storage-and-Databases/04-Indexing/02-Hash-Index.md
+        - B+ Tree: Storage-and-Databases/04-Indexing/03-B+Tree.md
+        - LSM Tree Writes: Storage-and-Databases/04-Indexing/04-LSM-Tree-Writes.md
+        - LSM Tree Reads: Storage-and-Databases/04-Indexing/05-LSM-Tree-Reads.md
+        - Geospatial Indexing:
+          - The Problem: Storage-and-Databases/04-Indexing/06-Geospatial-Indexing/01-The-Problem.md
+          - Why Composite Index Fails: Storage-and-Databases/04-Indexing/06-Geospatial-Indexing/02-Why-Composite-Index-Fails.md
+          - Geohash: Storage-and-Databases/04-Indexing/06-Geospatial-Indexing/03-Geohash.md
+          - S2 Cells: Storage-and-Databases/04-Indexing/06-Geospatial-Indexing/04-S2-Cells.md
+          - Interview Cheatsheet: Storage-and-Databases/04-Indexing/06-Geospatial-Indexing/05-Interview-Cheatsheet.md
+      - Replication:
+        - What Is Replication: Storage-and-Databases/05-Replication/01-What-is-Replication.md
+        - Sync vs Async: Storage-and-Databases/05-Replication/02-Sync-vs-Async.md
+        - Replication Lag: Storage-and-Databases/05-Replication/03-Replication-Lag.md
+        - Failover: Storage-and-Databases/05-Replication/04-Failover.md
+        - Multi-Primary: Storage-and-Databases/05-Replication/05-Multi-Primary.md
+        - Interview Cheatsheet: Storage-and-Databases/05-Replication/06-Interview-Cheatsheet.md
+      - Sharding:
+        - What Is Sharding: Storage-and-Databases/06-Sharding/01-What-is-Sharding.md
+        - Shard Key: Storage-and-Databases/06-Sharding/02-Shard-Key.md
+        - Sharding Strategies: Storage-and-Databases/06-Sharding/03-Sharding-Strategies.md
+        - Consistent Hashing: Storage-and-Databases/06-Sharding/04-Consistent-Hashing.md
+        - Cross-Shard Joins: Storage-and-Databases/06-Sharding/05-Cross-Shard-Joins.md
+        - Resharding: Storage-and-Databases/06-Sharding/06-Resharding.md
+        - Over-Sharding: Storage-and-Databases/06-Sharding/07-Over-Sharding.md
+        - Relational DBs: Storage-and-Databases/06-Sharding/08-Relational-DBs.md
+        - Interview Cheatsheet: Storage-and-Databases/06-Sharding/09-Interview-Cheatsheet.md
+      - MVCC:
+        - Concurrency Control: Storage-and-Databases/07-MVCC/01-Concurrency-Control.md
+      - CDC:
+        - What Is CDC: Storage-and-Databases/08-CDC/01-What-is-CDC.md
+        - Outbox Pattern: Storage-and-Databases/08-CDC/02-Outbox-Pattern.md
+        - Interview Cheatsheet: Storage-and-Databases/08-CDC/03-Interview-Cheatsheet.md
+      - Pagination:
+        - Offset Pagination: Storage-and-Databases/09-Pagination/01-Offset-Pagination.md
+        - Cursor Pagination: Storage-and-Databases/09-Pagination/02-Cursor-Pagination.md
+        - Interview Cheatsheet: Storage-and-Databases/09-Pagination/03-Interview-Cheatsheet.md
+      - Connection Pooling:
+        - Cost Of A Connection: Storage-and-Databases/10-Connection-Pooling/01-Cost-Of-A-Connection.md
+        - Connection Pool: Storage-and-Databases/10-Connection-Pooling/02-Connection-Pool.md
+        - Interview Cheatsheet: Storage-and-Databases/10-Connection-Pooling/03-Interview-Cheatsheet.md
+      - Read/Write Splitting:
+        - The Problem: Storage-and-Databases/11-Read-Write-Splitting/01-The-Problem.md
+        - How It Works: Storage-and-Databases/11-Read-Write-Splitting/02-How-It-Works.md
+        - Replication Lag: Storage-and-Databases/11-Read-Write-Splitting/03-Replication-Lag.md
+        - Interview Cheatsheet: Storage-and-Databases/11-Read-Write-Splitting/04-Interview-Cheatsheet.md
+      - Database Types:
+        - Key-Value Stores:
+          - Overview: Storage-and-Databases/12-Database-Types/01-Key-Value-Stores/00-Overview.md
+          - Redis: Storage-and-Databases/12-Database-Types/01-Key-Value-Stores/01-Redis.md
+          - Memcached: Storage-and-Databases/12-Database-Types/01-Key-Value-Stores/02-Memcached.md
+          - KV Positioning: Storage-and-Databases/12-Database-Types/01-Key-Value-Stores/03-KV-Positioning.md
+          - Interview Cheatsheet: Storage-and-Databases/12-Database-Types/01-Key-Value-Stores/04-Interview-Cheatsheet.md
+        - Document Stores:
+          - Overview: Storage-and-Databases/12-Database-Types/02-Document-Stores/00-Overview.md
+          - Positioning: Storage-and-Databases/12-Database-Types/02-Document-Stores/03-Positioning.md
+          - MongoDB:
+            - Document Model: Storage-and-Databases/12-Database-Types/02-Document-Stores/02-MongoDB/01-Document-Model.md
+            - Indexes: Storage-and-Databases/12-Database-Types/02-Document-Stores/02-MongoDB/02-Indexes.md
+            - Embedding vs Referencing: Storage-and-Databases/12-Database-Types/02-Document-Stores/02-MongoDB/03-Embedding-vs-Referencing.md
+            - Replication & Sharding: Storage-and-Databases/12-Database-Types/02-Document-Stores/02-MongoDB/04-Replication-and-Sharding.md
+            - Limitations: Storage-and-Databases/12-Database-Types/02-Document-Stores/02-MongoDB/05-Limitations.md
+            - Interview Cheatsheet: Storage-and-Databases/12-Database-Types/02-Document-Stores/02-MongoDB/06-Interview-Cheatsheet.md
+        - Column Family:
+          - Why Column Family: Storage-and-Databases/12-Database-Types/03-Column-Family/01-Why-Column-Family.md
+          - Column-Oriented Storage: Storage-and-Databases/12-Database-Types/03-Column-Family/02-Column-Oriented-Storage.md
+          - Row Keys: Storage-and-Databases/12-Database-Types/03-Column-Family/03-Row-Keys.md
+          - When To Use: Storage-and-Databases/12-Database-Types/03-Column-Family/05-When-To-Use.md
+          - Cassandra:
+            - Overview: Storage-and-Databases/12-Database-Types/03-Column-Family/04-Cassandra/00-Overview.md
+            - Ring Architecture: Storage-and-Databases/12-Database-Types/03-Column-Family/04-Cassandra/01-Ring-Architecture.md
+            - Write Path: Storage-and-Databases/12-Database-Types/03-Column-Family/04-Cassandra/02-Write-Path.md
+            - Read Path: Storage-and-Databases/12-Database-Types/03-Column-Family/04-Cassandra/03-Read-Path.md
+            - Replication & Consistency: Storage-and-Databases/12-Database-Types/03-Column-Family/04-Cassandra/04-Replication-Consistency.md
+            - Tombstones: Storage-and-Databases/12-Database-Types/03-Column-Family/04-Cassandra/05-Tombstones.md
+            - Interview Cheatsheet: Storage-and-Databases/12-Database-Types/03-Column-Family/04-Cassandra/06-Interview-Cheatsheet.md
+            - Query-First Modeling: Storage-and-Databases/12-Database-Types/03-Column-Family/04-Cassandra/07-Query-First-Modeling.md
+          - Bigtable:
+            - Architecture: Storage-and-Databases/12-Database-Types/03-Column-Family/06-Bigtable/01-Architecture.md
+            - Cassandra vs Bigtable: Storage-and-Databases/12-Database-Types/03-Column-Family/06-Bigtable/02-Cassandra-vs-Bigtable.md
+          - DynamoDB:
+            - Data Model: Storage-and-Databases/12-Database-Types/03-Column-Family/07-DynamoDB/01-Data-Model.md
+            - Consistency: Storage-and-Databases/12-Database-Types/03-Column-Family/07-DynamoDB/02-Consistency.md
+            - Query API & Indexes: Storage-and-Databases/12-Database-Types/03-Column-Family/07-DynamoDB/03-Query-API-and-Indexes.md
+            - Redis vs DynamoDB: Storage-and-Databases/12-Database-Types/03-Column-Family/07-DynamoDB/04-Redis-vs-DynamoDB.md
+            - TTL & Sessions: Storage-and-Databases/12-Database-Types/03-Column-Family/07-DynamoDB/05-TTL-and-Sessions.md
+            - Interview Cheatsheet: Storage-and-Databases/12-Database-Types/03-Column-Family/07-DynamoDB/06-Interview-Cheatsheet.md
+        - Search Engines:
+          - Problem With SQL Search: Storage-and-Databases/12-Database-Types/04-Search-Engines/01-Problem-With-SQL-Search.md
+          - Inverted Index: Storage-and-Databases/12-Database-Types/04-Search-Engines/02-Inverted-Index.md
+          - Indexing Pipeline: Storage-and-Databases/12-Database-Types/04-Search-Engines/03-Indexing-Pipeline.md
+          - Ranking TF-IDF BM25: Storage-and-Databases/12-Database-Types/04-Search-Engines/04-Ranking-TF-IDF-BM25.md
+          - Elasticsearch Architecture: Storage-and-Databases/12-Database-Types/04-Search-Engines/05-Elasticsearch-Architecture.md
+          - Where It Fits: Storage-and-Databases/12-Database-Types/04-Search-Engines/06-Where-It-Fits.md
+          - Interview Cheatsheet: Storage-and-Databases/12-Database-Types/04-Search-Engines/07-Interview-Cheatsheet.md
+        - Graph Databases:
+          - Why Not SQL: Storage-and-Databases/12-Database-Types/05-Graph-Databases/01-Why-Not-SQL.md
+          - Graph Data Model: Storage-and-Databases/12-Database-Types/05-Graph-Databases/02-Graph-Data-Model.md
+          - Cypher Query Language: Storage-and-Databases/12-Database-Types/05-Graph-Databases/03-Cypher-Query-Language.md
+          - Use Cases: Storage-and-Databases/12-Database-Types/05-Graph-Databases/04-Use-Cases.md
+          - Interview Cheatsheet: Storage-and-Databases/12-Database-Types/05-Graph-Databases/05-Interview-Cheatsheet.md
+        - Blob Storage:
+          - Object Storage Model: Storage-and-Databases/12-Database-Types/06-Blob-Storage/01-Object-Storage-Model.md
+          - Presigned URLs: Storage-and-Databases/12-Database-Types/06-Blob-Storage/02-Presigned-URLs.md
+          - Multipart Upload: Storage-and-Databases/12-Database-Types/06-Blob-Storage/03-Multipart-Upload.md
+          - Content-Addressable Storage: Storage-and-Databases/12-Database-Types/06-Blob-Storage/04-Content-Addressable-Storage.md
+          - Chunk-Level Deduplication: Storage-and-Databases/12-Database-Types/06-Blob-Storage/05-Chunk-Level-Deduplication.md
+          - Storage Classes: Storage-and-Databases/12-Database-Types/06-Blob-Storage/06-Storage-Classes.md
+          - Interview Cheatsheet: Storage-and-Databases/12-Database-Types/06-Blob-Storage/07-Interview-Cheatsheet.md
+        - NewSQL:
+          - The Problem: Storage-and-Databases/12-Database-Types/07-NewSQL/01-The-Problem.md
+          - Spanner TrueTime: Storage-and-Databases/12-Database-Types/07-NewSQL/02-Spanner-TrueTime.md
+          - Spanner Transactions: Storage-and-Databases/12-Database-Types/07-NewSQL/03-Spanner-Transactions.md
+          - When To Use: Storage-and-Databases/12-Database-Types/07-NewSQL/04-When-To-Use.md
+          - Interview Cheatsheet: Storage-and-Databases/12-Database-Types/07-NewSQL/05-Interview-Cheatsheet.md
+        - OLTP vs OLAP:
+          - The Problem: Storage-and-Databases/12-Database-Types/08-OLTP-vs-OLAP/01-The-Problem.md
+          - OLTP: Storage-and-Databases/12-Database-Types/08-OLTP-vs-OLAP/02-OLTP.md
+          - OLAP: Storage-and-Databases/12-Database-Types/08-OLTP-vs-OLAP/03-OLAP.md
+          - ETL vs CDC: Storage-and-Databases/12-Database-Types/08-OLTP-vs-OLAP/04-ETL-vs-CDC.md
+          - Interview Cheatsheet: Storage-and-Databases/12-Database-Types/08-OLTP-vs-OLAP/05-Interview-Cheatsheet.md
+      - Choosing The Right DB:
+        - Decision Framework: Storage-and-Databases/13-Choosing-The-Right-DB/01-Decision-Framework.md
+        - DB Cheatsheet: Storage-and-Databases/13-Choosing-The-Right-DB/02-DB-Cheatsheet.md
+      - Data Modeling:
+        - The Process: Storage-and-Databases/14-Data-Modeling/01-The-Process.md
+        - Entities & Relationships: Storage-and-Databases/14-Data-Modeling/02-Entities-And-Relationships.md
+        - Access Patterns: Storage-and-Databases/14-Data-Modeling/03-Access-Patterns.md
+        - Instagram Schema: Storage-and-Databases/14-Data-Modeling/04-Instagram-Schema.md
+        - Red Flags: Storage-and-Databases/14-Data-Modeling/05-Red-Flags.md
+
+  - Back of Envelope:
+    - Latency Numbers: Back-of-Envelope-Estimation/01-Latency-Numbers.md
+    - Database Numbers: Back-of-Envelope-Estimation/02-Database-Numbers.md
+    - Message Streams: Back-of-Envelope-Estimation/03-Message-Streams.md
+    - Data Sizes: Back-of-Envelope-Estimation/04-Data-Sizes.md
+    - Bandwidth & Servers: Back-of-Envelope-Estimation/05-Bandwidth-And-Servers.md
+    - Estimation Framework: Back-of-Envelope-Estimation/06-Estimation-Framework.md
 
   - Foundation:
     - Overview: 01-Foundation/index.md

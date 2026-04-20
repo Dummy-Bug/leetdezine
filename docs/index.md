@@ -1,5 +1,5 @@
 ---
-title: ""
+title: "LeetDezine — System Design Deep Dives"
 hide:
   - navigation
   - toc
@@ -12,6 +12,53 @@ hide:
   <h1 class="cs-hero-title">Design systems <span class="cs-hero-accent">beyond the whiteboard.</span></h1>
   <p class="cs-hero-sub">Interview-depth case studies where every decision is justified. Built as a progression — start from first principles, climb to distributed systems.</p>
 </section>
+
+<section class="cs-concepts">
+  <div class="cs-concepts-label">Concepts</div>
+  <div class="cs-concepts-grid">
+    <a href="Concepts/" class="cs-concept-card cs-concept-c1">
+      <div class="cs-concept-card-title">Core Concepts</div>
+      <div class="cs-concept-card-desc">Availability, reliability, scalability, CAP theorem, consistency models, fault tolerance, PACELC.</div>
+    </a>
+    <a href="Concepts/" class="cs-concept-card cs-concept-c2">
+      <div class="cs-concept-card-title">Storage & Databases</div>
+      <div class="cs-concept-card-desc">ACID, indexing, sharding, replication, database types, data modeling, CDC, pagination.</div>
+    </a>
+    <a href="Concepts/" class="cs-concept-card cs-concept-c3">
+      <div class="cs-concept-card-title">Caching</div>
+      <div class="cs-concept-card-desc">Write strategies, eviction policies, cache invalidation, distributed caching, Redis, cache problems.</div>
+    </a>
+  </div>
+</section>
+
+<div class="cs-section-divider">
+  <span class="cs-section-divider-label">Back of Envelope Estimation</span>
+</div>
+
+<section class="cs-concepts">
+  <div class="cs-concepts-grid cs-concepts-grid-wide">
+    <a href="Back-of-Envelope-Estimation/01-Latency-Numbers/" class="cs-concept-card cs-concept-c4">
+      <div class="cs-concept-card-title">Latency Numbers</div>
+      <div class="cs-concept-card-desc">Every number you need to know — memory, disk, network.</div>
+    </a>
+    <a href="Back-of-Envelope-Estimation/02-Database-Numbers/" class="cs-concept-card cs-concept-c4">
+      <div class="cs-concept-card-title">Database Numbers</div>
+      <div class="cs-concept-card-desc">Read/write throughput, storage sizes, query costs.</div>
+    </a>
+    <a href="Back-of-Envelope-Estimation/03-Message-Streams/" class="cs-concept-card cs-concept-c4">
+      <div class="cs-concept-card-title">Message Streams</div>
+      <div class="cs-concept-card-desc">Kafka throughput, queue sizing, consumer lag.</div>
+    </a>
+    <a href="Back-of-Envelope-Estimation/06-Estimation-Framework/" class="cs-concept-card cs-concept-c4">
+      <div class="cs-concept-card-title">Estimation Framework</div>
+      <div class="cs-concept-card-desc">A reusable framework for any system design estimation.</div>
+    </a>
+  </div>
+</section>
+
+<div class="cs-section-divider">
+  <span class="cs-section-divider-label">Apply the Concepts — Case Studies</span>
+</div>
 
 <section class="cs-journey">
 

@@ -10,6 +10,8 @@
   --surface-1:          #fafafa;
   --surface-2:          #f5f5f5;
   --surface-raised:     #ffffff;
+  --surface-sidebar:    #f7f8fa;
+  --surface-sidebar-hover: #eef2f6;
 
   /* Text */
   --fg-primary:         #0a0a0a;
@@ -23,6 +25,7 @@
   --border-default:     #e5e5e5;
   --border-subtle:      #f0f0f0;
   --border-faint:       #f5f5f5;
+  --border-column:      #d8dee6;
 
   /* Brand — Emerald */
   --brand:              #059669;
@@ -69,6 +72,8 @@
   --surface-1:          #141414;
   --surface-2:          #1a1a1a;
   --surface-raised:     #161616;
+  --surface-sidebar:    #111111;
+  --surface-sidebar-hover: #1d1d1d;
 
   /* Text */
   --fg-primary:         #fafafa;
@@ -82,6 +87,7 @@
   --border-default:     #262626;
   --border-subtle:      #1f1f1f;
   --border-faint:       #171717;
+  --border-column:      #363636;
 
   /* Brand — Emerald (brighter for dark) */
   --brand:              #10b981;
@@ -126,6 +132,7 @@
   --md-text-font-size: 16px;
   --md-code-font-size: 13.5px;
   --font-feature-defaults: "ss01", "ss02", "cv01", "cv11";
+  --ld-header-height: 3.2rem;
 }
 
 body,
@@ -256,6 +263,9 @@ body,
 
 .md-content {
   background-color: var(--surface-0);
+  border-left: 1px solid var(--border-column);
+  border-right: 1px solid var(--border-column);
+  box-sizing: border-box;
 }
 
 .md-content__inner {
@@ -288,7 +298,7 @@ body,
   border-bottom: 1px solid var(--border-subtle);
   box-shadow: none;
   color: var(--fg-primary);
-  height: 3.2rem;
+  height: var(--ld-header-height);
 }
 
 .md-header[data-md-state="shadow"] {
@@ -392,16 +402,18 @@ body,
 
 /* ─── Sidebar (Navigation) ──────────────────────────────── */
 .md-sidebar {
-  background-color: var(--surface-1);
+  background-color: var(--surface-sidebar);
   padding-top: 1rem;
 }
 
 .md-sidebar--primary {
-  border-right: 1px solid var(--border-default);
+  border-right: none;
+  box-shadow: none;
 }
 
 .md-sidebar--secondary {
-  border-left: 1px solid var(--border-default);
+  border-left: none;
+  box-shadow: none;
 }
 
 .md-sidebar__scrollwrap {
@@ -445,14 +457,15 @@ body,
   font-weight: 450;
   padding: 0.35rem 0.8rem;
   border-radius: 6px;
-  margin: 1px 0;
-  transition: color 0.12s ease, background-color 0.12s ease;
+  margin: 2px 0;
+  position: relative;
+  transition: color 0.12s ease, background-color 0.12s ease, box-shadow 0.12s ease;
   gap: 0.4rem;
 }
 
 .md-nav__link:hover {
   color: var(--fg-primary);
-  background-color: var(--surface-1);
+  background-color: var(--surface-sidebar-hover);
 }
 
 .md-nav__link--active,
@@ -461,6 +474,22 @@ body,
   color: var(--brand) !important;
   background-color: var(--brand-bg);
   font-weight: 600;
+}
+
+.md-sidebar--primary .md-nav__link--active {
+  padding-left: 0.8rem;
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, currentColor 18%, transparent);
+}
+
+.md-sidebar--primary .md-nav__link--active::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.35rem;
+  bottom: 0.35rem;
+  width: 3px;
+  border-radius: 2px;
+  background: currentColor;
 }
 
 .md-nav__item--nested > .md-nav__link {
@@ -1627,7 +1656,7 @@ a.cs-level-link:hover .cs-level-count::after {
 
 @media screen and (max-width: 76.234375em) {
   .md-sidebar--primary {
-    background-color: var(--surface-0);
+    background-color: var(--surface-sidebar);
   }
 }
 

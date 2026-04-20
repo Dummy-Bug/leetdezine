@@ -1,42 +1,47 @@
-# Pastebin
-
-Design a system like pastebin.com — users paste text, get a short link, content is retrieved by anyone with the link. 10M DAU, expiring pastes, large content blobs.
-
+---
+title: Pastebin
+hide:
+  - navigation
+  - toc
 ---
 
-<div class="grid cards" markdown>
+<div class="cs-level-hero cs-lv2">
+  <div class="cs-level-bg-num">02</div>
+  <div class="cs-level-inner">
+    <p class="cs-level-eyebrow">Ascent · Case Study 2</p>
+    <h1 class="cs-level-title">Pastebin</h1>
+    <p class="cs-level-sub">Design pastebin.com — paste text, get a short link, retrieve content at scale. 10M DAU, expiring pastes, large content blobs.</p>
+  </div>
+</div>
 
--   **Requirements & Base Architecture**
 
-    ---
+<div class="cs-concepts-grid cs-concepts-index-grid">
 
-    - [Functional Requirements](01-FR.md)
-    - [Estimation](02-Estimation.md)
-    - [Non-Functional Requirements](03-NFR.md)
-    - [API Design](04-API.md)
-    - [Base Architecture](05-Base-Architecture.md)
+  <a href="01-System-Requirements/01-FR/" class="cs-concept-card cs-concept-c4">
+    <div class="cs-concept-card-title">System Requirements</div>
+    <div class="cs-concept-card-desc">Functional requirements, back-of-envelope estimation, NFRs, API design, and base architecture.</div>
+    <div class="cs-concept-chips">
+      <span>FR</span><span>Estimation</span><span>NFR</span><span>API</span><span>Base Architecture</span>
+    </div>
+    <div class="cs-concept-cta">Open <span>→</span></div>
+  </a>
 
--   **Deep Dives**
+  <a href="02-Deep-Dives/" class="cs-concept-card cs-concept-c4">
+    <div class="cs-concept-card-title">Deep Dives</div>
+    <div class="cs-concept-card-desc">Short code generation, database, caching, peak traffic, fault isolation, async S3 upload, expiry cleanup, and final architecture.</div>
+    <div class="cs-concept-chips">
+      <span>Short Code Gen</span><span>CAS</span><span>Caching</span><span>Async S3</span><span>TTL Cleanup</span>
+    </div>
+    <div class="cs-concept-cta">Open <span>→</span></div>
+  </a>
 
-    ---
-
-    - [Short Code Generation](06-Deep-Dives/01-Short-Code-Generation/01-Requirements.md)
-    - [Database](06-Deep-Dives/02-DB/01-DB-Choice.md)
-    - [Caching](06-Deep-Dives/03-Caching/01-Why-Cache.md)
-    - [Peak Traffic](06-Deep-Dives/04-Peak-Traffic/01-Hot-Key-Problem.md)
-    - [Fault Isolation](06-Deep-Dives/05-Fault-Isolation/01-Why-Fault-Isolation.md)
-    - [Async S3 Upload](06-Deep-Dives/06-Async-S3-Upload/01-Why-Async-Upload.md)
-    - [Expiry & Cleanup](06-Deep-Dives/07-Expiry-Cleanup-Job/01-Why-Cleanup-Job.md)
-
--   **Final Design & Observability**
-
-    ---
-
-    - [Updated Architecture](06-Deep-Dives/08-Updated-Architecture/01-Updated-Architecture.md)
-    - [SLIs & SLOs](07-Observability/01-SLI-SLO-Connection.md)
-    - [Measuring Latency](07-Observability/02-Measuring-Latency.md)
-    - [Measuring Availability](07-Observability/03-Measuring-Availability.md)
-    - [Alerting](07-Observability/04-Alerting.md)
-    - [Error Budget](07-Observability/05-Error-Budget.md)
+  <a href="03-Observability/01-SLI-SLO-Connection/" class="cs-concept-card cs-concept-c4">
+    <div class="cs-concept-card-title">Observability</div>
+    <div class="cs-concept-card-desc">SLIs and SLOs for a paste service, latency measurement, availability tracking, alerting, and error budgets.</div>
+    <div class="cs-concept-chips">
+      <span>SLI / SLO</span><span>Alerting</span><span>Error Budget</span>
+    </div>
+    <div class="cs-concept-cta">Open <span>→</span></div>
+  </a>
 
 </div>

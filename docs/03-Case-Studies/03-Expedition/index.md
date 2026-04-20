@@ -23,7 +23,7 @@ hide:
 
 
 <div class="cs-cards">
-  <a class="cs-card" href="01-Rate-Limiter/01-FR/">
+  <a class="cs-card" href="01-Rate-Limiter/01-System-Requirements/01-FR/">
     <div class="cs-card-header"><span class="cs-badge expedition">EXPEDITION</span></div>
     <div class="cs-card-title">Rate Limiter</div>
     <div class="cs-card-desc">Design a distributed rate limiter — token bucket, sliding window, Redis atomicity, fail-open vs fail-closed.</div>

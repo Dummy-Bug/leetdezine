@@ -1702,15 +1702,15 @@ body:has(.cs-hero) .md-header__title .md-ellipsis {
   opacity: 1 !important;
 }
 
-/* Per-tab colors */
+/* Per-tab colors — inactive shows tinted, active goes full via --tab-color */
 .md-tabs__link[href*="start-here"]          { --tab-color: #0a0a0a; }
-.md-tabs__link[href*="01-Concepts"]         { --tab-color: #7c3aed; }
-.md-tabs__link[href*="02-Back-of-Envelope"] { --tab-color: #059669; }
-.md-tabs__link[href*="01-Foundation"]       { --tab-color: #16a34a; }
-.md-tabs__link[href*="02-Ascent"]           { --tab-color: #2563eb; }
-.md-tabs__link[href*="03-Expedition"]       { --tab-color: #d97706; }
-.md-tabs__link[href*="04-Summit"]           { --tab-color: #ea580c; }
-.md-tabs__link[href*="05-Battleground"]     { --tab-color: #dc2626; }
+.md-tabs__link[href*="01-Concepts"]         { color: rgba(124,58,237,0.65);  --tab-color: #7c3aed; }
+.md-tabs__link[href*="02-Back-of-Envelope"] { color: rgba(5,150,105,0.65);   --tab-color: #059669; }
+.md-tabs__link[href*="01-Foundation"]       { color: rgba(22,163,74,0.65);   --tab-color: #16a34a; }
+.md-tabs__link[href*="02-Ascent"]           { color: rgba(37,99,235,0.65);   --tab-color: #2563eb; }
+.md-tabs__link[href*="03-Expedition"]       { color: rgba(217,119,6,0.65);   --tab-color: #d97706; }
+.md-tabs__link[href*="04-Summit"]           { color: rgba(234,88,12,0.65);   --tab-color: #ea580c; }
+.md-tabs__link[href*="05-Battleground"]     { color: rgba(220,38,38,0.65);   --tab-color: #dc2626; }
 
 /* Nav group separators */
 .md-tabs__item:has(> .md-tabs__link[href*="01-Concepts"]),
@@ -2407,3 +2407,70 @@ body:has(.cs-hero) .md-header__title .md-ellipsis {
   .sh-grid-3, .sh-grid-2 { grid-template-columns: 1fr; }
   .sh-hero-title { font-size: 1.8rem; }
 }
+
+/* ─── Drill-down sidebar ────────────────────────────────────
+   Each level shows only ITS children. Clicking Foundation → see
+   only its case studies. Clicking a case study → see only its
+   sections. Clicking Deep Dives → see only its sub-topics.
+   ────────────────────────────────────────────────────────── */
+.md-nav__list:has(> .md-nav__item--nested.md-nav__item--active)
+  > .md-nav__item--nested:not(.md-nav__item--active) {
+  display: none !important;
+}
+
+/* ─── Sidebar separator after Estimation ────────────────────
+   Visual break between FR + Estimation and the design items
+   (NFR, API, Base Architecture) in every case study.
+   ────────────────────────────────────────────────────────── */
+.md-nav__item:has(> .md-nav__link[href*="02-Estimation"]) {
+  padding-bottom: 0.4rem;
+  margin-bottom: 0.2rem;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+/* ─── Tier-colored sidebar ──────────────────────────────────
+   Active links and section headers pick up the tier's brand
+   color so Foundation = green, Ascent = blue, etc.
+   ────────────────────────────────────────────────────────── */
+
+/* Foundation – green */
+body:has(.md-tabs__link--active[href*="01-Foundation"])
+  .md-sidebar--primary .md-nav__item--nested > .md-nav__link          { color: #16a34a; }
+body:has(.md-tabs__link--active[href*="01-Foundation"])
+  .md-sidebar--primary .md-nav__link--active                          { color: #16a34a !important; background: #dcfce7 !important; }
+
+/* Ascent – blue */
+body:has(.md-tabs__link--active[href*="02-Ascent"])
+  .md-sidebar--primary .md-nav__item--nested > .md-nav__link          { color: #2563eb; }
+body:has(.md-tabs__link--active[href*="02-Ascent"])
+  .md-sidebar--primary .md-nav__link--active                          { color: #2563eb !important; background: #dbeafe !important; }
+
+/* Expedition – amber */
+body:has(.md-tabs__link--active[href*="03-Expedition"])
+  .md-sidebar--primary .md-nav__item--nested > .md-nav__link          { color: #d97706; }
+body:has(.md-tabs__link--active[href*="03-Expedition"])
+  .md-sidebar--primary .md-nav__link--active                          { color: #d97706 !important; background: #fef3c7 !important; }
+
+/* Summit – orange */
+body:has(.md-tabs__link--active[href*="04-Summit"])
+  .md-sidebar--primary .md-nav__item--nested > .md-nav__link          { color: #ea580c; }
+body:has(.md-tabs__link--active[href*="04-Summit"])
+  .md-sidebar--primary .md-nav__link--active                          { color: #ea580c !important; background: #ffedd5 !important; }
+
+/* Battleground – red */
+body:has(.md-tabs__link--active[href*="05-Battleground"])
+  .md-sidebar--primary .md-nav__item--nested > .md-nav__link          { color: #dc2626; }
+body:has(.md-tabs__link--active[href*="05-Battleground"])
+  .md-sidebar--primary .md-nav__link--active                          { color: #dc2626 !important; background: #fee2e2 !important; }
+
+/* Dark mode overrides */
+body[data-md-color-scheme="slate"]:has(.md-tabs__link--active[href*="01-Foundation"])
+  .md-sidebar--primary .md-nav__link--active { color: #4ade80 !important; background: rgba(22,163,74,0.15)  !important; }
+body[data-md-color-scheme="slate"]:has(.md-tabs__link--active[href*="02-Ascent"])
+  .md-sidebar--primary .md-nav__link--active { color: #60a5fa !important; background: rgba(37,99,235,0.15)  !important; }
+body[data-md-color-scheme="slate"]:has(.md-tabs__link--active[href*="03-Expedition"])
+  .md-sidebar--primary .md-nav__link--active { color: #fbbf24 !important; background: rgba(217,119,6,0.15)  !important; }
+body[data-md-color-scheme="slate"]:has(.md-tabs__link--active[href*="04-Summit"])
+  .md-sidebar--primary .md-nav__link--active { color: #fb923c !important; background: rgba(234,88,12,0.15)  !important; }
+body[data-md-color-scheme="slate"]:has(.md-tabs__link--active[href*="05-Battleground"])
+  .md-sidebar--primary .md-nav__link--active { color: #f87171 !important; background: rgba(220,38,38,0.15)  !important; }

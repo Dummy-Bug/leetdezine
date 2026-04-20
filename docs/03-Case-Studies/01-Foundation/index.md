@@ -23,7 +23,7 @@ hide:
 
 
 <div class="cs-cards">
-  <a class="cs-card" href="01-Unique-ID-Generator/00-System-Overview/">
+  <a class="cs-card" href="01-Unique-ID-Generator/">
     <div class="cs-card-header"><span class="cs-badge foundation">FOUNDATION</span></div>
     <div class="cs-card-title">Unique ID Generator</div>
     <div class="cs-card-desc">Design a distributed ID generation service — globally unique, sortable, 10k IDs/sec. Covers UUID, Snowflake, ticket servers, and clock skew.</div>

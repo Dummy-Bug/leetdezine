@@ -23,7 +23,7 @@ hide:
 
 
 <div class="cs-cards">
-  <a class="cs-card" href="02-KV-Store/01-FR/">
+  <a class="cs-card" href="01-KV-Store/01-System-Requirements/01-FR/">
     <div class="cs-card-header"><span class="cs-badge summit">SUMMIT</span></div>
     <div class="cs-card-title">Key-Value Store</div>
     <div class="cs-card-desc">Design a distributed KV store — leaderless replication, quorum reads/writes, LSM tree internals, gossip membership, vector clock conflict resolution.</div>

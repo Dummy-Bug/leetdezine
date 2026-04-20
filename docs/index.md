@@ -41,19 +41,19 @@ hide:
 
 <section class="cs-concepts">
   <div class="cs-concepts-grid cs-concepts-grid-wide">
-    <a href="02-Back-of-Envelope-Estimation/01-Latency-Numbers/" class="cs-concept-card cs-concept-c4">
+    <a href="02-Back-of-Envelope-Estimation/" class="cs-concept-card cs-concept-c4">
       <div class="cs-concept-card-title">Latency Numbers</div>
       <div class="cs-concept-card-desc">Every number you need to know — memory, disk, network.</div>
     </a>
-    <a href="02-Back-of-Envelope-Estimation/02-Database-Numbers/" class="cs-concept-card cs-concept-c4">
+    <a href="02-Back-of-Envelope-Estimation/" class="cs-concept-card cs-concept-c4">
       <div class="cs-concept-card-title">Database Numbers</div>
       <div class="cs-concept-card-desc">Read/write throughput, storage sizes, query costs.</div>
     </a>
-    <a href="02-Back-of-Envelope-Estimation/03-Message-Streams/" class="cs-concept-card cs-concept-c4">
+    <a href="02-Back-of-Envelope-Estimation/" class="cs-concept-card cs-concept-c4">
       <div class="cs-concept-card-title">Message Streams</div>
       <div class="cs-concept-card-desc">Kafka throughput, queue sizing, consumer lag.</div>
     </a>
-    <a href="02-Back-of-Envelope-Estimation/06-Estimation-Framework/" class="cs-concept-card cs-concept-c4">
+    <a href="02-Back-of-Envelope-Estimation/" class="cs-concept-card cs-concept-c4">
       <div class="cs-concept-card-title">Estimation Framework</div>
       <div class="cs-concept-card-desc">A reusable framework for any system design estimation.</div>
     </a>
@@ -68,7 +68,7 @@ hide:
 
   <div class="cs-journey-rail" aria-hidden="true"></div>
 
-  <a href="03-Case-Studies/01-Foundation/" class="cs-journey-step cs-step-lv1">
+  <a href="03-Case-Studies/" class="cs-journey-step cs-step-lv1">
     <div class="cs-step-marker"><span class="cs-step-num">01</span></div>
     <div class="cs-step-body">
       <div class="cs-step-head">
@@ -91,7 +91,7 @@ hide:
     <div class="cs-step-cta">Start <span>→</span></div>
   </a>
 
-  <a href="03-Case-Studies/02-Ascent/" class="cs-journey-step cs-step-lv2">
+  <a href="03-Case-Studies/" class="cs-journey-step cs-step-lv2">
     <div class="cs-step-marker"><span class="cs-step-num">02</span></div>
     <div class="cs-step-body">
       <div class="cs-step-head">
@@ -114,7 +114,7 @@ hide:
     <div class="cs-step-cta">Open <span>→</span></div>
   </a>
 
-  <a href="03-Case-Studies/03-Expedition/" class="cs-journey-step cs-step-lv3">
+  <a href="03-Case-Studies/" class="cs-journey-step cs-step-lv3">
     <div class="cs-step-marker"><span class="cs-step-num">03</span></div>
     <div class="cs-step-body">
       <div class="cs-step-head">
@@ -136,7 +136,7 @@ hide:
     <div class="cs-step-cta">Open <span>→</span></div>
   </a>
 
-  <a href="03-Case-Studies/04-Summit/" class="cs-journey-step cs-step-lv4">
+  <a href="03-Case-Studies/" class="cs-journey-step cs-step-lv4">
     <div class="cs-step-marker"><span class="cs-step-num">04</span></div>
     <div class="cs-step-body">
       <div class="cs-step-head">
@@ -159,7 +159,7 @@ hide:
     <div class="cs-step-cta">Open <span>→</span></div>
   </a>
 
-  <a href="03-Case-Studies/05-Battleground/" class="cs-journey-step cs-step-lv5">
+  <a href="03-Case-Studies/" class="cs-journey-step cs-step-lv5">
     <div class="cs-step-marker"><span class="cs-step-num">05</span></div>
     <div class="cs-step-body">
       <div class="cs-step-head">

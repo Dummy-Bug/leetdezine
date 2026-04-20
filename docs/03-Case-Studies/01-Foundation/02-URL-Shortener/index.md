@@ -1,42 +1,56 @@
-# URL Shortener
-
-Design a system like bit.ly — takes a long URL, returns a short code, redirects at scale. 100M DAU, 1B redirects/day.
-
+---
+title: URL Shortener
+hide:
+  - navigation
+  - toc
 ---
 
-<div class="grid cards" markdown>
+<div class="cs-level-hero cs-lv1">
+  <div class="cs-level-bg-num">02</div>
+  <div class="cs-level-inner">
+    <p class="cs-level-eyebrow">Foundation · Case Study 2</p>
+    <h1 class="cs-level-title">URL Shortener</h1>
+    <p class="cs-level-sub">Design bit.ly — takes a long URL, returns a short code, redirects at scale. 100M DAU, 1B redirects/day.</p>
+  </div>
+</div>
 
--   **Requirements & Base Architecture**
 
-    ---
+<div class="cs-concepts-grid cs-concepts-index-grid">
 
-    - [Functional Requirements](01-FR.md)
-    - [Estimation](02-Estimation.md)
-    - [Non-Functional Requirements](03-NFR.md)
-    - [API Design](04-API.md)
-    - [Base Architecture](05-Base-Architecture.md)
+  <a href="01-System-Requirements/01-FR/" class="cs-concept-card cs-concept-c4">
+    <div class="cs-concept-card-title">System Requirements</div>
+    <div class="cs-concept-card-desc">Functional requirements, back-of-envelope estimation, NFRs, API design, and base architecture.</div>
+    <div class="cs-concept-chips">
+      <span>FR</span><span>Estimation</span><span>NFR</span><span>API</span><span>Base Architecture</span>
+    </div>
+    <div class="cs-concept-cta">Open <span>→</span></div>
+  </a>
 
--   **Deep Dives**
+  <a href="02-Deep-Dives/" class="cs-concept-card cs-concept-c4">
+    <div class="cs-concept-card-title">Deep Dives</div>
+    <div class="cs-concept-card-desc">Short code generation, database sharding, caching strategy, peak traffic handling, pre-generated keys, cold storage, and fault isolation.</div>
+    <div class="cs-concept-chips">
+      <span>Short Code Gen</span><span>Sharding</span><span>Caching</span><span>Pre-Gen Keys</span><span>Cold Storage</span>
+    </div>
+    <div class="cs-concept-cta">Open <span>→</span></div>
+  </a>
 
-    ---
+  <a href="03-Observability/01-SLI-SLO-Connection/" class="cs-concept-card cs-concept-c4">
+    <div class="cs-concept-card-title">Observability</div>
+    <div class="cs-concept-card-desc">SLIs and SLOs for a redirect service, latency P99 measurement, availability tracking, alerting, and error budgets.</div>
+    <div class="cs-concept-chips">
+      <span>SLI / SLO</span><span>Alerting</span><span>Error Budget</span>
+    </div>
+    <div class="cs-concept-cta">Open <span>→</span></div>
+  </a>
 
-    - [Short Code Generation](06-Deep-Dives/01-Short-Code-Generation/01-Raw-IDs.md)
-    - [Database](06-Deep-Dives/02-DB/01-DB-Choice.md)
-    - [Caching](06-Deep-Dives/03-Caching/01-Why-Caching.md)
-    - [Peak Traffic](06-Deep-Dives/04-Peak-Traffic/01-The-Spike-Problem.md)
-    - [Pre-Generated Keys](06-Deep-Dives/06-Pre-Generated-Keys/01-Collision-At-Scale.md)
-    - [Cold Storage](06-Deep-Dives/07-Cold-Storage/01-The-Problem.md)
-    - [Fault Isolation](06-Deep-Dives/08-Fault-Isolation/01-Fault-Isolation.md)
-
--   **Final Design & Observability**
-
-    ---
-
-    - [Final Architecture](08-Final-Design/01-Final-Design.md)
-    - [SLIs & SLOs](09-Observability/01-SLI-SLO-Connection.md)
-    - [Measuring Latency](09-Observability/02-Measuring-Latency.md)
-    - [Measuring Availability](09-Observability/03-Measuring-Availability.md)
-    - [Alerting](09-Observability/04-Alerting.md)
-    - [Error Budget](09-Observability/05-Error-Budget.md)
+  <a href="04-Final-Design/01-Final-Design/" class="cs-concept-card cs-concept-c4">
+    <div class="cs-concept-card-title">Final Design</div>
+    <div class="cs-concept-card-desc">The complete architecture after all deep dives — every component justified, every tradeoff resolved, full system diagram.</div>
+    <div class="cs-concept-chips">
+      <span>Final Architecture</span><span>Full Diagram</span>
+    </div>
+    <div class="cs-concept-cta">Open <span>→</span></div>
+  </a>
 
 </div>

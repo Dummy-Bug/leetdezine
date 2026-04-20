@@ -3,13 +3,13 @@
 {% block extrahead %}
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="LeetDezine" />
-  <meta property="og:title" content="{{ page.title }} — LeetDezine" />
+  <meta property="og:title" content="{% if page.title %}{{ page.title }} — LeetDezine{% else %}LeetDezine — System Design Deep Dives{% endif %}" />
   <meta property="og:description" content="Interview-depth system design case studies. Every decision justified — requirements, estimates, tradeoffs, failure modes, observability." />
   <meta property="og:image" content="https://leetdezine.com/assets/og-image.png" />
   <meta property="og:url" content="https://leetdezine.com/{{ page.url }}" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@leetdezine" />
-  <meta name="twitter:title" content="{{ page.title }} — LeetDezine" />
+  <meta name="twitter:title" content="{% if page.title %}{{ page.title }} — LeetDezine{% else %}LeetDezine — System Design Deep Dives{% endif %}" />
   <meta name="twitter:description" content="Interview-depth system design case studies. Every decision justified — requirements, estimates, tradeoffs, failure modes, observability." />
   <meta name="twitter:image" content="https://leetdezine.com/assets/og-image.png" />
 {% endblock %}

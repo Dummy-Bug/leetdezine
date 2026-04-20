@@ -78,7 +78,7 @@ markdown_extensions:
       toc_depth: 3
 
 nav:
-  - "": index.md
+  - Home: index.md
   - "👉  Start Here": start-here.md
 
   - Concepts:

@@ -476,6 +476,11 @@ body,
   border-bottom: 1px solid var(--border-subtle);
 }
 
+/* Hide the lifted section label that appears above the sidebar when a tab is active */
+.md-nav--lifted > .md-nav__list > .md-nav__item--active > .md-nav__link {
+  display: none;
+}
+
 /* Section headers when navigation.sections is on */
 .md-nav--primary > .md-nav__list > .md-nav__item--section > .md-nav__link {
   color: var(--fg-primary);
@@ -1185,10 +1190,14 @@ a.cs-level-link:hover .cs-level-count::after {
 }
 
 .cs-card:hover {
-  border-color: var(--border-strong);
-  box-shadow: var(--shadow-md);
-  transform: translateY(-2px);
+  border-color: var(--card-accent, var(--brand));
+  box-shadow: 0 16px 40px rgba(0,0,0,0.12), 0 0 0 1px color-mix(in srgb, var(--card-accent, var(--brand)) 20%, transparent);
+  transform: translateY(-6px) scale(1.02) rotate(-1deg);
   text-decoration: none !important;
+}
+
+.cs-card:nth-child(even):hover {
+  transform: translateY(-6px) scale(1.02) rotate(1deg);
 }
 
 .cs-card-elite {
@@ -1684,17 +1693,12 @@ body:has(.cs-hero) .md-header__title .md-ellipsis {
 .md-tabs__link[href*="05-Battleground"]     { --tab-color: #dc2626; }
 
 /* Nav group separators — before Concepts, Back of Envelope, and Foundation */
-.md-tabs__link[href*="01-Concepts"]::before,
-.md-tabs__link[href*="02-Back-of-Envelope"]::before,
-.md-tabs__link[href*="01-Foundation"]::before {
-  content: "";
-  display: inline-block;
-  width: 1px;
-  height: 14px;
-  background: var(--fg-muted);
-  margin-right: 1rem;
-  vertical-align: middle;
-  opacity: 0.8;
+.md-tabs__link[href*="01-Concepts"],
+.md-tabs__link[href*="02-Back-of-Envelope"],
+.md-tabs__link[href*="01-Foundation"] {
+  border-left: 1px solid var(--border-strong);
+  margin-left: 0.5rem;
+  padding-left: 1rem;
 }
 
 /* =============================================================
@@ -1773,10 +1777,9 @@ body:has(.cs-hero) .md-header__title .md-ellipsis {
 .cs-journey-step:hover {
   border-color: var(--step-color);
   box-shadow:
-    0 1px 2px rgba(0,0,0,0.04),
-    0 12px 32px -12px rgba(0,0,0,0.15),
-    0 0 0 1px color-mix(in srgb, var(--step-color) 15%, transparent);
-  transform: translateY(-2px);
+    0 16px 40px rgba(0,0,0,0.12),
+    0 0 0 1px color-mix(in srgb, var(--step-color) 25%, transparent);
+  transform: translateY(-5px) scale(1.01);
   text-decoration: none !important;
 }
 
@@ -2022,13 +2025,22 @@ body:has(.cs-hero) .md-header__title .md-ellipsis {
   background: var(--surface-raised);
   text-decoration: none !important;
   color: inherit !important;
-  transition: border-color 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+  transition: border-color 0.18s ease, box-shadow 0.2s ease, background 0.18s ease, transform 0.22s cubic-bezier(0.2, 0.9, 0.3, 1.2);
 }
 
 .cs-concept-card:hover {
   border-color: var(--concept-color);
-  box-shadow: 0 4px 16px rgba(0,0,0,0.06);
-  background: color-mix(in srgb, var(--concept-tint) 20%, var(--surface-raised));
+  box-shadow: 0 16px 40px rgba(0,0,0,0.12), 0 0 0 1px color-mix(in srgb, var(--concept-color) 20%, transparent);
+  background: color-mix(in srgb, var(--concept-tint) 25%, var(--surface-raised));
+  transform: translateY(-6px) scale(1.02);
+}
+
+.cs-concept-card:nth-child(even):hover {
+  transform: translateY(-6px) scale(1.02) rotate(1deg);
+}
+
+.cs-concept-card:nth-child(odd):hover {
+  transform: translateY(-6px) scale(1.02) rotate(-1deg);
 }
 
 .cs-concept-card-title {
@@ -2131,6 +2143,20 @@ body:has(.cs-hero) .md-header__title .md-ellipsis {
   background: var(--surface-raised);
   border-top: 3px solid var(--sh-color);
   text-align: left !important;
+  transition: transform 0.22s cubic-bezier(0.2, 0.9, 0.3, 1.2),
+              box-shadow 0.2s ease,
+              border-color 0.2s ease;
+  cursor: default;
+}
+
+.sh-card:hover {
+  transform: translateY(-6px) rotate(-1deg);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.12), 0 0 0 1px color-mix(in srgb, var(--sh-color) 30%, transparent);
+  border-color: color-mix(in srgb, var(--sh-color) 40%, var(--border-default));
+}
+
+.sh-card:nth-child(even):hover {
+  transform: translateY(-6px) rotate(1deg);
 }
 
 .sh-card *,
@@ -2139,6 +2165,20 @@ body:has(.cs-hero) .md-header__title .md-ellipsis {
 .sh-card .sh-card-title,
 .sh-card .sh-card-desc,
 .sh-card .sh-card-tag {
+  text-align: left !important;
+}
+
+.md-typeset .sh-card ol,
+.md-typeset .sh-steps {
+  padding-left: 1.4rem !important;
+  margin: 0 !important;
+  list-style-position: outside !important;
+}
+
+.md-typeset .sh-card ol li,
+.md-typeset .sh-steps li {
+  margin: 0 !important;
+  padding-left: 0.2rem !important;
   text-align: left !important;
 }
 
@@ -2171,18 +2211,57 @@ body:has(.cs-hero) .md-header__title .md-ellipsis {
 
 .sh-steps {
   margin: 0;
-  padding-left: 1.2rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
+  padding-left: 1.4rem;
+  list-style-type: decimal;
+  list-style-position: outside;
   text-align: left;
 }
 
-.sh-steps li {
+.md-typeset .sh-steps {
+  padding-left: 1.4rem !important;
+  margin: 0 !important;
+}
+
+.sh-steps li,
+.md-typeset .sh-steps li {
   font-size: 0.83rem;
   color: var(--fg-secondary);
   line-height: 1.5;
+  margin-bottom: 0.45rem !important;
+  padding-left: 0.2rem;
+  text-align: left !important;
 }
+
+.sh-steps li a {
+  color: var(--fg-primary);
+  text-decoration: underline;
+  text-decoration-color: var(--sh-color);
+  text-underline-offset: 2px;
+  transition: color 0.15s ease;
+}
+
+.sh-steps li a:hover {
+  color: var(--sh-color);
+}
+
+/* ── Page load stagger fade-in ──────────────────────────── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.cs-journey-step,
+.cs-card,
+.cs-concept-card,
+.sh-card {
+  animation: fadeUp 0.4s ease both;
+}
+
+.cs-journey-step:nth-child(1), .cs-card:nth-child(1), .cs-concept-card:nth-child(1), .sh-card:nth-child(1) { animation-delay: 0.05s; }
+.cs-journey-step:nth-child(2), .cs-card:nth-child(2), .cs-concept-card:nth-child(2), .sh-card:nth-child(2) { animation-delay: 0.10s; }
+.cs-journey-step:nth-child(3), .cs-card:nth-child(3), .cs-concept-card:nth-child(3), .sh-card:nth-child(3) { animation-delay: 0.15s; }
+.cs-journey-step:nth-child(4), .cs-card:nth-child(4), .cs-concept-card:nth-child(4), .sh-card:nth-child(4) { animation-delay: 0.20s; }
+.cs-journey-step:nth-child(5), .cs-card:nth-child(5), .cs-concept-card:nth-child(5), .sh-card:nth-child(5) { animation-delay: 0.25s; }
 
 .sh-steps a {
   color: var(--sh-color);

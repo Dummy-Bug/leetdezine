@@ -1,5 +1,7 @@
 # MVCC — Multi-Version Concurrency Control
 
-Already covered in depth during the Concurrency & Locking session.
+MVCC (Multi-Version Concurrency Control) lets databases serve reads and writes concurrently without blocking — each transaction sees a consistent snapshot of the data taken at its start time, rather than fighting over row locks.
 
-→ See [[05-MVCC]] in `System Design/04-Core-Concepts/08-Concurrency-Locking/05-MVCC.md`
+This topic is covered in full under Concurrency & Locking.
+
+**[→ Read: MVCC](../../02-Core-Concepts/08-Concurrency-Locking/05-MVCC.md)**

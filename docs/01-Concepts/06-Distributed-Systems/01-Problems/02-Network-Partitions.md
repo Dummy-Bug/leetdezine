@@ -1,5 +1,7 @@
-# Why Distributed Systems Are Hard — Network Partitions & Split-Brain
+# Network Partitions
 
-Already covered in depth during the Core Concepts — Network Partitions session.
+A network partition splits a distributed system into isolated groups that can no longer communicate. Nodes on each side must decide: keep accepting writes and risk divergence, or go read-only and preserve consistency.
 
-→ See [Network Partitions](../../02-Core-Concepts/10-Network-Partitions/01-Network-Partitions.md)
+This topic is covered in full under Core Concepts — Network Partitions.
+
+**[→ Read: Network Partitions](../../02-Core-Concepts/10-Network-Partitions/01-Network-Partitions.md)**

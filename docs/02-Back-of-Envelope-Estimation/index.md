@@ -5,7 +5,7 @@ hide:
   - toc
 ---
 
-<div class="cs-level-hero cs-lv1">
+<div class="cs-level-hero cs-lv-boe">
   <div class="cs-level-bg-num">~</div>
   <div class="cs-level-inner">
     <p class="cs-level-eyebrow">Estimation</p>

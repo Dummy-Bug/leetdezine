@@ -1,5 +1,7 @@
 # Idempotency
 
-Already covered in depth during the Messaging & Event-Driven session.
+An idempotent operation produces the same result no matter how many times you call it. In distributed systems, retries are unavoidable — idempotency is what makes them safe.
 
-→ See [Idempotency & DLQ](../../05-Messaging-and-Event-Driven/11-Message-Brokers/02-SQS/04-Idempotency-and-DLQ.md)
+This topic is covered in full under Concurrency & Locking.
+
+**[→ Read: Idempotency](../../02-Core-Concepts/08-Concurrency-Locking/07-Idempotency.md)**

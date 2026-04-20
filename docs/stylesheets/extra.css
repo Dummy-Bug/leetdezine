@@ -1160,10 +1160,12 @@ a.cs-level-link:hover .cs-level-count::after {
   display: block;
   text-decoration: none !important;
   border: 1px solid var(--border-default);
+  border-top: 3px solid var(--card-accent, var(--brand));
   border-radius: 14px;
   padding: 1.4rem 1.5rem;
   background: var(--surface-raised);
   background-image: none !important;
+  box-shadow: var(--shadow-sm);
   transition: transform 0.22s cubic-bezier(0.2, 0.9, 0.3, 1.2),
               border-color 0.2s ease,
               box-shadow 0.2s ease;
@@ -1222,13 +1224,21 @@ a.cs-level-link:hover .cs-level-count::after {
   font-variant-numeric: tabular-nums;
 }
 
-.cs-badge.foundation   { background: #dcfce7; color: #15803d; }
-.cs-badge.ascent       { background: #dbeafe; color: #1d4ed8; }
-.cs-badge.expedition   { background: #fef3c7; color: #a16207; }
-.cs-badge.summit       { background: #ffedd5; color: #c2410c; }
-.cs-badge.battleground { background: #fee2e2; color: #b91c1c; }
-.cs-badge.concepts     { background: #ede9fe; color: #6d28d9; }
-.cs-badge.messaging    { background: #fce7f3; color: #9d174d; }
+.cs-badge.foundation   { background: transparent; border: 1px solid rgba(21,128,61,0.3);  color: #15803d; transition: background 0.18s ease; }
+.cs-badge.ascent       { background: transparent; border: 1px solid rgba(29,78,216,0.3);  color: #1d4ed8; transition: background 0.18s ease; }
+.cs-badge.expedition   { background: transparent; border: 1px solid rgba(161,98,7,0.3);   color: #a16207; transition: background 0.18s ease; }
+.cs-badge.summit       { background: transparent; border: 1px solid rgba(194,65,12,0.3);  color: #c2410c; transition: background 0.18s ease; }
+.cs-badge.battleground { background: transparent; border: 1px solid rgba(185,28,28,0.3);  color: #b91c1c; transition: background 0.18s ease; }
+.cs-badge.concepts     { background: transparent; border: 1px solid rgba(109,40,217,0.3); color: #6d28d9; transition: background 0.18s ease; }
+.cs-badge.messaging    { background: transparent; border: 1px solid rgba(157,23,77,0.3);  color: #9d174d; transition: background 0.18s ease; }
+
+.cs-card:hover .cs-badge.foundation   { background: #dcfce7; }
+.cs-card:hover .cs-badge.ascent       { background: #dbeafe; }
+.cs-card:hover .cs-badge.expedition   { background: #fef3c7; }
+.cs-card:hover .cs-badge.summit       { background: #ffedd5; }
+.cs-card:hover .cs-badge.battleground { background: #fee2e2; }
+.cs-card:hover .cs-badge.concepts     { background: #ede9fe; }
+.cs-card:hover .cs-badge.messaging    { background: #fce7f3; }
 
 [data-md-color-scheme="slate"] .cs-badge.foundation   { background: rgba(22,163,74,0.15); color: #4ade80; }
 [data-md-color-scheme="slate"] .cs-badge.ascent       { background: rgba(37,99,235,0.15); color: #60a5fa; }
@@ -1236,16 +1246,22 @@ a.cs-level-link:hover .cs-level-count::after {
 [data-md-color-scheme="slate"] .cs-badge.summit       { background: rgba(234,88,12,0.15); color: #fb923c; }
 [data-md-color-scheme="slate"] .cs-badge.battleground { background: rgba(220,38,38,0.15); color: #f87171; }
 
-.cs-card[data-level="foundation"]   { --card-accent: #16a34a; }
-.cs-card[data-level="ascent"]       { --card-accent: #2563eb; }
-.cs-card[data-level="expedition"]   { --card-accent: #d97706; }
-.cs-card[data-level="summit"]       { --card-accent: #ea580c; }
-.cs-card[data-level="battleground"] { --card-accent: #dc2626; }
+.cs-card[data-level="foundation"],
+.cs-card:has(.cs-badge.foundation)   { --card-accent: #16a34a; }
+.cs-card[data-level="ascent"],
+.cs-card:has(.cs-badge.ascent)       { --card-accent: #2563eb; }
+.cs-card[data-level="expedition"],
+.cs-card:has(.cs-badge.expedition)   { --card-accent: #d97706; }
+.cs-card[data-level="summit"],
+.cs-card:has(.cs-badge.summit)       { --card-accent: #ea580c; }
+.cs-card[data-level="battleground"],
+.cs-card:has(.cs-badge.battleground) { --card-accent: #dc2626; }
+.cs-card:has(.cs-badge.concepts)     { --card-accent: #7c3aed; }
 
 .cs-card-title {
   font-size: 1.15rem;
   font-weight: 700;
-  color: var(--fg-primary);
+  color: var(--card-accent, var(--fg-primary));
   margin-bottom: 0.4rem;
   letter-spacing: -0.015em;
 }
@@ -1266,8 +1282,9 @@ a.cs-level-link:hover .cs-level-count::after {
 .cs-topics span {
   font-size: 0.7rem;
   font-weight: 500;
-  color: var(--fg-secondary);
-  background: var(--surface-1);
+  color: var(--card-accent, var(--fg-secondary));
+  background: color-mix(in srgb, var(--card-accent, var(--surface-1)) 10%, var(--surface-raised));
+  border-color: color-mix(in srgb, var(--card-accent, var(--border-default)) 20%, transparent);
   border: 1px solid var(--border-default);
   padding: 0.2rem 0.55rem;
   border-radius: 100px;
@@ -1275,8 +1292,8 @@ a.cs-level-link:hover .cs-level-count::after {
 }
 
 .cs-card:hover .cs-topics span {
-  background: var(--surface-0);
-  border-color: var(--border-strong);
+  background: color-mix(in srgb, var(--card-accent, var(--surface-1)) 18%, var(--surface-raised));
+  border-color: color-mix(in srgb, var(--card-accent, var(--border-strong)) 35%, transparent);
 }
 
 /* =============================================================
@@ -2077,6 +2094,19 @@ body:has(.cs-hero) .md-header__title .md-ellipsis {
 .cs-concept-c3 { --concept-color: #d97706; --concept-tint: #fef3c7; }
 .cs-concept-c4 { --concept-color: #059669; --concept-tint: #ecfdf5; }
 .cs-concept-c5 { --concept-color: #9d174d; --concept-tint: #fce7f3; }
+
+/* ─── Level index pages — constrain card grid ───────────── */
+.md-content__inner:has(.cs-level-hero) .cs-cards {
+  max-width: 800px;
+  margin: 1.5rem auto 0;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media (max-width: 720px) {
+  .md-content__inner:has(.cs-level-hero) .cs-cards {
+    grid-template-columns: 1fr;
+  }
+}
 
 /* ─── Concepts Index Grid ───────────────────────────────── */
 .cs-concepts-index-grid {

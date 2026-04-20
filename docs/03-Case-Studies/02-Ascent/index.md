@@ -20,7 +20,7 @@ hide:
   </div>
 </div>
 
-<p class="cs-path-label">Case Studies</p>
+
 
 <div class="cs-cards">
   <a class="cs-card" href="01-Notification-System/00-System-Overview/">

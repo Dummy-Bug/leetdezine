@@ -20,7 +20,7 @@ hide:
   </div>
 </div>
 
-<p class="cs-path-label">Case Studies</p>
+
 
 <div class="cs-cards">
   <a class="cs-card" href="02-KV-Store/01-FR/">

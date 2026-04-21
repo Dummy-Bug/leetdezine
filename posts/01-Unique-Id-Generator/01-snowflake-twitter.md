@@ -10,4 +10,4 @@ In 2010, Twitter needed to generate IDs fast enough to handle millions of tweets
 
 64 bits. Timestamp in the top 41, machine ID next, sequence last. Timestamp being first means: sort by ID = sort by time. Zero coordination. Zero SPOF. Discord and Instagram still use the same layout.
 
-Full breakdown → https://leetdezine.com
+Full breakdown → https://leetdezine.com?utm_source=twitter

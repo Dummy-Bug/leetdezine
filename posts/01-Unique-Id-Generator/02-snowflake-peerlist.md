@@ -10,4 +10,4 @@ The clever part: timestamp sits in the most significant bits, so sorting IDs num
 
 Discord, Instagram, and most large platforms copied this exact design.
 
-Full breakdown → https://leetdezine.com
+Full breakdown → https://leetdezine.com?utm_source=peerlist

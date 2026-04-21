@@ -9,15 +9,26 @@
 {% endblock %}
 
 {% block extrahead %}
+  {% if page.is_homepage %}
+    {% set _desc = "Interview-depth system design case studies. Every decision justified — requirements, estimates, tradeoffs, failure modes, observability." %}
+  {% elif page.meta and page.meta.description %}
+    {% set _desc = page.meta.description %}
+  {% elif page.title %}
+    {% set _desc = page.title ~ " — system design deep dive with diagrams, tradeoffs, failure modes, and interview-ready answers. Part of LeetDezine's distributed systems case study series." %}
+  {% else %}
+    {% set _desc = "Interview-depth system design case studies. Every decision justified — requirements, estimates, tradeoffs, failure modes, observability." %}
+  {% endif %}
+
+  <meta name="description" content="{{ _desc }}" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="LeetDezine" />
   <meta property="og:title" content="{% if page.is_homepage %}LeetDezine — System Design Deep Dives{% elif page.title %}{{ page.title }} — LeetDezine{% else %}LeetDezine — System Design Deep Dives{% endif %}" />
-  <meta property="og:description" content="Interview-depth system design case studies. Every decision justified — requirements, estimates, tradeoffs, failure modes, observability." />
+  <meta property="og:description" content="{{ _desc }}" />
   <meta property="og:image" content="https://leetdezine.com/assets/og-image.png" />
   <meta property="og:url" content="https://leetdezine.com/{{ page.url }}" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@leetdezine" />
   <meta name="twitter:title" content="{% if page.is_homepage %}LeetDezine — System Design Deep Dives{% elif page.title %}{{ page.title }} — LeetDezine{% else %}LeetDezine — System Design Deep Dives{% endif %}" />
-  <meta name="twitter:description" content="Interview-depth system design case studies. Every decision justified — requirements, estimates, tradeoffs, failure modes, observability." />
+  <meta name="twitter:description" content="{{ _desc }}" />
   <meta name="twitter:image" content="https://leetdezine.com/assets/og-image.png" />
 {% endblock %}

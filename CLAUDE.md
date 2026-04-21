@@ -66,7 +66,7 @@ Naming convention: `[number]-[topic]-[platform].md`
 
 ## Distribution Notes
 
-- **Twitter/X** — 2-tweet thread, attach diagram as image, 3 hashtags max
+- **Twitter/X** — 2-tweet thread, attach diagram as image, 3 hashtags max. Use `?utm_source=twitter` on all links — Twitter converts URLs to card previews so the raw URL is never visible.
 - **Dev.to** — full blog with Mermaid diagrams, free API available for future automation
 - **Peerlist** — manual only, no public API
 - **Medium** — skip for now, revisit when traction is there
@@ -114,6 +114,25 @@ Always generate a diagram where the topic has a visual component (bit layouts, f
 - **Peerlist** — Conversational, peer-to-peer. Expand on the tweet, tell the story briefly.
 - **Dev.to** — Technical but readable. Explain the why behind every decision. Headers + bullet points.
 - **Website** — Already written in docs/, this is the source of truth.
+
+## Twitter Hook Rules (critical — bad hooks kill reach)
+
+Tweet 1 must pass this test: **would an engineer stop scrolling for this specific line?**
+
+**The hook must be concrete and specific, not a vague tease.**
+
+Bad (generic, conveys nothing):
+> "One viral tweet can take down your URL shortener."
+
+Good (specific, implies knowledge, creates curiosity):
+> "Consistent hashing maps every short code to exactly one Redis node. That's also why one viral link can melt your cache."
+
+Rules:
+- Open with a technical fact, not a dramatic claim
+- The reader should learn something just from Tweet 1, even if they don't click
+- Tweet 2 delivers the counterintuitive fix or insight
+- No "here's why 🧵" — just say the thing
+- Hashtags at the end of Tweet 1, never mid-sentence
 
 ## Hashtags
 

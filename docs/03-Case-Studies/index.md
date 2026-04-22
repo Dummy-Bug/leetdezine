@@ -46,9 +46,9 @@ hide:
 
   <a href="04-Summit/" class="cs-concept-card cs-concept-c1">
     <div class="cs-concept-card-title">Summit <span style="opacity:0.5; font-weight:400; font-size:0.8em">● ● ● ● ○</span></div>
-    <div class="cs-concept-card-desc">Storage engine internals. Leaderless replication, quorum reads/writes, LSM tree internals, compaction strategies, gossip membership, conflict resolution.</div>
+    <div class="cs-concept-card-desc">Complex real-world systems. KV store internals, leaderless replication, LSM trees — and Netflix: transcoding pipeline, adaptive bitrate, CDN at scale, Elasticsearch, fault isolation.</div>
     <div class="cs-concept-chips">
-      <span>LSM Trees</span><span>Quorum W/R</span><span>Gossip Protocol</span><span>Vector Clocks</span>
+      <span>LSM Trees</span><span>Quorum W/R</span><span>HLS / DASH</span><span>CDN</span><span>Elasticsearch</span>
     </div>
     <div class="cs-concept-cta">Open level <span>→</span></div>
   </a>

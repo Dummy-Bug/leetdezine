@@ -1,6 +1,6 @@
-site_name: LeetDezine
+site_name: LeetDezine — System Design and Internals
 site_url: https://leetdezine.com
-site_description: System design case studies — built for interview depth, not interview breadth.
+site_description: System design concepts, distributed systems internals, and case studies — built for engineers who want to understand how things actually work.
 
 theme:
   name: material

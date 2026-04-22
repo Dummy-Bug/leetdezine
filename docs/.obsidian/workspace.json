@@ -1,0 +1,204 @@
+{
+  "main": {
+    "id": "5c7211109693109a",
+    "type": "split",
+    "children": [
+      {
+        "id": "ca73a66c18526c1a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "63ab62ef8ee1ca72",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "a6d1e9c7bd9fd108",
+    "type": "split",
+    "children": [
+      {
+        "id": "2d3d8ae7765b05a3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a40d4797e6e78d56",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "28e5f5c926afa5e4",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "1283675a7993bdf5",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "120b74aab4f058eb",
+    "type": "split",
+    "children": [
+      {
+        "id": "58679d0078edb7a9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "eb7ad0994c97e9e6",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "00-SDE-1/06-Storage.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for 06-Storage"
+            }
+          },
+          {
+            "id": "1398a7a5d348ae6c",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "00-SDE-1/06-Storage.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from 06-Storage"
+            }
+          },
+          {
+            "id": "ab84565046706c1f",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "17d03e243a8da215",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "b542a868e60ade8c",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "00-SDE-1/06-Storage.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of 06-Storage"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "63ab62ef8ee1ca72",
+  "lastOpenFiles": [
+    "00-SDE-2/11-Case-Studies.md",
+    "00-SDE-2/10-Interview-Framework.md",
+    "00-SDE-2/09-Supplementary-Topics.md",
+    "00-SDE-2/08-Infrastructure-and-Reliability.md",
+    "00-SDE-2/07-Distributed-Systems.md",
+    "00-SDE-2/06-Messaging-and-Event-Driven.md",
+    "00-SDE-2/05-Storage-and-Databases.md",
+    "00-SDE-2/04-Caching.md",
+    "00-SDE-2/03-Core-Concepts.md",
+    "00-SDE-2/02-Back-of-Envelope-Estimation.md",
+    "00-SDE-2/01-Networking-Fundamentals.md",
+    "00-SDE-2",
+    "untitled folder",
+    "00-SDE-1/05-Scalability-Basics.md",
+    "00-SDE-1/04-Caching.md",
+    "00-SDE-1/03-Databases.md",
+    "00-SDE-1/02-APIs.md",
+    "00-SDE-1/01-Networking.md",
+    "00-SDE-1/00-Syllabus.md"
+  ]
+}

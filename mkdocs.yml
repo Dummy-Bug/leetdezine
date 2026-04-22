@@ -947,6 +947,58 @@ nav:
         - Error Budget: 03-Case-Studies/04-Summit/01-KV-Store/05-Observability/05-Error-Budget.md
       - Final Architecture: 03-Case-Studies/04-Summit/01-KV-Store/06-Final-Design/01-Final-Architecture.md
 
+    - Netflix:
+      - Overview: 03-Case-Studies/04-Summit/02-Netflix/index.md
+      - "System Requirements":
+        - System Overview: 03-Case-Studies/04-Summit/02-Netflix/01-System-Requirements/01-System-Overview.md
+        - Functional Requirements: 03-Case-Studies/04-Summit/02-Netflix/01-System-Requirements/02-FR.md
+        - Bitrate: 03-Case-Studies/04-Summit/02-Netflix/01-System-Requirements/03-Bitrate.md
+        - Estimation: 03-Case-Studies/04-Summit/02-Netflix/01-System-Requirements/04-Estimation.md
+        - Non-Functional Requirements: 03-Case-Studies/04-Summit/02-Netflix/01-System-Requirements/05-NFR.md
+        - API — Home Feed: 03-Case-Studies/04-Summit/02-Netflix/01-System-Requirements/06-API-Home-Feed.md
+        - API — Stream: 03-Case-Studies/04-Summit/02-Netflix/01-System-Requirements/07-API-Stream.md
+        - API — Search: 03-Case-Studies/04-Summit/02-Netflix/01-System-Requirements/08-API-Search.md
+      - "Base Architecture":
+        - Homepage Browse: 03-Case-Studies/04-Summit/02-Netflix/02-Base-Architecture/01-Homepage-Browse.md
+        - Download: 03-Case-Studies/04-Summit/02-Netflix/02-Base-Architecture/02-Download.md
+        - Streaming: 03-Case-Studies/04-Summit/02-Netflix/02-Base-Architecture/03-Streaming.md
+        - Search: 03-Case-Studies/04-Summit/02-Netflix/02-Base-Architecture/04-Search.md
+      - Deep Dives:
+        - Transcoding:
+          - Transcoding: 03-Case-Studies/04-Summit/02-Netflix/03-Deep-Dives/01-Transcoding/01-Transcoding.md
+          - Adaptive Bitrate: 03-Case-Studies/04-Summit/02-Netflix/03-Deep-Dives/01-Transcoding/02-Adaptive-Bitrate.md
+        - Manifest And HLS:
+          - Manifest: 03-Case-Studies/04-Summit/02-Netflix/03-Deep-Dives/02-Manifest-And-HLS/01-Manifest.md
+          - HLS vs DASH: 03-Case-Studies/04-Summit/02-Netflix/03-Deep-Dives/02-Manifest-And-HLS/02-HLS-vs-DASH.md
+        - Caching:
+          - The Problem: 03-Case-Studies/04-Summit/02-Netflix/03-Deep-Dives/03-Caching/01-Problem.md
+          - CDN: 03-Case-Studies/04-Summit/02-Netflix/03-Deep-Dives/03-Caching/02-CDN.md
+          - Updated Architecture: 03-Case-Studies/04-Summit/02-Netflix/03-Deep-Dives/03-Caching/03-Updated-Architecture.md
+        - Database:
+          - Content Metadata DB: 03-Case-Studies/04-Summit/02-Netflix/03-Deep-Dives/04-DB/01-Content-Metadata-DB.md
+          - User Data DB: 03-Case-Studies/04-Summit/02-Netflix/03-Deep-Dives/04-DB/02-User-Data-DB.md
+        - Search:
+          - The Problem: 03-Case-Studies/04-Summit/02-Netflix/03-Deep-Dives/05-Search/01-Problem.md
+          - Elasticsearch: 03-Case-Studies/04-Summit/02-Netflix/03-Deep-Dives/05-Search/02-Elasticsearch.md
+          - Search Architecture: 03-Case-Studies/04-Summit/02-Netflix/03-Deep-Dives/05-Search/03-Search-Architecture.md
+        - Resume Playback:
+          - Write Pattern: 03-Case-Studies/04-Summit/02-Netflix/03-Deep-Dives/06-Resume-Playback/01-Write-Pattern.md
+          - Cross-Device Sync: 03-Case-Studies/04-Summit/02-Netflix/03-Deep-Dives/06-Resume-Playback/02-Cross-Device-Sync.md
+          - Updated Architecture: 03-Case-Studies/04-Summit/02-Netflix/03-Deep-Dives/06-Resume-Playback/03-Updated-Architecture.md
+        - Peak Traffic:
+          - Peak Traffic: 03-Case-Studies/04-Summit/02-Netflix/03-Deep-Dives/07-Peak-Traffic/01-Peak-Traffic.md
+        - Fault Isolation:
+          - Circuit Breaker: 03-Case-Studies/04-Summit/02-Netflix/03-Deep-Dives/09-Fault-Isolation/01-Circuit-Breaker.md
+          - Cache Failure: 03-Case-Studies/04-Summit/02-Netflix/03-Deep-Dives/09-Fault-Isolation/02-Cache-Failure.md
+          - CDN Failure: 03-Case-Studies/04-Summit/02-Netflix/03-Deep-Dives/09-Fault-Isolation/03-CDN-Failure.md
+      - "Observability":
+        - SLI / SLO Connection: 03-Case-Studies/04-Summit/02-Netflix/04-Observability/01-SLI-SLO-Connection.md
+        - Measuring Latency: 03-Case-Studies/04-Summit/02-Netflix/04-Observability/02-Measuring-Latency.md
+        - Measuring Availability: 03-Case-Studies/04-Summit/02-Netflix/04-Observability/03-Measuring-Availability.md
+        - Alerting: 03-Case-Studies/04-Summit/02-Netflix/04-Observability/04-Alerting.md
+        - Error Budget: 03-Case-Studies/04-Summit/02-Netflix/04-Observability/05-Error-Budget.md
+      - Final Architecture: 03-Case-Studies/04-Summit/02-Netflix/05-Final-Design/01-Final-Architecture.md
+
   - Battleground:
     - Overview: 03-Case-Studies/05-Battleground/index.md
     - WhatsApp:

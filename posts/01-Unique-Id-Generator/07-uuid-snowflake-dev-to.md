@@ -51,4 +51,4 @@ Here is the "just enough" breakdown of how those 64 bits are structured:
 
 **The Golden Rule:** You can't just "trim" a UUID to make it shorter. Trimming 128 bits down to 6 characters for a "short link" throws away 92 bits of entropy, turning a global guarantee into a collision nightmare.
 
-*For a full deep dive into the math and architecture behind distributed IDs, check out the case study at [LeetDezine](https://leetdezine.com/03-Case-Studies/01-Foundation/01-Unique-ID-Generator/)
+*For a full deep dive into the math and architecture behind distributed IDs, check out the case study at [LeetDezine](https://leetdezine.com/03-Case-Studies/01-Foundation/01-Unique-ID-Generator/?utm_source=devto)

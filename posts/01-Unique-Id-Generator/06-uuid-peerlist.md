@@ -13,4 +13,4 @@ For URL shorteners, the rule is simple: You cannot trim your way to uniqueness.
 You need something designed for the scale you're actually at. For most use cases, 36 bits is all you need to cover 50 billion URLs—but you have to structure those bits intentionally. 
 
 Full breakdown on why Snowflake > UUID for short IDs:
-https://leetdezine.com/03-Case-Studies/01-Foundation/01-Unique-ID-Generator/
+https://leetdezine.com/03-Case-Studies/01-Foundation/01-Unique-ID-Generator/?utm_source=peerlist

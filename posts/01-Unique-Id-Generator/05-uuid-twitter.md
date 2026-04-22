@@ -14,4 +14,4 @@ Even Base64-encoded, a UUID is 22 chars. Not a short link.
 
 Trim it to 6 chars and you throw away 92 bits of entropy. Two UUIDs can share the same first 36 bits—now you need the DB check you were trying to skip.
 
-Full breakdown → https://leetdezine.com
+Full breakdown → https://leetdezine.com?utm_source=twitter

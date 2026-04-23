@@ -1,5 +1,6 @@
 ---
 title: Unique ID Generator
+description: "How do you design a unique ID generator at scale? Covers Snowflake IDs, UUID tradeoffs, clock skew, and pre-generated key approaches used at Twitter and Discord."
 hide:
   - navigation
   - toc

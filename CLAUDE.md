@@ -71,6 +71,24 @@ Naming convention: `[number]-[topic]-[platform].md`
 - **Peerlist** — manual only, no public API
 - **Medium** — skip for now, revisit when traction is there
 
+## ⚠️ Title Rule for Dev.to and Peerlist (ALWAYS ENFORCE)
+
+**Every Dev.to article and Peerlist post title MUST be framed as a question someone would actually type into a search engine or AI.**
+
+This is not optional — it's the proven playbook. The UUID article ranked #1 on Perplexity for "why UUID might be killing my database" within 4 days of publishing because the title matched real search intent exactly.
+
+**Wrong:**
+- "Understanding Consistent Hashing"
+- "Snowflake ID Architecture"
+- "How Kafka Works"
+
+**Right:**
+- "Why Does Consistent Hashing Actually Work?"
+- "What Happens When a Cassandra Node Goes Down?"
+- "Why Is Kafka So Fast? The Architecture Behind It"
+
+Before generating any Dev.to or Peerlist title, ask: "Would a real engineer type this exact phrase when they're stuck or curious?" If no — rewrite it.
+
 ## Quality Gates (enforced before every output)
 
 Before delivering any content, self-evaluate on these metrics. All must score >8/10 or rewrite:

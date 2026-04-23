@@ -1,5 +1,6 @@
 ---
 title: WhatsApp
+description: "How to design WhatsApp's messaging system at scale. Covers WebSockets, message ordering, offline delivery, read receipts, hot partitions, and end-to-end architecture."
 hide:
   - navigation
   - toc

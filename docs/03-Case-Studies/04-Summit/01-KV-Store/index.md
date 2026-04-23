@@ -1,5 +1,6 @@
 ---
 title: Key-Value Store
+description: "How to design a distributed key-value store like DynamoDB or Cassandra. Covers consistent hashing, quorum reads/writes, LSM trees, gossip protocol, and conflict resolution."
 hide:
   - navigation
   - toc

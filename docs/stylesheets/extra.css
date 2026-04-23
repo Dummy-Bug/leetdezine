@@ -1347,13 +1347,10 @@ a.cs-level-link:hover .cs-level-count::after {
 
 .cs-card:hover {
   border-color: var(--card-accent, var(--brand));
-  box-shadow: 0 16px 40px rgba(0,0,0,0.12), 0 0 0 1px color-mix(in srgb, var(--card-accent, var(--brand)) 20%, transparent);
-  transform: translateY(-6px) scale(1.02) rotate(-1deg);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.10), 0 0 0 1px color-mix(in srgb, var(--card-accent, var(--brand)) 20%, transparent);
+  transform: translateY(-3px);
+  background: color-mix(in srgb, var(--card-accent, var(--brand)) 4%, var(--surface-raised));
   text-decoration: none !important;
-}
-
-.cs-card:nth-child(even):hover {
-  transform: translateY(-6px) scale(1.02) rotate(1deg);
 }
 
 .cs-card-elite {
@@ -1438,10 +1435,9 @@ a.cs-level-link:hover .cs-level-count::after {
   font-weight: 500;
   color: var(--card-accent, var(--fg-secondary));
   background: color-mix(in srgb, var(--card-accent, var(--surface-1)) 10%, var(--surface-raised));
-  border-color: color-mix(in srgb, var(--card-accent, var(--border-default)) 20%, transparent);
-  border: 1px solid var(--border-default);
-  padding: 0.2rem 0.55rem;
-  border-radius: 100px;
+  border: 1px solid color-mix(in srgb, var(--card-accent, var(--border-default)) 22%, transparent);
+  padding: 0.15rem 0.45rem;
+  border-radius: 4px;
   transition: background-color 0.15s ease, border-color 0.15s ease;
 }
 
@@ -1564,16 +1560,25 @@ a.cs-level-link:hover .cs-level-count::after {
   border-top: 1px solid var(--border-subtle);
   font-size: 0.78rem;
   font-weight: 600;
-  color: var(--fg-muted);
+  color: var(--card-accent, var(--fg-muted));
   display: flex;
   align-items: center;
   gap: 0.3rem;
   transition: color 0.15s ease, gap 0.2s ease;
 }
 
+.cs-card-cta span {
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
 .cs-card:hover .cs-card-cta {
-  color: var(--brand);
+  color: var(--card-accent, var(--brand));
   gap: 0.5rem;
+}
+
+.cs-card:hover .cs-card-cta span {
+  transform: translateX(4px);
 }
 
 /* =============================================================
@@ -1884,19 +1889,6 @@ body:has(.cs-hero) .md-header__title .md-ellipsis {
   background: color-mix(in srgb, var(--accent-amber-bg) 55%, transparent);
   opacity: 1 !important;
 }
-
-/* Per-tab colors — inactive shows tinted, active goes full via --tab-color */
-.md-tabs__link[href="."]                    { color: rgba(60,55,50,0.70);    --tab-color: #3c3732; }
-.md-tabs__link[href*="start-here"]          { color: rgba(155,110,40,0.72);  --tab-color: #9b6e28; }
-
-
-.md-tabs__link[href*="01-Concepts"]         { color: rgba(124,58,237,0.65);  --tab-color: #7c3aed; }
-.md-tabs__link[href*="02-Back-of-Envelope"] { color: rgba(8,145,178,0.65);   --tab-color: #0891b2; }
-.md-tabs__link[href*="01-Foundation"]       { color: rgba(22,163,74,0.65);   --tab-color: #16a34a; }
-.md-tabs__link[href*="02-Ascent"]           { color: rgba(37,99,235,0.65);   --tab-color: #2563eb; }
-.md-tabs__link[href*="03-Expedition"]       { color: rgba(217,119,6,0.65);   --tab-color: #d97706; }
-.md-tabs__link[href*="04-Summit"]           { color: rgba(234,88,12,0.65);   --tab-color: #ea580c; }
-.md-tabs__link[href*="05-Battleground"]     { color: rgba(220,38,38,0.65);   --tab-color: #dc2626; }
 
 /* Nav group separators */
 .md-tabs__item:has(> .md-tabs__link[href*="02-Back-of-Envelope"]),

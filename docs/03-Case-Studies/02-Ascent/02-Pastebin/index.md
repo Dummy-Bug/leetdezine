@@ -1,5 +1,6 @@
 ---
 title: Pastebin
+description: "How to design a Pastebin-like system at scale. Covers content-addressable storage, short code generation, expiration, and read-heavy caching strategies."
 hide:
   - navigation
   - toc

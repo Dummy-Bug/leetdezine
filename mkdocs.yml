@@ -10,7 +10,6 @@ theme:
     code: JetBrains Mono
   icon:
     repo: fontawesome/brands/github
-    logo: material/compass-outline
   palette:
     scheme: default
     primary: custom

@@ -2,7 +2,7 @@
 
 {% block htmltitle %}
   {% if page.is_homepage %}
-    <title>LeetDezine — System Design Deep Dives</title>
+    <title>LeetDezine — System Design and Internals</title>
   {% else %}
     <title>{{ page.title }} - LeetDezine</title>
   {% endif %}
@@ -11,13 +11,28 @@
 {% block extrahead %}
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="LeetDezine" />
-  <meta property="og:title" content="{% if page.is_homepage %}LeetDezine — System Design Deep Dives{% elif page.title %}{{ page.title }} — LeetDezine{% else %}LeetDezine — System Design Deep Dives{% endif %}" />
-  <meta property="og:description" content="Interview-depth system design case studies. Every decision justified — requirements, estimates, tradeoffs, failure modes, observability." />
+  <meta property="og:title" content="{% if page.is_homepage %}LeetDezine — System Design and Internals{% elif page.title %}{{ page.title }} — LeetDezine{% else %}LeetDezine — System Design and Internals{% endif %}" />
+  <meta property="og:description" content="System design case studies that go beyond the whiteboard. Deep dives into Kafka, rate limiters, distributed KV stores, and more — for engineers who want to actually understand." />
   <meta property="og:image" content="https://leetdezine.com/assets/og-image.png" />
   <meta property="og:url" content="https://leetdezine.com/{{ page.url }}" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@leetdezine" />
-  <meta name="twitter:title" content="{% if page.is_homepage %}LeetDezine — System Design Deep Dives{% elif page.title %}{{ page.title }} — LeetDezine{% else %}LeetDezine — System Design Deep Dives{% endif %}" />
-  <meta name="twitter:description" content="Interview-depth system design case studies. Every decision justified — requirements, estimates, tradeoffs, failure modes, observability." />
+  <meta name="twitter:title" content="{% if page.is_homepage %}LeetDezine — System Design and Internals{% elif page.title %}{{ page.title }} — LeetDezine{% else %}LeetDezine — System Design and Internals{% endif %}" />
+  <meta name="twitter:description" content="System design case studies that go beyond the whiteboard. Deep dives into Kafka, rate limiters, distributed KV stores, and more — for engineers who want to actually understand." />
   <meta name="twitter:image" content="https://leetdezine.com/assets/og-image.png" />
+{% endblock %}
+
+{% block scripts %}
+  {{ super() }}
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var el = document.querySelector('.md-header__title .md-ellipsis');
+      if (el && el.textContent.indexOf('—') !== -1) {
+        var parts = el.textContent.split('—');
+        el.innerHTML =
+          '<span class="ld-title-brand">' + parts[0].trim() + '</span>' +
+          '<span class="ld-title-sub">— ' + parts.slice(1).join('—').trim() + '</span>';
+      }
+    });
+  </script>
 {% endblock %}

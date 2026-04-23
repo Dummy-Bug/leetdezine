@@ -100,43 +100,7 @@ hide:
     <div class="cs-card-cta">Open topic <span>→</span></div>
   </a>
 
-  <a class="cs-card" href="09-Consistency-Models/00-Overview/">
-    <div class="cs-card-title">Consistency Models</div>
-    <div class="cs-card-desc">Strong, eventual, causal, and monotonic. What "up to date" means in a distributed system and when each model is the right call.</div>
-    <div class="cs-topics">
-      <span>Strong Consistency</span><span>Eventual</span><span>Causal</span><span>Monotonic</span>
-    </div>
-    <div class="cs-card-cta">Open topic <span>→</span></div>
-  </a>
-
-  <a class="cs-card" href="10-Network-Partitions/00-Overview/">
-    <div class="cs-card-title">Network Partitions</div>
-    <div class="cs-card-desc">What happens when nodes can't talk. Split brain, quorum decisions, and why partition handling defines your entire consistency strategy.</div>
-    <div class="cs-topics">
-      <span>Split Brain</span><span>Quorum</span><span>Fencing</span><span>Partition Recovery</span>
-    </div>
-    <div class="cs-card-cta">Open topic <span>→</span></div>
-  </a>
-
-  <a class="cs-card" href="11-CAP-Theorem/00-Overview/">
-    <div class="cs-card-title">CAP Theorem</div>
-    <div class="cs-card-desc">Consistency vs availability when a partition happens. CP vs AP — and why every distributed system is forced to choose during a split.</div>
-    <div class="cs-topics">
-      <span>CAP</span><span>CP Systems</span><span>AP Systems</span><span>Partition Tolerance</span>
-    </div>
-    <div class="cs-card-cta">Open topic <span>→</span></div>
-  </a>
-
-  <a class="cs-card" href="12-PACELC/00-Overview/">
-    <div class="cs-card-title">PACELC</div>
-    <div class="cs-card-desc">Extends CAP to cover normal operation. Even without a partition, you still trade latency against consistency — PACELC names that tradeoff.</div>
-    <div class="cs-topics">
-      <span>PACELC</span><span>Latency vs Consistency</span><span>PA/EL</span><span>PC/EC</span>
-    </div>
-    <div class="cs-card-cta">Open topic <span>→</span></div>
-  </a>
-
-  <a class="cs-card" href="13-Security/00-Overview/">
+  <a class="cs-card" href="09-Security/00-Overview/">
     <div class="cs-card-title">Security</div>
     <div class="cs-card-desc">Auth, JWT, encryption at rest and in transit. The security primitives that belong in every system design, not just the ones marked "sensitive."</div>
     <div class="cs-topics">
@@ -145,7 +109,7 @@ hide:
     <div class="cs-card-cta">Open topic <span>→</span></div>
   </a>
 
-  <a class="cs-card" href="14-State-Machines/00-Overview/">
+  <a class="cs-card" href="10-State-Machines/00-Overview/">
     <div class="cs-card-title">State Machines</div>
     <div class="cs-card-desc">Modeling order flows, workflows, and status transitions as explicit states. The pattern that makes async systems auditable and debuggable.</div>
     <div class="cs-topics">
@@ -154,7 +118,7 @@ hide:
     <div class="cs-card-cta">Open topic <span>→</span></div>
   </a>
 
-  <a class="cs-card" href="15-NFRs/00-Overview/">
+  <a class="cs-card" href="11-NFRs/00-Overview/">
     <div class="cs-card-title">NFRs</div>
     <div class="cs-card-desc">Non-functional requirements: the hidden constraints that shape every architecture decision before you draw a single box.</div>
     <div class="cs-topics">

@@ -1,5 +1,6 @@
 ---
 title: URL Shortener
+description: "How to design a scalable URL shortener like bit.ly. Covers 100M DAU estimation, Base62 encoding, KGS architecture, hot key problem, and Redis caching strategy."
 hide:
   - navigation
   - toc

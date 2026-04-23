@@ -1,5 +1,6 @@
 ---
 title: Netflix
+description: "How Netflix's architecture actually works. Covers video transcoding, adaptive bitrate streaming, CDN caching, Elasticsearch for search, and resume playback at scale."
 hide:
   - navigation
   - toc

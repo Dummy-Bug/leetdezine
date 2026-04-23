@@ -1,5 +1,6 @@
 ---
 title: "LeetDezine — System Design Deep Dives"
+description: "System design case studies built for engineers — Unique ID Generator, URL Shortener, WhatsApp, Netflix, and more. Deep dives into distributed systems internals."
 hide:
   - navigation
   - toc

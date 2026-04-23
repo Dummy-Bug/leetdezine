@@ -1,5 +1,6 @@
 ---
 title: Notification System
+description: "How to design a notification system that handles push, email, and SMS at scale. Covers APNs, FCM, message queues, throttling, and delivery guarantees."
 hide:
   - navigation
   - toc

@@ -35,9 +35,15 @@ hooks:
 plugins:
   - search:
       separator: '[\s\-\.]+'
+  - social
+  - git-revision-date-localized:
+      enable_creation_date: true
+      type: date
   - callouts
   - minify:
       minify_html: true
+      minify_js: true
+      minify_css: true
 
 not_in_nav: |
   03-Case-Studies/index.md

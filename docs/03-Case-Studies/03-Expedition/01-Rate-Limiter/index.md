@@ -1,5 +1,6 @@
 ---
 title: Rate Limiter
+description: "How to design a distributed rate limiter. Covers token bucket, sliding window, fixed window algorithms, Redis INCR, and multi-region rate limiting challenges."
 hide:
   - navigation
   - toc

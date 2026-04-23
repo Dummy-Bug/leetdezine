@@ -90,7 +90,7 @@ nav:
   - Home: index.md
   - "Start Here": start-here.md
 
-  - Concepts:
+  - "🧠 Concepts":
     - Overview: 01-Concepts/index.md
     - Fundamentals:
       - Overview: 01-Concepts/02-Fundamentals/index.md
@@ -638,7 +638,7 @@ nav:
         - Avro Basics: 01-Concepts/09-Data-Processing/04-Schema-Evolution/04-Avro-Basics.md
         - Avro Flow: 01-Concepts/09-Data-Processing/04-Schema-Evolution/05-Avro-Flow.md
 
-  - Back of Envelope:
+  - "📐 Estimation":
     - Overview: 02-Back-of-Envelope-Estimation/index.md
     - Latency Numbers: 02-Back-of-Envelope-Estimation/01-Latency-Numbers.md
     - Database Numbers: 02-Back-of-Envelope-Estimation/02-Database-Numbers.md
@@ -647,7 +647,7 @@ nav:
     - Bandwidth & Servers: 02-Back-of-Envelope-Estimation/05-Bandwidth-And-Servers.md
     - Estimation Framework: 02-Back-of-Envelope-Estimation/06-Estimation-Framework.md
 
-  - Foundation:
+  - "🟠 Foundation":
     - Overview: 03-Case-Studies/01-Foundation/index.md
     - Unique ID Generator:
       - Overview: 03-Case-Studies/01-Foundation/01-Unique-ID-Generator/index.md
@@ -744,7 +744,7 @@ nav:
       - Final Design:
         - Final Design: 03-Case-Studies/01-Foundation/02-URL-Shortener/04-Final-Design/01-Final-Design.md
 
-  - Ascent:
+  - "🟢 Ascent":
     - Overview: 03-Case-Studies/02-Ascent/index.md
     - Notification System:
       - Overview: 03-Case-Studies/02-Ascent/01-Notification-System/index.md
@@ -837,16 +837,15 @@ nav:
           - Distributed Workers: 03-Case-Studies/02-Ascent/02-Pastebin/02-Deep-Dives/07-Expiry-Cleanup-Job/03-Distributed-Workers.md
           - Watchdog: 03-Case-Studies/02-Ascent/02-Pastebin/02-Deep-Dives/07-Expiry-Cleanup-Job/04-Watchdog.md
           - Indexing Strategy: 03-Case-Studies/02-Ascent/02-Pastebin/02-Deep-Dives/07-Expiry-Cleanup-Job/05-Indexing-Strategy.md
-        - Updated Architecture:
-          - Updated Architecture: 03-Case-Studies/02-Ascent/02-Pastebin/02-Deep-Dives/08-Updated-Architecture/01-Updated-Architecture.md
       - "Observability":
         - SLI / SLO Connection: 03-Case-Studies/02-Ascent/02-Pastebin/03-Observability/01-SLI-SLO-Connection.md
         - Measuring Latency: 03-Case-Studies/02-Ascent/02-Pastebin/03-Observability/02-Measuring-Latency.md
         - Measuring Availability: 03-Case-Studies/02-Ascent/02-Pastebin/03-Observability/03-Measuring-Availability.md
         - Alerting: 03-Case-Studies/02-Ascent/02-Pastebin/03-Observability/04-Alerting.md
         - Error Budget: 03-Case-Studies/02-Ascent/02-Pastebin/03-Observability/05-Error-Budget.md
+      - Final Design: 03-Case-Studies/02-Ascent/02-Pastebin/04-Final-Design/01-Updated-Architecture.md
 
-  - Expedition:
+  - "🔵 Expedition":
     - Overview: 03-Case-Studies/03-Expedition/index.md
     - Rate Limiter:
       - Overview: 03-Case-Studies/03-Expedition/01-Rate-Limiter/index.md
@@ -884,7 +883,7 @@ nav:
         - Alerting: 03-Case-Studies/03-Expedition/01-Rate-Limiter/03-Observability/04-Alerting.md
         - Error Budget: 03-Case-Studies/03-Expedition/01-Rate-Limiter/03-Observability/05-Error-Budget.md
 
-  - Summit:
+  - "🟣 Summit":
     - Overview: 03-Case-Studies/04-Summit/index.md
     - KV Store:
       - Overview: 03-Case-Studies/04-Summit/01-KV-Store/index.md
@@ -997,7 +996,7 @@ nav:
         - Error Budget: 03-Case-Studies/04-Summit/02-Netflix/04-Observability/05-Error-Budget.md
       - Final Architecture: 03-Case-Studies/04-Summit/02-Netflix/05-Final-Design/01-Final-Architecture.md
 
-  - Battleground:
+  - "🌹 Battleground":
     - Overview: 03-Case-Studies/05-Battleground/index.md
     - WhatsApp:
       - Overview: 03-Case-Studies/05-Battleground/01-WhatsApp/index.md

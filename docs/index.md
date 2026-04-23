@@ -7,14 +7,29 @@ hide:
 
 <div class="cs-landing">
 
-<section class="cs-hero">
-  <div class="cs-hero-eyebrow">System Design · Deep Dives</div>
-  <h1 class="cs-hero-title">Design systems <span class="cs-hero-accent">beyond the whiteboard.</span></h1>
-  <p class="cs-hero-sub">Interview-depth case studies where every decision is justified. Built as a progression — start from first principles, climb to distributed systems.</p>
-</section>
+<div class="ph-window">
+  <div class="ph-window-bar" aria-hidden="true">
+    <div class="ph-window-controls">
+      <span class="ph-dot ph-dot-red"></span>
+      <span class="ph-dot ph-dot-yellow"></span>
+      <span class="ph-dot ph-dot-green"></span>
+    </div>
+    <span class="ph-window-title">leetdezine.com</span>
+  </div>
+  <div class="ph-window-body">
+    <section class="cs-hero">
+      <div class="cs-hero-eyebrow">Design Systems from First Principles</div>
+      <h1 class="cs-hero-title">Deep inside <span class="cs-hero-accent">modern infrastructure.</span></h1>
+      <p class="cs-hero-sub">Stop memorizing boxes and arrows. Start understanding how the systems actually work.</p>
+    </section>
+  </div>
+</div>
+
+<div class="cs-section-divider">
+  <span class="cs-section-divider-label">🧠 Concepts</span>
+</div>
 
 <section class="cs-concepts">
-  <div class="cs-concepts-label">Concepts</div>
   <div class="cs-concepts-grid">
     <a href="01-Concepts/02-Fundamentals/" class="cs-concept-card cs-concept-c1">
       <div class="cs-concept-card-title">Fundamentals</div>
@@ -56,7 +71,7 @@ hide:
 </section>
 
 <div class="cs-section-divider">
-  <span class="cs-section-divider-label">Back of Envelope Estimation</span>
+  <span class="cs-section-divider-label">📐 Back of Envelope Estimation</span>
 </div>
 
 <section class="cs-concepts">
@@ -81,7 +96,7 @@ hide:
 </section>
 
 <div class="cs-section-divider">
-  <span class="cs-section-divider-label">Apply the Concepts — Case Studies</span>
+  <span class="cs-section-divider-label">⚔️ Apply the Concepts — Case Studies</span>
 </div>
 
 <section class="cs-journey">
@@ -204,8 +219,5 @@ hide:
 
 </section>
 
-<section class="cs-footer-note">
-  <p>Each case study is a progression: <b>requirements → estimation → base architecture → deep dives → final design → observability</b>. Read top-to-bottom, or jump straight to the deep dive you want.</p>
-</section>
 
 </div>

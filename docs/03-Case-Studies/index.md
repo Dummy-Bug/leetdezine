@@ -5,12 +5,24 @@ hide:
   - toc
 ---
 
-<div class="cs-level-hero cs-lv-concepts">
-  <div class="cs-level-bg-num">CS</div>
-  <div class="cs-level-inner">
-    <p class="cs-level-eyebrow">Apply the Concepts</p>
-    <h1 class="cs-level-title">Case Studies</h1>
-    <p class="cs-level-sub">Interview-depth system design — every decision justified, every tradeoff explained. Pick your level and start building.</p>
+<div class="ph-window">
+  <div class="ph-window-bar" aria-hidden="true">
+    <div class="ph-window-controls">
+      <span class="ph-dot ph-dot-red"></span>
+      <span class="ph-dot ph-dot-yellow"></span>
+      <span class="ph-dot ph-dot-green"></span>
+    </div>
+    <span class="ph-window-title">leetdezine.com</span>
+  </div>
+  <div class="ph-window-body">
+    <div class="cs-level-hero cs-lv-concepts">
+      <div class="cs-level-bg-num">CS</div>
+      <div class="cs-level-inner">
+        <p class="cs-level-eyebrow">Apply the Concepts</p>
+        <h1 class="cs-level-title">Case Studies</h1>
+        <p class="cs-level-sub">Interview-depth system design — every decision justified, every tradeoff explained. Pick your level and start building.</p>
+      </div>
+    </div>
   </div>
 </div>
 

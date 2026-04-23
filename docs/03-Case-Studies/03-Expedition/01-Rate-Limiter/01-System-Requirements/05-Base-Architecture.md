@@ -3,14 +3,14 @@
 Every request the API gateway receives goes through this exact sequence before touching any backend service:
 
 ```mermaid
-flowchart LR
+graph LR
     U([User]) --> GW[API Gateway]
     GW --> RL[Rate Limiter Service]
     RL --> RC[(Redis Counter Store)]
     RL --> RDB[(Rule DB)]
-    RL -- ALLOW --> LB[Load Balancer]
+    RL -->|ALLOW| LB[Load Balancer]
     LB --> AS[App Server]
-    RL -- BLOCK 429 --> U
+    RL -->|429 Block| U
 ```
 
 ---

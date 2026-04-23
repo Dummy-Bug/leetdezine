@@ -22,12 +22,12 @@ The rate limiter is designed for **legitimate-looking abuse** — a real user ha
 Protection happens at multiple layers, each filtering different threat types:
 
 ```mermaid
-flowchart TD
-    I([Internet Traffic]) --> CF[Cloudflare / AWS Shield\nDDoS Protection Layer]
-    CF --> CDN[CDN Edge Nodes\nGeographic Filtering]
-    CDN --> GW[API Gateway\nConnection Pool Cap + TLS]
-    GW --> RL[Rate Limiter\nPer-user Per-endpoint Limits]
-    RL --> BE[Backend Services\nCircuit Breakers + Concurrency Limits]
+graph TD
+    I([Internet Traffic]) --> CF[Cloudflare / AWS Shield]
+    CF --> CDN[CDN Edge Nodes]
+    CDN --> GW[API Gateway]
+    GW --> RL[Rate Limiter]
+    RL --> BE[Backend Services]
 ```
 
 **Layer 1 — DDoS Protection (Cloudflare / AWS Shield)**

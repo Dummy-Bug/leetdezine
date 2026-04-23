@@ -24,4 +24,4 @@ Anyone can walk your entire URL database.
 
 KGS + Redis pool fixes both: random code order, local batch pre-fetch, Redis failure doesn't block creation.
 
-https://leetdezine.com/03-Case-Studies/01-Foundation/02-URL-Shortener/02-Deep-Dives/?utm_source=twitter
+https://leetdezine.com?utm_source=twitter

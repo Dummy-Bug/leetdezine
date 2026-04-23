@@ -396,10 +396,14 @@ body[data-md-color-scheme="slate"]::before {
 }
 
 .md-search__form:focus-within {
-  border-color: var(--brand);
+  border-color: var(--border-strong);
   background-color: var(--surface-0);
-  box-shadow: 0 0 0 3px var(--brand-bg);
+  box-shadow: none;
   max-width: 380px;
+}
+
+.md-search {
+  margin-left: auto;
 }
 
 .md-search__input {
@@ -447,6 +451,14 @@ body[data-md-color-scheme="slate"]::before {
   background-color: var(--brand-bg);
   padding: 0 2px;
   border-radius: 3px;
+}
+
+.md-search__output {
+  width: 380px;
+}
+
+.md-search__scrollwrap {
+  max-height: 60vh;
 }
 
 /* ─── Sidebar (Navigation) ──────────────────────────────── */

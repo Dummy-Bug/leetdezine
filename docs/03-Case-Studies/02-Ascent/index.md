@@ -4,18 +4,30 @@ hide:
   - toc
 ---
 
-<div class="cs-level-hero cs-lv2">
-  <div class="cs-level-bg-num">02</div>
-  <div class="cs-level-inner">
-    <p class="cs-level-eyebrow">Level 2 of 5</p>
-    <h1 class="cs-level-title">Ascent</h1>
-    <p class="cs-level-sub">Async pipelines, multi-channel delivery, Kafka fan-out, blob storage, expiry at scale.</p>
-    <div class="cs-level-dots">
-      <span class="cs-dot cs-dot-on"></span>
-      <span class="cs-dot cs-dot-on"></span>
-      <span class="cs-dot"></span>
-      <span class="cs-dot"></span>
-      <span class="cs-dot"></span>
+<div class="ph-window">
+  <div class="ph-window-bar" aria-hidden="true">
+    <div class="ph-window-controls">
+      <span class="ph-dot ph-dot-red"></span>
+      <span class="ph-dot ph-dot-yellow"></span>
+      <span class="ph-dot ph-dot-green"></span>
+    </div>
+    <span class="ph-window-title">leetdezine.com</span>
+  </div>
+  <div class="ph-window-body">
+    <div class="cs-level-hero cs-lv2">
+      <div class="cs-level-bg-num">02</div>
+      <div class="cs-level-inner">
+        <p class="cs-level-eyebrow">Level 2 of 5</p>
+        <h1 class="cs-level-title">Ascent</h1>
+        <p class="cs-level-sub">The simple answers stop here. Systems that span multiple services, fail in non-obvious ways, and demand you think about reliability — not just correctness.</p>
+        <div class="cs-level-dots">
+          <span class="cs-dot cs-dot-on"></span>
+          <span class="cs-dot cs-dot-on"></span>
+          <span class="cs-dot"></span>
+          <span class="cs-dot"></span>
+          <span class="cs-dot"></span>
+        </div>
+      </div>
     </div>
   </div>
 </div>

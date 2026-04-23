@@ -4,18 +4,30 @@ hide:
   - toc
 ---
 
-<div class="cs-level-hero cs-lv5">
-  <div class="cs-level-bg-num">05</div>
-  <div class="cs-level-inner">
-    <p class="cs-level-eyebrow">Level 5 of 5</p>
-    <h1 class="cs-level-title">Battleground</h1>
-    <p class="cs-level-sub">Advanced distributed systems — real-time at scale, ordering guarantees, offline delivery, connection storms.</p>
-    <div class="cs-level-dots">
-      <span class="cs-dot cs-dot-on"></span>
-      <span class="cs-dot cs-dot-on"></span>
-      <span class="cs-dot cs-dot-on"></span>
-      <span class="cs-dot cs-dot-on"></span>
-      <span class="cs-dot cs-dot-on"></span>
+<div class="ph-window">
+  <div class="ph-window-bar" aria-hidden="true">
+    <div class="ph-window-controls">
+      <span class="ph-dot ph-dot-red"></span>
+      <span class="ph-dot ph-dot-yellow"></span>
+      <span class="ph-dot ph-dot-green"></span>
+    </div>
+    <span class="ph-window-title">leetdezine.com</span>
+  </div>
+  <div class="ph-window-body">
+    <div class="cs-level-hero cs-lv5">
+      <div class="cs-level-bg-num">05</div>
+      <div class="cs-level-inner">
+        <p class="cs-level-eyebrow">Level 5 of 5</p>
+        <h1 class="cs-level-title">Battleground</h1>
+        <p class="cs-level-sub">This is what a FAANG staff-level interview actually looks like. Two billion users, zero tolerance for message loss, ordering guarantees under partition, and failure scenarios that don't have clean answers.</p>
+        <div class="cs-level-dots">
+          <span class="cs-dot cs-dot-on"></span>
+          <span class="cs-dot cs-dot-on"></span>
+          <span class="cs-dot cs-dot-on"></span>
+          <span class="cs-dot cs-dot-on"></span>
+          <span class="cs-dot cs-dot-on"></span>
+        </div>
+      </div>
     </div>
   </div>
 </div>

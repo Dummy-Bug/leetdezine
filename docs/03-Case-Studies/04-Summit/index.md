@@ -4,18 +4,30 @@ hide:
   - toc
 ---
 
-<div class="cs-level-hero cs-lv4">
-  <div class="cs-level-bg-num">04</div>
-  <div class="cs-level-inner">
-    <p class="cs-level-eyebrow">Level 4 of 5</p>
-    <h1 class="cs-level-title">Summit</h1>
-    <p class="cs-level-sub">Complex real-world systems — KV store internals, leaderless replication, LSM trees, and Netflix: transcoding pipeline, adaptive bitrate, CDN at scale, Elasticsearch, fault isolation.</p>
-    <div class="cs-level-dots">
-      <span class="cs-dot cs-dot-on"></span>
-      <span class="cs-dot cs-dot-on"></span>
-      <span class="cs-dot cs-dot-on"></span>
-      <span class="cs-dot cs-dot-on"></span>
-      <span class="cs-dot"></span>
+<div class="ph-window">
+  <div class="ph-window-bar" aria-hidden="true">
+    <div class="ph-window-controls">
+      <span class="ph-dot ph-dot-red"></span>
+      <span class="ph-dot ph-dot-yellow"></span>
+      <span class="ph-dot ph-dot-green"></span>
+    </div>
+    <span class="ph-window-title">leetdezine.com</span>
+  </div>
+  <div class="ph-window-body">
+    <div class="cs-level-hero cs-lv4">
+      <div class="cs-level-bg-num">04</div>
+      <div class="cs-level-inner">
+        <p class="cs-level-eyebrow">Level 4 of 5</p>
+        <h1 class="cs-level-title">Summit</h1>
+        <p class="cs-level-sub">The problems that trip up senior engineers. You're not just using databases and queues anymore — you're building them, or explaining exactly how they work under the hood.</p>
+        <div class="cs-level-dots">
+          <span class="cs-dot cs-dot-on"></span>
+          <span class="cs-dot cs-dot-on"></span>
+          <span class="cs-dot cs-dot-on"></span>
+          <span class="cs-dot cs-dot-on"></span>
+          <span class="cs-dot"></span>
+        </div>
+      </div>
     </div>
   </div>
 </div>

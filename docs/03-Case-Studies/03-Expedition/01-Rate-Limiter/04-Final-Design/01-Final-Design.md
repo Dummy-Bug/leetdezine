@@ -37,21 +37,21 @@ Algorithm unspecified             Sliding Window Counter (default)
 ## Full Request Flow
 
 ```mermaid
-flowchart TD
+graph TD
     I([Internet]) --> CF[Cloudflare / AWS Shield]
     CF --> CDN[CDN Edge]
-    CDN --> GW[API Gateway\nextract user_id + tier + ip]
+    CDN --> GW[API Gateway]
     GW --> LB[Load Balancer]
     LB --> RL1[Rate Limiter Node 1]
     LB --> RL2[Rate Limiter Node 2]
     LB --> RL3[Rate Limiter Node N]
-    RL1 & RL2 & RL3 --> LC[Layer 1\nLocal In-Process Counter]
-    LC -- under local limit --> RS[Redis Cluster\n20-30 nodes\nConsistent Hashing]
-    LC -- over local limit --> BLOCK([429 Block])
-    RS -- Lua Script\natomic check+incr --> ALLOW([Allow → Backend])
-    RS -- limit exceeded --> BLOCK
-    RL1 & RL2 & RL3 --> RH[Rule HashMap\nin-process cache]
-    RDB[(Rule DB\nPostgres)] -- poll every 30s --> RH
+    RL1 & RL2 & RL3 --> LC[Local In-Process Counter]
+    LC -->|under local limit| RS[Redis Cluster]
+    LC -->|over local limit| BLOCK([429 Block])
+    RS -->|Lua Script atomic check+incr| ALLOW([Allow - Backend])
+    RS -->|limit exceeded| BLOCK
+    RL1 & RL2 & RL3 --> RH[Rule HashMap]
+    RDB[(Rule DB - Postgres)] -->|poll every 30s| RH
 ```
 
 ---

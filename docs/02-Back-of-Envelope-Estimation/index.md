@@ -5,12 +5,21 @@ hide:
   - toc
 ---
 
-<div class="cs-level-hero cs-lv-boe">
-  <div class="cs-level-bg-num">~</div>
-  <div class="cs-level-inner">
-    <p class="cs-level-eyebrow">Estimation</p>
-    <h1 class="cs-level-title">Back of Envelope</h1>
-    <p class="cs-level-sub">The numbers every interviewer expects you to know — and a framework to use them under pressure.</p>
+<div class="ph-window">
+  <div class="ph-window-bar" aria-hidden="true">
+    <div class="ph-window-controls">
+      <span class="ph-dot ph-dot-red"></span>
+      <span class="ph-dot ph-dot-yellow"></span>
+      <span class="ph-dot ph-dot-green"></span>
+    </div>
+    <span class="ph-window-title">leetdezine.com</span>
+  </div>
+  <div class="ph-window-body">
+    <section class="cs-hero">
+      <div class="cs-hero-eyebrow">Estimation</div>
+      <h1 class="cs-hero-title">Back of <span class="cs-hero-accent">Envelope.</span></h1>
+      <p class="cs-hero-sub">The numbers every interviewer expects you to know — and a framework to use them under pressure.</p>
+    </section>
   </div>
 </div>
 

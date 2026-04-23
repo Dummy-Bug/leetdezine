@@ -5,12 +5,24 @@ hide:
   - toc
 ---
 
-<div class="cs-level-hero cs-lv-concepts">
+<div class="ph-window">
+  <div class="ph-window-bar" aria-hidden="true">
+    <div class="ph-window-controls">
+      <span class="ph-dot ph-dot-red"></span>
+      <span class="ph-dot ph-dot-yellow"></span>
+      <span class="ph-dot ph-dot-green"></span>
+    </div>
+    <span class="ph-window-title">leetdezine.com</span>
+  </div>
+  <div class="ph-window-body">
+    <div class="cs-level-hero cs-lv-concepts">
   <div class="cs-level-bg-num">02</div>
   <div class="cs-level-inner">
     <p class="cs-level-eyebrow">Concepts</p>
     <h1 class="cs-level-title">Core Concepts</h1>
     <p class="cs-level-sub">The vocabulary of distributed systems. Every architecture decision traces back to one of these.</p>
+  </div>
+</div>
   </div>
 </div>
 

@@ -159,4 +159,4 @@ The KGS + pool approach keeps the "no collision checks, no retries" guarantee wh
 
 The full URL shortener case study — including requirements, DB design, caching, peak traffic, and every failure mode — is at:
 
-→ https://leetdezine.com?utm_source=devto
+→ https://leetdezine.com/?utm_source=devto

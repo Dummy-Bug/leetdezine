@@ -1,4 +1,6 @@
 
+# Pastebin Architecture
+
 > [!info] The updated architecture reflects all deep dive decisions. Every component added here was justified by a specific problem — not added speculatively.
 
 ---

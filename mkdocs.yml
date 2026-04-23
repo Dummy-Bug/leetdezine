@@ -89,7 +89,7 @@ nav:
   - Home: index.md
   - "Start Here": start-here.md
 
-  - "🧠 Concepts":
+  - "Concepts":
     - Overview: 01-Concepts/index.md
     - Fundamentals:
       - Overview: 01-Concepts/02-Fundamentals/index.md
@@ -637,7 +637,7 @@ nav:
         - Avro Basics: 01-Concepts/09-Data-Processing/04-Schema-Evolution/04-Avro-Basics.md
         - Avro Flow: 01-Concepts/09-Data-Processing/04-Schema-Evolution/05-Avro-Flow.md
 
-  - "📐 Estimation":
+  - "Estimation":
     - Overview: 02-Back-of-Envelope-Estimation/index.md
     - Latency Numbers: 02-Back-of-Envelope-Estimation/01-Latency-Numbers.md
     - Database Numbers: 02-Back-of-Envelope-Estimation/02-Database-Numbers.md
@@ -646,7 +646,7 @@ nav:
     - Bandwidth & Servers: 02-Back-of-Envelope-Estimation/05-Bandwidth-And-Servers.md
     - Estimation Framework: 02-Back-of-Envelope-Estimation/06-Estimation-Framework.md
 
-  - "🟠 Foundation":
+  - "Foundation":
     - Overview: 03-Case-Studies/01-Foundation/index.md
     - Unique ID Generator:
       - Overview: 03-Case-Studies/01-Foundation/01-Unique-ID-Generator/index.md
@@ -674,8 +674,8 @@ nav:
         - Measuring Availability: 03-Case-Studies/01-Foundation/01-Unique-ID-Generator/03-Observability/03-Measuring-Availability.md
         - Alerting: 03-Case-Studies/01-Foundation/01-Unique-ID-Generator/03-Observability/04-Alerting.md
         - Error Budget: 03-Case-Studies/01-Foundation/01-Unique-ID-Generator/03-Observability/05-Error-Budget.md
-      - Final Design:
-        - Final Architecture: 03-Case-Studies/01-Foundation/01-Unique-ID-Generator/04-Final-Design/01-Final-Architecture.md
+      - Unique ID Generator Architecture:
+        - Unique ID Generator Architecture: 03-Case-Studies/01-Foundation/01-Unique-ID-Generator/04-Final-Design/01-Final-Architecture.md
     - URL Shortener:
       - Overview: 03-Case-Studies/01-Foundation/02-URL-Shortener/index.md
       - System Requirements:
@@ -740,10 +740,10 @@ nav:
         - Measuring Availability: 03-Case-Studies/01-Foundation/02-URL-Shortener/03-Observability/03-Measuring-Availability.md
         - Alerting: 03-Case-Studies/01-Foundation/02-URL-Shortener/03-Observability/04-Alerting.md
         - Error Budget: 03-Case-Studies/01-Foundation/02-URL-Shortener/03-Observability/05-Error-Budget.md
-      - Final Design:
-        - Final Design: 03-Case-Studies/01-Foundation/02-URL-Shortener/04-Final-Design/01-Final-Design.md
+      - URL Shortener Architecture:
+        - URL Shortener Architecture: 03-Case-Studies/01-Foundation/02-URL-Shortener/04-Final-Design/01-Final-Design.md
 
-  - "🟢 Ascent":
+  - "Ascent":
     - Overview: 03-Case-Studies/02-Ascent/index.md
     - Notification System:
       - Overview: 03-Case-Studies/02-Ascent/01-Notification-System/index.md
@@ -783,7 +783,7 @@ nav:
           - Kafka Down: 03-Case-Studies/02-Ascent/01-Notification-System/02-Deep-Dives/07-Fault-Isolation/03-Kafka-Down.md
           - Redis Down: 03-Case-Studies/02-Ascent/01-Notification-System/02-Deep-Dives/07-Fault-Isolation/04-Redis-Down.md
           - Scheduler Down: 03-Case-Studies/02-Ascent/01-Notification-System/02-Deep-Dives/07-Fault-Isolation/05-Scheduler-Down.md
-      - Final Design: 03-Case-Studies/02-Ascent/01-Notification-System/04-Final-Design/01-Final-Design.md
+      - Notification System Architecture: 03-Case-Studies/02-Ascent/01-Notification-System/04-Final-Design/01-Final-Design.md
       - "Observability":
         - SLI / SLO Connection: 03-Case-Studies/02-Ascent/01-Notification-System/03-Observability/01-SLI-SLO-Connection.md
         - Measuring Latency: 03-Case-Studies/02-Ascent/01-Notification-System/03-Observability/02-Measuring-Latency.md
@@ -842,9 +842,9 @@ nav:
         - Measuring Availability: 03-Case-Studies/02-Ascent/02-Pastebin/03-Observability/03-Measuring-Availability.md
         - Alerting: 03-Case-Studies/02-Ascent/02-Pastebin/03-Observability/04-Alerting.md
         - Error Budget: 03-Case-Studies/02-Ascent/02-Pastebin/03-Observability/05-Error-Budget.md
-      - Final Design: 03-Case-Studies/02-Ascent/02-Pastebin/04-Final-Design/01-Updated-Architecture.md
+      - Pastebin Architecture: 03-Case-Studies/02-Ascent/02-Pastebin/04-Final-Design/01-Updated-Architecture.md
 
-  - "🔵 Expedition":
+  - "Expedition":
     - Overview: 03-Case-Studies/03-Expedition/index.md
     - Rate Limiter:
       - Overview: 03-Case-Studies/03-Expedition/01-Rate-Limiter/index.md
@@ -874,7 +874,7 @@ nav:
           - Rule DB Down: 03-Case-Studies/03-Expedition/01-Rate-Limiter/02-Deep-Dives/04-Fault-Isolation/03-Rule-DB-Down.md
           - API Gateway Down: 03-Case-Studies/03-Expedition/01-Rate-Limiter/02-Deep-Dives/04-Fault-Isolation/04-API-Gateway-Down.md
           - DDoS And Defense Layers: 03-Case-Studies/03-Expedition/01-Rate-Limiter/02-Deep-Dives/04-Fault-Isolation/05-DDoS-And-Defense-Layers.md
-      - Final Design: 03-Case-Studies/03-Expedition/01-Rate-Limiter/04-Final-Design/01-Final-Design.md
+      - Rate Limiter Architecture: 03-Case-Studies/03-Expedition/01-Rate-Limiter/04-Final-Design/01-Final-Design.md
       - "Observability":
         - SLI / SLO Connection: 03-Case-Studies/03-Expedition/01-Rate-Limiter/03-Observability/01-SLI-SLO-Connection.md
         - Measuring Latency: 03-Case-Studies/03-Expedition/01-Rate-Limiter/03-Observability/02-Measuring-Latency.md
@@ -882,7 +882,7 @@ nav:
         - Alerting: 03-Case-Studies/03-Expedition/01-Rate-Limiter/03-Observability/04-Alerting.md
         - Error Budget: 03-Case-Studies/03-Expedition/01-Rate-Limiter/03-Observability/05-Error-Budget.md
 
-  - "🟣 Summit":
+  - "Summit":
     - Overview: 03-Case-Studies/04-Summit/index.md
     - KV Store:
       - Overview: 03-Case-Studies/04-Summit/01-KV-Store/index.md
@@ -941,7 +941,7 @@ nav:
         - Measuring Availability: 03-Case-Studies/04-Summit/01-KV-Store/05-Observability/03-Measuring-Availability.md
         - Alerting: 03-Case-Studies/04-Summit/01-KV-Store/05-Observability/04-Alerting.md
         - Error Budget: 03-Case-Studies/04-Summit/01-KV-Store/05-Observability/05-Error-Budget.md
-      - Final Architecture: 03-Case-Studies/04-Summit/01-KV-Store/06-Final-Design/01-Final-Architecture.md
+      - Key-Value Store Architecture: 03-Case-Studies/04-Summit/01-KV-Store/06-Final-Design/01-Final-Architecture.md
 
     - Netflix:
       - Overview: 03-Case-Studies/04-Summit/02-Netflix/index.md
@@ -993,9 +993,9 @@ nav:
         - Measuring Availability: 03-Case-Studies/04-Summit/02-Netflix/04-Observability/03-Measuring-Availability.md
         - Alerting: 03-Case-Studies/04-Summit/02-Netflix/04-Observability/04-Alerting.md
         - Error Budget: 03-Case-Studies/04-Summit/02-Netflix/04-Observability/05-Error-Budget.md
-      - Final Architecture: 03-Case-Studies/04-Summit/02-Netflix/05-Final-Design/01-Final-Architecture.md
+      - Netflix Architecture: 03-Case-Studies/04-Summit/02-Netflix/05-Final-Design/01-Final-Architecture.md
 
-  - "🌹 Battleground":
+  - "Battleground":
     - Overview: 03-Case-Studies/05-Battleground/index.md
     - WhatsApp:
       - Overview: 03-Case-Studies/05-Battleground/01-WhatsApp/index.md
@@ -1118,7 +1118,7 @@ nav:
           - Redis Failure — Inbox: 03-Case-Studies/05-Battleground/01-WhatsApp/04-Deep-Dives/XX-Fault-Isolation/03-Redis-Failure/01-Inbox-Redis-Failure.md
           - Redis Failure — Profile Cache: 03-Case-Studies/05-Battleground/01-WhatsApp/04-Deep-Dives/XX-Fault-Isolation/03-Redis-Failure/02-Profile-Cache-Failure.md
           - Redis Failure — Other: 03-Case-Studies/05-Battleground/01-WhatsApp/04-Deep-Dives/XX-Fault-Isolation/03-Redis-Failure/03-Other-Redis-Failures.md
-      - Final Architecture: 03-Case-Studies/05-Battleground/01-WhatsApp/06-Final-Design/01-Final-Architecture.md
+      - WhatsApp Architecture: 03-Case-Studies/05-Battleground/01-WhatsApp/06-Final-Design/01-Final-Architecture.md
       - "Observability":
         - SLI / SLO Connection: 03-Case-Studies/05-Battleground/01-WhatsApp/05-Observability/01-SLI-SLO-Connection.md
         - Measuring Latency: 03-Case-Studies/05-Battleground/01-WhatsApp/05-Observability/02-Measuring-Latency.md

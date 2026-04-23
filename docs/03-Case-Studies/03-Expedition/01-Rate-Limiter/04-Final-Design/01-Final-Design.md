@@ -1,4 +1,6 @@
 
+# Rate Limiter Architecture
+
 ## Final Architecture
 
 This is the base architecture evolved through all deep dive decisions. Every component here exists because a specific problem demanded it.

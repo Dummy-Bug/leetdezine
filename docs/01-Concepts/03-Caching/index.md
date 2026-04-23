@@ -10,7 +10,7 @@ hide:
   <div class="cs-level-inner">
     <p class="cs-level-eyebrow">Concepts</p>
     <h1 class="cs-level-title">Caching</h1>
-    <p class="cs-level-sub">How systems remember expensive answers. Every caching decision is a tradeoff between freshness, memory, and complexity.</p>
+    <p class="cs-level-sub">The fastest database query is one that never hits the database. Everything here is about making that work reliably at scale.</p>
   </div>
 </div>
 
@@ -18,25 +18,25 @@ hide:
 
   <a class="cs-card" href="01-Fundamentals/">
     <div class="cs-card-title">Fundamentals</div>
-    <div class="cs-card-desc">What a cache is, why it exists, and where it sits in a system. The mental model before you touch any strategy.</div>
+    <div class="cs-card-desc">What a cache is, where it lives, and the core trade-offs between hit rate, freshness, and memory cost.</div>
     <div class="cs-topics">
-      <span>Cache Hit</span><span>Cache Miss</span><span>Hit Rate</span><span>Cache Aside</span>
+      <span>Hit Rate</span><span>Cache Miss</span><span>Freshness</span><span>Memory Cost</span>
     </div>
     <div class="cs-card-cta">Open topic <span>→</span></div>
   </a>
 
   <a class="cs-card" href="02-Writing-Strategies/00-Overview/">
     <div class="cs-card-title">Writing Strategies</div>
-    <div class="cs-card-desc">Read-through, write-through, write-back, write-around. When data changes, these strategies decide which copy gets updated first.</div>
+    <div class="cs-card-desc">Read-through, write-through, write-behind, and write-around — how data gets into the cache and what breaks when it doesn't.</div>
     <div class="cs-topics">
-      <span>Write-Through</span><span>Write-Back</span><span>Read-Through</span><span>Write-Around</span>
+      <span>Write-Through</span><span>Write-Behind</span><span>Read-Through</span><span>Write-Around</span>
     </div>
     <div class="cs-card-cta">Open topic <span>→</span></div>
   </a>
 
   <a class="cs-card" href="03-Eviction-Policies/00-Overview/">
     <div class="cs-card-title">Eviction Policies</div>
-    <div class="cs-card-desc">LRU, LFU, FIFO, TTL. When the cache is full, eviction policy decides what gets thrown out — and getting it wrong is a performance cliff.</div>
+    <div class="cs-card-desc">LRU, LFU, FIFO, and TTL. What gets evicted when memory fills up and how to pick the right policy for your workload.</div>
     <div class="cs-topics">
       <span>LRU</span><span>LFU</span><span>FIFO</span><span>TTL</span>
     </div>
@@ -45,7 +45,7 @@ hide:
 
   <a class="cs-card" href="04-Population-Strategies/00-Overview/">
     <div class="cs-card-title">Population Strategies</div>
-    <div class="cs-card-desc">Refresh-ahead and cache warming. How you pre-fill a cache so users never hit a cold miss on a hot path.</div>
+    <div class="cs-card-desc">Refresh-ahead and cache warming — how to keep caches populated without a thundering herd on every cold start.</div>
     <div class="cs-topics">
       <span>Refresh-Ahead</span><span>Cache Warming</span><span>Lazy Loading</span><span>Pre-Population</span>
     </div>
@@ -54,7 +54,7 @@ hide:
 
   <a class="cs-card" href="05-Cache-Invalidation/00-Overview/">
     <div class="cs-card-title">Cache Invalidation</div>
-    <div class="cs-card-desc">TTL, event-driven, write-through, versioning, stale-while-revalidate. The hardest problem in caching — keeping the cache honest without killing performance.</div>
+    <div class="cs-card-desc">TTL-based, event-driven, write-through, and versioning strategies. The hardest problem in caching is knowing when to throw data away.</div>
     <div class="cs-topics">
       <span>TTL</span><span>Event-Driven</span><span>Versioning</span><span>Stale-While-Revalidate</span>
     </div>
@@ -63,25 +63,25 @@ hide:
 
   <a class="cs-card" href="06-Distributed-Caching/00-Overview/">
     <div class="cs-card-title">Distributed Caching</div>
-    <div class="cs-card-desc">Why a single cache node fails at scale. Consistent hashing, cache coherence, replication, two-level caching, and node failure handling.</div>
+    <div class="cs-card-desc">Consistent hashing, cache coherence, replication, two-level caching, and what happens when a cache node dies mid-traffic.</div>
     <div class="cs-topics">
-      <span>Consistent Hashing</span><span>Cache Coherence</span><span>Replication</span><span>Two-Level Cache</span>
+      <span>Consistent Hashing</span><span>Cache Coherence</span><span>Replication</span><span>Node Failure</span>
     </div>
     <div class="cs-card-cta">Open topic <span>→</span></div>
   </a>
 
   <a class="cs-card" href="07-Cache-Problems/00-Overview/">
     <div class="cs-card-title">Cache Problems</div>
-    <div class="cs-card-desc">Stampede, cold start, penetration, avalanche. The failure modes that hit hardest when traffic spikes or the cache restarts.</div>
+    <div class="cs-card-desc">Cache stampede, cold start, penetration, and avalanche — the failure modes that turn a cache from a fix into the cause of the outage.</div>
     <div class="cs-topics">
-      <span>Cache Stampede</span><span>Cold Start</span><span>Penetration</span><span>Avalanche</span>
+      <span>Stampede</span><span>Cold Start</span><span>Penetration</span><span>Avalanche</span>
     </div>
     <div class="cs-card-cta">Open topic <span>→</span></div>
   </a>
 
   <a class="cs-card" href="08-Redis/01-Data-Structures/">
     <div class="cs-card-title">Redis</div>
-    <div class="cs-card-desc">Data structures, patterns, persistence, streams, and the single-threaded event loop. Redis internals that explain why it's fast and where it breaks.</div>
+    <div class="cs-card-desc">Data structures, patterns, persistence options, streams, and the single-threaded event loop that makes Redis predictably fast.</div>
     <div class="cs-topics">
       <span>Data Structures</span><span>Persistence</span><span>Streams</span><span>Event Loop</span>
     </div>

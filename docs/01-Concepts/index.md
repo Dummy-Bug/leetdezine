@@ -17,8 +17,8 @@ hide:
 
 <div class="cs-concepts-grid cs-concepts-index-grid">
 
-  <a href="02-Core-Concepts/" class="cs-concept-card cs-concept-c1">
-    <div class="cs-concept-card-title">Core Concepts</div>
+  <a href="02-Fundamentals/" class="cs-concept-card cs-concept-c1">
+    <div class="cs-concept-card-title">Fundamentals</div>
     <div class="cs-concept-card-desc">Availability, reliability, scalability, CAP theorem, consistency models, fault tolerance, PACELC, concurrency, and NFRs.</div>
     <div class="cs-concept-chips">
       <span>CAP Theorem</span><span>PACELC</span><span>Consistency Models</span><span>Fault Tolerance</span>
@@ -26,25 +26,7 @@ hide:
     <div class="cs-concept-cta">Open topic <span>→</span></div>
   </a>
 
-  <a href="04-Storage-and-Databases/" class="cs-concept-card cs-concept-c2">
-    <div class="cs-concept-card-title">Storage & Databases</div>
-    <div class="cs-concept-card-desc">ACID, transaction isolation, indexing, sharding, replication, database types — Redis, Cassandra, DynamoDB, MongoDB, Elasticsearch.</div>
-    <div class="cs-concept-chips">
-      <span>ACID</span><span>Sharding</span><span>Replication</span><span>Indexing</span>
-    </div>
-    <div class="cs-concept-cta">Open topic <span>→</span></div>
-  </a>
-
-  <a href="06-Distributed-Systems/" class="cs-concept-card cs-concept-c4">
-    <div class="cs-concept-card-title">Distributed Systems</div>
-    <div class="cs-concept-card-desc">Network uncertainty, consensus, clocks, CRDTs, failure detection, Merkle trees, and coordination services.</div>
-    <div class="cs-concept-chips">
-      <span>Consensus</span><span>Raft</span><span>CRDTs</span><span>Failure Detection</span>
-    </div>
-    <div class="cs-concept-cta">Open topic <span>→</span></div>
-  </a>
-
-  <a href="03-Caching/" class="cs-concept-card cs-concept-c3">
+  <a href="03-Caching/" class="cs-concept-card cs-concept-c2">
     <div class="cs-concept-card-title">Caching</div>
     <div class="cs-concept-card-desc">Write strategies, eviction policies, cache invalidation, distributed caching, Redis internals, and common cache failure patterns.</div>
     <div class="cs-concept-chips">
@@ -53,11 +35,65 @@ hide:
     <div class="cs-concept-cta">Open topic <span>→</span></div>
   </a>
 
-  <a href="05-Messaging-and-Event-Driven/" class="cs-concept-card cs-concept-c5">
-    <div class="cs-concept-card-title">Messaging & Event Driven</div>
-    <div class="cs-concept-card-desc">Kafka internals, SQS, RabbitMQ, event sourcing, CQRS, outbox pattern, stream processing, batch processing, and schema evolution.</div>
+  <a href="04-Storage-and-Databases/" class="cs-concept-card cs-concept-c3">
+    <div class="cs-concept-card-title">Storage & Databases</div>
+    <div class="cs-concept-card-desc">ACID, transaction isolation, indexing, CDC, pagination, connection pooling, and read-write splitting.</div>
     <div class="cs-concept-chips">
-      <span>Kafka</span><span>SQS</span><span>Event Sourcing</span><span>CQRS</span>
+      <span>ACID</span><span>Indexing</span><span>CDC</span><span>Connection Pooling</span>
+    </div>
+    <div class="cs-concept-cta">Open topic <span>→</span></div>
+  </a>
+
+  <a href="05-Database-Types/" class="cs-concept-card cs-concept-c4">
+    <div class="cs-concept-card-title">Database Types</div>
+    <div class="cs-concept-card-desc">Key-value, document, column-family, search engines, graph databases, blob storage, NewSQL, OLTP vs OLAP, and choosing the right DB.</div>
+    <div class="cs-concept-chips">
+      <span>Key-Value</span><span>Column-Family</span><span>OLTP vs OLAP</span><span>NewSQL</span>
+    </div>
+    <div class="cs-concept-cta">Open topic <span>→</span></div>
+  </a>
+
+  <a href="06-Messaging/" class="cs-concept-card cs-concept-c5">
+    <div class="cs-concept-card-title">Messaging</div>
+    <div class="cs-concept-card-desc">Message queue fundamentals, SQS internals, and RabbitMQ — delivery guarantees, routing, and failure handling.</div>
+    <div class="cs-concept-chips">
+      <span>SQS</span><span>RabbitMQ</span><span>Delivery Guarantees</span><span>Queues</span>
+    </div>
+    <div class="cs-concept-cta">Open topic <span>→</span></div>
+  </a>
+
+  <a href="07-Event-Broker/" class="cs-concept-card cs-concept-c6">
+    <div class="cs-concept-card-title">Event Broker</div>
+    <div class="cs-concept-card-desc">Kafka architecture, producers, consumers, advanced internals, backpressure, and Kafka vs SQS vs RabbitMQ comparison.</div>
+    <div class="cs-concept-chips">
+      <span>Kafka</span><span>Producers</span><span>Consumers</span><span>Backpressure</span>
+    </div>
+    <div class="cs-concept-cta">Open topic <span>→</span></div>
+  </a>
+
+  <a href="08-Event-Driven-Patterns/" class="cs-concept-card cs-concept-c7">
+    <div class="cs-concept-card-title">Event-Driven Patterns</div>
+    <div class="cs-concept-card-desc">Event sourcing, CQRS, outbox pattern, CDC, and combining inbox + outbox for reliable event delivery.</div>
+    <div class="cs-concept-chips">
+      <span>Event Sourcing</span><span>CQRS</span><span>Outbox Pattern</span><span>CDC</span>
+    </div>
+    <div class="cs-concept-cta">Open topic <span>→</span></div>
+  </a>
+
+  <a href="09-Data-Processing/" class="cs-concept-card cs-concept-c8">
+    <div class="cs-concept-card-title">Data Processing</div>
+    <div class="cs-concept-card-desc">Stream processing, batch processing, Lambda and Kappa architectures, and schema evolution in data pipelines.</div>
+    <div class="cs-concept-chips">
+      <span>Stream Processing</span><span>Batch Processing</span><span>Lambda Architecture</span><span>Schema Evolution</span>
+    </div>
+    <div class="cs-concept-cta">Open topic <span>→</span></div>
+  </a>
+
+  <a href="10-Distributed-Systems/" class="cs-concept-card cs-concept-c9">
+    <div class="cs-concept-card-title">Distributed Systems</div>
+    <div class="cs-concept-card-desc">Network uncertainty, consensus, clocks, CRDTs, failure detection, Merkle trees, replication, sharding, and coordination services.</div>
+    <div class="cs-concept-chips">
+      <span>Consensus</span><span>CRDTs</span><span>Failure Detection</span><span>Sharding</span>
     </div>
     <div class="cs-concept-cta">Open topic <span>→</span></div>
   </a>

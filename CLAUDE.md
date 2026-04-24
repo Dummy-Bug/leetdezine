@@ -35,7 +35,7 @@ No API keys. No scripts. No cost beyond Claude Code Pro subscription.
 ## Content Funnel Strategy
 
 ```
-Twitter/Peerlist (daily or every 2 days) → Dev.to blog (weekly/bi-weekly) → Website
+Twitter/Peerlist (3x/week) → Dev.to blog (2x/week) → Website
 ```
 
 Content is built around **specific topics**, not entire case studies:
@@ -67,7 +67,7 @@ Naming convention: `[number]-[topic]-[platform].md`
 ## Distribution Notes
 
 - **Twitter/X** — 2-tweet thread, attach diagram as image, 3 hashtags max
-- **Dev.to** — full blog with Mermaid diagrams, free API available for future automation
+- **Dev.to** — full blog with Mermaid diagrams, 2x/week cadence, free API available for future automation
 - **Peerlist** — manual only, no public API
 - **Medium** — skip for now, revisit when traction is there
 

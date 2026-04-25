@@ -38,6 +38,3 @@ Node A comes back → sees Term 2 > Term 1 → immediately steps down
 
 ---
 
-→ See [[02-Leader-Election]] for how Raft picks a leader
-→ See [[03-Term-Numbers]] for how term numbers prevent the ghost leader problem
-→ See [[05-Log-Replication-Failures]] for how Raft handles crashes during a write

@@ -229,7 +229,6 @@ Option 2 — Use DECIMAL/NUMERIC type
 
 > [!important] Applies directly to: Payment System, Banking Ledger, Online Auction, Stock Broker case studies. Any time you're designing a schema for a financial system, this is the first thing to get right.
 
-For the full explanation of why binary floating point fails and how IEEE 754 works under the hood, see: `[[Fundamentals/Binary Number Rounding.md]]`
 
 ---
 

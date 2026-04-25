@@ -1,4 +1,4 @@
-# Post 2 — Redis INCR vs KGS
+# Post 2 — Why Is Redis INCR a Bad Fit for a Public URL Shortener?
 # Platform: Peerlist
 # Day: Day 2
 
@@ -18,4 +18,4 @@ The second problem: Redis INCR makes Redis a hard dependency on every creation r
 
 Redis INCR is the right call for internal tools. KGS + pool is the right call for a public shortener.
 
-Full breakdown: https://leetdezine.com/03-Case-Studies/01-Foundation/02-URL-Shortener/02-Deep-Dives/?utm_source=peerlist
+Full breakdown: https://leetdezine.com?utm_source=peerlist

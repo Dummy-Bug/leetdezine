@@ -77,19 +77,19 @@ hide:
 
 <section class="cs-concepts">
   <div class="cs-concepts-grid cs-concepts-grid-wide">
-    <a href="02-Back-of-Envelope-Estimation/" class="cs-concept-card cs-concept-c4">
+    <a href="back-of-envelope/" class="cs-concept-card cs-concept-c4">
       <div class="cs-concept-card-title">Latency Numbers</div>
       <div class="cs-concept-card-desc">Every number you need to know — memory, disk, network.</div>
     </a>
-    <a href="02-Back-of-Envelope-Estimation/" class="cs-concept-card cs-concept-c4">
+    <a href="back-of-envelope/" class="cs-concept-card cs-concept-c4">
       <div class="cs-concept-card-title">Database Numbers</div>
       <div class="cs-concept-card-desc">Read/write throughput, storage sizes, query costs.</div>
     </a>
-    <a href="02-Back-of-Envelope-Estimation/" class="cs-concept-card cs-concept-c4">
+    <a href="back-of-envelope/" class="cs-concept-card cs-concept-c4">
       <div class="cs-concept-card-title">Message Streams</div>
       <div class="cs-concept-card-desc">Kafka throughput, queue sizing, consumer lag.</div>
     </a>
-    <a href="02-Back-of-Envelope-Estimation/" class="cs-concept-card cs-concept-c4">
+    <a href="back-of-envelope/" class="cs-concept-card cs-concept-c4">
       <div class="cs-concept-card-title">Estimation Framework</div>
       <div class="cs-concept-card-desc">A reusable framework for any system design estimation.</div>
     </a>

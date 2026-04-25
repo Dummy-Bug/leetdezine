@@ -1,7 +1,7 @@
 # 4 URL Shortener Design Traps That Look Correct Until They Break
 
 # Platform: DEV.to
-# Canonical URL: https://leetdezine.com/03-Case-Studies/01-Foundation/02-URL-Shortener/?utm_source=devto
+# Canonical URL: https://leetdezine.com/?utm_source=devto
 # Tags: systemdesign, distributedsystems, backend, programming
 
 ---
@@ -125,4 +125,4 @@ The way to catch these in an interview isn't to memorize solutions. It's to ask 
 
 The full URL shortener case study walks through every deep dive in this sequence — requirements, estimation, base architecture, then each failure mode in detail:
 
-→ https://leetdezine.com/03-Case-Studies/01-Foundation/02-URL-Shortener/?utm_source=devto
+→ https://leetdezine.com?utm_source=devto

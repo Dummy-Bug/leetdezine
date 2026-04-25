@@ -39,6 +39,16 @@ plugins:
   - git-revision-date-localized:
       enable_creation_date: true
       type: date
+      exclude:
+        - rate-limiter/*
+        - back-of-envelope/*
+        - unique-id-generator/*
+        - url-shortener/*
+        - notification-system/*
+        - pastebin/*
+        - kv-store/*
+        - netflix/*
+        - whatsapp/*
   - callouts
   - minify:
       minify_html: true
@@ -644,490 +654,490 @@ nav:
         - Avro Flow: 01-Concepts/09-Data-Processing/04-Schema-Evolution/05-Avro-Flow.md
 
   - "Estimation":
-    - Overview: 02-Back-of-Envelope-Estimation/index.md
-    - Latency Numbers: 02-Back-of-Envelope-Estimation/01-Latency-Numbers.md
-    - Database Numbers: 02-Back-of-Envelope-Estimation/02-Database-Numbers.md
-    - Message Streams: 02-Back-of-Envelope-Estimation/03-Message-Streams.md
-    - Data Sizes: 02-Back-of-Envelope-Estimation/04-Data-Sizes.md
-    - Bandwidth & Servers: 02-Back-of-Envelope-Estimation/05-Bandwidth-And-Servers.md
-    - Estimation Framework: 02-Back-of-Envelope-Estimation/06-Estimation-Framework.md
+    - Overview: back-of-envelope/index.md
+    - Latency Numbers: back-of-envelope/latency-numbers.md
+    - Database Numbers: back-of-envelope/database-numbers.md
+    - Message Streams: back-of-envelope/message-streams.md
+    - Data Sizes: back-of-envelope/data-sizes.md
+    - Bandwidth & Servers: back-of-envelope/bandwidth-and-servers.md
+    - Estimation Framework: back-of-envelope/estimation-framework.md
 
   - "Foundation":
     - Overview: 03-Case-Studies/01-Foundation/index.md
     - Unique ID Generator:
-      - Overview: 03-Case-Studies/01-Foundation/01-Unique-ID-Generator/index.md
+      - Overview: unique-id-generator/index.md
       - System Requirements:
-        - System Overview: 03-Case-Studies/01-Foundation/01-Unique-ID-Generator/01-System-Requirements/00-System-Overview.md
-        - Functional Requirements: 03-Case-Studies/01-Foundation/01-Unique-ID-Generator/01-System-Requirements/01-FR.md
-        - Estimation: 03-Case-Studies/01-Foundation/01-Unique-ID-Generator/01-System-Requirements/02-Estimation.md
-        - Non-Functional Requirements: 03-Case-Studies/01-Foundation/01-Unique-ID-Generator/01-System-Requirements/03-NFR.md
-        - API Design: 03-Case-Studies/01-Foundation/01-Unique-ID-Generator/01-System-Requirements/04-API.md
-        - Base Architecture: 03-Case-Studies/01-Foundation/01-Unique-ID-Generator/01-System-Requirements/05-Base-Architecture.md
+        - System Overview: unique-id-generator/system-overview.md
+        - Functional Requirements: unique-id-generator/functional-requirements.md
+        - Estimation: unique-id-generator/estimation.md
+        - Non-Functional Requirements: unique-id-generator/non-functional-requirements.md
+        - API Design: unique-id-generator/api-design.md
+        - Base Architecture: unique-id-generator/base-architecture.md
       - Deep Dives:
-        - Overview: 03-Case-Studies/01-Foundation/01-Unique-ID-Generator/02-Deep-Dives/index.md
-        - Single Server Counter: 03-Case-Studies/01-Foundation/01-Unique-ID-Generator/02-Deep-Dives/01-Single-Server-Counter.md
-        - Multi-Server Problem: 03-Case-Studies/01-Foundation/01-Unique-ID-Generator/02-Deep-Dives/02-Multi-Server-Problem.md
-        - UUID: 03-Case-Studies/01-Foundation/01-Unique-ID-Generator/02-Deep-Dives/03-UUID.md
-        - Ticket Server: 03-Case-Studies/01-Foundation/01-Unique-ID-Generator/02-Deep-Dives/04-Ticket-Server.md
-        - Pre-Generated Key Pool: 03-Case-Studies/01-Foundation/01-Unique-ID-Generator/02-Deep-Dives/05-Pre-Generated-Key-Pool.md
-        - Snowflake: 03-Case-Studies/01-Foundation/01-Unique-ID-Generator/02-Deep-Dives/06-Snowflake.md
-        - Comparison: 03-Case-Studies/01-Foundation/01-Unique-ID-Generator/02-Deep-Dives/07-Comparison.md
-        - Clock Skew: 03-Case-Studies/01-Foundation/01-Unique-ID-Generator/02-Deep-Dives/08-Clock-Skew.md
-        - Fault Isolation: 03-Case-Studies/01-Foundation/01-Unique-ID-Generator/02-Deep-Dives/09-Fault-Isolation.md
+        - Overview: unique-id-generator/deep-dives/index.md
+        - Single Server Counter: unique-id-generator/single-server-counter.md
+        - Multi-Server Problem: unique-id-generator/multi-server-problem.md
+        - UUID: unique-id-generator/uuid.md
+        - Ticket Server: unique-id-generator/ticket-server.md
+        - Pre-Generated Key Pool: unique-id-generator/pre-generated-key-pool.md
+        - Snowflake: unique-id-generator/snowflake.md
+        - Comparison: unique-id-generator/comparison.md
+        - Clock Skew: unique-id-generator/clock-skew.md
+        - Fault Isolation: unique-id-generator/fault-isolation.md
       - Observability:
-        - SLI / SLO Connection: 03-Case-Studies/01-Foundation/01-Unique-ID-Generator/03-Observability/01-SLI-SLO-Connection.md
-        - Measuring Latency: 03-Case-Studies/01-Foundation/01-Unique-ID-Generator/03-Observability/02-Measuring-Latency.md
-        - Measuring Availability: 03-Case-Studies/01-Foundation/01-Unique-ID-Generator/03-Observability/03-Measuring-Availability.md
-        - Alerting: 03-Case-Studies/01-Foundation/01-Unique-ID-Generator/03-Observability/04-Alerting.md
-        - Error Budget: 03-Case-Studies/01-Foundation/01-Unique-ID-Generator/03-Observability/05-Error-Budget.md
+        - SLI / SLO Connection: unique-id-generator/sli-slo-connection.md
+        - Measuring Latency: unique-id-generator/measuring-latency.md
+        - Measuring Availability: unique-id-generator/measuring-availability.md
+        - Alerting: unique-id-generator/alerting.md
+        - Error Budget: unique-id-generator/error-budget.md
       - Unique ID Generator Architecture:
-        - Unique ID Generator Architecture: 03-Case-Studies/01-Foundation/01-Unique-ID-Generator/04-Final-Design/01-Final-Architecture.md
+        - Unique ID Generator Architecture: unique-id-generator/architecture.md
     - URL Shortener:
-      - Overview: 03-Case-Studies/01-Foundation/02-URL-Shortener/index.md
+      - Overview: url-shortener/index.md
       - System Requirements:
-        - Functional Requirements: 03-Case-Studies/01-Foundation/02-URL-Shortener/01-System-Requirements/01-FR.md
-        - Estimation: 03-Case-Studies/01-Foundation/02-URL-Shortener/01-System-Requirements/02-Estimation.md
-        - Non-Functional Requirements: 03-Case-Studies/01-Foundation/02-URL-Shortener/01-System-Requirements/03-NFR.md
-        - API Design: 03-Case-Studies/01-Foundation/02-URL-Shortener/01-System-Requirements/04-API.md
-        - Base Architecture: 03-Case-Studies/01-Foundation/02-URL-Shortener/01-System-Requirements/05-Base-Architecture.md
+        - Functional Requirements: url-shortener/functional-requirements.md
+        - Estimation: url-shortener/estimation.md
+        - Non-Functional Requirements: url-shortener/non-functional-requirements.md
+        - API Design: url-shortener/api-design.md
+        - Base Architecture: url-shortener/base-architecture.md
       - Deep Dives:
-        - Overview: 03-Case-Studies/01-Foundation/02-URL-Shortener/02-Deep-Dives/index.md
+        - Overview: url-shortener/deep-dives/index.md
         - Short Code Generation:
-          - Raw IDs: 03-Case-Studies/01-Foundation/02-URL-Shortener/02-Deep-Dives/01-Short-Code-Generation/01-Raw-IDs.md
-          - Hashing: 03-Case-Studies/01-Foundation/02-URL-Shortener/02-Deep-Dives/01-Short-Code-Generation/02-Hashing.md
-          - Random + Collision Check: 03-Case-Studies/01-Foundation/02-URL-Shortener/02-Deep-Dives/01-Short-Code-Generation/03-Random-Collision-Check.md
-          - UUID Base64 Trim: 03-Case-Studies/01-Foundation/02-URL-Shortener/02-Deep-Dives/01-Short-Code-Generation/04-UUID-Base64-Trim.md
-          - Snowflake Base64: 03-Case-Studies/01-Foundation/02-URL-Shortener/02-Deep-Dives/01-Short-Code-Generation/05-Snowflake-Base64.md
-          - UUID Snowflake Base62: 03-Case-Studies/01-Foundation/02-URL-Shortener/02-Deep-Dives/01-Short-Code-Generation/06-UUID-Snowflake-Base62.md
-          - Truncation Problem: 03-Case-Studies/01-Foundation/02-URL-Shortener/02-Deep-Dives/01-Short-Code-Generation/07-Truncation-Problem.md
+          - Raw IDs: url-shortener/raw-ids.md
+          - Hashing: url-shortener/hashing.md
+          - Random + Collision Check: url-shortener/random-collision-check.md
+          - UUID Base64 Trim: url-shortener/uuid-base64-trim.md
+          - Snowflake Base64: url-shortener/snowflake-base64.md
+          - UUID Snowflake Base62: url-shortener/uuid-snowflake-base62.md
+          - Truncation Problem: url-shortener/truncation-problem.md
         - Database:
-          - DB Choice: 03-Case-Studies/01-Foundation/02-URL-Shortener/02-Deep-Dives/02-DB/01-DB-Choice.md
-          - Schema: 03-Case-Studies/01-Foundation/02-URL-Shortener/02-Deep-Dives/02-DB/02-Schema.md
-          - Why Sharding: 03-Case-Studies/01-Foundation/02-URL-Shortener/02-Deep-Dives/02-DB/03-Why-Sharding.md
-          - Sharding Key: 03-Case-Studies/01-Foundation/02-URL-Shortener/02-Deep-Dives/02-DB/04-Sharding-Key.md
-          - Consistent Hashing: 03-Case-Studies/01-Foundation/02-URL-Shortener/02-Deep-Dives/02-DB/05-Consistent-Hashing.md
-          - How Many Shards: 03-Case-Studies/01-Foundation/02-URL-Shortener/02-Deep-Dives/02-DB/06-How-Many-Shards.md
-          - Replication: 03-Case-Studies/01-Foundation/02-URL-Shortener/02-Deep-Dives/02-DB/07-Replication.md
-          - Read Your Own Writes: 03-Case-Studies/01-Foundation/02-URL-Shortener/02-Deep-Dives/02-DB/08-Read-Your-Own-Writes.md
+          - DB Choice: url-shortener/db-choice.md
+          - Schema: url-shortener/schema.md
+          - Why Sharding: url-shortener/why-sharding.md
+          - Sharding Key: url-shortener/sharding-key.md
+          - Consistent Hashing: url-shortener/consistent-hashing.md
+          - How Many Shards: url-shortener/how-many-shards.md
+          - Replication: url-shortener/replication.md
+          - Read Your Own Writes: url-shortener/read-your-own-writes.md
         - Caching:
-          - Why Caching: 03-Case-Studies/01-Foundation/02-URL-Shortener/02-Deep-Dives/03-Caching/01-Why-Caching.md
-          - Cache Size: 03-Case-Studies/01-Foundation/02-URL-Shortener/02-Deep-Dives/03-Caching/02-Cache-Size.md
-          - Cache Strategy: 03-Case-Studies/01-Foundation/02-URL-Shortener/02-Deep-Dives/03-Caching/03-Cache-Strategy.md
-          - Eviction Policy: 03-Case-Studies/01-Foundation/02-URL-Shortener/02-Deep-Dives/03-Caching/04-Eviction-Policy.md
-          - Updated Flow: 03-Case-Studies/01-Foundation/02-URL-Shortener/02-Deep-Dives/03-Caching/05-Updated-Flow.md
+          - Why Caching: url-shortener/why-caching.md
+          - Cache Size: url-shortener/cache-size.md
+          - Cache Strategy: url-shortener/cache-strategy.md
+          - Eviction Policy: url-shortener/eviction-policy.md
+          - Updated Flow: url-shortener/updated-flow.md
         - Peak Traffic:
-          - The Spike Problem: 03-Case-Studies/01-Foundation/02-URL-Shortener/02-Deep-Dives/04-Peak-Traffic/01-The-Spike-Problem.md
-          - Hot Key — Detection: 03-Case-Studies/01-Foundation/02-URL-Shortener/02-Deep-Dives/04-Peak-Traffic/02-Hot-Key-Problem/01-Detection.md
-          - Hot Key — Local App Cache: 03-Case-Studies/01-Foundation/02-URL-Shortener/02-Deep-Dives/04-Peak-Traffic/02-Hot-Key-Problem/02-Local-App-Cache.md
-          - Hot Key — Redis Key Replication: 03-Case-Studies/01-Foundation/02-URL-Shortener/02-Deep-Dives/04-Peak-Traffic/02-Hot-Key-Problem/03-Redis-Key-Replication.md
-          - Hot Key — Broadcast Promotion: 03-Case-Studies/01-Foundation/02-URL-Shortener/02-Deep-Dives/04-Peak-Traffic/02-Hot-Key-Problem/04-Broadcast-Promotion.md
-          - Load Balancing: 03-Case-Studies/01-Foundation/02-URL-Shortener/02-Deep-Dives/04-Peak-Traffic/03-Load-Balancing.md
-          - API GW SPOF: 03-Case-Studies/01-Foundation/02-URL-Shortener/02-Deep-Dives/04-Peak-Traffic/04-API-GW-SPOF.md
-          - Updated Architecture: 03-Case-Studies/01-Foundation/02-URL-Shortener/02-Deep-Dives/04-Peak-Traffic/05-Updated-Architecture.md
+          - The Spike Problem: url-shortener/spike-problem.md
+          - Hot Key — Detection: url-shortener/detection.md
+          - Hot Key — Local App Cache: url-shortener/local-app-cache.md
+          - Hot Key — Redis Key Replication: url-shortener/redis-key-replication.md
+          - Hot Key — Broadcast Promotion: url-shortener/broadcast-promotion.md
+          - Load Balancing: url-shortener/load-balancing.md
+          - API GW SPOF: url-shortener/api-gw-spof.md
+          - Updated Architecture: url-shortener/updated-architecture.md
         - Pre-Generated Keys:
-          - Collision At Scale: 03-Case-Studies/01-Foundation/02-URL-Shortener/02-Deep-Dives/06-Pre-Generated-Keys/01-Collision-At-Scale.md
-          - Bloom Filter: 03-Case-Studies/01-Foundation/02-URL-Shortener/02-Deep-Dives/06-Pre-Generated-Keys/02-Bloom-Filter.md
-          - Key Pool: 03-Case-Studies/01-Foundation/02-URL-Shortener/02-Deep-Dives/06-Pre-Generated-Keys/03-Key-Pool.md
-          - KGS Sequential Generation: 03-Case-Studies/01-Foundation/02-URL-Shortener/02-Deep-Dives/06-Pre-Generated-Keys/04-KGS-Sequential-Generation.md
-          - Redis INCR vs KGS: 03-Case-Studies/01-Foundation/02-URL-Shortener/02-Deep-Dives/06-Pre-Generated-Keys/05-Redis-INCR-vs-KGS.md
+          - Collision At Scale: url-shortener/collision-at-scale.md
+          - Bloom Filter: url-shortener/bloom-filter.md
+          - Key Pool: url-shortener/key-pool.md
+          - KGS Sequential Generation: url-shortener/kgs-sequential-generation.md
+          - Redis INCR vs KGS: url-shortener/redis-incr-vs-kgs.md
         - Cold Storage:
-          - The Problem: 03-Case-Studies/01-Foundation/02-URL-Shortener/02-Deep-Dives/07-Cold-Storage/01-The-Problem.md
-          - Tiered Storage: 03-Case-Studies/01-Foundation/02-URL-Shortener/02-Deep-Dives/07-Cold-Storage/02-Tiered-Storage.md
-          - Detecting Cold URLs: 03-Case-Studies/01-Foundation/02-URL-Shortener/02-Deep-Dives/07-Cold-Storage/03-Detecting-Cold-URLs.md
+          - The Problem: url-shortener/cold-storage-problem.md
+          - Tiered Storage: url-shortener/tiered-storage.md
+          - Detecting Cold URLs: url-shortener/detecting-cold-urls.md
         - Fault Isolation:
-          - Fault Isolation: 03-Case-Studies/01-Foundation/02-URL-Shortener/02-Deep-Dives/08-Fault-Isolation/01-Fault-Isolation.md
-          - Redis Down: 03-Case-Studies/01-Foundation/02-URL-Shortener/02-Deep-Dives/08-Fault-Isolation/02-Redis-Down.md
-          - DB Shard Primary Down: 03-Case-Studies/01-Foundation/02-URL-Shortener/02-Deep-Dives/08-Fault-Isolation/03-DB-Shard-Primary-Down.md
-          - KGS Down: 03-Case-Studies/01-Foundation/02-URL-Shortener/02-Deep-Dives/08-Fault-Isolation/04-KGS-Down.md
-          - Other Failures: 03-Case-Studies/01-Foundation/02-URL-Shortener/02-Deep-Dives/08-Fault-Isolation/05-Other-Failures.md
+          - Fault Isolation: url-shortener/fault-isolation.md
+          - Redis Down: url-shortener/redis-down.md
+          - DB Shard Primary Down: url-shortener/db-shard-primary-down.md
+          - KGS Down: url-shortener/kgs-down.md
+          - Other Failures: url-shortener/other-failures.md
       - Observability:
-        - SLI / SLO Connection: 03-Case-Studies/01-Foundation/02-URL-Shortener/03-Observability/01-SLI-SLO-Connection.md
-        - Measuring Latency: 03-Case-Studies/01-Foundation/02-URL-Shortener/03-Observability/02-Measuring-Latency.md
-        - Measuring Availability: 03-Case-Studies/01-Foundation/02-URL-Shortener/03-Observability/03-Measuring-Availability.md
-        - Alerting: 03-Case-Studies/01-Foundation/02-URL-Shortener/03-Observability/04-Alerting.md
-        - Error Budget: 03-Case-Studies/01-Foundation/02-URL-Shortener/03-Observability/05-Error-Budget.md
+        - SLI / SLO Connection: url-shortener/sli-slo-connection.md
+        - Measuring Latency: url-shortener/measuring-latency.md
+        - Measuring Availability: url-shortener/measuring-availability.md
+        - Alerting: url-shortener/alerting.md
+        - Error Budget: url-shortener/error-budget.md
       - URL Shortener Architecture:
-        - URL Shortener Architecture: 03-Case-Studies/01-Foundation/02-URL-Shortener/04-Final-Design/01-Final-Design.md
+        - URL Shortener Architecture: url-shortener/architecture.md
 
   - "Ascent":
     - Overview: 03-Case-Studies/02-Ascent/index.md
     - Notification System:
-      - Overview: 03-Case-Studies/02-Ascent/01-Notification-System/index.md
+      - Overview: notification-system/index.md
       - "System Requirements":
-        - System Overview: 03-Case-Studies/02-Ascent/01-Notification-System/01-System-Requirements/00-System-Overview.md
-        - Functional Requirements: 03-Case-Studies/02-Ascent/01-Notification-System/01-System-Requirements/01-FR.md
-        - Estimation: 03-Case-Studies/02-Ascent/01-Notification-System/01-System-Requirements/02-Estimation.md
-        - Non-Functional Requirements: 03-Case-Studies/02-Ascent/01-Notification-System/01-System-Requirements/03-NFR.md
-        - API Design: 03-Case-Studies/02-Ascent/01-Notification-System/01-System-Requirements/04-API.md
-        - Base Architecture: 03-Case-Studies/02-Ascent/01-Notification-System/01-System-Requirements/05-Base-Architecture.md
+        - System Overview: notification-system/system-overview.md
+        - Functional Requirements: notification-system/functional-requirements.md
+        - Estimation: notification-system/estimation.md
+        - Non-Functional Requirements: notification-system/non-functional-requirements.md
+        - API Design: notification-system/api-design.md
+        - Base Architecture: notification-system/base-architecture.md
       - Deep Dives:
-        - Overview: 03-Case-Studies/02-Ascent/01-Notification-System/02-Deep-Dives/index.md
+        - Overview: notification-system/deep-dives/index.md
         - Database:
-          - DB Selection: 03-Case-Studies/02-Ascent/01-Notification-System/02-Deep-Dives/01-DB/01-DB-Selection.md
-          - Schema: 03-Case-Studies/02-Ascent/01-Notification-System/02-Deep-Dives/01-DB/02-Schema.md
+          - DB Selection: notification-system/db-selection.md
+          - Schema: notification-system/schema.md
         - Kafka:
-          - Queue Selection: 03-Case-Studies/02-Ascent/01-Notification-System/02-Deep-Dives/02-Kafka/01-Queue-Selection.md
-          - Kafka Design: 03-Case-Studies/02-Ascent/01-Notification-System/02-Deep-Dives/02-Kafka/02-Kafka-Design.md
+          - Queue Selection: notification-system/queue-selection.md
+          - Kafka Design: notification-system/kafka-design.md
         - Per-Channel Workers:
-          - Push Worker: 03-Case-Studies/02-Ascent/01-Notification-System/02-Deep-Dives/03-Per-Channel-Workers/01-Push-Worker.md
-          - SMS Worker: 03-Case-Studies/02-Ascent/01-Notification-System/02-Deep-Dives/03-Per-Channel-Workers/02-SMS-Worker.md
-          - Email Worker: 03-Case-Studies/02-Ascent/01-Notification-System/02-Deep-Dives/03-Per-Channel-Workers/03-Email-Worker.md
+          - Push Worker: notification-system/push-worker.md
+          - SMS Worker: notification-system/sms-worker.md
+          - Email Worker: notification-system/email-worker.md
         - Scheduling:
-          - Problem And Naive Approach: 03-Case-Studies/02-Ascent/01-Notification-System/02-Deep-Dives/04-Scheduling/01-Problem-And-Naive-Approach.md
-          - Scheduler DB: 03-Case-Studies/02-Ascent/01-Notification-System/02-Deep-Dives/04-Scheduling/02-Scheduler-DB.md
-          - Jitter: 03-Case-Studies/02-Ascent/01-Notification-System/02-Deep-Dives/04-Scheduling/03-Jitter.md
-          - Dispatch Flow: 03-Case-Studies/02-Ascent/01-Notification-System/02-Deep-Dives/04-Scheduling/04-Dispatch-Flow.md
+          - Problem And Naive Approach: notification-system/problem-and-naive-approach.md
+          - Scheduler DB: notification-system/scheduler-db.md
+          - Jitter: notification-system/jitter.md
+          - Dispatch Flow: notification-system/dispatch-flow.md
         - Retry And DLQ:
-          - Retry Strategy: 03-Case-Studies/02-Ascent/01-Notification-System/02-Deep-Dives/05-Retry-And-DLQ/01-Retry-Strategy.md
-          - DLQ: 03-Case-Studies/02-Ascent/01-Notification-System/02-Deep-Dives/05-Retry-And-DLQ/02-DLQ.md
-          - Failure Handling: 03-Case-Studies/02-Ascent/01-Notification-System/02-Deep-Dives/05-Retry-And-DLQ/03-Failure-Handling.md
+          - Retry Strategy: notification-system/retry-strategy.md
+          - DLQ: notification-system/dlq.md
+          - Failure Handling: notification-system/failure-handling.md
         - Rate Limiting:
-          - Rate Limiting: 03-Case-Studies/02-Ascent/01-Notification-System/02-Deep-Dives/06-Rate-Limiting/01-Rate-Limiting.md
+          - Rate Limiting: notification-system/rate-limiting.md
         - Fault Isolation:
-          - APNs Down: 03-Case-Studies/02-Ascent/01-Notification-System/02-Deep-Dives/07-Fault-Isolation/01-APNs-Down.md
-          - Cassandra Down: 03-Case-Studies/02-Ascent/01-Notification-System/02-Deep-Dives/07-Fault-Isolation/02-Cassandra-Down.md
-          - Kafka Down: 03-Case-Studies/02-Ascent/01-Notification-System/02-Deep-Dives/07-Fault-Isolation/03-Kafka-Down.md
-          - Redis Down: 03-Case-Studies/02-Ascent/01-Notification-System/02-Deep-Dives/07-Fault-Isolation/04-Redis-Down.md
-          - Scheduler Down: 03-Case-Studies/02-Ascent/01-Notification-System/02-Deep-Dives/07-Fault-Isolation/05-Scheduler-Down.md
-      - Notification System Architecture: 03-Case-Studies/02-Ascent/01-Notification-System/04-Final-Design/01-Final-Design.md
+          - APNs Down: notification-system/apns-down.md
+          - Cassandra Down: notification-system/cassandra-down.md
+          - Kafka Down: notification-system/kafka-down.md
+          - Redis Down: notification-system/redis-down.md
+          - Scheduler Down: notification-system/scheduler-down.md
+      - Notification System Architecture: notification-system/architecture.md
       - "Observability":
-        - SLI / SLO Connection: 03-Case-Studies/02-Ascent/01-Notification-System/03-Observability/01-SLI-SLO-Connection.md
-        - Measuring Latency: 03-Case-Studies/02-Ascent/01-Notification-System/03-Observability/02-Measuring-Latency.md
-        - Measuring Availability: 03-Case-Studies/02-Ascent/01-Notification-System/03-Observability/03-Measuring-Availability.md
-        - Alerting: 03-Case-Studies/02-Ascent/01-Notification-System/03-Observability/04-Alerting.md
-        - Error Budget: 03-Case-Studies/02-Ascent/01-Notification-System/03-Observability/05-Error-Budget.md
+        - SLI / SLO Connection: notification-system/sli-slo-connection.md
+        - Measuring Latency: notification-system/measuring-latency.md
+        - Measuring Availability: notification-system/measuring-availability.md
+        - Alerting: notification-system/alerting.md
+        - Error Budget: notification-system/error-budget.md
     - Pastebin:
-      - Overview: 03-Case-Studies/02-Ascent/02-Pastebin/index.md
+      - Overview: pastebin/index.md
       - "System Requirements":
-        - Functional Requirements: 03-Case-Studies/02-Ascent/02-Pastebin/01-System-Requirements/01-FR.md
-        - Estimation: 03-Case-Studies/02-Ascent/02-Pastebin/01-System-Requirements/02-Estimation.md
-        - Non-Functional Requirements: 03-Case-Studies/02-Ascent/02-Pastebin/01-System-Requirements/03-NFR.md
-        - API Design: 03-Case-Studies/02-Ascent/02-Pastebin/01-System-Requirements/04-API.md
-        - Base Architecture: 03-Case-Studies/02-Ascent/02-Pastebin/01-System-Requirements/05-Base-Architecture.md
+        - Functional Requirements: pastebin/functional-requirements.md
+        - Estimation: pastebin/estimation.md
+        - Non-Functional Requirements: pastebin/non-functional-requirements.md
+        - API Design: pastebin/api-design.md
+        - Base Architecture: pastebin/base-architecture.md
       - Deep Dives:
-        - Overview: 03-Case-Studies/02-Ascent/02-Pastebin/02-Deep-Dives/index.md
+        - Overview: pastebin/deep-dives/index.md
         - Short Code Generation:
-          - Requirements: 03-Case-Studies/02-Ascent/02-Pastebin/02-Deep-Dives/01-Short-Code-Generation/01-Requirements.md
-          - Approaches: 03-Case-Studies/02-Ascent/02-Pastebin/02-Deep-Dives/01-Short-Code-Generation/02-Approaches.md
-          - Redis Counter: 03-Case-Studies/02-Ascent/02-Pastebin/02-Deep-Dives/01-Short-Code-Generation/03-Redis-Counter.md
-          - Custom Alias: 03-Case-Studies/02-Ascent/02-Pastebin/02-Deep-Dives/01-Short-Code-Generation/04-Custom-Alias.md
+          - Requirements: pastebin/short-code-requirements.md
+          - Approaches: pastebin/short-code-approaches.md
+          - Redis Counter: pastebin/redis-counter.md
+          - Custom Alias: pastebin/custom-alias.md
         - Database:
-          - DB Choice: 03-Case-Studies/02-Ascent/02-Pastebin/02-Deep-Dives/02-DB/01-DB-Choice.md
-          - Content-Addressable Storage: 03-Case-Studies/02-Ascent/02-Pastebin/02-Deep-Dives/02-DB/02-Content-Addressable-Storage.md
-          - Ref Counting: 03-Case-Studies/02-Ascent/02-Pastebin/02-Deep-Dives/02-DB/03-Ref-Counting.md
-          - Schema And Indexes: 03-Case-Studies/02-Ascent/02-Pastebin/02-Deep-Dives/02-DB/04-Schema-And-Indexes.md
-          - Write Read Delete Flows: 03-Case-Studies/02-Ascent/02-Pastebin/02-Deep-Dives/02-DB/05-Write-Read-Delete-Flows.md
-          - Sharding: 03-Case-Studies/02-Ascent/02-Pastebin/02-Deep-Dives/02-DB/06-Sharding.md
+          - DB Choice: pastebin/db-choice.md
+          - Content-Addressable Storage: pastebin/content-addressable-storage.md
+          - Ref Counting: pastebin/ref-counting.md
+          - Schema And Indexes: pastebin/schema-and-indexes.md
+          - Write Read Delete Flows: pastebin/write-read-delete-flows.md
+          - Sharding: pastebin/sharding.md
         - Caching:
-          - Why Cache: 03-Case-Studies/02-Ascent/02-Pastebin/02-Deep-Dives/03-Caching/01-Why-Cache.md
-          - What To Cache And How: 03-Case-Studies/02-Ascent/02-Pastebin/02-Deep-Dives/03-Caching/02-What-To-Cache-And-How.md
-          - Cache Sizing: 03-Case-Studies/02-Ascent/02-Pastebin/02-Deep-Dives/03-Caching/03-Cache-Sizing.md
-          - Cache Invalidation: 03-Case-Studies/02-Ascent/02-Pastebin/02-Deep-Dives/03-Caching/04-Cache-Invalidation.md
+          - Why Cache: pastebin/why-cache.md
+          - What To Cache And How: pastebin/what-to-cache-and-how.md
+          - Cache Sizing: pastebin/cache-sizing.md
+          - Cache Invalidation: pastebin/cache-invalidation.md
         - Peak Traffic:
-          - Hot Key Problem: 03-Case-Studies/02-Ascent/02-Pastebin/02-Deep-Dives/04-Peak-Traffic/01-Hot-Key-Problem.md
+          - Hot Key Problem: pastebin/hot-key-problem.md
         - Fault Isolation:
-          - Why Fault Isolation: 03-Case-Studies/02-Ascent/02-Pastebin/02-Deep-Dives/05-Fault-Isolation/01-Why-Fault-Isolation.md
-          - Service Split: 03-Case-Studies/02-Ascent/02-Pastebin/02-Deep-Dives/05-Fault-Isolation/02-Service-Split.md
-          - DB Standby: 03-Case-Studies/02-Ascent/02-Pastebin/02-Deep-Dives/05-Fault-Isolation/03-DB-Standby.md
-          - Circuit Breaker: 03-Case-Studies/02-Ascent/02-Pastebin/02-Deep-Dives/05-Fault-Isolation/04-Circuit-Breaker.md
+          - Why Fault Isolation: pastebin/why-fault-isolation.md
+          - Service Split: pastebin/service-split.md
+          - DB Standby: pastebin/db-standby.md
+          - Circuit Breaker: pastebin/circuit-breaker.md
         - Async S3 Upload:
-          - Why Async Upload: 03-Case-Studies/02-Ascent/02-Pastebin/02-Deep-Dives/06-Async-S3-Upload/01-Why-Async-Upload.md
-          - Failure Problem: 03-Case-Studies/02-Ascent/02-Pastebin/02-Deep-Dives/06-Async-S3-Upload/02-Failure-Problem.md
-          - State Machine: 03-Case-Studies/02-Ascent/02-Pastebin/02-Deep-Dives/06-Async-S3-Upload/03-State-Machine.md
-          - Retry Strategy: 03-Case-Studies/02-Ascent/02-Pastebin/02-Deep-Dives/06-Async-S3-Upload/04-Retry-Strategy.md
-          - Read Path Behaviour: 03-Case-Studies/02-Ascent/02-Pastebin/02-Deep-Dives/06-Async-S3-Upload/05-Read-Path-Behaviour.md
+          - Why Async Upload: pastebin/why-async-upload.md
+          - Failure Problem: pastebin/failure-problem.md
+          - State Machine: pastebin/state-machine.md
+          - Retry Strategy: pastebin/retry-strategy.md
+          - Read Path Behaviour: pastebin/read-path-behaviour.md
         - Expiry Cleanup Job:
-          - Why Cleanup Job: 03-Case-Studies/02-Ascent/02-Pastebin/02-Deep-Dives/07-Expiry-Cleanup-Job/01-Why-Cleanup-Job.md
-          - Cleanup Flow: 03-Case-Studies/02-Ascent/02-Pastebin/02-Deep-Dives/07-Expiry-Cleanup-Job/02-Cleanup-Flow.md
-          - Distributed Workers: 03-Case-Studies/02-Ascent/02-Pastebin/02-Deep-Dives/07-Expiry-Cleanup-Job/03-Distributed-Workers.md
-          - Watchdog: 03-Case-Studies/02-Ascent/02-Pastebin/02-Deep-Dives/07-Expiry-Cleanup-Job/04-Watchdog.md
-          - Indexing Strategy: 03-Case-Studies/02-Ascent/02-Pastebin/02-Deep-Dives/07-Expiry-Cleanup-Job/05-Indexing-Strategy.md
+          - Why Cleanup Job: pastebin/why-cleanup-job.md
+          - Cleanup Flow: pastebin/cleanup-flow.md
+          - Distributed Workers: pastebin/distributed-workers.md
+          - Watchdog: pastebin/watchdog.md
+          - Indexing Strategy: pastebin/indexing-strategy.md
       - "Observability":
-        - SLI / SLO Connection: 03-Case-Studies/02-Ascent/02-Pastebin/03-Observability/01-SLI-SLO-Connection.md
-        - Measuring Latency: 03-Case-Studies/02-Ascent/02-Pastebin/03-Observability/02-Measuring-Latency.md
-        - Measuring Availability: 03-Case-Studies/02-Ascent/02-Pastebin/03-Observability/03-Measuring-Availability.md
-        - Alerting: 03-Case-Studies/02-Ascent/02-Pastebin/03-Observability/04-Alerting.md
-        - Error Budget: 03-Case-Studies/02-Ascent/02-Pastebin/03-Observability/05-Error-Budget.md
-      - Pastebin Architecture: 03-Case-Studies/02-Ascent/02-Pastebin/04-Final-Design/01-Updated-Architecture.md
+        - SLI / SLO Connection: pastebin/sli-slo-connection.md
+        - Measuring Latency: pastebin/measuring-latency.md
+        - Measuring Availability: pastebin/measuring-availability.md
+        - Alerting: pastebin/alerting.md
+        - Error Budget: pastebin/error-budget.md
+      - Pastebin Architecture: pastebin/architecture.md
 
   - "Expedition":
     - Overview: 03-Case-Studies/03-Expedition/index.md
     - Rate Limiter:
-      - Overview: 03-Case-Studies/03-Expedition/01-Rate-Limiter/index.md
+      - Overview: rate-limiter/index.md
       - "System Requirements":
-        - Functional Requirements: 03-Case-Studies/03-Expedition/01-Rate-Limiter/01-System-Requirements/01-FR.md
-        - Estimation: 03-Case-Studies/03-Expedition/01-Rate-Limiter/01-System-Requirements/02-Estimation.md
-        - Non-Functional Requirements: 03-Case-Studies/03-Expedition/01-Rate-Limiter/01-System-Requirements/03-NFR.md
-        - API Design: 03-Case-Studies/03-Expedition/01-Rate-Limiter/01-System-Requirements/04-API.md
-        - Base Architecture: 03-Case-Studies/03-Expedition/01-Rate-Limiter/01-System-Requirements/05-Base-Architecture.md
+        - Functional Requirements: rate-limiter/functional-requirements.md
+        - Estimation: rate-limiter/estimation.md
+        - Non-Functional Requirements: rate-limiter/non-functional-requirements.md
+        - API Design: rate-limiter/api-design.md
+        - Base Architecture: rate-limiter/base-architecture.md
       - Deep Dives:
-        - Overview: 03-Case-Studies/03-Expedition/01-Rate-Limiter/02-Deep-Dives/index.md
+        - Overview: rate-limiter/deep-dives/index.md
         - Algorithms:
-          - Fixed Window Counter: 03-Case-Studies/03-Expedition/01-Rate-Limiter/02-Deep-Dives/01-Algorithms/01-Fixed-Window-Counter.md
-          - Sliding Window Log: 03-Case-Studies/03-Expedition/01-Rate-Limiter/02-Deep-Dives/01-Algorithms/02-Sliding-Window-Log.md
-          - Sliding Window Counter: 03-Case-Studies/03-Expedition/01-Rate-Limiter/02-Deep-Dives/01-Algorithms/03-Sliding-Window-Counter.md
-          - Token Bucket: 03-Case-Studies/03-Expedition/01-Rate-Limiter/02-Deep-Dives/01-Algorithms/04-Token-Bucket.md
-          - Leaky Bucket: 03-Case-Studies/03-Expedition/01-Rate-Limiter/02-Deep-Dives/01-Algorithms/05-Leaky-Bucket.md
-          - Algorithm Comparison: 03-Case-Studies/03-Expedition/01-Rate-Limiter/02-Deep-Dives/01-Algorithms/06-Algorithm-Comparison.md
+          - Fixed Window Counter: rate-limiter/fixed-window-counter.md
+          - Sliding Window Log: rate-limiter/sliding-window-log.md
+          - Sliding Window Counter: rate-limiter/sliding-window-counter.md
+          - Token Bucket: rate-limiter/token-bucket.md
+          - Leaky Bucket: rate-limiter/leaky-bucket.md
+          - Algorithm Comparison: rate-limiter/algorithm-comparison.md
         - Distributed Rate Limiting:
-          - Atomicity Problem: 03-Case-Studies/03-Expedition/01-Rate-Limiter/02-Deep-Dives/02-Distributed-Rate-Limiting/01-Atomicity-Problem.md
-          - Redis Cluster: 03-Case-Studies/03-Expedition/01-Rate-Limiter/02-Deep-Dives/02-Distributed-Rate-Limiting/02-Redis-Cluster.md
+          - Atomicity Problem: rate-limiter/atomicity-problem.md
+          - Redis Cluster: rate-limiter/redis-cluster.md
         - Rule Storage:
-          - Rule Storage: 03-Case-Studies/03-Expedition/01-Rate-Limiter/02-Deep-Dives/03-Rule-Storage/01-Rule-Storage.md
+          - Rule Storage: rate-limiter/rule-storage.md
         - Fault Isolation:
-          - Rate Limiter Node Down: 03-Case-Studies/03-Expedition/01-Rate-Limiter/02-Deep-Dives/04-Fault-Isolation/01-Rate-Limiter-Node-Down.md
-          - Redis Node Down: 03-Case-Studies/03-Expedition/01-Rate-Limiter/02-Deep-Dives/04-Fault-Isolation/02-Redis-Node-Down.md
-          - Rule DB Down: 03-Case-Studies/03-Expedition/01-Rate-Limiter/02-Deep-Dives/04-Fault-Isolation/03-Rule-DB-Down.md
-          - API Gateway Down: 03-Case-Studies/03-Expedition/01-Rate-Limiter/02-Deep-Dives/04-Fault-Isolation/04-API-Gateway-Down.md
-          - DDoS And Defense Layers: 03-Case-Studies/03-Expedition/01-Rate-Limiter/02-Deep-Dives/04-Fault-Isolation/05-DDoS-And-Defense-Layers.md
-      - Rate Limiter Architecture: 03-Case-Studies/03-Expedition/01-Rate-Limiter/04-Final-Design/01-Final-Design.md
+          - Rate Limiter Node Down: rate-limiter/rate-limiter-node-down.md
+          - Redis Node Down: rate-limiter/redis-node-down.md
+          - Rule DB Down: rate-limiter/rule-db-down.md
+          - API Gateway Down: rate-limiter/api-gateway-down.md
+          - DDoS And Defense Layers: rate-limiter/ddos-and-defense-layers.md
+      - Rate Limiter Architecture: rate-limiter/architecture.md
       - "Observability":
-        - SLI / SLO Connection: 03-Case-Studies/03-Expedition/01-Rate-Limiter/03-Observability/01-SLI-SLO-Connection.md
-        - Measuring Latency: 03-Case-Studies/03-Expedition/01-Rate-Limiter/03-Observability/02-Measuring-Latency.md
-        - Measuring Availability: 03-Case-Studies/03-Expedition/01-Rate-Limiter/03-Observability/03-Measuring-Availability.md
-        - Alerting: 03-Case-Studies/03-Expedition/01-Rate-Limiter/03-Observability/04-Alerting.md
-        - Error Budget: 03-Case-Studies/03-Expedition/01-Rate-Limiter/03-Observability/05-Error-Budget.md
+        - SLI / SLO Connection: rate-limiter/sli-slo-connection.md
+        - Measuring Latency: rate-limiter/measuring-latency.md
+        - Measuring Availability: rate-limiter/measuring-availability.md
+        - Alerting: rate-limiter/alerting.md
+        - Error Budget: rate-limiter/error-budget.md
 
   - "Summit":
     - Overview: 03-Case-Studies/04-Summit/index.md
     - KV Store:
-      - Overview: 03-Case-Studies/04-Summit/01-KV-Store/index.md
+      - Overview: kv-store/index.md
       - "System Requirements":
-        - Functional Requirements: 03-Case-Studies/04-Summit/01-KV-Store/01-System-Requirements/01-FR.md
-        - Estimation: 03-Case-Studies/04-Summit/01-KV-Store/01-System-Requirements/02-Estimation.md
-        - Non-Functional Requirements: 03-Case-Studies/04-Summit/01-KV-Store/01-System-Requirements/03-NFR.md
+        - Functional Requirements: kv-store/functional-requirements.md
+        - Estimation: kv-store/estimation.md
+        - Non-Functional Requirements: kv-store/non-functional-requirements.md
       - "API Design":
-        - API Design: 03-Case-Studies/04-Summit/01-KV-Store/02-API/01-API-Design.md
-        - Why Base64: 03-Case-Studies/04-Summit/01-KV-Store/02-API/02-Why-Base64.md
+        - API Design: kv-store/api-design-api-design.md
+        - Why Base64: kv-store/api-design-why-base64.md
       - "Base Architecture":
-        - Why Not Single Leader: 03-Case-Studies/04-Summit/01-KV-Store/03-Base-Architecture/01-Why-Not-Single-Leader.md
-        - Why Not Multi Leader: 03-Case-Studies/04-Summit/01-KV-Store/03-Base-Architecture/02-Why-Not-Multi-Leader.md
-        - Why Leaderless: 03-Case-Studies/04-Summit/01-KV-Store/03-Base-Architecture/03-Why-Leaderless.md
-        - Base Design: 03-Case-Studies/04-Summit/01-KV-Store/03-Base-Architecture/04-Base-Design.md
+        - Why Not Single Leader: kv-store/base-architecture-why-not-single-leader.md
+        - Why Not Multi Leader: kv-store/base-architecture-why-not-multi-leader.md
+        - Why Leaderless: kv-store/base-architecture-why-leaderless.md
+        - Base Design: kv-store/base-architecture-base-design.md
       - Deep Dives:
-        - Overview: 03-Case-Studies/04-Summit/01-KV-Store/04-Deep-Dives/index.md
+        - Overview: kv-store/deep-dives/index.md
         - Consistent Hashing:
-          - Terminology: 03-Case-Studies/04-Summit/01-KV-Store/04-Deep-Dives/01-Consistent-Hashing/01-Terminology.md
-          - How The Ring Works: 03-Case-Studies/04-Summit/01-KV-Store/04-Deep-Dives/01-Consistent-Hashing/02-How-The-Ring-Works.md
+          - Terminology: kv-store/consistent-hashing-terminology.md
+          - How The Ring Works: kv-store/consistent-hashing-how-the-ring-works.md
         - Replication:
-          - Quorum Writes: 03-Case-Studies/04-Summit/01-KV-Store/04-Deep-Dives/02-Replication/01-Quorum-Writes.md
-          - Hinted Handoff: 03-Case-Studies/04-Summit/01-KV-Store/04-Deep-Dives/02-Replication/02-Hinted-Handoff.md
-          - Read Repair: 03-Case-Studies/04-Summit/01-KV-Store/04-Deep-Dives/02-Replication/02-Read-Repair.md
-          - Anti-Entropy: 03-Case-Studies/04-Summit/01-KV-Store/04-Deep-Dives/02-Replication/03-Anti-Entropy.md
+          - Quorum Writes: kv-store/replication-quorum-writes.md
+          - Hinted Handoff: kv-store/replication-hinted-handoff.md
+          - Read Repair: kv-store/replication-read-repair.md
+          - Anti-Entropy: kv-store/replication-anti-entropy.md
         - Storage Engine:
-          - B+Tree vs LSM Tree: 03-Case-Studies/04-Summit/01-KV-Store/04-Deep-Dives/03-Storage-Engine/01-B+Tree-vs-LSM-Tree.md
-          - LSM Tree Internals: 03-Case-Studies/04-Summit/01-KV-Store/04-Deep-Dives/03-Storage-Engine/02-LSM-Tree-Internals.md
+          - B+Tree vs LSM Tree: kv-store/storage-engine-b-tree-vs-lsm-tree.md
+          - LSM Tree Internals: kv-store/storage-engine-lsm-tree-internals.md
           - "Compaction":
-            - What Is Compaction: 03-Case-Studies/04-Summit/01-KV-Store/04-Deep-Dives/03-Storage-Engine/03-Compaction/01-What-Is-Compaction.md
-            - Size-Tiered Compaction: 03-Case-Studies/04-Summit/01-KV-Store/04-Deep-Dives/03-Storage-Engine/03-Compaction/04-Size-Tiered-Compaction.md
-            - Leveled Compaction: 03-Case-Studies/04-Summit/01-KV-Store/04-Deep-Dives/03-Storage-Engine/03-Compaction/05-Leveled-Compaction.md
-          - Bloom Filters: 03-Case-Studies/04-Summit/01-KV-Store/04-Deep-Dives/03-Storage-Engine/04-Bloom-Filters.md
-          - Putting It All Together: 03-Case-Studies/04-Summit/01-KV-Store/04-Deep-Dives/03-Storage-Engine/05-Putting-It-All-Together.md
+            - What Is Compaction: kv-store/storage-engine-compaction-what-is-compaction.md
+            - Size-Tiered Compaction: kv-store/storage-engine-compaction-size-tiered-compaction.md
+            - Leveled Compaction: kv-store/storage-engine-compaction-leveled-compaction.md
+          - Bloom Filters: kv-store/storage-engine-bloom-filters.md
+          - Putting It All Together: kv-store/storage-engine-putting-it-all-together.md
         - Cluster Membership:
-          - The Problem: 03-Case-Studies/04-Summit/01-KV-Store/04-Deep-Dives/04-Cluster-Membership/01-The-Problem.md
-          - Gossip Protocol: 03-Case-Studies/04-Summit/01-KV-Store/04-Deep-Dives/04-Cluster-Membership/02-Gossip-Protocol.md
-          - Failure Detection: 03-Case-Studies/04-Summit/01-KV-Store/04-Deep-Dives/04-Cluster-Membership/03-Failure-Detection.md
+          - The Problem: kv-store/cluster-membership-the-problem.md
+          - Gossip Protocol: kv-store/cluster-membership-gossip-protocol.md
+          - Failure Detection: kv-store/cluster-membership-failure-detection.md
         - Conflict Resolution:
-          - The Problem: 03-Case-Studies/04-Summit/01-KV-Store/04-Deep-Dives/05-Conflict-Resolution/01-The-Problem.md
-          - Solution: 03-Case-Studies/04-Summit/01-KV-Store/04-Deep-Dives/05-Conflict-Resolution/02-Solution.md
+          - The Problem: kv-store/conflict-resolution-the-problem.md
+          - Solution: kv-store/conflict-resolution-solution.md
         - TTL And Data Expiry:
-          - How TTL Works: 03-Case-Studies/04-Summit/01-KV-Store/04-Deep-Dives/06-TTL-And-Data-Expiry/01-How-TTL-Works.md
+          - How TTL Works: kv-store/ttl-and-data-expiry-how-ttl-works.md
         - Fault Isolation:
-          - Node Failure: 03-Case-Studies/04-Summit/01-KV-Store/04-Deep-Dives/07-Fault-Isolation/01-Node-Failure.md
+          - Node Failure: kv-store/fault-isolation-node-failure.md
           - "Disk Failure":
-            - The Problem: 03-Case-Studies/04-Summit/01-KV-Store/04-Deep-Dives/07-Fault-Isolation/02-Disk-Failure/02-The-Problem.md
-            - Silent Corruption: 03-Case-Studies/04-Summit/01-KV-Store/04-Deep-Dives/07-Fault-Isolation/02-Disk-Failure/03-Silent-Corruption.md
-            - Disk Full: 03-Case-Studies/04-Summit/01-KV-Store/04-Deep-Dives/07-Fault-Isolation/02-Disk-Failure/04-Disk-Full.md
-          - Network Partition: 03-Case-Studies/04-Summit/01-KV-Store/04-Deep-Dives/07-Fault-Isolation/03-Network-Partition.md
-          - Cascading Failures: 03-Case-Studies/04-Summit/01-KV-Store/04-Deep-Dives/07-Fault-Isolation/04-Cascading-Failures.md
-          - Coordinator Failure: 03-Case-Studies/04-Summit/01-KV-Store/04-Deep-Dives/07-Fault-Isolation/05-Coordinator-Failure.md
+            - The Problem: kv-store/fault-isolation-disk-failure-the-problem.md
+            - Silent Corruption: kv-store/fault-isolation-disk-failure-silent-corruption.md
+            - Disk Full: kv-store/fault-isolation-disk-failure-disk-full.md
+          - Network Partition: kv-store/fault-isolation-network-partition.md
+          - Cascading Failures: kv-store/fault-isolation-cascading-failures.md
+          - Coordinator Failure: kv-store/fault-isolation-coordinator-failure.md
       - "Observability":
-        - SLI / SLO Connection: 03-Case-Studies/04-Summit/01-KV-Store/05-Observability/01-SLI-SLO-Connection.md
-        - Measuring Latency: 03-Case-Studies/04-Summit/01-KV-Store/05-Observability/02-Measuring-Latency.md
-        - Measuring Availability: 03-Case-Studies/04-Summit/01-KV-Store/05-Observability/03-Measuring-Availability.md
-        - Alerting: 03-Case-Studies/04-Summit/01-KV-Store/05-Observability/04-Alerting.md
-        - Error Budget: 03-Case-Studies/04-Summit/01-KV-Store/05-Observability/05-Error-Budget.md
-      - Key-Value Store Architecture: 03-Case-Studies/04-Summit/01-KV-Store/06-Final-Design/01-Final-Architecture.md
+        - SLI / SLO Connection: kv-store/sli-slo-connection.md
+        - Measuring Latency: kv-store/measuring-latency.md
+        - Measuring Availability: kv-store/measuring-availability.md
+        - Alerting: kv-store/alerting.md
+        - Error Budget: kv-store/error-budget.md
+      - Key-Value Store Architecture: kv-store/architecture.md
 
     - Netflix:
-      - Overview: 03-Case-Studies/04-Summit/02-Netflix/index.md
+      - Overview: netflix/index.md
       - "System Requirements":
-        - System Overview: 03-Case-Studies/04-Summit/02-Netflix/01-System-Requirements/01-System-Overview.md
-        - Functional Requirements: 03-Case-Studies/04-Summit/02-Netflix/01-System-Requirements/02-FR.md
-        - Bitrate: 03-Case-Studies/04-Summit/02-Netflix/01-System-Requirements/03-Bitrate.md
-        - Estimation: 03-Case-Studies/04-Summit/02-Netflix/01-System-Requirements/04-Estimation.md
-        - Non-Functional Requirements: 03-Case-Studies/04-Summit/02-Netflix/01-System-Requirements/05-NFR.md
-        - API — Home Feed: 03-Case-Studies/04-Summit/02-Netflix/01-System-Requirements/06-API-Home-Feed.md
-        - API — Stream: 03-Case-Studies/04-Summit/02-Netflix/01-System-Requirements/07-API-Stream.md
-        - API — Search: 03-Case-Studies/04-Summit/02-Netflix/01-System-Requirements/08-API-Search.md
+        - System Overview: netflix/system-overview.md
+        - Functional Requirements: netflix/functional-requirements.md
+        - Bitrate: netflix/bitrate.md
+        - Estimation: netflix/estimation.md
+        - Non-Functional Requirements: netflix/non-functional-requirements.md
+        - API — Home Feed: netflix/api-home-feed.md
+        - API — Stream: netflix/api-stream.md
+        - API — Search: netflix/api-search.md
       - "Base Architecture":
-        - Homepage Browse: 03-Case-Studies/04-Summit/02-Netflix/02-Base-Architecture/01-Homepage-Browse.md
-        - Download: 03-Case-Studies/04-Summit/02-Netflix/02-Base-Architecture/02-Download.md
-        - Streaming: 03-Case-Studies/04-Summit/02-Netflix/02-Base-Architecture/03-Streaming.md
-        - Search: 03-Case-Studies/04-Summit/02-Netflix/02-Base-Architecture/04-Search.md
+        - Homepage Browse: netflix/base-architecture-homepage-browse.md
+        - Download: netflix/base-architecture-download.md
+        - Streaming: netflix/base-architecture-streaming.md
+        - Search: netflix/base-architecture-search.md
       - Deep Dives:
         - Transcoding:
-          - Transcoding: 03-Case-Studies/04-Summit/02-Netflix/03-Deep-Dives/01-Transcoding/01-Transcoding.md
-          - Adaptive Bitrate: 03-Case-Studies/04-Summit/02-Netflix/03-Deep-Dives/01-Transcoding/02-Adaptive-Bitrate.md
+          - Transcoding: netflix/transcoding.md
+          - Adaptive Bitrate: netflix/transcoding-adaptive-bitrate.md
         - Manifest And HLS:
-          - Manifest: 03-Case-Studies/04-Summit/02-Netflix/03-Deep-Dives/02-Manifest-And-HLS/01-Manifest.md
-          - HLS vs DASH: 03-Case-Studies/04-Summit/02-Netflix/03-Deep-Dives/02-Manifest-And-HLS/02-HLS-vs-DASH.md
+          - Manifest: netflix/manifest-and-hls-manifest.md
+          - HLS vs DASH: netflix/manifest-and-hls-vs-dash.md
         - Caching:
-          - The Problem: 03-Case-Studies/04-Summit/02-Netflix/03-Deep-Dives/03-Caching/01-Problem.md
-          - CDN: 03-Case-Studies/04-Summit/02-Netflix/03-Deep-Dives/03-Caching/02-CDN.md
-          - Updated Architecture: 03-Case-Studies/04-Summit/02-Netflix/03-Deep-Dives/03-Caching/03-Updated-Architecture.md
+          - The Problem: netflix/caching-problem.md
+          - CDN: netflix/caching-cdn.md
+          - Updated Architecture: netflix/caching-updated-architecture.md
         - Database:
-          - Content Metadata DB: 03-Case-Studies/04-Summit/02-Netflix/03-Deep-Dives/04-DB/01-Content-Metadata-DB.md
-          - User Data DB: 03-Case-Studies/04-Summit/02-Netflix/03-Deep-Dives/04-DB/02-User-Data-DB.md
+          - Content Metadata DB: netflix/db-content-metadata-db.md
+          - User Data DB: netflix/db-user-data-db.md
         - Search:
-          - The Problem: 03-Case-Studies/04-Summit/02-Netflix/03-Deep-Dives/05-Search/01-Problem.md
-          - Elasticsearch: 03-Case-Studies/04-Summit/02-Netflix/03-Deep-Dives/05-Search/02-Elasticsearch.md
-          - Search Architecture: 03-Case-Studies/04-Summit/02-Netflix/03-Deep-Dives/05-Search/03-Search-Architecture.md
+          - The Problem: netflix/search-problem.md
+          - Elasticsearch: netflix/search-elasticsearch.md
+          - Search Architecture: netflix/search-architecture.md
         - Resume Playback:
-          - Write Pattern: 03-Case-Studies/04-Summit/02-Netflix/03-Deep-Dives/06-Resume-Playback/01-Write-Pattern.md
-          - Cross-Device Sync: 03-Case-Studies/04-Summit/02-Netflix/03-Deep-Dives/06-Resume-Playback/02-Cross-Device-Sync.md
-          - Updated Architecture: 03-Case-Studies/04-Summit/02-Netflix/03-Deep-Dives/06-Resume-Playback/03-Updated-Architecture.md
+          - Write Pattern: netflix/resume-playback-write-pattern.md
+          - Cross-Device Sync: netflix/resume-playback-cross-device-sync.md
+          - Updated Architecture: netflix/resume-playback-updated-architecture.md
         - Peak Traffic:
-          - Peak Traffic: 03-Case-Studies/04-Summit/02-Netflix/03-Deep-Dives/07-Peak-Traffic/01-Peak-Traffic.md
+          - Peak Traffic: netflix/peak-traffic-peak-traffic.md
         - Fault Isolation:
-          - Circuit Breaker: 03-Case-Studies/04-Summit/02-Netflix/03-Deep-Dives/09-Fault-Isolation/01-Circuit-Breaker.md
-          - Cache Failure: 03-Case-Studies/04-Summit/02-Netflix/03-Deep-Dives/09-Fault-Isolation/02-Cache-Failure.md
-          - CDN Failure: 03-Case-Studies/04-Summit/02-Netflix/03-Deep-Dives/09-Fault-Isolation/03-CDN-Failure.md
+          - Circuit Breaker: netflix/fault-isolation-circuit-breaker.md
+          - Cache Failure: netflix/fault-isolation-cache-failure.md
+          - CDN Failure: netflix/fault-isolation-cdn-failure.md
       - "Observability":
-        - SLI / SLO Connection: 03-Case-Studies/04-Summit/02-Netflix/04-Observability/01-SLI-SLO-Connection.md
-        - Measuring Latency: 03-Case-Studies/04-Summit/02-Netflix/04-Observability/02-Measuring-Latency.md
-        - Measuring Availability: 03-Case-Studies/04-Summit/02-Netflix/04-Observability/03-Measuring-Availability.md
-        - Alerting: 03-Case-Studies/04-Summit/02-Netflix/04-Observability/04-Alerting.md
-        - Error Budget: 03-Case-Studies/04-Summit/02-Netflix/04-Observability/05-Error-Budget.md
-      - Netflix Architecture: 03-Case-Studies/04-Summit/02-Netflix/05-Final-Design/01-Final-Architecture.md
+        - SLI / SLO Connection: netflix/sli-slo-connection.md
+        - Measuring Latency: netflix/measuring-latency.md
+        - Measuring Availability: netflix/measuring-availability.md
+        - Alerting: netflix/alerting.md
+        - Error Budget: netflix/error-budget.md
+      - Netflix Architecture: netflix/architecture.md
 
   - "Battleground":
     - Overview: 03-Case-Studies/05-Battleground/index.md
     - WhatsApp:
-      - Overview: 03-Case-Studies/05-Battleground/01-WhatsApp/index.md
+      - Overview: whatsapp/index.md
       - "System Requirements":
-        - Functional Requirements: 03-Case-Studies/05-Battleground/01-WhatsApp/01-System-Requirements/01-FR.md
-        - Estimation: 03-Case-Studies/05-Battleground/01-WhatsApp/01-System-Requirements/02-Estimation.md
-        - Non-Functional Requirements: 03-Case-Studies/05-Battleground/01-WhatsApp/01-System-Requirements/03-NFR.md
-        - API Design: 03-Case-Studies/05-Battleground/01-WhatsApp/01-System-Requirements/04-API.md
+        - Functional Requirements: whatsapp/functional-requirements.md
+        - Estimation: whatsapp/estimation.md
+        - Non-Functional Requirements: whatsapp/non-functional-requirements.md
+        - API Design: whatsapp/api-design.md
       - "Real-Time Comms":
-        - The Problem: 03-Case-Studies/05-Battleground/01-WhatsApp/02-Real-Time-Comms/01-The-Problem.md
-        - Short Polling: 03-Case-Studies/05-Battleground/01-WhatsApp/02-Real-Time-Comms/02-Short-Polling.md
-        - Long Polling: 03-Case-Studies/05-Battleground/01-WhatsApp/02-Real-Time-Comms/03-Long-Polling.md
-        - SSE: 03-Case-Studies/05-Battleground/01-WhatsApp/02-Real-Time-Comms/04-SSE.md
-        - WebSockets: 03-Case-Studies/05-Battleground/01-WhatsApp/02-Real-Time-Comms/05-WebSockets.md
-        - Comparison: 03-Case-Studies/05-Battleground/01-WhatsApp/02-Real-Time-Comms/06-Comparison.md
+        - The Problem: whatsapp/real-time-comms-the-problem.md
+        - Short Polling: whatsapp/real-time-comms-short-polling.md
+        - Long Polling: whatsapp/real-time-comms-long-polling.md
+        - SSE: whatsapp/real-time-comms-sse.md
+        - WebSockets: whatsapp/real-time-comms-websockets.md
+        - Comparison: whatsapp/real-time-comms-comparison.md
       - "Base Architecture":
-        - Overview: 03-Case-Studies/05-Battleground/01-WhatsApp/03-Base-Architecture/01-Overview.md
-        - WebSocket Connection Flow: 03-Case-Studies/05-Battleground/01-WhatsApp/03-Base-Architecture/02-WebSocket-Connection-Flow.md
-        - Message Send Flow: 03-Case-Studies/05-Battleground/01-WhatsApp/03-Base-Architecture/03-Message-Send-Flow.md
-        - Chat History Flow: 03-Case-Studies/05-Battleground/01-WhatsApp/03-Base-Architecture/04-Chat-History-Flow.md
-        - API GW And LB: 03-Case-Studies/05-Battleground/01-WhatsApp/03-Base-Architecture/05-API-GW-And-LB.md
+        - Overview: whatsapp/base-architecture-overview.md
+        - WebSocket Connection Flow: whatsapp/base-architecture-websocket-connection-flow.md
+        - Message Send Flow: whatsapp/base-architecture-message-send-flow.md
+        - Chat History Flow: whatsapp/base-architecture-chat-history-flow.md
+        - API GW And LB: whatsapp/base-architecture-api-gw-and-lb.md
       - Deep Dives:
-        - Overview: 03-Case-Studies/05-Battleground/01-WhatsApp/04-Deep-Dives/index.md
+        - Overview: whatsapp/deep-dives/index.md
         - Database:
-          - DB Choice: 03-Case-Studies/05-Battleground/01-WhatsApp/04-Deep-Dives/01-DB/01-DB-Choice.md
-          - Schema: 03-Case-Studies/05-Battleground/01-WhatsApp/04-Deep-Dives/01-DB/02-Schema.md
-          - Tiered Storage: 03-Case-Studies/05-Battleground/01-WhatsApp/04-Deep-Dives/01-DB/03-Tiered-Storage.md
-          - Sharding: 03-Case-Studies/05-Battleground/01-WhatsApp/04-Deep-Dives/01-DB/04-Sharding.md
-          - Hot Partition — Overview: 03-Case-Studies/05-Battleground/01-WhatsApp/04-Deep-Dives/01-DB/05-Hot-Partition/00-Overview.md
-          - Hot Partition — Detection: 03-Case-Studies/05-Battleground/01-WhatsApp/04-Deep-Dives/01-DB/05-Hot-Partition/01-Detection.md
-          - Hot Partition — Salting: 03-Case-Studies/05-Battleground/01-WhatsApp/04-Deep-Dives/01-DB/05-Hot-Partition/02-Salting.md
-          - Hot Partition — Dynamic N: 03-Case-Studies/05-Battleground/01-WhatsApp/04-Deep-Dives/01-DB/05-Hot-Partition/03-Dynamic-N.md
-          - Hot Partition — Read Query: 03-Case-Studies/05-Battleground/01-WhatsApp/04-Deep-Dives/01-DB/05-Hot-Partition/04-Read-Query.md
-          - Hot Partition — Registry: 03-Case-Studies/05-Battleground/01-WhatsApp/04-Deep-Dives/01-DB/05-Hot-Partition/05-Registry.md
-          - Hot Partition — Edge Cases: 03-Case-Studies/05-Battleground/01-WhatsApp/04-Deep-Dives/01-DB/05-Hot-Partition/06-Edge-Cases.md
-          - Updated Architecture: 03-Case-Studies/05-Battleground/01-WhatsApp/04-Deep-Dives/01-DB/06-Updated-Architecture.md
+          - DB Choice: whatsapp/db-choice.md
+          - Schema: whatsapp/db-schema.md
+          - Tiered Storage: whatsapp/db-tiered-storage.md
+          - Sharding: whatsapp/db-sharding.md
+          - Hot Partition — Overview: whatsapp/db-hot-partition-overview.md
+          - Hot Partition — Detection: whatsapp/db-hot-partition-detection.md
+          - Hot Partition — Salting: whatsapp/db-hot-partition-salting.md
+          - Hot Partition — Dynamic N: whatsapp/db-hot-partition-dynamic-n.md
+          - Hot Partition — Read Query: whatsapp/db-hot-partition-read-query.md
+          - Hot Partition — Registry: whatsapp/db-hot-partition-registry.md
+          - Hot Partition — Edge Cases: whatsapp/db-hot-partition-edge-cases.md
+          - Updated Architecture: whatsapp/db-updated-architecture.md
         - Message Ordering:
-          - The Problem: 03-Case-Studies/05-Battleground/01-WhatsApp/04-Deep-Dives/02-Message-Ordering/01-The-Problem.md
-          - Client Timestamps: 03-Case-Studies/05-Battleground/01-WhatsApp/04-Deep-Dives/02-Message-Ordering/02-Client-Timestamps.md
-          - Time Machine Problem: 03-Case-Studies/05-Battleground/01-WhatsApp/04-Deep-Dives/02-Message-Ordering/03-Time-Machine-Problem.md
-          - Server Timestamps: 03-Case-Studies/05-Battleground/01-WhatsApp/04-Deep-Dives/02-Message-Ordering/04-Server-Timestamps.md
-          - Dedicated Timestamp Service: 03-Case-Studies/05-Battleground/01-WhatsApp/04-Deep-Dives/02-Message-Ordering/05-Dedicated-Timestamp-Service.md
-          - Per-User Sequence: 03-Case-Studies/05-Battleground/01-WhatsApp/04-Deep-Dives/02-Message-Ordering/06-Per-User-Sequence.md
-          - Per-Conversation Sequence: 03-Case-Studies/05-Battleground/01-WhatsApp/04-Deep-Dives/02-Message-Ordering/07-Per-Conversation-Sequence.md
-          - Redis INCR: 03-Case-Studies/05-Battleground/01-WhatsApp/04-Deep-Dives/02-Message-Ordering/08-Redis-INCR.md
-          - Full Ordering Flow: 03-Case-Studies/05-Battleground/01-WhatsApp/04-Deep-Dives/02-Message-Ordering/09-Full-Ordering-Flow.md
-          - Schema Update: 03-Case-Studies/05-Battleground/01-WhatsApp/04-Deep-Dives/02-Message-Ordering/10-Schema-Update.md
-          - Display Time: 03-Case-Studies/05-Battleground/01-WhatsApp/04-Deep-Dives/02-Message-Ordering/11-Display-Time.md
-          - Updated Architecture: 03-Case-Studies/05-Battleground/01-WhatsApp/04-Deep-Dives/02-Message-Ordering/12-Updated-Architecture.md
+          - The Problem: whatsapp/message-ordering-the-problem.md
+          - Client Timestamps: whatsapp/message-ordering-client-timestamps.md
+          - Time Machine Problem: whatsapp/message-ordering-time-machine-problem.md
+          - Server Timestamps: whatsapp/message-ordering-server-timestamps.md
+          - Dedicated Timestamp Service: whatsapp/message-ordering-dedicated-timestamp-service.md
+          - Per-User Sequence: whatsapp/message-ordering-per-user-sequence.md
+          - Per-Conversation Sequence: whatsapp/message-ordering-per-conversation-sequence.md
+          - Redis INCR: whatsapp/message-ordering-redis-incr.md
+          - Full Ordering Flow: whatsapp/message-ordering-full-ordering-flow.md
+          - Schema Update: whatsapp/message-ordering-schema-update.md
+          - Display Time: whatsapp/message-ordering-display-time.md
+          - Updated Architecture: whatsapp/message-ordering-updated-architecture.md
         - Offline Delivery:
-          - The Problem: 03-Case-Studies/05-Battleground/01-WhatsApp/04-Deep-Dives/03-Offline-Delivery/01-The-Problem.md
-          - Detecting Offline: 03-Case-Studies/05-Battleground/01-WhatsApp/04-Deep-Dives/03-Offline-Delivery/02-Detecting-Offline.md
-          - Naive Mailbox: 03-Case-Studies/05-Battleground/01-WhatsApp/04-Deep-Dives/03-Offline-Delivery/03-Naive-Mailbox.md
-          - Message ID Only: 03-Case-Studies/05-Battleground/01-WhatsApp/04-Deep-Dives/03-Offline-Delivery/04-Message-Id-Only.md
-          - Why Not Kafka: 03-Case-Studies/05-Battleground/01-WhatsApp/04-Deep-Dives/03-Offline-Delivery/05-Why-Not-Kafka.md
-          - Last Delivered Seq: 03-Case-Studies/05-Battleground/01-WhatsApp/04-Deep-Dives/03-Offline-Delivery/06-Last-Delivered-Seq.md
-          - Pending Deliveries Table: 03-Case-Studies/05-Battleground/01-WhatsApp/04-Deep-Dives/03-Offline-Delivery/07-Pending-Deliveries-Table.md
-          - Write Flow: 03-Case-Studies/05-Battleground/01-WhatsApp/04-Deep-Dives/03-Offline-Delivery/08-Write-Flow.md
-          - Push Notifications: 03-Case-Studies/05-Battleground/01-WhatsApp/04-Deep-Dives/03-Offline-Delivery/09-Push-Notifications.md
-          - Notification Payload: 03-Case-Studies/05-Battleground/01-WhatsApp/04-Deep-Dives/03-Offline-Delivery/10-Notification-Payload.md
-          - Internet Turns On: 03-Case-Studies/05-Battleground/01-WhatsApp/04-Deep-Dives/03-Offline-Delivery/11-Internet-Turns-On.md
-          - Notification Reply: 03-Case-Studies/05-Battleground/01-WhatsApp/04-Deep-Dives/03-Offline-Delivery/12-Notification-Reply.md
-          - Updated Architecture: 03-Case-Studies/05-Battleground/01-WhatsApp/04-Deep-Dives/03-Offline-Delivery/13-Updated-Architecture.md
+          - The Problem: whatsapp/offline-delivery-the-problem.md
+          - Detecting Offline: whatsapp/offline-delivery-detecting-offline.md
+          - Naive Mailbox: whatsapp/offline-delivery-naive-mailbox.md
+          - Message ID Only: whatsapp/offline-delivery-message-id-only.md
+          - Why Not Kafka: whatsapp/offline-delivery-why-not-kafka.md
+          - Last Delivered Seq: whatsapp/offline-delivery-last-delivered-seq.md
+          - Pending Deliveries Table: whatsapp/offline-delivery-pending-deliveries-table.md
+          - Write Flow: whatsapp/offline-delivery-write-flow.md
+          - Push Notifications: whatsapp/offline-delivery-push-notifications.md
+          - Notification Payload: whatsapp/offline-delivery-notification-payload.md
+          - Internet Turns On: whatsapp/offline-delivery-internet-turns-on.md
+          - Notification Reply: whatsapp/offline-delivery-notification-reply.md
+          - Updated Architecture: whatsapp/offline-delivery-updated-architecture.md
         - Message Status:
-          - The Three Ticks: 03-Case-Studies/05-Battleground/01-WhatsApp/04-Deep-Dives/04-Message-Status/01-The-Three-Ticks.md
-          - Naive Status Column: 03-Case-Studies/05-Battleground/01-WhatsApp/04-Deep-Dives/04-Message-Status/02-Naive-Status-Column.md
-          - Status Table: 03-Case-Studies/05-Battleground/01-WhatsApp/04-Deep-Dives/04-Message-Status/03-Status-Table.md
-          - Delivered Ack: 03-Case-Studies/05-Battleground/01-WhatsApp/04-Deep-Dives/04-Message-Status/04-Delivered-Ack.md
-          - Read Receipt Flow: 03-Case-Studies/05-Battleground/01-WhatsApp/04-Deep-Dives/04-Message-Status/05-Read-Receipt-Flow.md
-          - APNs Not Reliable: 03-Case-Studies/05-Battleground/01-WhatsApp/04-Deep-Dives/04-Message-Status/06-APNs-Not-Reliable.md
-          - Notification Banner: 03-Case-Studies/05-Battleground/01-WhatsApp/04-Deep-Dives/04-Message-Status/07-Notification-Banner.md
-          - Phone Off Three Days: 03-Case-Studies/05-Battleground/01-WhatsApp/04-Deep-Dives/04-Message-Status/08-Phone-Off-Three-Days.md
-          - Offline Status Sync: 03-Case-Studies/05-Battleground/01-WhatsApp/04-Deep-Dives/04-Message-Status/09-Offline-Status-Sync.md
-          - Read Receipts — Mutual Rule: 03-Case-Studies/05-Battleground/01-WhatsApp/04-Deep-Dives/04-Message-Status/10-Privacy-Settings/01-Read-Receipts/01-Mutual-Rule.md
-          - Read Receipts — Where To Store Flag: 03-Case-Studies/05-Battleground/01-WhatsApp/04-Deep-Dives/04-Message-Status/10-Privacy-Settings/01-Read-Receipts/02-Where-To-Store-Flag.md
-          - Read Receipts — Client vs Server Check: 03-Case-Studies/05-Battleground/01-WhatsApp/04-Deep-Dives/04-Message-Status/10-Privacy-Settings/01-Read-Receipts/03-Client-vs-Server-Check.md
-          - Read Receipts — How Mutual Rule Enforces: 03-Case-Studies/05-Battleground/01-WhatsApp/04-Deep-Dives/04-Message-Status/10-Privacy-Settings/01-Read-Receipts/04-How-Mutual-Rule-Enforces.md
-          - Last Seen — What Is It: 03-Case-Studies/05-Battleground/01-WhatsApp/04-Deep-Dives/04-Message-Status/10-Privacy-Settings/02-Last-Seen/01-What-Is-Last-Seen.md
-          - Last Seen — How It Gets Recorded: 03-Case-Studies/05-Battleground/01-WhatsApp/04-Deep-Dives/04-Message-Status/10-Privacy-Settings/02-Last-Seen/02-How-It-Gets-Recorded.md
-          - Last Seen — How Alice Sees It: 03-Case-Studies/05-Battleground/01-WhatsApp/04-Deep-Dives/04-Message-Status/10-Privacy-Settings/02-Last-Seen/03-How-Alice-Sees-It.md
-          - Last Seen — Privacy And Mutual Rule: 03-Case-Studies/05-Battleground/01-WhatsApp/04-Deep-Dives/04-Message-Status/10-Privacy-Settings/02-Last-Seen/04-Privacy-And-Mutual-Rule.md
-          - Last Seen — vs Read Receipts: 03-Case-Studies/05-Battleground/01-WhatsApp/04-Deep-Dives/04-Message-Status/10-Privacy-Settings/02-Last-Seen/05-vs-Read-Receipts.md
-          - Updated Architecture: 03-Case-Studies/05-Battleground/01-WhatsApp/04-Deep-Dives/04-Message-Status/11-Updated-Architecture.md
+          - The Three Ticks: whatsapp/message-status-the-three-ticks.md
+          - Naive Status Column: whatsapp/message-status-naive-status-column.md
+          - Status Table: whatsapp/message-status-table.md
+          - Delivered Ack: whatsapp/message-status-delivered-ack.md
+          - Read Receipt Flow: whatsapp/message-status-read-receipt-flow.md
+          - APNs Not Reliable: whatsapp/message-status-apns-not-reliable.md
+          - Notification Banner: whatsapp/message-status-notification-banner.md
+          - Phone Off Three Days: whatsapp/message-status-phone-off-three-days.md
+          - Offline Status Sync: whatsapp/message-status-offline-status-sync.md
+          - Read Receipts — Mutual Rule: whatsapp/message-status-privacy-settings-read-receipts-mutual-rule.md
+          - Read Receipts — Where To Store Flag: whatsapp/message-status-privacy-settings-read-receipts-where-to-store-flag.md
+          - Read Receipts — Client vs Server Check: whatsapp/message-status-privacy-settings-read-receipts-client-vs-server-check.md
+          - Read Receipts — How Mutual Rule Enforces: whatsapp/message-status-privacy-settings-read-receipts-how-mutual-rule-enforces.md
+          - Last Seen — What Is It: whatsapp/message-status-privacy-settings-last-seen-what-is-last-seen.md
+          - Last Seen — How It Gets Recorded: whatsapp/message-status-privacy-settings-last-seen-how-it-gets-recorded.md
+          - Last Seen — How Alice Sees It: whatsapp/message-status-privacy-settings-last-seen-how-alice-sees-it.md
+          - Last Seen — Privacy And Mutual Rule: whatsapp/message-status-privacy-settings-last-seen-privacy-and-mutual-rule.md
+          - Last Seen — vs Read Receipts: whatsapp/message-status-privacy-settings-last-seen-vs-read-receipts.md
+          - Updated Architecture: whatsapp/message-status-updated-architecture.md
         - Inbox:
-          - Inbox Load Flow: 03-Case-Studies/05-Battleground/01-WhatsApp/04-Deep-Dives/05-Inbox/01-Inbox-Load-Flow.md
-          - N+1 And Denormalization: 03-Case-Studies/05-Battleground/01-WhatsApp/04-Deep-Dives/05-Inbox/02-N+1-And-Denormalization.md
-          - Conversations Table Schema: 03-Case-Studies/05-Battleground/01-WhatsApp/04-Deep-Dives/05-Inbox/03-Conversations-Table-Schema.md
-          - LSM Tree And Immutable Keys: 03-Case-Studies/05-Battleground/01-WhatsApp/04-Deep-Dives/05-Inbox/04-LSM-Tree-And-Immutable-Keys.md
-          - Option A vs Option B: 03-Case-Studies/05-Battleground/01-WhatsApp/04-Deep-Dives/05-Inbox/05-Option-A-vs-Option-B.md
-          - Redis Sorted Set: 03-Case-Studies/05-Battleground/01-WhatsApp/04-Deep-Dives/05-Inbox/06-Redis-Sorted-Set.md
-          - Unread Count: 03-Case-Studies/05-Battleground/01-WhatsApp/04-Deep-Dives/05-Inbox/07-Unread-Count.md
-          - Updated Architecture: 03-Case-Studies/05-Battleground/01-WhatsApp/04-Deep-Dives/05-Inbox/08-Updated-Architecture.md
+          - Inbox Load Flow: whatsapp/inbox-load-flow.md
+          - N+1 And Denormalization: whatsapp/inbox-nplus1-and-denormalization.md
+          - Conversations Table Schema: whatsapp/inbox-conversations-table-schema.md
+          - LSM Tree And Immutable Keys: whatsapp/inbox-lsm-tree-and-immutable-keys.md
+          - Option A vs Option B: whatsapp/inbox-option-a-vs-option-b.md
+          - Redis Sorted Set: whatsapp/inbox-redis-sorted-set.md
+          - Unread Count: whatsapp/inbox-unread-count.md
+          - Updated Architecture: whatsapp/inbox-updated-architecture.md
         - Caching:
-          - Message History Cache: 03-Case-Studies/05-Battleground/01-WhatsApp/04-Deep-Dives/06-Caching/01-Message-History-Cache.md
-          - Profile Cache: 03-Case-Studies/05-Battleground/01-WhatsApp/04-Deep-Dives/06-Caching/02-Profile-Cache.md
-          - Cache Invalidation: 03-Case-Studies/05-Battleground/01-WhatsApp/04-Deep-Dives/06-Caching/03-Cache-Invalidation.md
-          - Cold Start And Coalescing: 03-Case-Studies/05-Battleground/01-WhatsApp/04-Deep-Dives/06-Caching/04-Cold-Start-And-Coalescing.md
-          - Updated Architecture: 03-Case-Studies/05-Battleground/01-WhatsApp/04-Deep-Dives/06-Caching/05-Updated-Architecture.md
+          - Message History Cache: whatsapp/caching-message-history-cache.md
+          - Profile Cache: whatsapp/caching-profile-cache.md
+          - Cache Invalidation: whatsapp/caching-cache-invalidation.md
+          - Cold Start And Coalescing: whatsapp/caching-cold-start-and-coalescing.md
+          - Updated Architecture: whatsapp/caching-updated-architecture.md
         - Peak Traffic:
-          - Thundering Herd — Redis Sharding: 03-Case-Studies/05-Battleground/01-WhatsApp/04-Deep-Dives/07-Peak-Traffic/01-Thundering-Herd/01-Redis-Sharding.md
-          - Connection Storm — The Problem: 03-Case-Studies/05-Battleground/01-WhatsApp/04-Deep-Dives/07-Peak-Traffic/02-Connection-Storm/01-The-Problem.md
-          - Connection Storm — Kafka Queue Delay: 03-Case-Studies/05-Battleground/01-WhatsApp/04-Deep-Dives/07-Peak-Traffic/02-Connection-Storm/02-Kafka-Queue-Delay.md
-          - Connection Storm — Offline Delivery Fallback: 03-Case-Studies/05-Battleground/01-WhatsApp/04-Deep-Dives/07-Peak-Traffic/02-Connection-Storm/03-Offline-Delivery-Fallback.md
-          - Rate Limiting — Why Not API Gateway: 03-Case-Studies/05-Battleground/01-WhatsApp/04-Deep-Dives/07-Peak-Traffic/03-Rate-Limiting/01-Why-Not-API-Gateway.md
-          - Rate Limiting — Connection Server Limit: 03-Case-Studies/05-Battleground/01-WhatsApp/04-Deep-Dives/07-Peak-Traffic/03-Rate-Limiting/02-Connection-Server-Limit.md
-          - Rate Limiting — Centralised Redis Counter: 03-Case-Studies/05-Battleground/01-WhatsApp/04-Deep-Dives/07-Peak-Traffic/03-Rate-Limiting/03-Centralised-Redis-Counter.md
-          - Rate Limiting — Client Notification: 03-Case-Studies/05-Battleground/01-WhatsApp/04-Deep-Dives/07-Peak-Traffic/03-Rate-Limiting/04-Client-Notification.md
-          - Backpressure — The Problem: 03-Case-Studies/05-Battleground/01-WhatsApp/04-Deep-Dives/07-Peak-Traffic/04-Backpressure/01-The-Problem.md
-          - Backpressure — In-Memory Queue: 03-Case-Studies/05-Battleground/01-WhatsApp/04-Deep-Dives/07-Peak-Traffic/04-Backpressure/02-In-Memory-Queue.md
-          - Backpressure — Thread Pool vs MQ: 03-Case-Studies/05-Battleground/01-WhatsApp/04-Deep-Dives/07-Peak-Traffic/04-Backpressure/03-Thread-Pool-vs-MQ.md
-          - Backpressure — Load Shedding: 03-Case-Studies/05-Battleground/01-WhatsApp/04-Deep-Dives/07-Peak-Traffic/04-Backpressure/04-Load-Shedding.md
-          - Updated Architecture: 03-Case-Studies/05-Battleground/01-WhatsApp/04-Deep-Dives/07-Peak-Traffic/05-Updated-Architecture.md
+          - Thundering Herd — Redis Sharding: whatsapp/peak-traffic-thundering-herd-redis-sharding.md
+          - Connection Storm — The Problem: whatsapp/peak-traffic-connection-storm-the-problem.md
+          - Connection Storm — Kafka Queue Delay: whatsapp/peak-traffic-connection-storm-kafka-queue-delay.md
+          - Connection Storm — Offline Delivery Fallback: whatsapp/peak-traffic-connection-storm-offline-delivery-fallback.md
+          - Rate Limiting — Why Not API Gateway: whatsapp/peak-traffic-rate-limiting-why-not-api-gateway.md
+          - Rate Limiting — Connection Server Limit: whatsapp/peak-traffic-rate-limiting-connection-server-limit.md
+          - Rate Limiting — Centralised Redis Counter: whatsapp/peak-traffic-rate-limiting-centralised-redis-counter.md
+          - Rate Limiting — Client Notification: whatsapp/peak-traffic-rate-limiting-client-notification.md
+          - Backpressure — The Problem: whatsapp/peak-traffic-backpressure-the-problem.md
+          - Backpressure — In-Memory Queue: whatsapp/peak-traffic-backpressure-in-memory-queue.md
+          - Backpressure — Thread Pool vs MQ: whatsapp/peak-traffic-backpressure-thread-pool-vs-mq.md
+          - Backpressure — Load Shedding: whatsapp/peak-traffic-backpressure-load-shedding.md
+          - Updated Architecture: whatsapp/peak-traffic-updated-architecture.md
         - Fault Isolation:
-          - Connection Server Failure — Client Reconnect: 03-Case-Studies/05-Battleground/01-WhatsApp/04-Deep-Dives/XX-Fault-Isolation/01-Connection-Server-Failure/01-Client-Reconnect.md
-          - Connection Server Failure — Registry Cleanup: 03-Case-Studies/05-Battleground/01-WhatsApp/04-Deep-Dives/XX-Fault-Isolation/01-Connection-Server-Failure/02-Registry-Cleanup.md
-          - Connection Server Failure — Stale Registry Fallback: 03-Case-Studies/05-Battleground/01-WhatsApp/04-Deep-Dives/XX-Fault-Isolation/01-Connection-Server-Failure/03-Stale-Registry-Fallback.md
-          - Connection Server Failure — Reconnect Storm: 03-Case-Studies/05-Battleground/01-WhatsApp/04-Deep-Dives/XX-Fault-Isolation/01-Connection-Server-Failure/04-Reconnect-Storm.md
-          - DynamoDB Failure — Circuit Breaker: 03-Case-Studies/05-Battleground/01-WhatsApp/04-Deep-Dives/XX-Fault-Isolation/02-DynamoDB-Failure/01-Circuit-Breaker.md
-          - DynamoDB Failure — Fallback And Message Loss: 03-Case-Studies/05-Battleground/01-WhatsApp/04-Deep-Dives/XX-Fault-Isolation/02-DynamoDB-Failure/02-Fallback-And-Message-Loss.md
-          - Redis Failure — Inbox: 03-Case-Studies/05-Battleground/01-WhatsApp/04-Deep-Dives/XX-Fault-Isolation/03-Redis-Failure/01-Inbox-Redis-Failure.md
-          - Redis Failure — Profile Cache: 03-Case-Studies/05-Battleground/01-WhatsApp/04-Deep-Dives/XX-Fault-Isolation/03-Redis-Failure/02-Profile-Cache-Failure.md
-          - Redis Failure — Other: 03-Case-Studies/05-Battleground/01-WhatsApp/04-Deep-Dives/XX-Fault-Isolation/03-Redis-Failure/03-Other-Redis-Failures.md
-      - WhatsApp Architecture: 03-Case-Studies/05-Battleground/01-WhatsApp/06-Final-Design/01-Final-Architecture.md
+          - Connection Server Failure — Client Reconnect: whatsapp/xx-fault-isolation-connection-server-failure-client-reconnect.md
+          - Connection Server Failure — Registry Cleanup: whatsapp/xx-fault-isolation-connection-server-failure-registry-cleanup.md
+          - Connection Server Failure — Stale Registry Fallback: whatsapp/xx-fault-isolation-connection-server-failure-stale-registry-fallback.md
+          - Connection Server Failure — Reconnect Storm: whatsapp/xx-fault-isolation-connection-server-failure-reconnect-storm.md
+          - DynamoDB Failure — Circuit Breaker: whatsapp/xx-fault-isolation-dynamodb-failure-circuit-breaker.md
+          - DynamoDB Failure — Fallback And Message Loss: whatsapp/xx-fault-isolation-dynamodb-failure-fallback-and-message-loss.md
+          - Redis Failure — Inbox: whatsapp/xx-fault-isolation-redis-failure-inbox-redis-failure.md
+          - Redis Failure — Profile Cache: whatsapp/xx-fault-isolation-redis-failure-profile-cache-failure.md
+          - Redis Failure — Other: whatsapp/xx-fault-isolation-redis-failure-other-redis-failures.md
+      - WhatsApp Architecture: whatsapp/architecture.md
       - "Observability":
-        - SLI / SLO Connection: 03-Case-Studies/05-Battleground/01-WhatsApp/05-Observability/01-SLI-SLO-Connection.md
-        - Measuring Latency: 03-Case-Studies/05-Battleground/01-WhatsApp/05-Observability/02-Measuring-Latency.md
-        - Measuring Availability: 03-Case-Studies/05-Battleground/01-WhatsApp/05-Observability/03-Measuring-Availability.md
-        - Alerting: 03-Case-Studies/05-Battleground/01-WhatsApp/05-Observability/04-Alerting.md
-        - Error Budget: 03-Case-Studies/05-Battleground/01-WhatsApp/05-Observability/05-Error-Budget.md
+        - SLI / SLO Connection: whatsapp/sli-slo-connection.md
+        - Measuring Latency: whatsapp/measuring-latency.md
+        - Measuring Availability: whatsapp/measuring-availability.md
+        - Alerting: whatsapp/alerting.md
+        - Error Budget: whatsapp/error-budget.md

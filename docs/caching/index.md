@@ -38,7 +38,7 @@ hide:
     <div class="cs-card-cta">Open topic <span>→</span></div>
   </a>
 
-  <a class="cs-card" href="writing-strategies/overview/">
+  <a class="cs-card" href="writing-strategies/quick-decision-map/">
     <div class="cs-card-title">Writing Strategies</div>
     <div class="cs-card-desc">Read-through, write-through, write-behind, and write-around — how data gets into the cache and what breaks when it doesn't.</div>
     <div class="cs-topics">
@@ -47,7 +47,7 @@ hide:
     <div class="cs-card-cta">Open topic <span>→</span></div>
   </a>
 
-  <a class="cs-card" href="eviction-policies/overview/">
+  <a class="cs-card" href="eviction-policies/eviction-vs-ttl/">
     <div class="cs-card-title">Eviction Policies</div>
     <div class="cs-card-desc">LRU, LFU, FIFO, and TTL. What gets evicted when memory fills up and how to pick the right policy for your workload.</div>
     <div class="cs-topics">
@@ -56,7 +56,7 @@ hide:
     <div class="cs-card-cta">Open topic <span>→</span></div>
   </a>
 
-  <a class="cs-card" href="population-strategies/overview/">
+  <a class="cs-card" href="population-strategies/warming-vs-refresh-ahead/">
     <div class="cs-card-title">Population Strategies</div>
     <div class="cs-card-desc">Refresh-ahead and cache warming — how to keep caches populated without a thundering herd on every cold start.</div>
     <div class="cs-topics">
@@ -65,7 +65,7 @@ hide:
     <div class="cs-card-cta">Open topic <span>→</span></div>
   </a>
 
-  <a class="cs-card" href="cache-invalidation/overview/">
+  <a class="cs-card" href="cache-invalidation/choosing-a-strategy/">
     <div class="cs-card-title">Cache Invalidation</div>
     <div class="cs-card-desc">TTL-based, event-driven, write-through, and versioning strategies. The hardest problem in caching is knowing when to throw data away.</div>
     <div class="cs-topics">
@@ -74,7 +74,7 @@ hide:
     <div class="cs-card-cta">Open topic <span>→</span></div>
   </a>
 
-  <a class="cs-card" href="distributed-caching/overview/">
+  <a class="cs-card" href="distributed-caching/why-single-node-fails/">
     <div class="cs-card-title">Distributed Caching</div>
     <div class="cs-card-desc">Consistent hashing, cache coherence, replication, two-level caching, and what happens when a cache node dies mid-traffic.</div>
     <div class="cs-topics">
@@ -83,7 +83,7 @@ hide:
     <div class="cs-card-cta">Open topic <span>→</span></div>
   </a>
 
-  <a class="cs-card" href="cache-problems/overview/">
+  <a class="cs-card" href="cache-problems/diagnosing-which-problem/">
     <div class="cs-card-title">Cache Problems</div>
     <div class="cs-card-desc">Cache stampede, cold start, penetration, and avalanche — the failure modes that turn a cache from a fix into the cause of the outage.</div>
     <div class="cs-topics">

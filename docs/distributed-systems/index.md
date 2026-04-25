@@ -38,7 +38,7 @@ hide:
     <div class="cs-card-cta">Open topic <span>→</span></div>
   </a>
 
-  <a class="cs-card" href="network-partitions/overview/">
+  <a class="cs-card" href="network-partitions/network-partitions/">
     <div class="cs-card-title">Network Partitions</div>
     <div class="cs-card-desc">What happens when nodes can't talk. Split brain, quorum decisions, and why partition handling defines your entire consistency strategy.</div>
     <div class="cs-topics">
@@ -47,7 +47,7 @@ hide:
     <div class="cs-card-cta">Open topic <span>→</span></div>
   </a>
 
-  <a class="cs-card" href="cap-theorem/overview/">
+  <a class="cs-card" href="cap-theorem/cap-theorem/">
     <div class="cs-card-title">CAP Theorem</div>
     <div class="cs-card-desc">Consistency vs availability when a partition happens. CP vs AP — and why every distributed system is forced to choose during a split.</div>
     <div class="cs-topics">
@@ -56,7 +56,7 @@ hide:
     <div class="cs-card-cta">Open topic <span>→</span></div>
   </a>
 
-  <a class="cs-card" href="pacelc/overview/">
+  <a class="cs-card" href="pacelc/pacelc-theorem/">
     <div class="cs-card-title">PACELC</div>
     <div class="cs-card-desc">Extends CAP to cover normal operation. Even without a partition, you still trade latency against consistency — PACELC names that trade-off.</div>
     <div class="cs-topics">
@@ -65,7 +65,7 @@ hide:
     <div class="cs-card-cta">Open topic <span>→</span></div>
   </a>
 
-  <a class="cs-card" href="consistency-models/overview/">
+  <a class="cs-card" href="consistency-models/consistency-models/">
     <div class="cs-card-title">Consistency Models</div>
     <div class="cs-card-desc">Strong, eventual, causal, and monotonic. What "up to date" means in a distributed system and when each model is the right call.</div>
     <div class="cs-topics">

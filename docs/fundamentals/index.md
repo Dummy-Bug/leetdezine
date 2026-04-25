@@ -119,7 +119,7 @@ hide:
     <div class="cs-card-cta">Open topic <span>→</span></div>
   </a>
 
-  <a class="cs-card" href="../nfrs/overview/">
+  <a class="cs-card" href="../nfrs/functional-vs-non-functional/">
     <div class="cs-card-title">NFRs</div>
     <div class="cs-card-desc">Non-functional requirements: the hidden constraints that shape every architecture decision before you draw a single box.</div>
     <div class="cs-topics">

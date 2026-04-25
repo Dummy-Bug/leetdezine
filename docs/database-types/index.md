@@ -29,7 +29,7 @@ hide:
 
 <div class="cs-cards">
 
-  <a class="cs-card" href="key-value-stores/overview/">
+  <a class="cs-card" href="key-value-stores/kv-positioning/">
     <div class="cs-card-title">Key-Value Stores</div>
     <div class="cs-card-desc">Redis and Memcached internals — when O(1) lookup is all you need and when it becomes a liability.</div>
     <div class="cs-topics">

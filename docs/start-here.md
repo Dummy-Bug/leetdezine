@@ -25,7 +25,7 @@ hide:
 
 <div class="sh-fasttrack">
   <span>⚡ Interview this week?</span>
-  <a href="../03-Case-Studies/01-Foundation/">Skip to Foundation →</a>
+  <a href="../foundation/">Skip to Foundation →</a>
 </div>
 
 <div class="sh-path">
@@ -38,7 +38,7 @@ hide:
     </div>
   </div>
 
-  <a href="../01-Concepts/02-Fundamentals/" class="sh-station sh-c-concepts">
+  <a href="../fundamentals/" class="sh-station sh-c-concepts">
     <span class="sh-dot"></span>
     <span class="sh-station-body">
       <span class="sh-station-name">Fundamentals</span>
@@ -46,7 +46,7 @@ hide:
     </span>
   </a>
 
-  <a href="../01-Concepts/03-Caching/" class="sh-station sh-c-concepts">
+  <a href="../caching/" class="sh-station sh-c-concepts">
     <span class="sh-dot"></span>
     <span class="sh-station-body">
       <span class="sh-station-name">Caching</span>
@@ -54,7 +54,7 @@ hide:
     </span>
   </a>
 
-  <a href="../01-Concepts/04-Storage-and-Databases/" class="sh-station sh-c-concepts">
+  <a href="../storage-and-databases/" class="sh-station sh-c-concepts">
     <span class="sh-dot"></span>
     <span class="sh-station-body">
       <span class="sh-station-name">Storage & Databases</span>
@@ -62,7 +62,7 @@ hide:
     </span>
   </a>
 
-  <a href="../01-Concepts/05-Database-Types/" class="sh-station sh-c-concepts">
+  <a href="../database-types/" class="sh-station sh-c-concepts">
     <span class="sh-dot"></span>
     <span class="sh-station-body">
       <span class="sh-station-name">Database Types</span>
@@ -70,7 +70,7 @@ hide:
     </span>
   </a>
 
-  <a href="../01-Concepts/06-Messaging/" class="sh-station sh-c-concepts">
+  <a href="../messaging/" class="sh-station sh-c-concepts">
     <span class="sh-dot"></span>
     <span class="sh-station-body">
       <span class="sh-station-name">Messaging</span>
@@ -78,7 +78,7 @@ hide:
     </span>
   </a>
 
-  <a href="../01-Concepts/07-Event-Broker/" class="sh-station sh-c-concepts">
+  <a href="../event-broker/" class="sh-station sh-c-concepts">
     <span class="sh-dot"></span>
     <span class="sh-station-body">
       <span class="sh-station-name">Event Broker</span>
@@ -86,7 +86,7 @@ hide:
     </span>
   </a>
 
-  <a href="../01-Concepts/08-Event-Driven-Patterns/" class="sh-station sh-c-concepts">
+  <a href="../event-driven-patterns/" class="sh-station sh-c-concepts">
     <span class="sh-dot"></span>
     <span class="sh-station-body">
       <span class="sh-station-name">Event-Driven Patterns</span>
@@ -94,7 +94,7 @@ hide:
     </span>
   </a>
 
-  <a href="../01-Concepts/09-Data-Processing/" class="sh-station sh-c-concepts">
+  <a href="../data-processing/" class="sh-station sh-c-concepts">
     <span class="sh-dot"></span>
     <span class="sh-station-body">
       <span class="sh-station-name">Data Processing</span>
@@ -102,7 +102,7 @@ hide:
     </span>
   </a>
 
-  <a href="../01-Concepts/10-Distributed-Systems/" class="sh-station sh-c-concepts">
+  <a href="../distributed-systems/" class="sh-station sh-c-concepts">
     <span class="sh-dot"></span>
     <span class="sh-station-body">
       <span class="sh-station-name">Distributed Systems</span>
@@ -134,7 +134,7 @@ hide:
     </div>
   </div>
 
-  <a href="../03-Case-Studies/01-Foundation/" class="sh-station sh-c-foundation">
+  <a href="../foundation/" class="sh-station sh-c-foundation">
     <span class="sh-dot"></span>
     <span class="sh-station-body">
       <span class="sh-station-name">Foundation <span class="sh-badge">Level 1</span></span>
@@ -142,7 +142,7 @@ hide:
     </span>
   </a>
 
-  <a href="../03-Case-Studies/02-Ascent/" class="sh-station sh-c-ascent">
+  <a href="../ascent/" class="sh-station sh-c-ascent">
     <span class="sh-dot"></span>
     <span class="sh-station-body">
       <span class="sh-station-name">Ascent <span class="sh-badge">Level 2</span></span>
@@ -150,7 +150,7 @@ hide:
     </span>
   </a>
 
-  <a href="../03-Case-Studies/03-Expedition/" class="sh-station sh-c-expedition">
+  <a href="../expedition/" class="sh-station sh-c-expedition">
     <span class="sh-dot"></span>
     <span class="sh-station-body">
       <span class="sh-station-name">Expedition <span class="sh-badge">Level 3</span></span>
@@ -158,7 +158,7 @@ hide:
     </span>
   </a>
 
-  <a href="../03-Case-Studies/04-Summit/" class="sh-station sh-c-summit">
+  <a href="../summit/" class="sh-station sh-c-summit">
     <span class="sh-dot"></span>
     <span class="sh-station-body">
       <span class="sh-station-name">Summit <span class="sh-badge">Level 4</span></span>
@@ -166,7 +166,7 @@ hide:
     </span>
   </a>
 
-  <a href="../03-Case-Studies/05-Battleground/" class="sh-station sh-c-battleground">
+  <a href="../battleground/" class="sh-station sh-c-battleground">
     <span class="sh-dot sh-dot-final"></span>
     <span class="sh-station-body">
       <span class="sh-station-name">Battleground <span class="sh-badge">Level 5</span></span>

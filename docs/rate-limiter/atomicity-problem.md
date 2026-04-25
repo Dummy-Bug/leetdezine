@@ -1,3 +1,7 @@
+---
+description: "Checking a counter and incrementing it are two separate Redis operations. Under concurrent load, two requests can both read the same value before either writes — and both get allowed past the limit."
+---
+
 
 ## The Atomicity Problem
 

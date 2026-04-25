@@ -1,3 +1,7 @@
+---
+description: "CQRS separates your write model from your read model. Writes go to a store optimized for consistency. Reads come from a store optimized for fast queries. Here's when the split pays off."
+---
+
 
 > [!info] Command Query Responsibility Segregation 
 > separates your write model from your read model.

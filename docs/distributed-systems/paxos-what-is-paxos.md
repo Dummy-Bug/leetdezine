@@ -1,3 +1,7 @@
+---
+description: "Paxos is the original consensus algorithm — mathematically proven correct but notoriously hard to implement. Here's how proposers, acceptors, and the two-phase protocol work."
+---
+
 
 > [!info] The core idea
 > Paxos is the original consensus algorithm — predates Raft. It solves the same problem (all nodes agree on the same value) but with no designated leader. Any node can propose a value at any time.

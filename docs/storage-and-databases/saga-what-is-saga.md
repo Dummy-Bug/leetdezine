@@ -1,3 +1,7 @@
+---
+description: "2PC holds locks across services — expensive and fragile. Saga breaks a distributed transaction into local transactions per service, with compensating transactions to undo failures. No cross-service locks."
+---
+
 > [!info] The Saga pattern
 >  breaks a distributed transaction into a sequence of local transactions — one per service. Each service commits locally and triggers the next step. If any step fails, **compensating transactions** run in reverse to undo the previous steps.
 

@@ -1,3 +1,7 @@
+---
+description: "LFU evicts the item with the fewest total accesses. Better than LRU when some items are permanently hot regardless of recency — like a homepage query that gets millions of hits a day."
+---
+
 # LFU — Least Frequently Used
 
 > [!info] Evict the item accessed the fewest number of times. Better than LRU when some items are permanently hot regardless of when they were last accessed.

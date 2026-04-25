@@ -1,3 +1,7 @@
+---
+description: "Without a state machine, any code can put an entity into any state — including illegal ones. A state machine defines every valid state and every valid transition, making invalid transitions impossible."
+---
+
 # What Is A State Machine
 
 ## The Problem It Solves

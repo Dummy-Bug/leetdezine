@@ -1,3 +1,7 @@
+---
+description: "Fixed Window lets through 2× the limit at window edges. Sliding Window Log uses too much memory. Sliding Window Counter gets rolling-window accuracy with just two integers per user — here's the approximation."
+---
+
 
 ## Sliding Window Counter
 

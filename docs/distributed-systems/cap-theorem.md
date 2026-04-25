@@ -1,3 +1,7 @@
+---
+description: "CAP theorem says a distributed system can only guarantee two of three properties — consistency, availability, and partition tolerance. Here's what that trade-off actually means in practice."
+---
+
 # CAP Theorem
 
 ## What It States

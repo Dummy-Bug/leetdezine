@@ -1,5 +1,6 @@
 ---
 title: Sharding — Consistent Hashing
+description: "Naive modulo hashing remaps ~80% of keys the moment you add or remove a shard. Consistent hashing fixes this by placing nodes on a ring so only ~1/N keys need to move."
 ---
 
 > [!question] Hash-based sharding works great — until you add or remove a shard. Then almost all your data routes to the wrong place. How do you fix this?

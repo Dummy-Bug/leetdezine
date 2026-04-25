@@ -1,3 +1,7 @@
+---
+description: "LRU evicts the item that was accessed least recently. It's the default cache eviction policy and the right choice for most workloads. Here's how it works and when to use LFU instead."
+---
+
 # LRU — Least Recently Used
 
 > [!info] Evict the item that was accessed least recently. The default eviction policy and the right choice for most systems.

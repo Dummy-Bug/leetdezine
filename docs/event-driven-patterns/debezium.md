@@ -1,3 +1,7 @@
+---
+description: "Debezium is an open-source CDC tool that connects to Postgres via logical replication, reads the WAL, and publishes change events to Kafka in real-time. It's the most widely used CDC tool in production."
+---
+
 
 ## What is Debezium?
 

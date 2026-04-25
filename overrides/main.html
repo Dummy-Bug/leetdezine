@@ -10,22 +10,13 @@
 {% endblock %}
 
 {% block extrahead %}
-  {% set page_desc = page.meta.description if page.meta and page.meta.description else "System design case studies that go beyond the whiteboard. Deep dives into Kafka, rate limiters, distributed KV stores, and more — for engineers who want to actually understand." %}
-  {% set seo_t = page.meta.title if page.meta and page.meta.title else page.title %}
-  {% set page_t = "LeetDezine — System Design and Internals" if page.is_homepage else (seo_t ~ " — LeetDezine") %}
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="LeetDezine" />
-  <meta property="og:title" content="{{ page_t }}" />
-  <meta property="og:description" content="{{ page_desc }}" />
-  <meta property="og:image" content="https://leetdezine.com/assets/og-image.png" />
-  <meta property="og:url" content="https://leetdezine.com/{{ page.url }}" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:site" content="@leetdezine" />
-  <meta name="twitter:title" content="{{ page_t }}" />
-  <meta name="twitter:description" content="{{ page_desc }}" />
-  <meta name="twitter:image" content="https://leetdezine.com/assets/og-image.png" />
+  {{ super() }}
+  <meta name="robots" content="max-image-preview:large">
   {% if breadcrumb_schema %}
   <script type="application/ld+json">{{ breadcrumb_schema | safe }}</script>
+  {% endif %}
+  {% if seo_schema %}
+  <script type="application/ld+json">{{ seo_schema | safe }}</script>
   {% endif %}
 {% endblock %}
 

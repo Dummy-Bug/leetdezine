@@ -1,5 +1,6 @@
 ---
 title: Distributed Caching — Consistent Hashing
+description: "Naive modulo hashing remaps most of your keyspace the moment you add a cache node — causing a stampede. Consistent hashing limits remapping to ~1/N keys. Here's how the ring works."
 ---
 
 # Consistent Hashing

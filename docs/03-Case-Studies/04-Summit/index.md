@@ -35,7 +35,7 @@ hide:
 
 
 <div class="cs-cards">
-  <a class="cs-card" href="01-KV-Store/">
+  <a class="cs-card" href="../../kv-store/">
     <div class="cs-card-header"><span class="cs-badge summit">SUMMIT</span></div>
     <div class="cs-card-title">Key-Value Store</div>
     <div class="cs-card-desc">Design a distributed KV store — leaderless replication, quorum reads/writes, LSM tree internals, gossip membership, vector clock conflict resolution.</div>
@@ -50,7 +50,7 @@ hide:
     <div class="cs-card-cta">Open case study <span>→</span></div>
   </a>
 
-  <a class="cs-card" href="02-Netflix/">
+  <a class="cs-card" href="../../netflix/">
     <div class="cs-card-header"><span class="cs-badge summit">SUMMIT</span></div>
     <div class="cs-card-title">Netflix</div>
     <div class="cs-card-desc">Design a global video streaming platform — transcoding pipeline, adaptive bitrate, CDN at scale, Elasticsearch search, resume playback sync, and fault isolation.</div>

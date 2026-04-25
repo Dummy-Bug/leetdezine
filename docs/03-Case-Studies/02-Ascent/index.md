@@ -35,7 +35,7 @@ hide:
 
 
 <div class="cs-cards">
-  <a class="cs-card" href="01-Notification-System/">
+  <a class="cs-card" href="../../notification-system/">
     <div class="cs-card-header"><span class="cs-badge ascent">ASCENT</span></div>
     <div class="cs-card-title">Notification System</div>
     <div class="cs-card-desc">Design a notification system — push, SMS, and email delivery at 5M sends/sec. Multi-channel fan-out, retry/DLQ, scheduled delivery, fault isolation per provider.</div>
@@ -49,7 +49,7 @@ hide:
     </div>
     <div class="cs-card-cta">Open case study <span>→</span></div>
   </a>
-  <a class="cs-card" href="02-Pastebin/">
+  <a class="cs-card" href="../../pastebin/">
     <div class="cs-card-header"><span class="cs-badge ascent">ASCENT</span></div>
     <div class="cs-card-title">Pastebin</div>
     <div class="cs-card-desc">Design pastebin.com — paste text, get a short link, retrieve by anyone. 10M DAU, expiring pastes, large blobs.</div>

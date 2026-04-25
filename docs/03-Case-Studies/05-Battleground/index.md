@@ -35,7 +35,7 @@ hide:
 
 
 <div class="cs-cards">
-  <a class="cs-card" href="01-WhatsApp/">
+  <a class="cs-card" href="../../whatsapp/">
     <div class="cs-card-header"><span class="cs-badge battleground">BATTLEGROUND</span></div>
     <div class="cs-card-title">WhatsApp</div>
     <div class="cs-card-desc">Design a global messaging system — 2B users, real-time delivery, offline queuing, per-conversation ordering, three-tick message status.</div>

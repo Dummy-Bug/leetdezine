@@ -118,7 +118,7 @@ hide:
     </div>
   </div>
 
-  <a href="../02-Back-of-Envelope-Estimation/" class="sh-station sh-c-estimation">
+  <a href="../back-of-envelope/" class="sh-station sh-c-estimation">
     <span class="sh-dot"></span>
     <span class="sh-station-body">
       <span class="sh-station-name">Back of Envelope Estimation</span>

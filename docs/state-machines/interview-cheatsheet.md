@@ -1,3 +1,7 @@
+---
+title: State Machines Interview Cheatsheet
+---
+
 # State Machines — Interview Cheatsheet
 
 ## What To Say When Asked "Walk Me Through The States"

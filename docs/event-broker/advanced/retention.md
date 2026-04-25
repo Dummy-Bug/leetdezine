@@ -1,3 +1,7 @@
+---
+title: Advanced — Retention
+---
+
 
 > [!info] Kafka is a persistent log, but it's not "infinite." Since Google processes 100k ad clicks per second, we'd need petabytes of storage every year just to keep them all. We must have a "Cleaning Crew" (the Retention policy) that automatically deletes old data.
 

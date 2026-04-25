@@ -1,3 +1,7 @@
+---
+title: Coordination Services — Fencing Tokens
+---
+
 
 > [!info] The core idea
 > When a lease expires due to a slow network — not a crash — two servers can simultaneously think they hold the lock. The lock expiry does not stop the original server's process. Fencing tokens solve this by making the database the enforcer — only the latest token holder's write is accepted. Old token = rejected, regardless of what the server thinks.

@@ -1,5 +1,6 @@
 ---
-title: Start Here
+title: Start Here — A Guided Path Through System Design
+description: "Where to start with LeetDezine — a guided path through system design concepts and case studies, from performance metrics and caching all the way to distributed consensus and real-time messaging."
 hide:
   - navigation
   - toc

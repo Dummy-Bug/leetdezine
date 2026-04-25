@@ -1,3 +1,7 @@
+---
+title: RabbitMQ — Message Ordering
+---
+
 
 > [!info] RabbitMQ preserves insertion order within a queue — messages come out in the order they went in. But queue order and business processing order are two different things. The moment you add multiple consumers, retries, or redelivery, processing completion can happen out of order.
 

@@ -1,3 +1,7 @@
+---
+title: Fundamentals — Delay Queues
+---
+
 
 > [!info] A delay queue holds a message invisibly for a specified duration, then makes it visible to consumers. The consumer never sees it until the delay expires — from the consumer's perspective, the message just appears when it's ready to be processed.
 

@@ -1,3 +1,7 @@
+---
+title: NewSQL Interview Cheatsheet
+---
+
 ## What problem does NewSQL solve?
 
 SQL gives you ACID but hits a scale ceiling (~50k TPS on a single node). Sharding SQL breaks cross-shard ACID. Cassandra scales but is eventually consistent. NewSQL gives you ACID + horizontal scale together.

@@ -1,3 +1,7 @@
+---
+title: Consistency Models Interview Cheatsheet
+---
+
 # Interview Cheatsheet — Consistency Models
 
 > [!question] When does consistency come up in an interview?

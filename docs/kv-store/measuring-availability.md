@@ -1,3 +1,7 @@
+---
+title: KV Store — Measuring Availability
+---
+
 
 > [!info] Availability is not "are the nodes alive?" — it's "did the user's request succeed?"
 > In a 1,200-node cluster, gossip will tell you every node is alive. Meanwhile, a network partition is causing quorum failures and clients are getting 503s. Node liveness and service availability are different things.

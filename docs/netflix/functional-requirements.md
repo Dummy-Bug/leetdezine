@@ -1,3 +1,7 @@
+---
+title: Netflix Functional Requirements
+---
+
 # Netflix Functional Requirements
 
 ## In Scope (State These in the Interview)

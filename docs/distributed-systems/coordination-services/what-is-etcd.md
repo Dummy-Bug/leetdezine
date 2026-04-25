@@ -1,3 +1,7 @@
+---
+description: "What is etcd and how does it work? A distributed key-value store for coordination data — config, locks, leader identity — backed by Raft consensus for guaranteed consistency."
+---
+
 
 > [!info] The core idea
 > etcd is a distributed key-value store built specifically for coordination data — config, leader identity, locks. The name comes from Unix's `/etc` directory (where system config lives) + `d` for distributed. Under the hood it runs Raft, so every write requires quorum and every read is guaranteed fresh. It is the single source of truth for your entire distributed system.

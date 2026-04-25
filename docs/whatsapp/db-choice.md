@@ -1,3 +1,7 @@
+---
+title: Whatsapp — Db Choice
+---
+
 
 > [!info] Choosing the right database starts with access patterns
 > Don't pick a database and then figure out if it fits. Start with what the system actually does to data — the reads, the writes, the queries — and let that drive the choice.

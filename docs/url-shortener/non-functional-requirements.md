@@ -1,3 +1,7 @@
+---
+title: URL Shortener Non-Functional Requirements
+---
+
 # URL Shortener Non-Functional Requirements
 
 > [!info] What NFRs actually are

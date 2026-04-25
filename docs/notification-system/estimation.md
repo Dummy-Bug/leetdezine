@@ -1,3 +1,7 @@
+---
+title: Notification System Estimation
+---
+
 # Notification System Scale Estimation
 
 ## Users and Activity

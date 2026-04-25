@@ -1,3 +1,7 @@
+---
+title: Search Problem
+---
+
 # Search Deep Dive — The Problem With LIKE at Scale
 
 ## What LIKE Actually Does

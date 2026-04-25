@@ -1,3 +1,7 @@
+---
+title: Replication — Replication Lag
+---
+
 > [!question] You updated your Instagram profile picture. You refresh the page immediately and see the old one. The write succeeded — so what went wrong?
 
 ## What replication lag is

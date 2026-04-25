@@ -1,3 +1,7 @@
+---
+title: Caching Fundamentals
+---
+
 ## What Is Caching
 
 > [!info] Don't recompute or re-fetch something you've already computed. Store the result somewhere fast and serve it from there next time.

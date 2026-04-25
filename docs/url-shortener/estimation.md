@@ -1,3 +1,7 @@
+---
+title: Url Shortener Estimation
+---
+
 # URL Shortener Scale Estimation
 
 > [!info] The goal of estimation

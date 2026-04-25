@@ -1,3 +1,7 @@
+---
+title: Sharding — Consistent Hashing
+---
+
 > [!question] Hash-based sharding works great — until you add or remove a shard. Then almost all your data routes to the wrong place. How do you fix this?
 
 ## The problem with naive hashing

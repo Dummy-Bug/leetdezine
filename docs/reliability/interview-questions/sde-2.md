@@ -1,3 +1,7 @@
+---
+title: Reliability — SDE-2 Interview Questions
+---
+
 # Reliability — SDE-2 Interview Questions
 
 > [!abstract] Scenario-based questions testing trade-off reasoning around recovery strategies, replication choices, standby patterns, and the gap between RTO targets and real MTTR. Expected at SDE-2 level — not just definitions, but understanding when and why decisions matter.

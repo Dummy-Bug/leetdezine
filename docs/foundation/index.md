@@ -1,7 +1,9 @@
 ---
+title: Foundation — Level 1 System Design Case Studies
 hide:
   - navigation
   - toc
+description: "Foundation-level system design case studies — Unique ID Generator and URL Shortener. First principles of scale: Snowflake IDs, consistent hashing, hot key mitigation, and tiered storage."
 ---
 
 <div class="ph-window">

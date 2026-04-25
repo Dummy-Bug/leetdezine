@@ -1,3 +1,7 @@
+---
+title: Notification System — Measuring Latency
+---
+
 # Measuring Latency — Notification System
 
 > [!info] You cannot store billions of latency measurements. You don't need to.

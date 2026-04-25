@@ -1,3 +1,7 @@
+---
+title: DynamoDB Consistency
+---
+
 > [!info] Every write in DynamoDB is replicated to 3 servers across availability zones. What happens when you read immediately after writing depends on which consistency mode you choose — and DynamoDB lets you pick per read, not per table.
 
 ---

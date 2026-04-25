@@ -1,3 +1,7 @@
+---
+title: Url Shortener Updated Architecture
+---
+
 
 > [!info] The full scaled architecture
 > After caching, DB sharding, and peak traffic handling — this is what the complete system looks like. Every layer is redundant, every bottleneck has been addressed.

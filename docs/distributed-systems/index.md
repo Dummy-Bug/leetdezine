@@ -1,5 +1,6 @@
 ---
 title: Distributed Systems
+description: "Distributed systems internals — CAP theorem, PACELC, consistency models, replication, sharding, consensus (Raft, Paxos), vector clocks, CRDTs, failure detection, and Merkle trees."
 hide:
   - navigation
   - toc

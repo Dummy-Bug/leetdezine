@@ -1,3 +1,7 @@
+---
+title: Notification System Base Architecture
+---
+
 # Notification System Base Architecture
 
 ## The Naive First Attempt

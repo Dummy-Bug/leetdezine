@@ -1,3 +1,7 @@
+---
+title: Rate Limiter Base Architecture
+---
+
 # Rate Limiter Base Architecture
 
 ## The Full Request Flow

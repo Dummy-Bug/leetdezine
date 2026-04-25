@@ -1,3 +1,7 @@
+---
+description: "Fixed window counter rate limiting — how it works, why the boundary problem lets users double their quota at window edges, and when it's still the right choice despite the flaw."
+---
+
 ### The Problem It Solves
 
 You have one rule: User A can make maximum 5 requests per minute to `/search`.

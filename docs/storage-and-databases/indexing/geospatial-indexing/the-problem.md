@@ -1,3 +1,7 @@
+---
+title: Geospatial Indexing The Problem
+---
+
 > [!info] Find all drivers within 2km of this user.
 >  A standard B+ Tree index cannot answer this without a full table scan — because location is 2D (lat/lng) and a B+ Tree is 1D. Geospatial indexing solves this by encoding 2D location into a single value that a normal index can handle.
 

@@ -1,3 +1,7 @@
+---
+title: Document Stores — Indexes
+---
+
 > [!info] MongoDB can index any field — including fields buried inside arrays and nested objects. Without indexes, every query scans every document. With the right indexes, queries are O(log n) regardless of collection size. Same B-tree mechanics as SQL, applied to a flexible document structure.
 
 ## The problem without indexes

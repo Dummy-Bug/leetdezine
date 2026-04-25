@@ -1,5 +1,6 @@
 ---
 title: Event-Driven Patterns
+description: "Event sourcing, CQRS, the Outbox Pattern, and CDC — how to build reliable distributed systems that survive partial failures without losing data or sending duplicate events."
 hide:
   - navigation
   - toc

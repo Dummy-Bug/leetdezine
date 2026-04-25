@@ -1,3 +1,7 @@
+---
+title: KV Store — Measuring Latency
+---
+
 
 > [!info] You cannot store 330K individual latency measurements per second. You don't need to.
 > 300K reads/sec + 30K writes/sec = 330K requests/sec. At 86,400 seconds per day, that's ~28.5 billion data points daily. The trick is to throw away the raw numbers and keep only the shape of the distribution.

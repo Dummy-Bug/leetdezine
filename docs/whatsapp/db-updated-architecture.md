@@ -1,3 +1,7 @@
+---
+title: Db Updated Architecture
+---
+
 
 > [!info] Architecture after DB deep dive
 > DB choice, schema, tiered storage, and sharding all change or add to the base architecture.

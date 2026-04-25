@@ -1,3 +1,7 @@
+---
+title: Consistency Models — When To Use
+---
+
 # When to Use Each Consistency Model
 
 ## The Decision Question

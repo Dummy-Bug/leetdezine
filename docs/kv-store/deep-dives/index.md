@@ -1,5 +1,5 @@
 ---
-title: Deep Dives
+title: KV Store — Deep Dives
 hide:
   - navigation
   - toc

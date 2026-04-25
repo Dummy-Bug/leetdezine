@@ -1,5 +1,5 @@
 ---
-title: Deep Dives
+title: Notification System — Deep Dives
 hide:
   - navigation
   - toc

@@ -1,3 +1,7 @@
+---
+title: Url Shortener — Redis Down
+---
+
 
 > [!info] Redis goes down — the cache layer disappears entirely
 > Redis is the shield between your app servers and your DB. At steady state it absorbs 80%+ of all reads. When it disappears, 1M reads/sec lands directly on 16 DB read nodes that were sized for 200k/sec. Without a plan, this is a cascading failure.

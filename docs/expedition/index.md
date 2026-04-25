@@ -1,7 +1,9 @@
 ---
+title: Expedition — Level 3 System Design Case Studies
 hide:
   - navigation
   - toc
+description: "Expedition-level system design — Rate Limiter. Distributed rate limiting algorithms from scratch: token bucket, sliding window, Redis Lua atomicity, and multi-region enforcement."
 ---
 
 <div class="ph-window">

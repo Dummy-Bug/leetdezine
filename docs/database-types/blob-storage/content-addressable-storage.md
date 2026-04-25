@@ -1,3 +1,7 @@
+---
+title: Content-Addressable Storage in Blob Storage Systems
+---
+
 ## The deduplication problem
 
 Imagine Dropbox. A million users all upload the exact same file — say, a popular PDF textbook. Should S3 store a million separate copies of that file?

@@ -1,3 +1,7 @@
+---
+title: Merkle Trees The Problem
+---
+
 
 > [!info] The core idea
 > When two replicas silently diverge — one missing a write the other has — you need a way to find which specific keys are different without comparing every single row. Comparing 1 billion rows over the network is impractical. Merkle Trees let you find the diverged sections efficiently.

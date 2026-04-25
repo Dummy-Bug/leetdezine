@@ -1,3 +1,7 @@
+---
+title: Url Shortener — Measuring Availability
+---
+
 
 > [!info] Availability is not "is the server alive?" — it's "did the user's request succeed?"
 > A server that responds to pings but returns 500 errors to every user is not available. Availability must be measured from the user's perspective.

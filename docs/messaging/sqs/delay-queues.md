@@ -1,3 +1,7 @@
+---
+title: SQS — Delay Queues
+---
+
 # Delay Queues in SQS
 
 > [!info] SQS supports delay queues via the `DelaySeconds` parameter — but the maximum is **900 seconds (15 minutes)**. For delays beyond that, you need a different pattern: DB + scheduler → SQS workers.

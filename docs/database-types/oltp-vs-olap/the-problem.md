@@ -1,3 +1,7 @@
+---
+title: OLTP vs OLAP The Problem
+---
+
 > [!info] The core idea
 > OLTP and OLAP are two fundamentally different types of database workloads. OLTP serves your live users — fast, small operations. OLAP serves your analysts — slow, massive scans. They cannot share the same database at scale.
 

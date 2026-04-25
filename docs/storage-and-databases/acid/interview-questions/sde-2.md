@@ -1,3 +1,7 @@
+---
+title: ACID — SDE-2 Interview Questions
+---
+
 # ACID — SDE-2 Interview Questions
 
 > [!abstract] Scenario-based questions testing trade-off reasoning around ACID properties in real systems. Expected at SDE-2 level — not just definitions, but understanding when and why guarantees break, and what to do about it.

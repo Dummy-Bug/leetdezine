@@ -1,3 +1,7 @@
+---
+title: Notification System — Error Budget
+---
+
 # Error Budget — Notification System
 
 > [!info] Your SLO doesn't just define a target — it defines how much failure you're allowed.

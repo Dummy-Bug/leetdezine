@@ -1,3 +1,7 @@
+---
+title: L7 Fundamentals
+---
+
 # Layer 7 — Fundamentals
 
 > [!question] All traffic arrives on port 443. L4 sees only TCP — it can't tell `/checkout` from `/recommendations`. How do you route to the right service?

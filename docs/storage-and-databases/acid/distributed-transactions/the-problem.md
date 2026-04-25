@@ -1,3 +1,7 @@
+---
+title: Distributed Transactions The Problem
+---
+
 > [!info] The core problem
 > ACID gives you atomicity within one database. But when a transaction spans multiple services, each with their own database, there is no single database to wrap a transaction around. This is the distributed transaction problem.
 

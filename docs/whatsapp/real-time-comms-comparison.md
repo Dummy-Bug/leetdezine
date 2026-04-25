@@ -1,3 +1,7 @@
+---
+title: Real Time Comms Comparison
+---
+
 
 > [!info] Side-by-side comparison
 > All four approaches solve the same problem — getting data from server to client in near-real-time. They differ dramatically in how much waste they generate, what latency they impose, and whether they support bidirectional communication.

@@ -1,3 +1,7 @@
+---
+title: SLI / SLO Connection
+---
+
 # SLI / SLO Connection
 
 ## Why observability matters here

@@ -1,3 +1,7 @@
+---
+title: Column-Oriented Storage
+---
+
 # Column-Oriented Storage
 
 > [!info] Column-oriented storage — used by Redshift, BigQuery, Snowflake — packs one column's values together into each page instead of one row's values. This single layout decision is what makes aggregations across millions of rows fast and full record lookups expensive.

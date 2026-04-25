@@ -4,22 +4,29 @@
   {% if page.is_homepage %}
     <title>LeetDezine — System Design and Internals</title>
   {% else %}
-    <title>{{ page.title }} - LeetDezine</title>
+    {% set seo_title = page.meta.title if page.meta and page.meta.title else page.title %}
+    <title>{{ seo_title }} - LeetDezine</title>
   {% endif %}
 {% endblock %}
 
 {% block extrahead %}
+  {% set page_desc = page.meta.description if page.meta and page.meta.description else "System design case studies that go beyond the whiteboard. Deep dives into Kafka, rate limiters, distributed KV stores, and more — for engineers who want to actually understand." %}
+  {% set seo_t = page.meta.title if page.meta and page.meta.title else page.title %}
+  {% set page_t = "LeetDezine — System Design and Internals" if page.is_homepage else (seo_t ~ " — LeetDezine") %}
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="LeetDezine" />
-  <meta property="og:title" content="{% if page.is_homepage %}LeetDezine — System Design and Internals{% elif page.title %}{{ page.title }} — LeetDezine{% else %}LeetDezine — System Design and Internals{% endif %}" />
-  <meta property="og:description" content="System design case studies that go beyond the whiteboard. Deep dives into Kafka, rate limiters, distributed KV stores, and more — for engineers who want to actually understand." />
+  <meta property="og:title" content="{{ page_t }}" />
+  <meta property="og:description" content="{{ page_desc }}" />
   <meta property="og:image" content="https://leetdezine.com/assets/og-image.png" />
   <meta property="og:url" content="https://leetdezine.com/{{ page.url }}" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@leetdezine" />
-  <meta name="twitter:title" content="{% if page.is_homepage %}LeetDezine — System Design and Internals{% elif page.title %}{{ page.title }} — LeetDezine{% else %}LeetDezine — System Design and Internals{% endif %}" />
-  <meta name="twitter:description" content="System design case studies that go beyond the whiteboard. Deep dives into Kafka, rate limiters, distributed KV stores, and more — for engineers who want to actually understand." />
+  <meta name="twitter:title" content="{{ page_t }}" />
+  <meta name="twitter:description" content="{{ page_desc }}" />
   <meta name="twitter:image" content="https://leetdezine.com/assets/og-image.png" />
+  {% if breadcrumb_schema %}
+  <script type="application/ld+json">{{ breadcrumb_schema | safe }}</script>
+  {% endif %}
 {% endblock %}
 
 {% block scripts %}

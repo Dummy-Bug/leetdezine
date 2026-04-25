@@ -1,3 +1,7 @@
+---
+title: Kafka vs SQS vs RabbitMQ — Retention
+---
+
 
 > [!info] Kafka is built around retained history and replay. SQS and RabbitMQ hold pending work for processing, not long-term event history.
 

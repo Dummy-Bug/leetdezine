@@ -1,3 +1,7 @@
+---
+title: Unique Id Generator Functional Requirements
+---
+
 # Unique ID Generator Functional Requirements
 
 ## What the system must do

@@ -1,3 +1,7 @@
+---
+title: Search Engines Interview Cheatsheet
+---
+
 ## Why Not SQL Search?
 
 > [!danger] Three failures of SQL `LIKE` search

@@ -1,7 +1,9 @@
 ---
+title: Summit — Level 4 System Design Case Studies
 hide:
   - navigation
   - toc
+description: "Summit-level system design — KV Store and Netflix. LSM trees, leaderless replication, quorum reads/writes, adaptive bitrate streaming, CDN at scale, and Elasticsearch for search."
 ---
 
 <div class="ph-window">

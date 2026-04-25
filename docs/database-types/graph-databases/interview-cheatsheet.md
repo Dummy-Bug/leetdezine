@@ -1,3 +1,7 @@
+---
+title: Graph Databases Interview Cheatsheet
+---
+
 ## One-Line Definition
 
 > [!info]

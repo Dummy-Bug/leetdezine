@@ -1,3 +1,7 @@
+---
+title: Read Write Splitting The Problem
+---
+
 > [!info] In most systems, reads vastly outnumber writes — often 100:1. Forcing both through a single database node means reads and writes compete for the same connections, locks, and CPU. Read/Write Splitting routes writes to a primary node and reads to replica nodes, scaling each independently.
 
 # The Problem — One Node For Everything

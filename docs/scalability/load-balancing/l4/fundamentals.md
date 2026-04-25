@@ -1,3 +1,7 @@
+---
+title: L4 Fundamentals
+---
+
 # Layer 4 — Fundamentals
 
 > [!question] A packet arrives at the load balancer. What can it actually see? What is it blind to?

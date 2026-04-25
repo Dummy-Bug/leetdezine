@@ -1,3 +1,7 @@
+---
+title: NewSQL — When To Use
+---
+
 ## The decision comes down to two axes
 
 ```

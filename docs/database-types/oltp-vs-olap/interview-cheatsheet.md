@@ -1,3 +1,7 @@
+---
+title: OLTP vs OLAP Interview Cheatsheet
+---
+
 # Interview Cheatsheet — OLTP vs OLAP
 
 > [!question] What is OLTP and when do you use it?

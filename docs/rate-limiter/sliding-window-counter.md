@@ -43,7 +43,8 @@ The rolling window = last 60 seconds = **01:45 to 02:45**.
 
 ```
 01:00        02:00        02:45        03:00
-|--prev window--|----current window----|
+|--prev window--|----current window
+----|
           |←  last 60 seconds  →|
         01:45                 02:45
 ```

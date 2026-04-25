@@ -1,3 +1,7 @@
+---
+title: ACID — Durability
+---
+
 > [!info] Durability — once a transaction is committed, that data survives forever. Crashes, power loss, hardware failure — none of it can undo a committed transaction.
 
 ---

@@ -1,3 +1,7 @@
+---
+title: Caching — SDE-1 Interview Questions
+---
+
 # Caching — SDE-1 Interview Questions
 
 > [!abstract] Foundational questions testing basic understanding of what a cache is, how it works, and when to use it. Every SDE candidate is expected to answer these confidently.

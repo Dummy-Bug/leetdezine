@@ -4,7 +4,7 @@ site_description: System design concepts, distributed systems internals, and cas
 
 theme:
   name: material
-  custom_dir: docs/overrides
+  custom_dir: overrides
   font:
     text: Inter
     code: JetBrains Mono
@@ -140,7 +140,6 @@ nav:
     - Fundamentals:
       - Overview: fundamentals/index.md
       - Performance Metrics:
-        - Overview: performance-metrics/overview.md
         - Introduction: performance-metrics/introduction.md
         - Latency: performance-metrics/latency.md
         - Throughput: performance-metrics/throughput.md
@@ -154,7 +153,6 @@ nav:
           - SDE-2: performance-metrics/interview-questions/sde-2.md
           - SDE-3: performance-metrics/interview-questions/sde-3.md
       - Service Levels:
-        - Overview: service-levels/overview.md
         - Introduction: service-levels/introduction.md
         - SLI: service-levels/sli.md
         - SLO: service-levels/slo.md
@@ -166,7 +164,6 @@ nav:
           - SDE-2: service-levels/interview-questions/sde-2.md
           - SDE-3: service-levels/interview-questions/sde-3.md
       - Availability:
-        - Overview: availability/overview.md
         - Availability: availability/availability.md
         - SPOF: availability/spof.md
         - N+1 Redundancy: availability/n+1-redundancy.md
@@ -179,7 +176,6 @@ nav:
           - SDE-2: availability/interview-questions/sde-2.md
           - SDE-3: availability/interview-questions/sde-3.md
       - Reliability:
-        - Overview: reliability/overview.md
         - Reliability: reliability/reliability.md
         - MTBF & MTTR: reliability/mtbf-and-mttr.md
         - RTO & RPO: reliability/rto-and-rpo.md
@@ -191,34 +187,28 @@ nav:
           - SDE-2: reliability/interview-questions/sde-2.md
           - SDE-3: reliability/interview-questions/sde-3.md
       - Scalability:
-        - Overview: scalability/overview.md
         - Scalability: scalability/scalability.md
         - Interview Cheatsheet: scalability/interview-cheatsheet.md
         - Load Balancing:
-          - Overview: scalability/load-balancing/overview.md
           - Load Balancing: scalability/load-balancing/load-balancing.md
           - Algorithms: scalability/load-balancing/algorithms.md
           - Hybrid In Production: scalability/load-balancing/hybrid-in-production.md
           - Interview Cheatsheet: scalability/load-balancing/interview-cheatsheet.md
           - L4:
-            - Overview: scalability/load-balancing/l4/overview.md
             - Fundamentals: scalability/load-balancing/l4/fundamentals.md
             - How It Works: scalability/load-balancing/l4/how-it-works.md
             - Connection Tables: scalability/load-balancing/l4/connection-tables.md
             - Real World: scalability/load-balancing/l4/real-world.md
           - L7:
-            - Overview: scalability/load-balancing/l7/overview.md
             - Fundamentals: scalability/load-balancing/l7/fundamentals.md
             - Request Flow: scalability/load-balancing/l7/request-flow.md
             - API Gateway: scalability/load-balancing/l7/api-gateway.md
         - Auto Scaling:
-          - Overview: scalability/auto-scaling/overview.md
           - Auto Scaling: scalability/auto-scaling/auto-scaling.md
           - Connection Draining: scalability/auto-scaling/connection-draining.md
           - Cold Start: scalability/auto-scaling/cold-start.md
           - Interview Cheatsheet: scalability/auto-scaling/interview-cheatsheet.md
       - Fault Tolerance:
-        - Overview: fault-tolerance/overview.md
         - Fault Tolerance: fault-tolerance/fault-tolerance.md
         - Graceful Degradation: fault-tolerance/graceful-degradation.md
         - Bulkhead: fault-tolerance/bulkhead.md
@@ -226,14 +216,12 @@ nav:
         - Circuit Breaker: fault-tolerance/circuit-breaker.md
         - Interview Cheatsheet: fault-tolerance/interview-cheatsheet.md
       - Durability:
-        - Overview: durability/overview.md
         - Durability: durability/durability.md
         - WAL: durability/wal.md
         - Replication: durability/replication.md
         - Backups: durability/backups.md
         - Interview Cheatsheet: durability/interview-cheatsheet.md
       - Concurrency & Locking:
-        - Overview: concurrency-locking/overview.md
         - Race Conditions: concurrency-locking/race-conditions.md
         - Pessimistic Locking: concurrency-locking/pessimistic-locking.md
         - Optimistic Locking: concurrency-locking/optimistic-locking.md
@@ -243,19 +231,17 @@ nav:
         - Idempotency: concurrency-locking/idempotency.md
         - Interview Cheatsheet: concurrency-locking/interview-cheatsheet.md
       - Security:
-        - Overview: security/overview.md
         - Authentication & JWT: security/authentication-and-jwt.md
         - Encryption: security/encryption.md
         - Interview Cheatsheet: security/interview-cheatsheet.md
       - State Machines:
-        - Overview: state-machines/overview.md
         - What Is A State Machine: state-machines/what-is-a-state-machine.md
         - Implementing In Database: state-machines/implementing-in-database.md
         - Timeout-Driven Transitions: state-machines/timeout-driven-transitions.md
         - Audit Trail vs Overwrite: state-machines/audit-trail-vs-overwrite.md
         - Interview Cheatsheet: state-machines/interview-cheatsheet.md
       - NFRs:
-        - Overview: nfrs/overview.md
+        - "Functional vs Non-Functional": nfrs/functional-vs-non-functional.md
         - NFRs & Design Decisions: nfrs/nfrs-and-design-decisions.md
         - Conflicting NFRs: nfrs/conflicting-nfrs.md
     - Distributed Systems:
@@ -263,25 +249,21 @@ nav:
       - Problems:
         - General Problem: distributed-systems/problems/general-problem.md
       - Network Partitions:
-        - Overview: distributed-systems/network-partitions/overview.md
         - Network Partitions: distributed-systems/network-partitions/network-partitions.md
         - During Partition: distributed-systems/network-partitions/during-partition.md
         - Split Brain: distributed-systems/network-partitions/split-brain.md
         - Quorum vs Consensus: distributed-systems/network-partitions/quorum-vs-consensus.md
         - Interview Cheatsheet: distributed-systems/network-partitions/interview-cheatsheet.md
       - CAP Theorem:
-        - Overview: distributed-systems/cap-theorem/overview.md
         - CAP Theorem: distributed-systems/cap-theorem/cap-theorem.md
         - CP vs AP: distributed-systems/cap-theorem/cp-vs-ap.md
         - Interview Cheatsheet: distributed-systems/cap-theorem/interview-cheatsheet.md
       - PACELC:
-        - Overview: distributed-systems/pacelc/overview.md
         - PACELC Theorem: distributed-systems/pacelc/pacelc-theorem.md
         - PA/EC — The Middle Ground: distributed-systems/pacelc/pa-ec-the-middle-ground.md
         - System Examples: distributed-systems/pacelc/system-examples.md
         - Interview Cheatsheet: distributed-systems/pacelc/interview-cheatsheet.md
       - Consistency Models:
-        - Overview: distributed-systems/consistency-models/overview.md
         - Consistency Models: distributed-systems/consistency-models/consistency-models.md
         - When To Use: distributed-systems/consistency-models/when-to-use.md
         - Interview Cheatsheet: distributed-systems/consistency-models/interview-cheatsheet.md
@@ -353,23 +335,23 @@ nav:
       - Overview: caching/index.md
       - Fundamentals: caching/fundamentals.md
       - Writing Strategies:
-        - Overview: caching/writing-strategies/overview.md
+        - "Quick Decision Map": caching/writing-strategies/quick-decision-map.md
         - Read Strategies: caching/writing-strategies/read-strategies.md
         - Write Strategies: caching/writing-strategies/write-strategies.md
         - Interview Cheatsheet: caching/writing-strategies/interview-cheatsheet.md
       - Eviction Policies:
-        - Overview: caching/eviction-policies/overview.md
+        - "Eviction vs TTL": caching/eviction-policies/eviction-vs-ttl.md
         - LRU: caching/eviction-policies/lru.md
         - LFU: caching/eviction-policies/lfu.md
         - FIFO & TTL: caching/eviction-policies/fifo-and-ttl.md
         - Interview Cheatsheet: caching/eviction-policies/interview-cheatsheet.md
       - Population Strategies:
-        - Overview: caching/population-strategies/overview.md
+        - "Warming vs Refresh-Ahead": caching/population-strategies/warming-vs-refresh-ahead.md
         - Refresh Ahead: caching/population-strategies/refresh-ahead.md
         - Cache Warming: caching/population-strategies/cache-warming.md
         - Interview Cheatsheet: caching/population-strategies/interview-cheatsheet.md
       - Cache Invalidation:
-        - Overview: caching/cache-invalidation/overview.md
+        - "Choosing a Strategy": caching/cache-invalidation/choosing-a-strategy.md
         - TTL-Based: caching/cache-invalidation/ttl-based.md
         - Event-Driven: caching/cache-invalidation/event-driven.md
         - Write-Through: caching/cache-invalidation/write-through.md
@@ -377,7 +359,6 @@ nav:
         - Stale-While-Revalidate: caching/cache-invalidation/stale-while-revalidate.md
         - Interview Cheatsheet: caching/cache-invalidation/interview-cheatsheet.md
       - Distributed Caching:
-        - Overview: caching/distributed-caching/overview.md
         - Why Single Node Fails: caching/distributed-caching/why-single-node-fails.md
         - Consistent Hashing: caching/distributed-caching/consistent-hashing.md
         - Cache Coherence: caching/distributed-caching/cache-coherence.md
@@ -386,7 +367,7 @@ nav:
         - Node Failure: caching/distributed-caching/node-failure.md
         - Interview Cheatsheet: caching/distributed-caching/interview-cheatsheet.md
       - Cache Problems:
-        - Overview: caching/cache-problems/overview.md
+        - "Diagnosing the Problem": caching/cache-problems/diagnosing-which-problem.md
         - Cache Stampede: caching/cache-problems/cache-stampede.md
         - Cold Start: caching/cache-problems/cold-start.md
         - Cache Penetration: caching/cache-problems/cache-penetration.md
@@ -479,7 +460,6 @@ nav:
     - Database Types:
       - Overview: database-types/index.md
       - Key-Value Stores:
-        - Overview: database-types/key-value-stores/overview.md
         - Redis: database-types/key-value-stores/redis.md
         - Memcached: database-types/key-value-stores/memcached.md
         - KV Positioning: database-types/key-value-stores/kv-positioning.md
@@ -497,7 +477,7 @@ nav:
           - Column-Oriented Storage: database-types/column-family/fundamentals/column-oriented-storage.md
           - Row Keys: database-types/column-family/fundamentals/row-keys.md
         - Cassandra:
-          - Overview: database-types/column-family/cassandra/overview.md
+          - "Mental Model": database-types/column-family/cassandra/mental-model.md
           - Ring Architecture: database-types/column-family/cassandra/ring-architecture.md
           - Write Path: database-types/column-family/cassandra/write-path.md
           - Read Path: database-types/column-family/cassandra/read-path.md

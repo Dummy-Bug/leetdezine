@@ -1,3 +1,7 @@
+---
+title: Url Shortener — Fault Isolation
+---
+
 
 > [!info] The problem — two operations sharing one fleet
 > Creation (POST /urls) and redirect (GET /:code) are completely different operations. One is write-heavy, one is read-heavy. One gets 1k requests/sec, one gets 1M requests/sec. But in the base architecture, both run on the same app server fleet. That shared fleet is the problem.

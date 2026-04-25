@@ -1,3 +1,7 @@
+---
+title: Geospatial Indexing Interview Cheatsheet
+---
+
 
 > [!question] How would you find all drivers within 2km of a user?
 >> [!success]-

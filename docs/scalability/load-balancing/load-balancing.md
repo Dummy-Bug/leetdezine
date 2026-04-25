@@ -1,3 +1,7 @@
+---
+title: Load Balancing — Load Balancing
+---
+
 # Load Balancing
 
 > [!question] You have three servers now. How does a request know which one to go to?

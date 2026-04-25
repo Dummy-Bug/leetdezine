@@ -1,3 +1,7 @@
+---
+title: Url Shortener — Load Balancing
+---
+
 
 > [!info] Distributing 1M requests/sec
 > Hot key problem solved. DB replicas handle cache misses. But 1M requests/sec still need to reach the right app server. You need something in front of your app server fleet to distribute traffic — and that something is an API Gateway.

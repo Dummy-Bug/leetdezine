@@ -1,3 +1,7 @@
+---
+title: Key-Value Store Non-Functional Requirements
+---
+
 # Key-Value Store Non-Functional Requirements
 
 ## Durability — the highest priority

@@ -1,3 +1,7 @@
+---
+title: SLA / SLO / SLI — SDE-1 Interview Questions
+---
+
 # SLA / SLO / SLI — SDE-1 Interview Questions
 
 > [!abstract] Foundational questions testing basic understanding of service levels, error budgets, and what makes a good SLI. Every SDE candidate is expected to answer these confidently.

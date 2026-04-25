@@ -1,5 +1,6 @@
 ---
-title: Event Broker
+title: Event Broker — Kafka Internals
+description: "How Kafka works under the hood — partitions, producers, consumers, consumer groups, offset management, backpressure, and when to use Kafka vs SQS vs RabbitMQ."
 hide:
   - navigation
   - toc

@@ -1,3 +1,7 @@
+---
+title: KV Store — Sli Slo Connection
+---
+
 
 > [!info] SLO is the target. SLI is the measurement. You need both.
 > Writing "p99 EC read < 10ms" in your NFR is easy. Knowing whether you're actually hitting it in production — with 1,200 nodes, compaction running, vnodes rebalancing, and anti-entropy competing for disk I/O — requires something else entirely.

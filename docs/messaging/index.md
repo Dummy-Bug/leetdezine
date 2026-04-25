@@ -1,5 +1,6 @@
 ---
 title: Messaging
+description: "Message queues explained — when to use SQS vs RabbitMQ, at-least-once vs exactly-once delivery, dead-letter queues, and the ordering guarantees that actually matter in production."
 hide:
   - navigation
   - toc

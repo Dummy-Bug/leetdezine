@@ -1,3 +1,7 @@
+---
+title: RabbitMQ — Scaling
+---
+
 
 > [!info] RabbitMQ scaling is a three-step problem. First you shard a hot queue across multiple servers to spread load. Then you protect each shard from server failure using replication. Then you solve the resharding pain using consistent hashing.
 

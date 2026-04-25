@@ -1,3 +1,7 @@
+---
+title: Fault Tolerance Interview Cheatsheet
+---
+
 > [!question] When does fault tolerance come up in an interview?
 > It comes up the moment you add any dependency — a database, a downstream service, a third-party API. The interviewer will ask "what happens when X fails?" — this cheatsheet is your answer.
 

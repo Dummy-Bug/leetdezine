@@ -1,3 +1,7 @@
+---
+title: CQRS Consistency
+---
+
 
 ## The Consistency Problem in CQRS
 

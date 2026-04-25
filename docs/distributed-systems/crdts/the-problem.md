@@ -1,3 +1,7 @@
+---
+title: CRDTs The Problem
+---
+
 
 > [!info] The core idea
 > Vector clocks can detect concurrent writes but cannot resolve them. Last write wins loses data silently. CRDTs solve this by designing data structures that can always merge concurrent writes automatically — without coordination, without losing anyone's work.

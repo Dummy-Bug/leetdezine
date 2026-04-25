@@ -1,3 +1,7 @@
+---
+title: Durability — Durability
+---
+
 # Durability
 
 ## What it is

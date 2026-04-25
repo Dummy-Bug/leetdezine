@@ -1,3 +1,7 @@
+---
+title: Pastebin — Alerting
+---
+
 
 > [!info] Knowing your SLI is breached is useless if nobody finds out for an hour. Alerting closes the loop — when SLI diverges from SLO, a human gets paged immediately.
 

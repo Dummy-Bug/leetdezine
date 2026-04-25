@@ -1,3 +1,7 @@
+---
+title: Pagination Interview Cheatsheet
+---
+
 ## The two approaches
 
 ```

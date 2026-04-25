@@ -1,3 +1,7 @@
+---
+title: Distributed Caching Replication
+---
+
 # Cache Replication
 
 > [!info] Read replicas serve two purposes — availability and read throughput. The trade-off is replication lag.

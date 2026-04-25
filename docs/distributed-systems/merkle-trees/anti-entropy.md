@@ -1,3 +1,7 @@
+---
+title: Anti Entropy
+---
+
 
 > [!info] The core idea
 > Anti-entropy is the periodic background process that detects and fixes silent divergence between replicas. Entropy means disorder — replicas drifting apart. Anti-entropy fights that drift. Merkle Trees are the mechanism that makes anti-entropy efficient. Only leaderless databases need this — leader-based databases use WAL replay instead.

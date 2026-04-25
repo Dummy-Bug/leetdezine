@@ -1,3 +1,7 @@
+---
+title: Blob Storage Interview Cheatsheet
+---
+
 ## When to reach for object storage
 
 Any time the problem involves: videos, images, audio, documents, backups, ML model artifacts, static website assets, database snapshots. If it's a large unstructured file — it goes in object storage, not a relational DB.

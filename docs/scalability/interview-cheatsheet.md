@@ -1,3 +1,7 @@
+---
+title: Scalability Interview Cheatsheet
+---
+
 # Interview Cheatsheet — Scalability
 
 > [!question] When the interviewer says "now scale it to 10x traffic" — what do you actually say?

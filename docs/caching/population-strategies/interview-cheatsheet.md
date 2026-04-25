@@ -1,3 +1,7 @@
+---
+title: Population Strategies Interview Cheatsheet
+---
+
 # Population Strategies — Interview Cheatsheet
 
 ---

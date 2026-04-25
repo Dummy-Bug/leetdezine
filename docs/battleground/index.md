@@ -1,7 +1,9 @@
 ---
+title: Battleground — Level 5 System Design Case Studies
 hide:
   - navigation
   - toc
+description: "Battleground-level system design — WhatsApp at 2B users. WebSocket connection management, per-conversation message ordering, offline delivery, thundering herd, and hot partition salting."
 ---
 
 <div class="ph-window">

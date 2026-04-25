@@ -1,3 +1,7 @@
+---
+title: Availability — SDE-1 Interview Questions
+---
+
 # Availability — SDE-1 Interview Questions
 
 > [!abstract] Foundational questions testing basic understanding of availability, reliability, nines, SPOFs, and downtime. Every SDE candidate is expected to answer these confidently.

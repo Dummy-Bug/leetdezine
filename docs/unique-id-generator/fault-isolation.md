@@ -1,3 +1,7 @@
+---
+title: Unique Id Generator — Fault Isolation
+---
+
 # Fault Isolation
 
 ## The architecture

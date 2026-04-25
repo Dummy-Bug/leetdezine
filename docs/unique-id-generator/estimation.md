@@ -1,3 +1,7 @@
+---
+title: Unique Id Generator Estimation
+---
+
 # Unique ID Generator Scale Estimation
 
 ## Starting assumptions

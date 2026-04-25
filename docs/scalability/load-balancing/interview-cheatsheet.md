@@ -1,3 +1,7 @@
+---
+title: Load Balancing Interview Cheatsheet
+---
+
 # Interview Cheatsheet — Load Balancing
 
 > [!question] When does load balancing come up in an interview and what do you actually say?

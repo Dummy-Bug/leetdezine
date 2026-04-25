@@ -1,3 +1,7 @@
+---
+title: Caching — SDE-3 Interview Questions
+---
+
 # Caching — SDE-3 Interview Questions
 
 > [!abstract] Open-ended architecture questions with no single right answer. SDE-3 level is about trade-off reasoning, failure mode thinking, and end-to-end system design. Interviewers want to see how you think, not just what you know.

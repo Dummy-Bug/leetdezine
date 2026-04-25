@@ -1,3 +1,7 @@
+---
+title: Db Tiered Storage
+---
+
 
 > [!info] Not all data is equal
 > Messages from 5 years ago are almost never read. Storing them in DynamoDB — fast, expensive, in-memory indexed — is wasteful. Tiered storage means keeping recent messages in fast storage and moving old messages to cheap cold storage automatically.

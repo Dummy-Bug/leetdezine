@@ -1,3 +1,7 @@
+---
+title: Reliability — SDE-1 Interview Questions
+---
+
 # Reliability — SDE-1 Interview Questions
 
 > [!abstract] Foundational questions testing basic understanding of MTBF, MTTR, RTO, RPO, snapshots vs replicas, and replication trade-offs. Every SDE candidate is expected to answer these confidently.

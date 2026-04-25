@@ -1,3 +1,7 @@
+---
+title: Unique Id Generator Api Design
+---
+
 # Unique ID Generator API Design
 
 ## Why POST and not GET

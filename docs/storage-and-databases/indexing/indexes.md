@@ -1,3 +1,7 @@
+---
+title: Indexing — Indexes
+---
+
 ## The Problem — Full Table Scan
 
 You have a users table with 100 million rows. Someone runs:

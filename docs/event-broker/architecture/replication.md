@@ -1,3 +1,7 @@
+---
+title: Architecture Replication
+---
+
 
 > [!info] Every Kafka partition has one leader and N-1 followers. The leader handles all reads and writes. Followers just replicate. If the leader dies, a follower gets promoted. The producer's acks setting controls the durability vs latency trade-off.
 

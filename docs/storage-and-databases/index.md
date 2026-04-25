@@ -1,5 +1,5 @@
 ---
-title: Storage & Databases
+title: Storage and Databases
 ---
 
 # Storage & Databases

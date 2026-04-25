@@ -1,3 +1,7 @@
+---
+title: Auto Scaling Interview Cheatsheet
+---
+
 # Interview Cheatsheet — Auto-Scaling
 
 > [!question] When does auto-scaling come up in an interview and what do you actually say?

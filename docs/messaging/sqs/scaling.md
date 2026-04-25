@@ -1,3 +1,7 @@
+---
+title: SQS — Scaling
+---
+
 # Scaling SQS Consumers
 
 > [!info] Scaling SQS efficiently comes down to three things: long polling to avoid wasted API calls when the queue is empty, batching to reduce API overhead at high volume, and autoscaling workers based on queue depth so lag stays under control during traffic spikes.

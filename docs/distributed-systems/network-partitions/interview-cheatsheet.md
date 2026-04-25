@@ -1,3 +1,7 @@
+---
+title: Network Partitions Interview Cheatsheet
+---
+
 # Interview Cheatsheet — Network Partitions
 
 > [!question] When does partition come up in an interview?

@@ -1,3 +1,7 @@
+---
+title: Outbox Pattern — Outbox Pattern
+---
+
 ## The Fix: Write Events Inside the Same Transaction
 
 Instead of publishing directly to Kafka, write the event to a special **outbox table** inside the same DB transaction as your business write.

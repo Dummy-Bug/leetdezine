@@ -1,3 +1,7 @@
+---
+title: Notification System System Overview
+---
+
 # Notification System Overview
 
 > [!info] What is a Notification System?

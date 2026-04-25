@@ -1,3 +1,7 @@
+---
+title: Fault Isolation Node Failure
+---
+
 ## Node Failure Is Routine at Scale
 
 We have 1,200 nodes. At that scale, node failures aren't exceptional events that trigger alarms — they're routine, expected, and happening constantly. If each node has 99.9% uptime, on average **1-2 nodes are down at any given time**.

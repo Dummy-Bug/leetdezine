@@ -1,3 +1,7 @@
+---
+title: Message Ordering The Problem
+---
+
 
 > [!info] Message ordering is not guaranteed by the network
 > Sending three messages in order does not mean they arrive in order. The network doesn't care about your sequence — it routes each packet independently.

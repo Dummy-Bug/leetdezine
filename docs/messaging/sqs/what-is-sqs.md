@@ -1,3 +1,7 @@
+---
+description: "What is Amazon SQS and when should you use it? At-least-once delivery, visibility timeouts, dead-letter queues, and how SQS compares to Kafka and RabbitMQ for your use case."
+---
+
 
 > [!info] SQS (Simple Queue Service) is AWS's fully managed task queue. You don't run any broker infrastructure — AWS handles it. A producer calls `SendMessage`, the message sits in the queue, and a consumer calls `ReceiveMessage` to pull it. SQS handles durability, retries, visibility timeout, and DLQ out of the box. You just write producer and consumer code.
 

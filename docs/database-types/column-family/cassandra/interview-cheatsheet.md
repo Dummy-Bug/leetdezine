@@ -1,3 +1,7 @@
+---
+title: Cassandra Interview Cheatsheet
+---
+
 # Cassandra — Interview Cheatsheet
 
 ---

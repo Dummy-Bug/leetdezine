@@ -1,3 +1,7 @@
+---
+title: ACID — SDE-3 Interview Questions
+---
+
 # ACID — SDE-3 Interview Questions
 
 > [!abstract] Open-ended architecture questions testing ACID guarantees at system boundaries — microservices, distributed transactions, concurrency at scale, and the limits of what ACID can actually protect. SDE-3 level — no single right answer, just structured thinking and clear justification.

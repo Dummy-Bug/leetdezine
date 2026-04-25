@@ -1,3 +1,7 @@
+---
+title: KV Store — Alerting
+---
+
 
 > [!info] Knowing your SLI is breached is useless if nobody finds out for an hour
 > With 1,200 nodes, things break constantly. Alerting closes the loop — when SLI diverges from SLO, a human gets paged immediately. But alert on everything and you drown in noise. Alert on nothing and you miss real incidents.

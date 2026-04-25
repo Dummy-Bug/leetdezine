@@ -1,3 +1,7 @@
+---
+title: Unique Id Generator Base Architecture
+---
+
 # Unique ID Generator Base Architecture
 
 ## The simplest thing that works

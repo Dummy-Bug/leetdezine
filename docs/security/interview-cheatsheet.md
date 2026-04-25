@@ -1,3 +1,7 @@
+---
+title: Security Interview Cheatsheet
+---
+
 # Security — Interview Cheatsheet
 
 ## What To Say When Security Comes Up

@@ -1,3 +1,7 @@
+---
+title: Performance Metrics — SDE-3 Interview Questions
+---
+
 # Performance Metrics — SDE-3 Interview Questions
 
 > [!abstract] These questions test deep understanding of failure modes, tail latency math, and architecture-level thinking. SDE-3 candidates are expected to reason about edge cases and make principled tradeoff decisions.

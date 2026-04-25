@@ -1,3 +1,7 @@
+---
+title: Netflix — Error Budget
+---
+
 # Observability — Error Budget
 
 > [!info] Your SLO doesn't just define a target — it defines how much failure you're allowed. 99.99% stream start availability means 0.01% of stream attempts can fail. That 0.01% is your error budget.

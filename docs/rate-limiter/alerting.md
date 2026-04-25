@@ -1,3 +1,7 @@
+---
+title: Rate Limiter — Alerting
+---
+
 
 > [!info] Alerts should fire when something needs human attention. Too sensitive and engineers ignore them. Too loose and real problems go undetected.
 

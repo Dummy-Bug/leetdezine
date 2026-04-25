@@ -1,3 +1,7 @@
+---
+title: Pastebin Functional Requirements
+---
+
 # Pastebin Functional Requirements
 
 ## What is Pastebin?

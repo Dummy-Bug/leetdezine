@@ -1,3 +1,7 @@
+---
+title: Performance Metrics — SDE-2 Interview Questions
+---
+
 # Performance Metrics — SDE-2 Interview Questions
 
 > [!abstract] These questions test design decisions and tradeoffs — not just definitions. At SDE-2 level you must justify your metric choices and know how they interact with system architecture.

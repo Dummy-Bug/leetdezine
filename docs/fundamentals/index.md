@@ -1,5 +1,6 @@
 ---
-title: Core Concepts
+title: Distributed Systems Fundamentals
+description: "Core distributed systems fundamentals — availability, reliability, scalability, fault tolerance, CAP theorem, consistency models, and NFRs. Everything you need before tackling real system design."
 hide:
   - navigation
   - toc
@@ -28,7 +29,7 @@ hide:
 
 <div class="cs-cards">
 
-  <a class="cs-card" href="../performance-metrics/overview/">
+  <a class="cs-card" href="../performance-metrics/introduction/">
     <div class="cs-card-title">Performance Metrics</div>
     <div class="cs-card-desc">Latency, throughput, bandwidth, and percentiles — the four measurements that appear in every design discussion.</div>
     <div class="cs-topics">
@@ -37,7 +38,7 @@ hide:
     <div class="cs-card-cta">Open topic <span>→</span></div>
   </a>
 
-  <a class="cs-card" href="../service-levels/overview/">
+  <a class="cs-card" href="../service-levels/introduction/">
     <div class="cs-card-title">Service Levels</div>
     <div class="cs-card-desc">SLIs, SLOs, SLAs, and error budgets. How you define and commit to system behavior — and what happens when you breach it.</div>
     <div class="cs-topics">
@@ -46,7 +47,7 @@ hide:
     <div class="cs-card-cta">Open topic <span>→</span></div>
   </a>
 
-  <a class="cs-card" href="../availability/overview/">
+  <a class="cs-card" href="../availability/availability/">
     <div class="cs-card-title">Availability</div>
     <div class="cs-card-desc">SPOF, redundancy, nines, active-active vs active-passive. What "highly available" actually requires you to build.</div>
     <div class="cs-topics">
@@ -55,7 +56,7 @@ hide:
     <div class="cs-card-cta">Open topic <span>→</span></div>
   </a>
 
-  <a class="cs-card" href="../reliability/overview/">
+  <a class="cs-card" href="../reliability/reliability/">
     <div class="cs-card-title">Reliability</div>
     <div class="cs-card-desc">MTBF, MTTR, RTO, RPO. The difference between a system that rarely fails and one that recovers fast when it does.</div>
     <div class="cs-topics">
@@ -64,7 +65,7 @@ hide:
     <div class="cs-card-cta">Open topic <span>→</span></div>
   </a>
 
-  <a class="cs-card" href="../scalability/overview/">
+  <a class="cs-card" href="../scalability/scalability/">
     <div class="cs-card-title">Scalability</div>
     <div class="cs-card-desc">Horizontal vs vertical scaling, load balancing at L4 and L7, auto-scaling, and connection draining. How systems grow without breaking.</div>
     <div class="cs-topics">
@@ -73,7 +74,7 @@ hide:
     <div class="cs-card-cta">Open topic <span>→</span></div>
   </a>
 
-  <a class="cs-card" href="../fault-tolerance/overview/">
+  <a class="cs-card" href="../fault-tolerance/fault-tolerance/">
     <div class="cs-card-title">Fault Tolerance</div>
     <div class="cs-card-desc">Graceful degradation, bulkheads, circuit breakers, retries with backoff. How systems survive partial failure without cascading.</div>
     <div class="cs-topics">
@@ -82,7 +83,7 @@ hide:
     <div class="cs-card-cta">Open topic <span>→</span></div>
   </a>
 
-  <a class="cs-card" href="../durability/overview/">
+  <a class="cs-card" href="../durability/durability/">
     <div class="cs-card-title">Durability</div>
     <div class="cs-card-desc">WAL, replication, and backups. The mechanisms that ensure data survives node failure, crash, or disaster.</div>
     <div class="cs-topics">
@@ -91,7 +92,7 @@ hide:
     <div class="cs-card-cta">Open topic <span>→</span></div>
   </a>
 
-  <a class="cs-card" href="../concurrency-locking/overview/">
+  <a class="cs-card" href="../concurrency-locking/race-conditions/">
     <div class="cs-card-title">Concurrency & Locking</div>
     <div class="cs-card-desc">Race conditions, pessimistic and optimistic locking, MVCC, and distributed locks. How systems handle parallel writes without corruption.</div>
     <div class="cs-topics">
@@ -100,7 +101,7 @@ hide:
     <div class="cs-card-cta">Open topic <span>→</span></div>
   </a>
 
-  <a class="cs-card" href="../security/overview/">
+  <a class="cs-card" href="../security/authentication-and-jwt/">
     <div class="cs-card-title">Security</div>
     <div class="cs-card-desc">Auth, JWT, encryption at rest and in transit. The security primitives that belong in every system design, not just the ones marked "sensitive."</div>
     <div class="cs-topics">
@@ -109,7 +110,7 @@ hide:
     <div class="cs-card-cta">Open topic <span>→</span></div>
   </a>
 
-  <a class="cs-card" href="../state-machines/overview/">
+  <a class="cs-card" href="../state-machines/what-is-a-state-machine/">
     <div class="cs-card-title">State Machines</div>
     <div class="cs-card-desc">Modeling order flows, workflows, and status transitions as explicit states. The pattern that makes async systems auditable and debuggable.</div>
     <div class="cs-topics">

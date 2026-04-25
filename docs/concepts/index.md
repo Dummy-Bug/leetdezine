@@ -1,5 +1,6 @@
 ---
-title: Concepts
+title: System Design Concepts
+description: "System design concepts explained from first principles — caching, distributed systems, databases, messaging, and more. Built for engineers preparing for interviews or building at scale."
 hide:
   - navigation
   - toc

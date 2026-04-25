@@ -1,3 +1,7 @@
+---
+title: Notification System — Retry Strategy
+---
+
 # Retry Strategy — Retry and DLQ
 
 ## The Problem

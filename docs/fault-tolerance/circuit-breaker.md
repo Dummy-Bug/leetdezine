@@ -1,3 +1,7 @@
+---
+title: Fault Tolerance — Circuit Breaker
+---
+
 ## The Real World Analogy
 
 > [!info] Named after the fuse box in your house. When a short circuit happens, the fuse trips — stopping all electricity flow rather than letting the wire burn. Once the electrician fixes it, you reset the fuse and power comes back.

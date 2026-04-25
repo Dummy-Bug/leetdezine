@@ -1,5 +1,6 @@
 ---
 title: Database Types
+description: "When to use which database — key-value stores, document stores, column-family (Cassandra, Bigtable), search engines, graph databases, blob storage, and how to choose under real constraints."
 hide:
   - navigation
   - toc

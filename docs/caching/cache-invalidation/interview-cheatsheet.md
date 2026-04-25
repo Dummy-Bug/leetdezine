@@ -1,3 +1,7 @@
+---
+title: Cache Invalidation Interview Cheatsheet
+---
+
 # Cache Invalidation — Interview Cheatsheet
 
 ---

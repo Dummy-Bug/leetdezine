@@ -1,3 +1,7 @@
+---
+title: Cache Problems — Cold Start
+---
+
 # Cold Start
 
 > [!info] The cache is completely empty. Fresh deployment, Redis restart, new region. Every request is a cache miss. The DB sees 100% of production traffic instead of its usual 5%.

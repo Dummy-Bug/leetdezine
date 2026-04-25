@@ -1,3 +1,7 @@
+---
+title: L4 — How It Works
+---
+
 # Layer 4 — How It Actually Works
 
 > [!question] A packet arrives. The LB picks a server. But mechanically — how does it forward the packet, track the connection, and hide the server from the client?

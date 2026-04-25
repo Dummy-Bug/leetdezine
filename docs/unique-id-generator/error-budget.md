@@ -1,3 +1,7 @@
+---
+title: Unique Id Generator — Error Budget
+---
+
 # Error Budget
 
 ## What the budget is

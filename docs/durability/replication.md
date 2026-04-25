@@ -1,3 +1,7 @@
+---
+title: Durability Replication
+---
+
 # Replication as Durability
 
 ## Why WAL Alone Is Not Enough

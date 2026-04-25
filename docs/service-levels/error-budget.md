@@ -1,3 +1,7 @@
+---
+title: Service Levels — Error Budget
+---
+
 # Error Budget
 
 > [!question] Your SLO allows 0.1% failure. What do you do with that 0.1%?

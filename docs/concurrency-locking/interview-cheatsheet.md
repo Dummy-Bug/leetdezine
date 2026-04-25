@@ -1,3 +1,7 @@
+---
+title: Concurrency Locking Interview Cheatsheet
+---
+
 # Interview Cheatsheet — Concurrency & Locking
 
 > [!question] When does concurrency come up in an interview?

@@ -1,3 +1,7 @@
+---
+title: Unique Id Generator — Measuring Latency
+---
+
 # Measuring Latency
 
 ## What to measure

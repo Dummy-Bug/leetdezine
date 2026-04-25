@@ -1,3 +1,7 @@
+---
+title: Performance Metrics Interview Cheatsheet
+---
+
 # Interview Cheatsheet — Latency, Throughput, Bandwidth & Percentiles
 
 > [!question] The interviewer says "design WhatsApp". What's the first thing you do?

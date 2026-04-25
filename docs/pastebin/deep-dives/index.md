@@ -1,5 +1,5 @@
 ---
-title: Deep Dives
+title: Pastebin — Deep Dives
 hide:
   - navigation
   - toc

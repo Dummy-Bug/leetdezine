@@ -1,3 +1,7 @@
+---
+title: Url Shortener — Db Choice
+---
+
 
 > [!info] Start with access patterns, not the database
 > The right way to pick a database is to first understand exactly what queries the system needs to run — then choose the DB that handles those queries best. Picking a DB before understanding access patterns is guessing.

@@ -1,3 +1,7 @@
+---
+title: Availability Interview Cheatsheet
+---
+
 # Interview Cheatsheet — Availability
 
 > [!question] When does availability come up in an interview and what do you actually say?

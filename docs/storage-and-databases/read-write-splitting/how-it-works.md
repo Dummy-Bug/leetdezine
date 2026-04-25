@@ -1,3 +1,7 @@
+---
+title: Read Write Splitting — How It Works
+---
+
 ## The setup
 
 You have one **primary** node that handles all writes. You have one or more **replica** nodes that handle all reads. Replicas are copies of the primary — same data, same schema.

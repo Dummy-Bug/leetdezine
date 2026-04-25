@@ -1,3 +1,7 @@
+---
+title: Url Shortener Replication
+---
+
 
 > [!info] Sharding splits data. Replication protects it.
 > Each shard is a single machine. If that machine dies, the chunk of data it owns becomes unavailable — and since URLs are durable (once created, never lost), that's a violation of a core NFR. Every shard needs replicas.

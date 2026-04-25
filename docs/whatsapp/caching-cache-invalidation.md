@@ -1,3 +1,7 @@
+---
+title: Caching Cache Invalidation
+---
+
 
 > [!info] Cache invalidation — keeping the profile cache consistent
 > When Bob updates his profile, the cache must be updated. The question is how — and the answer is simpler than it first appears.

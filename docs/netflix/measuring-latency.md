@@ -1,3 +1,7 @@
+---
+title: Netflix — Measuring Latency
+---
+
 # Observability — Measuring Latency
 
 > [!info] Netflix has two completely different latency problems. API latency is measured server-side. Time to First Frame is measured client-side. Confusing them produces wrong SLOs and wrong alerts.

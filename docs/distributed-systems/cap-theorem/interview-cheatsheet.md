@@ -1,3 +1,7 @@
+---
+title: CAP Theorem Interview Cheatsheet
+---
+
 # CAP Theorem — Interview Cheatsheet
 
 ## The Four-Step Formula

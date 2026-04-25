@@ -1,3 +1,7 @@
+---
+title: What is Change Data Capture?
+---
+
 # What is Change Data Capture?
 
 > [!question] You have a Postgres database powering your app. Three other systems need to stay in sync with it. How do you do it without things silently going out of sync?

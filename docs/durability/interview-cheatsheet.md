@@ -1,3 +1,7 @@
+---
+title: Durability Interview Cheatsheet
+---
+
 # Interview Cheatsheet — Durability
 
 > [!question] When does durability come up in an interview?

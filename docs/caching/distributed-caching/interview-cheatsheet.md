@@ -1,3 +1,7 @@
+---
+title: Distributed Caching Interview Cheatsheet
+---
+
 # Distributed Caching — Interview Cheatsheet
 
 ---

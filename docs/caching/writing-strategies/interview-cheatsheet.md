@@ -1,3 +1,7 @@
+---
+title: Writing Strategies Interview Cheatsheet
+---
+
 # Cache Writing Strategies — Interview Cheatsheet
 
 ---

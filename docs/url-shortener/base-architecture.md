@@ -1,3 +1,7 @@
+---
+title: Url Shortener Base Architecture
+---
+
 # URL Shortener Base Architecture
 
 > [!info] The base architecture

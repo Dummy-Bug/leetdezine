@@ -1,3 +1,7 @@
+---
+title: Performance Metrics Introduction
+---
+
 # What are Performance Metrics?
 
 > [!question] Before you design anything — how do you know if your system is working **well**?

@@ -1,3 +1,7 @@
+---
+title: Raft — Fencing Tokens
+---
+
 
 > [!info] The core idea
 > Term numbers protect you inside the Raft cluster. Fencing tokens protect you outside it — when a stale process tries to write to an external system that has no idea what a term number is.

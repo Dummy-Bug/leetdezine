@@ -1,3 +1,7 @@
+---
+title: Db Schema
+---
+
 
 > [!info] The schema must serve the access patterns
 > DynamoDB is not a relational database — there are no joins, no foreign keys, no flexible queries. The schema must be designed around the exact queries the system will run. Get the partition key and sort key wrong and every query becomes a full table scan.

@@ -1,3 +1,7 @@
+---
+title: Reliability — SDE-3 Interview Questions
+---
+
 # Reliability — SDE-3 Interview Questions
 
 > [!abstract] Open-ended architecture questions testing reliability at scale — RPO/RTO under high throughput, quorum consensus, tiered replication strategies, and designing for disaster recovery. SDE-3 level — no single right answer, just structured thinking and clear justification.

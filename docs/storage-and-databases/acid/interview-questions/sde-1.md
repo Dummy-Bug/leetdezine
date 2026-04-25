@@ -1,3 +1,7 @@
+---
+title: ACID — SDE-1 Interview Questions
+---
+
 # ACID — SDE-1 Interview Questions
 
 > [!abstract] Foundational questions testing basic understanding of ACID properties, the WAL, and why each guarantee exists. Every SDE candidate is expected to answer these confidently and concretely.

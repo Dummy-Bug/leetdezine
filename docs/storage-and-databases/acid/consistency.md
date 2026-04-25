@@ -1,3 +1,7 @@
+---
+title: ACID Consistency
+---
+
 # Consistency
 
 > [!info] Consistency — the database always moves from one valid state to another valid state. Your defined rules are never violated.

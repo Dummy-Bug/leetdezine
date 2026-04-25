@@ -1,5 +1,5 @@
 ---
-title: Deep Dives
+title: WhatsApp — Deep Dives
 hide:
   - navigation
   - toc

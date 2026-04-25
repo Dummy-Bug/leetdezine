@@ -1,3 +1,7 @@
+---
+title: Performance Metrics — SDE-1 Interview Questions
+---
+
 # Performance Metrics — SDE-1 Interview Questions
 
 > [!abstract] These are foundational questions testing basic understanding of latency, throughput, bandwidth and percentiles. Every SDE candidate is expected to answer these confidently.

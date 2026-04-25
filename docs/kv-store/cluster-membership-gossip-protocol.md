@@ -1,3 +1,7 @@
+---
+title: Cluster Membership Gossip Protocol
+---
+
 ## Gossip Protocol — How Nodes Share Information
 
 Every few seconds (typically once per second), each node picks a **random** neighbor and exchanges membership information — which nodes exist, which ranges they own, who's alive, who's dead.

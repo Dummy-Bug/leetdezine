@@ -1,3 +1,7 @@
+---
+title: Distributed Caching — Consistent Hashing
+---
+
 # Consistent Hashing
 
 > [!info] Hash keys to nodes on a ring. Adding or removing a node only remaps ~1/N of keys — not the entire keyspace.

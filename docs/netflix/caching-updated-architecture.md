@@ -1,3 +1,7 @@
+---
+title: Netflix — Caching Updated Architecture
+---
+
 ## Hybrid CDN Strategy — Push for Hot, Pull for Everything Else
 
 Neither pull nor push works perfectly on its own:

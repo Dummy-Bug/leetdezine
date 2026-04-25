@@ -1,3 +1,7 @@
+---
+title: NewSQL The Problem
+---
+
 >[!info] NewSQL is the answer to a specific problem:
 > you need the full guarantees of SQL (ACID, strong consistency, complex transactions) but your system has outgrown what a single database node can handle. NewSQL gives you both — SQL semantics with horizontal scale.
 

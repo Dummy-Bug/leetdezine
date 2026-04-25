@@ -1,5 +1,6 @@
 ---
 title: Caching
+description: "How caching actually works — write-through vs write-back, eviction policies (LRU, LFU), cache invalidation, distributed caching with Redis, and the failure patterns that kill production systems."
 hide:
   - navigation
   - toc

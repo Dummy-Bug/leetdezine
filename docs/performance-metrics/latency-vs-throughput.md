@@ -1,3 +1,7 @@
+---
+description: "Latency vs throughput — why making your system faster doesn't automatically increase throughput, and how batching, parallelism, and queue depth create the real tradeoff."
+---
+
 # Latency vs Throughput — The Tradeoff
 
 > [!question] If I make my system faster, doesn't throughput automatically go up too?

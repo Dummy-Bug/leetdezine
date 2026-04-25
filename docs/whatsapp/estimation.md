@@ -1,3 +1,7 @@
+---
+title: Whatsapp Estimation
+---
+
 # WhatsApp Scale Estimation
 
 > [!info] The goal of estimation

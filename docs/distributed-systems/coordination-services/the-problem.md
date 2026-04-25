@@ -1,3 +1,7 @@
+---
+title: Coordination Services The Problem
+---
+
 
 > [!info] The core idea
 > In a distributed system, multiple servers need to agree on shared state — who is the leader, what is the current config, which server owns a lock. Storing this in one of your own application servers creates a SPOF. You need a dedicated, reliable, single source of truth that all servers can read from and write to. That is what etcd provides.

@@ -1,3 +1,7 @@
+---
+title: SLA / SLO / SLI — SDE-3 Interview Questions
+---
+
 # SLA / SLO / SLI — SDE-3 Interview Questions
 
 > [!abstract] Open-ended architecture questions testing SLO program design, cultural adoption, and complex trade-off reasoning. SDE-3 level — no single right answer, just structured thinking and clear justification.

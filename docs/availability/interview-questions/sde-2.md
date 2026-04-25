@@ -1,3 +1,7 @@
+---
+title: Availability — SDE-2 Interview Questions
+---
+
 # Availability — SDE-2 Interview Questions
 
 > [!abstract] Scenario-based questions testing trade-off reasoning around failover, multi-region deployments, SPOF elimination, and the subtle gap between availability and reliability. Expected at SDE-2 level — not just definitions, but understanding when and why decisions matter.

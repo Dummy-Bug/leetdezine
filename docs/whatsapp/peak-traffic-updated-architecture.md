@@ -1,3 +1,7 @@
+---
+title: Peak Traffic Updated Architecture
+---
+
 
 > [!info] Architecture after Peak Traffic deep dive
 > Four changes from the caching architecture: inbox Redis is sharded across 10 primaries with read replicas, registry writes go through Kafka, rate limiting uses a centralised Redis counter, and app servers have internal queues with auto-scaling.

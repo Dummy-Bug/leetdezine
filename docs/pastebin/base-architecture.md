@@ -1,3 +1,7 @@
+---
+title: Pastebin Base Architecture
+---
+
 # Pastebin Base Architecture
 
 ## Components

@@ -1,3 +1,7 @@
+---
+title: Notification System — Alerting
+---
+
 # Alerting — Notification System
 
 > [!info] Knowing your SLI is breached is useless if nobody finds out for an hour.

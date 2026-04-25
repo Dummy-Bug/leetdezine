@@ -1,3 +1,7 @@
+---
+title: Fault Isolation Disk Failure The Problem
+---
+
 ## What Is a Disk Failure?
 
 A disk failure is when the physical storage device on a node stops working correctly. It comes in three flavors, each with very different levels of danger:

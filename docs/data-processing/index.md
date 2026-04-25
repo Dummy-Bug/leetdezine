@@ -1,5 +1,6 @@
 ---
 title: Data Processing
+description: "Stream processing vs batch processing — Kafka Streams, Flink, MapReduce, Spark, Lambda and Kappa architectures, schema evolution with Protobuf and Avro."
 hide:
   - navigation
   - toc

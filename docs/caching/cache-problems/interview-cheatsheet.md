@@ -1,3 +1,7 @@
+---
+title: Cache Problems Interview Cheatsheet
+---
+
 # Cache Problems — Interview Cheatsheet
 
 ---

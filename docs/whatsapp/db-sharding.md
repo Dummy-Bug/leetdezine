@@ -1,3 +1,7 @@
+---
+title: Db Sharding
+---
+
 
 > [!info] Do we need manual sharding?
 > Sharding means splitting data across multiple nodes so no single node holds everything or handles all traffic. In Postgres you manage this yourself. In DynamoDB, it's handled internally — what DynamoDB calls "partitions" is what Postgres engineers call "shards." The question is whether we need to intervene manually or let DynamoDB handle it.

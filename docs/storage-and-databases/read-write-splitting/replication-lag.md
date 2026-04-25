@@ -1,3 +1,7 @@
+---
+title: Read Write Splitting — Replication Lag
+---
+
 ## The lag problem
 
 Replication is asynchronous. The primary writes to the WAL, the replica streams it and applies it — but there's a small delay. Under normal conditions this is 10-100ms. Under heavy write load or a slow network, it can be more.

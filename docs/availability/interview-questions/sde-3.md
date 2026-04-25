@@ -1,3 +1,7 @@
+---
+title: Availability — SDE-3 Interview Questions
+---
+
 # Availability — SDE-3 Interview Questions
 
 > [!abstract] Open-ended architecture questions testing availability at scale — Black Friday preparation, five-nines trade-offs, service isolation, and designing for graceful degradation. SDE-3 level — no single right answer, just structured thinking and clear justification.

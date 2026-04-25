@@ -1,3 +1,7 @@
+---
+title: ACID The Problem
+---
+
 # The Problem ACID Solves
 
 > [!question] What happens when a database operation is interrupted halfway through? Without any guarantees, the answer is: data corruption that silently looks like success.

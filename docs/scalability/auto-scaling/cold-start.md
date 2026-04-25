@@ -1,3 +1,7 @@
+---
+title: Auto Scaling — Cold Start
+---
+
 # Cold Start Problem
 
 > [!question] Auto-scaling triggered. A new server is booting. Traffic is already spiking. The server won't be ready for 7 minutes. What do you do?

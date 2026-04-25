@@ -1,3 +1,7 @@
+---
+title: Replication Interview Cheatsheet
+---
+
 # Replication — Interview Cheatsheet
 
 ---

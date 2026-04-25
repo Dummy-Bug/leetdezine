@@ -1,3 +1,7 @@
+---
+title: Fundamentals — Message Ordering
+---
+
 
 > [!info] Queues do not guarantee message ordering by default — especially when multiple workers are consuming in parallel. Ordering must be designed explicitly, using a combination of client-side sequence numbers and server-side timestamps.
 

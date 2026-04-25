@@ -1,7 +1,9 @@
 ---
+title: Ascent — Level 2 System Design Case Studies
 hide:
   - navigation
   - toc
+description: "Ascent-level system design case studies — Notification System and Pastebin. Async pipelines, Kafka fan-out, retry/DLQ patterns, circuit breakers, and multi-channel delivery at scale."
 ---
 
 <div class="ph-window">

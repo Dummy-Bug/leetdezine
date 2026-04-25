@@ -1,3 +1,7 @@
+---
+description: "Snowflake is Twitter's 64-bit ID format that packs a timestamp, machine ID, and sequence counter into a single BIGINT. Generates unique, time-sortable IDs across hundreds of machines with zero coordination."
+---
+
 # Snowflake ID — The 64-Bit Solution
 
 ## Why 64 bits?

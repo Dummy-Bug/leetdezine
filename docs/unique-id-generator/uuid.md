@@ -1,3 +1,7 @@
+---
+description: "UUID is a 128-bit ID any server can generate without coordination. But UUID v4 is random — it destroys B-tree index locality, causes page splits at scale, and can silently kill database write performance."
+---
+
 # UUID — The 128-Bit Alternative
 
 ## What is UUID?

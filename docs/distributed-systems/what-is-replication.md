@@ -1,3 +1,7 @@
+---
+description: "Replication continuously copies data from a primary database to replicas. Here's how primary-replica replication solves the single point of failure and read overload problems."
+---
+
 # What is Replication?
 
 > [!question] Your database is a single server. What happens when it crashes? What happens when 500 million users hit it at the same time?

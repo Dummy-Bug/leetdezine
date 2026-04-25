@@ -1,3 +1,7 @@
+---
+description: "Replication copies all your data to every server. Sharding splits the data itself across servers so each holds only a fraction — the fix when writes are bottlenecked and disk is running out."
+---
+
 > [!question] You've added read replicas. Reads are fine. But writes are still bottlenecked and your disk is nearly full. What do you do?
 
 ---

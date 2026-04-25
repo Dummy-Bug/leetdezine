@@ -1,5 +1,6 @@
 ---
 title: CDC — What Is Cdc
+description: "Change Data Capture reads every INSERT, UPDATE, and DELETE directly from the database's transaction log — no polling, millisecond latency, and near-zero overhead on the database."
 ---
 
 

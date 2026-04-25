@@ -1,3 +1,7 @@
+---
+description: "Token Bucket allows controlled bursts — up to N requests at once — while enforcing a sustained rate over time. Two separate knobs: burst size and token refill rate give you precise traffic shaping."
+---
+
 
 ## Token Bucket
 

@@ -1,3 +1,7 @@
+---
+description: "Leaky Bucket outputs at a perfectly smooth constant rate regardless of how many requests arrive. Zero bursts allowed — the right algorithm when the downstream system has a hard throughput contract."
+---
+
 
 ## Leaky Bucket
 

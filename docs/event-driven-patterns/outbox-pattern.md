@@ -1,5 +1,6 @@
 ---
 title: Outbox Pattern — Outbox Pattern
+description: "Writing to the database and publishing to Kafka in two separate steps creates a dual-write problem — one can succeed while the other fails. The Outbox Pattern solves this with a single transaction."
 ---
 
 ## The Fix: Write Events Inside the Same Transaction

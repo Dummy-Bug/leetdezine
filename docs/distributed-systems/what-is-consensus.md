@@ -1,3 +1,7 @@
+---
+description: "Consensus means all non-faulty nodes agree on the same value in the same order. Here's why timestamps don't work, why it's one of the hardest problems in distributed systems, and how algorithms solve it."
+---
+
 
 > [!info] The core idea
 > Consensus means all non-faulty nodes in a distributed system agree on the same value, in the same order. Not "most nodes." Not "eventually maybe." All of them. On the same value. At the same time.

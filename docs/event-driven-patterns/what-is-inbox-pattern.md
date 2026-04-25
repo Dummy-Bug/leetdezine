@@ -1,3 +1,7 @@
+---
+description: "Kafka guarantees at-least-once delivery, so the same event can arrive twice. The Inbox Pattern solves this: a table of processed event IDs lets consumers detect and skip duplicates cheaply."
+---
+
 The Inbox Pattern is the **consumer-side equivalent of the Outbox Pattern**. It solves the duplicate processing problem that arises from Kafka's at-least-once delivery guarantee.
 
 When Kafka delivers the same event twice (crash before offset commit, rebalance, etc.), the consumer must detect and skip the duplicate. The inbox table is where it tracks which events have already been processed.

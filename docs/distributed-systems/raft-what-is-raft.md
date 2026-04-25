@@ -1,3 +1,7 @@
+---
+description: "Raft is a consensus algorithm built for understandability. It solves two problems — leader election and log replication — and guarantees no committed data is ever lost, even when nodes crash."
+---
+
 
 > [!info] The core idea
 > Raft is a consensus algorithm designed to be easy to understand. It solves the problem of getting multiple nodes to agree on the same sequence of writes — even when nodes crash, messages are lost, or the network splits.

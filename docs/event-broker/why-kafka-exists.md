@@ -1,3 +1,7 @@
+---
+description: "Traditional queues delete messages after one consumer reads them. Kafka keeps events in a persistent log so multiple independent consumers can read at their own pace — and you can replay from any offset."
+---
+
 
 > [!info] Kafka is not a traditional message queue. It is a persistent, append-only log that retains events for days or weeks, allows any number of consumers to read independently, and never deletes a message just because one consumer read it.
 

@@ -1,3 +1,7 @@
+---
+description: "A message broker sits between producers and consumers so neither side talks to the other directly. The broker owns the queue, handles delivery guarantees, and absorbs all the distributed systems complexity."
+---
+
 
 > [!info] A message broker is the infrastructure that sits between producers and consumers. Producers hand their messages to the broker. Consumers pull messages from the broker. Neither side talks to the other directly — the broker is the middle system that owns the queue, guarantees delivery, and handles all the distributed systems complexity in between.
 

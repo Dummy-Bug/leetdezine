@@ -29,7 +29,7 @@ hide:
 
 <div class="cs-cards">
 
-  <a class="cs-card" href="what-is-event-sourcing/event-sourcing/">
+  <a class="cs-card" href="event-sourcing/">
     <div class="cs-card-title">Event Sourcing</div>
     <div class="cs-card-desc">Store state as a sequence of events instead of a current snapshot. Every state transition becomes auditable and replayable.</div>
     <div class="cs-topics">
@@ -38,7 +38,7 @@ hide:
     <div class="cs-card-cta">Open topic <span>→</span></div>
   </a>
 
-  <a class="cs-card" href="cqrs/what-is-cqrs/">
+  <a class="cs-card" href="what-is-cqrs/">
     <div class="cs-card-title">CQRS</div>
     <div class="cs-card-desc">Separate the write model from the read model. Read replicas, projections, and the eventual consistency trade-off this forces.</div>
     <div class="cs-topics">
@@ -47,7 +47,7 @@ hide:
     <div class="cs-card-cta">Open topic <span>→</span></div>
   </a>
 
-  <a class="cs-card" href="outbox-pattern/dual-write/">
+  <a class="cs-card" href="dual-write/">
     <div class="cs-card-title">Outbox Pattern</div>
     <div class="cs-card-desc">The dual-write problem and how the transactional outbox solves it — writing to DB and publishing an event atomically.</div>
     <div class="cs-topics">
@@ -56,7 +56,7 @@ hide:
     <div class="cs-card-cta">Open topic <span>→</span></div>
   </a>
 
-  <a class="cs-card" href="cdc/what-is-cdc/">
+  <a class="cs-card" href="what-is-cdc/">
     <div class="cs-card-title">CDC</div>
     <div class="cs-card-desc">Change Data Capture — reading the database write-ahead log to stream changes downstream without polling or dual writes.</div>
     <div class="cs-topics">
@@ -65,7 +65,7 @@ hide:
     <div class="cs-card-cta">Open topic <span>→</span></div>
   </a>
 
-  <a class="cs-card" href="inbox-outbox-together/what-is-inbox-pattern/">
+  <a class="cs-card" href="what-is-inbox-pattern/">
     <div class="cs-card-title">Inbox + Outbox</div>
     <div class="cs-card-desc">Combining inbox and outbox for end-to-end reliable delivery — idempotent consumers, deduplication, and the full event flow.</div>
     <div class="cs-topics">

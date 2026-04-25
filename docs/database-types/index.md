@@ -29,7 +29,7 @@ hide:
 
 <div class="cs-cards">
 
-  <a class="cs-card" href="key-value-stores/kv-positioning/">
+  <a class="cs-card" href="kv-positioning/">
     <div class="cs-card-title">Key-Value Stores</div>
     <div class="cs-card-desc">Redis and Memcached internals — when O(1) lookup is all you need and when it becomes a liability.</div>
     <div class="cs-topics">
@@ -38,7 +38,7 @@ hide:
     <div class="cs-card-cta">Open topic <span>→</span></div>
   </a>
 
-  <a class="cs-card" href="document-stores/document-model/">
+  <a class="cs-card" href="document-model/">
     <div class="cs-card-title">Document Stores</div>
     <div class="cs-card-desc">MongoDB internals — document model, embedding vs referencing, indexes, replication and sharding.</div>
     <div class="cs-topics">
@@ -47,7 +47,7 @@ hide:
     <div class="cs-card-cta">Open topic <span>→</span></div>
   </a>
 
-  <a class="cs-card" href="column-family/fundamentals/why-column-family/">
+  <a class="cs-card" href="fundamentals-why-column-family/">
     <div class="cs-card-title">Column Family</div>
     <div class="cs-card-desc">Cassandra, Bigtable, and DynamoDB — wide-column storage, ring architecture, and query-first data modeling.</div>
     <div class="cs-topics">
@@ -56,7 +56,7 @@ hide:
     <div class="cs-card-cta">Open topic <span>→</span></div>
   </a>
 
-  <a class="cs-card" href="search-engines/problem-with-sql-search/">
+  <a class="cs-card" href="problem-with-sql-search/">
     <div class="cs-card-title">Search Engines</div>
     <div class="cs-card-desc">Why SQL LIKE fails at scale. Inverted indexes, TF-IDF ranking, and Elasticsearch architecture.</div>
     <div class="cs-topics">
@@ -65,7 +65,7 @@ hide:
     <div class="cs-card-cta">Open topic <span>→</span></div>
   </a>
 
-  <a class="cs-card" href="graph-databases/why-not-sql/">
+  <a class="cs-card" href="why-not-sql/">
     <div class="cs-card-title">Graph Databases</div>
     <div class="cs-card-desc">When relationships are the data. Graph models, Cypher queries, and the use cases where SQL joins collapse.</div>
     <div class="cs-topics">
@@ -74,7 +74,7 @@ hide:
     <div class="cs-card-cta">Open topic <span>→</span></div>
   </a>
 
-  <a class="cs-card" href="blob-storage/object-storage-model/">
+  <a class="cs-card" href="object-storage-model/">
     <div class="cs-card-title">Blob Storage</div>
     <div class="cs-card-desc">Object storage model, presigned URLs, multipart uploads, content-addressable storage, and chunk deduplication.</div>
     <div class="cs-topics">
@@ -83,7 +83,7 @@ hide:
     <div class="cs-card-cta">Open topic <span>→</span></div>
   </a>
 
-  <a class="cs-card" href="newsql/the-problem/">
+  <a class="cs-card" href="newsql-the-problem/">
     <div class="cs-card-title">NewSQL</div>
     <div class="cs-card-desc">Google Spanner internals — TrueTime, external consistency, and when NewSQL beats both Postgres and NoSQL.</div>
     <div class="cs-topics">
@@ -92,7 +92,7 @@ hide:
     <div class="cs-card-cta">Open topic <span>→</span></div>
   </a>
 
-  <a class="cs-card" href="oltp-vs-olap/the-problem/">
+  <a class="cs-card" href="oltp-vs-olap-the-problem/">
     <div class="cs-card-title">OLTP vs OLAP</div>
     <div class="cs-card-desc">Transactional vs analytical workloads. ETL pipelines, data warehouses, and when to stop querying production.</div>
     <div class="cs-topics">
@@ -101,7 +101,7 @@ hide:
     <div class="cs-card-cta">Open topic <span>→</span></div>
   </a>
 
-  <a class="cs-card" href="choosing-the-right-db/decision-framework/">
+  <a class="cs-card" href="decision-framework/">
     <div class="cs-card-title">Choosing The Right DB</div>
     <div class="cs-card-desc">A decision framework for picking between SQL, NoSQL, and specialized stores based on access patterns and constraints.</div>
     <div class="cs-topics">
@@ -110,7 +110,7 @@ hide:
     <div class="cs-card-cta">Open topic <span>→</span></div>
   </a>
 
-  <a class="cs-card" href="data-modeling/the-process/">
+  <a class="cs-card" href="the-process/">
     <div class="cs-card-title">Data Modeling</div>
     <div class="cs-card-desc">Entities, relationships, access patterns, and schema design. From blank page to a model that survives real traffic.</div>
     <div class="cs-topics">

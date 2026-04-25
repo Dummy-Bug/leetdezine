@@ -33,5 +33,3 @@ Two algorithms solve this problem in practice:
 - **Raft** — designed to be understandable. Single leader, randomized timeouts, explicit log replication. Used in etcd, CockroachDB, Kafka KRaft.
 - **Paxos** — the original consensus algorithm. More complex, harder to implement correctly. Raft was literally designed as a simpler alternative to Paxos.
 
-→ See [[02-Leader-Election]] for Raft
-→ See [[03-Paxos]] for Paxos

@@ -29,7 +29,7 @@ hide:
 
 <div class="cs-cards">
 
-  <a class="cs-card" href="stream-processing/why-stream-processing/">
+  <a class="cs-card" href="why-stream-processing/">
     <div class="cs-card-title">Stream Processing</div>
     <div class="cs-card-desc">Windows, watermarks, statefulness, and crash recovery. Processing infinite streams of events without losing data or blowing memory.</div>
     <div class="cs-topics">
@@ -38,7 +38,7 @@ hide:
     <div class="cs-card-cta">Open topic <span>→</span></div>
   </a>
 
-  <a class="cs-card" href="batch-processing/mapreduce/why-batch-processing/">
+  <a class="cs-card" href="mapreduce-why-batch-processing/">
     <div class="cs-card-title">Batch Processing</div>
     <div class="cs-card-desc">MapReduce internals, Spark's DAG execution model, and how batch systems handle hot keys and skewed data.</div>
     <div class="cs-topics">
@@ -47,7 +47,7 @@ hide:
     <div class="cs-card-cta">Open topic <span>→</span></div>
   </a>
 
-  <a class="cs-card" href="lambda-kappa/lambda-architecture/">
+  <a class="cs-card" href="lambda-architecture/">
     <div class="cs-card-title">Lambda & Kappa</div>
     <div class="cs-card-desc">Two architectures for mixing batch and stream. Lambda's complexity vs Kappa's simplicity — and when each one wins.</div>
     <div class="cs-topics">
@@ -56,7 +56,7 @@ hide:
     <div class="cs-card-cta">Open topic <span>→</span></div>
   </a>
 
-  <a class="cs-card" href="schema-evolution/why-schema-evolution/">
+  <a class="cs-card" href="why-schema-evolution/">
     <div class="cs-card-title">Schema Evolution</div>
     <div class="cs-card-desc">Schema registries, Protobuf, and Avro — how to change data formats in a live pipeline without breaking producers or consumers.</div>
     <div class="cs-topics">

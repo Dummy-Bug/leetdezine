@@ -1,451 +1,326 @@
-# URL Restructure — Migration Plan
+# URL Flattening — Migration Plan
 
 ## Goal
 
-Migrate every URL on leetdezine.com from this:
-```text
-/03-Case-Studies/03-Expedition/01-Rate-Limiter/02-Deep-Dives/02-Distributed-Rate-Limiting/01-Atomicity-Problem/
+Remove the intermediate sub-folder level from every concept URL on leetdezine.com.
+
+Current (3 levels deep):
 ```
-To this:
-```text
-/rate-limiter/atomicity-problem/
-```
-
-Why: Google reads URL paths as keywords. Numeric prefixes are noise. 6-level nesting buries content. Topic-only URLs rank better.
-
-## Scope
-
-- 835 markdown files in `docs/`
-- Manual `nav:` defined in `mkdocs.yml` means sidebar order is controlled by config, not folder names
-- Empty scaffolded folders (`docs/case-studies/`, `docs/concepts/`) from an abandoned attempt should be removed first
-- No redirects planned because the site is still very new and reindexing clean URLs is likely the better trade
-- All code-generated edits should be manually reviewed before any manual git action
-
----
-
-## Phase 0 — Decisions and Baseline (do this first, 30 min)
-
-### 0.1 Pick the URL strategy
-
-Choose between:
-
-**A. Flat, topic-only** *(recommended)*
-```text
-/rate-limiter/atomicity-problem/
-/url-shortener/hot-key-problem/
-/caching/cache-aside/
+/event-driven-patterns/cdc/what-is-cdc/
+/event-driven-patterns/inbox-outbox-together/what-is-inbox-pattern/
+/caching/cache-invalidation/ttl-based/
+/caching/distributed-caching/consistent-hashing/
+/storage-and-databases/acid/atomicity/
 ```
 
-**B. Section-prefixed**
-```text
-/case-studies/rate-limiter/atomicity-problem/
-/concepts/caching/cache-aside/
+Target (2 levels deep):
+```
+/event-driven-patterns/what-is-cdc/
+/event-driven-patterns/what-is-inbox-pattern/
+/caching/ttl-based/
+/caching/consistent-hashing/
+/storage-and-databases/atomicity/
 ```
 
-Decision: ____________
-
-Recommendation: **A**. Tier names like Foundation or Expedition are LeetDezine-specific framing. They belong in navigation or page UI, not in the URL.
-
-Substeps:
-- [ ] Confirm whether the URL should communicate only topic, or topic plus section
-- [ ] Check 10-15 representative pages across concepts and case studies
-- [ ] Verify the chosen scheme works for both overview pages and deep-dive pages
-- [ ] Note any exceptions that may require one extra folder level
-- [ ] Write the final strategy decision at the top of this file
-
-### 0.2 Record the current site baseline
-
-Substeps:
-- [ ] Run `mkdocs serve` once before changing anything
-- [ ] Confirm the local site builds successfully
-- [ ] Note any existing warnings so they are not confused with migration regressions
-- [ ] Open the homepage and at least 3 deep pages to confirm the current site works
-- [ ] Take screenshots of the current sidebar and one representative case-study page
-- [ ] Save a copy of the current `mkdocs.yml` for side-by-side review during migration
-
-### 0.3 Define manual review checkpoints
-
-Substeps:
-- [ ] Decide when manual review happens: after pilot, after each batch, and before deploy
-- [ ] Decide what must be reviewed each time: file moves, internal links, nav paths, and built pages
-- [ ] Decide who signs off on production deployment after local verification
+Why: The sub-folder (`cdc/`, `inbox-outbox-together/`, `cache-invalidation/`) is purely organizational — it exists to group files on disk, not to convey meaning to Google. It adds a URL level that dilutes keyword proximity to the domain root without giving any topical authority signal that the top-level folder doesn't already provide. The top-level folder (`event-driven-patterns/`, `caching/`) is enough for topical clustering. Site is 3 days old — zero indexed equity to lose.
 
 ---
 
-## Phase 1 — Cleanup (15 min)
+## Affected Sections
 
-### 1.1 Verify the scaffold folders are truly empty
+These sections have the extra sub-folder level that needs to be removed:
 
-Substeps:
-- [ ] Inspect `docs/case-studies/`
-- [ ] Inspect `docs/concepts/`
-- [ ] Confirm they contain no markdown files
-- [ ] Confirm they are not referenced in `mkdocs.yml`
-- [ ] Confirm they are not referenced by internal links elsewhere in `docs/`
+| Section folder | Sub-folders to flatten |
+|---|---|
+| `caching/` | `cache-invalidation/`, `cache-problems/`, `distributed-caching/`, `eviction-policies/`, `population-strategies/`, `redis/`, `writing-strategies/`, `interview-questions/` |
+| `event-driven-patterns/` | `cdc/`, `cqrs/`, `inbox-outbox-together/`, `outbox-pattern/`, `what-is-event-sourcing/` |
+| `storage-and-databases/` | `acid/`, `cdc/`, `connection-pooling/`, `fundamentals/`, `indexing/`, `pagination/`, `read-write-splitting/`, `sql/` |
+| `database-types/` | `blob-storage/`, `choosing-the-right-db/`, `column-family/`, `data-modeling/`, `document-stores/`, `graph-databases/`, `key-value-stores/`, `newsql/`, `oltp-vs-olap/`, `search-engines/` |
+| `distributed-systems/` | `cap-theorem/`, `consensus/`, `consistency-models/`, `coordination-services/`, `crdts/`, `distributed-clocks/`, `failure-detection/`, `merkle-trees/`, `network-partitions/`, `pacelc/`, `problems/`, `replication/`, `sharding/` |
+| `event-broker/` | `advanced/`, `architecture/`, `backpressure/`, `consumer/`, `kafka-vs-sqs-vs-rabbitmq/`, `producer/` |
+| `messaging/` | `fundamentals/`, `rabbitmq/`, `sqs/` |
+| `data-processing/` | `batch-processing/`, `lambda-kappa/`, `schema-evolution/`, `stream-processing/` |
+| `scalability/` | `auto-scaling/`, `load-balancing/` |
+| `availability/` | `interview-questions/` |
+| `performance-metrics/` | `interview-questions/` |
+| `reliability/` | `interview-questions/` |
+| `service-levels/` | `interview-questions/` |
 
-### 1.2 Remove the abandoned scaffolds
-
-Substeps:
-- [ ] Delete `docs/case-studies/`
-- [ ] Delete `docs/concepts/`
-- [ ] Re-scan `docs/` to confirm no real content was removed
-- [ ] Review the deletion set manually before moving on
-
----
-
-## Phase 2 — Map old paths to new paths (1 hour)
-
-### 2.1 Generate the full current path inventory
-
-Substeps:
-- [ ] Run `find docs -name "*.md" | sort > /tmp/old-paths.txt`
-- [ ] Open `/tmp/old-paths.txt`
-- [ ] Confirm every expected content area appears in the list
-- [ ] Mark overview pages like `index.md`
-- [ ] Mark folders with many deep-dive pages
-
-### 2.2 Define the transformation rules in writing
-
-Renaming rules:
-1. Drop all numeric prefixes (`03-`, `01-`, `02-` -> gone)
-2. Lowercase everything
-3. Keep hyphens because they are already SEO-friendly
-4. Flatten structural folders like `Case-Studies` and `Deep-Dives`
-5. Drop tier folders like `Foundation` and `Expedition` if Strategy A is chosen
-
-Substeps:
-- [ ] Validate each rule against real examples from concepts, case studies, and estimation sections
-- [ ] Confirm how `index.md` pages map under the new structure
-- [ ] Confirm whether SDE grouping folders stay in navigation only or also appear in URLs
-- [ ] Confirm whether shared topics need a parent folder to avoid ambiguity
-
-Example transformations:
-```text
-docs/03-Case-Studies/03-Expedition/01-Rate-Limiter/index.md
-  -> docs/rate-limiter/index.md
-
-docs/03-Case-Studies/03-Expedition/01-Rate-Limiter/02-Deep-Dives/02-Distributed-Rate-Limiting/01-Atomicity-Problem.md
-  -> docs/rate-limiter/atomicity-problem.md
-
-docs/01-Concepts/02-Fundamentals/01-Performance-Metrics/04-Latency-vs-Throughput.md
-  -> docs/performance-metrics/latency-vs-throughput.md
-```
-
-### 2.3 Create the master path map
-
-Substeps:
-- [ ] Create `/tmp/path-map.csv` with columns `old_path,new_path`
-- [ ] Fill in one row for every markdown file
-- [ ] Keep overview pages and content pages in the same map
-- [ ] Keep temporary notes for edge cases beside the CSV if needed
-- [ ] Review 20 random mappings manually for consistency
-
-### 2.4 Check for collisions and weak slugs
-
-Substeps:
-- [ ] Identify any duplicate `new_path` values
-- [ ] Identify any slugs that are too generic, like `introduction` or `overview`
-- [ ] Resolve collisions by keeping one parent folder where needed
-- [ ] Update the CSV after each resolution
-- [ ] Review the final map once before touching any real files
+Sections that are already flat (no change needed):
+- `concurrency-locking/` — all files are directly in root
+- `back-of-envelope/` — all files are directly in root
+- `fundamentals/` — all files are directly in root
+- `nfrs/`, `durability/`, `fault-tolerance/`, `security/`, `state-machines/` — flat already
+- Case studies: `rate-limiter/`, `url-shortener/`, `unique-id-generator/`, `notification-system/`, `pastebin/`, `kv-store/`, `netflix/`, `whatsapp/` — these have `deep-dives/` sub-folder which is intentional and meaningful, leave untouched
 
 ---
 
-## Phase 3 — Pilot migration (2 hours)
+## Collision Risk
 
-Migrate one case study end-to-end before touching the rest.
+When flattening sub-folders, filenames from different sub-folders may clash.
 
-**Pilot:** `Rate-Limiter`
+Example:
+- `caching/cache-invalidation/interview-cheatsheet.md`
+- `caching/eviction-policies/interview-cheatsheet.md`
+- `caching/distributed-caching/interview-cheatsheet.md`
 
-### 3.1 Prepare the pilot move plan
+These would all become `caching/interview-cheatsheet.md` — collision.
 
-Substeps:
-- [ ] List every file currently under `docs/03-Case-Studies/03-Expedition/01-Rate-Limiter/`
-- [ ] Match each file to its destination in the path map
-- [ ] Confirm whether any shared assets or includes are referenced from outside the folder
-- [ ] Confirm the pilot has at least one overview page and multiple deep pages
+Resolution rule: prefix the filename with the sub-folder name when collision exists.
+- `caching/cache-invalidation-interview-cheatsheet.md`
+- `caching/eviction-policies-interview-cheatsheet.md`
+- `caching/distributed-caching-interview-cheatsheet.md`
 
-### 3.2 Rename and relocate the pilot files
-
-Substeps:
-- [ ] Create `docs/rate-limiter/` if it does not already exist
-- [ ] Move the overview page to `docs/rate-limiter/index.md`
-- [ ] Move each deep-dive page into the new folder
-- [ ] Strip numeric prefixes from every moved filename
-- [ ] Lowercase every moved filename and folder name
-- [ ] Remove empty source folders after confirming all files moved correctly
-
-### 3.3 Update internal links for the pilot
-
-Substeps:
-- [ ] Search `docs/` for old Rate Limiter paths
-- [ ] Update absolute and relative markdown links
-- [ ] Update any inline references that mention old folder names
-- [ ] Search for old slugs like `Atomicity-Problem` and verify they now point to the new path
-- [ ] Re-scan the docs to confirm no old pilot path remains
-
-### 3.4 Update `mkdocs.yml` for the pilot
-
-Substeps:
-- [ ] Find the Rate Limiter section in `nav:`
-- [ ] Update each path to the new location
-- [ ] Check for duplicate references after the path change
-- [ ] Check `not_in_nav:` and any plugin config that may contain old paths
-- [ ] Review indentation and YAML validity carefully
-
-### 3.5 Verify the pilot locally
-
-Substeps:
-- [ ] Run `mkdocs serve`
-- [ ] Confirm the build completes cleanly
-- [ ] Open `http://localhost:8000/rate-limiter/`
-- [ ] Open `http://localhost:8000/rate-limiter/atomicity-problem/`
-- [ ] Click through every page in the Rate Limiter sidebar section
-- [ ] Confirm there are no 404s, broken assets, or wrong breadcrumbs
-- [ ] Compare sidebar order against the baseline screenshots
-
-### 3.6 Manual review gate after pilot
-
-Substeps:
-- [ ] Review all moved pilot files manually
-- [ ] Review all link updates manually
-- [ ] Review the `mkdocs.yml` diff manually
-- [ ] Decide whether the naming pattern is good enough to scale
-- [ ] If anything feels inconsistent, fix the pattern now before batch migration
+Step 2.3 below is specifically for detecting these before touching files.
 
 ---
 
-## Phase 4 — Migrate everything else (3-4 hours)
+## Phase 0 — Baseline (15 min)
 
-Now that the pattern is validated, migrate the rest in batches. Review each batch manually before moving to the next one.
+### 0.1 Confirm current build is clean
 
-### 4.1 Batch 1 — Concepts
+- [ ] `cd /Users/home/Desktop/github && source .venv/bin/activate && mkdocs build --strict`
+- [ ] Record any existing warnings so they are not confused with migration regressions
+- [ ] Confirm `site/` was generated successfully
 
-Target:
-- [ ] `01-Concepts/` -> topic-level folders like `/caching/`, `/messaging/`, `/performance-metrics/`
+### 0.2 Save a copy of the current mkdocs.yml
 
-Substeps:
-- [ ] Split the concepts section into logical topic folders
-- [ ] Move overview pages first
-- [ ] Move child pages next
-- [ ] Update all internal links within concepts
-- [ ] Update inbound links from case studies or other sections
-- [ ] Update the concepts area in `mkdocs.yml`
-- [ ] Run `mkdocs serve`
-- [ ] Click through a representative sample of concept pages
-- [ ] Review the changes manually
-
-### 4.2 Batch 2 — Back-of-envelope estimation
-
-Target:
-- [ ] `02-Back-of-Envelope-Estimation/` -> `/back-of-envelope/`
-
-Substeps:
-- [ ] List all estimation pages
-- [ ] Move them into the new folder structure
-- [ ] Normalize filenames and slugs
-- [ ] Update internal references
-- [ ] Update nav paths in `mkdocs.yml`
-- [ ] Run `mkdocs serve`
-- [ ] Test the overview page and a few deep pages
-- [ ] Review the changes manually
-
-### 4.3 Batch 3 — Foundation case studies
-
-Target:
-- [ ] URL Shortener
-- [ ] Unique ID Generator
-
-Substeps:
-- [ ] Migrate one case study at a time within the batch
-- [ ] Move overview pages and deep pages
-- [ ] Update all cross-links between case studies and concepts
-- [ ] Update nav entries in `mkdocs.yml`
-- [ ] Run local build checks after each case study
-- [ ] Review the full batch manually before continuing
-
-### 4.4 Batch 4 — Ascent case studies
-
-Target:
-- [ ] Notification System
-- [ ] Pastebin
-
-Substeps:
-- [ ] Repeat the pilot pattern exactly
-- [ ] Confirm path naming stays consistent with earlier batches
-- [ ] Update all inbound and outbound links
-- [ ] Update nav entries
-- [ ] Run local checks
-- [ ] Review manually
-
-### 4.5 Batch 5 — Summit case studies
-
-Target:
-- [ ] KV Store
-- [ ] Netflix
-
-Substeps:
-- [ ] Move the content based on the path map
-- [ ] Verify deeper nested pages carefully because this batch may have more cross-links
-- [ ] Update nav entries
-- [ ] Run local checks
-- [ ] Review manually
-
-### 4.6 Batch 6 — Battleground case studies
-
-Target:
-- [ ] WhatsApp
-
-Substeps:
-- [ ] Migrate the overview page
-- [ ] Migrate all child pages
-- [ ] Update links and navigation
-- [ ] Run local checks
-- [ ] Review manually
-
-### 4.7 Batch 7 — SDE groupings
-
-Decision needed:
-- [ ] Decide whether `00-SDE-1/`, `00-SDE-2/`, and `00-SDE-3/` are URL material or only navigation groupings
-
-Substeps:
-- [ ] Inspect how these folders are used today
-- [ ] Check whether the grouping communicates useful search intent
-- [ ] If not, keep them only in nav labels and remove them from URLs
-- [ ] Update the path map accordingly
-- [ ] Run local checks
-- [ ] Review manually
-
-### 4.8 Cross-batch process to repeat every time
-
-For each batch:
-1. Update the path map for that batch if anything changed during implementation
-2. Move files and folders carefully
-3. Update internal markdown links
-4. Update `mkdocs.yml`
-5. Run `mkdocs serve`
-6. Click through representative pages
-7. Review the batch manually before starting the next one
-
-### 4.9 Stale folder cleanup
-
-Substeps:
-- [ ] After all batches, inspect `docs/01-Concepts/`, `docs/03-Case-Studies/`, and other old roots
-- [ ] Confirm they are empty
-- [ ] Delete the empty old folders
-- [ ] Run `mkdocs build`
-- [ ] Confirm the final local build has zero unexpected warnings
+- [ ] `cp mkdocs.yml mkdocs.yml.bak`
+- [ ] This is the rollback reference — do not delete until migration is verified live
 
 ---
 
-## Phase 5 — Verification before deploy (30 min)
+## Phase 1 — Detect collisions (30 min)
 
-### 5.1 Strict local verification
+### 1.1 Generate filename inventory per section
 
-Substeps:
-- [ ] Run `mkdocs build --strict`
-- [ ] Fix every warning before moving on
-- [ ] Open the built site locally
-- [ ] Click through 10-20 random pages across all sections
-- [ ] Check overview pages, deep-dive pages, and cross-links
-- [ ] Confirm no page has a stale breadcrumb or stale URL reference
+For each affected section folder, list all filenames across all sub-folders:
 
-### 5.2 Automated link verification
+- [ ] `find docs/caching -name "*.md" | xargs -I{} basename {} | sort | uniq -d`
+- [ ] Repeat for `docs/event-driven-patterns/`, `docs/storage-and-databases/`, `docs/database-types/`, `docs/distributed-systems/`, `docs/event-broker/`, `docs/messaging/`, `docs/data-processing/`
 
-Substeps:
-- [ ] Run `linkchecker` or a similar crawler on the local build
+### 1.2 Document every collision
+
+- [ ] Create `/tmp/collisions.txt`
+- [ ] For each colliding filename, write: `section | filename | sub-folders it appears in | resolved new name`
+- [ ] Apply the resolution rule: prefix with sub-folder name, e.g. `cache-invalidation-interview-cheatsheet.md`
+
+### 1.3 Verify resolved names are unique
+
+- [ ] Re-check each resolved name does not itself clash with another file in the section
+- [ ] Sign off on the full collision list before moving any files
+
+---
+
+## Phase 2 — Build the path map (30 min)
+
+### 2.1 Generate full old→new path mapping
+
+- [ ] `find docs -name "*.md" | grep -v "whatsapp\|rate-limiter\|url-shortener\|unique-id-generator\|notification-system\|pastebin\|kv-store\|netflix" | sort > /tmp/old-paths.txt`
+- [ ] For each path in the affected sections, write the new path:
+  - Rule: `docs/[section]/[sub-folder]/[file].md` → `docs/[section]/[file].md`
+  - Exception: collision-resolved files use prefixed names from Phase 1
+  - Exception: `index.md` inside sub-folders maps to `[sub-folder-name].md` in parent, or is dropped if redundant
+
+### 2.2 Clarify what happens to sub-folder index.md files
+
+- [ ] For each sub-folder that has its own `index.md`: decide whether it becomes a standalone page or gets merged into the parent section index
+- [ ] Write the decision for each one in `/tmp/index-decisions.txt`
+- [ ] Default rule: if the sub-folder index just lists child pages, drop it; if it has real content, rename it to `[sub-folder].md` in the parent
+
+### 2.3 Review the full path map
+
+- [ ] Open `/tmp/old-paths.txt` alongside proposed new paths
+- [ ] Spot-check 20 random entries for correctness
+- [ ] Confirm no two new paths are identical
+- [ ] Sign off before touching any files
+
+---
+
+## Phase 3 — Pilot: event-driven-patterns (1 hour)
+
+Smallest section with multiple sub-folders. Migrate this first.
+
+### 3.1 Move files
+
+- [ ] `mv docs/event-driven-patterns/cdc/what-is-cdc.md docs/event-driven-patterns/what-is-cdc.md`
+- [ ] `mv docs/event-driven-patterns/cdc/debezium.md docs/event-driven-patterns/debezium.md`
+- [ ] `mv docs/event-driven-patterns/cdc/outbox-pattern.md docs/event-driven-patterns/outbox-pattern.md` (check for name clash with `outbox-pattern/` folder first)
+- [ ] Repeat for all files in `cqrs/`, `inbox-outbox-together/`, `outbox-pattern/`, `what-is-event-sourcing/`
+- [ ] Apply collision-resolved names where flagged in Phase 1
+- [ ] `rmdir` each emptied sub-folder after confirming it is empty
+
+### 3.2 Update internal links
+
+- [ ] `grep -r "event-driven-patterns/cdc/" docs/ --include="*.md" -l`
+- [ ] `grep -r "event-driven-patterns/cqrs/" docs/ --include="*.md" -l`
+- [ ] `grep -r "event-driven-patterns/inbox-outbox-together/" docs/ --include="*.md" -l`
+- [ ] `grep -r "event-driven-patterns/outbox-pattern/" docs/ --include="*.md" -l`
+- [ ] Update every reference found to the new flat paths
+- [ ] Re-grep to confirm zero old sub-folder paths remain for this section
+
+### 3.3 Update mkdocs.yml
+
+- [ ] Find the `event-driven-patterns` section in `nav:`
+- [ ] Remove the sub-folder grouping level — items that were indented under `- CDC:` now live directly under `- Event-Driven Patterns:`
+- [ ] Update every file path to the new flat path
+- [ ] Validate YAML is syntactically correct after edits
+
+### 3.4 Verify pilot locally
+
+- [ ] `mkdocs serve`
+- [ ] Open `http://localhost:8000/event-driven-patterns/what-is-cdc/`
+- [ ] Open `http://localhost:8000/event-driven-patterns/what-is-inbox-pattern/`
+- [ ] Click through every page in the Event-Driven Patterns sidebar
+- [ ] Confirm breadcrumbs are correct
+- [ ] Confirm zero 404s
+- [ ] Fix any issues before proceeding to Phase 4
+
+---
+
+## Phase 4 — Migrate remaining sections (3-4 hours)
+
+Work one section at a time. For each section: move files → update links → update mkdocs.yml → local build check → manual review → next section.
+
+### 4.1 caching/
+
+- [ ] Move all files from 8 sub-folders into `docs/caching/` with collision-resolved names
+- [ ] Update internal links across all of `docs/`
+- [ ] Update `nav:` in mkdocs.yml for the caching section
+- [ ] `mkdocs serve` + spot-check 5 caching pages
+- [ ] Manual review of moved files and nav diff
+
+### 4.2 storage-and-databases/
+
+- [ ] Move all files from 8 sub-folders into `docs/storage-and-databases/`
+- [ ] Update internal links
+- [ ] Update nav
+- [ ] `mkdocs serve` + spot-check
+- [ ] Manual review
+
+### 4.3 database-types/
+
+- [ ] Move all files from 10 sub-folders into `docs/database-types/`
+- [ ] Update internal links
+- [ ] Update nav
+- [ ] `mkdocs serve` + spot-check
+- [ ] Manual review
+
+### 4.4 distributed-systems/
+
+- [ ] Move all files from 13 sub-folders into `docs/distributed-systems/`
+- [ ] Update internal links — this section likely has many cross-links to other sections, check carefully
+- [ ] Update nav
+- [ ] `mkdocs serve` + spot-check
+- [ ] Manual review
+
+### 4.5 event-broker/
+
+- [ ] Move all files from 6 sub-folders into `docs/event-broker/`
+- [ ] Update internal links
+- [ ] Update nav
+- [ ] `mkdocs serve` + spot-check
+- [ ] Manual review
+
+### 4.6 messaging/
+
+- [ ] Move all files from 3 sub-folders into `docs/messaging/`
+- [ ] Update internal links
+- [ ] Update nav
+- [ ] `mkdocs serve` + spot-check
+- [ ] Manual review
+
+### 4.7 data-processing/
+
+- [ ] Move all files from 4 sub-folders into `docs/data-processing/`
+- [ ] Note: `batch-processing/mapreduce/` and `batch-processing/spark/` are 3 levels deep — flatten to `data-processing/mapreduce-*.md` and `data-processing/spark-*.md`
+- [ ] Update internal links
+- [ ] Update nav
+- [ ] `mkdocs serve` + spot-check
+- [ ] Manual review
+
+### 4.8 scalability/, availability/, performance-metrics/, reliability/, service-levels/
+
+- [ ] These have only `interview-questions/` sub-folders — small lift
+- [ ] Move interview question files up one level, applying collision names if needed
+- [ ] Update nav
+- [ ] `mkdocs serve` check
+
+---
+
+## Phase 5 — Final verification (30 min)
+
+### 5.1 Strict build
+
+- [ ] `mkdocs build --strict`
+- [ ] Zero warnings allowed before deploy
+- [ ] Fix any remaining broken links or missing files
+
+### 5.2 Link crawl
+
+- [ ] `pip install linkchecker` (inside .venv)
+- [ ] `mkdocs serve &` then `linkchecker http://localhost:8000`
 - [ ] Record every 404 or broken anchor
-- [ ] Fix each issue
-- [ ] Re-run the crawl until the report is clean
+- [ ] Fix all issues
+- [ ] Re-run until clean
 
-### 5.3 Sitemap and production metadata check
+### 5.3 Sitemap check
 
-Substeps:
-- [ ] Open `mkdocs.yml`
-- [ ] Confirm `site_url: https://leetdezine.com`
-- [ ] Build the site
-- [ ] Confirm `sitemap.xml` is generated
-- [ ] Confirm the sitemap contains only the new URL structure
+- [ ] Open `site/sitemap.xml`
+- [ ] Confirm zero old 3-level URLs appear
+- [ ] Confirm all URLs are 2-level (section/page)
+- [ ] Confirm total URL count is reasonable (should be close to file count)
 
-### 5.4 Final manual review gate
+### 5.4 Manual review gate
 
-Substeps:
-- [ ] Review the full file move set manually
-- [ ] Review the `mkdocs.yml` changes manually
-- [ ] Review a sample of updated markdown links manually
-- [ ] Confirm the migration is ready for manual deployment steps
+- [ ] Diff `mkdocs.yml` against `mkdocs.yml.bak` and read through fully
+- [ ] Open 10 random pages in the local build and verify content, breadcrumbs, and sidebar
+- [ ] Confirm the site looks and functions correctly before signaling ready for deploy
 
 ---
 
-## Phase 6 — Deploy and monitor (15 min, then occasional checks)
+## Phase 6 — Deploy (15 min + monitoring)
 
 ### 6.1 Deploy
 
-Substeps:
-- [ ] Perform the manual deployment workflow used by the project
-- [ ] Wait for Cloudflare Pages to finish deploying
-- [ ] Open the production homepage
-- [ ] Open at least 5 new production URLs
-- [ ] Confirm they load correctly
-- [ ] Confirm expected old URLs now 404
+- [ ] `git add` and commit (user performs this manually per project workflow)
+- [ ] Push to `master` — Cloudflare Pages auto-deploys
+- [ ] Wait for Cloudflare build to complete
+- [ ] Open production and verify 5 new-format URLs load correctly
 
-### 6.2 Tell Google about the new structure
+### 6.2 Search Console
 
-Substeps:
 - [ ] Open Google Search Console
-- [ ] Open the Sitemaps section
-- [ ] Resubmit `https://leetdezine.com/sitemap.xml`
-- [ ] Open URL Inspection for the top pages currently getting impressions
-- [ ] Request reindexing for each page at its new URL
+- [ ] Sitemaps → resubmit `https://leetdezine.com/sitemap.xml`
+- [ ] URL Inspection → request reindexing for top pages at their new URLs
 
-Priority pages:
-- [ ] The LWW page for KV Store leaderless replication
-- [ ] The fixed window counter page
-- [ ] The latency vs throughput page
-- [ ] The SQS queue selection page
-- [ ] The etcd / key-value store page
+### 6.3 Monitor
 
-### 6.3 Monitor after deployment
-
-Substeps:
-- [ ] Week 1: watch Search Console for old URL 404s and confirm they are expected
-- [ ] Week 1: verify the sitemap was accepted
-- [ ] Week 2: check whether new URLs are being discovered
-- [ ] Week 2-3: check whether impressions start shifting to the new URLs
-- [ ] If indexing stalls by week 3, manually inspect `robots.txt`, sitemap contents, and canonical tags
+- [ ] Week 1: check for unexpected 404s in Search Console coverage report
+- [ ] Week 2: confirm new URLs start appearing in impressions
+- [ ] If anything stalls by week 3, check `robots.txt` and canonical tags
 
 ---
 
-## Recovery plan
+## Rollback
 
-If something breaks badly after deploy:
-
-- [ ] Stop making further migration changes until the issue is understood
-- [ ] Identify whether the breakage is in moved files, links, nav config, or deployment config
-- [ ] Restore the last known-good project state using the team's normal manual git workflow
-- [ ] Redeploy using the normal manual deployment workflow
-- [ ] Re-test the affected URLs in production
-- [ ] Resume migration only after the failure mode is documented
+If something breaks after deploy:
+- [ ] `cp mkdocs.yml.bak mkdocs.yml`
+- [ ] Restore moved files from git history: `git checkout HEAD~1 -- docs/`
+- [ ] Push the revert
+- [ ] Redeploy and verify
 
 ---
 
-## Estimate
+## Time Estimate
 
-- Phase 0: 30 min
-- Phase 1: 15 min
-- Phase 2: 1 hour
-- Phase 3: 2 hours
-- Phase 4: 3-4 hours
-- Phase 5: 30 min
-- Phase 6: 15 min + light monitoring
-
-Total focused work: ~7-8 hours.
-
----
-
-## Open questions to resolve before starting
-
-1. URL strategy A or B?
-2. Should `00-SDE-1/`, `00-SDE-2/`, and `00-SDE-3/` appear in URLs, or only in navigation?
-3. Are there any pages that intentionally need multiple valid URLs?
-4. Are there any manually shared external links that should be updated after the migration is live?
+| Phase | Time |
+|---|---|
+| Phase 0 — Baseline | 15 min |
+| Phase 1 — Collision detection | 30 min |
+| Phase 2 — Path map | 30 min |
+| Phase 3 — Pilot | 1 hour |
+| Phase 4 — All sections | 3-4 hours |
+| Phase 5 — Verification | 30 min |
+| Phase 6 — Deploy | 15 min |
+| **Total** | **~6-7 hours** |

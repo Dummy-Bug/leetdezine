@@ -130,5 +130,4 @@ The only scenario where data is truly lost is if more than ⌊N/2⌋ nodes die p
 
 ---
 
-→ See [[03-Term-Numbers]] for how Raft handles the ghost leader — an old leader that comes back after a partition thinking it's still in charge
 

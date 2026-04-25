@@ -29,7 +29,7 @@ hide:
 
 <div class="cs-cards">
 
-  <a class="cs-card" href="problems/general-problem/">
+  <a class="cs-card" href="general-problem/">
     <div class="cs-card-title">The Problem</div>
     <div class="cs-card-desc">Why distributed systems are fundamentally harder than single-node ones — partial failures, network uncertainty, and no shared clock.</div>
     <div class="cs-topics">
@@ -38,7 +38,7 @@ hide:
     <div class="cs-card-cta">Open topic <span>→</span></div>
   </a>
 
-  <a class="cs-card" href="network-partitions/network-partitions/">
+  <a class="cs-card" href="network-partitions/">
     <div class="cs-card-title">Network Partitions</div>
     <div class="cs-card-desc">What happens when nodes can't talk. Split brain, quorum decisions, and why partition handling defines your entire consistency strategy.</div>
     <div class="cs-topics">
@@ -47,7 +47,7 @@ hide:
     <div class="cs-card-cta">Open topic <span>→</span></div>
   </a>
 
-  <a class="cs-card" href="cap-theorem/cap-theorem/">
+  <a class="cs-card" href="cap-theorem/">
     <div class="cs-card-title">CAP Theorem</div>
     <div class="cs-card-desc">Consistency vs availability when a partition happens. CP vs AP — and why every distributed system is forced to choose during a split.</div>
     <div class="cs-topics">
@@ -56,7 +56,7 @@ hide:
     <div class="cs-card-cta">Open topic <span>→</span></div>
   </a>
 
-  <a class="cs-card" href="pacelc/pacelc-theorem/">
+  <a class="cs-card" href="pacelc-theorem/">
     <div class="cs-card-title">PACELC</div>
     <div class="cs-card-desc">Extends CAP to cover normal operation. Even without a partition, you still trade latency against consistency — PACELC names that trade-off.</div>
     <div class="cs-topics">
@@ -65,7 +65,7 @@ hide:
     <div class="cs-card-cta">Open topic <span>→</span></div>
   </a>
 
-  <a class="cs-card" href="consistency-models/consistency-models/">
+  <a class="cs-card" href="consistency-models/">
     <div class="cs-card-title">Consistency Models</div>
     <div class="cs-card-desc">Strong, eventual, causal, and monotonic. What "up to date" means in a distributed system and when each model is the right call.</div>
     <div class="cs-topics">
@@ -74,7 +74,7 @@ hide:
     <div class="cs-card-cta">Open topic <span>→</span></div>
   </a>
 
-  <a class="cs-card" href="replication/what-is-replication/">
+  <a class="cs-card" href="what-is-replication/">
     <div class="cs-card-title">Replication</div>
     <div class="cs-card-desc">Sync vs async replication, replication lag, failover, and multi-primary — how data stays consistent across nodes.</div>
     <div class="cs-topics">
@@ -83,7 +83,7 @@ hide:
     <div class="cs-card-cta">Open topic <span>→</span></div>
   </a>
 
-  <a class="cs-card" href="sharding/what-is-sharding/">
+  <a class="cs-card" href="what-is-sharding/">
     <div class="cs-card-title">Sharding</div>
     <div class="cs-card-desc">Shard keys, consistent hashing, cross-shard joins, resharding, and the over-sharding trap that kills performance.</div>
     <div class="cs-topics">
@@ -92,7 +92,7 @@ hide:
     <div class="cs-card-cta">Open topic <span>→</span></div>
   </a>
 
-  <a class="cs-card" href="consensus/what-is-consensus/">
+  <a class="cs-card" href="what-is-consensus/">
     <div class="cs-card-title">Consensus</div>
     <div class="cs-card-desc">Raft leader election, log replication, Paxos phases, ZooKeeper, and Redis distributed locks — how nodes agree on a single value.</div>
     <div class="cs-topics">
@@ -101,7 +101,7 @@ hide:
     <div class="cs-card-cta">Open topic <span>→</span></div>
   </a>
 
-  <a class="cs-card" href="distributed-clocks/clock-drift/">
+  <a class="cs-card" href="clock-drift/">
     <div class="cs-card-title">Distributed Clocks</div>
     <div class="cs-card-desc">Clock drift, NTP, Lamport clocks, vector clocks, and TrueTime — how distributed systems reason about time without a shared clock.</div>
     <div class="cs-topics">
@@ -110,7 +110,7 @@ hide:
     <div class="cs-card-cta">Open topic <span>→</span></div>
   </a>
 
-  <a class="cs-card" href="crdts/the-problem/">
+  <a class="cs-card" href="crdts-the-problem/">
     <div class="cs-card-title">CRDTs</div>
     <div class="cs-card-desc">Conflict-free replicated data types — the math that lets replicas merge without coordination, and why locks fail at global scale.</div>
     <div class="cs-topics">
@@ -119,7 +119,7 @@ hide:
     <div class="cs-card-cta">Open topic <span>→</span></div>
   </a>
 
-  <a class="cs-card" href="failure-detection/heartbeats/">
+  <a class="cs-card" href="heartbeats/">
     <div class="cs-card-title">Failure Detection</div>
     <div class="cs-card-desc">Heartbeats, gossip protocol, and the phi accrual failure detector — how nodes know when other nodes are dead.</div>
     <div class="cs-topics">
@@ -128,7 +128,7 @@ hide:
     <div class="cs-card-cta">Open topic <span>→</span></div>
   </a>
 
-  <a class="cs-card" href="merkle-trees/the-problem/">
+  <a class="cs-card" href="merkle-trees-the-problem/">
     <div class="cs-card-title">Merkle Trees</div>
     <div class="cs-card-desc">Hash trees for efficient data comparison across replicas. Anti-entropy repair and how Dynamo-style systems detect divergence.</div>
     <div class="cs-topics">
@@ -137,7 +137,7 @@ hide:
     <div class="cs-card-cta">Open topic <span>→</span></div>
   </a>
 
-  <a class="cs-card" href="coordination-services/the-problem/">
+  <a class="cs-card" href="coordination-services-the-problem/">
     <div class="cs-card-title">Coordination Services</div>
     <div class="cs-card-desc">etcd, leases, TTL-based fencing tokens, and the difference between distributed locks and job tracking.</div>
     <div class="cs-topics">

@@ -38,7 +38,7 @@ DB-1 → ACCEPT(3, x=100) → majority acks → x=100 committed ✓
 DB-2 eventually tries `ACCEPT(2, x=999)` — acceptors already promised N=3. Rejected. DB-2 has to retry with N=4 or higher. But by then x=100 is committed, so the value inheritance rule forces DB-2 to use x=100 anyway.
 
 > [!important] This only resolves cleanly if DB-1's ACCEPT goes through before DB-2 retries
-> If DB-2 retries with N=4 before DB-1's ACCEPT(3) completes, DB-1 gets rejected again and picks N=5. That back-and-forth is exactly livelock — covered in [[04-Paxos-Livelock]].
+> If DB-2 retries with N=4 before DB-1's ACCEPT(3) completes, DB-1 gets rejected again and picks N=5. That back-and-forth is exactly livelock.
 
 ---
 
@@ -68,4 +68,3 @@ DB-1 becomes the messenger that commits x=999 — even though it originally want
 
 ---
 
-→ See [[04-Paxos-Livelock]] for what happens when neither proposer wins and they keep racing forever

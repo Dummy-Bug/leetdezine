@@ -1,4 +1,18 @@
 import json
+import logging
+
+
+class _SuppressDocsGitLogNoise(logging.Filter):
+    def filter(self, record):
+        message = record.getMessage()
+        return not (
+            "git-revision-date-localized-plugin" in message
+            and "has no git logs, using current timestamp" in message
+            and "/docs" in message
+        )
+
+
+logging.getLogger("mkdocs.plugins").addFilter(_SuppressDocsGitLogNoise())
 
 SLUG_LABELS = {
     "nfrs": "NFRs", "cap-theorem": "CAP Theorem", "pacelc": "PACELC",

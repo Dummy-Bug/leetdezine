@@ -149,9 +149,9 @@ nav:
         - Percentiles: performance-metrics/percentiles.md
         - Interview Cheatsheet: performance-metrics/interview-cheatsheet.md
         - "Interview Questions":
-          - SDE-1: performance-metrics/sde-1.md
-          - SDE-2: performance-metrics/sde-2.md
-          - SDE-3: performance-metrics/sde-3.md
+          - SDE-1: performance-metrics/interview-questions/sde-1.md
+          - SDE-2: performance-metrics/interview-questions/sde-2.md
+          - SDE-3: performance-metrics/interview-questions/sde-3.md
       - Service Levels:
         - Introduction: service-levels/introduction.md
         - SLI: service-levels/sli.md
@@ -160,9 +160,9 @@ nav:
         - Error Budget: service-levels/error-budget.md
         - Interview Cheatsheet: service-levels/interview-cheatsheet.md
         - "Interview Questions":
-          - SDE-1: service-levels/sde-1.md
-          - SDE-2: service-levels/sde-2.md
-          - SDE-3: service-levels/sde-3.md
+          - SDE-1: service-levels/interview-questions/sde-1.md
+          - SDE-2: service-levels/interview-questions/sde-2.md
+          - SDE-3: service-levels/interview-questions/sde-3.md
       - Availability:
         - Availability: availability/availability.md
         - SPOF: availability/spof.md
@@ -172,9 +172,9 @@ nav:
         - Series vs Parallel: availability/series-vs-parallel.md
         - Interview Cheatsheet: availability/interview-cheatsheet.md
         - "Interview Questions":
-          - SDE-1: availability/sde-1.md
-          - SDE-2: availability/sde-2.md
-          - SDE-3: availability/sde-3.md
+          - SDE-1: availability/interview-questions/sde-1.md
+          - SDE-2: availability/interview-questions/sde-2.md
+          - SDE-3: availability/interview-questions/sde-3.md
       - Reliability:
         - Reliability: reliability/reliability.md
         - MTBF & MTTR: reliability/mtbf-and-mttr.md
@@ -183,31 +183,31 @@ nav:
         - Reliability vs Availability: reliability/reliability-vs-availability.md
         - Interview Cheatsheet: reliability/interview-cheatsheet.md
         - "Interview Questions":
-          - SDE-1: reliability/sde-1.md
-          - SDE-2: reliability/sde-2.md
-          - SDE-3: reliability/sde-3.md
+          - SDE-1: reliability/interview-questions/sde-1.md
+          - SDE-2: reliability/interview-questions/sde-2.md
+          - SDE-3: reliability/interview-questions/sde-3.md
       - Scalability:
         - Scalability: scalability/scalability.md
         - Interview Cheatsheet: scalability/interview-cheatsheet.md
         - Load Balancing:
-          - Load Balancing: scalability/load-balancing.md
-          - Algorithms: scalability/algorithms.md
-          - Hybrid In Production: scalability/hybrid-in-production.md
-          - Interview Cheatsheet: scalability/load-balancing-interview-cheatsheet.md
+          - Load Balancing: scalability/load-balancing/load-balancing.md
+          - Algorithms: scalability/load-balancing/algorithms.md
+          - Hybrid In Production: scalability/load-balancing/hybrid-in-production.md
+          - Interview Cheatsheet: scalability/load-balancing/interview-cheatsheet.md
           - L4:
-            - Fundamentals: scalability/l4-fundamentals.md
-            - How It Works: scalability/l4-how-it-works.md
-            - Connection Tables: scalability/l4-connection-tables.md
-            - Real World: scalability/l4-real-world.md
+            - Fundamentals: scalability/load-balancing/l4/fundamentals.md
+            - How It Works: scalability/load-balancing/l4/how-it-works.md
+            - Connection Tables: scalability/load-balancing/l4/connection-tables.md
+            - Real World: scalability/load-balancing/l4/real-world.md
           - L7:
-            - Fundamentals: scalability/l7-fundamentals.md
-            - Request Flow: scalability/l7-request-flow.md
-            - API Gateway: scalability/l7-api-gateway.md
+            - Fundamentals: scalability/load-balancing/l7/fundamentals.md
+            - Request Flow: scalability/load-balancing/l7/request-flow.md
+            - API Gateway: scalability/load-balancing/l7/api-gateway.md
         - Auto Scaling:
-          - Auto Scaling: scalability/auto-scaling.md
-          - Connection Draining: scalability/connection-draining.md
-          - Cold Start: scalability/cold-start.md
-          - Interview Cheatsheet: scalability/auto-scaling-interview-cheatsheet.md
+          - Auto Scaling: scalability/auto-scaling/auto-scaling.md
+          - Connection Draining: scalability/auto-scaling/connection-draining.md
+          - Cold Start: scalability/auto-scaling/cold-start.md
+          - Interview Cheatsheet: scalability/auto-scaling/interview-cheatsheet.md
       - Fault Tolerance:
         - Fault Tolerance: fault-tolerance/fault-tolerance.md
         - Graceful Degradation: fault-tolerance/graceful-degradation.md
@@ -246,365 +246,422 @@ nav:
         - Conflicting NFRs: nfrs/conflicting-nfrs.md
     - Distributed Systems:
       - Overview: distributed-systems/index.md
-      - General Problem: distributed-systems/general-problem.md
-      - Network Partitions: distributed-systems/network-partitions.md
-      - During Partition: distributed-systems/during-partition.md
-      - Split Brain: distributed-systems/split-brain.md
-      - Quorum vs Consensus: distributed-systems/quorum-vs-consensus.md
-      - Interview Cheatsheet: distributed-systems/network-partitions-interview-cheatsheet.md
-      - CAP Theorem: distributed-systems/cap-theorem.md
-      - CP vs AP: distributed-systems/cp-vs-ap.md
-      - Interview Cheatsheet: distributed-systems/cap-theorem-interview-cheatsheet.md
-      - PACELC Theorem: distributed-systems/pacelc-theorem.md
-      - PA/EC — The Middle Ground: distributed-systems/pa-ec-the-middle-ground.md
-      - System Examples: distributed-systems/system-examples.md
-      - Interview Cheatsheet: distributed-systems/pacelc-interview-cheatsheet.md
-      - Consistency Models: distributed-systems/consistency-models.md
-      - When To Use: distributed-systems/when-to-use.md
-      - Interview Cheatsheet: distributed-systems/consistency-models-interview-cheatsheet.md
-      - What Is Replication: distributed-systems/what-is-replication.md
-      - Sync vs Async: distributed-systems/sync-vs-async.md
-      - Replication Lag: distributed-systems/replication-lag.md
-      - Failover: distributed-systems/failover.md
-      - Multi-Primary: distributed-systems/multi-primary.md
-      - Interview Cheatsheet: distributed-systems/replication-interview-cheatsheet.md
-      - What Is Sharding: distributed-systems/what-is-sharding.md
-      - Shard Key: distributed-systems/shard-key.md
-      - Sharding Strategies: distributed-systems/sharding-strategies.md
-      - Consistent Hashing: distributed-systems/consistent-hashing.md
-      - Cross-Shard Joins: distributed-systems/cross-shard-joins.md
-      - Resharding: distributed-systems/resharding.md
-      - Over-Sharding: distributed-systems/over-sharding.md
-      - Relational DBs: distributed-systems/relational-dbs.md
-      - Interview Cheatsheet: distributed-systems/sharding-interview-cheatsheet.md
-      - What Is Consensus: distributed-systems/what-is-consensus.md
-      - Raft:
-        - What Is Raft: distributed-systems/raft-what-is-raft.md
-        - Leader Election: distributed-systems/raft-leader-election.md
-        - Term Numbers: distributed-systems/raft-term-numbers.md
-        - Log Replication: distributed-systems/raft-log-replication.md
-        - Log Replication Failures: distributed-systems/raft-log-replication-failures.md
-        - Fencing Tokens: distributed-systems/raft-fencing-tokens.md
-      - ZooKeeper:
-        - ZooKeeper Election: distributed-systems/zookeeper-election.md
-        - Redis Distributed Locks: distributed-systems/zookeeper-redis-distributed-locks.md
-      - Paxos:
-        - What Is Paxos: distributed-systems/paxos-what-is-paxos.md
-        - Paxos Phases: distributed-systems/paxos-phases.md
-        - Paxos Retry Cases: distributed-systems/paxos-retry-cases.md
-        - Paxos Livelock: distributed-systems/paxos-livelock.md
-      - Clock Drift: distributed-systems/clock-drift.md
-      - NTP: distributed-systems/ntp.md
-      - Lamport Clocks: distributed-systems/lamport-clocks.md
-      - Vector Clocks: distributed-systems/vector-clocks.md
-      - GPS & Atomic Clocks: distributed-systems/gps-and-atomic-clocks.md
-      - TrueTime Uncertainty: distributed-systems/truetime-uncertainty.md
-      - The Problem: distributed-systems/crdts-the-problem.md
-      - Why Locks Fail: distributed-systems/why-locks-fail.md
-      - G-Counter: distributed-systems/g-counter.md
-      - Operational Transform:
-        - Insert: distributed-systems/operational-transform-insert.md
-        - Delete: distributed-systems/operational-transform-delete.md
-        - OT vs CRDT: distributed-systems/operational-transform-ot-vs-crdt.md
-      - Heartbeats: distributed-systems/heartbeats.md
-      - Gossip Protocol: distributed-systems/gossip-protocol.md
-      - Phi Accrual Failure Detector: distributed-systems/phi-accrual-failure-detector.md
-      - The Problem: distributed-systems/merkle-trees-the-problem.md
-      - Hashing & Buckets: distributed-systems/hashing-and-buckets.md
-      - The Tree: distributed-systems/the-tree.md
-      - Anti-Entropy: distributed-systems/anti-entropy.md
-      - The Problem: distributed-systems/coordination-services-the-problem.md
-      - What Is etcd: distributed-systems/what-is-etcd.md
-      - Leases & TTL: distributed-systems/leases-and-ttl.md
-      - Fencing Tokens: distributed-systems/coordination-services-fencing-tokens.md
-      - Lock vs Job Tracking: distributed-systems/lock-vs-job-tracking.md
+      - Problems:
+        - General Problem: distributed-systems/problems/general-problem.md
+      - Network Partitions:
+        - Network Partitions: distributed-systems/network-partitions/network-partitions.md
+        - During Partition: distributed-systems/network-partitions/during-partition.md
+        - Split Brain: distributed-systems/network-partitions/split-brain.md
+        - Quorum vs Consensus: distributed-systems/network-partitions/quorum-vs-consensus.md
+        - Interview Cheatsheet: distributed-systems/network-partitions/interview-cheatsheet.md
+      - CAP Theorem:
+        - CAP Theorem: distributed-systems/cap-theorem/cap-theorem.md
+        - CP vs AP: distributed-systems/cap-theorem/cp-vs-ap.md
+        - Interview Cheatsheet: distributed-systems/cap-theorem/interview-cheatsheet.md
+      - PACELC:
+        - PACELC Theorem: distributed-systems/pacelc/pacelc-theorem.md
+        - PA/EC — The Middle Ground: distributed-systems/pacelc/pa-ec-the-middle-ground.md
+        - System Examples: distributed-systems/pacelc/system-examples.md
+        - Interview Cheatsheet: distributed-systems/pacelc/interview-cheatsheet.md
+      - Consistency Models:
+        - Consistency Models: distributed-systems/consistency-models/consistency-models.md
+        - When To Use: distributed-systems/consistency-models/when-to-use.md
+        - Interview Cheatsheet: distributed-systems/consistency-models/interview-cheatsheet.md
+      - Replication:
+        - What Is Replication: distributed-systems/replication/what-is-replication.md
+        - Sync vs Async: distributed-systems/replication/sync-vs-async.md
+        - Replication Lag: distributed-systems/replication/replication-lag.md
+        - Failover: distributed-systems/replication/failover.md
+        - Multi-Primary: distributed-systems/replication/multi-primary.md
+        - Interview Cheatsheet: distributed-systems/replication/interview-cheatsheet.md
+      - Sharding:
+        - What Is Sharding: distributed-systems/sharding/what-is-sharding.md
+        - Shard Key: distributed-systems/sharding/shard-key.md
+        - Sharding Strategies: distributed-systems/sharding/sharding-strategies.md
+        - Consistent Hashing: distributed-systems/sharding/consistent-hashing.md
+        - Cross-Shard Joins: distributed-systems/sharding/cross-shard-joins.md
+        - Resharding: distributed-systems/sharding/resharding.md
+        - Over-Sharding: distributed-systems/sharding/over-sharding.md
+        - Relational DBs: distributed-systems/sharding/relational-dbs.md
+        - Interview Cheatsheet: distributed-systems/sharding/interview-cheatsheet.md
+      - Consensus:
+        - What Is Consensus: distributed-systems/consensus/what-is-consensus.md
+        - Raft:
+          - What Is Raft: distributed-systems/consensus/raft/what-is-raft.md
+          - Leader Election: distributed-systems/consensus/raft/leader-election.md
+          - Term Numbers: distributed-systems/consensus/raft/term-numbers.md
+          - Log Replication: distributed-systems/consensus/raft/log-replication.md
+          - Log Replication Failures: distributed-systems/consensus/raft/log-replication-failures.md
+          - Fencing Tokens: distributed-systems/consensus/raft/fencing-tokens.md
+        - ZooKeeper:
+          - ZooKeeper Election: distributed-systems/consensus/zookeeper/zookeeper-election.md
+          - Redis Distributed Locks: distributed-systems/consensus/zookeeper/redis-distributed-locks.md
+        - Paxos:
+          - What Is Paxos: distributed-systems/consensus/paxos/what-is-paxos.md
+          - Paxos Phases: distributed-systems/consensus/paxos/paxos-phases.md
+          - Paxos Retry Cases: distributed-systems/consensus/paxos/paxos-retry-cases.md
+          - Paxos Livelock: distributed-systems/consensus/paxos/paxos-livelock.md
+      - Distributed Clocks:
+        - Clock Drift: distributed-systems/distributed-clocks/clock-drift.md
+        - NTP: distributed-systems/distributed-clocks/ntp.md
+        - Lamport Clocks: distributed-systems/distributed-clocks/lamport-clocks.md
+        - Vector Clocks: distributed-systems/distributed-clocks/vector-clocks.md
+        - GPS & Atomic Clocks: distributed-systems/distributed-clocks/gps-and-atomic-clocks.md
+        - TrueTime Uncertainty: distributed-systems/distributed-clocks/truetime-uncertainty.md
+      - CRDTs:
+        - The Problem: distributed-systems/crdts/the-problem.md
+        - Why Locks Fail: distributed-systems/crdts/why-locks-fail.md
+        - G-Counter: distributed-systems/crdts/g-counter.md
+        - Operational Transform:
+          - Insert: distributed-systems/crdts/operational-transform/insert.md
+          - Delete: distributed-systems/crdts/operational-transform/delete.md
+          - OT vs CRDT: distributed-systems/crdts/operational-transform/ot-vs-crdt.md
+      - Failure Detection:
+        - Heartbeats: distributed-systems/failure-detection/heartbeats.md
+        - Gossip Protocol: distributed-systems/failure-detection/gossip-protocol.md
+        - Phi Accrual Failure Detector: distributed-systems/failure-detection/phi-accrual-failure-detector.md
+      - Merkle Trees:
+        - The Problem: distributed-systems/merkle-trees/the-problem.md
+        - Hashing & Buckets: distributed-systems/merkle-trees/hashing-and-buckets.md
+        - The Tree: distributed-systems/merkle-trees/the-tree.md
+        - Anti-Entropy: distributed-systems/merkle-trees/anti-entropy.md
+      - Coordination Services:
+        - The Problem: distributed-systems/coordination-services/the-problem.md
+        - What Is etcd: distributed-systems/coordination-services/what-is-etcd.md
+        - Leases & TTL: distributed-systems/coordination-services/leases-and-ttl.md
+        - Fencing Tokens: distributed-systems/coordination-services/fencing-tokens.md
+        - Lock vs Job Tracking: distributed-systems/coordination-services/lock-vs-job-tracking.md
     - Caching:
       - Overview: caching/index.md
       - Fundamentals: caching/fundamentals.md
-      - "Quick Decision Map": caching/quick-decision-map.md
-      - Read Strategies: caching/read-strategies.md
-      - Write Strategies: caching/write-strategies.md
-      - Interview Cheatsheet: caching/writing-strategies-interview-cheatsheet.md
-      - "Eviction vs TTL": caching/eviction-vs-ttl.md
-      - LRU: caching/lru.md
-      - LFU: caching/lfu.md
-      - FIFO & TTL: caching/fifo-and-ttl.md
-      - Interview Cheatsheet: caching/eviction-policies-interview-cheatsheet.md
-      - "Warming vs Refresh-Ahead": caching/warming-vs-refresh-ahead.md
-      - Refresh Ahead: caching/refresh-ahead.md
-      - Cache Warming: caching/cache-warming.md
-      - Interview Cheatsheet: caching/population-strategies-interview-cheatsheet.md
-      - "Choosing a Strategy": caching/choosing-a-strategy.md
-      - TTL-Based: caching/ttl-based.md
-      - Event-Driven: caching/event-driven.md
-      - Write-Through: caching/write-through.md
-      - Cache Versioning: caching/cache-versioning.md
-      - Stale-While-Revalidate: caching/stale-while-revalidate.md
-      - Interview Cheatsheet: caching/cache-invalidation-interview-cheatsheet.md
-      - Why Single Node Fails: caching/why-single-node-fails.md
-      - Consistent Hashing: caching/consistent-hashing.md
-      - Cache Coherence: caching/cache-coherence.md
-      - Replication: caching/replication.md
-      - Two-Level Caching: caching/two-level-caching.md
-      - Node Failure: caching/node-failure.md
-      - Interview Cheatsheet: caching/distributed-caching-interview-cheatsheet.md
-      - "Diagnosing the Problem": caching/diagnosing-which-problem.md
-      - Cache Stampede: caching/cache-stampede.md
-      - Cold Start: caching/cold-start.md
-      - Cache Penetration: caching/cache-penetration.md
-      - Cache Avalanche: caching/cache-avalanche.md
-      - Interview Cheatsheet: caching/cache-problems-interview-cheatsheet.md
-      - Data Structures: caching/data-structures.md
-      - Patterns: caching/patterns.md
-      - Persistence: caching/persistence.md
-      - Streams: caching/streams.md
-      - Single-Threaded Event Loop: caching/single-threaded-event-loop.md
-      - SDE-1: caching/sde-1.md
-      - SDE-2: caching/sde-2.md
-      - SDE-3: caching/sde-3.md
+      - Writing Strategies:
+        - "Quick Decision Map": caching/writing-strategies/quick-decision-map.md
+        - Read Strategies: caching/writing-strategies/read-strategies.md
+        - Write Strategies: caching/writing-strategies/write-strategies.md
+        - Interview Cheatsheet: caching/writing-strategies/interview-cheatsheet.md
+      - Eviction Policies:
+        - "Eviction vs TTL": caching/eviction-policies/eviction-vs-ttl.md
+        - LRU: caching/eviction-policies/lru.md
+        - LFU: caching/eviction-policies/lfu.md
+        - FIFO & TTL: caching/eviction-policies/fifo-and-ttl.md
+        - Interview Cheatsheet: caching/eviction-policies/interview-cheatsheet.md
+      - Population Strategies:
+        - "Warming vs Refresh-Ahead": caching/population-strategies/warming-vs-refresh-ahead.md
+        - Refresh Ahead: caching/population-strategies/refresh-ahead.md
+        - Cache Warming: caching/population-strategies/cache-warming.md
+        - Interview Cheatsheet: caching/population-strategies/interview-cheatsheet.md
+      - Cache Invalidation:
+        - "Choosing a Strategy": caching/cache-invalidation/choosing-a-strategy.md
+        - TTL-Based: caching/cache-invalidation/ttl-based.md
+        - Event-Driven: caching/cache-invalidation/event-driven.md
+        - Write-Through: caching/cache-invalidation/write-through.md
+        - Cache Versioning: caching/cache-invalidation/cache-versioning.md
+        - Stale-While-Revalidate: caching/cache-invalidation/stale-while-revalidate.md
+        - Interview Cheatsheet: caching/cache-invalidation/interview-cheatsheet.md
+      - Distributed Caching:
+        - Why Single Node Fails: caching/distributed-caching/why-single-node-fails.md
+        - Consistent Hashing: caching/distributed-caching/consistent-hashing.md
+        - Cache Coherence: caching/distributed-caching/cache-coherence.md
+        - Replication: caching/distributed-caching/replication.md
+        - Two-Level Caching: caching/distributed-caching/two-level-caching.md
+        - Node Failure: caching/distributed-caching/node-failure.md
+        - Interview Cheatsheet: caching/distributed-caching/interview-cheatsheet.md
+      - Cache Problems:
+        - "Diagnosing the Problem": caching/cache-problems/diagnosing-which-problem.md
+        - Cache Stampede: caching/cache-problems/cache-stampede.md
+        - Cold Start: caching/cache-problems/cold-start.md
+        - Cache Penetration: caching/cache-problems/cache-penetration.md
+        - Cache Avalanche: caching/cache-problems/cache-avalanche.md
+        - Interview Cheatsheet: caching/cache-problems/interview-cheatsheet.md
+      - Redis:
+        - Data Structures: caching/redis/data-structures.md
+        - Patterns: caching/redis/patterns.md
+        - Persistence: caching/redis/persistence.md
+        - Streams: caching/redis/streams.md
+        - Single-Threaded Event Loop: caching/redis/single-threaded-event-loop.md
+      - "Interview Questions":
+        - SDE-1: caching/interview-questions/sde-1.md
+        - SDE-2: caching/interview-questions/sde-2.md
+        - SDE-3: caching/interview-questions/sde-3.md
     - Storage & Databases:
       - Overview: storage-and-databases/index.md
-      - Why Not Files: storage-and-databases/why-not-files.md
-      - How Files Store Data: storage-and-databases/how-file-store-data.md
-      - How DBs Store Data: storage-and-databases/how-db-store-data.md
-      - Row-Oriented Storage: storage-and-databases/row-oriented-storage.md
-      - Column-Oriented Storage: storage-and-databases/column-oriented-storage.md
-      - The Problem: storage-and-databases/acid-the-problem.md
-      - Atomicity: storage-and-databases/atomicity.md
-      - Consistency: storage-and-databases/consistency.md
-      - Durability: storage-and-databases/durability.md
-      - ACID vs BASE: storage-and-databases/acid-vs-base.md
-      - Interview Cheatsheet: storage-and-databases/acid-interview-cheatsheet.md
-      - Transaction Isolation:
-        - Isolation Problems: storage-and-databases/transaction-isolation-isolation-problems.md
-        - Isolation Levels: storage-and-databases/transaction-isolation-isolation-levels.md
-        - Choosing Isolation: storage-and-databases/transaction-isolation-choosing-isolation.md
-        - Pessimistic vs Optimistic Locking: storage-and-databases/transaction-isolation-pessimistic-vs-optimistic-locking.md
-        - Interview Cheatsheet: storage-and-databases/transaction-isolation-interview-cheatsheet.md
-        - External Locking Strategies: storage-and-databases/transaction-isolation-external-locking-strategies.md
-      - Distributed Transactions:
-        - The Problem: storage-and-databases/distributed-transactions-the-problem.md
-        - 2PC vs Saga: storage-and-databases/distributed-transactions-2pc-vs-saga.md
-        - Interview Cheatsheet: storage-and-databases/distributed-transactions-interview-cheatsheet.md
-        - 2PC:
-          - Working: storage-and-databases/2pc-working.md
-          - Failures: storage-and-databases/2pc-failures.md
-          - Solutions: storage-and-databases/2pc-solutions.md
-          - 2PC In Practice: storage-and-databases/2pc-in-practice.md
-        - Saga:
-          - What Is Saga: storage-and-databases/saga-what-is-saga.md
-          - Choreography: storage-and-databases/saga-choreography.md
-          - Orchestration: storage-and-databases/saga-orchestration.md
-      - "Interview Questions":
-        - SDE-1: storage-and-databases/interview-questions-sde-1.md
-        - SDE-2: storage-and-databases/interview-questions-sde-2.md
-        - SDE-3: storage-and-databases/interview-questions-sde-3.md
-      - Relational Model: storage-and-databases/relational-model.md
-      - Normalisation: storage-and-databases/normalisation.md
-      - Denormalisation: storage-and-databases/denormalisation.md
-      - Joins: storage-and-databases/joins.md
-      - Views: storage-and-databases/views.md
-      - Indexes: storage-and-databases/indexes.md
-      - Hash Index: storage-and-databases/hash-index.md
-      - B+ Tree: storage-and-databases/b+tree.md
-      - LSM Tree Writes: storage-and-databases/lsm-tree-writes.md
-      - LSM Tree Reads: storage-and-databases/lsm-tree-reads.md
-      - Geospatial Indexing:
-        - The Problem: storage-and-databases/geospatial-indexing-the-problem.md
-        - Why Composite Index Fails: storage-and-databases/geospatial-indexing-why-composite-index-fails.md
-        - Geohash: storage-and-databases/geospatial-indexing-geohash.md
-        - S2 Cells: storage-and-databases/geospatial-indexing-s2-cells.md
-        - Interview Cheatsheet: storage-and-databases/geospatial-indexing-interview-cheatsheet.md
-      - What Is CDC: storage-and-databases/what-is-cdc.md
-      - Outbox Pattern: storage-and-databases/outbox-pattern.md
-      - Interview Cheatsheet: storage-and-databases/cdc-interview-cheatsheet.md
-      - Offset Pagination: storage-and-databases/offset-pagination.md
-      - Cursor Pagination: storage-and-databases/cursor-pagination.md
-      - Interview Cheatsheet: storage-and-databases/pagination-interview-cheatsheet.md
-      - Cost Of A Connection: storage-and-databases/cost-of-a-connection.md
-      - Connection Pool: storage-and-databases/connection-pool.md
-      - Interview Cheatsheet: storage-and-databases/connection-pooling-interview-cheatsheet.md
-      - The Problem: storage-and-databases/read-write-splitting-the-problem.md
-      - How It Works: storage-and-databases/how-it-works.md
-      - Replication Lag: storage-and-databases/replication-lag.md
-      - Interview Cheatsheet: storage-and-databases/read-write-splitting-interview-cheatsheet.md
+      - Fundamentals:
+        - Why Not Files: storage-and-databases/fundamentals/why-not-files.md
+        - How Files Store Data: storage-and-databases/fundamentals/how-file-store-data.md
+        - How DBs Store Data: storage-and-databases/fundamentals/how-db-store-data.md
+        - Row-Oriented Storage: storage-and-databases/fundamentals/row-oriented-storage.md
+        - Column-Oriented Storage: storage-and-databases/fundamentals/column-oriented-storage.md
+      - ACID:
+        - The Problem: storage-and-databases/acid/the-problem.md
+        - Atomicity: storage-and-databases/acid/atomicity.md
+        - Consistency: storage-and-databases/acid/consistency.md
+        - Durability: storage-and-databases/acid/durability.md
+        - ACID vs BASE: storage-and-databases/acid/acid-vs-base.md
+        - Interview Cheatsheet: storage-and-databases/acid/interview-cheatsheet.md
+        - Transaction Isolation:
+          - Isolation Problems: storage-and-databases/acid/transaction-isolation/isolation-problems.md
+          - Isolation Levels: storage-and-databases/acid/transaction-isolation/isolation-levels.md
+          - Choosing Isolation: storage-and-databases/acid/transaction-isolation/choosing-isolation.md
+          - Pessimistic vs Optimistic Locking: storage-and-databases/acid/transaction-isolation/pessimistic-vs-optimistic-locking.md
+          - Interview Cheatsheet: storage-and-databases/acid/transaction-isolation/interview-cheatsheet.md
+          - External Locking Strategies: storage-and-databases/acid/transaction-isolation/external-locking-strategies.md
+        - Distributed Transactions:
+          - The Problem: storage-and-databases/acid/distributed-transactions/the-problem.md
+          - 2PC vs Saga: storage-and-databases/acid/distributed-transactions/2pc-vs-saga.md
+          - Interview Cheatsheet: storage-and-databases/acid/distributed-transactions/interview-cheatsheet.md
+          - 2PC:
+            - Working: storage-and-databases/acid/distributed-transactions/2pc/working.md
+            - Failures: storage-and-databases/acid/distributed-transactions/2pc/failures.md
+            - Solutions: storage-and-databases/acid/distributed-transactions/2pc/solutions.md
+            - 2PC In Practice: storage-and-databases/acid/distributed-transactions/2pc/2pc-in-practice.md
+          - Saga:
+            - What Is Saga: storage-and-databases/acid/distributed-transactions/saga/what-is-saga.md
+            - Choreography: storage-and-databases/acid/distributed-transactions/saga/choreography.md
+            - Orchestration: storage-and-databases/acid/distributed-transactions/saga/orchestration.md
+        - "Interview Questions":
+          - SDE-1: storage-and-databases/acid/interview-questions/sde-1.md
+          - SDE-2: storage-and-databases/acid/interview-questions/sde-2.md
+          - SDE-3: storage-and-databases/acid/interview-questions/sde-3.md
+      - SQL:
+        - Relational Model: storage-and-databases/sql/relational-model.md
+        - Normalisation: storage-and-databases/sql/normalisation.md
+        - Denormalisation: storage-and-databases/sql/denormalisation.md
+        - Joins: storage-and-databases/sql/joins.md
+        - Views: storage-and-databases/sql/views.md
+      - Indexing:
+        - Indexes: storage-and-databases/indexing/indexes.md
+        - Hash Index: storage-and-databases/indexing/hash-index.md
+        - B+ Tree: storage-and-databases/indexing/b+tree.md
+        - LSM Tree Writes: storage-and-databases/indexing/lsm-tree-writes.md
+        - LSM Tree Reads: storage-and-databases/indexing/lsm-tree-reads.md
+        - Geospatial Indexing:
+          - The Problem: storage-and-databases/indexing/geospatial-indexing/the-problem.md
+          - Why Composite Index Fails: storage-and-databases/indexing/geospatial-indexing/why-composite-index-fails.md
+          - Geohash: storage-and-databases/indexing/geospatial-indexing/geohash.md
+          - S2 Cells: storage-and-databases/indexing/geospatial-indexing/s2-cells.md
+          - Interview Cheatsheet: storage-and-databases/indexing/geospatial-indexing/interview-cheatsheet.md
+      - CDC:
+        - What Is CDC: storage-and-databases/cdc/what-is-cdc.md
+        - Outbox Pattern: storage-and-databases/cdc/outbox-pattern.md
+        - Interview Cheatsheet: storage-and-databases/cdc/interview-cheatsheet.md
+      - Pagination:
+        - Offset Pagination: storage-and-databases/pagination/offset-pagination.md
+        - Cursor Pagination: storage-and-databases/pagination/cursor-pagination.md
+        - Interview Cheatsheet: storage-and-databases/pagination/interview-cheatsheet.md
+      - Connection Pooling:
+        - Cost Of A Connection: storage-and-databases/connection-pooling/cost-of-a-connection.md
+        - Connection Pool: storage-and-databases/connection-pooling/connection-pool.md
+        - Interview Cheatsheet: storage-and-databases/connection-pooling/interview-cheatsheet.md
+      - Read/Write Splitting:
+        - The Problem: storage-and-databases/read-write-splitting/the-problem.md
+        - How It Works: storage-and-databases/read-write-splitting/how-it-works.md
+        - Replication Lag: storage-and-databases/read-write-splitting/replication-lag.md
+        - Interview Cheatsheet: storage-and-databases/read-write-splitting/interview-cheatsheet.md
     - Database Types:
       - Overview: database-types/index.md
-      - Redis: database-types/redis.md
-      - Memcached: database-types/memcached.md
-      - KV Positioning: database-types/kv-positioning.md
-      - Interview Cheatsheet: database-types/key-value-stores-interview-cheatsheet.md
-      - Document Model: database-types/document-model.md
-      - Indexes: database-types/indexes.md
-      - Embedding vs Referencing: database-types/embedding-vs-referencing.md
-      - Replication & Sharding: database-types/replication-and-sharding.md
-      - Limitations: database-types/limitations.md
-      - Interview Cheatsheet: database-types/document-stores-interview-cheatsheet.md
-      - Fundamentals:
-        - Why Column Family: database-types/fundamentals-why-column-family.md
-        - Column-Oriented Storage: database-types/fundamentals-column-oriented-storage.md
-        - Row Keys: database-types/fundamentals-row-keys.md
-      - Cassandra:
-        - "Mental Model": database-types/cassandra-mental-model.md
-        - Ring Architecture: database-types/cassandra-ring-architecture.md
-        - Write Path: database-types/cassandra-write-path.md
-        - Read Path: database-types/cassandra-read-path.md
-        - Replication & Consistency: database-types/cassandra-replication-consistency.md
-        - Tombstones: database-types/cassandra-tombstones.md
-        - Interview Cheatsheet: database-types/cassandra-interview-cheatsheet.md
-        - Query-First Modeling: database-types/cassandra-query-first-modeling.md
-      - Bigtable:
-        - Architecture: database-types/bigtable-architecture.md
-        - Cassandra vs Bigtable: database-types/bigtable-cassandra-vs-bigtable.md
-      - DynamoDB:
-        - Data Model: database-types/dynamodb-data-model.md
-        - Consistency: database-types/dynamodb-consistency.md
-        - Query API & Indexes: database-types/dynamodb-query-api-and-indexes.md
-        - Redis vs DynamoDB: database-types/dynamodb-redis-vs-dynamodb.md
-        - TTL & Sessions: database-types/dynamodb-ttl-and-sessions.md
-        - Interview Cheatsheet: database-types/dynamodb-interview-cheatsheet.md
-      - Problem With SQL Search: database-types/problem-with-sql-search.md
-      - Inverted Index: database-types/inverted-index.md
-      - Indexing Pipeline: database-types/indexing-pipeline.md
-      - Ranking TF-IDF BM25: database-types/ranking-tf-idf-bm25.md
-      - Elasticsearch Architecture: database-types/elasticsearch-architecture.md
-      - Where It Fits: database-types/where-it-fits.md
-      - Interview Cheatsheet: database-types/search-engines-interview-cheatsheet.md
-      - Why Not SQL: database-types/why-not-sql.md
-      - Graph Data Model: database-types/graph-data-model.md
-      - Cypher Query Language: database-types/cypher-query-language.md
-      - Use Cases: database-types/use-cases.md
-      - Interview Cheatsheet: database-types/graph-databases-interview-cheatsheet.md
-      - Object Storage Model: database-types/object-storage-model.md
-      - Presigned URLs: database-types/presigned-urls.md
-      - Multipart Upload: database-types/multipart-upload.md
-      - Content-Addressable Storage: database-types/content-addressable-storage.md
-      - Chunk-Level Deduplication: database-types/chunk-level-deduplication.md
-      - Storage Classes: database-types/storage-classes.md
-      - Interview Cheatsheet: database-types/blob-storage-interview-cheatsheet.md
-      - The Problem: database-types/newsql-the-problem.md
-      - Spanner TrueTime: database-types/spanner-truetime.md
-      - Spanner Transactions: database-types/spanner-transactions.md
-      - When To Use: database-types/when-to-use.md
-      - Interview Cheatsheet: database-types/newsql-interview-cheatsheet.md
-      - The Problem: database-types/oltp-vs-olap-the-problem.md
-      - OLTP: database-types/oltp.md
-      - OLAP: database-types/olap.md
-      - ETL vs CDC: database-types/etl-vs-cdc.md
-      - Interview Cheatsheet: database-types/oltp-vs-olap-interview-cheatsheet.md
-      - Decision Framework: database-types/decision-framework.md
-      - DB Cheatsheet: database-types/db-cheatsheet.md
-      - The Process: database-types/the-process.md
-      - Entities & Relationships: database-types/entities-and-relationships.md
-      - Access Patterns: database-types/access-patterns.md
-      - Instagram Schema: database-types/instagram-schema.md
-      - Red Flags: database-types/red-flags.md
+      - Key-Value Stores:
+        - Redis: database-types/key-value-stores/redis.md
+        - Memcached: database-types/key-value-stores/memcached.md
+        - KV Positioning: database-types/key-value-stores/kv-positioning.md
+        - Interview Cheatsheet: database-types/key-value-stores/interview-cheatsheet.md
+      - Document Stores:
+        - Document Model: database-types/document-stores/document-model.md
+        - Indexes: database-types/document-stores/indexes.md
+        - Embedding vs Referencing: database-types/document-stores/embedding-vs-referencing.md
+        - Replication & Sharding: database-types/document-stores/replication-and-sharding.md
+        - Limitations: database-types/document-stores/limitations.md
+        - Interview Cheatsheet: database-types/document-stores/interview-cheatsheet.md
+      - Column Family:
+        - Fundamentals:
+          - Why Column Family: database-types/column-family/fundamentals/why-column-family.md
+          - Column-Oriented Storage: database-types/column-family/fundamentals/column-oriented-storage.md
+          - Row Keys: database-types/column-family/fundamentals/row-keys.md
+        - Cassandra:
+          - "Mental Model": database-types/column-family/cassandra/mental-model.md
+          - Ring Architecture: database-types/column-family/cassandra/ring-architecture.md
+          - Write Path: database-types/column-family/cassandra/write-path.md
+          - Read Path: database-types/column-family/cassandra/read-path.md
+          - Replication & Consistency: database-types/column-family/cassandra/replication-consistency.md
+          - Tombstones: database-types/column-family/cassandra/tombstones.md
+          - Interview Cheatsheet: database-types/column-family/cassandra/interview-cheatsheet.md
+          - Query-First Modeling: database-types/column-family/cassandra/query-first-modeling.md
+        - Bigtable:
+          - Architecture: database-types/column-family/bigtable/architecture.md
+          - Cassandra vs Bigtable: database-types/column-family/bigtable/cassandra-vs-bigtable.md
+        - DynamoDB:
+          - Data Model: database-types/column-family/dynamodb/data-model.md
+          - Consistency: database-types/column-family/dynamodb/consistency.md
+          - Query API & Indexes: database-types/column-family/dynamodb/query-api-and-indexes.md
+          - Redis vs DynamoDB: database-types/column-family/dynamodb/redis-vs-dynamodb.md
+          - TTL & Sessions: database-types/column-family/dynamodb/ttl-and-sessions.md
+          - Interview Cheatsheet: database-types/column-family/dynamodb/interview-cheatsheet.md
+      - Search Engines:
+        - Problem With SQL Search: database-types/search-engines/problem-with-sql-search.md
+        - Inverted Index: database-types/search-engines/inverted-index.md
+        - Indexing Pipeline: database-types/search-engines/indexing-pipeline.md
+        - Ranking TF-IDF BM25: database-types/search-engines/ranking-tf-idf-bm25.md
+        - Elasticsearch Architecture: database-types/search-engines/elasticsearch-architecture.md
+        - Where It Fits: database-types/search-engines/where-it-fits.md
+        - Interview Cheatsheet: database-types/search-engines/interview-cheatsheet.md
+      - Graph Databases:
+        - Why Not SQL: database-types/graph-databases/why-not-sql.md
+        - Graph Data Model: database-types/graph-databases/graph-data-model.md
+        - Cypher Query Language: database-types/graph-databases/cypher-query-language.md
+        - Use Cases: database-types/graph-databases/use-cases.md
+        - Interview Cheatsheet: database-types/graph-databases/interview-cheatsheet.md
+      - Blob Storage:
+        - Object Storage Model: database-types/blob-storage/object-storage-model.md
+        - Presigned URLs: database-types/blob-storage/presigned-urls.md
+        - Multipart Upload: database-types/blob-storage/multipart-upload.md
+        - Content-Addressable Storage: database-types/blob-storage/content-addressable-storage.md
+        - Chunk-Level Deduplication: database-types/blob-storage/chunk-level-deduplication.md
+        - Storage Classes: database-types/blob-storage/storage-classes.md
+        - Interview Cheatsheet: database-types/blob-storage/interview-cheatsheet.md
+      - NewSQL:
+        - The Problem: database-types/newsql/the-problem.md
+        - Spanner TrueTime: database-types/newsql/spanner-truetime.md
+        - Spanner Transactions: database-types/newsql/spanner-transactions.md
+        - When To Use: database-types/newsql/when-to-use.md
+        - Interview Cheatsheet: database-types/newsql/interview-cheatsheet.md
+      - OLTP vs OLAP:
+        - The Problem: database-types/oltp-vs-olap/the-problem.md
+        - OLTP: database-types/oltp-vs-olap/oltp.md
+        - OLAP: database-types/oltp-vs-olap/olap.md
+        - ETL vs CDC: database-types/oltp-vs-olap/etl-vs-cdc.md
+        - Interview Cheatsheet: database-types/oltp-vs-olap/interview-cheatsheet.md
+      - Choosing The Right DB:
+        - Decision Framework: database-types/choosing-the-right-db/decision-framework.md
+        - DB Cheatsheet: database-types/choosing-the-right-db/db-cheatsheet.md
+      - Data Modeling:
+        - The Process: database-types/data-modeling/the-process.md
+        - Entities & Relationships: database-types/data-modeling/entities-and-relationships.md
+        - Access Patterns: database-types/data-modeling/access-patterns.md
+        - Instagram Schema: database-types/data-modeling/instagram-schema.md
+        - Red Flags: database-types/data-modeling/red-flags.md
     - Messaging:
       - Overview: messaging/index.md
-      - Message Queues: messaging/message-queues.md
-      - Task Queue: messaging/task-queue.md
-      - What Is a Broker: messaging/what-is-a-broker.md
-      - Pub/Sub: messaging/pub-sub.md
-      - Delivery Guarantees: messaging/fundamentals-delivery-guarantees.md
-      - Dead Letter Queue: messaging/dead-letter-queue.md
-      - Message Ordering: messaging/fundamentals-message-ordering.md
-      - Delay Queues: messaging/fundamentals-delay-queues.md
-      - Priority Queues: messaging/priority-queues.md
-      - Fan-Out on Write: messaging/fan-out-on-write.md
-      - Fan-Out on Read: messaging/fan-out-on-read.md
-      - What Is SQS: messaging/what-is-sqs.md
-      - Standard vs FIFO: messaging/standard-vs-fifo.md
-      - Timeout & Retries: messaging/timeout-and-retries.md
-      - Idempotency & DLQ: messaging/idempotency-and-dlq.md
-      - Scaling: messaging/sqs-scaling.md
-      - Retention & Replay Limits: messaging/retention-and-replay-limits.md
-      - Delay Queues: messaging/sqs-delay-queues.md
-      - Producer/Consumer Model: messaging/producer-consumer-model.md
-      - SNS Fan-Out: messaging/sns-fan-out.md
-      - What Is RabbitMQ: messaging/what-is-rabbitmq.md
-      - Direct vs Fanout Exchange: messaging/direct-vs-fanout-exchange.md
-      - Topic Exchange: messaging/topic-exchange.md
-      - Headers Exchange: messaging/headers-exchange.md
-      - ACK/NACK/Requeue: messaging/ack-nack-requeue.md
-      - Crash & Redelivery: messaging/crash-and-redelivery.md
-      - Prefetch & Fairness: messaging/prefetch-and-fairness.md
-      - Durable Queues: messaging/durable-queues.md
-      - Delivery Guarantees: messaging/rabbitmq-delivery-guarantees.md
-      - Retries & DLQ: messaging/retries-and-dlq.md
-      - Message Ordering: messaging/rabbitmq-message-ordering.md
-      - Bottlenecks: messaging/bottlenecks.md
-      - Scaling: messaging/rabbitmq-scaling.md
+      - Fundamentals:
+        - Message Queues: messaging/fundamentals/message-queues.md
+        - Task Queue: messaging/fundamentals/task-queue.md
+        - What Is a Broker: messaging/fundamentals/what-is-a-broker.md
+        - Pub/Sub: messaging/fundamentals/pub-sub.md
+        - Delivery Guarantees: messaging/fundamentals/delivery-guarantees.md
+        - Dead Letter Queue: messaging/fundamentals/dead-letter-queue.md
+        - Message Ordering: messaging/fundamentals/message-ordering.md
+        - Delay Queues: messaging/fundamentals/delay-queues.md
+        - Priority Queues: messaging/fundamentals/priority-queues.md
+        - Fan-Out on Write: messaging/fundamentals/fan-out-on-write.md
+        - Fan-Out on Read: messaging/fundamentals/fan-out-on-read.md
+      - SQS:
+        - What Is SQS: messaging/sqs/what-is-sqs.md
+        - Standard vs FIFO: messaging/sqs/standard-vs-fifo.md
+        - Timeout & Retries: messaging/sqs/timeout-and-retries.md
+        - Idempotency & DLQ: messaging/sqs/idempotency-and-dlq.md
+        - Scaling: messaging/sqs/scaling.md
+        - Retention & Replay Limits: messaging/sqs/retention-and-replay-limits.md
+        - Delay Queues: messaging/sqs/delay-queues.md
+        - Producer/Consumer Model: messaging/sqs/producer-consumer-model.md
+        - SNS Fan-Out: messaging/sqs/sns-fan-out.md
+      - RabbitMQ:
+        - What Is RabbitMQ: messaging/rabbitmq/what-is-rabbitmq.md
+        - Direct vs Fanout Exchange: messaging/rabbitmq/direct-vs-fanout-exchange.md
+        - Topic Exchange: messaging/rabbitmq/topic-exchange.md
+        - Headers Exchange: messaging/rabbitmq/headers-exchange.md
+        - ACK/NACK/Requeue: messaging/rabbitmq/ack-nack-requeue.md
+        - Crash & Redelivery: messaging/rabbitmq/crash-and-redelivery.md
+        - Prefetch & Fairness: messaging/rabbitmq/prefetch-and-fairness.md
+        - Durable Queues: messaging/rabbitmq/durable-queues.md
+        - Delivery Guarantees: messaging/rabbitmq/delivery-guarantees.md
+        - Retries & DLQ: messaging/rabbitmq/retries-and-dlq.md
+        - Message Ordering: messaging/rabbitmq/message-ordering.md
+        - Bottlenecks: messaging/rabbitmq/bottlenecks.md
+        - Scaling: messaging/rabbitmq/scaling.md
     - Event Broker:
       - Overview: event-broker/index.md
-      - Why Kafka Exists: event-broker/why-kafka-exists.md
-      - Writes & Page Cache: event-broker/writes-and-page-cache.md
-      - Topics: event-broker/topics.md
-      - Partitions: event-broker/partitions.md
-      - Brokers: event-broker/brokers.md
-      - Replication: event-broker/replication.md
-      - ISR: event-broker/isr.md
-      - Hot Partitions: event-broker/hot-partitions.md
-      - Partitioners: event-broker/partitioners.md
-      - Batching: event-broker/batching.md
-      - Compression: event-broker/compression.md
-      - Pull Model: event-broker/pull-model.md
-      - Offsets: event-broker/offsets.md
-      - Offset Storage: event-broker/offset-storage.md
-      - Before vs After: event-broker/before-vs-after.md
-      - Consumer Groups: event-broker/consumer-groups.md
-      - Rebalancing: event-broker/rebalancing.md
-      - Retention: event-broker/advanced-retention.md
-      - Exactly-Once Processing: event-broker/exactly-once-processing.md
-      - Consumer Lag: event-broker/consumer-lag.md
-      - Scaling Consumers: event-broker/scaling-consumers.md
-      - Load Shedding: event-broker/load-shedding.md
-      - Backpressure Signals: event-broker/backpressure-signals.md
-      - Fundamental Difference: event-broker/fundamental-difference.md
-      - After Read: event-broker/after-read.md
-      - Retention: event-broker/kafka-vs-sqs-vs-rabbitmq-retention.md
-      - Routing & Fanout: event-broker/routing-and-fanout.md
-      - Ordering & Throughput: event-broker/ordering-and-throughput.md
-      - When To Choose What: event-broker/when-to-choose-what.md
+      - Architecture:
+        - Why Kafka Exists: event-broker/architecture/why-kafka-exists.md
+        - Writes & Page Cache: event-broker/architecture/writes-and-page-cache.md
+        - Topics: event-broker/architecture/topics.md
+        - Partitions: event-broker/architecture/partitions.md
+        - Brokers: event-broker/architecture/brokers.md
+        - Replication: event-broker/architecture/replication.md
+        - ISR: event-broker/architecture/isr.md
+        - Hot Partitions: event-broker/architecture/hot-partitions.md
+      - Producer:
+        - Partitioners: event-broker/producer/partitioners.md
+        - Batching: event-broker/producer/batching.md
+        - Compression: event-broker/producer/compression.md
+      - Consumer:
+        - Pull Model: event-broker/consumer/pull-model.md
+        - Offsets: event-broker/consumer/offsets.md
+        - Offset Storage: event-broker/consumer/offset-storage.md
+        - Before vs After: event-broker/consumer/before-vs-after.md
+        - Consumer Groups: event-broker/consumer/consumer-groups.md
+        - Rebalancing: event-broker/consumer/rebalancing.md
+      - Advanced:
+        - Retention: event-broker/advanced/retention.md
+        - Exactly-Once Processing: event-broker/advanced/exactly-once-processing.md
+      - Backpressure:
+        - Consumer Lag: event-broker/backpressure/consumer-lag.md
+        - Scaling Consumers: event-broker/backpressure/scaling-consumers.md
+        - Load Shedding: event-broker/backpressure/load-shedding.md
+        - Backpressure Signals: event-broker/backpressure/backpressure-signals.md
+      - Kafka vs SQS vs RabbitMQ:
+        - Fundamental Difference: event-broker/kafka-vs-sqs-vs-rabbitmq/fundamental-difference.md
+        - After Read: event-broker/kafka-vs-sqs-vs-rabbitmq/after-read.md
+        - Retention: event-broker/kafka-vs-sqs-vs-rabbitmq/retention.md
+        - Routing & Fanout: event-broker/kafka-vs-sqs-vs-rabbitmq/routing-and-fanout.md
+        - Ordering & Throughput: event-broker/kafka-vs-sqs-vs-rabbitmq/ordering-and-throughput.md
+        - When To Choose What: event-broker/kafka-vs-sqs-vs-rabbitmq/when-to-choose-what.md
     - Event-Driven Patterns:
       - Overview: event-driven-patterns/index.md
-      - Event Sourcing: event-driven-patterns/event-sourcing.md
-      - What Is CQRS: event-driven-patterns/what-is-cqrs.md
-      - Read Models: event-driven-patterns/read-models.md
-      - Consistency: event-driven-patterns/consistency.md
-      - Dual Write: event-driven-patterns/dual-write.md
-      - Outbox Pattern: event-driven-patterns/outbox-pattern.md
-      - What Is CDC: event-driven-patterns/what-is-cdc.md
-      - Debezium: event-driven-patterns/debezium.md
-      - What Is Inbox Pattern: event-driven-patterns/what-is-inbox-pattern.md
-      - Inbox + Outbox Combined: event-driven-patterns/inbox-outbox-combined.md
-      - Full Flow: event-driven-patterns/inbox-outbox-full-flow.md
+      - Event Sourcing:
+        - Event Sourcing: event-driven-patterns/what-is-event-sourcing/event-sourcing.md
+      - CQRS:
+        - What Is CQRS: event-driven-patterns/cqrs/what-is-cqrs.md
+        - Read Models: event-driven-patterns/cqrs/read-models.md
+        - Consistency: event-driven-patterns/cqrs/consistency.md
+      - Outbox Pattern:
+        - Dual Write: event-driven-patterns/outbox-pattern/dual-write.md
+        - Outbox Pattern: event-driven-patterns/outbox-pattern/outbox-pattern.md
+      - CDC:
+        - What Is CDC: event-driven-patterns/cdc/what-is-cdc.md
+        - Debezium: event-driven-patterns/cdc/debezium.md
+      - Inbox + Outbox:
+        - What Is Inbox Pattern: event-driven-patterns/inbox-outbox-together/what-is-inbox-pattern.md
+        - Inbox + Outbox Combined: event-driven-patterns/inbox-outbox-together/inbox-outbox-combined.md
+        - Full Flow: event-driven-patterns/inbox-outbox-together/inbox-outbox-full-flow.md
     - Data Processing:
       - Overview: data-processing/index.md
-      - Why Stream Processing: data-processing/why-stream-processing.md
-      - Window Types: data-processing/window-types.md
-      - Watermarks: data-processing/watermarks.md
-      - Statefulness: data-processing/statefullnes.md
-      - Crash Recovery: data-processing/crash-recovery.md
-      - MapReduce:
-        - Why Batch Processing: data-processing/mapreduce-why-batch-processing.md
-        - MapReduce: data-processing/mapreduce.md
-        - Map Phase: data-processing/mapreduce-map-phase.md
-        - Shuffle Phase: data-processing/mapreduce-shuffle-phase.md
-        - Reduce Phase: data-processing/mapreduce-reduce-phase.md
-        - Combiner: data-processing/mapreduce-combiner.md
-        - Hot Keys: data-processing/mapreduce-hot-keys.md
-      - Spark:
-        - Why Spark: data-processing/spark-why-spark.md
-        - Spark Architecture: data-processing/spark-architecture.md
-        - DAG Optimization: data-processing/spark-dag-optimization.md
-      - Lambda Architecture: data-processing/lambda-architecture.md
-      - Kappa Architecture: data-processing/kappa-architecture.md
-      - Lambda vs Kappa: data-processing/lambda-vs-kappa.md
-      - Why Schema Evolution: data-processing/why-schema-evolution.md
-      - Schema Registry: data-processing/schema-registry.md
-      - Protobuf: data-processing/protobuf.md
-      - Avro Basics: data-processing/avro-basics.md
-      - Avro Flow: data-processing/avro-flow.md
+      - Stream Processing:
+        - Why Stream Processing: data-processing/stream-processing/why-stream-processing.md
+        - Window Types: data-processing/stream-processing/window-types.md
+        - Watermarks: data-processing/stream-processing/watermarks.md
+        - Statefulness: data-processing/stream-processing/statefullnes.md
+        - Crash Recovery: data-processing/stream-processing/crash-recovery.md
+      - Batch Processing:
+        - MapReduce:
+          - Why Batch Processing: data-processing/batch-processing/mapreduce/why-batch-processing.md
+          - MapReduce: data-processing/batch-processing/mapreduce/mapreduce.md
+          - Map Phase: data-processing/batch-processing/mapreduce/map-phase.md
+          - Shuffle Phase: data-processing/batch-processing/mapreduce/shuffle-phase.md
+          - Reduce Phase: data-processing/batch-processing/mapreduce/reduce-phase.md
+          - Combiner: data-processing/batch-processing/mapreduce/combiner.md
+          - Hot Keys: data-processing/batch-processing/mapreduce/hot-keys.md
+        - Spark:
+          - Why Spark: data-processing/batch-processing/spark/why-spark.md
+          - Spark Architecture: data-processing/batch-processing/spark/spark-architecture.md
+          - DAG Optimization: data-processing/batch-processing/spark/dag-optimization.md
+      - Lambda & Kappa:
+        - Lambda Architecture: data-processing/lambda-kappa/lambda-architecture.md
+        - Kappa Architecture: data-processing/lambda-kappa/kappa-architecture.md
+        - Lambda vs Kappa: data-processing/lambda-kappa/lambda-vs-kappa.md
+      - Schema Evolution:
+        - Why Schema Evolution: data-processing/schema-evolution/why-schema-evolution.md
+        - Schema Registry: data-processing/schema-evolution/schema-registry.md
+        - Protobuf: data-processing/schema-evolution/protobuf.md
+        - Avro Basics: data-processing/schema-evolution/avro-basics.md
+        - Avro Flow: data-processing/schema-evolution/avro-flow.md
 
   - "Estimation":
     - Overview: back-of-envelope/index.md

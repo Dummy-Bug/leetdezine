@@ -1,3 +1,7 @@
+---
+title: Conflict Resolution The Problem
+---
+
 ## The Problem — Concurrent Writes to the Same Key
 
 Two clients write to the same key at the exact same time:

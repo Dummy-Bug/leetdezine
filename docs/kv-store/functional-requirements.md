@@ -1,3 +1,7 @@
+---
+title: KV Store Functional Requirements
+---
+
 # Key-Value Store Functional Requirements
 
 ## What is a Distributed Key-Value Store?

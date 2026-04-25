@@ -1,3 +1,7 @@
+---
+title: Unique Id Generator System Overview
+---
+
 # Unique ID Generator System Overview
 
 Almost every system you build needs to assign IDs to things — users, orders, messages, transactions. The simplest approach is a database auto-increment (1, 2, 3...). That works fine on a single database, but the moment you have multiple database servers (which every large system does), two servers can both assign ID `1001` to different records at the same time. Collision.

@@ -1,3 +1,7 @@
+---
+title: Unique ID Generator Non-Functional Requirements
+---
+
 # Unique ID Generator Non-Functional Requirements
 
 ## Latency — critical

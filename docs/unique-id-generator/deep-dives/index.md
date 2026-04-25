@@ -1,5 +1,5 @@
 ---
-title: Deep Dives
+title: Unique ID Generator — Deep Dives
 hide:
   - navigation
   - toc

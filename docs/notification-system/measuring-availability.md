@@ -1,3 +1,7 @@
+---
+title: Notification System — Measuring Availability
+---
+
 # Measuring Availability — Notification System
 
 > [!info] Availability is not "are the workers running?" — it's "are notifications actually being delivered?"

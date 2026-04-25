@@ -1,3 +1,7 @@
+---
+description: "Why leaderless replication? No primary, no election — every node is equal and quorum math decides consistency. How DynamoDB-style systems handle writes without a coordinator."
+---
+
 ## Option 3 — Leaderless (Selected)
 
 ### How it works

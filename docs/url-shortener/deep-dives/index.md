@@ -1,5 +1,5 @@
 ---
-title: Deep Dives
+title: URL Shortener — Deep Dives
 hide:
   - navigation
   - toc

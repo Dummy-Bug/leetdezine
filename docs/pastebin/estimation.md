@@ -1,3 +1,7 @@
+---
+title: Pastebin Estimation
+---
+
 # Pastebin Scale Estimation
 
 ## Assumptions

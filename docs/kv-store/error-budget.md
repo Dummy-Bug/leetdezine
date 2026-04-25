@@ -1,3 +1,7 @@
+---
+title: KV Store — Error Budget
+---
+
 
 > [!info] Your SLO doesn't just define a target — it defines how much failure you're allowed
 > 99.99% availability sounds like "almost never fail." What it actually means is: you have a budget of 0.01% failures. How you spend that budget determines how aggressively you can evolve the system.

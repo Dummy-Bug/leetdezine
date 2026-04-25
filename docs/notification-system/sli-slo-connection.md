@@ -1,3 +1,7 @@
+---
+title: SLI-SLO Connection — Notification System
+---
+
 # SLI-SLO Connection — Notification System
 
 > [!info] SLO is the target. SLI is the measurement. You need both.

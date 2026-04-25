@@ -1,3 +1,7 @@
+---
+title: Pastebin Non-Functional Requirements
+---
+
 # Pastebin Non-Functional Requirements
 
 ## Availability — 99.9% uptime

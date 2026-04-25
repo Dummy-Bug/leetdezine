@@ -1,3 +1,7 @@
+---
+title: Rate Limiter Functional Requirements
+---
+
 # Rate Limiter Functional Requirements
 
 ## What is a Rate Limiter?

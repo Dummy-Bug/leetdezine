@@ -1,3 +1,7 @@
+---
+title: Rate Limiter Estimation
+---
+
 # Rate Limiter Scale Estimation
 
 ### Starting point — Daily Active Users

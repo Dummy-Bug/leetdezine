@@ -32,39 +32,39 @@ hide:
 
 <section class="cs-concepts">
   <div class="cs-concepts-grid">
-    <a href="01-Concepts/02-Fundamentals/" class="cs-concept-card cs-concept-c1">
+    <a href="fundamentals/" class="cs-concept-card cs-concept-c1">
       <div class="cs-concept-card-title">Fundamentals</div>
       <div class="cs-concept-card-desc">Availability, reliability, scalability, fault tolerance, durability, concurrency, security, state machines, NFRs.</div>
     </a>
-    <a href="01-Concepts/03-Caching/" class="cs-concept-card cs-concept-c2">
+    <a href="caching/" class="cs-concept-card cs-concept-c2">
       <div class="cs-concept-card-title">Caching</div>
       <div class="cs-concept-card-desc">Write strategies, eviction policies, cache invalidation, distributed caching, Redis, cache problems.</div>
     </a>
-    <a href="01-Concepts/04-Storage-and-Databases/" class="cs-concept-card cs-concept-c3">
+    <a href="storage-and-databases/" class="cs-concept-card cs-concept-c3">
       <div class="cs-concept-card-title">Storage & Databases</div>
       <div class="cs-concept-card-desc">ACID, SQL, indexing, CDC, pagination, connection pooling, read/write splitting.</div>
     </a>
-    <a href="01-Concepts/05-Database-Types/" class="cs-concept-card cs-concept-c4">
+    <a href="database-types/" class="cs-concept-card cs-concept-c4">
       <div class="cs-concept-card-title">Database Types</div>
       <div class="cs-concept-card-desc">Key-value, document, column-family, search engines, graph, blob storage, NewSQL, OLTP vs OLAP.</div>
     </a>
-    <a href="01-Concepts/06-Messaging/" class="cs-concept-card cs-concept-c5">
+    <a href="messaging/" class="cs-concept-card cs-concept-c5">
       <div class="cs-concept-card-title">Messaging</div>
       <div class="cs-concept-card-desc">Message queues, pub/sub, delivery guarantees, dead letter queues, SQS, RabbitMQ.</div>
     </a>
-    <a href="01-Concepts/07-Event-Broker/" class="cs-concept-card cs-concept-c6">
+    <a href="event-broker/" class="cs-concept-card cs-concept-c6">
       <div class="cs-concept-card-title">Event Broker</div>
       <div class="cs-concept-card-desc">Kafka architecture, producers, consumers, offsets, backpressure, Kafka vs SQS vs RabbitMQ.</div>
     </a>
-    <a href="01-Concepts/08-Event-Driven-Patterns/" class="cs-concept-card cs-concept-c7">
+    <a href="event-driven-patterns/" class="cs-concept-card cs-concept-c7">
       <div class="cs-concept-card-title">Event-Driven Patterns</div>
       <div class="cs-concept-card-desc">Event sourcing, CQRS, outbox pattern, CDC, inbox + outbox combined.</div>
     </a>
-    <a href="01-Concepts/09-Data-Processing/" class="cs-concept-card cs-concept-c8">
+    <a href="data-processing/" class="cs-concept-card cs-concept-c8">
       <div class="cs-concept-card-title">Data Processing</div>
       <div class="cs-concept-card-desc">Stream processing, batch processing, MapReduce, Spark, Lambda & Kappa architectures, schema evolution.</div>
     </a>
-    <a href="01-Concepts/10-Distributed-Systems/" class="cs-concept-card cs-concept-c9">
+    <a href="distributed-systems/" class="cs-concept-card cs-concept-c9">
       <div class="cs-concept-card-title">Distributed Systems</div>
       <div class="cs-concept-card-desc">CAP theorem, PACELC, consistency models, replication, sharding, consensus, CRDTs, failure detection.</div>
     </a>
@@ -104,7 +104,7 @@ hide:
 
   <div class="cs-journey-rail" aria-hidden="true"></div>
 
-  <a href="03-Case-Studies/" class="cs-journey-step cs-step-lv1">
+  <a href="case-studies/" class="cs-journey-step cs-step-lv1">
     <div class="cs-step-marker"><span class="cs-step-num">01</span></div>
     <div class="cs-step-body">
       <div class="cs-step-head">
@@ -127,7 +127,7 @@ hide:
     <div class="cs-step-cta">Start <span>→</span></div>
   </a>
 
-  <a href="03-Case-Studies/" class="cs-journey-step cs-step-lv2">
+  <a href="case-studies/" class="cs-journey-step cs-step-lv2">
     <div class="cs-step-marker"><span class="cs-step-num">02</span></div>
     <div class="cs-step-body">
       <div class="cs-step-head">
@@ -150,7 +150,7 @@ hide:
     <div class="cs-step-cta">Open <span>→</span></div>
   </a>
 
-  <a href="03-Case-Studies/" class="cs-journey-step cs-step-lv3">
+  <a href="case-studies/" class="cs-journey-step cs-step-lv3">
     <div class="cs-step-marker"><span class="cs-step-num">03</span></div>
     <div class="cs-step-body">
       <div class="cs-step-head">
@@ -172,7 +172,7 @@ hide:
     <div class="cs-step-cta">Open <span>→</span></div>
   </a>
 
-  <a href="03-Case-Studies/" class="cs-journey-step cs-step-lv4">
+  <a href="case-studies/" class="cs-journey-step cs-step-lv4">
     <div class="cs-step-marker"><span class="cs-step-num">04</span></div>
     <div class="cs-step-body">
       <div class="cs-step-head">
@@ -195,7 +195,7 @@ hide:
     <div class="cs-step-cta">Open <span>→</span></div>
   </a>
 
-  <a href="03-Case-Studies/" class="cs-journey-step cs-step-lv5">
+  <a href="case-studies/" class="cs-journey-step cs-step-lv5">
     <div class="cs-step-marker"><span class="cs-step-num">05</span></div>
     <div class="cs-step-body">
       <div class="cs-step-head">

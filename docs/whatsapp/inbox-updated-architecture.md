@@ -1,3 +1,7 @@
+---
+title: Inbox Updated Architecture
+---
+
 
 > [!info] Architecture after Inbox deep dive
 > A conversations table is added with denormalized preview data. A Redis sorted set per user maintains inbox sort order. Unread count is maintained atomically on the conversations row.

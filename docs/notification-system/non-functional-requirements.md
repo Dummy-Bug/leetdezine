@@ -1,3 +1,7 @@
+---
+title: Notification System Non-Functional Requirements
+---
+
 # Notification System Non-Functional Requirements
 
 ## Availability — The Most Critical NFR

@@ -1,3 +1,7 @@
+---
+title: Message Status Updated Architecture
+---
+
 
 > [!info] Architecture after Message Status deep dive
 > A message_status table is added for tick tracking. Read receipt events flow from Bob's client back to Alice. Privacy settings are enforced at client (read receipts) and server (last seen).

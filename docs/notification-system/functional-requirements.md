@@ -1,3 +1,7 @@
+---
+title: Notification System Functional Requirements
+---
+
 # Notification System Functional Requirements
 
 ## Who is the Client?

@@ -1,3 +1,7 @@
+---
+title: Pastebin — Measuring Availability
+---
+
 
 > [!info] Availability is not "is the server running?" — it is "did the user's request succeed?" A viewData instance can be alive and returning 503s for every read. That is not available.
 

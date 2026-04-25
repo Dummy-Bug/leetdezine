@@ -1,3 +1,7 @@
+---
+title: Pastebin — Retry Strategy
+---
+
 
 > [!info] The retry strategy determines how hard the system tries to recover from a failed S3 upload before declaring the paste permanently broken.
 

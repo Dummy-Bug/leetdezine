@@ -1,3 +1,7 @@
+---
+title: Fault Isolation Circuit Breaker
+---
+
 # Fault Isolation — Genre Service Failure
 
 ## The Scenario

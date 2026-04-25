@@ -1,3 +1,7 @@
+---
+title: URL Shortener — Sli Slo Connection
+---
+
 
 > [!info] SLO is the target. SLI is the measurement. You need both.
 > Writing "p99 redirect latency < 50ms" in your NFR is easy. Knowing whether you're actually hitting it in production requires something else entirely.

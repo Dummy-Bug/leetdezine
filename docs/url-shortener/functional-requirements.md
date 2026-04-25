@@ -1,3 +1,7 @@
+---
+title: Url Shortener Functional Requirements
+---
+
 # URL Shortener Functional Requirements
 
 > [!info] The system

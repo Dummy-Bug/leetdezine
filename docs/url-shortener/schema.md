@@ -1,3 +1,7 @@
+---
+title: Url Shortener Schema
+---
+
 
 > [!info] Schema design follows access patterns
 > The schema is not designed by listing columns you think you need. It is designed by looking at the queries the system runs — then building the table and indexes around those queries.

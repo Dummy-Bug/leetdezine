@@ -1,3 +1,7 @@
+---
+title: Pastebin Api Design
+---
+
 # Pastebin API Design
 
 ## Create a Paste

@@ -1,3 +1,7 @@
+---
+title: Real Time Comms The Problem
+---
+
 
 > [!info] The core problem
 > HTTP was designed for documents — a browser asks for a page, a server sends it back. That request-response model breaks the moment you need the server to push something to the client without the client asking first. Chat, live scores, stock prices, notifications — all of these need the server to initiate. HTTP, by design, cannot do that.

@@ -1,3 +1,7 @@
+---
+title: Replication Anti Entropy
+---
+
 ## The Problem — What Hinted Handoff and Read Repair Can't Catch
 
 We have two repair mechanisms so far:

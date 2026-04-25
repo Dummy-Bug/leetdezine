@@ -1,3 +1,7 @@
+---
+title: Message Ordering Updated Architecture
+---
+
 
 > [!info] Architecture after Message Ordering deep dive
 > A dedicated sequence service is added. The messages schema gains a seq_number column. Display time is separated from server time.

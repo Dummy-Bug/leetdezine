@@ -1,3 +1,7 @@
+---
+title: Unique Id Generator — Alerting
+---
+
 # Alerting
 
 ## Alert tiers

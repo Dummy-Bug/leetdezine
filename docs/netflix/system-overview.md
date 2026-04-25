@@ -1,3 +1,7 @@
+---
+title: Netflix System Overview
+---
+
 # Netflix System Overview
 
 Netflix is a video streaming platform — but unlike YouTube, users never upload anything. Netflix either licenses content from studios like Warner Bros, Disney, and Sony, or produces its own originals like Stranger Things and Squid Game. In both cases, the production company delivers raw video files directly to Netflix. Netflix then processes, stores, and streams that content to its subscribers.

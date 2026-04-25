@@ -1903,14 +1903,14 @@ body:has(.cs-hero) .md-header__title .md-ellipsis {
 }
 
 /* Nav group separators */
-.md-tabs__item:has(> .md-tabs__link[href*="02-Back-of-Envelope"]),
-.md-tabs__item:has(> .md-tabs__link[href*="01-Foundation"]) {
+.md-tabs__item:has(> .md-tabs__link[href*="/back-of-envelope/"]),
+.md-tabs__item:has(> .md-tabs__link[href*="/foundation/"]) {
   position: relative;
   margin-left: 1rem;
 }
 
-.md-tabs__item:has(> .md-tabs__link[href*="02-Back-of-Envelope"])::before,
-.md-tabs__item:has(> .md-tabs__link[href*="01-Foundation"])::before {
+.md-tabs__item:has(> .md-tabs__link[href*="/back-of-envelope/"])::before,
+.md-tabs__item:has(> .md-tabs__link[href*="/foundation/"])::before {
   content: "";
   position: absolute;
   left: -0.6rem;
@@ -2679,45 +2679,45 @@ body:has(.cs-hero) .md-header__title .md-ellipsis {
    ────────────────────────────────────────────────────────── */
 
 /* Foundation – green */
-body:has(.md-tabs__link--active[href*="01-Foundation"])
+body:has(.md-tabs__link--active[href*="/foundation/"])
   .md-sidebar--primary .md-nav__item--nested > .md-nav__link          { color: #16a34a; }
-body:has(.md-tabs__link--active[href*="01-Foundation"])
+body:has(.md-tabs__link--active[href*="/foundation/"])
   .md-sidebar--primary .md-nav__link--active                          { color: #16a34a !important; background: #dcfce7 !important; }
 
 /* Ascent – blue */
-body:has(.md-tabs__link--active[href*="02-Ascent"])
+body:has(.md-tabs__link--active[href*="/ascent/"])
   .md-sidebar--primary .md-nav__item--nested > .md-nav__link          { color: #2563eb; }
-body:has(.md-tabs__link--active[href*="02-Ascent"])
+body:has(.md-tabs__link--active[href*="/ascent/"])
   .md-sidebar--primary .md-nav__link--active                          { color: #2563eb !important; background: #dbeafe !important; }
 
 /* Expedition – amber */
-body:has(.md-tabs__link--active[href*="03-Expedition"])
+body:has(.md-tabs__link--active[href*="/expedition/"])
   .md-sidebar--primary .md-nav__item--nested > .md-nav__link          { color: #d97706; }
-body:has(.md-tabs__link--active[href*="03-Expedition"])
+body:has(.md-tabs__link--active[href*="/expedition/"])
   .md-sidebar--primary .md-nav__link--active                          { color: #d97706 !important; background: #fef3c7 !important; }
 
 /* Summit – orange */
-body:has(.md-tabs__link--active[href*="04-Summit"])
+body:has(.md-tabs__link--active[href*="/summit/"])
   .md-sidebar--primary .md-nav__item--nested > .md-nav__link          { color: #ea580c; }
-body:has(.md-tabs__link--active[href*="04-Summit"])
+body:has(.md-tabs__link--active[href*="/summit/"])
   .md-sidebar--primary .md-nav__link--active                          { color: #ea580c !important; background: #ffedd5 !important; }
 
 /* Battleground – red */
-body:has(.md-tabs__link--active[href*="05-Battleground"])
+body:has(.md-tabs__link--active[href*="/battleground/"])
   .md-sidebar--primary .md-nav__item--nested > .md-nav__link          { color: #dc2626; }
-body:has(.md-tabs__link--active[href*="05-Battleground"])
+body:has(.md-tabs__link--active[href*="/battleground/"])
   .md-sidebar--primary .md-nav__link--active                          { color: #dc2626 !important; background: #fee2e2 !important; }
 
 /* Dark mode overrides */
-body[data-md-color-scheme="slate"]:has(.md-tabs__link--active[href*="01-Foundation"])
+body[data-md-color-scheme="slate"]:has(.md-tabs__link--active[href*="/foundation/"])
   .md-sidebar--primary .md-nav__link--active { color: #4ade80 !important; background: rgba(22,163,74,0.15)  !important; }
-body[data-md-color-scheme="slate"]:has(.md-tabs__link--active[href*="02-Ascent"])
+body[data-md-color-scheme="slate"]:has(.md-tabs__link--active[href*="/ascent/"])
   .md-sidebar--primary .md-nav__link--active { color: #60a5fa !important; background: rgba(37,99,235,0.15)  !important; }
-body[data-md-color-scheme="slate"]:has(.md-tabs__link--active[href*="03-Expedition"])
+body[data-md-color-scheme="slate"]:has(.md-tabs__link--active[href*="/expedition/"])
   .md-sidebar--primary .md-nav__link--active { color: #fbbf24 !important; background: rgba(217,119,6,0.15)  !important; }
-body[data-md-color-scheme="slate"]:has(.md-tabs__link--active[href*="04-Summit"])
+body[data-md-color-scheme="slate"]:has(.md-tabs__link--active[href*="/summit/"])
   .md-sidebar--primary .md-nav__link--active { color: #fb923c !important; background: rgba(234,88,12,0.15)  !important; }
-body[data-md-color-scheme="slate"]:has(.md-tabs__link--active[href*="05-Battleground"])
+body[data-md-color-scheme="slate"]:has(.md-tabs__link--active[href*="/battleground/"])
   .md-sidebar--primary .md-nav__link--active { color: #f87171 !important; background: rgba(220,38,38,0.15)  !important; }
 
 /* ── Start Here: The Climb ──────────────────────────────── */

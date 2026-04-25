@@ -1,5 +1,5 @@
 ---
-title: Deep Dives
+title: Rate Limiter — Deep Dives
 hide:
   - navigation
   - toc

@@ -1,3 +1,7 @@
+---
+title: Notification System Schema
+---
+
 
 ## Partition Key and Clustering Key
 

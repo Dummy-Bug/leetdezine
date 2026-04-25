@@ -1,3 +1,7 @@
+---
+title: Whatsapp — Measuring Latency
+---
+
 
 > [!info] You cannot store every latency measurement individually. Histograms let you keep the shape of the distribution while throwing away the raw numbers.
 

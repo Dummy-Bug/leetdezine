@@ -1,3 +1,7 @@
+---
+title: Netflix Non-Functional Requirements
+---
+
 # Netflix Non-Functional Requirements
 
 ## Availability over Consistency

@@ -1,3 +1,7 @@
+---
+title: Whatsapp — Measuring Availability
+---
+
 
 > [!info] Availability is not "is the server running?" — it is "did the message get delivered?" A connection server can be alive and dropping every message it handles. That is not available.
 

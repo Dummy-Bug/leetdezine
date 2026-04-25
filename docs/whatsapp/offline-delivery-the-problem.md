@@ -1,3 +1,7 @@
+---
+title: Offline Delivery The Problem
+---
+
 
 > [!info] Delivery requires a live connection — but recipients aren't always connected
 > Every message delivery in the base architecture assumes Bob has an active WebSocket connection. The moment Bob goes offline, that assumption breaks.

@@ -1,3 +1,7 @@
+---
+title: Url Shortener Api Design
+---
+
 # URL Shortener API Design
 
 > [!info] The goal of API design

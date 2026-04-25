@@ -1,3 +1,7 @@
+---
+title: WhatsApp Non-Functional Requirements
+---
+
 # WhatsApp Non-Functional Requirements
 
 > [!info] What NFRs actually do

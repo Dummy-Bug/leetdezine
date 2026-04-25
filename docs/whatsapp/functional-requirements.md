@@ -1,3 +1,7 @@
+---
+title: Whatsapp Functional Requirements
+---
+
 # WhatsApp Functional Requirements
 
 > [!info] The system

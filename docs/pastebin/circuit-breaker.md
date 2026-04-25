@@ -1,3 +1,7 @@
+---
+title: Pastebin — Circuit Breaker
+---
+
 
 > [!info] A circuit breaker stops a failing dependency from dragging your service down with it. Instead of waiting for a timeout that never comes, it fails fast and returns a clean error.
 

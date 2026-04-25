@@ -1,3 +1,7 @@
+---
+title: Unique Id Generator — Measuring Availability
+---
+
 # Measuring Availability
 
 ## What counts as success

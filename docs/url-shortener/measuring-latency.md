@@ -1,3 +1,7 @@
+---
+title: Url Shortener — Measuring Latency
+---
+
 
 > [!info] You cannot store 86 billion latency measurements. You don't need to.
 > 1M requests/sec × 86,400 seconds/day = 86.4 trillion data points per day. The trick is to throw away the raw numbers and keep only the shape of the distribution.

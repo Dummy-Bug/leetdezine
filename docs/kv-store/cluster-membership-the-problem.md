@@ -1,3 +1,7 @@
+---
+title: Cluster Membership The Problem
+---
+
 ## The Problem — How Do 1,200 Nodes Know About Each Other?
 
 A coordinator node receives `put("user:123", "Alice")`. It hashes the key, walks the ring, and finds that Node B, Node C, and Node D own this range. But how does the coordinator **know** that? Something has to maintain a mapping of which nodes exist in the cluster and which key ranges they own.

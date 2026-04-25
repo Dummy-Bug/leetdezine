@@ -1,3 +1,7 @@
+---
+title: Rate Limiter — Measuring Availability
+---
+
 
 > [!info] Availability for a rate limiter has a subtlety — fail open means the system is "available" even when it's not actually rate limiting. You need to measure both dimensions.
 

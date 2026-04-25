@@ -1,3 +1,7 @@
+---
+title: Pastebin — Sli Slo Connection
+---
+
 
 > [!info] SLO is the target. SLI is the measurement. Writing a number in the NFR is easy — knowing whether you're actually hitting it in production requires instrumentation.
 

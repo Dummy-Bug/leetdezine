@@ -1,3 +1,7 @@
+---
+title: WhatsApp — Caching Updated Architecture
+---
+
 
 > [!info] Architecture after Caching deep dive
 > A profile cache is added as a dedicated Redis node. The app server follows cache-aside for all profile reads. Cache invalidation is synchronous on profile update.

@@ -1,3 +1,7 @@
+---
+title: Url Shortener — Consistent Hashing
+---
+
 
 > [!info] The routing problem
 > Once you decide to shard by short_code, you need a way to map any short code to a specific shard. The naive approach — modulo hashing — works but breaks badly when shards are added or removed. Consistent hashing solves this.

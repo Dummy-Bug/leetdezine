@@ -1,3 +1,7 @@
+---
+title: Pastebin — Db Choice
+---
+
 
 > [!info] Database choice follows from access patterns — not personal preference, not familiarity.
 > The right question is: what queries does this system run, and which DB handles them best?

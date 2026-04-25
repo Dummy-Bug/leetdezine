@@ -1,3 +1,7 @@
+---
+title: Resume Playback Updated Architecture
+---
+
 # Resume Playback — Flow Architecture
 
 ## The Two Paths

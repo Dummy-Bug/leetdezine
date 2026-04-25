@@ -1,3 +1,7 @@
+---
+title: KV Store Estimation
+---
+
 # Key-Value Store Scale Estimation
 
 ## Assumptions

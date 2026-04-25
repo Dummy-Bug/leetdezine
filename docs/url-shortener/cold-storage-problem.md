@@ -1,3 +1,7 @@
+---
+title: Cold Storage Problem
+---
+
 
 > [!info] Not all URLs are equal — and treating them the same wastes a lot of money
 > After 10 years, you have 50 billion URLs taking up 250TB of storage. But the vast majority of that data is never accessed. Keeping it all on expensive SSD is the wrong call.

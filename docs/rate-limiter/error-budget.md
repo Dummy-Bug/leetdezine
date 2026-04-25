@@ -1,3 +1,7 @@
+---
+title: Rate Limiter — Error Budget
+---
+
 
 > [!info] The error budget is the acceptable amount of failure. It exists to make a trade-off explicit: reliability work vs feature work. When the budget is spent, reliability wins.
 

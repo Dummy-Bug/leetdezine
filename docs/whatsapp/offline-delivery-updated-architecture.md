@@ -1,3 +1,7 @@
+---
+title: Offline Delivery Updated Architecture
+---
+
 
 > [!info] Architecture after Offline Delivery deep dive
 > A pending_deliveries table is added. Push notification service (APNs/FCM) is wired in. The delivery flow splits into online and offline paths.

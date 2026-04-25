@@ -1,3 +1,7 @@
+---
+title: Rate Limiter Non-Functional Requirements
+---
+
 # Rate Limiter Non-Functional Requirements
 
 ### Availability — fail open, never block all traffic

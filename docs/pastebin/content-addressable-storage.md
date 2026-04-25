@@ -1,3 +1,7 @@
+---
+title: Pastebin — Content-Addressable Storage
+---
+
 
 > [!info] Content-addressable storage means the content itself determines its address — not a random ID you assign to it.
 > Same content = same address. Always. Everywhere.

@@ -1,3 +1,7 @@
+---
+title: Netflix — Measuring Availability
+---
+
 # Observability — Measuring Availability
 
 > [!info] Availability is not "is the server running?" — it is "did the user's stream start?" A BFF can be alive and returning 503s on every home feed request. That is not available.

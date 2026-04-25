@@ -1,3 +1,7 @@
+---
+title: Notification System — Redis Down
+---
+
 # Redis Down — Fault Isolation
 
 ## How It Propagates

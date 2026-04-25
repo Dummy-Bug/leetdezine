@@ -1,3 +1,7 @@
+---
+title: Api Design Api Design
+---
+
 # Key-Value Store API Design
 
 ## The Challenge — Bytes Over JSON

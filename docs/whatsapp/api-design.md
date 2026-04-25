@@ -1,3 +1,7 @@
+---
+title: Whatsapp Api Design
+---
+
 # WhatsApp API Design
 
 > [!info] Two types of API in a chat system

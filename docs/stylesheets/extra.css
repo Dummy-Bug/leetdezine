@@ -514,9 +514,9 @@ body[data-md-color-scheme="slate"]::before {
 
 .md-nav__link {
   color: var(--fg-secondary);
-  font-size: 0.82rem;
+  font-size: 0.75rem;
   font-weight: 450;
-  padding: 0.48rem 0.75rem 0.48rem 1rem;
+  padding: 0.42rem 0.75rem 0.42rem 1rem;
   border-radius: 6px;
   margin: 1px 0;
   position: relative;
@@ -1737,41 +1737,110 @@ a.cs-level-link:hover .cs-level-count::after {
   color: var(--brand);
 }
 
-/* Pagination footer */
+/* =============================================================
+   PAGINATION FOOTER — Large editorial prev/next cards
+   Inlined into the article column width via Material's grid.
+   ============================================================= */
 .md-footer {
-  background-color: var(--surface-0);
+  background-color: transparent;
   color: var(--fg-primary);
+  margin-top: 0;
 }
 
-.md-footer__inner {
-  padding: 1rem 0.8rem;
+.md-footer__inner.md-grid {
+  padding: 1.5rem 1.2rem 2.5rem;
+  gap: 1rem;
   border-top: 1px solid var(--border-subtle);
+}
+
+/* Wide screens — left sidebar (12.1rem) and right TOC (12.1rem) both visible.
+   Footer aligns to article column only, leaving the TOC gutter empty. */
+@media screen and (min-width: 76.25em) {
+  .md-footer__inner.md-grid {
+    padding-left: calc(12.1rem + 1.2rem);
+    padding-right: calc(12.1rem + 1.2rem);
+  }
+}
+
+/* Tablet — only left sidebar (12.1rem) visible. */
+@media screen and (min-width: 60em) and (max-width: 76.234375em) {
+  .md-footer__inner.md-grid {
+    padding-left: calc(12.1rem + 1.2rem);
+  }
 }
 
 .md-footer__link {
   opacity: 1;
-  padding: 1rem 0.4rem;
-  transition: background-color 0.15s ease;
+  padding: 0.85rem 1.1rem;
+  background-color: var(--surface-1);
+  border: 1px solid var(--border-subtle);
   border-radius: 8px;
+  transition: border-color 0.18s ease, background-color 0.18s ease;
+  flex: 1;
+  min-height: 0;
+  align-items: flex-start;
 }
 
 .md-footer__link:hover {
-  background-color: var(--surface-1);
+  background-color: var(--surface-2);
+  border-color: var(--border-default);
   opacity: 1;
+}
+
+.md-footer__link--prev {
+  text-align: left;
+  flex-direction: column;
+}
+
+.md-footer__link--next {
+  text-align: right;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+/* Hide the chevron icons — labels carry the direction */
+.md-footer__link svg {
+  display: none;
 }
 
 .md-footer__title {
-  color: var(--fg-primary);
-  font-weight: 600;
+  margin: 0;
+  flex-grow: 0;
+  width: 100%;
 }
 
 .md-footer__direction {
-  color: var(--fg-tertiary);
-  font-size: 0.7rem;
-  letter-spacing: 0.04em;
+  color: var(--fg-muted);
+  font-size: 0.6rem;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
   font-weight: 600;
   opacity: 1;
+  margin-bottom: 0.2rem;
+  display: block;
+}
+
+.md-footer__title .md-ellipsis {
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: var(--fg-primary);
+  line-height: 1.25;
+  white-space: normal;
+  letter-spacing: -0.01em;
+}
+
+@media screen and (max-width: 44.9375em) {
+  .md-footer__inner {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .md-footer__link {
+    width: 100%;
+  }
+  .md-footer__title .md-ellipsis {
+    font-size: 1rem;
+  }
 }
 
 .md-footer-meta {
@@ -2651,6 +2720,22 @@ body:has(.cs-hero) .md-header__title .md-ellipsis {
   display: none !important;
 }
 
+/* Override: at chapter depth (Concepts > Chapter > Sub-section), keep
+   all sub-section siblings visible. Sub-sections are visual labels for
+   grouping a chapter's pages — they shouldn't compete with each other
+   the way top-level sections do. Selector explicitly walks two levels
+   of nested-active to scope this to chapter inner lists only. */
+.md-sidebar--primary
+  .md-nav__item--nested.md-nav__item--active
+  > nav
+  > .md-nav__list
+  > .md-nav__item--nested.md-nav__item--active
+  > nav
+  > .md-nav__list
+  > .md-nav__item--nested:not(.md-nav__item--active) {
+  display: revert !important;
+}
+
 /* ─── Hide intermediate ancestor labels ─────────────────────
    When deep inside a section, hide ancestor headers (URL
    Shortener, Deep Dives…) — only the current section and its
@@ -2937,4 +3022,158 @@ body[data-md-color-scheme="slate"]:has(.md-tabs__link--active[href*="/battlegrou
   font-weight: 600;
   color: var(--fg-muted);
   letter-spacing: 0.01em;
+}
+
+/* =============================================================
+   Kill Material's default shadow/background on active nav items.
+   Material applies `box-shadow: 0 0 .4rem .4rem var(--md-default-bg-color)`
+   to .md-nav__item--active > .md-nav__link, which creates a glowing
+   "card" effect that follows whichever sub-section the user is on.
+   We want a flat editorial sidebar, so override across the board.
+   ============================================================= */
+.md-sidebar--primary .md-nav__item--active > .md-nav__link {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+/* The active LEAF item still gets the brand-bg highlight from our
+   .md-nav__link--active rule above — that's intentional and stays. */
+
+/* =============================================================
+   SUB-SECTION LABELS within an active chapter
+   Renders nested sub-groups (e.g. FOUNDATIONS, EVICTION & TTL)
+   as static uppercase labels — flush with sidebar, no card/badge.
+   ============================================================= */
+.md-sidebar--primary
+  .md-nav__item--nested
+  > nav
+  > .md-nav__list
+  > .md-nav__item--nested
+  > .md-nav__link {
+  color: var(--fg-muted) !important;
+  font-family: "Manrope", system-ui, sans-serif !important;
+  font-weight: 700 !important;
+  font-size: 0.62rem !important;
+  letter-spacing: 0.14em !important;
+  text-transform: uppercase !important;
+  padding: 1.1rem 0.4rem 0.35rem !important;
+  margin: 0 !important;
+  pointer-events: none;
+  cursor: default;
+  border: none !important;
+  background: transparent !important;
+  background-color: transparent !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  display: block;
+}
+
+.md-sidebar--primary
+  .md-nav__item--nested
+  > nav
+  > .md-nav__list
+  > .md-nav__item--nested
+  > .md-nav__link .md-nav__icon {
+  display: none !important;
+}
+
+.md-sidebar--primary
+  .md-nav__item--nested
+  > nav
+  > .md-nav__list
+  > .md-nav__item--nested
+  > .md-nav__link:hover {
+  background: transparent !important;
+  border: none !important;
+}
+
+/* First sub-section flush with chapter title */
+.md-sidebar--primary
+  .md-nav__item--nested
+  > nav
+  > .md-nav__list
+  > .md-nav__item--nested:first-child
+  > .md-nav__link {
+  padding-top: 0.4rem !important;
+}
+
+/* Vertical guide line down the active chapter only (depth 2 nesting),
+   not at higher levels. Walks Concepts → Chapter → Chapter's inner list
+   to scope this to the chapter content area. */
+.md-sidebar--primary
+  .md-nav__item--nested.md-nav__item--active
+  > nav
+  > .md-nav__list
+  > .md-nav__item--nested.md-nav__item--active
+  > nav
+  > .md-nav__list {
+  border-left: 1px solid var(--border-default);
+  padding-left: 0 !important;
+  margin-left: 0.6rem;
+}
+
+/* Force every sub-section's inner nav and list inside the active
+   chapter to have ZERO padding/margin — Material applies different
+   default padding to active vs pruned/inactive sub-sections, which
+   makes their children appear at different indents. Reset both. */
+.md-sidebar--primary
+  .md-nav__item--nested.md-nav__item--active
+  > nav
+  > .md-nav__list
+  > .md-nav__item--nested.md-nav__item--active
+  > nav
+  > .md-nav__list
+  > .md-nav__item--nested
+  .md-nav,
+.md-sidebar--primary
+  .md-nav__item--nested.md-nav__item--active
+  > nav
+  > .md-nav__list
+  > .md-nav__item--nested.md-nav__item--active
+  > nav
+  > .md-nav__list
+  > .md-nav__item--nested
+  .md-nav__list {
+  padding: 0 !important;
+  margin: 0 !important;
+  max-height: none !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+/* Leaf items in EVERY sub-section under the active chapter — same
+   exact padding so active and inactive sub-sections align. */
+.md-sidebar--primary
+  .md-nav__item--nested.md-nav__item--active
+  > nav
+  > .md-nav__list
+  > .md-nav__item--nested.md-nav__item--active
+  > nav
+  > .md-nav__list
+  > .md-nav__item--nested
+  > nav
+  > .md-nav__list
+  > .md-nav__item
+  > .md-nav__link {
+  margin-left: -1px !important;
+  border-left: 2px solid transparent;
+  padding-left: 0.85rem !important;
+  padding-right: 0.75rem;
+}
+
+/* Active leaf — override the global .md-nav__link--active padding rule
+   so it lines up with its inactive siblings in the same sub-section. */
+.md-sidebar--primary
+  .md-nav__item--nested.md-nav__item--active
+  > nav
+  > .md-nav__list
+  > .md-nav__item--nested.md-nav__item--active
+  > nav
+  > .md-nav__list
+  > .md-nav__item--nested
+  > nav
+  > .md-nav__list
+  > .md-nav__item
+  > .md-nav__link--active {
+  padding-left: 0.85rem !important;
 }

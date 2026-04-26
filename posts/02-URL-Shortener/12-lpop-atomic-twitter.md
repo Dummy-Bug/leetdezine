@@ -24,4 +24,4 @@ With a DB, you'd need SELECT FOR UPDATE SKIP LOCKED. Row-level locking on every 
 
 One model. Orders of magnitude simpler.
 
-https://leetdezine.com/03-Case-Studies/01-Foundation/02-URL-Shortener/02-Deep-Dives/?utm_source=twitter
+https://leetdezine.com/url-shortener/?utm_source=twitter

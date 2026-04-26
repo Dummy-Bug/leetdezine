@@ -1,7 +1,7 @@
 # Fixed Window Counter Rate Limiting: How It Works, the Boundary Bug, and the Thundering Herd Problem
 
 ## Platform: DEV.to
-## Canonical URL: https://leetdezine.com/03-Case-Studies/03-Expedition/01-Rate-Limiter/?utm_source=devto
+## Canonical URL: https://leetdezine.com/rate-limiter/?utm_source=devto
 ## Tags: systemdesign, distributedsystems, backend, programming
 
 ---
@@ -112,4 +112,4 @@ Fixed Window Counter for general access. Sliding Window Counter (or Sliding Wind
 
 The mistake isn't using Fixed Window Counter — it's using it everywhere without thinking about what the boundary bug costs you on specific endpoints.
 
-Full Rate Limiter case study → https://leetdezine.com/03-Case-Studies/03-Expedition/01-Rate-Limiter/?utm_source=devto
+Full Rate Limiter case study → https://leetdezine.com/rate-limiter/?utm_source=devto

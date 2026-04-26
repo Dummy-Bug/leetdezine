@@ -16,4 +16,4 @@ Cache the hot URL inside the app server's own memory. Request never leaves the m
 
 Works because short URL mappings are immutable — nothing to invalidate.
 
-Full breakdown → https://leetdezine.com/03-Case-Studies/01-Foundation/02-URL-Shortener/?utm_source=twitter
+Full breakdown → https://leetdezine.com/url-shortener/?utm_source=twitter

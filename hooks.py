@@ -252,13 +252,13 @@ def on_page_context(context, page, config=None, nav=None, **kwargs):
     cumulative = ""
     for i, segment in enumerate(segments):
         cumulative += segment + "/"
-        item = {"@type": "ListItem", "position": i + 2}
-        if cumulative in page_titles:
-            item["name"] = page_titles[cumulative]
-            item["item"] = site_url + "/" + cumulative
-        else:
-            item["name"] = _slug_to_label(segment)
-        items.append(item)
+        name = page_titles.get(cumulative) or _slug_to_label(segment)
+        items.append({
+            "@type": "ListItem",
+            "position": i + 2,
+            "name": name,
+            "item": site_url + "/" + cumulative,
+        })
 
     schema = {
         "@context": "https://schema.org",

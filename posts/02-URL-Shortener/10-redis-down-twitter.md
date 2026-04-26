@@ -25,4 +25,4 @@ API GW throttles reads → returns 503 to some percentage → DB survives.
 
 Partial availability beats total cascade.
 
-https://leetdezine.com/03-Case-Studies/01-Foundation/02-URL-Shortener/02-Deep-Dives/?utm_source=twitter
+https://leetdezine.com/url-shortener/redis-down/?utm_source=twitter

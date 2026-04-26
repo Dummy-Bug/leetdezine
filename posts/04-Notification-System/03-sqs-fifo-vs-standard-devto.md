@@ -1,7 +1,7 @@
 # SQS FIFO vs Standard Queue: Differences, Tradeoffs, and When to Use Each
 
 ## Platform: DEV.to
-## Canonical URL: https://leetdezine.com/03-Case-Studies/02-Ascent/01-Notification-System/?utm_source=devto
+## Canonical URL: https://leetdezine.com/notification-system/?utm_source=devto
 ## Tags: systemdesign, distributedsystems, backend, aws
 
 ---
@@ -91,4 +91,4 @@ Kafka retains messages on disk for a configurable window (7 days by default). Re
 
 The wrong answer at scale isn't using SQS Standard when you should have used FIFO. It's using either when your actual requirements — throughput, fan-out, replay — are requirements that Kafka was built for.
 
-Full notification system case study → https://leetdezine.com/03-Case-Studies/02-Ascent/01-Notification-System/?utm_source=devto
+Full notification system case study → https://leetdezine.com/notification-system/?utm_source=devto

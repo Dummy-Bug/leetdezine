@@ -16,4 +16,4 @@ The algorithm isn't broken — it's the wrong tool for specific endpoints. For /
 
 Know which one you're deploying.
 
-→ https://leetdezine.com/03-Case-Studies/03-Expedition/01-Rate-Limiter/?utm_source=peerlist
+→ https://leetdezine.com/rate-limiter/?utm_source=peerlist

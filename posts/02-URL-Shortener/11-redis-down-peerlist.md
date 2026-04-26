@@ -1,6 +1,7 @@
-# Post 3 — What Happens When Redis Dies
-# Platform: Peerlist
-# Day: Day 3
+# What Actually Happens When Redis Dies in a URL Shortener at 1M Reads/Sec?
+
+## Platform: Peerlist
+## Day: Day 3
 
 ---
 
@@ -18,4 +19,4 @@ Still not enough. DB capacity at full load is around 800k reads/sec. The remaini
 
 The trap engineers fall into: "auto-scaling handles this." A new Postgres replica takes minutes to provision, catch up WAL, and pass health checks. Your traffic spike is immediate. Auto-scaling is for gradual growth, not cache failure.
 
-Full breakdown: https://leetdezine.com/03-Case-Studies/01-Foundation/02-URL-Shortener/02-Deep-Dives/?utm_source=peerlist
+Full breakdown: https://leetdezine.com/url-shortener/redis-down/?utm_source=peerlist

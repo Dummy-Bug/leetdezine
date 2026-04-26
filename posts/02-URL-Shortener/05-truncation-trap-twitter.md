@@ -23,4 +23,4 @@ The rightmost bits you dropped were the sequence number — the only thing that 
 Timestamp alone doesn't guarantee uniqueness. All 64 bits do, together.
 
 Full URL shortener deep dive:
-https://leetdezine.com/03-Case-Studies/01-Foundation/02-URL-Shortener/02-Deep-Dives/?utm_source=twitter
+https://leetdezine.com/url-shortener/?utm_source=twitter

@@ -27,4 +27,4 @@ The math was right. The truncation was wrong.
 
 You cannot get both uniqueness and shortness by dropping bits from a Snowflake. Every section of those 64 bits contributes to the uniqueness guarantee. Drop any of them and you break it.
 
-Full breakdown: https://leetdezine.com/03-Case-Studies?utm_source=peerlist
+Full breakdown: https://leetdezine.com/case-studies/?utm_source=peerlist

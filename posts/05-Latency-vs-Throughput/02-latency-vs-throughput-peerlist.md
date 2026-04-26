@@ -18,4 +18,4 @@ The question to ask: what does a bad experience look like for this system?
 
 Waiting 5 seconds for a chat message? Optimize for latency. Processing billions of analytics events overnight? Optimize for throughput. Pick the wrong axis and you're solving the wrong problem entirely.
 
-→ https://leetdezine.com/01-Concepts/02-Fundamentals/01-Performance-Metrics/04-Latency-vs-Throughput/?utm_source=peerlist
+→ https://leetdezine.com/performance-metrics/latency-vs-throughput/?utm_source=peerlist

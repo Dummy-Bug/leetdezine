@@ -20,7 +20,8 @@ theme:
     - navigation.path
     - navigation.top
     - navigation.indexes
-    - navigation.prune
+    - navigation.expand
+    - navigation.footer
     - toc.follow
     - search.suggest
     - search.highlight
@@ -320,48 +321,56 @@ nav:
       - Lock vs Job Tracking: distributed-systems/lock-vs-job-tracking.md
     - Caching:
       - Overview: caching/index.md
-      - Fundamentals: caching/fundamentals.md
-      - "Quick Decision Map": caching/quick-decision-map.md
-      - Read Strategies: caching/read-strategies.md
-      - Write Strategies: caching/write-strategies.md
-      - Interview Cheatsheet: caching/writing-strategies-interview-cheatsheet.md
-      - "Eviction vs TTL": caching/eviction-vs-ttl.md
-      - LRU: caching/lru.md
-      - LFU: caching/lfu.md
-      - FIFO & TTL: caching/fifo-and-ttl.md
-      - Interview Cheatsheet: caching/eviction-policies-interview-cheatsheet.md
-      - "Warming vs Refresh-Ahead": caching/warming-vs-refresh-ahead.md
-      - Refresh Ahead: caching/refresh-ahead.md
-      - Cache Warming: caching/cache-warming.md
-      - Interview Cheatsheet: caching/population-strategies-interview-cheatsheet.md
-      - "Choosing a Strategy": caching/choosing-a-strategy.md
-      - TTL-Based: caching/ttl-based.md
-      - Event-Driven: caching/event-driven.md
-      - Write-Through: caching/write-through.md
-      - Cache Versioning: caching/cache-versioning.md
-      - Stale-While-Revalidate: caching/stale-while-revalidate.md
-      - Interview Cheatsheet: caching/cache-invalidation-interview-cheatsheet.md
-      - Why Single Node Fails: caching/why-single-node-fails.md
-      - Consistent Hashing: caching/consistent-hashing.md
-      - Cache Coherence: caching/cache-coherence.md
-      - Replication: caching/replication.md
-      - Two-Level Caching: caching/two-level-caching.md
-      - Node Failure: caching/node-failure.md
-      - Interview Cheatsheet: caching/distributed-caching-interview-cheatsheet.md
-      - "Diagnosing the Problem": caching/diagnosing-which-problem.md
-      - Cache Stampede: caching/cache-stampede.md
-      - Cold Start: caching/cold-start.md
-      - Cache Penetration: caching/cache-penetration.md
-      - Cache Avalanche: caching/cache-avalanche.md
-      - Interview Cheatsheet: caching/cache-problems-interview-cheatsheet.md
-      - Data Structures: caching/data-structures.md
-      - Patterns: caching/patterns.md
-      - Persistence: caching/persistence.md
-      - Streams: caching/streams.md
-      - Single-Threaded Event Loop: caching/single-threaded-event-loop.md
-      - SDE-1: caching/sde-1.md
-      - SDE-2: caching/sde-2.md
-      - SDE-3: caching/sde-3.md
+      - Foundations:
+        - Fundamentals: caching/fundamentals.md
+        - "Quick Decision Map": caching/quick-decision-map.md
+        - Read Strategies: caching/read-strategies.md
+        - Write Strategies: caching/write-strategies.md
+        - Interview Cheatsheet: caching/writing-strategies-interview-cheatsheet.md
+      - Eviction & TTL:
+        - "Eviction vs TTL": caching/eviction-vs-ttl.md
+        - LRU: caching/lru.md
+        - LFU: caching/lfu.md
+        - FIFO & TTL: caching/fifo-and-ttl.md
+        - Interview Cheatsheet: caching/eviction-policies-interview-cheatsheet.md
+      - Population:
+        - "Warming vs Refresh-Ahead": caching/warming-vs-refresh-ahead.md
+        - Refresh Ahead: caching/refresh-ahead.md
+        - Cache Warming: caching/cache-warming.md
+        - Interview Cheatsheet: caching/population-strategies-interview-cheatsheet.md
+      - Cache Invalidation:
+        - "Choosing a Strategy": caching/choosing-a-strategy.md
+        - TTL-Based: caching/ttl-based.md
+        - Event-Driven: caching/event-driven.md
+        - Write-Through: caching/write-through.md
+        - Cache Versioning: caching/cache-versioning.md
+        - Stale-While-Revalidate: caching/stale-while-revalidate.md
+        - Interview Cheatsheet: caching/cache-invalidation-interview-cheatsheet.md
+      - Distributed:
+        - Why Single Node Fails: caching/why-single-node-fails.md
+        - Consistent Hashing: caching/consistent-hashing.md
+        - Cache Coherence: caching/cache-coherence.md
+        - Replication: caching/replication.md
+        - Two-Level Caching: caching/two-level-caching.md
+        - Node Failure: caching/node-failure.md
+        - Interview Cheatsheet: caching/distributed-caching-interview-cheatsheet.md
+      - Cache Problems:
+        - "Diagnosing the Problem": caching/diagnosing-which-problem.md
+        - Cache Stampede: caching/cache-stampede.md
+        - Cold Start: caching/cold-start.md
+        - Cache Penetration: caching/cache-penetration.md
+        - Cache Avalanche: caching/cache-avalanche.md
+        - Interview Cheatsheet: caching/cache-problems-interview-cheatsheet.md
+      - Redis:
+        - Data Structures: caching/data-structures.md
+        - Patterns: caching/patterns.md
+        - Persistence: caching/persistence.md
+        - Streams: caching/streams.md
+        - Single-Threaded Event Loop: caching/single-threaded-event-loop.md
+      - Interview:
+        - SDE-1: caching/sde-1.md
+        - SDE-2: caching/sde-2.md
+        - SDE-3: caching/sde-3.md
     - Storage & Databases:
       - Overview: storage-and-databases/index.md
       - Why Not Files: storage-and-databases/why-not-files.md

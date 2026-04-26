@@ -1,7 +1,7 @@
 # Low Latency vs High Throughput: What's the Difference and When Does Each Matter?
 
 ## Platform: DEV.to
-## Canonical URL: https://leetdezine.com/01-Concepts/02-Fundamentals/01-Performance-Metrics/04-Latency-vs-Throughput/?utm_source=devto
+## Canonical URL: https://leetdezine.com/performance-metrics/latency-vs-throughput/?utm_source=devto
 ## Tags: systemdesign, distributedsystems, backend, programming
 
 ---
@@ -94,4 +94,4 @@ Naming the axis is what separates a junior answer from a senior one.
 
 ---
 
-Full performance metrics breakdown → https://leetdezine.com/01-Concepts/02-Fundamentals/01-Performance-Metrics/04-Latency-vs-Throughput/?utm_source=devto
+Full performance metrics breakdown → https://leetdezine.com/performance-metrics/latency-vs-throughput/?utm_source=devto

@@ -1,6 +1,7 @@
-# Post 4 — Why LPOP Is Atomic
-# Platform: Peerlist
-# Day: Day 4
+# Why Doesn't Redis LPOP Need a Lock When 20 Servers Hit It Simultaneously?
+
+## Platform: Peerlist
+## Day: Day 4
 
 ---
 
@@ -18,4 +19,4 @@ Redis gives you the same correctness guarantee at O(1) with zero locking.
 
 The batch pre-fetch compounds this: each app server grabs 100 keys at startup and refills when empty. At 1k creations/sec across 20 servers, that drops Redis traffic from 1000 LPOP calls/sec down to roughly 10 batch refills/sec. Same correctness, 100x fewer Redis round-trips.
 
-Full breakdown: https://leetdezine.com/03-Case-Studies/01-Foundation/02-URL-Shortener/02-Deep-Dives/?utm_source=peerlist
+Full breakdown: https://leetdezine.com/url-shortener/?utm_source=peerlist

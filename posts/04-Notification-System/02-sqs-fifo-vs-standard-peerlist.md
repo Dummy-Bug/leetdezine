@@ -16,4 +16,4 @@ What neither FIFO nor Standard gives you is replay. SQS deletes messages after c
 
 Know what the queue actually gives you before you reach for it.
 
-→ https://leetdezine.com/03-Case-Studies/02-Ascent/01-Notification-System/?utm_source=peerlist
+→ https://leetdezine.com/notification-system/?utm_source=peerlist

@@ -19,4 +19,4 @@ The trap: choosing FIFO because "ordering sounds important."
 
 Most async systems don't need strict ordering — they need idempotent processing. If your consumer handles duplicates safely, Standard + idempotent handler beats FIFO at 10× the throughput.
 
-And neither gives you replay. → https://leetdezine.com/03-Case-Studies/02-Ascent/01-Notification-System/?utm_source=twitter
+And neither gives you replay. → https://leetdezine.com/notification-system/?utm_source=twitter

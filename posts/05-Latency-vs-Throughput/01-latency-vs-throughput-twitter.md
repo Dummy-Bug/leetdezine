@@ -21,4 +21,4 @@ Immediate processing = respond fast → use resources inefficiently (low latency
 
 DB writes, Netflix buffering, Kafka — same tradeoff, different problem.
 
-→ https://leetdezine.com/01-Concepts/02-Fundamentals/01-Performance-Metrics/04-Latency-vs-Throughput/?utm_source=twitter
+→ https://leetdezine.com/performance-metrics/latency-vs-throughput/?utm_source=twitter

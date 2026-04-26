@@ -20,4 +20,4 @@ For /search or /feed — a brief 2× burst causes no real harm. Fixed Window is 
 
 For /login or /payment — an attacker who knows your window resets at :00 can time their burst to double their brute-force attempts every minute.
 
-Full Rate Limiter deep dive → https://leetdezine.com/03-Case-Studies/03-Expedition/01-Rate-Limiter/?utm_source=twitter
+Full Rate Limiter deep dive → https://leetdezine.com/rate-limiter/?utm_source=twitter

@@ -14,4 +14,4 @@ Why it's safe: short URL mappings are immutable. Once `x7k2p9 → long-url.com`,
 
 For mutable data you'd need key salting — N copies of the hot key spread across different Redis nodes. But for a URL shortener, local cache is cleaner, zero extra infra, and handles the spike.
 
-Full breakdown → https://leetdezine.com/03-Case-Studies/01-Foundation/02-URL-Shortener/?utm_source=peerlist
+Full breakdown → https://leetdezine.com/url-shortener/?utm_source=peerlist

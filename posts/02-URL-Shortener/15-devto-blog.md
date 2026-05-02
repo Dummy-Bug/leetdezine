@@ -1,4 +1,4 @@
-# 4 URL Shortener Design Traps That Look Correct Until They Break
+# 4 What Actually Breaks in a URL Shortener Design at Scale?
 
 # Platform: DEV.to
 # Canonical URL: https://leetdezine.com/?utm_source=devto

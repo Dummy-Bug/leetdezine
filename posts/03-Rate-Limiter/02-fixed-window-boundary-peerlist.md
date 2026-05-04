@@ -4,7 +4,7 @@
 
 ---
 
-There's a bug in Fixed Window Counter that most candidates miss — and most production systems ship anyway.
+There's a bug in Fixed Window Counter that most miss — and most production systems ship anyway.
 
 The rule is "5 requests per minute." The implementation groups timestamps into 60-second buckets and counts per bucket. Looks correct. Works in testing.
 

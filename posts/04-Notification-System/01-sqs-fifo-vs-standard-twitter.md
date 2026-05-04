@@ -1,4 +1,4 @@
-# SQS FIFO vs Standard — Twitter Thread
+# SQS FIFO vs Standard Queue — Throughput Limit and When to Use Each
 
 ## Tweet 1 (Hook)
 

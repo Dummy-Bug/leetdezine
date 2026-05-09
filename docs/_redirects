@@ -1,4 +1,7 @@
 # URL flattening redirects
+# Strip query parameters to prevent duplicate indexing
+/*?q=* /:splat 301
+
 /availability/interview-questions/sde-1/ /availability/sde-1/ 301
 /availability/interview-questions/sde-2/ /availability/sde-2/ 301
 /availability/interview-questions/sde-3/ /availability/sde-3/ 301

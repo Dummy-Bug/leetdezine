@@ -87,3 +87,11 @@ Ask: **what does a bad experience look like for this system?**
 - Analytics pipeline runs overnight → nobody cares if a log arrived 2 seconds late. **Optimize for throughput.**
 - Payment confirmation → user is staring at a loading screen. **Optimize for latency.**
 - Log processing → you're crunching billions of events in bulk. **Optimize for throughput.**
+
+In an interview, say the tradeoff out loud: *"I'm choosing batch writes here — that increases throughput but adds latency per write. Acceptable for an analytics pipeline, wrong for a payment API."*
+
+Naming the axis is what separates a junior answer from a senior one.
+
+---
+
+Full performance metrics breakdown → https://leetdezine.com/performance-metrics/latency-vs-throughput/?utm_source=devto

@@ -1,4 +1,4 @@
-# Fixed Window Counter — Boundary Bug & Thundering Herd — Twitter Thread
+# Fixed Window Rate Limiter Boundary Bug — Why It Allows 2× Requests
 
 ## Tweet 1 (Hook)
 

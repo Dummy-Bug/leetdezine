@@ -1,4 +1,4 @@
-# Low Latency vs High Throughput: What's the Difference and When Does Each Matter?
+# What's the Difference Between Latency and Throughput in System Design?
 
 ## Platform: DEV.to
 ## Canonical URL: https://leetdezine.com/performance-metrics/latency-vs-throughput/?utm_source=devto

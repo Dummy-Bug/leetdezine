@@ -1,4 +1,4 @@
-# Latency vs Throughput — Twitter Thread
+# Latency vs Throughput — Why Optimizing One Hurts the Other
 
 ## Tweet 1 (Hook)
 

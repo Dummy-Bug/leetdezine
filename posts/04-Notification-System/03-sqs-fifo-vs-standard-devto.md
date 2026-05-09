@@ -1,4 +1,4 @@
-# SQS FIFO vs Standard Queue: Differences, Tradeoffs, and When to Use Each
+# When Should You Use SQS FIFO vs Standard Queue?
 
 ## Platform: DEV.to
 ## Canonical URL: https://leetdezine.com/notification-system/?utm_source=devto

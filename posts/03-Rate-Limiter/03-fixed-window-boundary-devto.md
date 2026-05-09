@@ -1,4 +1,4 @@
-# Fixed Window Counter Rate Limiting: How It Works, the Boundary Bug, and the Thundering Herd Problem
+# Why Does Fixed Window Rate Limiting Allow 2× the Requests at the Window Boundary?
 
 ## Platform: DEV.to
 ## Canonical URL: https://leetdezine.com/rate-limiter/?utm_source=devto
